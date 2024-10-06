@@ -1,20 +1,24 @@
-name: Release
+name: Semantic release
 
 on:
   push:
     branches:
       - main
+
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-      - run: npm install --legacy-peer-deps
-      - run: npm run release
+          node-version: 20
+      - name: Install dependencies --legacy-peer-deps
+        run: npm install
+      - name: Build app
+        run: npm run build
+      - name: Semantic release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # variable used by Semantic Release
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # variable used by Semantic Release
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
