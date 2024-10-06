@@ -1,10 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Here's a README template for a frontend project using Next.js 14 and pnpm:
-
----
-
-# Project Name
+# Blue Harvest
 
 A brief description of the project, including its main purpose and any key features.
 
@@ -14,9 +10,6 @@ A brief description of the project, including its main purpose and any key featu
 - [Scripts](#scripts)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Environment Variables](#environment-variables)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
