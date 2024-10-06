@@ -65,6 +65,7 @@ A high-level overview of the folder structure:
 │   ├── hooks/            # Custom React hooks
 │   ├── utils/            # Utility functions and helpers
 │   └── types/            # TypeScript types and interfaces
+├── docs/                 # Directory containing documentation files
 ├── .eslintrc.js          # ESLint configuration
 ├── .prettierrc           # Prettier configuration
 ├── next.config.js        # Next.js configuration
