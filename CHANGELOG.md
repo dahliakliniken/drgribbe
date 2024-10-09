@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jennieandersson/blue-harvest/compare/v1.0.0...v1.1.0) (2024-10-09)
+
+
+### Features
+
+* add internationalization support ([a26ddc7](https://github.com/jennieandersson/blue-harvest/commit/a26ddc76ac2615455f95e73a5d99deea3381cfee))
+
 # 1.0.0 (2024-10-06)
 
 
