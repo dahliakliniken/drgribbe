@@ -13,5 +13,12 @@ export default [
   {
     ignores: ['node_modules', 'dist', 'public', '.next']
   },
+  {
+    rules: {
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-react': 'off',
+      'react/jsx-no-literals': 'error'
+    }
+  },
   eslintConfigPrettier
 ]
