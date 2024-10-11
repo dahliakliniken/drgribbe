@@ -51,9 +51,9 @@ A high-level overview of the folder structure:
 
 ```
 ├── public/               # Static assets (images, fonts, etc.)
-├── src/                  # Main source code
+├── app/                  # Main source code
 │   ├── components/       # Reusable UI components
-│   ├── pages/            # Next.js pages
+│   ├── page.ts           # Next.js pages
 │   ├── styles/           # Global and component-specific styles
 │   ├── hooks/            # Custom React hooks
 │   ├── utils/            # Utility functions and helpers
