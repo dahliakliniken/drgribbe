@@ -53,7 +53,12 @@ A high-level overview of the folder structure:
 ├── public/               # Static assets (images, fonts, etc.)
 ├── app/                  # Main source code
 │   ├── components/       # Reusable UI components
-│   ├── page.ts           # Next.js pages
+│   │  ├── inputs/        # Input elements like buttons, text fields, etc.
+│   │  ├── layouts/       # Layout components for structuring pages
+│   │  ├── surfaces/      # Surface components like cards, modals, etc.
+│   │  ├── navigation/    # Navigation components like breadcrumbs
+│   │  └── composites/    # Composite components combining multiple elements
+│   ├── page.ts           # Main page component
 │   ├── styles/           # Global and component-specific styles
 │   ├── hooks/            # Custom React hooks
 │   ├── utils/            # Utility functions and helpers

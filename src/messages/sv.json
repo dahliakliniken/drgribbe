@@ -1,6 +1,13 @@
 {
+  "breadcrumbs": {
+    "home": "Hem",
+    "about": "Om kliniken"
+  },
   "home": {
     "title": "Hello world!",
     "description": "This is a description."
+  },
+  "about": {
+    "title": "Om kliniken"
   }
 }
