@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/jennieandersson/blue-harvest/compare/v1.1.0...v1.2.0) (2024-10-13)
+
+
+### Features
+
+* add about page and breadcrumb navigation ([61be53f](https://github.com/jennieandersson/blue-harvest/commit/61be53fdaed779b310de5d951da855dba77f2699))
+* folder structure ([9ef7337](https://github.com/jennieandersson/blue-harvest/commit/9ef7337738add0f90bacbb476ba1e206fd9737ee))
+
 # [1.1.0](https://github.com/jennieandersson/blue-harvest/compare/v1.0.0...v1.1.0) (2024-10-09)
 
 
