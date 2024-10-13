@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 export default function Home() {
   const t = useTranslations()
@@ -10,6 +11,7 @@ export default function Home() {
           {t('home.title')}
         </h1>
         <p>{t('home.description')}</p>
+        <Link href="/about">{'Om kliniken'}</Link>
       </main>
       <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6"></footer>
     </div>
