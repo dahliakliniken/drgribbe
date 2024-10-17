@@ -9,5 +9,12 @@
   },
   "about": {
     "title": "Om kliniken"
+  },
+  "dropdown": {
+    "clinic": "Kliniken",
+    "breast_surgeries": "Bröstoperationer",
+    "the_implants": "Implantaten",
+    "skin_injections": "Hud & Injektioner",
+    "price": "Pris"
   }
 }
