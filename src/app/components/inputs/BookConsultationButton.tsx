@@ -9,7 +9,7 @@ const BookConsultationButton: React.FC = () => {
     return (
       <button
           onClick={handleClick}
-          className="px-8 py-4 border-2 border-gray-500 text-gray-500 bg-transparent text-lg rounded-xl hover:bg-gray-100"
+          className="px-12 py-4 border-2 border-white text-white bg-transparent text-lg rounded-xl hover:bg-gray-100"
       >
           Boka konsultation
       </button>
@@ -17,4 +17,3 @@ const BookConsultationButton: React.FC = () => {
 };
 
 export default BookConsultationButton;
-

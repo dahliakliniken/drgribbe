@@ -14,7 +14,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Breadcrumb />
+          {/* <Breadcrumb /> */}
           {children}
         </NextIntlClientProvider>
       </body>
