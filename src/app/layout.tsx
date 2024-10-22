@@ -1,7 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 import './globals.css'
-import Breadcrumb from './components/navigation/Breadcrumbs'
 export default async function RootLayout({
   children
 }: {
