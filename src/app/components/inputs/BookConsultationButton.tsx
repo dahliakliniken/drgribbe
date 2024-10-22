@@ -8,11 +8,10 @@ const BookConsultationButton: React.FC = () => {
 
     return (
       <button
-          onClick={handleClick}
-          className="px-12 py-4 border-2 border-white text-white bg-transparent text-lg rounded-xl hover:bg-gray-100"
-      >
-          Boka konsultation
-      </button>
+      className="px-16 py-5 border-4 border-white text-white bg-transparent text-lg rounded-xl hover:bg-gray-100" // Ökad padding för att göra knappen bredare
+    >
+      Boka konsultation
+    </button>
     );
 };
 
