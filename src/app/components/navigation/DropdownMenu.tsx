@@ -29,7 +29,7 @@ const DropdownMenu: React.FC = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 z-10 w-64 h-auto max-h-[500px] rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 overflow-auto">
                     <div className="py-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                         <Link href="/" className="block px-6 py-4 text-xl text-gray-700 hover:bg-gray-100" role="menuitem">
-                            {t('Hem')} 
+                            {t('breadcrumbs.home')} 
                         </Link>
                         <Link href="/about" className="block px-6 py-4 text-xl text-gray-700 hover:bg-gray-100" role="menuitem">
                             {'Kliniken'} 
