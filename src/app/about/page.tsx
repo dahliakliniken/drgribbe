@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import Footer from '../components/navigation/Footer';
 
 const About: React.FC = () => {
   const t = useTranslations();
@@ -20,10 +19,8 @@ const About: React.FC = () => {
           Cras ut purus eget metus fermentum pretium in at nisl. Quisque fringilla libero et dolor vestibulum, a finibus odio tincidunt.
         </p>
       </main>
-      <Footer /> 
     </div>
   );
 };
 
 export default About;
-
