@@ -1,5 +1,3 @@
-'use client'
-
 import { useTranslations } from 'next-intl'
 import Footer from './components/navigation/Footer'
 import BookConsultationButton from './components/inputs/BookConsultationButton'
@@ -7,13 +5,13 @@ import About from './about/page'
 import Logo from './components/navigation/Logo'
 import DropdownMenu from './components/navigation/DropdownMenu'
 import Textbox from './components/layout/Textbox'
+import ImageBox from './components/layout/ImageBox'
 
 const Page: React.FC = () => {
   const t = useTranslations()
 
   return (
     <div className="flex min-h-screen flex-col bg-[#EAE6E3]">
-      {' '}
       {/* Main background color */}
       {/* Home Section */}
       <section className="relative flex min-h-screen flex-col items-center justify-center bg-[url('/images/Welcome.png')] bg-cover bg-center md:bg-contain">
@@ -24,17 +22,26 @@ const Page: React.FC = () => {
           <BookConsultationButton />
         </div>
       </section>
-      {/* New Textbox component before the About section */}
-      <Textbox /> {/* Including Textbox component with specified styles */}
+
+      {/* Textbox component */}
+      <Textbox />
+
+      {/* ImageBox */}
+      <ImageBox />
+
       {/* About Section */}
       <section className="flex min-h-screen flex-col items-center justify-center bg-white">
         <About />
       </section>
+
       {/* Header with Logo and Dropdown Menu */}
-      <header className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-between bg-[#EAE6E3] p-4">
+      <header className="fixed bottom-0 left-0 right-0 z-0 flex items-center justify-between bg-[#EAE6E3] p-4">
+        {' '}
+        {/* Sänkt z-index för att undvika överlappning */}
         <Logo />
         <DropdownMenu />
       </header>
+
       <Footer />
     </div>
   )
