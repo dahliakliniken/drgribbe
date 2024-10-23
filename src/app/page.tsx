@@ -6,6 +6,7 @@ import Logo from './components/navigation/Logo'
 import DropdownMenu from './components/navigation/DropdownMenu'
 import Textbox from './components/layout/Textbox'
 import ImageBox from './components/layout/ImageBox'
+import TreatmentBox from './components/layout/TreatmentBox'
 
 const Page: React.FC = () => {
   const t = useTranslations()
@@ -29,15 +30,18 @@ const Page: React.FC = () => {
       {/* ImageBox */}
       <ImageBox />
 
+      {/* TreatmentBox (Added after ImageBox) */}
+      <div className="relative">
+        <TreatmentBox />
+      </div>
+
       {/* About Section */}
       <section className="flex min-h-screen flex-col items-center justify-center bg-white">
         <About />
       </section>
 
       {/* Header with Logo and Dropdown Menu */}
-      <header className="fixed bottom-0 left-0 right-0 z-0 flex items-center justify-between bg-[#EAE6E3] p-4">
-        {' '}
-        {/* Sänkt z-index för att undvika överlappning */}
+      <header className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-between bg-[#EAE6E3] p-4">
         <Logo />
         <DropdownMenu />
       </header>
@@ -47,4 +51,4 @@ const Page: React.FC = () => {
   )
 }
 
-export default Page
+export default Page;
