@@ -16,5 +16,13 @@
     "the_implants": "Implantaten",
     "skin_injections": "Hud & Injektioner",
     "price": "Pris"
+  },
+  "treatmentBox": {
+    "title": "BEHANDLINGAR",
+    "treatments": {
+      "breast_reduction": "Bröstförminskning",
+      "breast_enlargement": "Bröstförstoring",
+      "muscle_relaxation": "Muskelavslappnande behandling"
+    }
   }
 }
