@@ -27,3 +27,7 @@ body {
     text-wrap: balance;
   }
 }
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
