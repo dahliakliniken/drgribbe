@@ -38,6 +38,8 @@ const Card = ({ title, paragraphs, bgColor, image }: CardProps) => {
         )}
 
         {paragraphs.map((paragraph, idx) => (
+          //TODO: remember to change key to something unique
+          // Bad practice to use index as key
           <P key={idx}>{paragraph}</P>
         ))}
       </div>
