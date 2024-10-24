@@ -22,6 +22,7 @@ const TreatmentBox: React.FC = () => {
   return (
     <div className="flex h-[597px] w-[393px] flex-col items-center justify-center gap-0 bg-[#FFFFFF]">
       {/* Titel */}
+
       <h2 className="font-[Josefin Sans] mt-4 h-[32px] w-[333px] text-center text-[32px] font-light leading-[32px]">
         {t('treatmentBox.title')}
       </h2>
@@ -29,6 +30,7 @@ const TreatmentBox: React.FC = () => {
       {/* Treatment cards with horizontal scrolling */}
       <div className="mt-4 flex w-full gap-[30px] overflow-x-scroll">
         {treatments.map((treatment, index) => (
+          // TODO: We should be able to use the Card component here instead
           <div
             key={index}
             className="h-[561px] min-w-[331px] rounded-tl-[5px] border bg-[#0C412F] p-[22px] text-white"
