@@ -1,18 +1,13 @@
-'use client';
-import React from 'react';
+'use client'
 
 const BookConsultationButton: React.FC = () => {
-    const handleClick = () => {
-        alert('Boka konsultation klickad!');
-    };
-
-    return (
-      <button
-      className="px-16 py-5 border-4 border-white text-white bg-transparent text-lg rounded-xl hover:bg-gray-100" // Ökad padding för att göra knappen bredare
+  return (
+    <button
+      className="rounded-xl border-4 border-white bg-transparent px-16 py-5 text-lg text-white hover:bg-gray-100" // Ökad padding för att göra knappen bredare
     >
       Boka konsultation
     </button>
-    );
-};
+  )
+}
 
-export default BookConsultationButton;
+export default BookConsultationButton

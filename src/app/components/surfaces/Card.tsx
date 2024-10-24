@@ -1,3 +1,4 @@
+import H2 from '../typography/H2'
 import P from '../typography/P'
 
 type CardProps = {
@@ -12,19 +13,9 @@ const Card = ({ title, paragraphs, bgColor, image }: CardProps) => {
     <div className={`p-6 ${bgColor} relative`}>
       {/* Pseudo-element for background image */}
       <div className="absolute inset-0 z-0 bg-card-pattern bg-200 opacity-5" />
-      {/* // TODO: Refactor this into a separate component */}
-      <h2
-        className="font-josefin-sans text-white"
-        style={{
-          height: '64px',
-          fontSize: '32px',
-          fontWeight: 300,
-          lineHeight: '32px',
-          marginTop: '10px'
-        }}
-      >
-        {title}
-      </h2>
+
+      <H2>{title}</H2>
+
       <div className="columns-1 gap-4 lg:columns-3">
         {/* Image column, only shown if an image is provided */}
         {image && (
@@ -36,11 +27,8 @@ const Card = ({ title, paragraphs, bgColor, image }: CardProps) => {
             />
           </div>
         )}
-
         {paragraphs.map((paragraph, idx) => (
-          //TODO: remember to change key to something unique
-          // Bad practice to use index as key
-          <P key={idx}>{paragraph}</P>
+          <P key={`${paragraph}-${idx}`}>{paragraph}</P>
         ))}
       </div>
     </div>
