@@ -6,9 +6,8 @@ const About: React.FC = () => {
   const t = useTranslations()
 
   return (
-    <div className="flex flex-col min-h-screen gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
+    <div className="flex flex-col min-h-screen gap-16 p-8 pb-20 text-black font-[family-name:var(--font-geist-sans)] sm:p-20">
       <main className="flex-grow">
-        {/* Använd H2-komponenten istället för <h1> */}
         <H2>{t('about.title')}</H2>
 
         {/* Använd P-komponenten istället för <p> */}
