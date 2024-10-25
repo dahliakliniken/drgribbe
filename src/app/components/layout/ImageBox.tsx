@@ -1,16 +1,16 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 const ImageBox = () => {
   return (
-    <div className="relative z-10 h-[388px] w-[393px]">
+    <div className="relative z-10 h-[388px] w-full"> {/* Full bredd */}
       <Image
         src="/images/Konsultation-med-patient-Tumba_N3A2763-1-scaled.png"
-        layout="fill"
-        objectFit="cover"
+        layout="fill"  // Fyller ut hela föräldern
+        objectFit="cover"  // Täcker hela ytan
         alt={''}
       />
     </div>
-  )
-}
+  );
+};
 
-export default ImageBox
+export default ImageBox;

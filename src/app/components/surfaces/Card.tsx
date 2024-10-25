@@ -1,3 +1,4 @@
+import H2 from '../typography/H2'
 import P from '../typography/P'
 
 type CardProps = {
@@ -5,42 +6,39 @@ type CardProps = {
   paragraphs: string[]
   bgColor: string // TODO: Define and set specific color types
   image?: string // Optional image for desktop layout
+  style?: React.CSSProperties
 }
 
 const Card = ({ title, paragraphs, bgColor, image }: CardProps) => {
   return (
-    <div className={`p-6 ${bgColor} relative`}>
+    <div
+      className={`p-6 ${bgColor} relative flex h-[561px] w-[331px] flex-col items-center rounded-[5px_0_0_0]`}
+    >
       {/* Pseudo-element for background image */}
       <div className="absolute inset-0 z-0 bg-card-pattern bg-200 opacity-5" />
-      {/* // TODO: Refactor this into a separate component */}
-      <h2
-        className="font-josefin-sans text-white"
-        style={{
-          height: '64px',
-          fontSize: '32px',
-          fontWeight: 300,
-          lineHeight: '32px',
-          marginTop: '10px'
-        }}
-      >
-        {title}
-      </h2>
-      <div className="columns-1 gap-4 lg:columns-3">
+
+      {/* H2 with white text */}
+      <H2 color="text-white">{title}</H2>
+
+      <div className="mt-2 flex flex-col items-center">
+        {' '}
+        
         {/* Image column, only shown if an image is provided */}
         {image && (
-          <div className="sm:col-span-1">
+          <div className="mb-2">
+            {' '}
+            {/* Lägg till marginal under bilden */}
             <img
               src={image}
               alt="Card Image"
-              className="h-auto w-full rounded-lg"
+              className="h-[151px] w-[152px] rounded-lg opacity-100" // Specifik storlek för bilden
             />
           </div>
         )}
-
         {paragraphs.map((paragraph, idx) => (
-          //TODO: remember to change key to something unique
-          // Bad practice to use index as key
-          <P key={idx}>{paragraph}</P>
+          <P key={`${paragraph}-${idx}`} color="text-white">
+            {paragraph}
+          </P>
         ))}
       </div>
     </div>
