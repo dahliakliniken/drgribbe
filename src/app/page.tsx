@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import Footer from './components/navigation/Footer'
 import BookConsultationButton from './components/inputs/BookConsultationButton'
 import About from './about/page'
@@ -9,8 +8,6 @@ import ImageBox from './components/layout/ImageBox'
 import TreatmentBox from './components/layout/TreatmentBox'
 
 const Page: React.FC = () => {
-  const t = useTranslations()
-
   return (
     <div className="flex min-h-screen flex-col bg-[#EAE6E3]">
       <section className="relative flex min-h-screen flex-col items-center justify-center bg-[url('/images/Welcome.png')] bg-cover bg-center md:bg-contain">
@@ -21,21 +18,14 @@ const Page: React.FC = () => {
           <BookConsultationButton />
         </div>
       </section>
-      
+
       <Textbox />
 
       <div className="flex w-full justify-center p-0">
         <ImageBox />
       </div>
 
-      {/* TreatmentBox */}
-      <div className="flex w-full justify-center">
-        <div className="flex w-full flex-col">
-          {' '}
-          {/* Justera här */}
-          <TreatmentBox />
-        </div>
-      </div>
+      <TreatmentBox />
 
       {/* About Section */}
       <section className="flex min-h-screen flex-col items-center justify-center bg-white">

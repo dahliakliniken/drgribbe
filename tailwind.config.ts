@@ -19,7 +19,13 @@ const config: Config = {
         'card-pattern': "url('/images/dalia_icon_white.svg')"
       },
       backgroundSize: {
+        '50': '50%',
+        '100': '100%',
         '200': '200%'
+      },
+      backgroundPosition: {
+        'right-50': '-50%',
+        'left-100': '100%'
       }
     }
   },
