@@ -1,9 +1,14 @@
-const Logo: React.FC = () => {
+import Image from 'next/image'
+import DahliaLogo from '../../../../public/images/Logo.png'
+
+const Logo = () => {
   return (
-    <div className="bg-[#EAE6E3] p-8 w-full flex justify-center rounded-t"> {/* Fyller hela bredden och centrerar innehållet */}
-      <img src="/images/Logo.png" alt="Dalia Logo" className="h-25" />
+    <div className="flex w-full justify-center bg-[#EAE6E3]">
+      {' '}
+      {/* Fyller hela bredden och centrerar innehållet */}
+      <Image src={DahliaLogo} alt="Dalia Logo" className="h-25" />
     </div>
-  );
+  )
 }
 
 export default Logo

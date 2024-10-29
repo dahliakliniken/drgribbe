@@ -1,13 +1,13 @@
 type H2Props = {
   children: React.ReactNode
-  color?: string // Färg som prop
+  white?: boolean
   upperCase?: boolean
 }
 
-const H2 = ({ children, color = 'text-black', upperCase }: H2Props) => {
+const H2 = ({ children, white, upperCase }: H2Props) => {
   return (
     <h2
-      className={`font-josefin-sans ${color} mt-4 text-2xl font-light leading-tight ${upperCase && 'uppercase'}`}
+      className={`text-3xl font-light ${upperCase && 'uppercase'} ${white ? 'text-white' : 'text-black'} mb-4`}
     >
       {children}
     </h2>
