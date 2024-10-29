@@ -8,10 +8,11 @@
     "description": "This is a description."
   },
   "dropdown": {
-    "clinic": "Kliniken",
-    "breast_surgeries": "Bröstoperationer",
-    "the_implants": "Implantaten",
-    "skin_injections": "Hud & Injektioner",
+    "clinic": "Om Kliniken",
+    "breastSurgeries": "Bröstoperationer",
+    "implants": "Implantaten",
+    "skinInjections": "Hud & Injektioner",
+    "ourStaff": "Vår Personal",
     "price": "Pris"
   },
   "treatmentBox": {
@@ -57,5 +58,9 @@
     "contactUs": "Kontakta oss",
     "email": "Email: <email>info@dahliakliniken.se</email>",
     "phone": "Telefon: 012-345 67 89"
+  },
+  "common": {
+    "bookConsultation": "Boka konsultation",
+    "bookFreeConsultation": "Boka fri konsultation"
   }
 }
