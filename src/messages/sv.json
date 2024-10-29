@@ -52,5 +52,10 @@
     "title":"Om Kliniken",
     "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
     "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
+  },
+  "contact": {
+    "contactUs": "Kontakta oss",
+    "email": "Email: <email>info@dahliakliniken.se</email>",
+    "phone": "Telefon: 012-345 67 89"
   }
 }
