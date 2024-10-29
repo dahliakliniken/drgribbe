@@ -10,7 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         background: 'var(--background)',
-        foreground: 'var(--foreground)'
+        foreground: 'var(--foreground)',
+        coral: '#B06D74',
+        green: '#0C412F',
+        beige: '#EAE6E3'
       },
       fontFamily: {
         'josefin-sans': ['"Josefin Sans"', 'sans-serif']
@@ -26,6 +29,10 @@ const config: Config = {
       backgroundPosition: {
         'right-50': '-50%',
         'left-100': '100%'
+      },
+      spacing: {
+        gapSpace: '1.5rem',
+        gapSpaceL: '2.5rem'
       }
     }
   },
