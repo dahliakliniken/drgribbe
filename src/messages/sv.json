@@ -61,6 +61,8 @@
   },
   "common": {
     "bookConsultation": "Boka konsultation",
-    "bookFreeConsultation": "Boka fri konsultation"
+    "bookFreeConsultation": "Boka fri konsultation",
+    "close": "Stäng",
+    "open": "Öppna"
   }
 }

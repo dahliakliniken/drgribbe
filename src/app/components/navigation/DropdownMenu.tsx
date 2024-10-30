@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import Close from '../../../../public/images/close.svg'
-import Menu from '../../../../public/images/menu.svg'
-import Image from 'next/image'
 import Button from '../inputs/Button'
 import { useTranslations } from 'next-intl'
+import ButtonWithIcon from '../inputs/ButtonWithIcon'
+import CloseIcon from '../icons/CloseIcon'
+import MenuIcon from '../icons/MenuIcon'
+import ChevronIcon from '../icons/ChevronIcon'
 
 const DropdownMenu: React.FC = () => {
   const t = useTranslations()
@@ -25,7 +26,7 @@ const DropdownMenu: React.FC = () => {
     ]
 
     return links.map((link) => (
-      <li key={link} className="text-left">
+      <li key={link}>
         <Link
           href={`/${link.toLowerCase().replace(/ /g, '-')}`}
           className="hover:underline"
@@ -38,16 +39,20 @@ const DropdownMenu: React.FC = () => {
 
   return (
     <div className="relative z-50 flex items-center">
-      <button
+      <ButtonWithIcon
         onClick={toggleMenu}
-        className="mr-gapSpace bg-transparent focus:outline-none"
-        aria-label="Öppna/stäng meny"
-      >
-        <Image src={isOpen ? Close : Menu} alt="Stäng menyn" />
-      </button>
+        icon={isOpen ? <CloseIcon /> : <MenuIcon />}
+        label={isOpen ? t('common.close') : t('common.open')}
+      />
 
       {isOpen && (
-        <div className="pl-gapSpace absolute bottom-[50px] right-0 z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-[#EAE6E3] p-[10px] pt-10 opacity-100 transition-opacity duration-300">
+        <div className="before:bg- before:bg-500 absolute bottom-[60px] right-0 z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-[#EAE6E3] p-[10px] pl-gapSpace pt-10 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-[20%_20%] before:opacity-20">
+          <ButtonWithIcon
+            className="-translate-y-4 self-end"
+            onClick={() => setIsOpen(false)}
+            icon={<ChevronIcon />}
+            label={t('common.close')}
+          />
           <ul className="mb-gapSpace flex w-full flex-col gap-5">
             {renderLinks()}
           </ul>

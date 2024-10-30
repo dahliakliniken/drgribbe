@@ -24,7 +24,8 @@ const config: Config = {
       backgroundSize: {
         '50': '50%',
         '100': '100%',
-        '200': '200%'
+        '200': '200%',
+        '500': '500%'
       },
       backgroundPosition: {
         'right-50': '-50%',
