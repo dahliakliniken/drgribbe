@@ -1,13 +1,76 @@
 {
   "breadcrumbs": {
     "home": "Hem",
-    "about": "Om kliniken"
+    "about": "Kliniken"
   },
   "home": {
     "title": "Hello world!",
     "description": "This is a description."
   },
-  "about": {
-    "title": "Om kliniken"
+  "dropdown": {
+    "clinic": "Om Kliniken",
+    "breastSurgeries": "Bröstoperationer",
+    "implants": "Implantaten",
+    "skinInjections": "Hud & Injektioner",
+    "ourStaff": "Vår Personal",
+    "price": "Pris"
+  },
+  "treatmentBox": {
+    "title": "Behandlingar",
+    "treatments": {
+      "breastReduction": {
+        "title": "Bröstförminskning",
+        "paragraph1": "Många kvinnor lider av stor och tung byst.",
+        "paragraph2": "Operationen bröstförminskning är ett mycket tacksamt ingrepp där man precis som vid ett bröstlyft tar bort lös hud för att strama till bysten.",
+        "paragraph3": "Vid en bröstförminskning tas även mer eller mindre av den egna bröstvävnaden bort för att göra brösten mindre och nättare."
+      },
+      "breastEnlargement": {
+        "title": "Bröstförstoring",
+        "paragraph1": "Vid en bröstförstoring lägger man in bröstimplantat för att återskapa eller öka volymen i brösten.",
+        "paragraph2": "Bröstimplantaten läggs i en ficka bakom eller framför stora bröstmuskeln och görs säkrast via ett snitt under brösten, en teknik som Dr Gribbe utvecklat och förfinat i drygt 15 år.",
+        "paragraph3": "Det finns många varianter och märken på bröstimplantat och vid konsultationen får du hjälp att välja."
+      },
+      "breastLift": {
+        "title": "Bröstlyft",
+        "paragraph1": "Bröstlyft är en vanlig bröstoperation där hängande överskottshud tas bort, lös brösthud stramas till och bröstvårtorna flyttas upp.",
+        "paragraph2": "Vanligtvis förminskas också vårtgårdarna vid ett bröstlyft.",
+        "paragraph3": "Vid operationen läggs, precis som vid en bröstförstoring oftast även bröstimplantat in för att återskapa volym upptill i dekolletaget."
+      },
+      "muscleRelaxation": {
+        "title": "Muskelavslappnande behandling",
+        "paragraph1": "Genom att med mycket tunn nål injicera muskelavslappnande läkemedel kan man få muskler att slappna av och rynkor att försvinna eller minska.",
+        "paragraph2": "Effekten av läkemedlet kommer efter ca en vecka och varar i 3-6 månader. Inför behandlingen pratar du med dr Gribbe som gör en noggrann analys av dina önskemål och förutsättningar.",
+        "paragraph3": "Behandlingen tar några minuter och du kan lämna kliniken direkt."
+      }
+    }
+  },
+  "aboutBox": {
+    "title": "Bröstoperationer i Stockholm",
+    "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
+    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
+  },
+  "profileCard": {
+    "title": "Specialist på bröstoperationer",
+    "imageAlt": "Dr. Örjan Gribbe",
+    "imageText": "Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.",
+    "paragraph1": "Sedan 2007 har han fokuserat på estetisk plastikkirurgi, framför allt estetiska bröstoperationer och har utfört över 8 000 operationer med bröstimplantat på klinikerna Victoriakliniken, Proforma Clinic och Plastikkirurgen Stockholm.",
+    "paragraph2": "Hans nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.",
+    "paragraph3": "Med Dr Gribbe vid din sida kan du känna dig trygg genom hela processen. Oavsett om du drömmer om diskreta och eleganta bröst, en minskning för att skapa en nättare siluett, eller en förstoring för en fylligare form, kommer Dr Gribbe och hans erfarna team att hjälpa dig nå ditt önskade resultat."
+  },
+  "aboutClinic": {
+    "title":"Om Kliniken",
+    "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
+    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
+  },
+  "contact": {
+    "contactUs": "Kontakta oss",
+    "email": "Email: <email>info@dahliakliniken.se</email>",
+    "phone": "Telefon: 012-345 67 89"
+  },
+  "common": {
+    "bookConsultation": "Boka konsultation",
+    "bookFreeConsultation": "Boka fri konsultation",
+    "close": "Stäng",
+    "open": "Öppna"
   }
 }
