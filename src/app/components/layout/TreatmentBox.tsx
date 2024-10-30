@@ -66,6 +66,7 @@ const TreatmentBox: React.FC = () => {
             title={<H3 white>{treatment.title}</H3>}
             paragraphs={treatment.paragraphs}
             bgColor="bg-green"
+            smallText
             image={
               <Image
                 className="m-auto my-6"

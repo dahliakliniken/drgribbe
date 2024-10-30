@@ -12,6 +12,7 @@ type CardProps = {
   bgLeft?: boolean
   bgCenter?: boolean
   imageHeight?: number
+  smallText?: boolean
 }
 
 const Card = ({
@@ -21,15 +22,13 @@ const Card = ({
   image,
   oneColumn,
   bgRight,
-  bgLeft
+  bgLeft,
+  smallText = false
 }: CardProps) => {
   return (
-    <div className={`px-6 py-8 ${bgColor} relative h-full`}>
-      {/* Pseudo-element for background image */}
-      <div
-        className={`${bgLeft && 'bg-left-top'} ${bgRight && 'bg-right-top'} absolute inset-0 z-0 bg-card-pattern bg-200 bg-no-repeat opacity-5`}
-      />
-
+    <div
+      className={`${bgLeft && 'before:bg-left-top'} ${bgRight && 'before:bg-right-top'} px-6 py-8 before:bg-200 ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-card-pattern before:opacity-5`}
+    >
       {title && title}
 
       <div
@@ -38,7 +37,7 @@ const Card = ({
         {/* Image column, only shown if an image is provided */}
         {image && <div className="mb-2 text-center">{image}</div>}
         {paragraphs.map((paragraph, idx) => (
-          <P key={`${paragraph}-${idx}`} color="text-white">
+          <P key={`${paragraph}-${idx}`} color="text-white" small={smallText}>
             {paragraph}
           </P>
         ))}
