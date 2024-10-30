@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import DahliaLogo from '../../../../public/images/Logo.png'
+import DahliaLogo from '../../../../public/images/logo.svg'
 
 const Logo = () => {
   return (

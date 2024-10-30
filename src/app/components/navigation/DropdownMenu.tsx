@@ -46,7 +46,7 @@ const DropdownMenu: React.FC = () => {
       />
 
       {isOpen && (
-        <div className="before:bg- before:bg-500 absolute bottom-[60px] right-0 z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-[#EAE6E3] p-[10px] pl-gapSpace pt-10 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-[20%_20%] before:opacity-20">
+        <div className="before:bg- before:bg-500 -right-gapSpace pl-gapSpace absolute bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-[#EAE6E3] p-[10px] pt-10 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-[20%_20%] before:opacity-20">
           <ButtonWithIcon
             className="-translate-y-4 self-end"
             onClick={() => setIsOpen(false)}
