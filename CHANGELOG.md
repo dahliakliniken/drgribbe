@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/jennieandersson/blue-harvest/compare/v1.3.0...v1.4.0) (2024-10-30)
+
+
+### Bug Fixes
+
+* adjust width on cards ([e62b5e2](https://github.com/jennieandersson/blue-harvest/commit/e62b5e2922c93a6e5feded3254cf8175de5cf919))
+
+
+### Features
+
+* update logo format to SVG and adjust layout spacing in header and dropdown menu ([34377ef](https://github.com/jennieandersson/blue-harvest/commit/34377ef7da257d571d656d75985c996da7c275fc))
+
 # [1.3.0](https://github.com/jennieandersson/blue-harvest/compare/v1.2.0...v1.3.0) (2024-10-30)
 
 
