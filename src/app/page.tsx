@@ -8,6 +8,8 @@ import P from './components/typography/P'
 import HeaderWithFooter from './components/surfaces/HeaderWithFooter'
 import Image from 'next/image'
 import Button from './components/inputs/Button'
+import Doctor from '../../public/images/doctor.jpg'
+import CardCustom from './components/surfaces/CardCustom'
 
 const Page: React.FC = () => {
   const t = useTranslations()
@@ -16,7 +18,7 @@ const Page: React.FC = () => {
       <HeaderWithFooter />
       <main className="mb-56 flex flex-col">
         <section className="relative flex h-[calc(100vh-80px)] flex-col items-center justify-center bg-[url('/images/Welcome.png')] bg-cover bg-center bg-no-repeat">
-          <div className="absolute bottom-12">
+          <div className="absolute bottom-20">
             <Button text={t('common.bookConsultation')} />
           </div>
         </section>
@@ -24,12 +26,15 @@ const Page: React.FC = () => {
         <Card
           bgColor="bg-coral"
           bgLeft
+          image={
+            <Image src={Consultation} alt={''} className="hidden lg:block" />
+          }
           title={<H2 white>{t('aboutBox.title')}</H2>}
-          fullWidth
           paragraphs={[t('aboutBox.paragraph1'), t('aboutBox.paragraph2')]}
+          threeColumns
         />
 
-        <Image src={Consultation} alt={''} />
+        <Image src={Consultation} alt={''} className="lg:hidden" />
 
         <TreatmentBox />
 
@@ -38,6 +43,37 @@ const Page: React.FC = () => {
           <H2>{t('aboutClinic.title')}</H2>
           <P>{t('aboutClinic.paragraph1')}</P>
           <P>{t('aboutClinic.paragraph2')}</P>
+        </SpaceContainer>
+
+        <SpaceContainer spaceVertically noPadding>
+          <CardCustom
+            bgColor="bg-green"
+            bgRight
+            content={
+              <div className="lg:flex">
+                <div>
+                  <P color="text-white" className="lg:hidden">
+                    {t('profileCard.imageText')}
+                  </P>
+                  <Image
+                    src={Doctor}
+                    alt={t('profileCard.imageAlt')}
+                    className="mx-auto my-4 rounded-full lg:mr-9"
+                    height={280}
+                  />
+                  <P color="text-white" className="hidden lg:block">
+                    {t('profileCard.imageText')}
+                  </P>
+                </div>
+                <div>
+                  <P color="text-white">{t('profileCard.paragraph1')}</P>
+                  <P color="text-white">{t('profileCard.paragraph2')}</P>
+                  <P color="text-white">{t('profileCard.paragraph3')}</P>
+                </div>
+              </div>
+            }
+            title={<H2 white>{t('profileCard.title')}</H2>}
+          />
         </SpaceContainer>
       </main>
     </>
