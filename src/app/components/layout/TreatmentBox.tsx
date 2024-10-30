@@ -77,7 +77,7 @@ const TreatmentBox: React.FC = () => {
             }
             oneColumn
             bgLeft
-            imageHeight={152}
+            rounded
           />
         ))}
       </CardRow>
