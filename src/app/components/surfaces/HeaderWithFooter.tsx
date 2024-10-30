@@ -30,7 +30,7 @@ const HeaderWithFooter = () => {
         isAtBottom ? 'h-56' : 'h-20'
       } z-50 bg-[#EAE6E3]`}
     >
-      <div className="py-gapSpace flex items-center">
+      <div className="p-gapSpace flex items-center">
         <Logo />
         <DropdownMenu />
       </div>
