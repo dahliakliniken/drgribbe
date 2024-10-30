@@ -18,7 +18,7 @@ const Page: React.FC = () => {
       <HeaderWithFooter />
       <main className="mb-56 flex flex-col">
         <section className="relative flex h-[calc(100vh-80px)] flex-col items-center justify-center bg-[url('/images/Welcome.png')] bg-cover bg-center bg-no-repeat">
-          <div className="absolute bottom-20">
+          <div className="absolute bottom-24">
             <Button text={t('common.bookConsultation')} />
           </div>
         </section>
