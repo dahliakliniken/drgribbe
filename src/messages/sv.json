@@ -1,7 +1,14 @@
 {
   "breadcrumbs": {
     "home": "Hem",
-    "about": "Kliniken"
+    "brostoperationer": "Bröstoperationer",
+    "brostlyft": "Bröstlyft",
+    "brostforstoring": "Bröstförstoring",
+    "brostforminskning": "Bröstförminskning",
+    "implantaten": "Implantaten",
+    "hudochinjektioner": "Hud & injektioner",
+    "varpersonal": "Vår Personal",
+    "priser": "Priser"
   },
   "home": {
     "title": "Hello world!",
@@ -72,5 +79,38 @@
     "bookFreeConsultation": "Boka fri konsultation",
     "close": "Stäng",
     "open": "Öppna"
+  },
+  "brostoperationer": {
+    "title": "Bröstoperationer i Stockholm",
+    "text": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen."
+  },
+  "brostlyft": {
+    "title": "Bröstlyft",
+    "text": "Bröstlyft är en vanlig bröstoperation där hängande överskottshud tas bort, lös brösthud stramas till och bröstvårtorna flyttas upp."
+  },
+  "brostforstoring": {
+    "title": "Bröstförstoring",
+    "text": "Vid en bröstförstoring..."
+  },
+  "brostforminskning": {
+    "title": "Bröstförminskning",
+    "text": "Många kvinnor lider av stor och tung byst."
+  },
+  "implantaten": {
+    "title": "Implantaten",
+    "text": "Text om implantaten."
+  },
+  "hudochinjektioner":
+  {
+    "title": "Hud & Injektioner",
+    "text": "Text om hud och injektioner."
+  },
+  "varpersonal": {
+    "title": "Vår Personal",
+    "text": "Text om vår personal."
+  },
+  "priser": {
+    "title": "Priser",
+    "text": "Text om priser."
   }
 }

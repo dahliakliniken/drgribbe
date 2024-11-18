@@ -5,7 +5,12 @@ type PProps = {
   className?: string
 }
 
-const P = ({ children, color = 'text-black', small, className }: PProps) => {
+export const P = ({
+  children,
+  color = 'text-black',
+  small,
+  className
+}: PProps) => {
   return (
     <p
       className={`font-josefin-sans ${small ? 'text-base' : 'text-xl'} font-light leading-tight tracking-[0.06em] ${color} ${className}`}
@@ -14,5 +19,3 @@ const P = ({ children, color = 'text-black', small, className }: PProps) => {
     </p>
   )
 }
-
-export default P

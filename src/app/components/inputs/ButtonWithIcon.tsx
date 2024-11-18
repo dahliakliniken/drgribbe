@@ -5,7 +5,7 @@ type ButtonWithIconProps = {
   className?: string
 }
 
-const ButtonWithIcon = ({
+export const ButtonWithIcon = ({
   label,
   icon,
   onClick,
@@ -19,5 +19,3 @@ const ButtonWithIcon = ({
     {icon}
   </button>
 )
-
-export default ButtonWithIcon

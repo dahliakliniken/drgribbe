@@ -8,7 +8,7 @@ type CardProps = {
   bgCenter?: boolean
 }
 
-const CardCustom = ({
+export const CardCustom = ({
   content,
   title,
   bgColor,
@@ -17,7 +17,7 @@ const CardCustom = ({
 }: CardProps) => {
   return (
     <div
-      className={`before:lg:bg-110 z-0 before:-z-10 before:lg:bg-[500%_50%] ${bgLeft && 'before:bg-left-top'} ${bgRight && 'before:bg-[100%_50%]'} px-6 py-8 before:bg-200 ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-card-pattern before:bg-no-repeat before:opacity-5`}
+      className={`z-0 before:-z-10 before:lg:bg-110 before:lg:bg-[500%_50%] ${bgLeft && 'before:bg-left-top'} ${bgRight && 'before:bg-[100%_50%]'} px-6 py-8 before:bg-200 ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-card-pattern before:bg-no-repeat before:opacity-5`}
     >
       {title && title}
 
@@ -25,5 +25,3 @@ const CardCustom = ({
     </div>
   )
 }
-
-export default CardCustom
