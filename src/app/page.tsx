@@ -1,15 +1,15 @@
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
-import TreatmentBox from './components/layout/TreatmentBox'
-import H2 from './components/typography/H2'
-import Card from './components/surfaces/Card'
+import { TreatmentBox } from './components/layout/TreatmentBox'
+import { H2 } from './components/typography/H2'
+import { Card } from './components/surfaces/Card'
 import { useTranslations } from 'next-intl'
-import SpaceContainer from './components/layout/SpaceContainer'
-import P from './components/typography/P'
-import HeaderWithFooter from './components/surfaces/HeaderWithFooter'
+import { SpaceContainer } from './components/layout/SpaceContainer'
+import { P } from './components/typography/P'
+import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import Image from 'next/image'
-import Button from './components/inputs/Button'
+import { Button } from './components/inputs/Button'
 import Doctor from '../../public/images/doctor.jpg'
-import CardCustom from './components/surfaces/CardCustom'
+import { CardCustom } from './components/surfaces/CardCustom'
 
 const Page: React.FC = () => {
   const t = useTranslations()

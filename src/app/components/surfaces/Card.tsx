@@ -1,4 +1,4 @@
-import P from '../typography/P'
+import { P } from '../typography/P'
 
 type CardProps = {
   title: React.ReactNode
@@ -16,7 +16,7 @@ type CardProps = {
   rounded?: boolean
 }
 
-const Card = ({
+export const Card = ({
   title,
   paragraphs,
   bgColor,
@@ -49,5 +49,3 @@ const Card = ({
     </div>
   )
 }
-
-export default Card

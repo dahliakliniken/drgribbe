@@ -5,7 +5,7 @@ type SpaceContainerProps = {
   children: React.ReactNode
 }
 
-const SpaceContainer = ({
+export const SpaceContainer = ({
   noPadding,
   spaceVertically,
   children
@@ -18,5 +18,3 @@ const SpaceContainer = ({
     </div>
   )
 }
-
-export default SpaceContainer

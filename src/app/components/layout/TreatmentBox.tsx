@@ -1,17 +1,17 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import Card from '../surfaces/Card'
-import H2 from '../typography/H2'
+import Image from 'next/image'
+import { Card } from '../surfaces/Card'
+import { H2 } from '../typography/H2'
 import Enlargement from '../../../../public/images/breastEnlargement.svg'
 import Reduction from '../../../../public/images/breastReduction.svg'
 import Lift from '../../../../public/images/breastLift.svg'
 import MuscleRelaxation from '../../../../public/images/muscleRelaxation.svg'
-import CardRow from '../surfaces/CardRow'
-import H3 from '../typography/H3'
-import Image from 'next/image'
-import SpaceContainer from './SpaceContainer'
+import { CardRow } from '../surfaces/CardRow'
+import { H3 } from '../typography/H3'
+import { SpaceContainer } from './SpaceContainer'
 
-const TreatmentBox: React.FC = () => {
+export const TreatmentBox: React.FC = () => {
   const t = useTranslations()
 
   const treatments = [
@@ -84,5 +84,3 @@ const TreatmentBox: React.FC = () => {
     </>
   )
 }
-
-export default TreatmentBox

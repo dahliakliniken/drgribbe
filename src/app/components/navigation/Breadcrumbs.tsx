@@ -6,13 +6,18 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
-const Breadcrumb = () => {
+export const Breadcrumbs = () => {
   const t = useTranslations()
   const paths = usePathname()
   const pathNames = paths.split('/').filter((path) => path)
   const separator = <span>{' / '}</span>
-  const activeClass = 'text-amber-500 mx-2 font-bold'
+  const activeClass = 'text-coral mx-2 font-bold'
   const listClasses = 'hover:underline mx-2 font-bold'
+
+  /* Don't show breadcrumbs on the home page */
+  if (paths === '/') {
+    return null
+  }
 
   return (
     <nav>
@@ -44,5 +49,3 @@ const Breadcrumb = () => {
     </nav>
   )
 }
-
-export default Breadcrumb

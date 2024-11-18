@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import DahliaLogo from '../../../../public/images/logo.svg'
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <div className="flex w-full justify-center bg-[#EAE6E3]">
       {' '}
@@ -10,5 +10,3 @@ const Logo = () => {
     </div>
   )
 }
-
-export default Logo
