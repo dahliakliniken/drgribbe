@@ -22,7 +22,9 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.breastEnlargement.paragraph1'),
         t('treatmentBox.treatments.breastEnlargement.paragraph2'),
         t('treatmentBox.treatments.breastEnlargement.paragraph3')
-      ]
+      ],
+      linkText: t('treatmentBox.treatments.breastEnlargement.linkText'),
+      linkHref: '/brostoperationer/brostforstoring'
     },
     {
       title: t('treatmentBox.treatments.breastReduction.title'),
@@ -31,7 +33,9 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.breastReduction.paragraph1'),
         t('treatmentBox.treatments.breastReduction.paragraph2'),
         t('treatmentBox.treatments.breastReduction.paragraph3')
-      ]
+      ],
+      linkText: t('treatmentBox.treatments.breastReduction.linkText'),
+      linkHref: '/brostoperationer/brostforminskning'
     },
     {
       title: t('treatmentBox.treatments.breastLift.title'),
@@ -40,7 +44,9 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.breastLift.paragraph1'),
         t('treatmentBox.treatments.breastLift.paragraph2'),
         t('treatmentBox.treatments.breastLift.paragraph3')
-      ]
+      ],
+      linkText: t('treatmentBox.treatments.breastLift.linkText'),
+      linkHref: '/brostoperationer/brostlyft'
     },
     {
       title: t('treatmentBox.treatments.muscleRelaxation.title'),
@@ -49,7 +55,9 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.muscleRelaxation.paragraph1'),
         t('treatmentBox.treatments.muscleRelaxation.paragraph2'),
         t('treatmentBox.treatments.muscleRelaxation.paragraph3')
-      ]
+      ],
+      linkText: t('treatmentBox.treatments.muscleRelaxation.linkText'),
+      linkHref: '/hud-och-injektioner'
     }
   ]
 
@@ -62,7 +70,7 @@ export const TreatmentBox: React.FC = () => {
       <CardRow>
         {treatments.map((treatment, index) => (
           <Card
-            key={index}
+            key={index} // TODO: Use a more unique key
             title={<H3 white>{treatment.title}</H3>}
             paragraphs={treatment.paragraphs}
             bgColor="bg-green"
@@ -78,6 +86,9 @@ export const TreatmentBox: React.FC = () => {
             oneColumn
             bgLeft
             rounded
+            linkHref={treatment.linkHref}
+            linkText={treatment.linkText}
+            clickable
           />
         ))}
       </CardRow>

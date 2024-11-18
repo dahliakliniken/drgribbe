@@ -5,7 +5,6 @@ import { Card } from './components/surfaces/Card'
 import { useTranslations } from 'next-intl'
 import { SpaceContainer } from './components/layout/SpaceContainer'
 import { P } from './components/typography/P'
-import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import Image from 'next/image'
 import { Button } from './components/inputs/Button'
 import Doctor from '../../public/images/doctor.jpg'
@@ -15,7 +14,6 @@ const Page: React.FC = () => {
   const t = useTranslations()
   return (
     <>
-      <HeaderWithFooter />
       <main className="mb-56 flex flex-col">
         <section className="relative flex h-[calc(100vh-80px)] flex-col items-center justify-center bg-[url('/images/Welcome.png')] bg-cover bg-center bg-no-repeat">
           <div className="absolute bottom-24">
