@@ -1,3 +1,5 @@
+import { forwardRef } from 'react'
+
 type ButtonWithIconProps = {
   label: string // Accessibility label
   icon: JSX.Element
@@ -5,17 +7,18 @@ type ButtonWithIconProps = {
   className?: string
 }
 
-export const ButtonWithIcon = ({
-  label,
-  icon,
-  onClick,
-  className
-}: ButtonWithIconProps) => (
+export const ButtonWithIcon = forwardRef<
+  HTMLButtonElement,
+  ButtonWithIconProps
+>(({ label, icon, onClick, className }, ref) => (
   <button
+    ref={ref}
     onClick={onClick}
     aria-label={label}
     className={`rounded-full p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${className}`}
   >
     {icon}
   </button>
-)
+))
+
+ButtonWithIcon.displayName = 'ButtonWithIcon'

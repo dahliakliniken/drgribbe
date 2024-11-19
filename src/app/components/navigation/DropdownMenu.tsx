@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Button } from '../inputs/Button'
 import { useTranslations } from 'next-intl'
 import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
@@ -10,10 +10,31 @@ import { ChevronIcon } from '../icons/ChevronIcon'
 export const DropdownMenu: React.FC = () => {
   const t = useTranslations()
   const [isOpen, setIsOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+  const buttonRef = useRef<HTMLButtonElement>(null)
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev)
   }
+
+  const handleClickOutside = (e: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+      setIsOpen(false)
+    }
+  }
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+      buttonRef.current?.focus()
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isOpen])
 
   const renderLinks = () => {
     const links = [
@@ -51,7 +72,11 @@ export const DropdownMenu: React.FC = () => {
 
     return links.map(({ text, href, id }) => (
       <li key={id}>
-        <Link href={href} className="hover:underline">
+        <Link
+          href={href}
+          className="hover:underline"
+          onClick={() => setIsOpen(false)}
+        >
           {text}
         </Link>
       </li>
@@ -59,11 +84,14 @@ export const DropdownMenu: React.FC = () => {
   }
 
   return (
-    <div className="relative z-50 flex items-center">
+    <div className="relative z-50 flex items-center" ref={menuRef}>
       <ButtonWithIcon
+        ref={buttonRef}
         onClick={toggleMenu}
         icon={isOpen ? <CloseIcon /> : <MenuIcon />}
         label={isOpen ? t('common.close') : t('common.open')}
+        aria-haspopup="true"
+        aria-expanded={isOpen}
       />
 
       {isOpen && (
