@@ -19,7 +19,9 @@ const config: Config = {
         'josefin-sans': ['"Josefin Sans"', 'sans-serif']
       },
       backgroundImage: {
-        'card-pattern': "url('/images/dalia_icon_white.svg')"
+        'card-pattern': "url('/images/dalia_icon_white.svg')",
+        'custom-gradient': `linear-gradient(0deg, #EAE6E3, #EAE6E3), 
+                              linear-gradient(177.97deg, rgba(213, 164, 168, 0.2) 55.19%, rgba(234, 230, 227, 0.2) 78.41%)`
       },
       backgroundSize: {
         '50': '50%',

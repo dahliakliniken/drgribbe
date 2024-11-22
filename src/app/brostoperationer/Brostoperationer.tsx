@@ -4,6 +4,7 @@ import { H1 } from '../components/typography/H1'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import Link from 'next/link'
 import { Accordion } from '../components/surfaces/Accordion'
+import { H2 } from '../components/typography/H2'
 
 const Brostoperationer = () => {
   const t = useTranslations()
@@ -31,6 +32,20 @@ const Brostoperationer = () => {
     }
   ]
 
+  const accordionItems = [
+    'fasting',
+    'descutan',
+    'lotion',
+    'smoking',
+    'alcohol',
+    'cleaning',
+    'food',
+    'clothes',
+    'supportStockings',
+    'toiletBag',
+    'dog'
+  ]
+
   return (
     <main className="mb-56 flex flex-col">
       <SpaceContainer spaceVertically>
@@ -48,27 +63,23 @@ const Brostoperationer = () => {
         </ul>
       </SpaceContainer>
       <SpaceContainer spaceVertically>
-        <Accordion id="panel1" title="Accordion 1">
-          <P small>
-            {
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-            }
-          </P>
-        </Accordion>
-        <Accordion id="panel2" title="Accordion 2">
-          <P small>
-            {
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-            }
-          </P>
-        </Accordion>
-        <Accordion id="panel3" title="Accordion 3">
-          <P small>
-            {
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-            }
-          </P>
-        </Accordion>
+        <H2>{'Förberedelser inför din operation'}</H2>
+        <P>{'Det är en rad saker du ska tänka på inför din operation.'}</P>
+        {accordionItems.map((item, index) => (
+          <Accordion
+            key={index}
+            id={`panel-${index}`}
+            title={t(`accordion.${item}.title`)}
+          >
+            <P small>{t(`accordion.${item}.text1`)}</P>
+            {t.has(`accordion.${item}.text2`) && (
+              <P small>{t(`accordion.${item}.text2`)}</P>
+            )}
+            {t.has(`accordion.${item}.text3`) && (
+              <P small>{t(`accordion.${item}.text3`)}</P>
+            )}
+          </Accordion>
+        ))}
       </SpaceContainer>
     </main>
   )
