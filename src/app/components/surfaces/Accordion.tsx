@@ -26,14 +26,16 @@ export const Accordion = ({ id, title, children }: AccordionProps) => {
   }, [isOpen])
 
   return (
-    <div className="rounded-md border">
+    <div className="mb-2 rounded-md">
       <H3 className="text-lg">
         <button
           id={`${id}-header`}
           aria-expanded={isOpen}
           aria-controls={`${id}-content`}
           onClick={handleToggle}
-          className="flex w-full items-center justify-between bg-gray-100 p-4 text-left hover:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-coral"
+          className={`flex w-full items-center justify-between px-4 py-3 text-left text-white transition-colors duration-300 ${
+            isOpen ? 'bg-[#196A49]' : 'bg-green'
+          } rounded-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-green`}
         >
           <span className="font-medium">{title}</span>
           <span

@@ -116,5 +116,59 @@
   "priser": {
     "title": "Priser",
     "text": "Text om priser."
+  },
+  "accordion": {
+    "fasting": {
+      "title": "Fasta",
+      "text1": "Fasta enligt följande: Fram till 6 timmar före operationstid får du äta och dricka som vanligt. De fyra timmarna mellan 6 och 2 timmar före operationstid får du dricka max 2 glas (4 dl) av följande: vatten eller saft (klara vätskor utan bitar/fruktkött). Från 2 timmar före operationstid får du INTE äta eller dricka någonting. Inte heller tugga tuggummi eller snusa.",
+      "text2": "Eftersom operationstiden inte bestäms förrän på operationsdagen så ska du utgå från den ankomsttid till kliniken som du fått. Väl på kliniken kommer du få besked om du kan dricka mera. Du kan även komma att få speciella direktiv av Dr Gribbe eller annan person på kliniken.",
+      "text3": "Anledningen till att man fastar inför en operation är att magsäcken måste vara helt tom vid operationens start. Innehåll i magsäcken kan annars under sövning  komma upp i matstrupen och vidare ner i lungorna vilket kan resultera i kvävning eller lunginflammation." 
+    },
+    "descutan": {
+      "title": "Descutan",
+      "text1": "Tvätta dig med tvålen Descutan kvällen före och på operationsdagens morgon. Tvätta håret med schampo och balsam kvällen före. Du behöver inte tvätta håret med Descutan."
+    },
+    "lotion": {
+      "title": "Hudlotion",
+      "text1": "Du får inte smörja in huden med någon hud-eller kroppslotion efter att du tvättat kroppen med Descutan. Det går dock bra att smörja in ansiktet med en kräm men ingen annan del av kroppen."
+    },
+    "smoking": {
+      "title": "Rökning",
+      "text1": "Du ska helst inte röka tiden innan operationen. Vid bröstlyft så är det ett absolut krav och vid bröstförstoring är det rekommenderat att du inte rökt 4 veckor innan operationen. Rökning är dåligt för operationen av många skäl. Rökning drar ihop blodkärlen och är negativt för sårläkningen, ökar risken för infektion och fula ärr. I värsta fall kan läkningen påverkas så pass att vävnad, hud och fett dör (nekros) med svårläkta sår som följd. Dessutom så påverkar rökning narkosen. Rökning gör luftvägarna slemmiga och mer reaktiva vilket gör narkosen mindre säker. Slemmet minskar luft- och syreutbytet till lungorna. Retningen kan göra att man får kramp i struphuvudet (laryngospasm) vilket ytterligare kan hindra luftutbytet på ett kritiskt sätt."
+    },
+    "alcohol": {
+      "title": "Alkohol",
+      "text1": "Du ska inte dricka alkohol ca 2 veckor innan operationen. Alkohol gör att du blöder lättare och dessutom interagerar alkohol med de läkemedel som används för narkos och smärtlindring."
+    },
+    "cleaning": {
+      "title": "Rent hemma",
+      "text1": "Bädda med rena sängkläder hemma och städa gärna rent. Du ska inte städa, dammsuga etc första två veckorna efter operationen."
+    },
+    "food": {
+      "title": "Mat",
+      "text1": "Det kan vara bra att förbereda med lite färdiglagad mat hemma så du slipper laga mat första dagen du kommer hem."
+    },
+    "clothes": {
+      "title": "Kläder",
+      "text1": "Tag med dig bekväma kläder som är lätta att ta på och av. Till exempel ett rymligt linne, mjukisbyxor och en tröja med blixtlås fram. Under operationen har du dina egna underkläder och eventuella stödstrumpor på dig."
+    },
+    "supportStockings" : {
+      "title": "Stödstrumpor",
+      "text1": "Om du ska vara med om en längre operation på flera timmar såsom bröstlyft med eller utan implantat så ska du ha stödstrumpor. Köp dessa på apoteket och ha dem på dig när du kommer till kliniken på operationsdagen. Stödstrumpor motverkar risken för blodproppar i benen (djup ventrombos, DVT)."
+    },
+    "toiletBag": {
+      "title": "Necessär",
+      "text1": "Ta med en necessär med hygienartiklar."
+    },
+    "dog": {
+      "title": "Hund",
+      "text1": "Om du har hund, och då särskilt en större hund så kan det vara svårt att gå ut med de första 1-2 veckorna.",
+      "text2": "Om hunden rycker till i kopplet kraftigt kan det påverka operationsområdet negativt. Det kan vara bra att planera för hundvakt. Det kan också vara bra att ha kopplet i en sele runt din kropp istället för i handen. När hunden rycker eller drar så fortplantas inte rycket till din hand och arm utan till selen och midjan, kroppen."
+    }
   }
 }
+
+
+
+
+
