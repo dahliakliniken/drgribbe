@@ -11,6 +11,8 @@ const Brostoperationer = () => {
   const messages = useMessages()
   const beforeOperationKeys = Object.keys(messages.beforeOperation)
   const afterOperationKeys = Object.keys(messages.afterOperation)
+  const aftercareKeys = Object.keys(messages.aftercare)
+  const afterFirstReturnVisitKeys = Object.keys(messages.afterFirstReturnVisit)
 
   const links = [
     {
@@ -49,14 +51,40 @@ const Brostoperationer = () => {
   })
 
   const afterOperationItems = afterOperationKeys.map((key) => {
-    const contentKeys = ['text1', 'text2', 'text3'] // Predefined keys for texts
+    const contentKeys = ['text1', 'text2', 'text3']
     const content = contentKeys
-      .filter((textKey) => t.has(`afterOperation.${key}.${textKey}`)) // Filter out texts that don't exist
+      .filter((textKey) => t.has(`afterOperation.${key}.${textKey}`))
       .map((textKey) => t(`afterOperation.${key}.${textKey}`))
 
     return {
       id: key,
       title: t(`afterOperation.${key}.title`),
+      content
+    }
+  })
+
+  const aftercareItems = aftercareKeys.map((key) => {
+    const contentKeys = ['text1', 'text2', 'text3', 'text4']
+    const content = contentKeys
+      .filter((textKey) => t.has(`aftercare.${key}.${textKey}`))
+      .map((textKey) => t(`aftercare.${key}.${textKey}`))
+
+    return {
+      id: key,
+      title: t(`aftercare.${key}.title`),
+      content
+    }
+  })
+
+  const afterFirstReturnVisitItems = afterFirstReturnVisitKeys.map((key) => {
+    const contentKeys = ['text1', 'text2', 'text3', 'text4']
+    const content = contentKeys
+      .filter((textKey) => t.has(`afterFirstReturnVisit.${key}.${textKey}`))
+      .map((textKey) => t(`afterFirstReturnVisit.${key}.${textKey}`))
+
+    return {
+      id: key,
+      title: t(`afterFirstReturnVisit.${key}.title`),
       content
     }
   })
@@ -88,6 +116,20 @@ const Brostoperationer = () => {
         <H2>{'Efter din operation'}</H2>
         <div className="max-w-3xl">
           <Accordion items={afterOperationItems} />
+        </div>
+      </SpaceContainer>
+      <SpaceContainer spaceVertically>
+        <H2>
+          {'När du lämnat kliniken och tiden from till första återbesöket'}
+        </H2>
+        <div className="max-w-3xl">
+          <Accordion items={aftercareItems} />
+        </div>
+      </SpaceContainer>
+      <SpaceContainer spaceVertically>
+        <H2>{'Efter första återbesöket'}</H2>
+        <div className="max-w-3xl">
+          <Accordion items={afterFirstReturnVisitItems} />
         </div>
       </SpaceContainer>
     </main>
