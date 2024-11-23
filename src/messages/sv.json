@@ -117,7 +117,7 @@
     "title": "Priser",
     "text": "Text om priser."
   },
-  "accordion": {
+  "beforeOperation": {
     "fasting": {
       "title": "Fasta",
       "text1": "Fasta enligt följande: Fram till 6 timmar före operationstid får du äta och dricka som vanligt. De fyra timmarna mellan 6 och 2 timmar före operationstid får du dricka max 2 glas (4 dl) av följande: vatten eller saft (klara vätskor utan bitar/fruktkött). Från 2 timmar före operationstid får du INTE äta eller dricka någonting. Inte heller tugga tuggummi eller snusa.",
@@ -165,8 +165,57 @@
       "text1": "Om du har hund, och då särskilt en större hund så kan det vara svårt att gå ut med de första 1-2 veckorna.",
       "text2": "Om hunden rycker till i kopplet kraftigt kan det påverka operationsområdet negativt. Det kan vara bra att planera för hundvakt. Det kan också vara bra att ha kopplet i en sele runt din kropp istället för i handen. När hunden rycker eller drar så fortplantas inte rycket till din hand och arm utan till selen och midjan, kroppen."
     }
+  },
+  "afterOperation": {
+    "awakening": {
+      "title": "Uppvaket",
+      "text1": "Efter operationen vaknar du upp på uppvaket. Där tar en sjuksköterska hand om dig och ser till att du mår bra och att du inte mår illa eller har ont. Sköterskan hjälper dig att komma upp på benen. Du får komma upp i sittande, stående och att gå på kortare promenader. Du får hjälp att gå på toaletten. OBS! Det är mycket viktigt att du får hjälp första gångerna du vill komma upp. Om du går upp utan hjälp finns det en risk att du svimmar, ramlar och slår dig. Sköterskan bestämmer sen när det är ok för dig att gå upp själv. På uppvaket har du en skön säng och du kommer vilja ligga och vila i din säng ett tag. Du kan läsa en bok eller tidning eller lyssna på musik. Efter ca två timmar på uppvaket har du blivit tillräckligt pigg för att kunna gå omkring och röra dig och komma till mottagningsrummet på operationsavdelningen som ligger precis bredvid uppvaket."
+    },
+    "recoveryRoom": {
+      "title": "Mottagningsrummet som ligger bredvid uppvaket",
+      "text1": "När du kommit upp till rummet bredvid uppvaket så får du slå dig ner i en mobiliseringsfåtölj och läsa, röra dig mjukt och lyssna på musik. En ur personalen kommer att ta hand om dig. Du kommer få information kring den bröstgymnastik som du ska göra ca varannan timme de närmaste dagarna efter operationen."
+    },
+    "rehab": {
+      "title": "Gymnastik",
+      "text1": "Ungefär fyra timmar efter operationen hjälper sjuksköterskan dig att göra vissa lättare gymnastikövningar ”bröstgymnastik” där du stretchar bröstmusklerna. Övning 1: Med raka armar för du händerna bakom rumpan och skjuter fram bröstkorgen samtidigt som du drar axlarna bakåt. Övning 2: Raka armar längs sidan av kroppen. För sedan armarna rakt ut från kroppen och upp över huvudet så att händerna möts. Båda övningarna kan upprepas ca var 15:e minut.",
+      "text2": "Att komma upp och promenera på kliniken och göra gymnastiken är viktig och minskar smärtan. Om du inte är uppe och rör dig så stelnar du lätt till vilket gör att smärtan ökar. Gör gymnastiken flera gånger i timmen. Du behöver givetvis inte gå upp på natten. OBS! Du ska inte göra gymnastiken om implantaten lagts framför muskeln, om du gjort ett implantatbyte eller ett bröstlyft."
+    },
+    "food": {
+      "title": "Mat",
+      "text1": "Så småningom kommer du att känna dig hungrig. Hör med sjuksköterskan vad som finns att äta. Det kommer serveras kaffe, juice, läsk, smörgås och/eller middag/kvällsmat. Sjuksköterskan bestämmer när du får äta."
+    },
+    "homecoming": {
+      "title": "Hemgång",
+      "text1": "Du behöver stanna på kliniken fyra timmar efter operationen, ibland mer. Hemgång sker efter att både sköterskan och jag varit inne och pratat med dig. Om du mår bra och inte har så ont så kan du utan problem gå hem. Vissa patienter går faktiskt ut på restaurang eller bio på operationsdagen."
+    },
+    "night": {
+      "title": "Natt",
+      "text1": "Ofta är det inget problem att sova på natten efter en operation. Hitta en bekväm ställning på rygg och ta extra smärtstillande om det behövs."
+    },
+    "bandage": {
+      "title": "Förband",
+      "text1": "Du har en bh på dig när du vaknar som narkos- och operationssjuksköterskorna satt på dig strax efter operationens slut. Bröstförstoring och implantatbyte: Du har då en ljusbrun tejp (kirurgtejp) närmast såret, därefter en lös vit kompress och ytterst en bh. Inga mer förband. Dagen efter op tas den lösa kompressen bort. Bröstlyft: Närmast ärren har du kirurgtejp, ovanpå denna ett vitt självhäftande förband Mepore och ytterst en bh. Meporen avlägsnas på morgonen dagen efter operationen. Alla patienter får med sig en tejprulle."
+    },
+    "driving": {
+      "title": "Bilkörning",
+      "text1": "Efter en narkos måste du vänta 24 timmar med att köra bil. Detta beror på att läkemedlen som ges under narkosen kan påverka reaktionsförmågan och hur du tänker och tar beslut. Då är det farligt att köra själv. Efter en bröstoperation ska du dessutom avvakta med bilkörning ca en vecka efter operation eller fram till första återbesöket. Detta då du vid bilkörning kan utsättas för situationer där du behöver utföra snabba eller kraftiga armrörelser vilket du inte får göra efter en bröstoperationen då det ökar risken för blödning."
+    },
+    "returnVisit": {
+      "title": "Återbesök",
+      "text1": "Boka ett återbesök hos mig 7-10 dagar efter operationen. Återbesöket bokar du i receptionen på väg hem alternativt så hör du av dig så hittar vi en tid som passar. Vid återbesöket byter jag tejpen som du har på ärren och kontrollerar att allt läker som det ska."
+    }
   }
-}
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 

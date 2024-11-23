@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl'
+import { useMessages, useTranslations } from 'next-intl'
 import { P } from '../components/typography/P'
 import { H1 } from '../components/typography/H1'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
@@ -8,6 +8,9 @@ import { H2 } from '../components/typography/H2'
 
 const Brostoperationer = () => {
   const t = useTranslations()
+  const messages = useMessages()
+  const beforeOperationKeys = Object.keys(messages.beforeOperation)
+  const afterOperationKeys = Object.keys(messages.afterOperation)
 
   const links = [
     {
@@ -32,19 +35,31 @@ const Brostoperationer = () => {
     }
   ]
 
-  const accordionItems = [
-    'fasting',
-    'descutan',
-    'lotion',
-    'smoking',
-    'alcohol',
-    'cleaning',
-    'food',
-    'clothes',
-    'supportStockings',
-    'toiletBag',
-    'dog'
-  ]
+  const beforeOperationItems = beforeOperationKeys.map((key) => {
+    const contentKeys = ['text1', 'text2', 'text3'] // Predefined keys for texts
+    const content = contentKeys
+      .filter((textKey) => t.has(`beforeOperation.${key}.${textKey}`)) // Filter out texts that don't exist
+      .map((textKey) => t(`beforeOperation.${key}.${textKey}`))
+
+    return {
+      id: key,
+      title: t(`beforeOperation.${key}.title`),
+      content
+    }
+  })
+
+  const afterOperationItems = afterOperationKeys.map((key) => {
+    const contentKeys = ['text1', 'text2', 'text3'] // Predefined keys for texts
+    const content = contentKeys
+      .filter((textKey) => t.has(`afterOperation.${key}.${textKey}`)) // Filter out texts that don't exist
+      .map((textKey) => t(`afterOperation.${key}.${textKey}`))
+
+    return {
+      id: key,
+      title: t(`afterOperation.${key}.title`),
+      content
+    }
+  })
 
   return (
     <main className="mb-56 flex flex-col">
@@ -65,21 +80,15 @@ const Brostoperationer = () => {
       <SpaceContainer spaceVertically>
         <H2>{'Förberedelser inför din operation'}</H2>
         <P>{'Det är en rad saker du ska tänka på inför din operation.'}</P>
-        {accordionItems.map((item, index) => (
-          <Accordion
-            key={index}
-            id={`panel-${index}`}
-            title={t(`accordion.${item}.title`)}
-          >
-            <P small>{t(`accordion.${item}.text1`)}</P>
-            {t.has(`accordion.${item}.text2`) && (
-              <P small>{t(`accordion.${item}.text2`)}</P>
-            )}
-            {t.has(`accordion.${item}.text3`) && (
-              <P small>{t(`accordion.${item}.text3`)}</P>
-            )}
-          </Accordion>
-        ))}
+        <div className="max-w-3xl">
+          <Accordion items={beforeOperationItems} />
+        </div>
+      </SpaceContainer>
+      <SpaceContainer spaceVertically>
+        <H2>{'Efter din operation'}</H2>
+        <div className="max-w-3xl">
+          <Accordion items={afterOperationItems} />
+        </div>
       </SpaceContainer>
     </main>
   )
