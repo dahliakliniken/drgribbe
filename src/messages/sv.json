@@ -208,8 +208,92 @@
       "title": "Återbesök",
       "text1": "Boka ett återbesök hos mig 7-10 dagar efter operationen. Återbesöket bokar du i receptionen på väg hem alternativt så hör du av dig så hittar vi en tid som passar. Vid återbesöket byter jag tejpen som du har på ärren och kontrollerar att allt läker som det ska."
     }
-  }
-  }
+  },
+  "aftercare": {
+    "painkillers": {
+      "title": "Smärtor och smärtstillande",
+      "text1": "Efter operationen upplever man mer eller mindre smärtor från operationsområdet. Efter en bröstförstoring där implantaten läggs under stora bröstmuskeln kan du känna smärtor från muskeln, dels där den delats nedtill i mitten av brösten och dels på bröstens ovansidor där implantaten spänner ut muskeln. Dessutom kan det, oavsett typ av bröstoperation, smärta från stygnen under brösten. Smärtorna kan stråla lite åt olika håll. Ibland kan de öka första dagarna efter operationen då svullnaden ökar men oftast så minskar de efter 1-2 dagar. De allra flesta patienter är helt smärtfria efter en vecka. Det förekommer dock att smärtorna från stygnen under brösten kan göra sig påminda flera veckor eller till och med månader efter operationen.",
+      "text2": "Jag skriver ett elektroniskt recept på smärtstillande och medicinerna kan hämtas ut på vilket apotek som helst. Du får recept på paracetamol (till exempel Alvedon) och tramadol (till exempel Tradolan). Alvedon tar du i maxdos, fyra gram om dagen. Ta två tabletter à 500 mg var 6:e timme. Du kan förskjuta intagen ett par timmar för att inte störa nattsömnen. Alvedon är ett mycket effektivt smärtlindrande läkemedel och ska alltid tas som grund mot smärtan. Tradolan tar du vid behov. Eventuellt bara till natten eller varje gång du tar Alvedon. Tradolan kan göra att man känner sig lite trött och eventuellt också illamående.",
+      "text3": "Vanligtvis behöver man ta smärtstillande första veckan efter operation. Ibland kortare, ibland lite längre. Tänk på att trappa ut Tradolan först och därefter Alvedon.",
+      "text4": "Glöm inte att göra gymnastiken och att ta promenader! Den hjälper bra mot smärtan. Om du behöver mer eller annan typ av smärtlindring så kan du kontakta mig på email eller sms."
+    },
+    "antibiotics": {
+        "title": "Penicillin",
+        "text1": "Jag skriver ut penicillin, flukloxacillin i förebyggande syfte vid bröstlyft, och bröstförminskning men inte vid endast bröstförstoring. Tag flukloxacillin 1 gram tre gånger om dagen i en vecka. Om du är allergisk så skriver jag i stället ut klindamycin (Dalacin)."
+      },
+    "appearance": {
+      "title": "Bröstens utseende",
+      "text1": "Brösten kommer att ändra utseende mycket de första veckorna, månaderna efter operationen. Oftast så blir de mindre fylliga upptill och mer fylliga undertill och åt sidorna. Brösten är ofta smala från början men kommer öka i bredd både mot mitten och framför allt åt sidorna. Höger och vänster bröst kan se lite olika ut första tiden vilket är helt normalt. Titta inte för mycket på brösten i början då de ändå kommer att ändra sig mycket.",
+      "text2": "Stygnen under brösten gör att det ser lite knöligt ut här. Denna knölighet försvinner efter några månader."
+    },
+    "sensations": {
+      "title": "Andra förnimmelser från brösten",
+      "text1": "Det är inte ovanligt att man kan höra och känna ett knastrande ljud under huden i och omkring operationsområdet. Det är luft som kommer in under huden under operationen. Detta är helt normalt och luften försvinner efter några dagar genom att den tas upp i vävnaden vilket är helt ofarligt. Ljudet påminner om ljudet som blir när man går på nysnö."
+    },
+    "scars": {
+      "title": "Ärren",
+      "text1": "Under brösten är det sytt i flera lager. I början efter operationen kan det kännas knöligt på grund av stygnen. Det är normalt och stygnen under huden håller ihop såret så att ärret ska läka så fint som möjligt. Det jämnar till sig då stygnen försvinner efter en till två månader. Ibland kan det plötsligt göra väldigt ont när ett av stygnen släpper många veckor efter operationen. Det är ofarligt och normalt."
+    },
+    "tape": {
+      "title": "Tejpen",
+      "text1": "Låt tejpen sitta kvar till återbesöket. Den sitter fast mycket bra och brukar inte lossna. Om den skulle lossna så förstärk med tejpen du fick med dig hem. Du kan duscha på tejpen men tvåla inte på den. Klapptorka och låt sedan tejpen lufttorka."
+    },
+    "sleeping": {
+      "title": "Sova",
+      "text1": "Du kan sova på rygg eller på sidan, det som känns bekvämast. När du väl börjar sova på magen så brukar en position lite snett framstupa vara skönt."
+    },
+    "physicalActivity": {
+      "title": "Gymnastik/sport",
+      "text1": "Fram till återbesöket är det bra att komma ut och promenera. Pendla med armarna och slappna av i kroppen. Gör bröstgymnastiken enligt ovan. Ingen annan gymnastik de första veckorna."
+    },
+    "bathingSauna": {
+        "title": "Bad och bastu",
+        "text": "Du får inte bada eller basta innan första återbesöket."
+      },
+      "sunExposure": {
+        "title": "Solning",
+        "text": "Du får inte sola fram till första återbesöket."
+      },
+      "lifting": {
+        "title": "Tunga lyft",
+        "text1": "Första veckan så ska du ta det riktigt lugnt och inte lyfta tungt. Alla rörelser ska vara mjuka, långsamma och inte ryckiga eller häftiga. Efter första veckan får du känna efter hur mycket du kan lyfta. Det gör inget om det tar emot lite men det ska inte göra ont. Tänk på att lyfta rätt med rak rygg och böjda knän."
+      },
+    "bra": {
+      "title": "BH",
+      "text1": "Den bh som du får på kliniken räcker bra fram till första återbesöket. Bär den dygnet runt första veckan. Därefter kan du gå top-less några dagar och ha bh:n på natten. Vi pratar bh på återbesöket."
+    },
+    "breastMassage": {
+      "title": "Massage, röra brösten",
+      "text1": "Du behöver inte massera brösten. Däremot så är det viktigt att du rör på, stryker på huden, bröstvårtorna och vårtgårdarna. Detta minskar risken för överkänslighet (hyperestesi) i huden."
+    },
+    "driving": {
+      "title": "Bilkörning",
+      "text1": "Efter en narkos måste du vänta 24 timmar med att köra bil. Detta beror på att läkemedlen som ges under narkosen kan påverka reaktionsförmågan och hur du tänker och tar beslut. Då är det farligt att köra själv. Efter en bröstoperation ska du dessutom avvakta med bilkörning ca en vecka efter operation eller fram till första återbesöket. Detta då du vid bilkörning kan utsättas för situationer där du behöver utföra snabba eller kraftiga armrörelser vilket du inte får göra efter en bröstoperation då det ökar risken för blödning."
+    }
+  },
+  "afterFirstReturnVisit": {
+    "scarTaping": {
+      "title": "Tejpning av ärren",
+      "text1": "Du ska fortsätta tejpa ärren i minst 6 månader efter operationen. Tejpen gör att ärrkanterna inte rör sig mot varandra, en rörelse som annars stimulerar ärrbildningen. Byt tejpen en gång i veckan till en gång varannan vecka beroende på hudtyp, hur mycket du svettas och hur snabbt tejpen blir smutsig. Om man byter tejp för ofta blir huden irriterad. Tejpen tar då med sig lite av det yttersta hudlagret och det kan uppstå små sår. Om huden blir irriterad kan du gå utan tejp några dagar upp till en vecka och låta huden vila. Du kan då passa på att smörja med mjukgörande kräm. Börja sedan tejpa igen och tänk på att inte byta för ofta."
+    },
+    "sportAndGymnastics": {
+      "title": "Sport och gymnastik",
+      "text1": "Promenader går bra från första dagen efter op. Det är bra om du kommer ut och tar promenader då det minskar smärtorna. Efter 5-6 veckor kan du börja med spinning, lättare styrketräning av ben, mage, rygg och rumpa samt yoga. Vänta dock 3 månader innan du börjar med sporter som gör att brösten hoppar såsom tennis, ridning, joggning etc. Vänta även med styrketräning överkropp 3 månader. Detta för att vävnaden ska tillåtas läka i lugn och ro fram till dess. Jag har gjort fickor för implantaten som är lagom stora för just dina implantat och det är viktigt att implantaten inte skumpar omkring och töjer ut fickorna innan vävnaden läkt.Tänk på att ha en bra, kupad sport-bh när du sportar."
+    },
+    "braAndSupport": {
+      "title": "Bh och stöd",
+      "text1": "Vi pratar om bh vid första återbesöket. Vilken bh och hur mycket stöd man behöver är individuellt. Vi tittar tillsammans och jag förklarar. Ofta kan man gå med lite mindre stöd i början för att så småningom byta till bättre och bättre stöd. Efter första återbesöket är det inte ovanligt att jag rekommenderar ett bra stöd nattetid med en kupad sport-bh till exempel Abecita Kimberly eller liknande. Annars kan brösten röra sig och töja ut vävnaden. När du ligger på rygg faller exempelvis brösten annars åt sidorna. Även dagtid är ofta en kupad sport-bh bra första månaderna efter operationen. Till exempel Anita Active eller Abecita Kimberly. Viktigt när du köper en bh är att du får hjälp att få den utprovad. Efter ca 3 månader kan man börja med bygel-bh. Även här är det viktigt att du får hjälp att få den utprovad. Byglarna ska vara långa och ligga under hela brösten. Bygeln får inte skära in någonstans såsom i mitten av brösten eller på bröstens sidor. Den ska inte heller glida upp och ligga an mot brösten. Om bygeln skär in i brösten så kan trycket göra att vävnaden (huden och underhudsfettet) tunnas ut. Detta kan leda till att du börjar känna implantaten och att de får sämre stöd. När du sportar så ska du givetvis ha en sport-bh. Denna bh skall gärna vara kupad och ge ett riktigt bra stöd. Bra stöd för brösten är viktigt för att bevara slutresultatet och för att motverka att brösten börjar hänga till sig."
+    },
+    "bathingAndSauna": {
+      "title": "Bad och bastu",
+      "text1": "Efter en bröstförstoring så får du normalt bada i badkar, pool samt sjö och hav cirka en vecka efter första återbesöket. Om du samtidigt gjort ett bröstlyft bör det normalt gå några veckor till. Vi pratar om detta på återbesöket."
+    },
+    "sunExposure": {
+      "title": "Solning",
+      "text1": "Du får inte sola ärren på minst ett år efter operationen. Täck med dubbla lager tejp, kläder, baddräkt eller bikini. Om du solar på ärren kan de bli pigmenterade (mörka). Du kan sola kroppen i övrigt."
+    }
+  }  
+}
 
 
 
