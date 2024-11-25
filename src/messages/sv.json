@@ -292,6 +292,67 @@
       "title": "Solning",
       "text1": "Du får inte sola ärren på minst ett år efter operationen. Täck med dubbla lager tejp, kläder, baddräkt eller bikini. Om du solar på ärren kan de bli pigmenterade (mörka). Du kan sola kroppen i övrigt."
     }
+  },
+  "prices": {
+    "title": "Priser",
+    "readMore": "Läs mer om detta här"
+  },
+  "priceList": {
+    "consultation": {
+      "title": "Konsultation",
+      "price": "Kostnadsfri"
+    },
+    "breastAugmentation": {
+      "title": "Bröstförstoring och Implantatbyte",
+      "procedure1": {
+          "name": "Implantat från Mentor eller Motiva Ergonomix 1 och Round",
+          "price": "43 000 kr"
+      },
+      "procedure2": {
+        "name": "Motiva Ergonomix 2 inklusive Joy",
+        "price": "61 000 kr"
+      },
+      "procedure3":   {
+        "name": "Andra implantat såsom Polytech och B-lite tillgängliga på förfrågan",
+        "price": ""
+      }
+    },
+    "breastLift": {
+      "title": "Bröstlyft",
+      "price": "Från 56 000 kr"
+    },
+    "breastAugmentationLift": {
+      "title": "Bröstförstoring med bröstlyft",
+      "price": "Från 75 000 kr"
+    },
+    "breastReduction": {
+      "title": "Bröstförminskning",
+      "price": "Från 60 000 kr"
+    },
+    "breastReductionImplants": {
+      "title": "Bröstförminskning med implantat",
+      "price": "Från 80 000 kr"
+    },
+    "implantRemoval": {
+      "title": "Uttag implantat",
+      "price": "26 000 kr"
+    },
+    "capsuleClipping": {
+      "title": "Kapseloperation kapselklyvning",
+      "price": "26 000 kr"
+    },
+    "capsuleRemoval": {
+      "title": "Kapseloperation kapselektomi",
+      "price": "Från 50 000 kr"
+    },
+    "other": {
+      "title": "Övrigt",
+      "procedure1": {
+        "name": "Kapselgaranti 5 år",
+        "price": "5 000 kr",
+        "link": "/kapselgaranti"
+      }
+    }
   }  
 }
 
