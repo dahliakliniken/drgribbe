@@ -2,6 +2,7 @@ import { useMessages, useTranslations } from 'next-intl'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import PriceList from '../components/surfaces/PriceList'
 import { H1 } from '../components/typography/H1'
+import { Pillar } from '../components/layout/Pillar'
 
 const Priser = () => {
   const t = useTranslations()
@@ -33,10 +34,12 @@ const Priser = () => {
   })
 
   return (
-    <main className="mb-56 flex flex-col">
+    <main className="mb-36 flex flex-col">
       <SpaceContainer spaceVertically>
-        <H1>{t('prices.title')}</H1>
-        <PriceList items={items} />
+        <Pillar>
+          <H1>{t('priser.title')}</H1>
+          <PriceList items={items} />
+        </Pillar>
       </SpaceContainer>
     </main>
   )

@@ -90,7 +90,7 @@ const Brostoperationer = () => {
   })
 
   return (
-    <main className="mb-56 flex flex-col">
+    <main className="mb-36 flex flex-col">
       <SpaceContainer spaceVertically>
         <H1>{t('brostoperationer.title')}</H1>
         <P>{t('brostoperationer.text')}</P>
