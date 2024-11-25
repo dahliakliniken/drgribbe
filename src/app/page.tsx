@@ -14,7 +14,7 @@ const Page: React.FC = () => {
   const t = useTranslations()
   return (
     <>
-      <main className="mb-56 flex flex-col">
+      <main className="mb-36 flex flex-col">
         <section className="relative flex h-[calc(100vh-80px)] flex-col items-center justify-center bg-[url('/images/Welcome.png')] bg-cover bg-center bg-no-repeat">
           <div className="absolute bottom-24">
             <Button text={t('common.bookConsultation')} />

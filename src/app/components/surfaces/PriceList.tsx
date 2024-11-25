@@ -20,8 +20,6 @@ const PriceList = ({ items }: { items: Item[] }) => {
       {items.map(({ title, price, procedures }, index) => {
         const hasSubProcedures = procedures.length > 0
 
-        console.log(procedures)
-
         return (
           <li
             key={index}
@@ -48,7 +46,7 @@ const PriceList = ({ items }: { items: Item[] }) => {
                           href={link}
                           className="text-sm underline underline-offset-2 hover:text-coral"
                         >
-                          {t('prices.readMore')}
+                          {t('priser.readMore')}
                         </Link>
                       </div>
                     )}

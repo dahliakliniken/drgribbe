@@ -12,7 +12,8 @@
     "implantaten": "Implantaten",
     "hud-och-injektioner": "Hud & injektioner",
     "var-personal": "Vår Personal",
-    "priser": "Priser"
+    "priser": "Priser",
+    "garanti": "Garanti"
   },
   "home": {
     "title": "Hello world!",
@@ -119,7 +120,42 @@
   },
   "priser": {
     "title": "Priser",
-    "text": "Text om priser."
+    "readMore": "Läs mer om detta här"
+  },
+  "garanti": {
+    "preamble1": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
+    "preamble2": "Dr Gribbe har under hela sin karriär varit noggrann med att patienterna ska känna sig välinformerade och sedda före och efter operationen. Det har resulterat i trygga och nöjda patienter där slutkontrollen blir en bekräftelse på det förväntade resultatet.",
+    "title": "Trygghetsgaranti och kapselgaranti",
+    "intro": "För att du ska känna dig extra trygg så ingår ett trygghetspaket i operations priset. Du har dessutom möjlighet att teckna en (5 års) kapselgaranti.",
+    "securityPackage": {
+      "title": "Trygghetspaket under ett år",
+      "points": {
+        "point1": "Postoperativ blödning",
+        "point2": "Postoperativ infektion",
+        "point3": "Kostnadsfria återbesök",
+        "point4": "Asymmetri storleksskillnad",
+        "point5": "Asymmetri höjdskillnad",
+        "point6": "Onormal ärrbildning",
+        "point7": "Ruptur, Läckage",
+        "point8": "Rotation",
+        "point9": "Töjd ficka",
+        "point10": "Bottom-out (BO)",
+        "point11": "Onormal muskelpåverkan",
+        "point12": "Symmastia",
+        "point13": "Dygnetrunt jour tiden efter operation"
+      }
+    },
+    "capsuleGuarantee": {
+        "title": "Kapselgaranti under fem år",
+        "points": {
+          "point1": "Kapselkontraktion, hård kapsel"
+        },
+        "price": "5000 kr"
+      },
+    "followUps": {
+      "title": "Återbesök, extrabesök och uppföljning",
+      "description": "Återbesök sker alltid ca 9-14 dagar efter operationen och 4-6 månader efter operationen för kontroll att allt ser bra ut. Därefter är du välkommen på gratis extrabesök om och när du vill. Uppföljning sker efter 2 år då ytterligare en kontroll att allt ser bra ut görs."
+    }
   },
   "beforeOperation": {
     "fasting": {
@@ -293,10 +329,6 @@
       "text1": "Du får inte sola ärren på minst ett år efter operationen. Täck med dubbla lager tejp, kläder, baddräkt eller bikini. Om du solar på ärren kan de bli pigmenterade (mörka). Du kan sola kroppen i övrigt."
     }
   },
-  "prices": {
-    "title": "Priser",
-    "readMore": "Läs mer om detta här"
-  },
   "priceList": {
     "consultation": {
       "title": "Konsultation",
@@ -350,10 +382,10 @@
       "procedure1": {
         "name": "Kapselgaranti 5 år",
         "price": "5 000 kr",
-        "link": "/kapselgaranti"
+        "link": "/garanti"
       }
     }
-  }  
+  }
 }
 
 

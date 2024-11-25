@@ -5,7 +5,7 @@ import { A } from '../typography/A'
 import { P } from '../typography/P'
 
 type CardProps = {
-  title: React.ReactNode
+  title?: React.ReactNode
   paragraphs: string[]
   bgColor: string // TODO: Define and set specific color types
   image?: React.ReactNode

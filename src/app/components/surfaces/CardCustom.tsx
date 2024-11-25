@@ -1,6 +1,6 @@
 type CardProps = {
   content: React.ReactNode
-  title: React.ReactNode
+  title?: React.ReactNode
   bgColor: string // TODO: Define and set specific color types
   fullWidth?: boolean
   bgRight?: boolean
