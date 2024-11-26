@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react'
 import { Logo } from '../navigation/Logo'
 import { DropdownMenu } from '../navigation/DropdownMenu'
-import { P } from '../typography/P'
 import { useTranslations } from 'next-intl'
 
 export const HeaderWithFooter = () => {
