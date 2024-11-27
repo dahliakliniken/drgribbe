@@ -219,7 +219,25 @@
   },
   "brostforminskning": {
     "title": "Bröstförminskning",
-    "text": "Många kvinnor lider av stor och tung byst."
+    "introduction1": "Om den egna bysten är stor och tung kan brösten minskas genom en bröstförminskning. Operationen är mycket lik operationen bröstlyft med skillnaden att mer eller mindre egen bröstvävnad tas bort.",
+    "introduction2": "Beroende på önskemål så kan operationen kombineras med bröstimplantat för ökad fyllighet i övre delen av brösten.Bröstförminskningen ger samma positiva effekter som operationen bröstlyft.",
+    "introduction3": "Dessutom upplever patienterna att besvär som den tunga bysten ger i form av värk från nacke, axlar och rygg försvinner.",
+    "operation": {
+      "title": "Operationen",
+      "text1": "Vid en bröstförminskning tas bröstvävnad bort för att minska storleken och tyngden på brösten. Dessutom tas mycket hud bort vilket stramar upp brösten varvid bröstvårtorna och hela brösten hamnar högre upp på kroppen.",
+      "text2": "Slutresultatet blir mindre, lättare och tajtare bröst som upplevs sitta bättre på kroppen.",
+      "text3": "Det blir enklare att få till brösten fint i en bh och man upplever att vardagssysslor och fysisk aktivitet blir lättare.Ärren efter operationen blir så kallade “ankarärr” med ett ärr runt vårtgården, ett ärr från nedre vårtgårdskanten till bröstvecket och ett ärr i bröstvecket.",
+      "text4": "Ärren läker fint och efter ca 1-2 år har det bleknat så pass att det är svårt att se dem på lite håll.",
+      "text5": "Även om det låter paradoxalt så går det att kombinera operationen med bröstimplantat då vissa patienter upplever att det annars blir lite för lite volym upptill i brösten. Man väljer då ett litet, platt implantat som ger en diskret fyllnad upptill i dekolletaget."
+    },
+    "postOperation": {
+      "title": "Efter operationen",
+      "text1": "Direkt efter bröstförminskningen är det viktigt att man kommer igång. Personalen hjälper dig efter några timmar att komma på benen, gå på toaletten och ta kortare promenader. Du vaknar med en bh som är kupad och formad efter brösten. Bh:n motverkar svullnad och ger ett skönt stöd.",
+      "text2": "Bh:n har du på dig dygnet runt efter operationen och du tar av den när du duschar. Du kan antingen välja att sova över en natt på kliniken och blir då omhändertagen av sjuksköterska eller så kan du gå hem ca 4-5 timmar efter operationen.",
+      "text3": "Första återbesöket sker efter ca 7-10 dagar varvid tejpen på såren byts ut.Ärren är då under god läkning och kommer se lite knöliga ut på grund av flera lager stygn under hudytan som håller ihop såren. Man kan säga att det ska se knöligt ut.",
+      "text4": "De följande veckorna ska du ta promenader och pendla lätt med armarna. Du ska röra dig lagom mycket, inga tunga lyft och inga ryckiga rörelser de första två veckorna efter operationen.",
+      "text5": "Du tejpar ärren ett halvår efter operationen. Andra återbesöket sker efter 3 månader och då träffas vi för att titta på resultatet. Efter detta kan du röra dig och sporta fritt. Ta hand om brösten med väl utprovade bygel-bh eller kupad sport-bh."
+    }
   },
   "implantaten": {
     "title": "Implantaten",
