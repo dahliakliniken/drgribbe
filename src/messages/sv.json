@@ -219,11 +219,100 @@
   },
   "brostforminskning": {
     "title": "Bröstförminskning",
-    "text": "Många kvinnor lider av stor och tung byst."
+    "introduction1": "Om den egna bysten är stor och tung kan brösten minskas genom en bröstförminskning. Operationen är mycket lik operationen bröstlyft med skillnaden att mer eller mindre egen bröstvävnad tas bort.",
+    "introduction2": "Beroende på önskemål så kan operationen kombineras med bröstimplantat för ökad fyllighet i övre delen av brösten.Bröstförminskningen ger samma positiva effekter som operationen bröstlyft.",
+    "introduction3": "Dessutom upplever patienterna att besvär som den tunga bysten ger i form av värk från nacke, axlar och rygg försvinner.",
+    "operation": {
+      "title": "Operationen",
+      "text1": "Vid en bröstförminskning tas bröstvävnad bort för att minska storleken och tyngden på brösten. Dessutom tas mycket hud bort vilket stramar upp brösten varvid bröstvårtorna och hela brösten hamnar högre upp på kroppen.",
+      "text2": "Slutresultatet blir mindre, lättare och tajtare bröst som upplevs sitta bättre på kroppen.",
+      "text3": "Det blir enklare att få till brösten fint i en bh och man upplever att vardagssysslor och fysisk aktivitet blir lättare.Ärren efter operationen blir så kallade “ankarärr” med ett ärr runt vårtgården, ett ärr från nedre vårtgårdskanten till bröstvecket och ett ärr i bröstvecket.",
+      "text4": "Ärren läker fint och efter ca 1-2 år har det bleknat så pass att det är svårt att se dem på lite håll.",
+      "text5": "Även om det låter paradoxalt så går det att kombinera operationen med bröstimplantat då vissa patienter upplever att det annars blir lite för lite volym upptill i brösten. Man väljer då ett litet, platt implantat som ger en diskret fyllnad upptill i dekolletaget."
+    },
+    "postOperation": {
+      "title": "Efter operationen",
+      "text1": "Direkt efter bröstförminskningen är det viktigt att man kommer igång. Personalen hjälper dig efter några timmar att komma på benen, gå på toaletten och ta kortare promenader. Du vaknar med en bh som är kupad och formad efter brösten. Bh:n motverkar svullnad och ger ett skönt stöd.",
+      "text2": "Bh:n har du på dig dygnet runt efter operationen och du tar av den när du duschar. Du kan antingen välja att sova över en natt på kliniken och blir då omhändertagen av sjuksköterska eller så kan du gå hem ca 4-5 timmar efter operationen.",
+      "text3": "Första återbesöket sker efter ca 7-10 dagar varvid tejpen på såren byts ut.Ärren är då under god läkning och kommer se lite knöliga ut på grund av flera lager stygn under hudytan som håller ihop såren. Man kan säga att det ska se knöligt ut.",
+      "text4": "De följande veckorna ska du ta promenader och pendla lätt med armarna. Du ska röra dig lagom mycket, inga tunga lyft och inga ryckiga rörelser de första två veckorna efter operationen.",
+      "text5": "Du tejpar ärren ett halvår efter operationen. Andra återbesöket sker efter 3 månader och då träffas vi för att titta på resultatet. Efter detta kan du röra dig och sporta fritt. Ta hand om brösten med väl utprovade bygel-bh eller kupad sport-bh."
+    }
   },
   "implantaten": {
     "title": "Implantaten",
-    "text": "Text om implantaten."
+    "introduction": "Det finns många olika varianter av bröstimplantat och vid tillverkningen kan man variera materialet i implantatet, hur mycket man fyller implantatet, formen på implantatet och skalets ytstruktur.",
+    "differentFillingLevels": {
+      "title": "Olika fyllnadsgrad",
+      "text1": "Ett implantat kan vara fyllt med mer eller mindre silikon. Ju mer fyllt det är desto mindre faller det ihop. Mentors nyare implantat av modellen 'Xtra', Moderate plus Xtra och High profile Xtra är mer fyllda än vanliga Moderate plus och High profile. Dessa Xtra-implantat upplevs därför mer fyllighet i övre polen, ger en rundare form och skapar mindre känsla av droppform.",
+      "text2": "Även Motiva har mer eller mindre fyllda implantat där Round är mer fylld än Ergonomix. Denna skillnad bidrar till att Ergonomix upplevs som mer naturliga och Round som mindre naturliga och ger i stället mer push-up i naket."
+    },
+    "implantShape": {
+      "title": "Implantatets egna form",
+      "text1": "Man delar in implantat efter form i runda respektive anatomiska, även kallade droppformade implantat.",
+      "text2": "Inom dessa två huvudgrupper finns många olika former och utseenden."
+    },
+    "roundImplants": {
+      "title": "Runda implantat",
+      "text1": "Implantat med rund form har samma bredd och höjd då det är implantatets diameter. Man kan variera denna diameter och därmed bredden för att passa olika breda bröstkorgar och för att passa olika kvinnors smak."
+    },
+    "projection": {
+      "title": "Projektion",
+      "text1": "Man kan också variera hur mycket implantaten sticker ut från bröstkorgen och man säger då att implantaten har olika put, projektion eller profil. Man delar in i låg, mellan, hög och ultrahög profil. Låg profil är plattast och ger en diskret förändring medan ultrahög profil har högst profil och sticker ut mest från bröstkorgen. De vanligaste profilerna är hög profil och mellanprofil. Hög profil betyder alltså inte att implantaten sitter högt upp under hakan utan att de sticker ut högt från bröstkorgen."
+    },
+    "naturalOrUnnatural": {
+      "title": "Naturligt eller onaturligt",
+      "text1": "Med runda implantat kan jag skapa både naturliga och onaturliga bröst. Runda implantat fyllda med mjukt silikon och som dessutom är lite mindre fyllda med silikon faller ihop något i upprätt läge. Detta ger en naturlig fyllighet och form upptill med en fin övergång från bröstkorg till bröst. Eftersom implantaten sjunker ihop i upprätt läge blir dessutom underpolen accentuerad och naturlig. Exempel på naturliga, runda implantat är Mentor High Profile Kohesivitet 1 och Motiva Demi eller Full Ergonomix.",
+      "text2": "Om man i stället väljer runda implantat som är mer fyllda med silikon och som dessutom har ett fastare silikon, blir utseendet på brösten mer onaturligt. Med mer fyllda och fastare runda implantat kan jag skapa mer onaturliga bröst med accentuerad klyfta och dekolletage (fyllighet i överpolen).",
+      "text3": "Exempel på mer fyllda implantat som ger en något accentuerad fyllighet upptill är Mentor Xtra i antingen den toppigare profilen High Profile Xtra eller den plattare profilen Moderate Plus Xtra.",
+      "text4": "Exempel på runda fastare och samtidigt också mer fyllda implantat är Motiva Round i antingen den toppiga profilen Full (hög profil) eller den allra toppigaste profilen Corsé (ultrahög profil).",
+      "text5": "Sammanfattningsvis så kan man säga att det är en myt att runda implantat alltid ger onaturliga bröst. Jag använder framför allt runda implantat för att skapa mjuka naturliga bröst och patienterna blir mycket nöjda. Givetvis spelar förutsättningarna och de egna bröstens utseende stor roll för slutresultatet."
+    },
+    "anatomicalImplants": {
+      "title": "Anatomiska implantat",
+      "text1": "Anatomiska, även kallade droppformade bröstimplantat kan varieras avseende bredd, höjd och projektion oberoende av varandra. Det betyder att man kan ha smala, höga bröstimplantat som framifrån sett ser ovala ut med mer volym uppåt nyckelbenet än vad de fyller ut på bredden. På samma sätt så kan man välja implantat som är låga och breda med mer volym på bredden och mindre volym uppåt på bröstkorgen.",
+      "text2": "De anatomiska bröstimplantaten går att variera på många olika sätt och man kan välja implantat utefter patientens kroppsform och smak. Patienterna blir ofta mycket nöjda med utseendet på brösten men upplever dem samtidigt som lite för fasta. Dessutom så är de anatomiska bröstimplantaten svåra att pusha upp för att accentuera klyfta och dekolletage. En nackdel med de anatomiska bröstimplantaten är att de kan rotera varvid formen på bröstet blir konstig.",
+      "text3": "<link>Läs mer om runda implantat</link> som är ett alternativ till anatomiska implantat."
+    },
+    "naturalVsFake": {
+      "title": "Naturligt jämfört med onaturligt 'fake'",
+      "text1": "De flesta kvinnor söker ett naturligt resultat när de förstorar brösten. Både Mentors mjukaste runda kohesivitet 1 och Motivas Ergonomix ger just naturliga bröst. Implantaten skiljer sig åt lite i hur de känns när man klämmer på dem och hur de faller ihop i stående men tanken med båda är att ge en naturlig byst.",
+      "text2": "En vanlig missuppfattning är att runda implantat skulle ge onaturliga bröst, 'fake-bröst'. Det stämmer inte utan det som avgör är vilket typ av runda implantat man väljer. Många mjuka runda faller ihop fint och ger en naturlig form på brösten medan runda implantat med mer fast fyllning och högre fyllnadsgrad ger mer onaturliga bröst.",
+      "text3": "Förutsättningarna påverkar givetvis mycket hur slutresultatet blir. Om man till exempel har små, mjuka bröst med lite volym framför allt i underpolen så blir det det ett naturligt resultat med ett par runda implantat utan mycket put såsom låg- eller mellanprofil. Har man mycket egen bröstvävnad med mycket volym i underpolen så går det i princip inte att få ett onaturligt 'fake' resultat då den egna bröstvävnaden gör att det blir mer droppformat. Man kan säga att ju mindre egen bröstvävnad man har och ju smalare man är desto tydligare syns implantatens form i slutresultatet."
+    },
+    "mentorImplants": {
+      "title": "Mentor implantat",
+      "text1": "Företaget Mentor, som i dag ägs av Johnson och Johnson har tillverkat bröstimplantat i över 30 år. Det är det mest använda implantatmärket i världen och har även flest långtidsresultat. Över 200 000 kvinnor med Mentorimplantat finns undersökta i olika vetenskapliga studier.Mentor tillverkar både runda och anatomiska (droppformade) implantat med en stor variation av storlek, fasthet, bredd, projektion och form."
+    },
+    "accordion": {
+      "roundImplants": {
+        "title": "Runda implantat",
+        "text1": "De runda implantaten är de som används mest. Man kan här välja implantat som ger ett naturligt resultat med mycket underpol eller implantat som ger mer fyllighet i övre polen.",
+        "text2": "För ca 10 år sedan använde jag framför allt anatomiska implantat men jag har nu övergått till att använda nästan uteslutande runda implantat. Med runda implantat kan jag skapa ett utseendemässigt lika naturligt resultat som med anatomiska implantat.De runda implantaten är mjukare än de anatomiska och ger en mer naturlig känsla när man känner på brösten. Mjukheten hos de runda implantaten gör det också möjligt att pusha upp brösten med bh, vilket i princip inte är möjligt med anatomiska implantat.",
+        "text3": "Dessutom är runda implantaten säkrare än anatomiska, då man slipper risken med rotation och ALCL."
+      },
+      "firmness": {
+        "title": "Fasthet",
+        "text1": "Märket Mentor har i sina runda implantat två fastheter på silikon; kohesivitet 1 och kohesivitet 2. Kohesivitet 1 är mjukare och kohesivitet 2 som lite fastare. Skillnaden är mycket liten och ofta inte relevant i praktiken.Tanken med kohesivitet 1, som är vanligast, är att det ska kännas mjukt och naturligt samt ge en naturlig form. I Mentors anatomiska implantat är silikonet fastare av typen kohesivitet 3 för att bibehålla en för implantatet unik form."
+      },
+      "projection": {
+        "title": "Projektion",
+        "text1": "Mentors runda implantat finns i fem olika projektioner (put, toppighet). Plattast är Moderate plus. Därefter kommer Moderate plus Xtra som har lite mer projektion följt av High Profile, High Profile Xtra och slutligen Ultra High Profile som har mest projektion. I bilden nedan ser du hur implantat med samma bredd cirka 12 cm ökar i volym med ökande projektion.",
+        "text2": "Det gör att du kan utgå från en och samma bredd och välja bröst som sticker ut mer eller mindre i profil."
+      },
+      "width": {
+        "title": "Bredd",
+        "text1": "I en och samma familj av implantat t ex High Profile (Hög profil) ökar bredden med ökande volym. Det gör att du kan utgå från en projektion, ett put och sedan välja att få mer eller mindre breda bröst.I tabellerna nedan kan du se hur bredden ökar med ökande volym i respektive familj 'Moderate plus, M+' respektive 'High profile, HP'. Till exempel så har HP 350cc 11,7cm bredd, 400cc 12,2 cm bredd och 450cc 12,8 cm bredd."
+      },
+      "degreeOfFilling": {
+        "title": "Fyllnadsgrad",
+        "text1": "Implantaten Moderate Plus Xtra och High Profile Xtra är mer fyllda än övriga implantat. Silikongelen är densamma så de känns fortfarande mjuka.Den ökade fyllnadsgraden gör i stället att implantaten hålls mer utspända och får en accentuerad volym upptill i klyftan och dekolletaget."
+      },
+      "anatomicalImplants": {
+        "title": "Anatomiska implantat",
+        "text1": "De anatomiska implantaten går att variera avseende bredd, höjd och projektion. De är fastare i konsistensen och ändrar inte form och utseende med kroppens rörelser.Tanken med de anatomiska implantaten är att de ska ge bröst som ser mycket naturliga ut."
+      }
+    }
   },
   "hudochinjektioner":
   {
