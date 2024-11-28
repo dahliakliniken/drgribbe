@@ -3,13 +3,12 @@
 import { useState } from 'react'
 import { ChevronIcon } from '../icons/ChevronIcon'
 import { H3 } from '../typography/H3'
-import { P } from '../typography/P'
 
 type AccordionProps = {
   items: {
     id: string
     title: string
-    content: string[]
+    content: React.ReactNode
   }[]
 }
 
@@ -52,15 +51,7 @@ export const Accordion = ({ items }: AccordionProps) => {
               openAccordion === id ? 'max-h-screen' : 'max-h-0'
             }`}
           >
-            <div className="p-4">
-              {content.map((text, index) => {
-                return (
-                  <P key={`${id}-${index}`} small>
-                    {text}
-                  </P>
-                )
-              })}
-            </div>
+            <div className="p-4">{content}</div>
           </div>
         </div>
       ))}
