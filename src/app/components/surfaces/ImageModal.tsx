@@ -10,16 +10,25 @@ type ImageModalProps = {
 
 export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
   const openButtonRef = useRef<HTMLButtonElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
 
   const openModal = () => {
-    setIsModalOpen(true)
+    document.body.style.overflow = 'hidden' // Prevent background scrolling
+    setIsVisible(true)
+    setTimeout(() => {
+      setIsModalOpen(true)
+    }, 10) // Small delay to ensure the transition starts
   }
 
   const closeModal = () => {
     setIsModalOpen(false)
+    setTimeout(() => {
+      setIsVisible(false)
+      document.body.style.overflow = '' // Restore background scrolling
+    }, 300) // Duration of the transition
   }
 
   const handleKeyDown = (event: KeyboardEvent) => {
@@ -92,28 +101,26 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
       </button>
 
       {/* Modal */}
-      {isModalOpen && (
+      {isVisible && (
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+          className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
         >
-          <div
-            ref={modalRef}
-            className="relative w-full max-w-4xl rounded-lg bg-white p-6"
-          >
+          <div ref={modalRef} className={`max-h-screen w-auto overflow-hidden`}>
             <button
               ref={closeButtonRef}
               onClick={closeModal}
               aria-label="Close modal"
-              className="absolute right-4 top-4"
+              className="absolute right-4 top-4 text-white"
             >
               <CloseIcon />
             </button>
             <Image
               src={imageSrc}
               alt={imageAlt}
-              className="h-auto w-full rounded-lg"
+              className="max-h-[90vh]"
+              style={{ objectFit: 'contain' }}
             />
           </div>
         </div>
