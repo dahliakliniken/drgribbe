@@ -47,7 +47,7 @@ const Page: React.FC = () => {
         <SpaceContainer spaceVertically noPadding>
           <Image
             src={PatientRoom}
-            alt=""
+            alt={t('altText.patientRoom')}
             className="max-h-[calc(100dvh-80px)] object-cover object-center"
           />
           <CardCustom
