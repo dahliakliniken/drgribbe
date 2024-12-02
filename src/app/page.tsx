@@ -1,4 +1,5 @@
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
+import PatientRoom from '../../public/images/patient-room.jpg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
 import { Card } from './components/surfaces/Card'
@@ -15,7 +16,7 @@ const Page: React.FC = () => {
   return (
     <>
       <main className="mb-36 flex flex-col">
-        <section className="relative flex h-[calc(100vh-80px)] flex-col items-center justify-center bg-[url('/images/Welcome.png')] bg-cover bg-center bg-no-repeat">
+        <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">
           <div className="absolute bottom-24">
             <Button text={t('common.bookConsultation')} />
           </div>
@@ -44,6 +45,11 @@ const Page: React.FC = () => {
         </SpaceContainer>
 
         <SpaceContainer spaceVertically noPadding>
+          <Image
+            src={PatientRoom}
+            alt=""
+            className="max-h-[calc(100dvh-80px)] object-cover object-center"
+          />
           <CardCustom
             bgColor="bg-green"
             bgRight
