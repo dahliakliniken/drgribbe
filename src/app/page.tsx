@@ -73,6 +73,23 @@ const Page: React.FC = () => {
             }
           />
 
+          <SimpleCard
+            bgColor={BgColors.Coral}
+            bgPosition="right"
+            content={
+              <Pillar>
+                <H2 white>{t('operationDepartment.title')}</H2>
+                <div className="lg:columns-2">
+                  <P color="text-white">{t('operationDepartment.text1')}</P>
+                  <P color="text-white">{t('operationDepartment.text2')}</P>
+                  <P color="text-white">{t('operationDepartment.text3')}</P>
+                  <P color="text-white">{t('operationDepartment.text4')}</P>
+                  <P color="text-white">{t('operationDepartment.text5')}</P>
+                </div>
+              </Pillar>
+            }
+          />
+
           <Image
             src={PatientRoom}
             alt={t('altText.patientRoom')}

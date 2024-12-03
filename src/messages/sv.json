@@ -65,6 +65,14 @@
     "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
     "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
   },
+  "operationDepartment": {
+    "title": "Operationsavdelning",
+    "text1": "Vi värnar om din hälsa och ditt välbefinnande.",
+    "text2": "För oss är det viktigt med en vilsam och lugn miljö så att du som besökare får bästa möjliga upplevelse vid ditt besök. Detta har vi haft i åtanke vid utformningen av kliniken och val av operationsavdelning.",
+    "text3": "Dahliakliniken har en operationsavdelning som håller mycket hög standard. Den är avskild från mottagningen och ligger på ett eget våningsplan med tillträde enbart för patienter och personal.",
+    "text4": "Operationssalarna är utrustade för att hålla högsta nivå med avseende på samtliga väsentliga kvalitetsparametrar. Utrustningen som används är ny, modern och högteknologisk. Renlighet och sterilitet är oerhört väsentligt för att en operationsavdelning ska vara patientsäker och salarna är därför utrustade med en särskild ventilation som tillför en hög grad av sterilitet och ren luft vilket förebygger risken för infektioner. Operationssalarnas inredning följer socialstyrelsens riktlinjer och gällande EU-regler. Därutöver är verksamheten och operationsavdelningen ISO-certifierad vilket innebär att vi uppfyller internationella kvalitets- och miljökrav.",
+    "text5": "Vår operationsavdelning har en avancerad steril med förstklassig utrustning. Den har separata renrum avsedda för rengöring och sterilisering av instrument dvs- icke-steriliserade och steriliserade verktyg, tvätt och övrigt separeras från varandra. Allt detta medför att operationsavdelningen håller en hög nivå avseende sterilitet och renlighet."
+  },
   "profileCard": {
     "title": "Specialist på bröstoperationer",
     "imageAlt": "Dr. Örjan Gribbe",
@@ -594,6 +602,7 @@
     }
   },
   "altText": {
+    "sfepLogo": "Logotypen för Svenska Föreningen för Estetisk Plastikkirurgi",
     "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster."
   }
 }
