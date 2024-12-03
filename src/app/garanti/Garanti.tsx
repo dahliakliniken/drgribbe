@@ -8,6 +8,7 @@ import { Ul } from '../components/surfaces/Ul'
 import { Li } from '../components/surfaces/Li'
 import { Pillar } from '../components/layout/Pillar'
 import { Section } from '../components/layout/Section'
+import { BgColors } from '../types'
 
 const Garanti = () => {
   const t = useTranslations('garanti')
@@ -19,7 +20,7 @@ const Garanti = () => {
     <main className="mb-36 flex flex-col">
       <SimpleCard
         fullWidth
-        bgColor="bg-green"
+        bgColor={BgColors.Green}
         content={
           <div className="mx-auto max-w-3xl px-4 py-8">
             <P color="text-white">{t('preamble1')}</P>
