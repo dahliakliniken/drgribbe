@@ -10,6 +10,7 @@ import MuscleRelaxation from '../../../../public/images/muscleRelaxation.svg'
 import { CardRow } from '../surfaces/CardRow'
 import { H3 } from '../typography/H3'
 import { SpaceContainer } from './SpaceContainer'
+import { BgColors, BgPositions } from '@/app/types'
 
 export const TreatmentBox: React.FC = () => {
   const t = useTranslations()
@@ -24,7 +25,8 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.breastEnlargement.paragraph3')
       ],
       linkText: t('treatmentBox.treatments.breastEnlargement.linkText'),
-      linkHref: '/brostoperationer/brostforstoring'
+      linkHref: '/brostoperationer/brostforstoring',
+      bgPosition: BgPositions['bottom-right']
     },
     {
       title: t('treatmentBox.treatments.breastReduction.title'),
@@ -35,7 +37,8 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.breastReduction.paragraph3')
       ],
       linkText: t('treatmentBox.treatments.breastReduction.linkText'),
-      linkHref: '/brostoperationer/brostforminskning'
+      linkHref: '/brostoperationer/brostforminskning',
+      bgPosition: BgPositions['bottom-left']
     },
     {
       title: t('treatmentBox.treatments.breastLift.title'),
@@ -46,7 +49,8 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.breastLift.paragraph3')
       ],
       linkText: t('treatmentBox.treatments.breastLift.linkText'),
-      linkHref: '/brostoperationer/brostlyft'
+      linkHref: '/brostoperationer/brostlyft',
+      bgPosition: BgPositions['bottom-left']
     },
     {
       title: t('treatmentBox.treatments.muscleRelaxation.title'),
@@ -57,7 +61,8 @@ export const TreatmentBox: React.FC = () => {
         t('treatmentBox.treatments.muscleRelaxation.paragraph3')
       ],
       linkText: t('treatmentBox.treatments.muscleRelaxation.linkText'),
-      linkHref: '/hud-och-injektioner'
+      linkHref: '/hud-och-injektioner',
+      bgPosition: BgPositions['bottom-right']
     }
   ]
 
@@ -73,22 +78,23 @@ export const TreatmentBox: React.FC = () => {
             key={index} // TODO: Use a more unique key
             title={<H3 white>{treatment.title}</H3>}
             paragraphs={treatment.paragraphs}
-            bgColor="bg-green"
+            bgColor={BgColors.Green}
             smallText
             image={
               <Image
                 className="m-auto my-6"
                 src={treatment.image}
                 alt={''}
-                height={152}
+                height={125}
               />
             }
             oneColumn
-            bgLeft
             rounded
             linkHref={treatment.linkHref}
             linkText={treatment.linkText}
             clickable
+            cardList
+            bgPosition={treatment.bgPosition}
           />
         ))}
       </CardRow>

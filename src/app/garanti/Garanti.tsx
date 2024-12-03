@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 import { H1 } from '../components/typography/H1'
 import { P } from '../components/typography/P'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
-import { CardCustom } from '../components/surfaces/CardCustom'
+import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { H2 } from '../components/typography/H2'
 import { Ul } from '../components/surfaces/Ul'
 import { Li } from '../components/surfaces/Li'
@@ -17,7 +17,7 @@ const Garanti = () => {
 
   return (
     <main className="mb-36 flex flex-col">
-      <CardCustom
+      <SimpleCard
         fullWidth
         bgColor="bg-green"
         content={

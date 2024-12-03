@@ -75,8 +75,8 @@
   },
   "aboutClinic": {
     "title":"Om Kliniken",
-    "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
-    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
+    "paragraph1": "Dahliakliniken är en nyetablerad klinik lanserad av Dr Örjan Gribbe som har en omfattande erfarenhet av plastikkirurgi, specialisead inom såväl rekonstruktiv som estetisk kirurgi. Kliniken är Sveriges enda klinik specialiserad på estetiska bröstoperationer av alla slag, såväl bröstförstoring som bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, tillsammans med sin fru, erbjuda estetisk plastikkirurgi av högsta kvalité med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
+    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet inom sin specialitet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Kliniken ligger i nyrenoverade lokaler med operationssalar med toppmodern utrustning. Vi använder oss av de senaste teknikerna och material och kirurgiska instrument av mycket hög kvalitet för att säkerställa att patienten får bästa möjliga resultat. Det ger plastikkirurgen hög precision och tillförlitlighet och möjliggör kirurgisk perfektion. .Allt i linje med klinikens strävan. Fokus är att öka kvinnors livskvalité och förändra deras kroppsuppfattning genom att förändra brösten på ett sätt som de ofta drömt om länge. Såväl tidigare patienter som nya välkomnas!"
   },
   "contact": {
     "contactUs": "Kontakta oss",
@@ -86,8 +86,10 @@
   "common": {
     "bookConsultation": "Boka konsultation",
     "bookFreeConsultation": "Boka fri konsultation",
+    "freeConsultation": "Gratis konsultation",
     "close": "Stäng",
-    "open": "Öppna"
+    "open": "Öppna",
+    "bookNow": "Boka nu"
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",

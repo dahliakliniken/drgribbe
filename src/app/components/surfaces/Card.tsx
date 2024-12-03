@@ -3,43 +3,45 @@
 import { useRef } from 'react'
 import { A } from '../typography/A'
 import { P } from '../typography/P'
+import { BgColors, BgPositions } from '@/app/types'
+import { generateBgPositionClass } from '@/app/utils/generateBgPositionClass'
 
 type CardProps = {
   title?: React.ReactNode
   paragraphs: string[]
-  bgColor: string // TODO: Define and set specific color types
+  bgColor: BgColors
+  bgPosition?: keyof typeof BgPositions
   image?: React.ReactNode
   style?: React.CSSProperties
   oneColumn?: boolean
   twoColumns?: boolean
   threeColumns?: boolean
-  bgRight?: boolean
-  bgLeft?: boolean
-  bgCenter?: boolean
   smallText?: boolean
   rounded?: boolean
   linkHref?: string
   linkText?: string
   clickable?: boolean
+  cardList?: boolean
 }
 
 export const Card = ({
   title,
   paragraphs,
   bgColor,
+  bgPosition,
   image,
   oneColumn,
   twoColumns,
   threeColumns,
-  bgRight,
-  bgLeft,
   smallText = false,
   rounded = false,
   linkHref,
   linkText,
-  clickable
+  clickable,
+  cardList
 }: CardProps) => {
   const linkRef = useRef<HTMLAnchorElement>(null)
+  const bgPositionClass = generateBgPositionClass(bgPosition)
 
   const handleClick = () => {
     if (clickable && linkRef.current) {
@@ -47,9 +49,14 @@ export const Card = ({
     }
   }
 
+  const isWhite = bgColor === BgColors.White
+  const bgSizeClass = cardList
+    ? 'before:bg-200'
+    : 'before:lg:bg-110 before:bg-200'
+
   return (
     <div
-      className={`${rounded && 'rounded-md'} z-0 ${bgLeft && 'before:bg-[0%_50%]'} before:bg-no-repeat ${bgRight && 'before:bg-[100%_50%]'} px-6 py-8 before:bg-200 ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-card-pattern before:opacity-5 ${clickable && 'cursor-pointer'}`}
+      className={`${bgPositionClass} ${bgSizeClass} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
       onClick={handleClick}
     >
       {title && title}
@@ -60,7 +67,11 @@ export const Card = ({
         {/* Image column, only shown if an image is provided */}
         {image && <div className="mb-2">{image}</div>}
         {paragraphs.map((paragraph, idx) => (
-          <P key={`${paragraph}-${idx}`} color="text-white" small={smallText}>
+          <P
+            key={`${paragraph}-${idx}`}
+            color={`${isWhite ? 'text-black' : 'text-white'}`}
+            small={smallText}
+          >
             {paragraph}
           </P>
         ))}
