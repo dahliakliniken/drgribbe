@@ -20,6 +20,7 @@ const config: Config = {
       },
       backgroundImage: {
         'card-pattern': "url('/images/dalia_icon_white.svg')",
+        'card-pattern-light': "url('/images/dalia_icon_beige.svg')",
         'custom-gradient': `linear-gradient(0deg, #EAE6E3, #EAE6E3), 
                               linear-gradient(177.97deg, rgba(213, 164, 168, 0.2) 55.19%, rgba(234, 230, 227, 0.2) 78.41%)`
       },
@@ -31,8 +32,15 @@ const config: Config = {
         '500': '500%'
       },
       backgroundPosition: {
-        'right-50': '-50%',
-        'left-100': '100%'
+        'small-left-top': '0% 50%',
+        'small-right-top': '0% 50%',
+        'small-center': '50% 50%',
+        'small-left': '100% 50%',
+        'large-left': '560% 50%',
+        'small-right': '0% 50%',
+        'large-right': '-450% 50%',
+        'small-bottom-right': '0 100%',
+        'small-bottom-left': '100% 100%'
       },
       spacing: {
         gapSpace: '1.5rem',
