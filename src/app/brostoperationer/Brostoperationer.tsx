@@ -73,7 +73,7 @@ const Brostoperationer = () => {
 
   return (
     <main className="mb-36 flex flex-col">
-      <SpaceContainer spaceVertically noPadding>
+      <SpaceContainer noPadding>
         <Pillar>
           <SpaceContainer>
             <H1>{t('brostoperationer.title')}</H1>
