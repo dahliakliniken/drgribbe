@@ -4,6 +4,12 @@ import { H1 } from '../components/typography/H1'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { Accordion } from '../components/surfaces/Accordion'
 import { H2 } from '../components/typography/H2'
+import { TreatmentBox } from '../components/layout/TreatmentBox'
+import { breastOperationsTreatmentsData } from '@/data/breastOperationsTreatmentsData'
+import { Pillar } from '../components/layout/Pillar'
+import { SimpleCard } from '../components/surfaces/SimpleCard'
+import { BgColors } from '../types'
+import { Button } from '../components/inputs/Button'
 
 const Brostoperationer = () => {
   const t = useTranslations()
@@ -67,36 +73,64 @@ const Brostoperationer = () => {
 
   return (
     <main className="mb-36 flex flex-col">
-      <SpaceContainer spaceVertically>
-        <H1>{t('brostoperationer.title')}</H1>
-        <P>{'TEXT SAKNAS'}</P>
-      </SpaceContainer>
-      <SpaceContainer spaceVertically>
-        <H2>{'Förberedelser inför din operation'}</H2>
-        <P>{'Det är en rad saker du ska tänka på inför din operation.'}</P>
-        <div className="max-w-3xl">
-          <Accordion items={beforeOperationItems} />
+      <SpaceContainer spaceVertically noPadding>
+        <Pillar>
+          <H1>{t('brostoperationer.title')}</H1>
+        </Pillar>
+
+        <div className="m-auto xl:max-w-7xl">
+          <TreatmentBox treatments={breastOperationsTreatmentsData} />
         </div>
-      </SpaceContainer>
-      <SpaceContainer spaceVertically>
-        <H2>{'Efter din operation'}</H2>
-        <div className="max-w-3xl">
-          <Accordion items={afterOperationItems} />
-        </div>
-      </SpaceContainer>
-      <SpaceContainer spaceVertically>
-        <H2>
-          {'När du lämnat kliniken och tiden from till första återbesöket'}
-        </H2>
-        <div className="max-w-3xl">
-          <Accordion items={aftercareItems} />
-        </div>
-      </SpaceContainer>
-      <SpaceContainer spaceVertically>
-        <H2>{'Efter första återbesöket'}</H2>
-        <div className="max-w-3xl">
-          <Accordion items={afterFirstReturnVisitItems} />
-        </div>
+        <Pillar>
+          <SpaceContainer noPadding spaceVertically>
+            <P>{t('brostoperationer.text1')}</P>
+            <P>{t('brostoperationer.text2')}</P>
+            <P>{t('brostoperationer.text3')}</P>
+            <P>{t('brostoperationer.text4')}</P>
+            <P>{t('brostoperationer.text5')}</P>
+            <P>{t('brostoperationer.text6')}</P>
+            <P>{t('brostoperationer.text7')}</P>
+            <P>{t('brostoperationer.text8')}</P>
+          </SpaceContainer>
+        </Pillar>
+
+        <SimpleCard
+          bgColor={BgColors.Coral}
+          bgPosition="left"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {t('common.freeConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <Button className="uppercase" text={t('common.bookNow')} />
+              </div>
+            </>
+          }
+        />
+
+        <Pillar>
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{t('brostoperationer.beforeOperation')}</H2>
+            <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
+            <Accordion items={beforeOperationItems} />
+          </SpaceContainer>
+
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{t('brostoperationer.afterOperation')}</H2>
+            <Accordion items={afterOperationItems} />
+          </SpaceContainer>
+
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{t('brostoperationer.aftercare')}</H2>
+            <Accordion items={aftercareItems} />
+          </SpaceContainer>
+
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{t('brostoperationer.afterFirstReturnVisit')}</H2>
+            <Accordion items={afterFirstReturnVisitItems} />
+          </SpaceContainer>
+        </Pillar>
       </SpaceContainer>
     </main>
   )

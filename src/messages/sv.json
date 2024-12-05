@@ -101,7 +101,19 @@
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",
-    "text": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen."
+    "text1": "Konsultationen är mötet mellan dig som patient och din plastikkirurg. Det är mötet där vi ska förstå varandra och komma överens. Vi pratar om dina önskemål och dina förutsättningar. Vi går igenom din sjukdomshistoria, förberedelserna inför operationen och tiden efter.",
+    "text2": "Vilka önskemål man som patient har på slutresultatet varierar mycket från kvinna till kvinna. Det är under konsultationen som detta måste gås igenom noggrant.",
+    "text3": "Under konsultationen inför bröstförstoring går vi igenom hur toppiga brösten ska bli, det vill säga hur mycket bröstet ska puta ut från kroppen när man står i profil. För detta får du välja projektionen, profilen på implantaten. Implantatens projektion kan varieras mellan låg profil, mellanprofil, hög profil och ultrahög profil. Vilken projektion man väljer är tycke och smak men ofta så vill man balansera svanken och rumpan för att se proportionerlig ut. Tar man för toppiga implantat kan man se framtung ut. Det vanligaste är att man väljer mellanprofil eller hög profil vid en första bröstförstoring.",
+    "text4": "Vid konsultationen så går vi också igenom hur breda bröst du önskar. Bredare bröstimplantat ger mer bredd åt sidorna och smalare bröstimplantat ger mindre bredd åt sidorna. Du får här hjälp att välja implantat och hur dina bröst ska bli efter operationen. Vissa patienter vill ha bredare bröst för att ge en timglasform och balansera midja och höfter medan andra vill ha smalare bröst för att känna sig sportigare och nättare.",
+    "text5": "Projektionen och bredden på implantaten ger tillsammans en viss storlek och volym på brösten. Ju mer projektion och ju mer bredd desto större implantat.",
+    "text6": "Vid en konsultation när man har bröst som hänger går vi noggrant igenom dina förutsättningar, vilket resultat som är möjligt och vilken operationsteknik som ska användas. Även här används ofta bröstimplantat för att återskapa fylligheten upptill i brösten.",
+    "text7": "Syftet med konsultationen blir att hitta just din smak och hur du vill ha brösten. För att uppnå korrekt slutresultat väljer vi implantat och går igenom vilken typ av bröstoperation och operationsteknik som passar bäst.",
+    "text8": "Konsultationen är på så vis ett lika viktigt moment som operationen. En väl genomförd konsultation lägger grunden till att du som patient blir nöjd med slutresultatet efter operationen.",
+    "beforeOperation": "Förberedelser inför din operation",
+    "thingsToConsiderBeforeSurgery": "Det är en rad saker du ska tänka på inför din operation.",
+    "afterOperation": "Efter din operation",
+    "aftercare": "När du lämnat kliniken och tiden from till första återbesöket",
+    "afterFirstReturnVisit": "Efter första återbesöket"
   },
   "brostlyft": {
     "title": "Bröstlyft <span>- med eller utan implantat</span>",
@@ -602,6 +614,7 @@
     }
   },
   "altText": {
+    "dahliaLogo": "Logotypen för Dahlia",
     "sfepLogo": "Logotypen för Svenska Föreningen för Estetisk Plastikkirurgi",
     "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster."
   }

@@ -13,6 +13,7 @@ import { Button } from './components/inputs/Button'
 import { SimpleCard } from './components/surfaces/SimpleCard'
 import { BgColors } from './types'
 import { Pillar } from './components/layout/Pillar'
+import { allTreatmentsData } from '@/data/allTreatmentsData'
 
 const Page: React.FC = () => {
   const t = useTranslations()
@@ -38,19 +39,24 @@ const Page: React.FC = () => {
 
         <Image src={Consultation} alt={''} className="lg:hidden" />
 
-        <TreatmentBox />
+        <SpaceContainer spaceVertically>
+          <H2 upperCase>{t('treatmentBox.title')}</H2>
+        </SpaceContainer>
+        <TreatmentBox treatments={allTreatmentsData} />
 
         <SpaceContainer spaceVertically noPadding>
           <SimpleCard
             bgColor={BgColors.Coral}
             bgPosition="left"
             content={
-              <div className="m-auto max-w-xs">
-                <H2 upperCase white>
+              <>
+                <H2 upperCase white className="text-center">
                   {t('common.freeConsultation')}
                 </H2>
-                <Button className="uppercase" text={t('common.bookNow')} />
-              </div>
+                <div className="m-auto flex max-w-xs justify-center">
+                  <Button className="uppercase" text={t('common.bookNow')} />
+                </div>
+              </>
             }
           />
 

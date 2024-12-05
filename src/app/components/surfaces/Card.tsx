@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import { A } from '../typography/A'
 import { P } from '../typography/P'
 import { BgColors, BgPositions } from '@/app/types'
-import { generateBgPositionClass } from '@/app/utils/generateBgPositionClass'
+import { generateBgPositionClass } from '@/utils/generateBgPositionClass'
 
 type CardProps = {
   title?: React.ReactNode

@@ -97,7 +97,9 @@ export const DropdownMenu: React.FC = () => {
 
       <div
         className={`bg-custom-gradient absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] p-[10px] pl-gapSpace pt-10 transition-all duration-300 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 ${
-          isOpen ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0'
+          isOpen
+            ? 'pointer-events-auto translate-y-0 opacity-100'
+            : 'pointer-events-none translate-y-3 opacity-0'
         }`}
         aria-hidden={!isOpen}
       >
