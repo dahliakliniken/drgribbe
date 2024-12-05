@@ -1,5 +1,5 @@
 import { BgColors, BgPositions } from '@/app/types'
-import { generateBgPositionClass } from '@/app/utils/generateBgPositionClass'
+import { generateBgPositionClass } from '@/utils/generateBgPositionClass'
 
 type CardProps = {
   content: React.ReactNode
