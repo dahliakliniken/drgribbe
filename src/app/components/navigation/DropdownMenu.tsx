@@ -40,7 +40,7 @@ export const DropdownMenu: React.FC = () => {
     const links = [
       {
         text: t('dropdown.clinic'),
-        href: '/',
+        href: '/#om-kliniken',
         id: crypto.randomUUID()
       },
       {

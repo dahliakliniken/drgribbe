@@ -62,6 +62,7 @@ const Page: React.FC = () => {
 
           {/* About Section */}
           <SimpleCard
+            id="om-kliniken"
             className="before:bg-500 before:bg-[30%_40%]"
             bgColor={BgColors.White}
             content={

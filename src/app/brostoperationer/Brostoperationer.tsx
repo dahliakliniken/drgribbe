@@ -73,16 +73,18 @@ const Brostoperationer = () => {
 
   return (
     <main className="mb-36 flex flex-col">
-      <SpaceContainer spaceVertically noPadding>
+      <SpaceContainer noPadding>
         <Pillar>
-          <H1>{t('brostoperationer.title')}</H1>
+          <SpaceContainer>
+            <H1>{t('brostoperationer.title')}</H1>
+          </SpaceContainer>
         </Pillar>
 
         <div className="m-auto xl:max-w-7xl">
           <TreatmentBox treatments={breastOperationsTreatmentsData} />
         </div>
         <Pillar>
-          <SpaceContainer noPadding spaceVertically>
+          <SpaceContainer spaceVertically>
             <P>{t('brostoperationer.text1')}</P>
             <P>{t('brostoperationer.text2')}</P>
             <P>{t('brostoperationer.text3')}</P>
@@ -110,23 +112,23 @@ const Brostoperationer = () => {
         />
 
         <Pillar>
-          <SpaceContainer noPadding spaceVertically>
+          <SpaceContainer spaceVertically>
             <H2>{t('brostoperationer.beforeOperation')}</H2>
             <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
             <Accordion items={beforeOperationItems} />
           </SpaceContainer>
 
-          <SpaceContainer noPadding spaceVertically>
+          <SpaceContainer spaceVertically>
             <H2>{t('brostoperationer.afterOperation')}</H2>
             <Accordion items={afterOperationItems} />
           </SpaceContainer>
 
-          <SpaceContainer noPadding spaceVertically>
+          <SpaceContainer spaceVertically>
             <H2>{t('brostoperationer.aftercare')}</H2>
             <Accordion items={aftercareItems} />
           </SpaceContainer>
 
-          <SpaceContainer noPadding spaceVertically>
+          <SpaceContainer spaceVertically>
             <H2>{t('brostoperationer.afterFirstReturnVisit')}</H2>
             <Accordion items={afterFirstReturnVisitItems} />
           </SpaceContainer>

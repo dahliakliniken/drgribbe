@@ -10,7 +10,7 @@ const Brostforminskning = () => {
   const t = useTranslations('brostforminskning')
   return (
     <main className="mb-36 flex flex-col">
-      <SpaceContainer spaceVertically>
+      <SpaceContainer>
         <Pillar>
           <Section>
             <H1>{t('title')}</H1>
