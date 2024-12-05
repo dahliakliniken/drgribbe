@@ -1,4 +1,4 @@
-import { BgPositions } from '../types'
+import { BgPositions } from '@/app/types'
 
 export const generateBgPositionClass = (
   bgPosition?: keyof typeof BgPositions
