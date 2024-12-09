@@ -6,6 +6,7 @@ import { H2 } from '@/app/components/typography/H2'
 import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
@@ -13,106 +14,59 @@ const Brostforstoring = () => {
     <main className="mb-36 flex flex-col">
       <SpaceContainer>
         <Pillar>
+          <H1>{t('title')}</H1>
           <Section>
-            <H1>{t('title')}</H1>
-            <P>{t('introduction')}</P>
-            <P>{t('experience')}</P>
-            <P>{t('benefitsOfImplants')}</P>
-            <P>{t('procedureSafety')}</P>
+            <H2>{t('background.heading1')}</H2>
+            <P>{t('background.text1')}</P>
+            <P>{t('background.text2')}</P>
           </Section>
 
           <Section>
-            <H2>{t('operation.title')}</H2>
-            <P>{t('operation.text')}</P>
+            <H2>{t('technique.heading1')}</H2>
+            <P>{t('technique.text1')}</P>
+
+            <H3>{t('technique.heading2')}</H3>
+            <P>{t('technique.text2')}</P>
+
+            <H3>{t('technique.heading3')}</H3>
+            <P>
+              {t.rich('technique.text3', {
+                link: (chunks) => (
+                  <Link
+                    className="underline underline-offset-2 hover:text-coral"
+                    href="#"
+                  >
+                    {chunks}
+                  </Link>
+                )
+              })}
+            </P>
+
+            <H3>{t('technique.heading4')}</H3>
+            <P>{t('technique.text4')}</P>
+
+            <H3>{t('technique.heading5')}</H3>
+            <P>{t('technique.text5')}</P>
+
+            <H3>{t('technique.heading6')}</H3>
+            <P>{t('technique.text6_1')}</P>
+            <P>{t('technique.text6_2')}</P>
+            <P>{t('technique.text6_3')}</P>
+
+            <H3>{t('technique.heading7')}</H3>
+            <P>{t('technique.text7')}</P>
+
+            <H3>{t('technique.heading8')}</H3>
+            <P>{t('technique.text8')}</P>
+
+            <H3>{t('technique.heading9')}</H3>
+            <P>{t('technique.text9')}</P>
           </Section>
 
           <Section>
-            <H3>{t('incisionUnderBreast.title')}</H3>
-            <P>{t('incisionUnderBreast.text1')}</P>
-            <P>{t('incisionUnderBreast.text2')}</P>
-            <P>{t('incisionUnderBreast.text3')}</P>
-            <P>{t('incisionUnderBreast.text4')}</P>
-            <P>{t('incisionUnderBreast.text5')}</P>
-            <P>{t('incisionUnderBreast.text6')}</P>
-            <P>{t('incisionUnderBreast.text7')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('pocketForImplants.title')}</H3>
-            <P>{t('pocketForImplants.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('placement.title')}</H3>
+            <H2>{t('placement.heading1')}</H2>
             <P>{t('placement.text1')}</P>
             <P>{t('placement.text2')}</P>
-            <P>{t('placement.text3')}</P>
-            <P>{t('placement.text4')}</P>
-            <P>{t('placement.text5')}</P>
-            <P>{t('placement.text6')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('cleavage.title')}</H3>
-            <P>{t('cleavage.text1')}</P>
-            <P>{t('cleavage.text2')}</P>
-            <P>{t('cleavage.text3')}</P>
-            <P>{t('cleavage.text4')}</P>
-            <P>{t('cleavage.text5')}</P>
-            <P>{t('cleavage.text6')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('asymmetry.title')}</H3>
-            <P>{t('asymmetry.text1')}</P>
-            <P>{t('asymmetry.text2')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('differentSizes.title')}</H3>
-            <P>{t('differentSizes.text1')}</P>
-            <P>{t('differentSizes.text2')}</P>
-            <P>{t('differentSizes.text3')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('differentBreastSagging.title')}</H3>
-            <P>{t('differentBreastSagging.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('differentSizeAndSagging.title')}</H3>
-            <P>{t('differentSizeAndSagging.text1')}</P>
-            <P>{t('differentSizeAndSagging.text2')}</P>
-            <P>{t('differentSizeAndSagging.text3')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('differentBreastFoldHeight.title')}</H3>
-            <P>{t('differentBreastFoldHeight.text1')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('postOperation.title')}</H2>
-            <P>{t('postOperation.text1')}</P>
-            <P>{t('postOperation.text2')}</P>
-            <P>{t('postOperation.text3')}</P>
-            <P>{t('postOperation.text4')}</P>
-            <P>{t('postOperation.text5')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('complications.title')}</H2>
-            <H3>{t('capsularContracture.title')}</H3>
-            <P>{t('capsularContracture.text1')}</P>
-            <P>{t('capsularContracture.text2')}</P>
-            <P>{t('capsularContracture.text3')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('sensoryDisturbances.title')}</H3>
-            <P>{t('sensoryDisturbances.text1')}</P>
-            <P>{t('sensoryDisturbances.text2')}</P>
           </Section>
         </Pillar>
       </SpaceContainer>
