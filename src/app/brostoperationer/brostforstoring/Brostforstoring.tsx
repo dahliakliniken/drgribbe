@@ -1,12 +1,12 @@
 import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
+import { AnchorLink } from '@/app/components/typography/AnchorLink'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
 import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
@@ -32,12 +32,7 @@ const Brostforstoring = () => {
             <P>
               {t.rich('technique.text3', {
                 link: (chunks) => (
-                  <Link
-                    className="underline underline-offset-2 hover:text-coral"
-                    href="#"
-                  >
-                    {chunks}
-                  </Link>
+                  <AnchorLink href="#placering">{chunks}</AnchorLink>
                 )
               })}
             </P>
@@ -64,7 +59,7 @@ const Brostforstoring = () => {
           </Section>
 
           <Section>
-            <H2>{t('placement.heading1')}</H2>
+            <H2 id="placering">{t('placement.heading1')}</H2>
             <P>{t('placement.text1')}</P>
             <P>{t('placement.text2')}</P>
           </Section>

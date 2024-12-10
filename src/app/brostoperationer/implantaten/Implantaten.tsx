@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import ProjectionImage from '../../../../public/images/mentor-projektion.jpg'
 import WidthImage from '../../../../public/images/mentor-bredd.jpg'
 import AnatomicalImplantsImage from '../../../../public/images/mentor-anatomiska.jpg'
@@ -12,6 +11,7 @@ import { H2 } from '@/app/components/typography/H2'
 import { P } from '@/app/components/typography/P'
 import { useTranslations } from 'next-intl'
 import { ImageModal } from '@/app/components/surfaces/ImageModal'
+import { AnchorLink } from '@/app/components/typography/AnchorLink'
 
 const Implantaten = () => {
   const t = useTranslations('implantaten')
@@ -126,12 +126,7 @@ const Implantaten = () => {
             <P>
               {t.rich('anatomicalImplants.text3', {
                 link: (chunks) => (
-                  <Link
-                    className="underline underline-offset-2 hover:text-coral"
-                    href="#roundImplants"
-                  >
-                    {chunks}
-                  </Link>
+                  <AnchorLink href="#roundImplants">{chunks}</AnchorLink>
                 )
               })}
             </P>

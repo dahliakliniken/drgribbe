@@ -145,37 +145,17 @@
     "afterFirstReturnVisit": "Efter första återbesöket"
   },
   "brostlyft": {
-    "title": "Bröstlyft <span>- med eller utan implantat</span>",
-    "text1": "Om brösthuden är lös och hänger kan den ofta fyllas ut med bröstimplantat på ett estetiskt vackert sätt. Ibland kan man behöva göra en operation där överskottshuden tas bort genom ett bröstlyft. Vid ett bröstlyft har man även möjlighet att lyfta upp bröstvårtorna om man tycker att de sitter lågt på brösten.",
-    "text2": "Jag kombinerar ofta operationen bröstlyft med bröstimplantat för att återskapa en ofta saknad volym upptill i övre polen av brösten. Implantaten behöver här inte vara särskilt stora utan mer som en liten utfyllnad för att få ett nätt, lite mer rundat resultat. Ibland väljer jag efter patientens önskemål större implantat för att få en mer uttalad effekt. Om brösten är tunga tar jag ofta även bort en del bröstvävnad vid lyftet genom en mindre bröstförminskning för bästa estetiska resultat.",
-    "text3": "Som patient är det bra att inför konsultationen fråga sig om man gör operationen för att få en bättre form på brösten (oftast med mindre implantat) eller för att få en förstoring av brösten (då passar större implantat bättre).",
-    "text4": "Bröstlyft i kombination med bröstimplantat är en tacksam operation och patienterna blir ofta mycket nöjda. Efter operationen känner man att brösten ser piggare och ungdomligare ut, sitter bättre på plats på kroppen i naket och att det är lättare att få brösten att sitta bra i en bh. Patienterna uppskattar också att brösten återfår en fyllighet upptill.",
-    "text5": "Om brösten hänger mycket och ligger an mot bröstkorgen upplevs operationen bröstlyft som en befrielse där besvär med fukt, eksem och kanske till och med svampväxt under brösten försvinner.",
-    "operation": {
-      "title": "Operationen",
-      "anchorScarLift": {
-        "title": "Bröstlyft med ankarärr",
-        "description": "Den vanligaste typen av bröstlyft är den där man framför allt tar bort hud från bröstens undersidor ovanför bröstvecken. Samtidigt höjer man upp bröstvårtornas position genom att förflytta dem uppåt mot övre, mittersta delen av bröstet. Ärren efter operationen blir runt vårtgården, från vårtgården ned till bröstvecket och i bröstvecket.",
-        "details1": "Man har med denna operation möjlighet att ta bort stora mängder hud och även vid behov bröstvävnad.",
-        "details2": "Dessutom så kan bröstvårtan förflyttas upp på bröstet mer eller mindre och avståndet mellan vårtgård och bröstveck kan ökas så att man får en större underpol."
-      },
-      "liftScarToFold": {
-        "title": "Bröstlyft med ärr runt vårtgården och ner till bröstvecket",
-        "description": "Ibland så är överskottet av hud framför allt lokaliserat mitt på bröstet ovan bröstvecket. Man kan då undvika ärr i bröstvecket och endast ta bort hud runt och nedanför vårtgården.",
-        "limitations": "Tekniken innebär begränsningar genom att överskottshud mot mitten av bröstkorgen och ut mot sidorna inte kan tas bort."
-      },
-      "liftScarAreola": {
-        "title": "Bröstlyft med ärr runt vårtgården",
-        "description": "Om överskottet av hud mest är mitt på brösten runt vårtgården så kan man göra ett lyft med ärr endast runt vårtgården.Det förutsätter att avståndet från vårtgården till bröstvecket är tillräckligt långt då man inte kan öka avståndet under operationen. Bara små mängder hud kan tas bort med denna teknik."
-      },
-      "afterOperation": {
-        "title": "Efter operationen",
-        "steps1": "Direkt efter bröstoperationen är det viktigt att du kommer igång. Personalen hjälper dig efter några timmar att komma på benen, gå på toaletten och ta kortare promenader.",
-        "steps2": "Du bjuds på kaffe, juice, smörgåsar och så småningom även mat. Du vaknar med en bh som är kupad och formad efter brösten. Bh:n motverkar svullnad och ger ett skönt stöd. Ha bh:n på dig dygnet runt första veckan efter operationen och ta av den när du duschar. Vi pratar sedan vilken bh som är bäst för dig vid kommande återbesök och över mejlen och telefon.",
-        "steps3": "Om du önskar så sover du en natt på kliniken och blir då omhändertagen av sjuksköterska. Det går även bra att gå hem ca 4-5 timmar efter operationen.Första återbesöket sker efter ca 7-10 dagar varvid tejpen på ärren byts ut. Ärren är då under god läkning och kommer se lite knöliga ut på grund av flera lager stygn under hudytan som håller ihop såret. Stygnens funktion är att hålla ihop sårkanterna så att ärren läker så fint som möjligt. Stygnen tas upp av kroppen och försvinner av sig själva.",
-        "steps4": "De följande veckorna ska du fortsätta ta promenader och pendla lätt med armarna. Du ska röra dig lagom mycket. Inga tunga lyft och inga ryckiga rörelser de första två veckorna efter operationen.",
-        "steps5": "Andra återbesöket sker efter 3-6 månader då vi träffas för att titta på resultatet."
-      }
+    "title": "Bröstlyft",
+    "background": {
+      "heading1": "Bakgrund",
+      "text1": "Bröstlyft är en väldigt vanlig plastikkirurgisk operation eftersom brösten ofta är just den kroppsdel som mest påverkas av olika händelser i livet och som förlorar sitt ungdomliga utseende och istället börjar hänga. Vissa kvinnor har bröst som hänger från tidig tonårsålder men vanligare är att det är graviditet och amning eller pendlingar i kroppsvikt som gör att brösten hänger. Huden i brösten är extra eftergivlig just för att kunna töjas ut och ta emot bröstvävnaden när den blir större under graviditet och amning. Brösthuden tappar då sin elasticitet och drar sedan inte ihop sig. Samtidigt förlorar själva bröstvävnaden sin ungdomliga fasthet och blir i stället mjukare. Dessutom omvandlas mer eller mindre av bröstvävnaden till fettväv. Dessa är förändringar som sker av naturligt åldrande men graviditet och amning skyndar på processen.",
+      "text2": "Känslan av att brösten hänger brukar kvinnor beskriva på flera olika sätt. Vissa stör sig mest på att den egna bröstvävnaden hänger ner mer eller mindre över bröstvecket. Ibland bara lite så att vecket döljs men ibland mer så att brösten ligger an mot huden under brösten. Vissa kvinnor upplever att brösten hänger eftersom bröstvårtorna sitter långt ner på brösten och pekar nedåt. Ibland kan dock brösten hänga över vecket medan de egna bröstvårtorna ändå sitter relativt högt upp. Många stör sig på och upplever brösten som hängiga då volymen upptill i brösten, i klyftan och i dekolletaget minskat eller helt försvunnit. Ofta är det en kombination av flera av ovanstående faktorer som gör att brösten upplevs som hängande och i samband med ett bröstlyft kan alla dessa delar adresseras och åtgärdas. Vid ett bröstlyft kan även vårtgårdar och ibland även bröstvårtor minskas om de upplevs som stora. Om bröstvårtorna är indragna kan detta åtgärdas.",
+      "text3": "Operationen bröstlyft är mycket tacksam med fina resultat och nöjda patienter."
+    },
+    "techniques": {
+      "heading1": "Teknik",
+      "text1": "Inför operationen bröstlyft medan du är vaken ritar och planerar doktorn ingreppet på dig. Ritar vilken höjd bröstvårtorna ska sitta, hur långt snittet under brösten ska vara samt hur snittet från vårtgården ner till vecket ska gå. Ingreppet som sedan sker i narkos inleds med att doktorn fyller i och förstärker denna ritning. Ritningen görs med precision och till sin hjälp har doktorn inför operationen skjutmått och måttband och under operationen används en linjal. När doktorn är nöjd med ritningen läggs lokalbedövning Xylocain med adrenalin där i incisionslinjerna. Xylocain bedövar, tar bort smärta vilket gör att patienten inte behöver sövas så djupt. Adrenalinet drar ihop blodkärl så att det blöder mindre när man opererar samt gör att lokalbedövningen stannar kvar längre i vävnaden då det inte sköljs bort av blodet. (Xylocain är en svensk uppfinning av kemisterna Nils Löfgren och hans elev Bengt Lundqvist. Patentet köptes av läkemedelsföretaget Astra och betecknas som den viktigaste händelsen i företagets historia). Efter att lokalbedövningen lagts låter man den verka en stund och sedan fortsätter operationen med att man med skalpell skär ut vårtgården efter en rund mall. Storleken på vårtgården går att variera och är någonting som man som patient kan vara med och påverka. Ingreppet fortsätter med att doktorn fortfarande med kniv skär enligt ritningen. Hud skärs bort uppåt där bröstvårta och vårtgård ska placeras, runt vårtgården och framförallt så tas det mer eller mindre hud från bröstets undersida ovanför bröstvecket. Ibland är det bara lite hud man tar bort om det är små bröst som hänger lite medan om det är stora bröst med mycket häng, ptos så tas stora bitar hud bort. När huden tagits bort sitter vårtgård och bröstvårta kvar på sin plats på underliggande bröstvävnad, lite som en isolerad ö i mitten av bröstet. Vårtgård med bröstvårta mobiliseras nu upp på plats till sin nya position upptill på bröstet och sys fast med enstaka stygn. Bröstvävnaden och huden förs samman och sys ihop i flera lager med enstaka stygn av olika tjocklek. Slutligen sys huden ytligt med en lite finare tråd. Det är mycket viktigt hur man planerar, skär och syr. Det är viktigt att man tar bort en lagom mängd hud så att brösten blir så strama som möjligt utan att man riskerar cirkulationen i hud och bröstvävnad. Om det blir för stramt äventyras cirkulationen till bröstvårta, vårtgård eller vissa hudpartier. Särskilt känsligt är förutom bröstvårta och vårtgård även hudflikarna som i mitten möter bröstvecket i ett upp-och-nervänt T.",
+      "text2": "När brösten sytts ihop läggs tejp närmast ärren och sedan ett förband som tar upp de små mängder blod som normalt kan sippra ut via ärren."
     }
   },
   "brostforstoring": {
@@ -211,115 +191,33 @@
       "heading1": "Implantatplacering, framför eller bakom bröstmuskeln",
       "text1": "Generellt så kan man säga att om man är tunn och smal och saknar underhudsfett eller egen bröstvävnad upptill i brösten så passar en placering under muskeln bäst. Muskeln blir då ett extra lager vävnad som gör att implantaten inte syns så direkt och tydligt utan man får i stället en harmonisk och gradvis övergång från bröstkorgen till bröstet. Om man är tunn i vävnaden och lägger implantaten framför muskeln så ser man implantatkanten och veckbildningar i själva implantatet, så kallad rippling mera. Har man däremot mer underhudsfett och/eller egen bröstvävnad upptill på bröstkorgen så täcks implantaten bättre och man kan då få ett resultat utan synlig implantatkant eller rippling. Även implantatens karaktär påverkar. Man kan med ökad fyllnadsgrad, ökad fasthet och mer elastiskt skal minska risken för rippling. Samtidigt så ger fastare implantat tydligare övre kant och mer uttalat dekolletage.",
       "text2": "De allra flesta kvinnor väljer implantat som är större än de egna brösten vilket på sätt och vis hänger ihop med ingreppets natur. Det vill säga man vill förstora brösten som är små och de önskade brösten och därmed bröstimplantaten är då oftast större än de egna brösten. De allra flesta kvinnor kan därför räknas som att de inte har tillräckligt vävnad upptill på bröstkorgen, varför bakom muskeln oftast passar bäst. Det finns även andra fördelar med bakom muskeln. Muskeln håller bröstimplantaten på plats, inte så bröstimplantaten växer fast i muskeln utan mer att de fungerar som ett stöd där muskeln hindrar bröstimplantaten från att röra sig för mycket."
-    },
-    "introduction": "Brösten är för de flesta kvinnor mycket viktiga. De representerar kvinnlighet, skönhet och symboliserar fruktbarhet. Kvinnor som inte är nöjda med sina bröst har i och med utvecklingen av den moderna plastikkirurgin möjlighet att på ett säkert sätt låta sig opereras med en bröstförstoring och få den byst de önskar. Vissa kvinnor tycker att brösten är för små medan andra är missnöjda med formen på brösten. Hos vissa är det en kombination av båda faktorerna.",
-    "experience": "Som estetisk plastikkirurg har jag under drygt 16 års tid hjälpt över 8 000 kvinnor med olika typer av bröstoperationer såsom bröstförstoring och min erfarenhet är att patienterna blir mycket nöjda. Anledningarna till att kvinnor kan tycka att brösten är små varierar. Vissa tycker att de fått för liten byst av naturen medan andra känner att brösten blivit mindre under livets gång. Det kan då vara att brösten blivit mindre efter viktnedgång, efter en eller flera graviditeter och amning eller bara genom ökad ålder som naturligt leder till en minskning av bröstvävnaden. Många kvinnor upplever då att brösten saknar fyllighet mot mitten, klyftan och volym upptill i överpolen. Ibland uppstår det även lös hud som också kan hänga över bröstvecket.",
-    "benefitsOfImplants": "Genom en bröstförstoring med bröstimplantat kan man på ett kontrollerat och förutsägbart sätt öka storleken på brösten, skapa klyfta mot mitten och fyllighet uppåt i överpolen, dekolletaget. Bröstimplantat fyller ut eventuell lös hud och lyfter även upp bröstvårtorna så att brösten ser piggare ut",
-    "procedureSafety": "Att använda bröstimplantat vid bröstförstoring är ett säkert ingrepp där man med rätt teknik har mycket god kontroll under operationen och där man med rätt erfarenhet i hög grad kan förutsäga resultatet. Operationen är mycket tacksam och ger överlag mycket nöjda patienter.",
-    "operation" : {
-      "title": "Operationen",
-      "text": "Vid en bröstförstoring gör man fickor för implantaten oftast under stora bröstmuskeln eller mer sällan framför stora bröstmuskeln. Implantaten läggs in och fickorna sys ihop noggrant.Operationstiden är relativt kort, ca 30 minuter och får inte ske under stress. Det är samtidigt viktigt att den inte tar för lång tid då det ökar risken för komplikationer. Hur lång tid en bröstförstoring tar beror på plastikkirurgens fallenhet och erfarenhet samt på patientens förutsättningar."
-    },
-    "incisionUnderBreast": {
-      "title": "Snitt under bröstet",
-      "text1": "Vid operationen måste fickorna skapas på ett korrekt sätt så att de får rätt placering och passar de implantat som ska läggas in. Bäst insyn och kontroll under operationen har man via ett snitt under bröstet i bröstvecket.",
-      "text2": "Man kommer genom ett snitt under bröstet smidigt in i fickan för implantatet och under operationen ser man tydligt strukturer såsom muskler, blodkärl och nerver. På så vis blir operationen säker och chansen att resultatet blir lyckat optimeras. Det är viktigt att man syr ihop såret och förankrar bröstvecket mot bröstkorgen på ett noggrant sätt. Detta för att implantaten ska få ett bra stöd så att de inte faller ner nedanför bröstvecket (bottoming out) samt för att minimera risken att såret öppnar sig.",
-      "text3": "Det kan annars leda till infektion eller att implantatet i värsta fall måste tas ut. Såret sys ihop i flera lager och stygnen försvinner av sig själv genom att de tas upp av kroppen (resorberas).",
-      "text4": "Snittets längd beror på implantatets mått och ska inte vara onödigt långt. Samtidigt är det viktigt att snittet inte är för kort så att öppningen blir för liten. Det som annars händer är att implantatet skadas när det förs in.",
-      "text5": "Det kanske inte syns under operationen men om man pressar in implantatet genom en för liten öppning så skadas silikonet. Implantaten har en unik form tack vare de bindningar som finns i det halvfasta geléhallonsilikonet (kohesiva silikonet).",
-      "text6": "Dessa bindningar kan brytas när implantatet pressas in genom en för liten öppning och implantatets unika form förstörs.Dessutom är min erfarenhet att hudkanterna skadas om snittet görs för kort vilket ger ogynnsam sårläkning och mer synliga ärr. Såret sys ihop i tre lager. Det understa lagret sys med grov nål och tråd och förankrar ärret mot bröstkorgen. Det andra lagret sys med lite finare nål och tråd vilket håller ihop hudkanterna så att det inte blir drag i själva ärret och så att ärret därmed läker så fint som möjligt.",
-      "text7": "Det tredje och sista lagret sys även det med den lite finare tråden och håller ihop det yttersta i huden så att hudkanterna på var sida om ärret hamnar i exakt samma nivå för finast ärrläkning. Stygnen försvinner av sig själv genom att de tas upp av kroppen."
-    },
-    "pocketForImplants": {
-      "title": "Ficka för implantaten",
-      "text1": "Vid operationen görs en ficka, ett utrymme för implantaten. Fickans storlek och mått beror på hur stort implantatet är och vilka mått implantatet har. Implantatets bredd bestämmer hur bred fickan ska vara medan implantatets höjd bestämmer hur hög fickan ska vara.Hur fickan görs är helt avgörande för hur resultatet ska bli. Det är viktigt att den görs tillräckligt stor för implantatet man valt. Samtidigt får fickan inte bli för stor då det kan tex leda till att implantaten åker ut åt sidorna, hamnar för högt upp mot nyckelbenet eller hamnar för nära mitten (symmastia)."
-    },
-    "placement_1": {
-      "title": "Placering. Bakom vanligast, men patienten väljer själv.",
-      "text1": "Oftast skapas fickan bakom stora bröstmuskeln. De flesta kvinnor är tunna i vävnaden upptill på bröstkorgen och implantatet behöver den extra täckning som muskeln ger för att det ska bli en naturlig och harmonisk övergång från bröstkorgen till bröstet. Om man är tunn och smal riskerar man annars att se implantatets kanter och att det blir ojämnheter och veck från implantatet som syns även kallat rippling.",
-      "text2": "Operationen börjar med att man skär genom huden och därefter vidare genom underhudsfettet ner till stora bröstmuskeln. Man går sedan igenom och in under bröstmuskeln. Fickan skapas i utrymmet mellan muskeln och bröstkorgen. Det är viktigt hur fickan görs och att den inte blir för stor åt något håll. När man skapar fickan bakom muskeln så begränsas den mot mitten av muskelns kant där den fäster mot revben och bröstben.",
-      "text3": "Muskelkanten blir på så vis ett riktmärke för var man ska avsluta fickan. Det går att trimma muskeln lite för att komma lite närmare mitten men man måste vara mycket försiktig så att man inte skadar muskeln.I vissa fall kan framför muskeln vara att föredra.",
-      "text4": "Det kan vara om man har tillräckligt med täckande vävnad såsom underhudsfett och egen bröstvävnad upptill på bröstkorgen. Oftast väljer man här något mindre implantat då man har sämre stöd vid placering framför muskeln.",
-      "text5": "Operationen börjar precis som vid placering bakom muskeln med att man skär genom huden och sedan underhudsfettet ner till stora bröstmuskeln. Man fortsätter sedan i ett plan ovanpå muskeln och fickan skapas i utrymmet mellan muskel och bröstvävnad. Det är viktigt att man har koll på var man är under hela operationen eftersom man inte har några fasta hållpunkter att förhålla sig till. Vid placering bakom muskeln ser man till exempel bröstmuskelns infästning mot bröstkorgen mot mitten.",
-      "text6": "Vid operation framför muskeln opererar man i ett utrymme utan begränsningar och där man till exempel kan råka fortsätta över på fel sida, för långt ut åt sidan eller för långt upp om man gör fel."
-    },
-    "cleavage": {
-      "title": "Klyftan",
-      "text1": "Många kvinnor är måna om att få ett litet eller tajt avstånd mellan brösten medan andra patienter föredrar ett större avstånd. Vid den vanligaste placeringen av implantaten bakom stora bröstmuskeln så är det just var bröstmuskeln sitter fast mot mitten som avgör avståndet mellan implantaten.",
-      "text2": "Vissa kvinnor har ett nära avstånd mellan musklerna medan andra har ett bredare avstånd. Under operationen går det att påverka detta till viss del. Muskeln kan trimmas en aning mot mitten men inte mycket. Om man skär i muskeln för mycket mot mitten skadar man den permanent. Det vanligaste avståndet mellan musklerna mot mitten och därmed mellan implantaten är ca 1,5 - 2,0 cm, motsvarande ca två fingrars bredd.",
-      "text3": "Om man tycker att klyftan blivit för bred så går det ofta att med tiden töja bröstmusklerna mot mitten med en bh som trycker från sidorna.",
-      "text4": "En viss positiv effekt får man också om man stretchar bröstmusklerna.",
-      "text5": "Vid placering framför stora bröstmuskeln är det operationens utförande som helt avgör hur bred klyftan blir. Man kan under operationen lösa fickorna mer eller mindre mot mitten. Det är viktigt att man under operationen är uppmärksam så att det inte blir för lite stöd mot mitten så att implantaten hamnar för nära varandra. Komplikationen att implantaten hamnar för tätt mot mitten kallas 'symmastia' vilket är mycket svårt att rätta till i efterhand.",
-      "text6": "En annan faktor som påverkar klyftans bredd är den egna bröstvävnaden. Ju mer egen bröstvävnad man har mot mitten desto tätare blir klyftan och vice versa."
-    },
-    "asymmetry": {
-      "title": "Asymmetri",
-      "text1": "Det är vanligt att brösten har olika storlek och utseende, så kallad asymmetri. Inte sällan är det ena bröstet större än det andra och ibland kan ena bröstet hänga mer.",
-      "text2": "De flesta kvinnor har en viss asymmetri, men hos många är den så liten att andra eller de själva inte tänker på den."
-    },
-    "differentSizes": {
-      "title": "Olika storlek på brösten",
-      "text1": "Om brösten är olika stora kan man lägga in olika stora implantat. Ofta rör det sig då om en skillnad på ca 20-25 ml mellan implantaten. Till exempel 375ml (cc, gram) på ena sidan och 400ml på andra sidan eller 320ml på ena sidan och 340ml på andra sidan. Ibland kan större skillnader på 50ml, 75ml eller mer förekomma.",
-      "text2": "Ofta använder man implantat av samma profil men olika volym. Implantaten har då samma projektion, put men en aning olika bredd. Det brukar då skilja 2-3 millimeter i bredd samtidigt som det skiljer 25ml i volym.",
-      "text3": "I ovanliga fall och med uttalad skillnad i volym mellan brösten eller när bröstkorgen står ut olika mycket på höger respektive vänster sida kan man använda olika profil, projektion på implantaten. Exempelvis så kan man då använda hög profil på sidan med lägre bröstkorg och mellanprofil på sidan med högre bröstkorg. Bredden på implantaten kan då vara densamma medan projektionen skiljer ca 1 cm. Exempel på kombinationer kan vara Mentor hög profil 350ml på sidan med låg bröstkorg och Mentor moderate plus (mellanprofil) 275ml på sidan med högre bröstkorg."
-    },
-    "differentBreastSagging": {
-      "title": "Olika häng på brösten",
-      "text1": "Ibland så hänger brösten olika mycket. Den ena bröstvårtan sitter då lägre på kroppen medan den andra sitter högre.Lösningen blir då ofta bröstlyft på båda sidorna varvid bröstvårtorna höjs upp till samma nivå."
-    },
-    "differentSizeAndSagging": {
-      "title": "Olika storlek och olika häng på brösten",
-      "text1": "Om brösten både har olika storlek och hänger olika mycket kan olika lösningar bli aktuella. En vanlig variant är att ena bröstet är större och hänger mer.",
-      "text2": "Det bästa är då oftast inte olika stora implantat utan att man under operationen lägger in lika stora implantat och att det större bröstet i stället minskas i samband med att lyftet utförs.",
-      "text3": "På så vis får man bäst symmetri då volymen upptill blir likvärdig och att de egna brösten hänger till sig lika mycket första tiden efter operationen."
-    },
-    "differentBreastFoldHeight": {
-      "title": "Olika höjd på bröstvecken",
-      "text1": "I vissa fall så är höjden på bröstvecken olika. Man kan då höja ena vecket, sänka det andra vecket eller utföra en kombination av båda."
-    },
-    "postOperation": {
-      "title": "Efter operationen",
-      "text1": "Direkt efter bröstoperationen är det viktigt att du kommer igång och rör på dig. Personalen hjälper dig efter några timmar att komma på benen, gå på toaletten och ta kortare promenader. Dessutom är det viktigt att du gör speciella gymnastikövningar för att öka rörligheten i överkroppen och armarna samt för att minska smärtan. Denna gymnastik kan du fortsätta med i hemmet.",
-      "text2": "Du vaknar med en bh som är kupad och formad efter brösten. Bh:n motverkar svullnad och ger ett skönt stöd. Ha bh:n på dig dygnet runt första veckan efter operationen men ta av den när du duschar.",
-      "text3": "Om du önskar så sover du en natt på kliniken och blir då omhändertagen av sjuksköterska. Det går även bra att gå hem ca 4-5 timmar efter operationen.Första återbesöket sker efter ca 7-10 dagar varvid tejpen på såren byts ut. Ärren är då under god läkning och kommer se lite knöliga ut på grund av flera lager stygn under hudytan som håller ihop såret. Stygnen är till för att hålla ihop såret på djupet och för att hålla ihop hudkanterna så att ärret läker så fint som möjligt. Stygnen och knöligheten försvinner efter ett par månader.",
-      "text4": "De följande veckorna ska du fortsätta ta promenader och pendla lätt med armarna. Du ska röra dig lagom mycket. Inga tunga lyft och inga ryckiga rörelser de första två veckorna efter operationen.",
-      "text5": "Andra återbesöket sker efter 3 månader och då träffas vi för att titta på resultatet. Efter detta kan du träna och sporta fritt. Fortsätt ta hand om brösten med bygel-bh eller kupad sport bh."
-    },
-    "complications": {
-      "title": "Komplikationer"
-     },
-     "capsularContracture": {
-      "title": "Kapselkontraktion",
-      "text1": "Den vanligaste komplikationen är att kapseln runt implantatet drar ihop sig och blir stram och hård. Bakgrunden är att när ett främmande material läggs in i kroppen, till exempel ett bröstimplantat, så bildar kroppen en ärrvävnad runt materialet. Det blir som en hinna, ett hölje, även kallat en kapsel runt hela implantatet. Denna hinna blir normalt mjuk och tunn och man märker den inte. Bröstet känns då mjukt och naturligt precis som implantatet. I ovanliga fall, knappt 1 % blir dock kapseln tjock och hård, varvid implantatet känns stramare och fastare när man känner på bröstet. Bröstet kan även ömma eller göra ont.",
-      "text2": "Det finns många olika varianter på detta. Normalt blir kapseln som sagt mjuk. Ibland blir den lite fastare, lite förtjockad och i mycket ovanliga fall så blir den hård och kraftigt förtjockad.Det är inte farligt att kapseln blir stram, förtjockad eller hård. Det kan dock som beskrivits ovan vara besvärande och det är patientens besvär som styr om hon väljer operation eller ej. Det är patienten som avgör om hon vill bli opererad. Således brukar inte en förtjockad kapsel opereras om den inte ger besvär. För att man ska gå vidare med en operation så brukar besvären först ha funnits i flera månader.",
-      "text3": "Operationen innebär att kapseln delas, klyvs så att det blir mer utrymme för implantatet. Ibland tas även hela eller delar av kapseln bort. Efter operationen så är bröstet mjukt igen och besvär i form av smärtor är borta. Operationen sker i narkos och man kan gå hem samma dag."
-     },
-     "sensoryDisturbances": {
-      "title": "Känselstörningar",
-      "text1": "Precis som vid andra operationer händer det att känseln i brösten ändras temporärt efter en bröstoperation. Ofta är det huden kring ärren som påverkas men även huden längre upp och vårtgårdarna, bröstvårtorna kan drabbas. Man kan få nedsatt känsel och i vissa fall ökad känsel. Oftast så kommer känseln tillbaka efter cirka 3-12 månader men i ovanliga fall så kan känselnedsättningar bli permanenta.",
-      "text2": "Det är bra att vidröra, beröra, stryka på brösthuden efter operationen. Det minskar risken för känselstörningar."
-     }
+    }
   },
   "brostforminskning": {
     "title": "Bröstförminskning",
-    "introduction1": "Om den egna bysten är stor och tung kan brösten minskas genom en bröstförminskning. Operationen är mycket lik operationen bröstlyft med skillnaden att mer eller mindre egen bröstvävnad tas bort.",
-    "introduction2": "Beroende på önskemål så kan operationen kombineras med bröstimplantat för ökad fyllighet i övre delen av brösten.Bröstförminskningen ger samma positiva effekter som operationen bröstlyft.",
-    "introduction3": "Dessutom upplever patienterna att besvär som den tunga bysten ger i form av värk från nacke, axlar och rygg försvinner.",
-    "operation": {
-      "title": "Operationen",
-      "text1": "Vid en bröstförminskning tas bröstvävnad bort för att minska storleken och tyngden på brösten. Dessutom tas mycket hud bort vilket stramar upp brösten varvid bröstvårtorna och hela brösten hamnar högre upp på kroppen.",
-      "text2": "Slutresultatet blir mindre, lättare och tajtare bröst som upplevs sitta bättre på kroppen.",
-      "text3": "Det blir enklare att få till brösten fint i en bh och man upplever att vardagssysslor och fysisk aktivitet blir lättare.Ärren efter operationen blir så kallade “ankarärr” med ett ärr runt vårtgården, ett ärr från nedre vårtgårdskanten till bröstvecket och ett ärr i bröstvecket.",
-      "text4": "Ärren läker fint och efter ca 1-2 år har det bleknat så pass att det är svårt att se dem på lite håll.",
-      "text5": "Även om det låter paradoxalt så går det att kombinera operationen med bröstimplantat då vissa patienter upplever att det annars blir lite för lite volym upptill i brösten. Man väljer då ett litet, platt implantat som ger en diskret fyllnad upptill i dekolletaget."
+    "background": {
+      "heading1": "Bakgrund",
+      "text1": "Att ha stora och tunga bröst kan vara jobbigt på många sätt. Det innebär en extra tyngd för nacke och axlar vilket ofta leder till spänningar och smärtor. Tyngden kan även hindra kroppens naturliga rörelser vilket gör att man kan känna sig hindrad i vardagen och vid fysisk aktivitet. Bröstens tyngd gör också ofta att de hänger ner på kroppen, ligger an mot huden nedanför brösten och skapar problem med fukt, eksem och ibland svampväxt.",
+      "text2": "Operationen bröstförminskning är ett mycket tacksamt ingrepp där de allra flesta kvinnor som genomgår operationen känner sig hjälpta och nöjda.",
+      "text3": "Operationen liknar mycket ett bröstlyft som beskrivs här på hemsidan med den skillnaden att man vid en bröstförminskning även tar bort mer eller mindre bröstvävnad och inte bara hud. Bröstvävnaden som tas bort består av både fett och bröstkörtel. Vissa bröst innehåller mer fett medan andra innehåller mer körtelvävnad. Generellt så kan man säga att det är mer bröstkörtel i brösten hos yngre kvinnor och hos kvinnor som inte fött barn och ammat, medan övervikt ger en ökad andel fett i brösten. Dessutom ökar andelen fett i brösten med ökad ålder och i samband med amning då delar av bröstvävnaden omvandlas till fett. Körtelvävnad är kompaktare och väger mer än fett.",
+      "text4": "Samtidigt som brösten görs lättare och mindre genom att bröstvävnad tas bort tas även hud bort."
     },
-    "postOperation": {
-      "title": "Efter operationen",
-      "text1": "Direkt efter bröstförminskningen är det viktigt att man kommer igång. Personalen hjälper dig efter några timmar att komma på benen, gå på toaletten och ta kortare promenader. Du vaknar med en bh som är kupad och formad efter brösten. Bh:n motverkar svullnad och ger ett skönt stöd.",
-      "text2": "Bh:n har du på dig dygnet runt efter operationen och du tar av den när du duschar. Du kan antingen välja att sova över en natt på kliniken och blir då omhändertagen av sjuksköterska eller så kan du gå hem ca 4-5 timmar efter operationen.",
-      "text3": "Första återbesöket sker efter ca 7-10 dagar varvid tejpen på såren byts ut.Ärren är då under god läkning och kommer se lite knöliga ut på grund av flera lager stygn under hudytan som håller ihop såren. Man kan säga att det ska se knöligt ut.",
-      "text4": "De följande veckorna ska du ta promenader och pendla lätt med armarna. Du ska röra dig lagom mycket, inga tunga lyft och inga ryckiga rörelser de första två veckorna efter operationen.",
-      "text5": "Du tejpar ärren ett halvår efter operationen. Andra återbesöket sker efter 3 månader och då träffas vi för att titta på resultatet. Efter detta kan du röra dig och sporta fritt. Ta hand om brösten med väl utprovade bygel-bh eller kupad sport-bh."
+
+    "consultation": {
+      "heading1": "Konsultation bröstförminskning",
+      "text1": "Vid konsultationen går vi igenom dina önskemål och förutsättningar. Vi pratar eventuella besvär du har av din byst och om det finns möjlighet att en operation skulle hjälpa just dig. Vi går noggrant igenom hur en bröstförminskning skulle gå till och hur ett slutresultat hos dig skulle kunna se ut. Det är som vid alla operationer viktigt att du som patient sätter dig in i allt vad gäller förutsättningar, operation och möjligt resultat. Även om det låter paradoxalt så använder jag ofta bröstimplantat vid en förminskning av brösten. Bröstförminskningen lyfter förvisso upp och minskar storleken på brösten men den vävnad som är kvar kommer med tiden, inom ca 6-12 månader sjunka ned och framför allt falla på plats i nedre delen av brösten. Detta gör att många patienter inte blir nöjda med fylligheten upptill i klyftan och dekolletaget. Ett par nätta bröstimplantat ger här en diskret och lagom fyllighet upptill vilket ger en finare, något rundad form upptill i bysten. Om det blir aktuellt med bröstimplantat går vi precis som vid en konsultation för en bröstförstoring noggrant igenom olika bröstimplantat och diskuterar och provar vilken storlek och modell som blir bäst för just dig."
+    },
+    "technique": {
+      "heading1": "Teknik",
+      "preSurgery": {
+        "heading1": "Strax innan operationen",
+        "text1": "Precis som vid alla andra operationer träffas patient och plastikkirurg på operationsdagen strax innan operationen för att diskutera igenom ingreppet och för att plastikkirurgen ska rita och planera ingreppet. Ritningen görs med omsorg och till sin hjälp har plastikkirurgen måttband och skjutmått. Bröstvårtornas höjd och avstånd från halsgropen (jugulum) bestäms. Längden på snitten under brösten i bröstvecken markeras. Underpolens längd beräknas och ritas ut."
+      },
+      
+      "surgery": {
+        "heading1": "Operationen",
+        "text1": "Operationen sker i narkos och inleds med att plastikkirurgen förstärker ritningen och sedan lägger lokalbedövning (till exempel Xylocain med adrenalin) i incisionslinjerna. Precis som vid ett bröstlyft mäter plastikkirurgen ut och markerar storleken på vårtgård som sedan skärs ut med skalpell. Huden på platsen dit vårtgården ska flyttas skärs ut och motsvarar då i storlek den nya vårtgården. Vidare skärs yttre kanten av vårtgården, huden runt vårtgården bort. Snittet i bröstvecket görs och operationen fortsätter underifrån med antingen skalpell eller diatermi ner till muskelfascian. Bröstvävnaden löses sedan uppåt längs med muskeln så att man kommer under en stor del av bröstet ofta upp till vårtgårdsplanet. Merparten av den bröstvävnad som ska tas bort har nu friats och plastikkirurgen har nu möjlighet att greppa denna med sina händer och beräkna hur mycket som ska tas bort. Överskottsvävnaden tas sedan bort med antingen skalpell, diatermi eller sax. Plastikkirurgen har sedan möjlighet att välja vilken teknik som passar bäst för att mobilisera upp vårtgård till sin nya plats. Det gäller här att skapa en lagom tjock vävnadsbrygga, stjälk även kallat lambå med tillräcklig blodcirkulation till vårtgård och bröstvårta. Denna stjälk har ofta sin bas in mot mitten av bröstkorgen men kan även ha basen uppåt, åt sidan eller mer ovanligt nedåt. Höger och vänster bröst jämförs nu för att uppnå så bra symmetri som möjligt, varefter man noggrant letar efter och koagulerar eventuella blodkärl som blöder. Bröstvårta och vårtgård mobiliseras, roteras upp på plats och sys fast. Precis som vid ett bröstlyft förs vävnaden samman mot mitten och centralt nederst i punkten mitt under bröstet i bröstvecket, det vill säga i korsningen för det upp-och-nervända T:et. Vävnaden slutes i flera lager med trådar, suturer av varierande grovlek och avslutas med att sårkanterna noggrant adapteras och sys med en tunn sutur. Det är som vid alla operationer viktigt att man syr noggrant. Suturernas, stygnens funktion är att föra ihop vävnaden lager för lager för att återskapa de lager som man skurit igenom under operationens början. Om vävnaden inte sys ihop på rätt sätt blir det glipor. Glipor i den ytliga huden resulterar i sår. Glipor på djupet i fettväven resulterar i ett tomrum under huden som gör att man känner en grop eller fåra under ärret och kan i värsta fall göra att bröstet känns förankrat på djupet nedåt på kroppen till magen. Om plastikkirurgen lagt in ett bröstimplantat vid operationen kan det resultera i att man här känner kanter eller knölighet från bröstimplantatet på en kortare eller längre sträcka."
+      }
     }
   },
   "implantaten": {
