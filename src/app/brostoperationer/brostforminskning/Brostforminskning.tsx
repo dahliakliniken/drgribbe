@@ -22,6 +22,11 @@ const Brostforminskning = () => {
           </Section>
 
           <Section>
+            <H2>{t('consultation.heading1')}</H2>
+            <P>{t('consultation.text1')}</P>
+          </Section>
+
+          <Section>
             <H2>{t('technique.heading1')}</H2>
             <H3>{t('technique.preSurgery.heading1')}</H3>
             <P>{t('technique.preSurgery.text1')}</P>
