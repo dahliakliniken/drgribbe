@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
-import PatientRoom from '../../public/images/patient-room.jpg'
+import WaitingRoom from '../../public/images/waiting-room.jpg'
 import Doctor from '../../public/images/doctor.jpg'
 import SfepLogo from '../../public/images/sfep-logo.svg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
@@ -98,7 +98,7 @@ const Page: React.FC = () => {
           />
 
           <Image
-            src={PatientRoom}
+            src={WaitingRoom}
             alt={t('altText.patientRoom')}
             className="max-h-[calc(100dvh-80px)] object-cover object-center"
           />

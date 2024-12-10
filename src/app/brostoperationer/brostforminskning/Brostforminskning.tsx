@@ -3,6 +3,7 @@ import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
+import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { useTranslations } from 'next-intl'
 
@@ -12,29 +13,23 @@ const Brostforminskning = () => {
     <main className="mb-36 flex flex-col">
       <SpaceContainer>
         <Pillar>
+          <H1>{t('title')}</H1>
           <Section>
-            <H1>{t('title')}</H1>
-            <P>{t('introduction1')}</P>
-            <P>{t('introduction2')}</P>
-            <P>{t('introduction3')}</P>
+            <H2>{t('background.heading1')}</H2>
+            <P>{t('background.text1')}</P>
+            <P>{t('background.text1')}</P>
+            <P>{t('background.text1')}</P>
           </Section>
 
           <Section>
-            <H2>{t('operation.title')}</H2>
-            <P>{t('operation.text1')}</P>
-            <P>{t('operation.text2')}</P>
-            <P>{t('operation.text3')}</P>
-            <P>{t('operation.text4')}</P>
-            <P>{t('operation.text5')}</P>
+            <H2>{t('technique.heading1')}</H2>
+            <H3>{t('technique.preSurgery.heading1')}</H3>
+            <P>{t('technique.preSurgery.text1')}</P>
           </Section>
 
           <Section>
-            <H2>{t('postOperation.title')}</H2>
-            <P>{t('postOperation.text1')}</P>
-            <P>{t('postOperation.text2')}</P>
-            <P>{t('postOperation.text3')}</P>
-            <P>{t('postOperation.text4')}</P>
-            <P>{t('postOperation.text5')}</P>
+            <H3>{t('technique.surgery.heading1')}</H3>
+            <P>{t('technique.surgery.text1')}</P>
           </Section>
         </Pillar>
       </SpaceContainer>

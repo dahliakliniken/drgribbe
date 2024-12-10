@@ -12,7 +12,7 @@ import { BgColors } from '../types'
 import { Button } from '../components/inputs/Button'
 import { H3 } from '../components/typography/H3'
 import { Section } from '../components/layout/Section'
-import Link from 'next/link'
+import { AnchorLink } from '../components/typography/AnchorLink'
 
 const Brostoperationer = () => {
   const t = useTranslations()
@@ -107,12 +107,7 @@ const Brostoperationer = () => {
               <P>
                 {t.rich('brostoperationer.dayOfSurgery.text2', {
                   link: (chunks) => (
-                    <Link
-                      className="underline underline-offset-2 hover:text-coral"
-                      href="#"
-                    >
-                      {chunks}
-                    </Link>
+                    <AnchorLink href="#forberedelser">{chunks}</AnchorLink>
                   )
                 })}
               </P>
@@ -161,7 +156,7 @@ const Brostoperationer = () => {
 
         <Pillar>
           <SpaceContainer spaceVertically>
-            <H2>{t('brostoperationer.beforeOperation')}</H2>
+            <H2 id="forberedelser">{t('brostoperationer.beforeOperation')}</H2>
             <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
             <Accordion items={beforeOperationItems} />
           </SpaceContainer>
