@@ -11,6 +11,7 @@ import { H2 } from '@/app/components/typography/H2'
 import { P } from '@/app/components/typography/P'
 import { useTranslations } from 'next-intl'
 import { ImageModal } from '@/app/components/surfaces/ImageModal'
+import { H3 } from '@/app/components/typography/H3'
 import { AnchorLink } from '@/app/components/typography/AnchorLink'
 
 const Implantaten = () => {
@@ -85,63 +86,134 @@ const Implantaten = () => {
         <Pillar>
           <Section>
             <H1>{t('title')}</H1>
-            <P>{t('introduction')}</P>
+            <P>{t('text1')}</P>
+            <P>{t('text2')}</P>
           </Section>
 
           <Section>
-            <H2>{t('differentFillingLevels.title')}</H2>
-            <P>{t('differentFillingLevels.text1')}</P>
-            <P>{t('differentFillingLevels.text2')}</P>
+            <ol>
+              <li>
+                <H2>{t('listItem1.heading')}</H2>
+                <P>{t('listItem1.text1')}</P>
+                <P>{t('listItem1.text2')}</P>
+                <P>{t('listItem1.text3')}</P>
+              </li>
+
+              <li>
+                <H2>{t('listItem2.heading')}</H2>
+                <P>{t('listItem2.text1')}</P>
+              </li>
+
+              <li>
+                <H2>{t('listItem3.heading')}</H2>
+                <P>{t('listItem3.text1')}</P>
+              </li>
+
+              <li>
+                <H2>{t('listItem4.heading')}</H2>
+                <P>{t('listItem4.text1')}</P>
+              </li>
+
+              <li>
+                <H2>{t('listItem5.heading')}</H2>
+                <P>{t('listItem4.text1')}</P>
+
+                <H3>{t('listItem5.smoothSurface.title')}</H3>
+                <P>{t('listItem5.smoothSurface.text1')}</P>
+
+                <H3>{t('listItem5.texturedSurface.title')}</H3>
+                <P>{t('listItem5.texturedSurface.text1')}</P>
+                <P>{t('listItem5.texturedSurface.text2')}</P>
+
+                <H3>{t('listItem5.nanoTexturedSurface.title')}</H3>
+                <P>{t('listItem5.nanoTexturedSurface.text1')}</P>
+
+                <H3>{t('listItem5.polyuretan.title')}</H3>
+                <P>{t('listItem5.polyuretan.text1')}</P>
+              </li>
+            </ol>
+            <P>
+              {t.rich('readMore', {
+                link: (chunks) => (
+                  <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
+                ),
+                link2: (chunks) => (
+                  <AnchorLink href="#anatomiska-implantat">{chunks}</AnchorLink>
+                )
+              })}
+            </P>
+            <P>{t('text3')}</P>
           </Section>
 
           <Section>
-            <H2>{t('implantShape.title')}</H2>
-            <P>{t('implantShape.text1')}</P>
-            <P>{t('implantShape.text2')}</P>
+            <H2>{t('jelly.title')}</H2>
+            <P>{t('jelly.text1')}</P>
           </Section>
 
-          <Section>
-            <H2 id="roundImplants">{t('roundImplants.title')}</H2>
+          <Section id="runda-implantat">
+            <H2>{t('roundImplants.title')}</H2>
             <P>{t('roundImplants.text1')}</P>
+            <P>{t('roundImplants.text2')}</P>
           </Section>
 
           <Section>
             <H2>{t('projection.title')}</H2>
             <P>{t('projection.text1')}</P>
+            <P>{t('projection.text2')}</P>
+            <P>{t('projection.text3')}</P>
           </Section>
 
           <Section>
-            <H2>{t('naturalOrUnnatural.title')}</H2>
-            <P>{t('naturalOrUnnatural.text1')}</P>
-            <P>{t('naturalOrUnnatural.text2')}</P>
-            <P>{t('naturalOrUnnatural.text3')}</P>
-            <P>{t('naturalOrUnnatural.text4')}</P>
-            <P>{t('naturalOrUnnatural.text5')}</P>
+            <H2>{t('width.title')}</H2>
+            <P>{t('width.text1')}</P>
           </Section>
 
           <Section>
-            <H2>{t('anatomicalImplants.title')}</H2>
-            <P>{t('anatomicalImplants.text1')}</P>
-            <P>{t('anatomicalImplants.text2')}</P>
+            <H2>{t('content.title')}</H2>
+            <P>{t('content.text1')}</P>
+          </Section>
+
+          <Section>
+            <H2>{t('surface.title')}</H2>
+            <P>{t('surface.text1')}</P>
+            <P>{t('surface.text2')}</P>
+          </Section>
+
+          <Section id="anatomiska-implantat">
+            <H2>{t('anatomic.title')}</H2>
+            <P>{t('anatomic.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('anatomic.measurements.title')}</H3>
+            <P>{t('anatomic.measurements.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('anatomic.projections.title')}</H3>
+            <P>{t('anatomic.projections.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('anatomic.content.title')}</H3>
+            <P>{t('anatomic.content.text1')}</P>
+            <P>{t('anatomic.content.text2')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('anatomic.surface.title')}</H3>
+            <P>{t('anatomic.surface.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('anatomic.results.title')}</H3>
             <P>
-              {t.rich('anatomicalImplants.text3', {
+              {t.rich('anatomic.results.text1', {
                 link: (chunks) => (
-                  <AnchorLink href="#roundImplants">{chunks}</AnchorLink>
+                  <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
                 )
               })}
             </P>
-          </Section>
-
-          <Section>
-            <H2>{t('naturalVsFake.title')}</H2>
-            <P>{t('naturalVsFake.text1')}</P>
-            <P>{t('naturalVsFake.text2')}</P>
-            <P>{t('naturalVsFake.text3')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('mentorImplants.title')}</H2>
-            <P>{t('mentorImplants.text1')}</P>
           </Section>
 
           <Accordion items={accordionItems} />
