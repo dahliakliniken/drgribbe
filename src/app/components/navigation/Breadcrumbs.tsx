@@ -12,7 +12,7 @@ export const Breadcrumbs = () => {
   const pathNames = paths.split('/').filter((path) => path)
   const separator = <span>{' / '}</span>
   const activeClass = 'text-coral mx-2 font-bold'
-  const listClasses = 'hover:underline mx-2 font-bold'
+  const listClasses = 'hover:underline mx-2'
 
   /* Don't show breadcrumbs on the home page */
   if (paths === '/') {
