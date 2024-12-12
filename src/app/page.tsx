@@ -9,11 +9,11 @@ import { H2 } from './components/typography/H2'
 import { Card } from './components/surfaces/Card'
 import { SpaceContainer } from './components/layout/SpaceContainer'
 import { P } from './components/typography/P'
-import { Button } from './components/inputs/Button'
 import { SimpleCard } from './components/surfaces/SimpleCard'
 import { BgColors } from './types'
 import { Pillar } from './components/layout/Pillar'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
+import { A } from './components/typography/A'
 
 const Page: React.FC = () => {
   const t = useTranslations()
@@ -22,7 +22,9 @@ const Page: React.FC = () => {
       <main className="mb-36 flex flex-col">
         <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">
           <div className="absolute bottom-24">
-            <Button text={t('common.bookConsultation')} />
+            <A href="/boka" buttonStyle>
+              {t('common.bookConsultation')}
+            </A>
           </div>
         </section>
 
@@ -54,7 +56,9 @@ const Page: React.FC = () => {
                   {t('common.freeConsultation')}
                 </H2>
                 <div className="m-auto flex max-w-xs justify-center">
-                  <Button className="uppercase" text={t('common.bookNow')} />
+                  <A href="/boka" className="uppercase" buttonStyle>
+                    {t('common.bookNow')}
+                  </A>
                 </div>
               </>
             }

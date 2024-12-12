@@ -13,7 +13,8 @@
     "hud-och-injektioner": "Hud & injektioner",
     "var-personal": "Vår Personal",
     "priser": "Priser",
-    "garanti": "Garanti"
+    "garanti": "Garanti",
+    "boka": "Boka"
   },
   "home": {
     "title": "Hello world!",
@@ -94,7 +95,7 @@
   "common": {
     "bookConsultation": "Boka konsultation",
     "bookFreeConsultation": "Boka fri konsultation",
-    "freeConsultation": "Gratis konsultation",
+    "freeConsultation": "Kostnadsfri konsultation",
     "close": "Stäng",
     "open": "Öppna",
     "bookNow": "Boka nu"

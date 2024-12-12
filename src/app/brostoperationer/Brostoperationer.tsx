@@ -9,10 +9,10 @@ import { breastOperationsTreatmentsData } from '@/data/breastOperationsTreatment
 import { Pillar } from '../components/layout/Pillar'
 import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { BgColors } from '../types'
-import { Button } from '../components/inputs/Button'
 import { H3 } from '../components/typography/H3'
 import { Section } from '../components/layout/Section'
 import { AnchorLink } from '../components/typography/AnchorLink'
+import { A } from '../components/typography/A'
 
 const Brostoperationer = () => {
   const t = useTranslations()
@@ -148,7 +148,9 @@ const Brostoperationer = () => {
                 {t('common.freeConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
-                <Button className="uppercase" text={t('common.bookNow')} />
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {t('common.bookNow')}
+                </A>
               </div>
             </>
           }

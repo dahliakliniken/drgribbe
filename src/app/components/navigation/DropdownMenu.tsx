@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import { Button } from '../inputs/Button'
 import { useTranslations } from 'next-intl'
 import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
 import { CloseIcon } from '../icons/CloseIcon'
 import { MenuIcon } from '../icons/MenuIcon'
 import { ChevronIcon } from '../icons/ChevronIcon'
+import { A } from '../typography/A'
 
 export const DropdownMenu: React.FC = () => {
   const t = useTranslations()
@@ -96,7 +96,7 @@ export const DropdownMenu: React.FC = () => {
       />
 
       <div
-        className={`bg-custom-gradient absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] p-[10px] pl-gapSpace pt-10 transition-all duration-300 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 ${
+        className={`absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-custom-gradient p-[10px] pl-gapSpace pt-10 transition-all duration-300 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 ${
           isOpen
             ? 'pointer-events-auto translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-3 opacity-0'
@@ -112,7 +112,9 @@ export const DropdownMenu: React.FC = () => {
         <ul className="mb-gapSpace flex w-full flex-col gap-5">
           {renderLinks()}
         </ul>
-        <Button inverted small text={t('common.bookFreeConsultation')} />
+        <A inverted small href="/boka" buttonStyle className="text-center">
+          {t('common.bookConsultation')}
+        </A>
       </div>
     </div>
   )
