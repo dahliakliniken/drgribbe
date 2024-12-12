@@ -216,6 +216,97 @@ const Implantaten = () => {
             </P>
           </Section>
 
+          <Section>
+            <H2>{t('ourImplants.title')}</H2>
+            <H3>{t('ourImplants.motiva.title')}</H3>
+            <P>{t('ourImplants.motiva.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.motiva.formAndProfiles.title')}</H3>
+
+            <P>
+              {t.rich('ourImplants.motiva.formAndProfiles.text1', {
+                link: (chunks) => (
+                  <AnchorLink href="#tabell">{chunks}</AnchorLink>
+                )
+              })}
+            </P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.motiva.filling.title')}</H3>
+            <P>{t('ourImplants.motiva.filling.text1')}</P>
+            <P>
+              {t.rich('ourImplants.motiva.filling.text2', {
+                strong: (chunks) => <strong>{chunks}</strong>
+              })}
+            </P>
+            <P>
+              {t.rich('ourImplants.motiva.filling.text3', {
+                strong: (chunks) => <strong>{chunks}</strong>
+              })}
+            </P>
+            <P>
+              {t.rich('ourImplants.motiva.filling.text4', {
+                strong: (chunks) => <strong>{chunks}</strong>
+              })}
+            </P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.motiva.surface.title')}</H3>
+            <P>{t('ourImplants.motiva.surface.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.mentor.title')}</H3>
+            <P>{t('ourImplants.mentor.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.mentor.formAndProfiles.title')}</H3>
+            <P>{t('ourImplants.mentor.formAndProfiles.text1')}</P>
+            <P>{t('ourImplants.mentor.formAndProfiles.text2')}</P>
+            <P>{t('ourImplants.mentor.formAndProfiles.text3')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.mentor.filling.title')}</H3>
+            <P>{t('ourImplants.mentor.filling.text1')}</P>
+            <P>{t('ourImplants.mentor.filling.text2')}</P>
+            <P>{t('ourImplants.mentor.filling.text3')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.mentor.surface.title')}</H3>
+            <P>{t('ourImplants.mentor.surface.text1')}</P>
+            <P>{t('ourImplants.mentor.surface.text2')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.polytech.title')}</H3>
+            <P>{t('ourImplants.polytech.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.polytech.formAndProfiles.title')}</H3>
+            <P>{t('ourImplants.polytech.formAndProfiles.text1')}</P>
+            <P>{t('ourImplants.polytech.formAndProfiles.text2')}</P>
+            <P>{t('ourImplants.polytech.formAndProfiles.text3')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.polytech.filling.title')}</H3>
+            <P>{t('ourImplants.polytech.filling.text1')}</P>
+          </Section>
+
+          <Section>
+            <H3>{t('ourImplants.polytech.surface.title')}</H3>
+            <P>{t('ourImplants.polytech.surface.text1')}</P>
+            <P>{t('ourImplants.polytech.surface.text2')}</P>
+          </Section>
+
           <Accordion items={accordionItems} />
         </Pillar>
       </SpaceContainer>
