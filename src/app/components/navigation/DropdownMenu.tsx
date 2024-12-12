@@ -112,7 +112,14 @@ export const DropdownMenu: React.FC = () => {
         <ul className="mb-gapSpace flex w-full flex-col gap-5">
           {renderLinks()}
         </ul>
-        <A inverted small href="/boka" buttonStyle className="text-center">
+        <A
+          inverted
+          small
+          href="/boka"
+          buttonStyle
+          className="text-center"
+          onClick={() => setIsOpen(false)}
+        >
           {t('common.bookConsultation')}
         </A>
       </div>

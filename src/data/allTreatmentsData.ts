@@ -42,7 +42,7 @@ export const allTreatmentsData = [
     ],
     linkText: 'treatmentBox.treatments.breastLift.linkText',
     linkHref: '/brostoperationer/brostlyft',
-    bgPosition: BgPositions['bottom-left']
+    bgPosition: BgPositions['bottom-right']
   },
   {
     id: crypto.randomUUID(),
@@ -55,6 +55,6 @@ export const allTreatmentsData = [
     ],
     linkText: 'treatmentBox.treatments.muscleRelaxation.linkText',
     linkHref: '/hud-och-injektioner',
-    bgPosition: BgPositions['bottom-right']
+    bgPosition: BgPositions['bottom-left']
   }
 ]

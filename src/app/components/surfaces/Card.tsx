@@ -4,7 +4,6 @@ import { useRef } from 'react'
 import { A } from '../typography/A'
 import { P } from '../typography/P'
 import { BgColors, BgPositions } from '@/app/types'
-import { generateBgPositionClass } from '@/utils/generateBgPositionClass'
 
 type CardProps = {
   title?: React.ReactNode
@@ -41,7 +40,6 @@ export const Card = ({
   cardList
 }: CardProps) => {
   const linkRef = useRef<HTMLAnchorElement>(null)
-  const bgPositionClass = generateBgPositionClass(bgPosition)
 
   const handleClick = () => {
     if (clickable && linkRef.current) {
@@ -54,9 +52,19 @@ export const Card = ({
     ? 'before:bg-200'
     : 'before:lg:bg-110 before:bg-200'
 
+  const backgroundPositionVariants = {
+    'left-top': 'before:bg-small-left-top',
+    'right-top': 'before:bg-small-right-top',
+    center: 'before:bg-small-center',
+    left: 'before:bg-small-left lg:before:bg-large-left',
+    right: 'before:bg-small-right lg:before:bg-large-right',
+    'bottom-right': 'before:bg-small-bottom-right',
+    'bottom-left': 'before:bg-small-bottom-left'
+  }
+
   return (
     <div
-      className={`${bgPositionClass} ${bgSizeClass} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
+      className={`${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${bgSizeClass} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
       onClick={handleClick}
     >
       {title && title}
