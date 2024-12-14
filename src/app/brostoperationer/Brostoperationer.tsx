@@ -13,6 +13,11 @@ import { H3 } from '../components/typography/H3'
 import { Section } from '../components/layout/Section'
 import { AnchorLink } from '../components/typography/AnchorLink'
 import { A } from '../components/typography/A'
+import ConsultationImage from '../../../public/images/brostoperation-konsultation.jpg'
+import DayOfSurgeryImage from '../../../public/images/brostoperationer-day-of-surgery.jpg'
+import SurgeryImage from '../../../public/images/brostoperationer-surgery.jpg'
+import PostSurgeryImage from '../../../public/images/brostoperationer-post-surgery.jpg'
+import Image from 'next/image'
 
 const Brostoperationer = () => {
   const t = useTranslations()
@@ -99,6 +104,10 @@ const Brostoperationer = () => {
               <P>{t('brostoperationer.consultation.text6')}</P>
               <P>{t('brostoperationer.consultation.text7')}</P>
               <P>{t('brostoperationer.consultation.text8')}</P>
+              <Image
+                src={ConsultationImage}
+                alt={t('altText.brostoperationerConsultation')}
+              />
             </Section>
 
             <Section>
@@ -112,18 +121,33 @@ const Brostoperationer = () => {
                 })}
               </P>
               <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
+
+              <Image
+                src={DayOfSurgeryImage}
+                alt={t('altText.brostoperationerDayOfSurgery')}
+              />
             </Section>
 
             <Section>
               <H3>{t('brostoperationer.surgery.heading1')}</H3>
               <P>{t('brostoperationer.surgery.text1')}</P>
               <P>{t('brostoperationer.surgery.text2')}</P>
+
+              <Image
+                src={SurgeryImage}
+                alt={t('altText.brostoperationerSurgery')}
+              />
             </Section>
 
             <Section>
               <H3>{t('brostoperationer.postSurgery.heading1')}</H3>
               <P>{t('brostoperationer.postSurgery.text1')}</P>
               <P>{t('brostoperationer.postSurgery.text2')}</P>
+
+              <Image
+                src={PostSurgeryImage}
+                alt={t('altText.brostoperationerPostSurgery')}
+              />
             </Section>
 
             <Section>
