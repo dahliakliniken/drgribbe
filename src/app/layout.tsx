@@ -1,6 +1,18 @@
 import { NextIntlClientProvider } from 'next-intl'
-import { getLocale, getMessages } from 'next-intl/server'
+import { getLocale, getMessages, getTranslations } from 'next-intl/server'
+import { Breadcrumbs } from './components/navigation/Breadcrumbs'
+import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import './globals.css'
+
+export async function generateMetadata() {
+  const t = await getTranslations()
+
+  return {
+    title: t('metadata.title'),
+    description: t('metadata.description')
+  }
+}
+
 export default async function RootLayout({
   children
 }: {
@@ -13,7 +25,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {/* <Breadcrumb /> */}
+          <Breadcrumbs />
+          <HeaderWithFooter />
           {children}
         </NextIntlClientProvider>
       </body>

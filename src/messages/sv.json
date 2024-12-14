@@ -1,7 +1,20 @@
 {
+  "metadata": {
+    "title": "Kliniken för estetisk bröstförstoring och bröstlyft",
+    "description": "Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft."
+  },
   "breadcrumbs": {
     "home": "Hem",
-    "about": "Kliniken"
+    "brostoperationer": "Bröstoperationer",
+    "brostlyft": "Bröstlyft",
+    "brostforstoring": "Bröstförstoring",
+    "brostforminskning": "Bröstförminskning",
+    "implantaten": "Implantaten",
+    "hud-och-injektioner": "Hud & injektioner",
+    "var-personal": "Vår Personal",
+    "priser": "Priser",
+    "garanti": "Garanti",
+    "boka": "Boka"
   },
   "home": {
     "title": "Hello world!",
@@ -22,25 +35,29 @@
         "title": "Bröstförminskning",
         "paragraph1": "Många kvinnor lider av stor och tung byst.",
         "paragraph2": "Operationen bröstförminskning är ett mycket tacksamt ingrepp där man precis som vid ett bröstlyft tar bort lös hud för att strama till bysten.",
-        "paragraph3": "Vid en bröstförminskning tas även mer eller mindre av den egna bröstvävnaden bort för att göra brösten mindre och nättare."
+        "paragraph3": "Vid en bröstförminskning tas även mer eller mindre av den egna bröstvävnaden bort för att göra brösten mindre och nättare.",
+        "linkText": "Läs mer om bröstförminskning"
       },
       "breastEnlargement": {
         "title": "Bröstförstoring",
         "paragraph1": "Vid en bröstförstoring lägger man in bröstimplantat för att återskapa eller öka volymen i brösten.",
         "paragraph2": "Bröstimplantaten läggs i en ficka bakom eller framför stora bröstmuskeln och görs säkrast via ett snitt under brösten, en teknik som Dr Gribbe utvecklat och förfinat i drygt 15 år.",
-        "paragraph3": "Det finns många varianter och märken på bröstimplantat och vid konsultationen får du hjälp att välja."
+        "paragraph3": "Det finns många varianter och märken på bröstimplantat och vid konsultationen får du hjälp att välja.",
+        "linkText": "Läs mer om bröstförstoring"
       },
       "breastLift": {
         "title": "Bröstlyft",
         "paragraph1": "Bröstlyft är en vanlig bröstoperation där hängande överskottshud tas bort, lös brösthud stramas till och bröstvårtorna flyttas upp.",
         "paragraph2": "Vanligtvis förminskas också vårtgårdarna vid ett bröstlyft.",
-        "paragraph3": "Vid operationen läggs, precis som vid en bröstförstoring oftast även bröstimplantat in för att återskapa volym upptill i dekolletaget."
+        "paragraph3": "Vid operationen läggs, precis som vid en bröstförstoring oftast även bröstimplantat in för att återskapa volym upptill i dekolletaget.",
+        "linkText": "Läs mer om bröstlyft"
       },
       "muscleRelaxation": {
-        "title": "Muskelavslappnande behandling",
+        "title": "Hud & Injektioner",
         "paragraph1": "Genom att med mycket tunn nål injicera muskelavslappnande läkemedel kan man få muskler att slappna av och rynkor att försvinna eller minska.",
         "paragraph2": "Effekten av läkemedlet kommer efter ca en vecka och varar i 3-6 månader. Inför behandlingen pratar du med dr Gribbe som gör en noggrann analys av dina önskemål och förutsättningar.",
-        "paragraph3": "Behandlingen tar några minuter och du kan lämna kliniken direkt."
+        "paragraph3": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
+        "linkText": "Läs mer om muskelavslappnande behandling"
       }
     }
   },
@@ -48,6 +65,14 @@
     "title": "Bröstoperationer i Stockholm",
     "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
     "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
+  },
+  "operationDepartment": {
+    "title": "Operationsavdelning",
+    "text1": "Vi värnar om din hälsa och ditt välbefinnande.",
+    "text2": "För oss är det viktigt med en vilsam och lugn miljö så att du som besökare får bästa möjliga upplevelse vid ditt besök. Detta har vi haft i åtanke vid utformningen av kliniken och val av operationsavdelning.",
+    "text3": "Dahliakliniken har en operationsavdelning som håller mycket hög standard. Den är avskild från mottagningen och ligger på ett eget våningsplan med tillträde enbart för patienter och personal.",
+    "text4": "Operationssalarna är utrustade för att hålla högsta nivå med avseende på samtliga väsentliga kvalitetsparametrar. Utrustningen som används är ny, modern och högteknologisk. Renlighet och sterilitet är oerhört väsentligt för att en operationsavdelning ska vara patientsäker och salarna är därför utrustade med en särskild ventilation som tillför en hög grad av sterilitet och ren luft vilket förebygger risken för infektioner. Operationssalarnas inredning följer socialstyrelsens riktlinjer och gällande EU-regler. Därutöver är verksamheten och operationsavdelningen ISO-certifierad vilket innebär att vi uppfyller internationella kvalitets- och miljökrav.",
+    "text5": "Vår operationsavdelning har en avancerad steril med förstklassig utrustning. Den har separata renrum avsedda för rengöring och sterilisering av instrument dvs- icke-steriliserade och steriliserade verktyg, tvätt och övrigt separeras från varandra. Allt detta medför att operationsavdelningen håller en hög nivå avseende sterilitet och renlighet."
   },
   "profileCard": {
     "title": "Specialist på bröstoperationer",
@@ -58,9 +83,9 @@
     "paragraph3": "Med Dr Gribbe vid din sida kan du känna dig trygg genom hela processen. Oavsett om du drömmer om diskreta och eleganta bröst, en minskning för att skapa en nättare siluett, eller en förstoring för en fylligare form, kommer Dr Gribbe och hans erfarna team att hjälpa dig nå ditt önskade resultat."
   },
   "aboutClinic": {
-    "title":"Om Kliniken",
-    "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
-    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
+    "title": "Om Kliniken",
+    "paragraph1": "Dahliakliniken är en nyetablerad klinik lanserad av Dr Örjan Gribbe som har en omfattande erfarenhet av plastikkirurgi, specialiserad inom såväl rekonstruktiv som estetisk kirurgi. Kliniken är Sveriges enda klinik specialiserad på estetiska bröstoperationer av alla slag, såväl bröstförstoring som bröstlyft, bröstförminskning och kombinerade ingrepp med bröstimplantat. Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, tillsammans med sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
+    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet inom sin specialitet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Kliniken ligger i nyrenoverade lokaler med operationssalar med toppmodern utrustning. Vi använder oss av de senaste teknikerna och material och kirurgiska instrument av mycket hög kvalitet för att säkerställa att patienten får bästa möjliga resultat. Det ger plastikkirurgen hög precision och tillförlitlighet och möjliggör kirurgisk perfektion. .Allt i linje med klinikens strävan. Fokus är att öka kvinnors livskvalité och förändra deras kroppsuppfattning genom att förändra brösten på ett sätt som de ofta drömt om länge. Såväl tidigare patienter som nya välkomnas!"
   },
   "contact": {
     "contactUs": "Kontakta oss",
@@ -70,7 +95,605 @@
   "common": {
     "bookConsultation": "Boka konsultation",
     "bookFreeConsultation": "Boka fri konsultation",
+    "freeConsultation": "Kostnadsfri konsultation",
     "close": "Stäng",
-    "open": "Öppna"
+    "open": "Öppna",
+    "bookNow": "Boka nu"
+  },
+  "brostoperationer": {
+    "title": "Bröstoperationer i Stockholm",
+    "heading1": "Så går operationen till",
+    "consultation": {
+      "heading1": "Konsultationen",
+      "text1": "Konsultationen är mötet mellan dig som patient och din plastikkirurg. Det är mötet där ni ska förstå varandra och komma överens. Ni pratar om dina önskemål och dina förutsättningar. Ni går igenom din sjukdomshistoria, förberedelserna inför operationen och tiden efter.",
+      "text2": "Vilka önskemål man som patient har på slutresultatet varierar mycket från kvinna till kvinna. Det är under konsultationen som detta måste gås igenom noggrant.",
+      "text3": "Under konsultationen inför bröstförstoring går man igenom hur toppiga brösten ska bli, det vill säga hur mycket brösten ska puta ut från kroppen när man står i profil. För detta får du välja projektion, profilen på bröstimplantaten. Bröstimplantatens projektion kan varieras mellan låg profil, mellanprofil, hög profil och ultrahög profil. Vilken projektion man väljer är tycke och smak men ofta så vill man balansera svanken och rumpan för att se proportionerlig ut. Tar man för toppiga bröstimplantat kan man se framtung ut. Det vanligaste är att man väljer mellanprofil eller hög profil vid en första bröstförstoring.",
+      "text4": "Vid konsultationen så går vi också igenom hur breda bröst du önskar. Bredare bröstimplantat ger mer bredd åt sidorna och smalare bröstimplantat ger mindre bredd åt sidorna. Du får hjälp att välja bröstimplantat och hur dina bröst ska bli efter operationen. Vissa patienter vill ha bredare bröst för att ge en timglasform och balansera midja och höfter medan andra vill ha smalare bröst för att känna sig sportigare och nättare.",
+      "text5": "Projektionen och bredden på bröstimplantaten ger tillsammans en viss storlek och volym på brösten. Ju mer projektion och ju mer bredd desto större bröstimplantat.",
+      "text6": "Vid en konsultation när man har bröst som hänger går vi noggrant igenom dina förutsättningar, vilket resultat som är möjligt och vilken operationsteknik som ska användas. Även här används ofta bröstimplantat för att återskapa fylligheten upptill i brösten.",
+      "text7": "Syftet med konsultationen blir att hitta just din smak och hur du vill ha brösten. För att uppnå korrekt slutresultat väljer vi bröstimplantat och går igenom vilken typ av bröstoperation och operationsteknik som passar bäst.",
+      "text8": "Konsultationen är på så vis ett lika viktigt moment som operationen. En väl genomförd konsultation lägger grunden till att du som patient blir nöjd med slutresultatet efter operationen."
+    },
+    "dayOfSurgery": {
+      "heading1": "Operationsdagen",
+      "text1": "På operationsdagen kommer du till kliniken på utsatt tid. Vilken tid du ska infinna dig brukar vi bestämma cirka en vecka innan operationen. Vilken tid du får beror på flera faktorer. Dels vilket ingrepp du ska genomgå, dels var du bor och dels din sjukdomshistoria. Till exempel så opereras alltid en patient med diabetes först på dagen. Dessutom planeras dagen för att det ska bli så bra logistik som möjligt avseende patientflöde och lunch för personalen.",
+      "text2": "Inför din ankomst så har du förberett dig noggrant enligt speciella instruktioner. Till exempel så kommer du fastande och har tvättat dig med en speciell tvål. <link>Läs om hur du förbereder dig här.</link>",
+      "text3": "När du anlänt till kliniken tar vi emot dig och hjälper dig inför operation. I vilken turordning följande sker varierar. Du byter om till morgonrock och tofflor. Om du ska ha stödstrumpor tar du på dem nu om du inte redan tagit på dem hemma. Du träffar Dr Gribbe och ni har tid att gå igenom eventuella frågor eller funderingar. Ni går igenom operationen och doktorn ritar på dig och planerar. Narkosläkaren eller narkossjuksköterskan sätter en infart på dig, oftast i vänster handrygg och du får premedicinering mot bland annat smärta och illamående. Du har här möjlighet att framföra önskemål och ställa frågor kring narkosen. Du får sedan sitta i ett vilorum med sköna fåtöljer i väntan på din tur. Här kan du lägga upp benen och slappna av. Du kan läsa en tidning eller bok, lyssna på musik eller surfa på din telefon eller dator."
+    },
+    "surgery": {
+      "heading1": "Narkos och operation",
+      "text1": "När det är din tur blir du hämtad av narkospersonalen. Du promenerar in till operation och vidare till operationssalen. Inne på operationssalen möts du av operationssjuksköterskan och en undersköterska. Operationssjuksköterskan är här ofta redan sterilklädd med operationsrock och dubbla operationshandskar. All personal bär operationskläder, mössor och munskydd. Sammanlagt så är det mellan tre och fem personer på plats och hjälper till. Väl inne på salen får du hjälp att komma upp på operationsbordet. På operationsbordet ligger du och vilar en stund och personalen ser till att du ligger skönt och bekvämt innan du sedan blir sövd. I samband med narkosens början andas du ren syrgas i en mask som hålls löst över din mun och näsa. Det är alltså inte narkosgas utan bara ren syrgas för att förbereda kroppen inför sövningen. Sövningen går till som så att två narkosläkemedel sprutas in via två stycken pumpar som kopplas till din infart via en slang. Det ena läkemedlet gör att du sover och det andra gör att du inte känner någonting under operationen. Det är just det, sömn och smärtfrihet som är narkos. Själva sövningen går snabbt, på någon minut, och brukar för de allra flesta upplevas som lugn och behaglig. När du väl sover får du antibiotikum, penicillin eller motsvarande (antibiotikaprofylax) intravenöst för att undvika risken för infektion. Samtidigt tvättar operationssjuksköterskan operationsområdet och huden utanför med sprit, klorhexidinsprit. Spriten lufttorkar och sedan kläs operationsområdet in, draperas med gröna operationslakan. Operationssjuksköterskan lägger fram operationsinstrumenten på olika bord som skjuts in över din kropp. Operationssjuksköterskan hjälper doktorn på med operationskläder och dubbla operationshandskar. Operationen startar och varar mellan 30 minuter och 3 timmar beroende på vilket ingrepp som ska göras. När du sover lyssnar vi på musik och pratar med varandra. Doktorn opererar och operationssjuksköterskan instrumenterar, det vill säga ger rätt instrument till doktorn vid rätt tidpunkt. Ofta så läser hon av doktorns arbete och kan vara beredd med rätt instrument vid rätt tid. Ibland ber doktorn om ett specifikt instrument eller en specifik sutur, tråd att sy med. Under hela operationen så övervakar narkospersonalen operationen vid ditt huvud och håller koll på att du sover lagom djupt och att du inte har ont. Du är så pass lagom djupt sövd att du inte känner någon smärta och att du inte kan förnimma någonting under operationen. Samtidigt så ser vi det som viktigt att du är sövd på ett sånt sätt att du fortsätter andas spontant, det vill säga att du själv andas och att du inte ventileras av narkosapparaten. Lyckas man som narkospersonal med detta under operationen så mår lungorna bättre under operationen och du mår även mindre illa efteråt. Det är en konst att söva på detta sätt och kräver erfarenhet och uppmärksamhet.",
+      "text2": "Undersköterskans roll under operationen är att assistera doktorn och operationssjuksköterskan som båda är sterilklädda. Hon tar då ur skåp och lådor fram extra instrument eller suturer som behövs under operationens gång. Undersköterskan packar även upp bröstimplantaten som är separat förpackade i flera lådor i varandra. Först en ytterkartong, sedan en osteril förpackning och innerst en steril förpackning. Det gör att undersköterskan kan öppna den näst sista förpackningen utan att röra den innersta. Operationssjuksköterskan kan sedan ta upp den innersta, sterila förpackningen utan att vidröra den osterila förpackningen. Operationssjuksköterskan kan sedan öppna locket på den innersta, sterila förpackningen och servera bröstimplantatet till doktorn. Det är då bara doktorn som vidrör bröstimplantaten och inför detta så byter doktorn till nya ytterhandskar."
+    },
+    "postSurgery": {
+      "heading1": "Efter operationen",
+      "text1": "När operationen är klar tejpas ärren och förband läggs. Narkosläkaren stänger av läkemedelspumparna, tar ut larynxmasken och du vaknar. Drapering och diatermiplatta tas bort och personalen sätter på dig en bh för att hålla bröstimplantaten på plats och minska svullnaden. En säng från uppvaket rullas in längs med operationsbordet och personalen flyttar över dig till sängen. Patienten är då oftast så trött att hon inte märker eller minns något av detta. Sängen rullas ut på uppvaket och du kopplas igen upp till övervakningsutrustning som mäter puls, hjärtaktivitet, blodtryck, andning och saturation, syremättnad och du får syrgas in i näsan för att undvika illamående. Du vaknar successivt och har hela tiden en narkossjukköterska och annan vårdpersonal vid din sida. Allt eftersom du vaknar kommer du förstå var du är och att operationen är klar. Du kommer få hjälp med smärtlindring och läkemedel mot illamående och för blodtrycket. Efter ca 30 minuter kan du börja dricka lite och så småningom även äta någonting lätt. Man kommer hjälpa dig att sitta på sängkanten och sedan att stå upp på golvet bredvid sängen. Du får hjälp att med stöd först gå en kortare promenad och sedan gå till toaletten. Det är hela tiden viktigt att du följer personalens instruktioner och att du omedelbart berättar om du känner dig yr eller om du känner att du är på väg att svimma. Allt eftersom så kommer du kunna röra dig mer och mer obehindrat och du kan då komma tillbaka till vilrummet och sitta och vila i en fåtölj. Där kan du ta det lugnt, läsa, titta på telefonen eller prata med andra patienter.",
+      "text2": "Du serveras mat och dryck antingen redan i sängen eller i vilrummet. Det finns mycket att välja mellan såsom fil, yogurt, musli, smörgåsar, frukt, kaffe, te och olika maträtter. Personalen kommer hjälpa och guida dig så att du mobiliseras på bästa sätt och efter 4-6 timmar är du redo att lämna kliniken. Doktorn kommer och pratar med dig innan du åker hem och du kan ställa frågor. Ett återbesök bokas till cirka 10-12 dagar efter operationen."
+    },
+    "firstReturnVisit": {
+      "heading1": "Första återbesöket",
+      "text1": "Första återbesöket sker 10-12 dagar efter operationen. Det är Dr Gribbe som hjälper dig då och tar bort tejpen och ser att allt läker som det ska. Tillsammans tittar ni på ärren och på brösten, pratar om läkning, tejpning, träning, sol och bad. Doktorn ger individuella bh-instruktioner som gäller just för dig och din läkning. Det finns gott om tid att ställa frågor och ni planerar för framtida återbesök.",
+      "text2": "Oftast så sker nästa besök efter ca 3-4 månader men i vissa fall så ses man tidigare"
+    },
+    "secondReturnVisit": {
+      "heading1": "Återbesök efter 3-4 månader",
+      "text1": "Allt eftersom tiden, månaderna går töjs huden successivt och bröstimplantaten faller på plats. Processen är individuell och det kan skilja sig mycket från person till person. Ofta så sker de största förändringarna de första månaderna och Dr Gribbe brukar därför träffas sina patienter efter 3 månader. Ni träffas då och tittar på hur brösten kommit på plats och doktorn lämnar instruktioner om bh, tejpning och träning."
+    },
+    "beforeOperation": "Förberedelser inför din operation",
+    "thingsToConsiderBeforeSurgery": "Det är en rad saker du ska tänka på inför din operation.",
+    "afterOperation": "Efter din operation",
+    "aftercare": "När du lämnat kliniken och tiden from till första återbesöket",
+    "afterFirstReturnVisit": "Efter första återbesöket"
+  },
+  "brostlyft": {
+    "title": "Bröstlyft",
+    "background": {
+      "heading1": "Bakgrund",
+      "text1": "Bröstlyft är en väldigt vanlig plastikkirurgisk operation eftersom brösten ofta är just den kroppsdel som mest påverkas av olika händelser i livet och som förlorar sitt ungdomliga utseende och istället börjar hänga. Vissa kvinnor har bröst som hänger från tidig tonårsålder men vanligare är att det är graviditet och amning eller pendlingar i kroppsvikt som gör att brösten hänger. Huden i brösten är extra eftergivlig just för att kunna töjas ut och ta emot bröstvävnaden när den blir större under graviditet och amning. Brösthuden tappar då sin elasticitet och drar sedan inte ihop sig. Samtidigt förlorar själva bröstvävnaden sin ungdomliga fasthet och blir i stället mjukare. Dessutom omvandlas mer eller mindre av bröstvävnaden till fettväv. Dessa är förändringar som sker av naturligt åldrande men graviditet och amning skyndar på processen.",
+      "text2": "Känslan av att brösten hänger brukar kvinnor beskriva på flera olika sätt. Vissa stör sig mest på att den egna bröstvävnaden hänger ner mer eller mindre över bröstvecket. Ibland bara lite så att vecket döljs men ibland mer så att brösten ligger an mot huden under brösten. Vissa kvinnor upplever att brösten hänger eftersom bröstvårtorna sitter långt ner på brösten och pekar nedåt. Ibland kan dock brösten hänga över vecket medan de egna bröstvårtorna ändå sitter relativt högt upp. Många stör sig på och upplever brösten som hängiga då volymen upptill i brösten, i klyftan och i dekolletaget minskat eller helt försvunnit. Ofta är det en kombination av flera av ovanstående faktorer som gör att brösten upplevs som hängande och i samband med ett bröstlyft kan alla dessa delar adresseras och åtgärdas. Vid ett bröstlyft kan även vårtgårdar och ibland även bröstvårtor minskas om de upplevs som stora. Om bröstvårtorna är indragna kan detta åtgärdas.",
+      "text3": "Operationen bröstlyft är mycket tacksam med fina resultat och nöjda patienter."
+    },
+    "techniques": {
+      "heading1": "Teknik",
+      "text1": "Inför operationen bröstlyft medan du är vaken ritar och planerar doktorn ingreppet på dig. Ritar vilken höjd bröstvårtorna ska sitta, hur långt snittet under brösten ska vara samt hur snittet från vårtgården ner till vecket ska gå. Ingreppet som sedan sker i narkos inleds med att doktorn fyller i och förstärker denna ritning. Ritningen görs med precision och till sin hjälp har doktorn inför operationen skjutmått och måttband och under operationen används en linjal. När doktorn är nöjd med ritningen läggs lokalbedövning Xylocain med adrenalin där i incisionslinjerna. Xylocain bedövar, tar bort smärta vilket gör att patienten inte behöver sövas så djupt. Adrenalinet drar ihop blodkärl så att det blöder mindre när man opererar samt gör att lokalbedövningen stannar kvar längre i vävnaden då det inte sköljs bort av blodet. (Xylocain är en svensk uppfinning av kemisterna Nils Löfgren och hans elev Bengt Lundqvist. Patentet köptes av läkemedelsföretaget Astra och betecknas som den viktigaste händelsen i företagets historia). Efter att lokalbedövningen lagts låter man den verka en stund och sedan fortsätter operationen med att man med skalpell skär ut vårtgården efter en rund mall. Storleken på vårtgården går att variera och är någonting som man som patient kan vara med och påverka. Ingreppet fortsätter med att doktorn fortfarande med kniv skär enligt ritningen. Hud skärs bort uppåt där bröstvårta och vårtgård ska placeras, runt vårtgården och framförallt så tas det mer eller mindre hud från bröstets undersida ovanför bröstvecket. Ibland är det bara lite hud man tar bort om det är små bröst som hänger lite medan om det är stora bröst med mycket häng, ptos så tas stora bitar hud bort. När huden tagits bort sitter vårtgård och bröstvårta kvar på sin plats på underliggande bröstvävnad, lite som en isolerad ö i mitten av bröstet. Vårtgård med bröstvårta mobiliseras nu upp på plats till sin nya position upptill på bröstet och sys fast med enstaka stygn. Bröstvävnaden och huden förs samman och sys ihop i flera lager med enstaka stygn av olika tjocklek. Slutligen sys huden ytligt med en lite finare tråd. Det är mycket viktigt hur man planerar, skär och syr. Det är viktigt att man tar bort en lagom mängd hud så att brösten blir så strama som möjligt utan att man riskerar cirkulationen i hud och bröstvävnad. Om det blir för stramt äventyras cirkulationen till bröstvårta, vårtgård eller vissa hudpartier. Särskilt känsligt är förutom bröstvårta och vårtgård även hudflikarna som i mitten möter bröstvecket i ett upp-och-nervänt T.",
+      "text2": "När brösten sytts ihop läggs tejp närmast ärren och sedan ett förband som tar upp de små mängder blod som normalt kan sippra ut via ärren."
+    }
+  },
+  "brostforstoring": {
+    "title": "Bröstförstoring",
+    "background": {
+      "heading1": "Bakgrund",
+      "text1": "Bröstförstoring med bröstimplantat har under de senaste årtiondena blivit allt vanligare och mer och mer accepterat. Materialen som nu används är säkra och har mycket lång hållbarhet.",
+      "text2": "Kvinnor väljer att förstora brösten av olika anledning. Vissa vill få hjälp att skapa en byst som de inte får av naturen och andra vill återskapa brösten efter graviditet och amning, viktnedgång eller efter att brösten krympt med ökad ålder."
+    },
+    "technique": {
+      "heading1": "Teknik",
+      "text1": "Operationen bröstförstoring sker under full narkos. Inför operationen har du fått premedicinering och strax efter att du sövts och innan operationsstart så får du antibiotikum intravenöst.",
+      "heading2": "Snitt",
+      "text2": "Ingreppet inleds med att man lägger ett snitt genom huden med skalpell i bröstvecket under bröstet. Det finns andra sätt men Dr Gribbe använder och rekommenderar denna metod av flera olika anledningar, framför allt att man på så vis har bäst insyn och kontroll under ingreppet. Därefter skär man med genom underhudsfettet ned till bröstmuskeln.",
+      "heading3": "Implantatficka",
+      "text3": "Nästa steg är att skapa en lagom stor ficka för implantaten och man kan här välja att göra fickan under (submuskulärt) eller ovanpå muskeln (subglandulärt). Vilken placering för implantatet man väljer beror på patientens önskemål och förutsättningar. <link>Läs mer om val implantatplacering här.</link>",
+      "heading4": "Diatermi",
+      "text4": "Under hela operationen, utom just när man skär genom huden, används så kallad diatermi. Diatermi är en elektrisk kniv som både kan skära genom vävnaden såsom fett och muskel och med vilken man kan bränna på små blodkärl som härmed blodstillas och koaguleras. I princip all modern kirurgi sker med hjälp av diatermi och det finns mer eller mindre avancerad utrustning. På kliniken använder vi den allra senaste tekniken med utsug för rökgaserna för personalens och patienternas hälsa.",
+      "heading5": "Ficka bakom muskeln (submuskulär implantatficka)",
+      "text5": "Vid placering av bröstimplantat under muskeln fortsätter operationen ner genom de nedersta fibrerna på stora bröstmuskeln, musculus pectoralis major. Muskelns ursprung på bröstkorgen delas upp till cirka klockan 4 på höger sida och cirka kl 8 på vänster sida och ett utrymme skapas under muskeln ovanpå revbenen. Hur muskeln sitter ihop med bröstkorgen nertill varierar från person till person. Ibland behöver man inte dela muskeln alls och ibland bara lite. Hursomhelst så måste fickan skapas tillräckligt långt ner (mot magen) för att passa det bröstimplantat som valts och patientens förutsättningar. Den stora bröstmuskeln sitter ihop med den lilla bröstmuskeln, musculus pectoralis minor. Vid operationen så löses dessa muskler från varandra och implantatet hamnar då under stora men ovanpå lilla bröstmuskeln. Även främre sågmuskeln (boxarmuskeln), musculus serratus anterior ses vid operationen och fickan för bröstimplantatet skapas ovanpå denna. Hur musklerna ser ut och hur de förhåller sig till varandra varierar från individ till individ varför man som plastikkirurg måste vara noggrann och utföra operationen individuellt. Fickan under muskeln begränsas mot mitten av själva muskelkanten där den sitter fast mot, urspringer från bröstkorgen. Detta varierar också från individ till individ och bestämmer i slutändan hur tät klyftan blir. Det går att påverka klyftan något genom att muskeln här trimmas lite men det går inte att skära av muskeln eller flytta muskeln. När fickan sedan skapas uppåt och åt sidan måste man vara noggrann för att få rätt höjd och bredd på fickan för de bröstimplantat som valts samt för att undvika skador på nerver eller andra muskler.",
+      "heading6": "Ficka framför muskeln (subglandulär implantatficka)",
+      "text6_1": "Efter att man gått genom underhudsfettet och nått stora bröstmuskeln fortsätter operationen nu ovanpå muskeln. Även här sker operationen skarpt med diatermi för att minimera blödning. Operationen kräver mer dissektion då underhudsfettet sitter fast mot muskelns framsida och måste lösas skarpt. Under hela förloppet när fickan skapas är det nu väldigt viktigt att hålla koll på var man är. Fickan ska få lagom storlek och dimensioner inåt mitten, uppåt och åt sidan för att passa det bröstimplantat som valts. Åt inget håll har man några egentliga riktlinjer i fickan då man inte når någon vävnadsstruktur som sätter stopp och begränsar fickan. Vid skapande av fickan under muskeln däremot ses strukturer som muskler och revben och mot mitten sätter stora bröstmuskelns ursprung, muskelkant stopp för dissektionen. Så är det alltså inte framför muskeln. Om man inte är noggrann så kan till exempel fickan blir för stor (eller för liten) till exempel mot mitten vilket ger en sned, för bred eller för smal klyfta.",
+      "text6_2": "När fickan för bröstimplantatet skapas via snitt under bröstet har man god insyn och man kan också under gång känna med fingrarna så att fickan blir perfekt.",
+      "text6_3": "Efter att implantatfickan skapats är det viktigt att man undersöker noggrant så att inga små blodkärl står öppna och blöder. Med diatermi koaguleras blodkärlen under gång och nu när fickorna för bröstimplantaten är skapade.",
+      "heading7": "Föra in bröstimplantaten",
+      "text7": "Det är nu dags att ta upp bröstimplantaten. Varje bröstimplantat kommer förpackat i en separat låda. Först en ytterkartong, sedan en osteril förpackning av plast och innerst en steril förpackning också av plast. Undersköterskan öppnar först ytterkartongen och tar ut den yttre plastförpackningen. Hon kan sedan öppna denna förpackning utan att röra den innersta och då “servera” den innersta sterila plastförpackningen till operationssjuksköterskan som tar upp den sterila innersta förpackningen utan att vidröra den osterila förpackningen. Operationssjuksköterskan kan sedan öppna locket på den innersta, sterila förpackningen och “serverar” bröstimplantaten till doktorn. Det är då bara doktorn som vidrör bröstimplantaten och inför detta så byter doktorn till nya ytterhandskar. Bröstimplantaten förs sedan in i vardera fickan genom att operationssjuksköterskan håller upp öppningen till fickorna med en brösthake samtidigt som doktorn för in bröstimplantaten ett efter ett. Det krävs här precision och en speciell teknik för att inte skada bröstimplantaten och för att få vardera bröstimplantat på plats i fickan. När bröstimplantaten läggs på plats kontrolleras symmetrin och att de ligger på rätt höjd på bröstkorgen.",
+      "heading8": "Sy ihop såret",
+      "text8": "Det är mycket viktigt hur såret sys ihop och här har Dr Gribbe utvecklat och förfinat sin teknik under många år.  Kort sagt så sys såret ihop i flera lager för att ge ett optimalt stöd, för att minimera risken att bakterier når implantaten och för att ge ett fint ärr. När man syr så sitter tråden fast på nålen från fabriken. Nålen är böjd som en halvcirkel eller lite mindre och kan ha olika storlek från några mm till ett par cm. Tråden kan vara finare eller grövre och kan vara sådan att den tas upp av kroppen, resorberbar eller permanent och tas bort på mottagningen en tid efter operationen. Vid bröstoperationerna använder vi bara trådar som tas upp av kroppen. Nålen sätts fast på en nålförare som är som en lång tång (länk instagraminlägg) som gör att den med lätthet kan föras genom vävnaden. När doktorn fört nålen genom vävnaden fångar han den med en pincett och sedan knyts tråden med flera knutar. Efter detta klipps tråden av operationssjuksköterskan och man kan fortsätta med nästa stygn. Under en bröstförstoring sätts först ett lager enstaka stygn på djupet med grov tråd, sedan ett ytligare lager enstaka stygn med en finare tråd och ytterst ett fortlöpande stygn med en fin tråd. Lagret på djupet stänger igen, nästa lager avlastar ärret och det ytliga adapterar sårkanterna på bästa sätt. Ärret kan på grund av stygnen kännas knöligt och se knöligt ut under ett par månader efter operationen.",
+      "heading9": "Förband",
+      "text9": "På ärret läggs förband i form av tejp och kompresser. Därefter en skön, mjuk bh."
+    },
+    "placement": {
+      "heading1": "Implantatplacering, framför eller bakom bröstmuskeln",
+      "text1": "Generellt så kan man säga att om man är tunn och smal och saknar underhudsfett eller egen bröstvävnad upptill i brösten så passar en placering under muskeln bäst. Muskeln blir då ett extra lager vävnad som gör att implantaten inte syns så direkt och tydligt utan man får i stället en harmonisk och gradvis övergång från bröstkorgen till bröstet. Om man är tunn i vävnaden och lägger implantaten framför muskeln så ser man implantatkanten och veckbildningar i själva implantatet, så kallad rippling mera. Har man däremot mer underhudsfett och/eller egen bröstvävnad upptill på bröstkorgen så täcks implantaten bättre och man kan då få ett resultat utan synlig implantatkant eller rippling. Även implantatens karaktär påverkar. Man kan med ökad fyllnadsgrad, ökad fasthet och mer elastiskt skal minska risken för rippling. Samtidigt så ger fastare implantat tydligare övre kant och mer uttalat dekolletage.",
+      "text2": "De allra flesta kvinnor väljer implantat som är större än de egna brösten vilket på sätt och vis hänger ihop med ingreppets natur. Det vill säga man vill förstora brösten som är små och de önskade brösten och därmed bröstimplantaten är då oftast större än de egna brösten. De allra flesta kvinnor kan därför räknas som att de inte har tillräckligt vävnad upptill på bröstkorgen, varför bakom muskeln oftast passar bäst. Det finns även andra fördelar med bakom muskeln. Muskeln håller bröstimplantaten på plats, inte så bröstimplantaten växer fast i muskeln utan mer att de fungerar som ett stöd där muskeln hindrar bröstimplantaten från att röra sig för mycket."
+    }
+  },
+  "brostforminskning": {
+    "title": "Bröstförminskning",
+    "background": {
+      "heading1": "Bakgrund",
+      "text1": "Att ha stora och tunga bröst kan vara jobbigt på många sätt. Det innebär en extra tyngd för nacke och axlar vilket ofta leder till spänningar och smärtor. Tyngden kan även hindra kroppens naturliga rörelser vilket gör att man kan känna sig hindrad i vardagen och vid fysisk aktivitet. Bröstens tyngd gör också ofta att de hänger ner på kroppen, ligger an mot huden nedanför brösten och skapar problem med fukt, eksem och ibland svampväxt.",
+      "text2": "Operationen bröstförminskning är ett mycket tacksamt ingrepp där de allra flesta kvinnor som genomgår operationen känner sig hjälpta och nöjda.",
+      "text3": "Operationen liknar mycket ett bröstlyft som beskrivs här på hemsidan med den skillnaden att man vid en bröstförminskning även tar bort mer eller mindre bröstvävnad och inte bara hud. Bröstvävnaden som tas bort består av både fett och bröstkörtel. Vissa bröst innehåller mer fett medan andra innehåller mer körtelvävnad. Generellt så kan man säga att det är mer bröstkörtel i brösten hos yngre kvinnor och hos kvinnor som inte fött barn och ammat, medan övervikt ger en ökad andel fett i brösten. Dessutom ökar andelen fett i brösten med ökad ålder och i samband med amning då delar av bröstvävnaden omvandlas till fett. Körtelvävnad är kompaktare och väger mer än fett.",
+      "text4": "Samtidigt som brösten görs lättare och mindre genom att bröstvävnad tas bort tas även hud bort."
+    },
+
+    "consultation": {
+      "heading1": "Konsultation bröstförminskning",
+      "text1": "Vid konsultationen går vi igenom dina önskemål och förutsättningar. Vi pratar eventuella besvär du har av din byst och om det finns möjlighet att en operation skulle hjälpa just dig. Vi går noggrant igenom hur en bröstförminskning skulle gå till och hur ett slutresultat hos dig skulle kunna se ut. Det är som vid alla operationer viktigt att du som patient sätter dig in i allt vad gäller förutsättningar, operation och möjligt resultat. Även om det låter paradoxalt så använder jag ofta bröstimplantat vid en förminskning av brösten. Bröstförminskningen lyfter förvisso upp och minskar storleken på brösten men den vävnad som är kvar kommer med tiden, inom ca 6-12 månader sjunka ned och framför allt falla på plats i nedre delen av brösten. Detta gör att många patienter inte blir nöjda med fylligheten upptill i klyftan och dekolletaget. Ett par nätta bröstimplantat ger här en diskret och lagom fyllighet upptill vilket ger en finare, något rundad form upptill i bysten. Om det blir aktuellt med bröstimplantat går vi precis som vid en konsultation för en bröstförstoring noggrant igenom olika bröstimplantat och diskuterar och provar vilken storlek och modell som blir bäst för just dig."
+    },
+    "technique": {
+      "heading1": "Teknik",
+      "preSurgery": {
+        "heading1": "Strax innan operationen",
+        "text1": "Precis som vid alla andra operationer träffas patient och plastikkirurg på operationsdagen strax innan operationen för att diskutera igenom ingreppet och för att plastikkirurgen ska rita och planera ingreppet. Ritningen görs med omsorg och till sin hjälp har plastikkirurgen måttband och skjutmått. Bröstvårtornas höjd och avstånd från halsgropen (jugulum) bestäms. Längden på snitten under brösten i bröstvecken markeras. Underpolens längd beräknas och ritas ut."
+      },
+
+      "surgery": {
+        "heading1": "Operationen",
+        "text1": "Operationen sker i narkos och inleds med att plastikkirurgen förstärker ritningen och sedan lägger lokalbedövning (till exempel Xylocain med adrenalin) i incisionslinjerna. Precis som vid ett bröstlyft mäter plastikkirurgen ut och markerar storleken på vårtgård som sedan skärs ut med skalpell. Huden på platsen dit vårtgården ska flyttas skärs ut och motsvarar då i storlek den nya vårtgården. Vidare skärs yttre kanten av vårtgården, huden runt vårtgården bort. Snittet i bröstvecket görs och operationen fortsätter underifrån med antingen skalpell eller diatermi ner till muskelfascian. Bröstvävnaden löses sedan uppåt längs med muskeln så att man kommer under en stor del av bröstet ofta upp till vårtgårdsplanet. Merparten av den bröstvävnad som ska tas bort har nu friats och plastikkirurgen har nu möjlighet att greppa denna med sina händer och beräkna hur mycket som ska tas bort. Överskottsvävnaden tas sedan bort med antingen skalpell, diatermi eller sax. Plastikkirurgen har sedan möjlighet att välja vilken teknik som passar bäst för att mobilisera upp vårtgård till sin nya plats. Det gäller här att skapa en lagom tjock vävnadsbrygga, stjälk även kallat lambå med tillräcklig blodcirkulation till vårtgård och bröstvårta. Denna stjälk har ofta sin bas in mot mitten av bröstkorgen men kan även ha basen uppåt, åt sidan eller mer ovanligt nedåt. Höger och vänster bröst jämförs nu för att uppnå så bra symmetri som möjligt, varefter man noggrant letar efter och koagulerar eventuella blodkärl som blöder. Bröstvårta och vårtgård mobiliseras, roteras upp på plats och sys fast. Precis som vid ett bröstlyft förs vävnaden samman mot mitten och centralt nederst i punkten mitt under bröstet i bröstvecket, det vill säga i korsningen för det upp-och-nervända T:et. Vävnaden slutes i flera lager med trådar, suturer av varierande grovlek och avslutas med att sårkanterna noggrant adapteras och sys med en tunn sutur. Det är som vid alla operationer viktigt att man syr noggrant. Suturernas, stygnens funktion är att föra ihop vävnaden lager för lager för att återskapa de lager som man skurit igenom under operationens början. Om vävnaden inte sys ihop på rätt sätt blir det glipor. Glipor i den ytliga huden resulterar i sår. Glipor på djupet i fettväven resulterar i ett tomrum under huden som gör att man känner en grop eller fåra under ärret och kan i värsta fall göra att bröstet känns förankrat på djupet nedåt på kroppen till magen. Om plastikkirurgen lagt in ett bröstimplantat vid operationen kan det resultera i att man här känner kanter eller knölighet från bröstimplantatet på en kortare eller längre sträcka."
+      }
+    }
+  },
+  "implantaten": {
+    "title": "Bröstimplantat",
+    "text1": "De första bröstimplantaten av silikon tillverkades 1961 och de har sedan dess kontinuerligt utvecklats och förbättrats. Den första bröstförstoringen genomfördes 1962 med lyckat resultat. Intressant nog så har just denna patient Timmie Jean Lindsey fortfarande kvar sina ursprungsimplantat och säger sig ännu vara nöjd.",
+    "text2": "Det finns en rad olika märken och modeller av bröstimplantat och det går att variera egenskaperna hos bröstimplantaten på en rad olika sätt.",
+    "listItem1": {
+      "heading": "Innehållet",
+      "text1": "Beroende på vilket material man använder i bröstimplantaten ändras mjukheten och känslan när man känner på brösten. Det absolut vanligaste materialet i bröstimplantat är silikon. Från början användes flytande silikon vilket gjorde bröstimplantaten mycket mjuka. Implantaten upplevdes av många för mjuka och lösa. Dessutom var problemet att om ett implantat gick sönder så rann det flytande silikonet ut i bröstet och ibland även vidare till armhålan. Detta gjorde att man på 90-talet utvecklade implantat med ett halvfast, “kohesivt” innehåll. Dessa implantat kallas för “geléhallon” eller på engelska “gummy bears” då konsistensen liknar dessa godis. Silikonet kunde nu göras mer eller mindre mjukt vilket påverkar både formen på bröstimplantaten och hur de känns att ta på. Ett fastare silikon ger fastare bröstimplantat och en fastare och mer stabil form vilket i runda bröstimplantat utnyttjas för att ge mer fyllighet upptill i klyfta och dekolletage och mer “push up” i naket. I anatomiska bröstimplantat utnyttjas detta för att ge en formstabil droppformad, bröstformad ofta ansedd som “naturlig” form. Tvärtom ger en mjukare variant av kohesivt geléhallonsilikon bröstimplantat som faller ihop. Detta används i runda bröstimplantat för att skapa bröstimplantat som faller ihop vilket ger mindre fyllighet upptill i dekolletaget och i stället mer volym nertill i bröstens underpol. Man får på detta sätt ett droppformat och naturligt utseende och en mjuk och naturlig känsla på brösten.",
+      "text2": "Även andra material än silikon används. Exempel på detta är saltvatten “koksalt” vilket ger väldigt mjuka bröstimplantat. Dessa kan också ge ett mjukt och naturligt utseende, särskilt om man har en del egen bröstvävnad som täcker bröstimplantatet. Däremot så kan de upplevas som lite för lösa och till och med “skvalpiga”",
+      "text3": "En av de senaste innovationerna kommer från Polytech vars bröstimplantat B-lite innehåller silikon blandat med mikrosfärer (mycket små kulor) fyllda med luft. Funktionen är här att skapa ett innehåll som väger mindre vilket ger 30% lättare bröstimplantat. Lättare bröstimplantat är värdefullt särskilt när man använder större bröstimplantat då de minskar risker som tyngden annars ger."
+    },
+    "listItem2": {
+      "heading": "Fyllnadsgraden",
+      "text1": "Genom att fylla bröstimplantaten mer eller mindre ändrar man deras egenskaper. Ju mer fyllda de är desto stummare upplevs de att ta på. Dessutom faller de ihop mindre och blir på så vis mer fylliga upptill i klyftan och dekolletaget."
+    },
+    "listItem3": {
+      "heading": "Skalet, höljet",
+      "text1": "Innehållet i bröstimplantaten hålls på plats av ett skal. Detta skal är oftast gjort av silikon och kan varieras avseende till exempel tjocklek, antal lager och elasticitet."
+    },
+    "listItem4": {
+      "heading": "Formen",
+      "text1": "Formen på bröstimplantaten kan varieras och de absolut vanligaste varianterna är runda respektive anatomiska, droppformade bröstimplantat. Genom att variera formen på bröstimplantaten skapas möjligheten att skapa bröst med varierande utseende."
+    },
+    "listItem5": {
+      "heading": "Ytan",
+      "text1": "Även genom att variera ytan på bröstimplantaten kan man ändra deras egenskaper. De vanligaste ytorna som används på bröstimplantat är slät respektive texturerad yta. En annan yta som används är polyuretan. Polyuretanet har egenskapen att vävnaden växer in i implantatet vilket gör att implantaten inte alls roterar eller rör sig. En annan effekt av polyuretanytan är att risken för stram och hård kapselbildning helt och hållet elimineras.",
+      "smoothSurface": {
+        "title": "Slät yta",
+        "text1": "Under lång tid så var en slät yta standard på de runda bröstimplantaten. De bröstimplantat med slät yta som vi använder på Dahliakliniken kommer från Mentor."
+      },
+      "texturedSurface": {
+        "title": "Texturerad yta",
+        "text1": "Texturerad yta. Från början var bröstimplantaten släta men under 80-talet tog flera tillverkare av bröstimplantat fram en sandpappersliknande yta, en texturering. Funktionen hos textureringen är att minska risken att den kapsel som kroppen naturligt bildar runt bröstimplantaten blir tjock, hård och stram så kallad kapselsammandragning, kapselkontraktur. Textureringen skapar oordning bland kapselfibrerna så att de inte blir så långa och inte samverkar och drar åt samma håll. Detta gör att kapseln blir tunnare, mjukare och drar ihop sig mindre. Varje tillverkare av bröstimplantat har sin egen typ av texturering och den kan vara mer eller mindre grov. Mentor kallar sin texturering Siltex® och Polytech kallar sin POLYtxt®.",
+        "text2": "På senare år har man sett att i mycket sällsynta fall vissa typer av texturering kan ge upphov till en ovanlig form av cancer, lymfom BIA-ALCL. Detta har gjort att vi för tillfället använder släta implantat på kliniken."
+      },
+      "nanoTexturedSurface": {
+        "title": "Nanotexturerad yta",
+        "text1": "Om texturering på ytan görs väldigt fin, nästan slät så kallas den för nanotexturerad (från och med 2025 mikrotexturerad). Meningen med denna typ av texturering är att minska risken för stram och tjock kapsel samtidigt som man eliminerar eller minimerar risken för ALCL. Exempel på denna typ av texturering och som vi använder på Dahliakliniken är Motiva SmoothSilk har en yta som är 4 mikrometer (mikron) och Polytech Mesmo som har en ytojämnhet på 25 mikrometer."
+      },
+      "polyuretan": {
+        "title": "Polyuretan",
+        "text1": "En yta av polyuretan är inte slät och inte texturerad utan i stället ett poröst nätverk som tillåter inväxt av kroppens egen vävnad. Detta gör att implantatytan växer fast i implantatfickan. Första månaderna känns brösten stumma och orörliga men när inläkningen är klar känns brösten mjuka och naturliga. Tack vare att bröstimplantaten växer fast i implantatfickan får de ett väldigt bra stöd från vävnaden. Polyuretan har den allra lägsta risken för tjock och stram kapselbildning och kan användas både vid primära bröstförstoring (första gången) eller om man har haft problem med hård kapsel upprepade gånger. Risken för BIA-ALCL är extremt liten med polyuretan."
+      }
+    },
+    "readMore": "Läs vidare under <link>runda bröstimplantat</link> och <link2>anatomiska bröstimplantat.</link2>",
+    "text3": "Sammanfattningsvis kan man genom att variera egenskaperna hos bröstimplantat kan ändra hur brösten upplevs på kroppen, hur de känns att ta på samt hur de ser ut. Dessutom kan implantatets olika egenskaper påverka risken för olika komplikationer.",
+    "jelly": {
+      "title": "Geléhallon",
+      "text1": "De första 20 åren, under 60- och 70-talen var bröstimplantat av silikon fyllda med ett flytande silikon. På 80-talet introducerades bröstimplantat fyllda med halvfast även kallat kohesivt silikon. Nu för tiden är i princip alla bröstimplantat med silikon fyllda med denna typ av silikon och de är också den allra vanligaste typen av bröstimplantat. Geléhallon kallas för “gummy bear implants” och på svenska “geléhallon” då innehållet i sin konsistens liknar dessa godisar. Silikonet är här sammanhållet av bindningar mellan silikonmolekylerna. Beroende på hur molekylerna sitter ihop ändras silikonets fasthet, kohesivitet. Ett mjukare geléhallonimplantat har en lägre kohesivitet och ett fastare geléhallonimplantat har en högre kohesivitet. Se vidare ovan under innehåll i bröstimplantat."
+    },
+    "roundImplants": {
+      "title": "Runda implantat",
+      "text1": "Runda bröstimplantat har kommit att dominera marknaden för bröstimplantat. Med runda bröstimplantat blir patienterna generellt sett väldigt nöjda, de är lite lättare att jobba med än de anatomiska bröstimplantaten och det är färre komplikationer än med de anatomiska bröstimplantaten. Vi på kliniken har sedan 10-15 år märkt att det med runda bröstimplantat går att skapa bröst som patienterna både är mer nöjda med och tycker är mer naturliga än med de anatomiska bröstimplantaten. Mjuka, runda bröstimplantat faller ihop något och ger precis som anatomiska implantat en droppformad, naturlig bröstform. De mjuka runda implantaten är mjukare än de anatomiska, droppformade bröstimplantaten och ger därmed bröst som är mjukare och mer naturliga att ta på. De mjuka, runda bröstimplantaten går att pusha upp med bh vilket tvärtom ofta är mycket svårt med de anatomiska bröstimplantaten. Rotation är inte en komplikation med runda implantat då de ser likadana ut även när de vrider på sig. Slutligen så går det att välja släta, runda bröstimplantat om man så önskar. De anatomiska bröstimplantaten är alltid texturerade för att minska risken för rotation.",
+      "text2": "Det finns väldigt många tillverkare av runda bröstimplantat och på Dahliakliniken i Stockholm använder vi märkena Mentor, Motiva och Polytech. För att särskilja sig och stå ut i mängden väljer de olika tillverkarna av bröstimplantat att variera egenskaper som volym, mått, silikongel, ytstruktur och fyllnadsgrad. Gemensamt är dock att alla tillverkare har bröstimplantat med varierande grad av projektion eller put, det vill säga att de har implantat som sticker ut från kroppen olika mycket. Man brukar här prata om olika profiler och då projektionerna låg, mellan, hög och ultrahög profil."
+    },
+    "projection": {
+      "title": "Projektion, profil",
+      "text1": "När man ska välja bröstimplantat för en bröstförstoring väljer man profil och då hur mycket bröstimplantaten ska komma ut, puta ut från kroppen. De plattaste, mest diskreta bröstimplantaten kallas för låg profil. Sedan kommer mellanprofil som kommer ut lite mer från kroppen följt av hög profil som putar ut ytterligare lite och slutligen ultrahög profil som sticker ut mest. Att profilen blir högre betyder alltså inte att bröstimplantaten kommer upp högt upp mot nyckelbenet utan i stället att de kommer ut mer från kroppen, vilket framför allt syns när man betraktar sig själv i profil eller när man tittar ner på brösten.",
+      "text2": "Olika tillverkare har olika namn för dessa profiler men gemensamt är att man kan välja bröstimplantat som har har mer eller mindre volym utåt från kroppen och i grunden är det olika namn för de olika familjerna låg, mellan, hög och extra hög profil. Se tabell som visar bröstimplantat av olika märken med bredden 12 cm och med olika profil, projektion.",
+      "text3": "På konsultationen väljer vi tillsammans vilken profil och hur mycket implantaten ska sticka ut från kroppen."
+    },
+    "width": {
+      "title": "Bredd",
+      "text1": "Bröstimplantat av samma profil ökar i bredd med ökad storlek och volym. Detta gäller oavsett märke och oavsett om man pratar om låg, mellan eller hög profil. Till exempel den vanliga profilen Mentor hög profil där man ser hur en ökad volym på high profile från 350cc till 450cc ger över en cm bredare implantat medan projektionen bara ökar några mm, se tabell. Samma gäller för Motiva där man ser hur en ökad volym på demi från 300cc till 380cc ger en ökad bredd på 1 cm men bara en ökning av projektionen på 2 mm, se tabell. Man kan genom att välja bredden på implantaten matcha mått och utseende på axlar, bröstkorg, midja och höfter. Val av bredd på bröstimplantaten blir en viktig del i processen där plastikkirurgen på konsultationen stämmer av vad patienten har för önskemål och smak. Tar man lite smalare implantat blir utseendet framifrån lite nättare och sportigare medan om man tar lite bredare bröstimplantat upplevs kroppen som kurvigare och kvinnligare."
+    },
+    "content": {
+      "title": "Innehåll",
+      "text1": "Det vanligaste innehållet i runda bröstimplantat generellt är kohesivt silikon, “geléhallon“. På Dahliakliniken använder vi Mentor True Touch Cohesive 1 och Cohesive 2 samt Motiva Round, Ergonomix 1 och Ergonomix 2. Förutom kohesivt silikon, “geléhallon“ använder vi på Dahliakliniken också runda bröstimplantat med innehållet Polytech B-lite och Mentor koksalt."
+    },
+    "surface": {
+      "title": "Yta",
+      "text1": "Det finns en rad olika ytor på runda bröstimplantat vilket du kan läsa mer om här.",
+      "text2": "På Dahliakliniken använder vi runda bröstimplantat med antingen en slät yta från Mentor, en mycket fin texturerad, nanotexturerad (mikrotexturerad) yta från Motiva eller en yta av polyuretan från Polytech."
+    },
+    "anatomic": {
+      "title": "Anatomiska, droppformade bröstimplantat",
+      "text1": "Anatomiska bröstimplantat blev populära mot slutet av 90-talet och har varit fantastiska hjälpmedel när man som plastikkirurg vill skapa bröst med ett naturligt utseende. De anatomiska bröstimplantat som vi använder på Dahliakliniken är från Mentor och innehåller Mentor True Touch Cohesive 3.",
+      "measurements": {
+        "title": "Mått, bredd och höjd",
+        "text1": "Ytan som ligger an mot kroppen hos de anatomiska bröstimplantaten går att variera på bredden och på höjden oberoende av varandra. Det betyder att det precis som hos runda bröstimplantat går det för en bröstförstoring att välja mer eller mindre bredd för att matcha patientens smak och bröstkorgsbredd. Dessutom så kan man välja implantat som har mer eller mindre höjd upp mot nyckelbenet för att matcha patientens höjd på bröstkorgen. Vissa patienter har ett längre avstånd från nyckelben till bröstvårta, en längre bröstkorg medan avståndet hos andra patienter är kortare. Vid en bröstförstoring går det alltså att välja bröstimplantat som är breda och låga om patienten är kort men har en bred bröstkorg. Tvärtom så kan man välja smala och höga bröstimplantat till en patient som är smal och lång."
+      },
+      "projections": {
+        "title": "Projektion",
+        "text1": "Precis som hos de runda bröstimplantaten går det att välja projektion, put hos de droppformade bröstimplantaten. Man pratar även här om låg profil, mellanprofil, hög profil och extra hög profil. Projektionen, putet på bröstimplantaten kan, som hos de runda bröstimplantaten, varieras beroende på tycke och smak, för att balansera kroppens utseende och för att kunna fylla ut patientens egen byst mer eller mindre."
+      },
+      "content": {
+        "title": "Innehåll",
+        "text1": "Innehållet i de droppformade bröstimplantaten är fastare än i de runda bröstimplantaten. Detta för att kunna töja ut och forma vävnaden på ett effektivt sätt och för att sedan upprätthålla denna form och utseende.",
+        "text2": "De droppformade bröstimplantaten är spännande att jobba med då det finns så många olika att välja mellan och då man som plastikkirurg kan välja bröstimplantat som passar väldigt många olika kroppstyper."
+      },
+      "surface": {
+        "title": "Yta",
+        "text1": "De anatomiska bröstimplantaten har alltid en mer eller mindre texturerad yta för att antingen växa fast i vävnaden eller annars för att glida så lite som möjligt. Syftet med detta är att minimera risken för att bröstimplantaten vrider sig, roterar."
+      },
+      "results": {
+        "title": "Resultat",
+        "text1": "Med droppformade, anatomiska bröstimplantat uppnås ett vackert och naturligt resultat rent utseendemässigt. Detta framför allt när patienten har lite eller ingen bröstvävnad själv. Med de droppformade bröstimplantaten kan man här forma och skapa en naturligt bröstform. Effekten blir extra tydlig om patienten är relativt ung och stram i den egna vävnaden, huden. Den lite fastare gelen i bröstimplantaten till exempel Mentor True Touch kohesivitet 3 kan här “vinna över” stramheten, töja ut och forma nedre delen av brösten, underpolen och ge en naturlig droppform. Det vissa patienter dock upplever är att brösten kan kännas lite för fasta och att det går att pusha upp dem och skapa ett accentuerat dekolletage. En vanlig missuppfattning är att droppformade implantat ger ett naturligt resultat medan runda implantat ger ett onaturligt. Med rätt val av mjuka runda bröstimplantat kan man skapa bröst som är lika naturliga till utseendet men faktiskt mjukare att ta på än bröst med droppformade bröstimplantat. <link>Se även under runda bröstimplantat.</link>"
+      }
+    },
+    "ourImplants": {
+      "title": "Våra implantat",
+      "motiva": {
+        "title": "Motiva",
+        "text1": "Bröstimplantatföretaget Motiva har tillverkat bröstimplantat sedan 2016.",
+        "formAndProfiles": {
+          "title": "Form och Profiler",
+          "text1": "Motiva tillverkar runda bröstimplantat i fyra olika profiler, projektioner Mini, Demi, Full och Corsé. Mini (låg profil) är plattast följt av Demi (mellanprofil) som kommer ut lite mer från kroppen. Därefter kommer profilen Full (hög profil) som sticker ut mer och slutligen Corsé (extra hög eller ultrahög profil) som putar ut mest. Varje profil finns i ett 20-tal olika storlekar och med ökande storlek ökar bredden successivt för att passa olika patienters smak och bredd på bröstkorg. <link>Se tabell</link> där man i kolumnen längst till vänster ser bredden på implantaten. Följer man sedan horisontellt i tabellen ser man radvis vilken volym denna bredd har hos respektive projektion. Vanliga storlekar på kliniken är Motiva Mini 220cc till 275cc, Demi 285cc till 360cc, Full 335cc till 500cc, Corsé 450cc till 725cc."
+        },
+        "filling": {
+          "title": "Fylling, silikon",
+          "text1": "Bröstimplantaten från Motiva innehåller silikon i tre olika mjukheter: Round, Ergonomix 1 och Ergonomix 2. Alla är runda och inte bara den som heter just “round”.",
+          "text2": "<strong>Round</strong> är Motivas fastaste silikon och gör att bröstimplantaten känns lite fastare och att bröstimplantatens övre del inte faller ihop i upprätt läge, när man står upp. Resultatet blir en extra accentuerad fyllighet i klyftan och dekolletaget, en extra push-up i naket. Resultatet med dessa bröstimplantat blir mer onaturligt eller “fake”, särskilt om man är smal och inte har så mycket underhudsfett och inte heller så mycket egen bröstvävnad.",
+          "text3": "<strong>Ergonomix 1</strong> är ett mjukt, naturligt silikon som gör att bröstimplantaten och brösten känns mjuka och naturliga. Bröstimplantaten faller ihop upptill i överpolen när de hamnar i upprätt läge i kroppen när man står upp. Detta ger en naturlig, droppformad form på brösten med lite mindre fyllighet upptill än med bröstimplantat med fyllningen “round”. Dessutom får bröstimplantaten en mer uttalad nedre del, underpol på brösten. Många patienter upplever att brösten känns mjuka och naturliga med Ergonomix 1.",
+          "text4": "<strong>Ergonomix 2</strong> är Motivas senaste silikonfyllning till bröstimplantat. Ergonomix 2 är ett något mjukare silikon än Ergonomix 1 och ger en lite mer droppformad form på implantaten i kroppen när man står upp. Dessutom är silikonhöljet, skalet på Ergonomix 2 lite segare vilket kan motverka rippling vilket ofta är ett problem hos smala patienter. Patienter med Ergonomix 2 bröstimplantat upplever brösten som mjuka, naturliga och följsamma."
+        },
+        "surface": {
+          "title": "Yta",
+          "text1": "Alla bröstimplantat från Motiva har en slät, mycket fint texturerad, nanotexturerad yta och kallas SmoothSilk."
+        }
+      },
+      "mentor": {
+        "title": "Mentor",
+        "text1": "Mentor tillverkar mjuka bröstimplantat av hög kvalitet som upplevs mjuka och naturliga i kroppen. Läs även på sidan om bröstimplantat.",
+        "formAndProfiles": {
+          "title": "Former och Profiler",
+          "text1": "Mentor tillverkar runda bröstimplantat i sex olika projektioner, profiler. De plattaste heter Moderate Plus Profile följt av i tur och ordning med ökande projektion, put: Moderate Plus Xtra, High Profile, High Profile Xtra och slutligen Ultra High Profile. Detta gör att det finns stor valmöjlighet att välja och anpassa  bröstimplantatens profil, projektion efter patientens smak och former på kroppen såsom rumpa och svank.",
+          "text2": "I var och en av profilerna kan man välja bröstimplantat med mer eller mindre volym. Med ökande volym i samma profil ökar bredden på bröstimplantaten vilket gör att man kan välja bröstimplantat som passar patientens smak, bredd på bröstkorg och kvinnliga former när man betraktar kroppen framifrån.",
+          "text3": "Mentor tillverkar även anatomiska, droppformade bröstimplantat. De droppformade bröstimplantaten går att variera avseende bredd och höjd oberoende av varandra sett framifrån, det vill säga den yta som ligger an mot bröstkorgen. Detta gör att dessa bröstimplantat sett framifrån kan fås runda eller breda och låga eller smala och höga. Alla kan sedan väljas med mer eller mindre projektion. Mentor benämner de droppformade bröstimplantaten med sifferkombinationer som anger höjd och projektion."
+        },
+        "filling": {
+          "title": "Fyllning",
+          "text1": "Det går att välja mellan två olika fyllningar av silikon i Mentors runda bröstimplantat, Mentor Memory Gel Kohesivitet 1 och Kohesivitet 2 vilka båda är geléhallonsilikon. Det skiljer mycket lite åt och nr 1 är mjukast och den som används allra mest. Gelen är mjuk och ger naturliga runda bröstimplantat då de i upprätt läge i kroppen faller ihop något vilket ger ett droppformad utseende med en viss ökning av klyfta och dekolletage och tydlig accentuering av bröstens undre del, underpol. Eftersom gelen är mjuk går den relativt lätt att pusha upp med bh när man önskar ytterligare tydligare fyllighet upptill i klyfta och dekolletage.",
+          "text2": "I Mentor anatomiska, droppformade bröstimplantat är gelen fastare, Kohesivitet 3. Dessa bröstimplantat ger ett mycket naturligt utseende men upplevs ofta som lite för fasta i konsistensen.",
+          "text3": "Mentor har även runda bröstimplantat med saltvatten “koksalt”. Dessa implantat blir mycket mjuka och känns naturliga, särskilt om man har lite egen bröstvävnad som bolstrar. Om man är smal och tunn i vävnaden kan bröstimplantat med koksalt upplevas lite “skvalpiga”. Vissa patienter väljer bröstimplantat med koksalt eftersom de av olika anledning inte vill ha bröstimplantat med silikon."
+        },
+        "surface": {
+          "title": "Yta",
+          "text1": "Mentors implantat är antingen släta (Smooth) eller texturerade (Siltex).",
+          "text2": "Mentor som ägs av Johnson & Johnson började tillverka bröstimplantat 1968. Mentors huvudkontor ligger i USA medan produktionen för den europeiska marknaden sker i Nederländerna."
+        }
+      },
+      "polytech": {
+        "title": "Polytech",
+        "text1": "Företaget Polytech har tillverkat bröstimplantat sedan 1986. All produktion sker i Tyskland.",
+        "formAndProfiles": {
+          "title": "Former och Profiler",
+          "text1": "Polytech tillverkar både runda och anatomiska bröstimplantat med en stor variation på innehåll och yta. ",
+          "text2": "De runda bröstimplantaten Même® tillverkas i fyra traditionella profiler, projektioner: låg (low profile), mellan (moderate profile), hög (high profile) och ultrahög eller extra hög (extra high profile).",
+          "text3": "Anatomiska bröstimplantat från Polytech finns precis som hos Mentor tillgängliga i en rad olika former, mått och projektioner."
+        },
+        "filling": {
+          "title": "Fyllning",
+          "text1": "Polytech tillverkar bröstimplantat med flera olika fyllningar. Dels traditionellt geléhallonsilikon och dels ett nytt, lättare material B-lite®. I B-lite® är geléhallonsilikon blandat med små kulor, mikrosfärer med luft vilket gör bröstimplantaten 30% lättare än traditionella bröstimplantaten av geléhallonsilikon."
+        },
+        "surface": {
+          "title": "Yta",
+          "text1": "Det går att välja mellan fyra olika ytor på Polytechs bröstimplantat. Släta, nanotexturerade, mikrotesturerade och polyuretan. Den släta ytan och den mikrotexturerade liknar ytan på Mentors bröstimplantat medan den nanotexturerade liknar ytan på Motivas bröstimplantat. Ytan av polyuretan är unik för Polytech och helt unik. Den är porös varför kroppens vävnad växer in i ytan och förankrar implantaten i kroppen. Detta skapar som ett inre stöd, en inre bh som gör att bröstimplantaten tynger och töjer mindre i bröstvävnaden och brösthuden.",
+          "text2": "Dahliakliniken har tillgång till och använder samtliga bröstimplantat från Polytech. Kombinationen av innehållet B-lite® med ytan av polyuretan Microthane® ger bröstimplantat med låg vikt och stöd från vävnaden. Exempel på runda bröstimplantat med denna kombination är hög profil 460cc, 510cc, 565cc och 625cc samt extra hög profil (samma som ultrahög profil) 495cc, 555cc, 615cc, 685cc och 755cc."
+        }
+      }
+    },
+    "accordion": {
+      "roundImplants": {
+        "title": "Runda implantat",
+        "text1": "De runda implantaten är de som används mest. Man kan här välja implantat som ger ett naturligt resultat med mycket underpol eller implantat som ger mer fyllighet i övre polen.",
+        "text2": "För ca 10 år sedan använde jag framför allt anatomiska implantat men jag har nu övergått till att använda nästan uteslutande runda implantat. Med runda implantat kan jag skapa ett utseendemässigt lika naturligt resultat som med anatomiska implantat.De runda implantaten är mjukare än de anatomiska och ger en mer naturlig känsla när man känner på brösten. Mjukheten hos de runda implantaten gör det också möjligt att pusha upp brösten med bh, vilket i princip inte är möjligt med anatomiska implantat.",
+        "text3": "Dessutom är runda implantaten säkrare än anatomiska, då man slipper risken med rotation och ALCL."
+      },
+      "firmness": {
+        "title": "Fasthet",
+        "text1": "Märket Mentor har i sina runda implantat två fastheter på silikon; kohesivitet 1 och kohesivitet 2. Kohesivitet 1 är mjukare och kohesivitet 2 som lite fastare. Skillnaden är mycket liten och ofta inte relevant i praktiken.Tanken med kohesivitet 1, som är vanligast, är att det ska kännas mjukt och naturligt samt ge en naturlig form. I Mentors anatomiska implantat är silikonet fastare av typen kohesivitet 3 för att bibehålla en för implantatet unik form."
+      },
+      "projection": {
+        "title": "Projektion",
+        "text1": "Mentors runda implantat finns i fem olika projektioner (put, toppighet). Plattast är Moderate plus. Därefter kommer Moderate plus Xtra som har lite mer projektion följt av High Profile, High Profile Xtra och slutligen Ultra High Profile som har mest projektion. I bilden nedan ser du hur implantat med samma bredd cirka 12 cm ökar i volym med ökande projektion.",
+        "text2": "Det gör att du kan utgå från en och samma bredd och välja bröst som sticker ut mer eller mindre i profil."
+      },
+      "width": {
+        "title": "Bredd",
+        "text1": "I en och samma familj av implantat t ex High Profile (Hög profil) ökar bredden med ökande volym. Det gör att du kan utgå från en projektion, ett put och sedan välja att få mer eller mindre breda bröst.I tabellerna nedan kan du se hur bredden ökar med ökande volym i respektive familj “Moderate plus, M+“ respektive “High profile, HP“. Till exempel så har HP 350cc 11,7cm bredd, 400cc 12,2 cm bredd och 450cc 12,8 cm bredd."
+      },
+      "degreeOfFilling": {
+        "title": "Fyllnadsgrad",
+        "text1": "Implantaten Moderate Plus Xtra och High Profile Xtra är mer fyllda än övriga implantat. Silikongelen är densamma så de känns fortfarande mjuka.Den ökade fyllnadsgraden gör i stället att implantaten hålls mer utspända och får en accentuerad volym upptill i klyftan och dekolletaget."
+      },
+      "anatomicalImplants": {
+        "title": "Anatomiska implantat",
+        "text1": "De anatomiska implantaten går att variera avseende bredd, höjd och projektion. De är fastare i konsistensen och ändrar inte form och utseende med kroppens rörelser.Tanken med de anatomiska implantaten är att de ska ge bröst som ser mycket naturliga ut."
+      }
+    }
+  },
+  "hudochinjektioner": {
+    "title": "Hud & Injektioner",
+    "text": "Text om hud och injektioner."
+  },
+  "varpersonal": {
+    "title": "Vår Personal",
+    "text": "Text om vår personal."
+  },
+  "priser": {
+    "title": "Priser",
+    "readMore": "Läs mer om detta här"
+  },
+  "garanti": {
+    "preamble1": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
+    "preamble2": "Dr Gribbe har under hela sin karriär varit noggrann med att patienterna ska känna sig välinformerade och sedda före och efter operationen. Det har resulterat i trygga och nöjda patienter där slutkontrollen blir en bekräftelse på det förväntade resultatet.",
+    "title": "Trygghetsgaranti och kapselgaranti",
+    "intro": "För att du ska känna dig extra trygg så ingår ett trygghetspaket i operations priset. Du har dessutom möjlighet att teckna en (5 års) kapselgaranti.",
+    "securityPackage": {
+      "title": "Trygghetspaket under ett år",
+      "points": {
+        "point1": "Postoperativ blödning",
+        "point2": "Postoperativ infektion",
+        "point3": "Kostnadsfria återbesök",
+        "point4": "Asymmetri storleksskillnad",
+        "point5": "Asymmetri höjdskillnad",
+        "point6": "Onormal ärrbildning",
+        "point7": "Ruptur, Läckage",
+        "point8": "Rotation",
+        "point9": "Töjd ficka",
+        "point10": "Bottom-out (BO)",
+        "point11": "Onormal muskelpåverkan",
+        "point12": "Symmastia",
+        "point13": "Dygnetrunt jour tiden efter operation"
+      }
+    },
+    "capsuleGuarantee": {
+      "title": "Kapselgaranti under fem år",
+      "points": {
+        "point1": "Kapselkontraktion, hård kapsel"
+      },
+      "price": "5000 kr"
+    },
+    "followUps": {
+      "title": "Återbesök, extrabesök och uppföljning",
+      "description": "Återbesök sker alltid ca 9-14 dagar efter operationen och 4-6 månader efter operationen för kontroll att allt ser bra ut. Därefter är du välkommen på gratis extrabesök om och när du vill. Uppföljning sker efter 2 år då ytterligare en kontroll att allt ser bra ut görs."
+    }
+  },
+  "beforeOperation": {
+    "fasting": {
+      "title": "Fasta",
+      "text1": "Fasta enligt följande: Fram till 6 timmar före operationstid får du äta och dricka som vanligt. De fyra timmarna mellan 6 och 2 timmar före operationstid får du dricka max 2 glas (4 dl) av följande: vatten eller saft (klara vätskor utan bitar/fruktkött). Från 2 timmar före operationstid får du INTE äta eller dricka någonting. Inte heller tugga tuggummi eller snusa.",
+      "text2": "Eftersom operationstiden inte bestäms förrän på operationsdagen så ska du utgå från den ankomsttid till kliniken som du fått. Väl på kliniken kommer du få besked om du kan dricka mera. Du kan även komma att få speciella direktiv av Dr Gribbe eller annan person på kliniken.",
+      "text3": "Anledningen till att man fastar inför en operation är att magsäcken måste vara helt tom vid operationens start. Innehåll i magsäcken kan annars under sövning  komma upp i matstrupen och vidare ner i lungorna vilket kan resultera i kvävning eller lunginflammation."
+    },
+    "descutan": {
+      "title": "Descutan",
+      "text1": "Tvätta dig med tvålen Descutan kvällen före och på operationsdagens morgon. Tvätta håret med schampo och balsam kvällen före. Du behöver inte tvätta håret med Descutan."
+    },
+    "lotion": {
+      "title": "Hudlotion",
+      "text1": "Du får inte smörja in huden med någon hud-eller kroppslotion efter att du tvättat kroppen med Descutan. Det går dock bra att smörja in ansiktet med en kräm men ingen annan del av kroppen."
+    },
+    "smoking": {
+      "title": "Rökning",
+      "text1": "Du ska helst inte röka tiden innan operationen. Vid bröstlyft så är det ett absolut krav och vid bröstförstoring är det rekommenderat att du inte rökt 4 veckor innan operationen. Rökning är dåligt för operationen av många skäl. Rökning drar ihop blodkärlen och är negativt för sårläkningen, ökar risken för infektion och fula ärr. I värsta fall kan läkningen påverkas så pass att vävnad, hud och fett dör (nekros) med svårläkta sår som följd. Dessutom så påverkar rökning narkosen. Rökning gör luftvägarna slemmiga och mer reaktiva vilket gör narkosen mindre säker. Slemmet minskar luft- och syreutbytet till lungorna. Retningen kan göra att man får kramp i struphuvudet (laryngospasm) vilket ytterligare kan hindra luftutbytet på ett kritiskt sätt."
+    },
+    "alcohol": {
+      "title": "Alkohol",
+      "text1": "Du ska inte dricka alkohol ca 2 veckor innan operationen. Alkohol gör att du blöder lättare och dessutom interagerar alkohol med de läkemedel som används för narkos och smärtlindring."
+    },
+    "cleaning": {
+      "title": "Rent hemma",
+      "text1": "Bädda med rena sängkläder hemma och städa gärna rent. Du ska inte städa, dammsuga etc första två veckorna efter operationen."
+    },
+    "food": {
+      "title": "Mat",
+      "text1": "Det kan vara bra att förbereda med lite färdiglagad mat hemma så du slipper laga mat första dagen du kommer hem."
+    },
+    "clothes": {
+      "title": "Kläder",
+      "text1": "Tag med dig bekväma kläder som är lätta att ta på och av. Till exempel ett rymligt linne, mjukisbyxor och en tröja med blixtlås fram. Under operationen har du dina egna underkläder och eventuella stödstrumpor på dig."
+    },
+    "supportStockings": {
+      "title": "Stödstrumpor",
+      "text1": "Om du ska vara med om en längre operation på flera timmar såsom bröstlyft med eller utan implantat så ska du ha stödstrumpor. Köp dessa på apoteket och ha dem på dig när du kommer till kliniken på operationsdagen. Stödstrumpor motverkar risken för blodproppar i benen (djup ventrombos, DVT)."
+    },
+    "toiletBag": {
+      "title": "Necessär",
+      "text1": "Ta med en necessär med hygienartiklar."
+    },
+    "dog": {
+      "title": "Hund",
+      "text1": "Om du har hund, och då särskilt en större hund så kan det vara svårt att gå ut med de första 1-2 veckorna.",
+      "text2": "Om hunden rycker till i kopplet kraftigt kan det påverka operationsområdet negativt. Det kan vara bra att planera för hundvakt. Det kan också vara bra att ha kopplet i en sele runt din kropp istället för i handen. När hunden rycker eller drar så fortplantas inte rycket till din hand och arm utan till selen och midjan, kroppen."
+    }
+  },
+  "afterOperation": {
+    "awakening": {
+      "title": "Uppvaket",
+      "text1": "Efter operationen vaknar du upp på uppvaket. Där tar en sjuksköterska hand om dig och ser till att du mår bra och att du inte mår illa eller har ont. Sköterskan hjälper dig att komma upp på benen. Du får komma upp i sittande, stående och att gå på kortare promenader. Du får hjälp att gå på toaletten. OBS! Det är mycket viktigt att du får hjälp första gångerna du vill komma upp. Om du går upp utan hjälp finns det en risk att du svimmar, ramlar och slår dig. Sköterskan bestämmer sen när det är ok för dig att gå upp själv. På uppvaket har du en skön säng och du kommer vilja ligga och vila i din säng ett tag. Du kan läsa en bok eller tidning eller lyssna på musik. Efter ca två timmar på uppvaket har du blivit tillräckligt pigg för att kunna gå omkring och röra dig och komma till mottagningsrummet på operationsavdelningen som ligger precis bredvid uppvaket."
+    },
+    "recoveryRoom": {
+      "title": "Mottagningsrummet som ligger bredvid uppvaket",
+      "text1": "När du kommit upp till rummet bredvid uppvaket så får du slå dig ner i en mobiliseringsfåtölj och läsa, röra dig mjukt och lyssna på musik. En ur personalen kommer att ta hand om dig. Du kommer få information kring den bröstgymnastik som du ska göra ca varannan timme de närmaste dagarna efter operationen."
+    },
+    "rehab": {
+      "title": "Gymnastik",
+      "text1": "Ungefär fyra timmar efter operationen hjälper sjuksköterskan dig att göra vissa lättare gymnastikövningar ”bröstgymnastik” där du stretchar bröstmusklerna. Övning 1: Med raka armar för du händerna bakom rumpan och skjuter fram bröstkorgen samtidigt som du drar axlarna bakåt. Övning 2: Raka armar längs sidan av kroppen. För sedan armarna rakt ut från kroppen och upp över huvudet så att händerna möts. Båda övningarna kan upprepas ca var 15:e minut.",
+      "text2": "Att komma upp och promenera på kliniken och göra gymnastiken är viktig och minskar smärtan. Om du inte är uppe och rör dig så stelnar du lätt till vilket gör att smärtan ökar. Gör gymnastiken flera gånger i timmen. Du behöver givetvis inte gå upp på natten. OBS! Du ska inte göra gymnastiken om implantaten lagts framför muskeln, om du gjort ett implantatbyte eller ett bröstlyft."
+    },
+    "food": {
+      "title": "Mat",
+      "text1": "Så småningom kommer du att känna dig hungrig. Hör med sjuksköterskan vad som finns att äta. Det kommer serveras kaffe, juice, läsk, smörgås och/eller middag/kvällsmat. Sjuksköterskan bestämmer när du får äta."
+    },
+    "homecoming": {
+      "title": "Hemgång",
+      "text1": "Du behöver stanna på kliniken fyra timmar efter operationen, ibland mer. Hemgång sker efter att både sköterskan och jag varit inne och pratat med dig. Om du mår bra och inte har så ont så kan du utan problem gå hem. Vissa patienter går faktiskt ut på restaurang eller bio på operationsdagen."
+    },
+    "night": {
+      "title": "Natt",
+      "text1": "Ofta är det inget problem att sova på natten efter en operation. Hitta en bekväm ställning på rygg och ta extra smärtstillande om det behövs."
+    },
+    "bandage": {
+      "title": "Förband",
+      "text1": "Du har en bh på dig när du vaknar som narkos- och operationssjuksköterskorna satt på dig strax efter operationens slut. Bröstförstoring och implantatbyte: Du har då en ljusbrun tejp (kirurgtejp) närmast såret, därefter en lös vit kompress och ytterst en bh. Inga mer förband. Dagen efter op tas den lösa kompressen bort. Bröstlyft: Närmast ärren har du kirurgtejp, ovanpå denna ett vitt självhäftande förband Mepore och ytterst en bh. Meporen avlägsnas på morgonen dagen efter operationen. Alla patienter får med sig en tejprulle."
+    },
+    "driving": {
+      "title": "Bilkörning",
+      "text1": "Efter en narkos måste du vänta 24 timmar med att köra bil. Detta beror på att läkemedlen som ges under narkosen kan påverka reaktionsförmågan och hur du tänker och tar beslut. Då är det farligt att köra själv. Efter en bröstoperation ska du dessutom avvakta med bilkörning ca en vecka efter operation eller fram till första återbesöket. Detta då du vid bilkörning kan utsättas för situationer där du behöver utföra snabba eller kraftiga armrörelser vilket du inte får göra efter en bröstoperationen då det ökar risken för blödning."
+    },
+    "returnVisit": {
+      "title": "Återbesök",
+      "text1": "Boka ett återbesök hos mig 7-10 dagar efter operationen. Återbesöket bokar du i receptionen på väg hem alternativt så hör du av dig så hittar vi en tid som passar. Vid återbesöket byter jag tejpen som du har på ärren och kontrollerar att allt läker som det ska."
+    }
+  },
+  "aftercare": {
+    "painkillers": {
+      "title": "Smärtor och smärtstillande",
+      "text1": "Efter operationen upplever man mer eller mindre smärtor från operationsområdet. Efter en bröstförstoring där implantaten läggs under stora bröstmuskeln kan du känna smärtor från muskeln, dels där den delats nedtill i mitten av brösten och dels på bröstens ovansidor där implantaten spänner ut muskeln. Dessutom kan det, oavsett typ av bröstoperation, smärta från stygnen under brösten. Smärtorna kan stråla lite åt olika håll. Ibland kan de öka första dagarna efter operationen då svullnaden ökar men oftast så minskar de efter 1-2 dagar. De allra flesta patienter är helt smärtfria efter en vecka. Det förekommer dock att smärtorna från stygnen under brösten kan göra sig påminda flera veckor eller till och med månader efter operationen.",
+      "text2": "Jag skriver ett elektroniskt recept på smärtstillande och medicinerna kan hämtas ut på vilket apotek som helst. Du får recept på paracetamol (till exempel Alvedon) och tramadol (till exempel Tradolan). Alvedon tar du i maxdos, fyra gram om dagen. Ta två tabletter à 500 mg var 6:e timme. Du kan förskjuta intagen ett par timmar för att inte störa nattsömnen. Alvedon är ett mycket effektivt smärtlindrande läkemedel och ska alltid tas som grund mot smärtan. Tradolan tar du vid behov. Eventuellt bara till natten eller varje gång du tar Alvedon. Tradolan kan göra att man känner sig lite trött och eventuellt också illamående.",
+      "text3": "Vanligtvis behöver man ta smärtstillande första veckan efter operation. Ibland kortare, ibland lite längre. Tänk på att trappa ut Tradolan först och därefter Alvedon.",
+      "text4": "Glöm inte att göra gymnastiken och att ta promenader! Den hjälper bra mot smärtan. Om du behöver mer eller annan typ av smärtlindring så kan du kontakta mig på email eller sms."
+    },
+    "antibiotics": {
+      "title": "Penicillin",
+      "text1": "Jag skriver ut penicillin, flukloxacillin i förebyggande syfte vid bröstlyft, och bröstförminskning men inte vid endast bröstförstoring. Tag flukloxacillin 1 gram tre gånger om dagen i en vecka. Om du är allergisk så skriver jag i stället ut klindamycin (Dalacin)."
+    },
+    "appearance": {
+      "title": "Bröstens utseende",
+      "text1": "Brösten kommer att ändra utseende mycket de första veckorna, månaderna efter operationen. Oftast så blir de mindre fylliga upptill och mer fylliga undertill och åt sidorna. Brösten är ofta smala från början men kommer öka i bredd både mot mitten och framför allt åt sidorna. Höger och vänster bröst kan se lite olika ut första tiden vilket är helt normalt. Titta inte för mycket på brösten i början då de ändå kommer att ändra sig mycket.",
+      "text2": "Stygnen under brösten gör att det ser lite knöligt ut här. Denna knölighet försvinner efter några månader."
+    },
+    "sensations": {
+      "title": "Andra förnimmelser från brösten",
+      "text1": "Det är inte ovanligt att man kan höra och känna ett knastrande ljud under huden i och omkring operationsområdet. Det är luft som kommer in under huden under operationen. Detta är helt normalt och luften försvinner efter några dagar genom att den tas upp i vävnaden vilket är helt ofarligt. Ljudet påminner om ljudet som blir när man går på nysnö."
+    },
+    "scars": {
+      "title": "Ärren",
+      "text1": "Under brösten är det sytt i flera lager. I början efter operationen kan det kännas knöligt på grund av stygnen. Det är normalt och stygnen under huden håller ihop såret så att ärret ska läka så fint som möjligt. Det jämnar till sig då stygnen försvinner efter en till två månader. Ibland kan det plötsligt göra väldigt ont när ett av stygnen släpper många veckor efter operationen. Det är ofarligt och normalt."
+    },
+    "tape": {
+      "title": "Tejpen",
+      "text1": "Låt tejpen sitta kvar till återbesöket. Den sitter fast mycket bra och brukar inte lossna. Om den skulle lossna så förstärk med tejpen du fick med dig hem. Du kan duscha på tejpen men tvåla inte på den. Klapptorka och låt sedan tejpen lufttorka."
+    },
+    "sleeping": {
+      "title": "Sova",
+      "text1": "Du kan sova på rygg eller på sidan, det som känns bekvämast. När du väl börjar sova på magen så brukar en position lite snett framstupa vara skönt."
+    },
+    "physicalActivity": {
+      "title": "Gymnastik/sport",
+      "text1": "Fram till återbesöket är det bra att komma ut och promenera. Pendla med armarna och slappna av i kroppen. Gör bröstgymnastiken enligt ovan. Ingen annan gymnastik de första veckorna."
+    },
+    "bathingSauna": {
+      "title": "Bad och bastu",
+      "text": "Du får inte bada eller basta innan första återbesöket."
+    },
+    "sunExposure": {
+      "title": "Solning",
+      "text": "Du får inte sola fram till första återbesöket."
+    },
+    "lifting": {
+      "title": "Tunga lyft",
+      "text1": "Första veckan så ska du ta det riktigt lugnt och inte lyfta tungt. Alla rörelser ska vara mjuka, långsamma och inte ryckiga eller häftiga. Efter första veckan får du känna efter hur mycket du kan lyfta. Det gör inget om det tar emot lite men det ska inte göra ont. Tänk på att lyfta rätt med rak rygg och böjda knän."
+    },
+    "bra": {
+      "title": "BH",
+      "text1": "Den bh som du får på kliniken räcker bra fram till första återbesöket. Bär den dygnet runt första veckan. Därefter kan du gå top-less några dagar och ha bh:n på natten. Vi pratar bh på återbesöket."
+    },
+    "breastMassage": {
+      "title": "Massage, röra brösten",
+      "text1": "Du behöver inte massera brösten. Däremot så är det viktigt att du rör på, stryker på huden, bröstvårtorna och vårtgårdarna. Detta minskar risken för överkänslighet (hyperestesi) i huden."
+    },
+    "driving": {
+      "title": "Bilkörning",
+      "text1": "Efter en narkos måste du vänta 24 timmar med att köra bil. Detta beror på att läkemedlen som ges under narkosen kan påverka reaktionsförmågan och hur du tänker och tar beslut. Då är det farligt att köra själv. Efter en bröstoperation ska du dessutom avvakta med bilkörning ca en vecka efter operation eller fram till första återbesöket. Detta då du vid bilkörning kan utsättas för situationer där du behöver utföra snabba eller kraftiga armrörelser vilket du inte får göra efter en bröstoperation då det ökar risken för blödning."
+    }
+  },
+  "afterFirstReturnVisit": {
+    "scarTaping": {
+      "title": "Tejpning av ärren",
+      "text1": "Du ska fortsätta tejpa ärren i minst 6 månader efter operationen. Tejpen gör att ärrkanterna inte rör sig mot varandra, en rörelse som annars stimulerar ärrbildningen. Byt tejpen en gång i veckan till en gång varannan vecka beroende på hudtyp, hur mycket du svettas och hur snabbt tejpen blir smutsig. Om man byter tejp för ofta blir huden irriterad. Tejpen tar då med sig lite av det yttersta hudlagret och det kan uppstå små sår. Om huden blir irriterad kan du gå utan tejp några dagar upp till en vecka och låta huden vila. Du kan då passa på att smörja med mjukgörande kräm. Börja sedan tejpa igen och tänk på att inte byta för ofta."
+    },
+    "sportAndGymnastics": {
+      "title": "Sport och gymnastik",
+      "text1": "Promenader går bra från första dagen efter op. Det är bra om du kommer ut och tar promenader då det minskar smärtorna. Efter 5-6 veckor kan du börja med spinning, lättare styrketräning av ben, mage, rygg och rumpa samt yoga. Vänta dock 3 månader innan du börjar med sporter som gör att brösten hoppar såsom tennis, ridning, joggning etc. Vänta även med styrketräning överkropp 3 månader. Detta för att vävnaden ska tillåtas läka i lugn och ro fram till dess. Jag har gjort fickor för implantaten som är lagom stora för just dina implantat och det är viktigt att implantaten inte skumpar omkring och töjer ut fickorna innan vävnaden läkt.Tänk på att ha en bra, kupad sport-bh när du sportar."
+    },
+    "braAndSupport": {
+      "title": "Bh och stöd",
+      "text1": "Vi pratar om bh vid första återbesöket. Vilken bh och hur mycket stöd man behöver är individuellt. Vi tittar tillsammans och jag förklarar. Ofta kan man gå med lite mindre stöd i början för att så småningom byta till bättre och bättre stöd. Efter första återbesöket är det inte ovanligt att jag rekommenderar ett bra stöd nattetid med en kupad sport-bh till exempel Abecita Kimberly eller liknande. Annars kan brösten röra sig och töja ut vävnaden. När du ligger på rygg faller exempelvis brösten annars åt sidorna. Även dagtid är ofta en kupad sport-bh bra första månaderna efter operationen. Till exempel Anita Active eller Abecita Kimberly. Viktigt när du köper en bh är att du får hjälp att få den utprovad. Efter ca 3 månader kan man börja med bygel-bh. Även här är det viktigt att du får hjälp att få den utprovad. Byglarna ska vara långa och ligga under hela brösten. Bygeln får inte skära in någonstans såsom i mitten av brösten eller på bröstens sidor. Den ska inte heller glida upp och ligga an mot brösten. Om bygeln skär in i brösten så kan trycket göra att vävnaden (huden och underhudsfettet) tunnas ut. Detta kan leda till att du börjar känna implantaten och att de får sämre stöd. När du sportar så ska du givetvis ha en sport-bh. Denna bh skall gärna vara kupad och ge ett riktigt bra stöd. Bra stöd för brösten är viktigt för att bevara slutresultatet och för att motverka att brösten börjar hänga till sig."
+    },
+    "bathingAndSauna": {
+      "title": "Bad och bastu",
+      "text1": "Efter en bröstförstoring så får du normalt bada i badkar, pool samt sjö och hav cirka en vecka efter första återbesöket. Om du samtidigt gjort ett bröstlyft bör det normalt gå några veckor till. Vi pratar om detta på återbesöket."
+    },
+    "sunExposure": {
+      "title": "Solning",
+      "text1": "Du får inte sola ärren på minst ett år efter operationen. Täck med dubbla lager tejp, kläder, baddräkt eller bikini. Om du solar på ärren kan de bli pigmenterade (mörka). Du kan sola kroppen i övrigt."
+    }
+  },
+  "priceList": {
+    "consultation": {
+      "title": "Konsultation",
+      "price": "Kostnadsfri"
+    },
+    "breastAugmentation": {
+      "title": "Bröstförstoring och Implantatbyte",
+      "procedure1": {
+        "name": "Implantat från Mentor eller Motiva Ergonomix 1 och Round",
+        "price": "43 000 kr"
+      },
+      "procedure2": {
+        "name": "Motiva Ergonomix 2 inklusive Joy",
+        "price": "61 000 kr"
+      },
+      "procedure3": {
+        "name": "Andra implantat såsom Polytech och B-lite tillgängliga på förfrågan",
+        "price": ""
+      }
+    },
+    "breastLift": {
+      "title": "Bröstlyft",
+      "price": "Från 56 000 kr"
+    },
+    "breastAugmentationLift": {
+      "title": "Bröstförstoring med bröstlyft",
+      "price": "Från 75 000 kr"
+    },
+    "breastReduction": {
+      "title": "Bröstförminskning",
+      "price": "Från 60 000 kr"
+    },
+    "breastReductionImplants": {
+      "title": "Bröstförminskning med implantat",
+      "price": "Från 80 000 kr"
+    },
+    "implantRemoval": {
+      "title": "Uttag implantat",
+      "price": "26 000 kr"
+    },
+    "capsuleClipping": {
+      "title": "Kapseloperation kapselklyvning",
+      "price": "26 000 kr"
+    },
+    "capsuleRemoval": {
+      "title": "Kapseloperation kapselektomi",
+      "price": "Från 50 000 kr"
+    },
+    "other": {
+      "title": "Övrigt",
+      "procedure1": {
+        "name": "Kapselgaranti 5 år",
+        "price": "5 000 kr",
+        "link": "/garanti"
+      }
+    }
+  },
+  "altText": {
+    "brostoperationerConsultation": "Dr Gribbe och en patient i konsultationssamtal",
+    "brostoperationerDayOfSurgery": "En kirurg i gröna operationskläder visar vägen för en patient klädd i vit morgonrock och grön operationsmössa i en sjukhuskorridor med ljus belysning.",
+    "brostoperationerSurgery": "En kirurg i gröna operationskläder och grön operationsmössa följer en patient i vit morgonrock och grön operationsmössa genom en sjukhuskorridor med ljust trägolv och ljus belysning.",
+    "brostoperationerPostSurgery": "En ung kvinna med mörkt hår ligger i en sjukhussäng och ler mot en kirurg i gröna operationskläder som står bredvid och håller ett formulär. Bakgrunden visar en rosa och blå solnedgång genom ett fönster, och en annan patient är delvis synlig i förgrunden.",
+    "dahliaLogo": "Logotypen för Dahlia",
+    "sfepLogo": "Logotypen för Svenska Föreningen för Estetisk Plastikkirurgi",
+    "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster."
   }
 }

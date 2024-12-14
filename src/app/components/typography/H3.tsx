@@ -1,14 +1,13 @@
 type H3Props = {
   children: React.ReactNode
   white?: boolean
+  className?: string
 }
 
-const H3 = ({ children, white }: H3Props) => {
+export const H3 = ({ children, white, className }: H3Props) => {
   return (
-    <h3 className={`${white && 'text-white'} text-3xl font-light`}>
+    <h3 className={`${white && 'text-white'} text-2xl font-light ${className}`}>
       {children}
     </h3>
   )
 }
-
-export default H3

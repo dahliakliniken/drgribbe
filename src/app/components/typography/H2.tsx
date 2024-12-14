@@ -1,17 +1,18 @@
 type H2Props = {
   children: React.ReactNode
+  id?: string
   white?: boolean
   upperCase?: boolean
+  className?: string
 }
 
-const H2 = ({ children, white, upperCase }: H2Props) => {
+export const H2 = ({ children, id, white, upperCase, className }: H2Props) => {
   return (
     <h2
-      className={`text-3xl font-light ${upperCase && 'uppercase'} ${white ? 'text-white' : 'text-black'} mb-4`}
+      id={id}
+      className={`text-3xl font-light ${upperCase && 'uppercase'} ${white ? 'text-white' : 'text-black'} mb-4 ${className}`}
     >
       {children}
     </h2>
   )
 }
-
-export default H2
