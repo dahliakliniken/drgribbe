@@ -22,7 +22,8 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
       onClick,
       buttonStyle,
       inverted,
-      small
+      small,
+      ...props
     },
     ref
   ) => {
@@ -33,7 +34,13 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
     const combinedClass = `${baseClass} ${className} ${buttonStyle ? buttonClass : linkClass}`
 
     return (
-      <Link href={href} className={combinedClass} ref={ref} onClick={onClick}>
+      <Link
+        href={href}
+        className={combinedClass}
+        ref={ref}
+        onClick={onClick}
+        {...props}
+      >
         {children}
       </Link>
     )

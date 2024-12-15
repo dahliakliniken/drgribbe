@@ -14,7 +14,7 @@ export const allTreatmentsData = [
       'treatmentBox.treatments.breastEnlargement.paragraph2',
       'treatmentBox.treatments.breastEnlargement.paragraph3'
     ],
-    linkText: 'treatmentBox.treatments.breastEnlargement.linkText',
+    ariaLabel: 'treatmentBox.treatments.breastEnlargement.ariaLabel',
     linkHref: '/brostoperationer/brostforstoring',
     bgPosition: BgPositions['bottom-right']
   },
@@ -27,7 +27,7 @@ export const allTreatmentsData = [
       'treatmentBox.treatments.breastReduction.paragraph2',
       'treatmentBox.treatments.breastReduction.paragraph3'
     ],
-    linkText: 'treatmentBox.treatments.breastReduction.linkText',
+    ariaLabel: 'treatmentBox.treatments.breastReduction.ariaLabel',
     linkHref: '/brostoperationer/brostforminskning',
     bgPosition: BgPositions['bottom-left']
   },
@@ -40,7 +40,7 @@ export const allTreatmentsData = [
       'treatmentBox.treatments.breastLift.paragraph2',
       'treatmentBox.treatments.breastLift.paragraph3'
     ],
-    linkText: 'treatmentBox.treatments.breastLift.linkText',
+    ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
     linkHref: '/brostoperationer/brostlyft',
     bgPosition: BgPositions['bottom-right']
   },
@@ -53,7 +53,7 @@ export const allTreatmentsData = [
       'treatmentBox.treatments.muscleRelaxation.paragraph2',
       'treatmentBox.treatments.muscleRelaxation.paragraph3'
     ],
-    linkText: 'treatmentBox.treatments.muscleRelaxation.linkText',
+    ariaLabel: 'treatmentBox.treatments.muscleRelaxation.ariaLabel',
     linkHref: '/hud-och-injektioner',
     bgPosition: BgPositions['bottom-left']
   }
