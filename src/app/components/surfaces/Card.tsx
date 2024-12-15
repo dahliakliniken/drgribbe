@@ -19,6 +19,7 @@ type CardProps = {
   rounded?: boolean
   linkHref?: string
   linkText?: string
+  linkTextAriaLabel?: string
   clickable?: boolean
   cardList?: boolean
 }
@@ -36,6 +37,7 @@ export const Card = ({
   rounded = false,
   linkHref,
   linkText,
+  linkTextAriaLabel,
   clickable,
   cardList
 }: CardProps) => {
@@ -84,7 +86,7 @@ export const Card = ({
           </P>
         ))}
         {linkText && linkHref && (
-          <A ref={linkRef} href={linkHref}>
+          <A ref={linkRef} href={linkHref} aria-label={linkTextAriaLabel}>
             {linkText}
           </A>
         )}

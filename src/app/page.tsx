@@ -44,6 +44,7 @@ const Page: React.FC = () => {
         <SpaceContainer spaceVertically>
           <H2 upperCase>{t('treatmentBox.title')}</H2>
         </SpaceContainer>
+
         <TreatmentBox treatments={allTreatmentsData} />
 
         <SpaceContainer spaceVertically noPadding>

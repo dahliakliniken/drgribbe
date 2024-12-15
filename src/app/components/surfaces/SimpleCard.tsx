@@ -7,7 +7,10 @@ type CardProps = {
   bgPosition?: keyof typeof BgPositions
   fullWidth?: boolean
   className?: string
+  rounded?: boolean
   id?: string
+  clickable?: boolean
+  cardList?: boolean
 }
 
 export const SimpleCard = ({
@@ -16,9 +19,17 @@ export const SimpleCard = ({
   bgColor,
   bgPosition,
   className,
-  id
+  rounded,
+  id,
+  clickable,
+  cardList
 }: CardProps) => {
   const isWhite = bgColor === BgColors.White
+
+  const bgSizeClass = cardList
+    ? 'before:bg-200'
+    : 'before:lg:bg-110 before:bg-200'
+
   const backgroundPositionVariants = {
     'left-top': 'before:bg-small-left-top',
     'right-top': 'before:bg-small-right-top',
@@ -32,7 +43,7 @@ export const SimpleCard = ({
   return (
     <div
       id={id}
-      className={`${className} z-0 px-6 py-8 before:-z-10 before:bg-200 before:lg:bg-110 ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} before:bg-no-repeat ${bgPosition ? backgroundPositionVariants[bgPosition] : ''}`}
+      className={`${bgSizeClass} ${className} ${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
     >
       {title && title}
 
