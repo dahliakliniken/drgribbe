@@ -1,19 +1,14 @@
 type PProps = {
   children: React.ReactNode
-  color?: string // Färg som prop
   small?: boolean
   className?: string
+  white?: boolean
 }
 
-export const P = ({
-  children,
-  color = 'text-black',
-  small,
-  className
-}: PProps) => {
+export const P = ({ children, small, className, white }: PProps) => {
   return (
     <p
-      className={`font-josefin-sans ${small ? 'text-base' : 'text-xl'} font-light leading-tight tracking-[0.06em] ${color} ${className}`}
+      className={`font-josefin-sans ${small ? 'text-base' : 'text-xl'} font-light leading-tight tracking-[0.06em] ${white ? 'text-white' : 'text-black'} ${className}`}
     >
       {children}
     </p>

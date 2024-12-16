@@ -92,11 +92,11 @@ const Page: React.FC = () => {
               <Pillar>
                 <H2 white>{t('operationDepartment.title')}</H2>
                 <div className="lg:columns-2">
-                  <P color="text-white">{t('operationDepartment.text1')}</P>
-                  <P color="text-white">{t('operationDepartment.text2')}</P>
-                  <P color="text-white">{t('operationDepartment.text3')}</P>
-                  <P color="text-white">{t('operationDepartment.text4')}</P>
-                  <P color="text-white">{t('operationDepartment.text5')}</P>
+                  <P white>{t('operationDepartment.text1')}</P>
+                  <P white>{t('operationDepartment.text2')}</P>
+                  <P white>{t('operationDepartment.text3')}</P>
+                  <P white>{t('operationDepartment.text4')}</P>
+                  <P white>{t('operationDepartment.text5')}</P>
                 </div>
               </Pillar>
             }
@@ -113,7 +113,7 @@ const Page: React.FC = () => {
             content={
               <div className="lg:flex">
                 <div>
-                  <P color="text-white" className="lg:hidden">
+                  <P white className="lg:hidden">
                     {t('profileCard.imageText')}
                   </P>
                   <Image
@@ -122,14 +122,14 @@ const Page: React.FC = () => {
                     className="mx-auto my-4 rounded-full lg:mr-9"
                     height={280}
                   />
-                  <P color="text-white" className="hidden lg:block">
+                  <P white className="hidden lg:block">
                     {t('profileCard.imageText')}
                   </P>
                 </div>
                 <div>
-                  <P color="text-white">{t('profileCard.paragraph1')}</P>
-                  <P color="text-white">{t('profileCard.paragraph2')}</P>
-                  <P color="text-white">{t('profileCard.paragraph3')}</P>
+                  <P white>{t('profileCard.paragraph1')}</P>
+                  <P white>{t('profileCard.paragraph2')}</P>
+                  <P white>{t('profileCard.paragraph3')}</P>
                 </div>
               </div>
             }
