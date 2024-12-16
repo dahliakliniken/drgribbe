@@ -25,43 +25,41 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
 
   return (
     <CardRow>
-      {treatments.map((treatment) => {
-        console.log(t(treatment.ariaLabel))
-        return (
-          <SimpleCard
-            clickable
-            rounded
-            cardList
-            key={treatment.id}
-            bgColor={BgColors.Green}
-            bgPosition={treatment.bgPosition}
-            content={
-              <div className="flex h-full flex-col">
-                <H3 white>{t(treatment.title)}</H3>
-                <Image
-                  className="m-auto my-6"
-                  src={treatment.image}
-                  alt={''}
-                  height={125}
-                  aria-hidden={true}
-                />
-                {treatment.paragraphs.map((paragraph, index) => (
-                  <P small white key={`${treatment.id}-${index}`}>
-                    {t(paragraph)}
-                  </P>
-                ))}
-                <A
-                  className="mt-auto"
-                  href={treatment.linkHref}
-                  aria-label={t(treatment.ariaLabel)}
-                >
-                  {t('common.readMore')}
-                </A>
-              </div>
-            }
-          />
-        )
-      })}
+      {treatments.map((treatment) => (
+        <SimpleCard
+          clickable
+          rounded
+          cardList
+          key={treatment.id}
+          bgColor={BgColors.Green}
+          bgPosition={treatment.bgPosition}
+          content={
+            <div className="flex h-full flex-col">
+              <H3 white>{t(treatment.title)}</H3>
+              <Image
+                className="m-auto my-6"
+                src={treatment.image}
+                alt={''}
+                height={125}
+                aria-hidden={true}
+              />
+              {treatment.paragraphs.map((paragraph, index) => (
+                <P small white key={`${treatment.id}-${index}`}>
+                  {t(paragraph)}
+                </P>
+              ))}
+              <A
+                overlay
+                className="mt-auto"
+                href={treatment.linkHref}
+                aria-label={t(treatment.ariaLabel)}
+              >
+                {t('common.readMore')}
+              </A>
+            </div>
+          }
+        />
+      ))}
     </CardRow>
   )
 }
