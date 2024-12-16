@@ -10,7 +10,6 @@ import { Pillar } from '../components/layout/Pillar'
 import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { BgColors } from '../types'
 import { H3 } from '../components/typography/H3'
-import { Section } from '../components/layout/Section'
 import { AnchorLink } from '../components/typography/AnchorLink'
 import { A } from '../components/typography/A'
 import ConsultationImage from '../../../public/images/brostoperation-konsultation.jpg'
@@ -91,77 +90,111 @@ const Brostoperationer = () => {
         <div className="m-auto xl:max-w-7xl">
           <TreatmentBox treatments={breastOperationsTreatmentsData} />
         </div>
-        <Pillar>
-          <SpaceContainer spaceVertically>
-            <H2>{t('brostoperationer.heading1')}</H2>
-            <Section>
-              <H3>{t('brostoperationer.consultation.heading1')}</H3>
-              <P>{t('brostoperationer.consultation.text1')}</P>
-              <P>{t('brostoperationer.consultation.text2')}</P>
-              <P>{t('brostoperationer.consultation.text3')}</P>
-              <P>{t('brostoperationer.consultation.text4')}</P>
-              <P>{t('brostoperationer.consultation.text5')}</P>
-              <P>{t('brostoperationer.consultation.text6')}</P>
-              <P>{t('brostoperationer.consultation.text7')}</P>
-              <P>{t('brostoperationer.consultation.text8')}</P>
-              <Image
-                src={ConsultationImage}
-                alt={t('altText.brostoperationerConsultation')}
-              />
-            </Section>
 
-            <Section>
+        <SpaceContainer spaceTop noPadding>
+          <SimpleCard
+            bgColor={BgColors.Coral}
+            bgPosition="right"
+            content={
+              <Pillar>
+                <H2 white>{t('brostoperationer.heading1')}</H2>
+                <H3 white>{t('brostoperationer.consultation.heading1')}</H3>
+                <P white>{t('brostoperationer.consultation.text1')}</P>
+                <P white>{t('brostoperationer.consultation.text2')}</P>
+                <P white>{t('brostoperationer.consultation.text3')}</P>
+                <P white>{t('brostoperationer.consultation.text4')}</P>
+                <P white>{t('brostoperationer.consultation.text5')}</P>
+                <P white>{t('brostoperationer.consultation.text6')}</P>
+                <P white>{t('brostoperationer.consultation.text7')}</P>
+                <P white>{t('brostoperationer.consultation.text8')}</P>
+              </Pillar>
+            }
+          />
+          <Image
+            src={ConsultationImage}
+            alt={t('altText.brostoperationerConsultation')}
+            className="max-h-svh object-cover object-center"
+          />
+        </SpaceContainer>
+
+        <SimpleCard
+          bgColor={BgColors.Grey}
+          bgPosition="right"
+          content={
+            <Pillar>
               <H3>{t('brostoperationer.dayOfSurgery.heading1')}</H3>
-              <P>{t('brostoperationer.dayOfSurgery.text1')}</P>
-              <P>
-                {t.rich('brostoperationer.dayOfSurgery.text2', {
-                  link: (chunks) => (
-                    <AnchorLink href="#forberedelser">{chunks}</AnchorLink>
-                  )
-                })}
-              </P>
-              <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
+              <div className="lg:columns-2">
+                <P>{t('brostoperationer.dayOfSurgery.text1')}</P>
+                <P>
+                  {t.rich('brostoperationer.dayOfSurgery.text2', {
+                    link: (chunks) => (
+                      <AnchorLink href="#forberedelser">{chunks}</AnchorLink>
+                    )
+                  })}
+                </P>
+                <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
+              </div>
+            </Pillar>
+          }
+        />
+        <Image
+          src={DayOfSurgeryImage}
+          alt={t('altText.brostoperationerDayOfSurgery')}
+          className="max-h-svh object-cover object-center"
+        />
 
-              <Image
-                src={DayOfSurgeryImage}
-                alt={t('altText.brostoperationerDayOfSurgery')}
-              />
-            </Section>
-
-            <Section>
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="right"
+          content={
+            <Pillar>
               <H3>{t('brostoperationer.surgery.heading1')}</H3>
               <P>{t('brostoperationer.surgery.text1')}</P>
               <P>{t('brostoperationer.surgery.text2')}</P>
+            </Pillar>
+          }
+        />
+        <Image
+          src={SurgeryImage}
+          alt={t('altText.brostoperationerSurgery')}
+          className="max-h-svh object-cover object-center"
+        />
 
-              <Image
-                src={SurgeryImage}
-                alt={t('altText.brostoperationerSurgery')}
-              />
-            </Section>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="right"
+          content={
+            <>
+              <H3 white>{t('brostoperationer.postSurgery.heading1')}</H3>
+              <div className="lg:columns-3">
+                <P white>{t('brostoperationer.postSurgery.text1')}</P>
+                <P white>{t('brostoperationer.postSurgery.text2')}</P>
+              </div>
+            </>
+          }
+        />
+        <Image
+          src={PostSurgeryImage}
+          alt={t('altText.brostoperationerPostSurgery')}
+          className="max-h-svh object-cover object-center"
+        />
 
-            <Section>
-              <H3>{t('brostoperationer.postSurgery.heading1')}</H3>
-              <P>{t('brostoperationer.postSurgery.text1')}</P>
-              <P>{t('brostoperationer.postSurgery.text2')}</P>
-
-              <Image
-                src={PostSurgeryImage}
-                alt={t('altText.brostoperationerPostSurgery')}
-              />
-            </Section>
-
-            <Section>
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="right"
+          content={
+            <Pillar>
               <H3>{t('brostoperationer.firstReturnVisit.heading1')}</H3>
               <P>{t('brostoperationer.firstReturnVisit.text1')}</P>
               <P>{t('brostoperationer.firstReturnVisit.text2')}</P>
-            </Section>
 
-            <Section>
-              <H3>{t('brostoperationer.secondReturnVisit.heading1')}</H3>
+              <H3 className="mt-8">
+                {t('brostoperationer.secondReturnVisit.heading1')}
+              </H3>
               <P>{t('brostoperationer.secondReturnVisit.text1')}</P>
-            </Section>
-          </SpaceContainer>
-        </Pillar>
+            </Pillar>
+          }
+        />
 
         <SimpleCard
           bgColor={BgColors.Coral}

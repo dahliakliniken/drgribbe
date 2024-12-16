@@ -46,7 +46,7 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
                   aria-hidden={true}
                 />
                 {treatment.paragraphs.map((paragraph, index) => (
-                  <P small color="text-white" key={`${treatment.id}-${index}`}>
+                  <P small white key={`${treatment.id}-${index}`}>
                     {t(paragraph)}
                   </P>
                 ))}

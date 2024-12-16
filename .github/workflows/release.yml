@@ -25,7 +25,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
-      - name: Debug
-        run: |
-          git status
-          cat package.json
