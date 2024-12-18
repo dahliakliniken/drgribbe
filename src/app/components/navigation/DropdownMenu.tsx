@@ -67,6 +67,11 @@ export const DropdownMenu: React.FC = () => {
         text: t('dropdown.price'),
         href: '/priser',
         id: crypto.randomUUID()
+      },
+      {
+        text: t('dropdown.faq'),
+        href: '/fragor-och-svar',
+        id: crypto.randomUUID()
       }
     ]
 

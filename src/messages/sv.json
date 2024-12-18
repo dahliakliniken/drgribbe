@@ -14,7 +14,8 @@
     "var-personal": "Vår Personal",
     "priser": "Priser",
     "garanti": "Garanti",
-    "boka": "Boka"
+    "boka": "Boka",
+    "fragor-och-svar": "Frågor & svar"
   },
   "home": {
     "title": "Hello world!",
@@ -24,9 +25,10 @@
     "clinic": "Om Kliniken",
     "breastSurgeries": "Bröstoperationer",
     "implants": "Implantaten",
-    "skinInjections": "Hud & Injektioner",
+    "skinInjections": "Hud & injektioner",
     "ourStaff": "Vår Personal",
-    "price": "Pris"
+    "price": "Pris",
+    "faq": "Frågor & svar"
   },
   "treatmentBox": {
     "title": "Behandlingar",
@@ -53,7 +55,7 @@
         "ariaLabel": "Läs mer om bröstlyft"
       },
       "muscleRelaxation": {
-        "title": "Hud & Injektioner",
+        "title": "Hud & injektioner",
         "paragraph1": "Genom att med mycket tunn nål injicera muskelavslappnande läkemedel kan man få muskler att slappna av och rynkor att försvinna eller minska.",
         "paragraph2": "Effekten av läkemedlet kommer efter ca en vecka och varar i 3-6 månader. Inför behandlingen pratar du med dr Gribbe som gör en noggrann analys av dina önskemål och förutsättningar.",
         "paragraph3": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
@@ -417,7 +419,7 @@
     }
   },
   "hudochinjektioner": {
-    "title": "Hud & Injektioner",
+    "title": "Hud & injektioner",
     "text": "Text om hud och injektioner."
   },
   "varpersonal": {
@@ -690,6 +692,128 @@
         "price": "5 000 kr",
         "link": "/garanti"
       }
+    }
+  },
+  "fragorOchSvar": {
+    "title": "Frågor & svar",
+    "introduction": "Många har frågor kring estetiska bröstoperationer och därför har vi samlat de vanligaste frågorna här. Hittar du inte svar på det du undrar är du självklart välkommen att kontakta oss så hjälper vi dig.",
+    "accordion": {
+      "question1": {
+        "question": "Hur lång väntetid är det på att få en operation?",
+        "answer": "En normal väntetid för en operation är 1-2 månader. Ibland finns det möjlighet till operation snabbare beroende på typen av ingrepp. Först bokas ett besök på mottagningen där vi går igenom dina önskemål och förutsättningar, implantat väljs och du får information kring vad operationen innebär. Därefter ska man som patient ha en betänketid på minst en vecka innan en operation. Det är viktigt att du som patient är väl informerad."
+      },
+      "question2": {
+        "question": "Får jag äta & dricka som vanligt innan operationen?",
+        "answer": "Nej, inför en operation ska man fasta. En generell regel är ingen mat och dryck 6 timmar innan operationen men viss dryck (vatten) är tillåten 2 timmar innan op. Se vidare under <link>förberedelser inför operationen.</link>"
+      },
+      "question3": {
+        "question": "Vilka olika implantat finns det?",
+        "answer": "Det finns många olika implantat. Olika märken såsom Mentor och Motiva. Olika bredd och olika projektion. Olika fasthet, från väldigt mjuka till fastare. Olika form såsom runda och droppformade. Vi pratar om detta på din konsultation. Kliniken har ett brett sortiment av implantat och arbetar bara med implantat av högsta kvalitet och de fabrikat som vi anser bäst på marknaden."
+      },
+      "question4": {
+        "question": "Hur många storlekar i BH kan jag gå upp?",
+        "answer": "En ökning med en till två storlekar i BH är vanligt efter en bröstförstoring. Ibland önskar patienter mer uttalad förändring med tre till fyra och till och med fem storlekar i bh. Ofta blir ökningen i bh-storlek större än vad man förväntat sig då en korrekt utprovad bh har stor kupa för att ge brösten ett optimalt stöd."
+      },
+      "question5": {
+        "question": "Kan jag få precis de bröst jag vill ha?",
+        "answer": "Med bröstimplantat går det att åstadkomma tydliga och märkbara skillnader i storlek, form och fasthet och med den process som vi utvecklat blir patienterna generellt sett mycket nöjda. Det är dock viktigt att komma ihåg att alla har olika förutsättningar, olika utgångsläge och att utseendet på de egna brösten och den egna bröstkorgen har stor påverkan på slutresultatet. Med en korrekt utförd konsultation så får du som patient information kring detta vilket ökar sannolikheten att du sedan blir nöjd med resultatet."
+      },
+      "question6": {
+        "question": "Är det smärtsamt med en estetisk bröstoperation?",
+        "answer": "Upplevelse av smärta är väldigt individuell och det är svårt att på förhand säga hur du kommer att uppleva ingreppet. Vi använder en exakt och atraumatisk kirurgisk teknik, vilket bidrar till ett lindrigare och kortare postoperativt förlopp.Vanligt efter en bröstförstoring är att man de första dygnen känner ett tryck över brösten och en skarpare smärta från stygnen på djupet i snittet. Smärtor och obehag lindras med vanliga smärtlindrande tabletter och speciella gymnastikövningar. Brösten kan upplevas spända och svullna de första veckorna och det tar flera månader innan brösten får sin slutgiltiga form."
+      },
+      "question7": {
+        "question": "När kan jag börja arbeta igen och blir jag sjukskriven efter operationen?",
+        "answer": "Om man har ett lättare jobb såsom ett kontorsjobb utan tunga lyft kan man faktiskt vara tillbaka dagen efter operationen. Vi brukar dock rekommendera att man tar minst 1 dag ledigt efter operationen och det kan vara skönt att sjukskriva sig en vecka. Ett vanligt upplägg är att man efter operationen är borta från jobbet resten av veckan och att man sedan är tillbaka på jobbet kommande måndag. Om man har ett tungt eller fysiskt krävande jobb sjukskriver vi dig 4 veckor om du så önskar."
+      },
+      "question8": {
+        "question": "Vilken livslängd har implantaten?",
+        "answer": "Många implantatmärken lämnar livstidsgaranti mot ruptur och det är säkert så att implantat från både Mentor och Motiva kan hålla en livstid. Det vi märkt är dock att patienter själva kommer och vill byta sina implantat efter ca 10-15 år då de upplever att de haft dem i kroppen länge och att man då fått en känsla av att de är gamla."
+      },
+      "question9": {
+        "question": "Påverkar operationen amningen?",
+        "answer": "Vid en vanlig bröstförstoring eller en bröstförstoring med bröstlyft påverkas inte amningen med den teknik som vi utvecklat. Det beror på att dr Gribbe är väldigt noggrann vid operationen för att inte komma in i och påverka bröstkörtelvävnaden och mjölkgångarna. Vid en bröstförminskning finns däremot en risk att amningen påverkas då delar av bröstvävnaden tas bort som en naturlig del av operationen."
+      },
+      "question10": {
+        "question": "Hur ser opererade bröst ut efter amning och graviditet?",
+        "answer": "Det är väldigt individuellt. Vissa kvinnor kan föda flera barn och inte behöva bröstlyft medan andra kvinnor kan behöva börstlyft utan att ha fött barn. Faktorer som påverkar är hur pass elastisk den egna huden är, hur stora de egna brösten är och därmed hur mycket de växer under graviditet och amning, hur länge man ammar och hur noggrann man är med stödjande bh under och efter graviditeten. Om brösten hänger till sig efter graviditet och amning går det ofta att lyfta upp bröstvävnaden utan att röra implantaten."
+      },
+      "question11": {
+        "question": "Kan jag genomgå mammografi?",
+        "answer": "Ja, det går bra. Personalen på mammografiavdelningen har stor erfarenhet av att göra undersökningar på bröst med implantat. I vissa fall så väljer man att undersöka med ultraljud i stället för mammografi."
+      },
+      "question12": {
+        "question": "Behöver jag kapselförsäkring?",
+        "answer": "Risken för stram kapsel är mycket liten och med den operationsteknik som dr Gribbe utvecklat så minimeras risken ytterligare. Trots detta så är ändå stram kapsel den allra vanligaste komplikationen efter en bröstimplantatoperation och störst risk är mellan 6 - 12 månader efter operationen. Man väljer här själv hur man vill göra. Antingen så betalar man lite extra för garantin i samband med operationen eller så får man vara beredd att betala mer i framtiden om den komplikationen skulle ske."
+      },
+      "question13": {
+        "question": "Spelar min bröstbredd någon roll?",
+        "answer": "Bredden på bröstkorgen är det mått som styr vilket resultat implantat av en viss bredd ger. En bredare bröstkorg kan bära upp ett bredare och större implantat medans det passar med smalare implantat på en smalare bröstkorg. Vi tittar på detta på konsultationen och du kommer här få god kunskap."
+      },
+      "question14": {
+        "question": "När mjuknar brösten?",
+        "answer": "Brösten mjuknar successivt första månaderna efter operationen. Ofta så har de mjuknat fint och fallit på plats efter ca 3 månader. Faktorer som påverkar förloppet är vad man själv har för hud och bröstvävnad. Generellt sett så kan man säga att en ung kvinna har stramare och mer elastisk vävnad än en äldre kvinna som istället med åren fått en mer eftergivlig vävnad. Graviditet och amning gör också vävnaden mer eftergivlig. Följaktligen så mjuknar brösten snabbare ju mer eftergivlig vävnaden är och vice versa."
+      },
+      "question15": {
+        "question": "Kan jag äta p-piller eller andra läkemedel?",
+        "answer": "Ja, det går oftast bra att äta p-piller vid ett kortare ingrepp såsom bröstförstoring. Vid en operation där även bröstlyft eller bröstförminskning genomförs kan man om operationstiden förväntas bli lång behöva göra uppehåll med p-piller. Läkemedel som Treo, Iprén, Naproxen samt preparat som vitaminer och Omega-3 ökar blödningsbenägenheten och ska undvikas 2 veckor innan operation."
+      },
+      "question16": {
+        "question": "Kan jag snusa eller röka?",
+        "answer": "Rökning ska helst undvikas fyra veckor innan en bröstoperation. Vid bröstlyft eller bröstförminskning är det ett krav att du inte röker minst fyra veckor innan och fyra veckor efter din operation. Snus går bra fram till dagen innan operation."
+      },
+      "question17": {
+        "question": "Kan jag resa/flyga efter operation?",
+        "answer": "När du åker hem efter operationen går det bra att få skjuts i bil, åka tåg eller buss. Flyg kortare sträckor till exempel inom Sverige går också bra på operationsdagen men du ska undvika längre utrikesflygningar ca två dygn efter operationen. Om man reser långt så funkar tåg bra då man kan komma upp och promenera runt när man vill. Om man åker bil hem och bor långt bort så är det viktigt att stanna och göra gymnastik regelbundet."
+      },
+      "question18": {
+        "question": "Vad kostar en korrigering?",
+        "answer": "Generellt sett så ingår korrektioner i säkerhetsgarantin som går att teckna i samband med operationen."
+      },
+      "question19": {
+        "question": "Kommer brösten krympa efter operationen?",
+        "answer": "Ja och nej. Första tiden efter operationen är brösten svullna upptill. Ibland väldigt svullna. Denna svullnad minskar successivt första veckorna, månaderna efter operationen och omfördelas neråt till underpolerna (nedanför bröstvårtorna) och till bröstens sidor. Volymen upptill omfördelas därmed neråt och åt sidorna samt även lite framåt. Många upplever minskningen i volym upptill som att brösten minskar i storlek men man kan säga att brösten ”blommar ut” och de blir faktiskt som helhet lite större efter några månader jämfört med precis efter operationen."
+      },
+      "question20": {
+        "question": "Är det normalt att brösten glider isär när jag ligger ner?",
+        "answer": "Precis som ett par naturliga bröst så glider även bröst med implantat isär, särskilt i liggande. Hur mycket och när det sker är individuellt. Om man har eftergivlig vävnad med sämre stöd och om man har valt stora implantat ökar tendensen. Viktigt är att ta hand om brösten med bra bh."
+      },
+      "question21": {
+        "question": "Kan jag bära tungt efter operation?",
+        "answer": "I början, första 2 veckorna efter operationen ska du ta det väldigt lugn och inte lyfta mer än ett kilo. Du kan sedan successivt öka på belastningen med lite mer vikt när du bär till exempel väskor, matkassar eller barn. Det är viktigt att du minst första månaden gör alla rörelser lugnt och inte ryckigt."
+      },
+      "question22": {
+        "question": "Behöver jag bröstband?",
+        "answer": "Nej, generellt sett inte. Den teknik som dr Gribbe utvecklat innebär att du generellt sett inte använder bröstband. I enstaka fall kan det dock bli aktuellt."
+      },
+      "question23": {
+        "question": "Nedstämd efter operation?",
+        "answer": "Vissa patienter upplever känner sig mer eller mindre nedstämda efter en bröstoperation. Anledningen till nedstämdheten är själva operationen i sig med fasta, narkos, olika mediciner, smärta, immobilisering och ändrat matintag efter operationen. På kliniken är vi experter på detta för att göra det så lindring och behagligt för patienterna som det bara går. Ytterligare en orsak till nedstämdheten är det faktum att man faktiskt vaknar upp till en mer eller mindre förändrad kropp. Hur mycket man än tänkt på de nya brösten innan operationen så kan det ändå i vissa fall komma lite som en chock. Det är dock mycket ovanligt att nedstämdhet är ett problem, särskilt om man är medveten om att det kan ske."
+      },
+      "question24": {
+        "question": "Hur länge behöver jag tejpa ärren?",
+        "answer": "Rekommendationen är att du tejpar ärren i 6 månader efter en bröstförstoring eller ett bröstlyft. Du kommer få noggranna instruktioner kring detta."
+      },
+      "question25": {
+        "question": "När kan jag börja sola?",
+        "answer": "Grundregeln är att ärren efter en bröstoperation inte får få sol på sig minst ett år efter operationen. Detta då de annars kan bli pigmenterade, bruna. Täck med hög solskyddsfaktor (SPF100), tejp och mörk baddräkt eller bikini. I övrigt så går det bra att sola brösten efter ca 2 veckor och resten av kroppen från och med dagen efter operation."
+      },
+      "question26": {
+        "question": "Kan jag gå utan BH efteråt?",
+        "answer": "Du vaknar upp med en bh som operationspersonalen sätter på dig. Den är mjuk och skön och du bär den sedan första veckan efter op, fram till första besöket. Du har efter en vecka möjlighet att ta av bh:n då och då när du är hemma. Vid första återbesöket pratar dr Gribbe med dig och ger individuella bh-råd."
+      },
+      "question27": {
+        "question": "När kan jag bada efteråt?",
+        "answer": "Rekommendationen är att avvakta med att bada badhus/badkar/bastu i 4 veckor efter din operation."
+      },
+      "question28": {
+        "question": "När kan jag börja träna efteråt?",
+        "answer": "Efter 5-6 veckor kan du börja med spinning och styrketräning av ben och rumpa. Successivt kan du övergå till att träna mage och rygg medan överkropp och bröstmuskler kan ske först efter 3 månader. Även aktiviteter som gör att brösten studsar såsom jogging, ridning, tennis ska du vänta med 3 månader."
+      },
+      "question29": {
+        "question": "När kan jag sova på sidan efteråt?",
+        "answer": "Så snart du känner att det känns okej."
+      }    
     }
   },
   "altText": {

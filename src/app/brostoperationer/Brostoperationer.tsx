@@ -213,9 +213,9 @@ const Brostoperationer = () => {
           }
         />
 
-        <Pillar>
+        <Pillar id="forberedelser">
           <SpaceContainer spaceVertically>
-            <H2 id="forberedelser">{t('brostoperationer.beforeOperation')}</H2>
+            <H2>{t('brostoperationer.beforeOperation')}</H2>
             <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
             <Accordion items={beforeOperationItems} />
           </SpaceContainer>
