@@ -43,7 +43,7 @@ export const SimpleCard = ({
   return (
     <div
       id={id}
-      className={`${bgSizeClass} ${className} ${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
+      className={`before:pointer-events-none ${bgSizeClass} ${className} ${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
     >
       {title && title}
 
