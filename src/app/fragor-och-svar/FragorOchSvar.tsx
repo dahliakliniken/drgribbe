@@ -166,10 +166,12 @@ const FragorOchSvar = () => {
   return (
     <main className="mb-36 flex flex-col">
       <Pillar>
-        <H1>{t('title')}</H1>
-        <P>{t('introduction')}</P>
-        <SpaceContainer noPadding spaceVertically>
-          <Accordion items={faqData} />
+        <SpaceContainer>
+          <H1>{t('title')}</H1>
+          <P>{t('introduction')}</P>
+          <SpaceContainer noPadding spaceVertically>
+            <Accordion items={faqData} />
+          </SpaceContainer>
         </SpaceContainer>
       </Pillar>
     </main>
