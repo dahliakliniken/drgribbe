@@ -27,29 +27,31 @@ const Brostforstoring = () => {
       />
 
       <SimpleCard
-        bgColor={BgColors.White}
+        bgColor={BgColors.Coral}
         bgPosition="left"
         content={
           <Pillar>
             <Section>
-              <H2>{t('technique.heading1')}</H2>
-              <P>{t('technique.text1')}</P>
+              <H2 white>{t('technique.heading1')}</H2>
+              <P white>{t('technique.text1')}</P>
 
-              <H3>{t('technique.heading2')}</H3>
-              <P>{t('technique.text2')}</P>
+              <H3 white>{t('technique.heading2')}</H3>
+              <P white>{t('technique.text2')}</P>
 
-              <H3>{t('technique.heading3')}</H3>
-              <P>
+              <H3 white>{t('technique.heading3')}</H3>
+              <P white>
                 {t.rich('technique.text3', {
                   link: (chunks) => (
-                    <AnchorLink href="#placering">{chunks}</AnchorLink>
+                    <AnchorLink href="#placering" className="text-white">
+                      {chunks}
+                    </AnchorLink>
                   )
                 })}
               </P>
-              <H3>{t('technique.heading4')}</H3>
-              <P>{t('technique.text4')}</P>
-              <H3>{t('technique.heading5')}</H3>
-              <P>{t('technique.text5')}</P>
+              <H3 white>{t('technique.heading4')}</H3>
+              <P white>{t('technique.text4')}</P>
+              <H3 white>{t('technique.heading5')}</H3>
+              <P white>{t('technique.text5')}</P>
             </Section>
           </Pillar>
         }
@@ -89,6 +91,38 @@ const Brostforstoring = () => {
             </H2>
             <P white>{t('placement.text1')}</P>
             <P white>{t('placement.text2')}</P>
+          </Pillar>
+        }
+      />
+
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition="left"
+        content={
+          <Pillar>
+            <H2>{t('withBodyFat.title')}</H2>
+            <H3>{t('withBodyFat.background.title')}</H3>
+            <P>{t('withBodyFat.background.text1')}</P>
+
+            <H3>{t('withBodyFat.technique.title')}</H3>
+            <P>{t('withBodyFat.technique.text1')}</P>
+
+            <ol className="list-decimal space-y-6 pl-6 marker:text-lg marker:font-semibold marker:text-coral">
+              <li>
+                <P>{t('withBodyFat.technique.list1')}</P>
+              </li>
+              <li>
+                <P>{t('withBodyFat.technique.list2')}</P>
+              </li>
+              <li>
+                <P>{t('withBodyFat.technique.list3')}</P>
+              </li>
+            </ol>
+
+            <P>{t('withBodyFat.technique.text2')}</P>
+
+            <H3>{t('withBodyFat.hybrid.title')}</H3>
+            <P>{t('withBodyFat.hybrid.text1')}</P>
           </Pillar>
         }
       />

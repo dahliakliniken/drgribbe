@@ -174,7 +174,7 @@
     }
   },
   "brostforstoring": {
-    "title": "Bröstförstoring",
+    "title": "Bröstförstoring med bröstimplantat",
     "background": {
       "heading1": "Bakgrund",
       "text1": "Bröstförstoring med bröstimplantat har under de senaste årtiondena blivit allt vanligare och mer och mer accepterat. Materialen som nu används är säkra och har mycket lång hållbarhet.",
@@ -206,6 +206,25 @@
       "heading1": "Implantatplacering, framför eller bakom bröstmuskeln",
       "text1": "Generellt så kan man säga att om man är tunn och smal och saknar underhudsfett eller egen bröstvävnad upptill i brösten så passar en placering under muskeln bäst. Muskeln blir då ett extra lager vävnad som gör att implantaten inte syns så direkt och tydligt utan man får i stället en harmonisk och gradvis övergång från bröstkorgen till bröstet. Om man är tunn i vävnaden och lägger implantaten framför muskeln så ser man implantatkanten och veckbildningar i själva implantatet, så kallad rippling mera. Har man däremot mer underhudsfett och/eller egen bröstvävnad upptill på bröstkorgen så täcks implantaten bättre och man kan då få ett resultat utan synlig implantatkant eller rippling. Även implantatens karaktär påverkar. Man kan med ökad fyllnadsgrad, ökad fasthet och mer elastiskt skal minska risken för rippling. Samtidigt så ger fastare implantat tydligare övre kant och mer uttalat dekolletage.",
       "text2": "De allra flesta kvinnor väljer implantat som är större än de egna brösten vilket på sätt och vis hänger ihop med ingreppets natur. Det vill säga man vill förstora brösten som är små och de önskade brösten och därmed bröstimplantaten är då oftast större än de egna brösten. De allra flesta kvinnor kan därför räknas som att de inte har tillräckligt vävnad upptill på bröstkorgen, varför bakom muskeln oftast passar bäst. Det finns även andra fördelar med bakom muskeln. Muskeln håller bröstimplantaten på plats, inte så bröstimplantaten växer fast i muskeln utan mer att de fungerar som ett stöd där muskeln hindrar bröstimplantaten från att röra sig för mycket."
+    },
+    "withBodyFat": {
+      "title": "Bröstförstoring med kroppseget fett",
+      "background": {
+        "title": "Bakgrund, historik",
+        "text1": "Redan i slutet av 1800-talet försökte Dr Viktor Czerny sig på att transplantera fett till ett bröst för att återskapa volym efter operation av bröstcancer. Operationen misslyckades då man transplanterade en stor klump fett (ett lipom) vilket gjorde att stora delar av fettet inte fick blodcirkulation. 100 år senare på 1990-talet började Dr Sydney Coleman framgångsrikt utföra transplantation av fett till ansiktet och brösten."
+      },
+      "technique": {
+        "title": "Teknik",
+        "text1": "En bröstförstoring med kroppseget fett, det vill säga en transplantation av eget fett till brösten sker i tre steg. Det finns flera olika system på marknaden men principen är ofta densamma. Det handlar om att få ut fett från en del av kroppen och sedan föra in fettet i brösten. Operationen sker på Dahliakliniken i Stockholm alltid i narkos. Inför operationen har du fått premedicinering och strax innan operationsstart får du antibiotikum intravenöst.",
+        "list1": "Första steget är fettsugningen vilket man även kallar att man “skördar” fett. Precis som vid en traditionell fettsugning används vanliga fettsugningskanyler utan till exempel laser, värme eller ultraljud. Det gäller att få ut fettet så noggrant och försiktigt som möjligt så att fettcellerna inte skadas. Man fettsuger från de delar av kroppen där patienten upplever att hon har ett överskott och vill bli smalare. Det kan till exempel vara från insidan av låren, magen, ryggen eller knäna. Operationen har därför två syften, dels en förstoring av brösten och dels att få bort oönskat fett från olika delar av kroppen.",
+        "list2": "Andra steget är behandling, rening av fettet. När man fått ut fettet i olika behållare förbereds det på olika sätt. Fettet tvättas med saltvattenlösning och centrifugeras. Syftet är att få fram så många hela fettceller som möjligt och samtidigt få bort trasiga fettceller och vätska som man inte vill ska föras in i bröstet.",
+        "list3": "Tredje steget är att det renade fettet förs in i brösten. Även detta måste ske med stor omsorg och precision. Man använder här sprutor med mycket tunna kanyler och steg för steg läggs tunna strängar av fett i de delar av bröstet som man önskar förstora. Det är viktigt att man lägger små mängder fett åt gången med tunna kanyler i många smala kanaler. Detta för att varje enskild fettcell ska komma i kontakt med den befintliga bröstvävnaden och från den så vis få näring och syre. Om man sprutar in fettet som en klump (såsom Dr Czerny gjorde 1895) kommer bara fettcellerna i utkanten av klumpen i kontakt med kroppens blodcirkulation och fettet i mitten av klimpen dör.",
+        "text2": "Även om man gör allt rätt så kommer vissa av fettcellerna att gå under. Man brukar räkna med att mellan 30-70% av fettcellerna dör men genom att utföra vart och ett av stegen noggrant så ökar chanserna att så många fettceller som möjligt överlever. På grund av detta brukar man räkna med att det behövs mellan två till fyra operationer för att uppnå en volym på brösten som gör skillnad."
+      },
+      "hybrid": {
+        "title": "Hybrid bröstförstoring, bröstimplantat och fett",
+        "text1": "Vid hybrid bröstförstoring används både bröstimplantat och transplantation med fett enligt ovan. Med endast transplantation av fett når man ofta inte önskat resultat, särskilt om man önskar en större volym på brösten. Vid en hybrid bröstförstoring lägg implantat av önskar volym in och transplantationen av fett blir ett komplement att för att till exempel öka volymen upptill i dekolletaget, i underpolen eller för att minska eller ta bort oönskade resultat såsom dubbelkontur eller rippling."
+      }
     }
   },
   "brostforminskning": {
@@ -340,7 +359,7 @@
         "text1": "Bröstimplantatföretaget Motiva har tillverkat bröstimplantat sedan 2016.",
         "formAndProfiles": {
           "title": "Form och Profiler",
-          "text1": "Motiva tillverkar runda bröstimplantat i fyra olika profiler, projektioner Mini, Demi, Full och Corsé. Mini (låg profil) är plattast följt av Demi (mellanprofil) som kommer ut lite mer från kroppen. Därefter kommer profilen Full (hög profil) som sticker ut mer och slutligen Corsé (extra hög eller ultrahög profil) som putar ut mest. Varje profil finns i ett 20-tal olika storlekar och med ökande storlek ökar bredden successivt för att passa olika patienters smak och bredd på bröstkorg. <link>Se tabell</link> där man i kolumnen längst till vänster ser bredden på implantaten. Följer man sedan horisontellt i tabellen ser man radvis vilken volym denna bredd har hos respektive projektion. Vanliga storlekar på kliniken är Motiva Mini 220cc till 275cc, Demi 285cc till 360cc, Full 335cc till 500cc, Corsé 450cc till 725cc."
+          "text1": "Motiva tillverkar runda bröstimplantat i fyra olika profiler, projektioner Mini, Demi, Full och Corsé. Mini (låg profil) är plattast följt av Demi (mellanprofil) som kommer ut lite mer från kroppen. Därefter kommer profilen Full (hög profil) som sticker ut mer och slutligen Corsé (extra hög eller ultrahög profil) som putar ut mest. Varje profil finns i ett 20-tal olika storlekar och med ökande storlek ökar bredden successivt för att passa olika patienters smak och bredd på bröstkorg. Se tabell där man i kolumnen längst till vänster ser bredden på implantaten. Följer man sedan horisontellt i tabellen ser man radvis vilken volym denna bredd har hos respektive projektion. Vanliga storlekar på kliniken är Motiva Mini 220cc till 275cc, Demi 285cc till 360cc, Full 335cc till 500cc, Corsé 450cc till 725cc."
         },
         "filling": {
           "title": "Fylling, silikon",
@@ -833,6 +852,7 @@
     "brostoperationerPostSurgery": "En ung kvinna med mörkt hår ligger i en sjukhussäng och ler mot en kirurg i gröna operationskläder som står bredvid och håller ett formulär. Bakgrunden visar en rosa och blå solnedgång genom ett fönster, och en annan patient är delvis synlig i förgrunden.",
     "dahliaLogo": "Logotypen för Dahlia",
     "sfepLogo": "Logotypen för Svenska Föreningen för Estetisk Plastikkirurgi",
-    "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster."
+    "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
+    "motivaTable": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym"
   }
 }
