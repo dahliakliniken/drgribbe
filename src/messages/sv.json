@@ -15,7 +15,8 @@
     "priser": "Priser",
     "garanti": "Garanti",
     "boka": "Boka",
-    "fragor-och-svar": "Frågor & svar"
+    "fragor-och-svar": "Frågor & svar",
+    "fore-och-efter": "Före & efterbilder"
   },
   "home": {
     "title": "Hello world!",
@@ -60,6 +61,12 @@
         "paragraph2": "Effekten av läkemedlet kommer efter ca en vecka och varar i 3-6 månader. Inför behandlingen pratar du med dr Gribbe som gör en noggrann analys av dina önskemål och förutsättningar.",
         "paragraph3": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
         "ariaLabel": "Läs mer om muskelavslappnande behandling"
+      },
+      "beforeAndAfter": {
+        "title": "Före & efterbilder",
+        "paragraph1": "Se före och efter-bilder på patienter som genomgått bröstoperationer.",
+        "paragraph2": "Lorem ispum dolor sit amet, consectetur adipiscing elit.",
+        "ariaLabel": "Se före och efter-bilder"
       }
     }
   },
@@ -815,6 +822,9 @@
         "answer": "Så snart du känner att det känns okej."
       }    
     }
+  },
+  "foreOchEfter": {
+    "title": "Före & efterbilder"
   },
   "altText": {
     "brostoperationerConsultation": "Dr Gribbe och en patient i konsultationssamtal",
