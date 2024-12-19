@@ -1,6 +1,7 @@
 import Enlargement from '../../public/images/breastEnlargement.svg'
 import Reduction from '../../public/images/breastReduction.svg'
 import Lift from '../../public/images/breastLift.svg'
+import MuscleRelaxation from '../../public/images/muscleRelaxation.svg'
 import { BgPositions } from '@/app/types'
 
 export const breastOperationsTreatmentsData = [
@@ -42,5 +43,17 @@ export const breastOperationsTreatmentsData = [
     ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
     linkHref: '/brostoperationer/brostlyft',
     bgPosition: BgPositions['bottom-left']
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'treatmentBox.treatments.beforeAndAfter.title',
+    image: MuscleRelaxation,
+    paragraphs: [
+      'treatmentBox.treatments.beforeAndAfter.paragraph1',
+      'treatmentBox.treatments.beforeAndAfter.paragraph2'
+    ],
+    ariaLabel: 'treatmentBox.treatments.beforeAndAfter.ariaLabel',
+    linkHref: '/brostoperationer/fore-och-efter',
+    bgPosition: BgPositions['bottom-right']
   }
 ]
