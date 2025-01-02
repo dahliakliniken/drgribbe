@@ -81,6 +81,7 @@ const Page: React.FC = () => {
                 />
                 <P>{t('aboutClinic.paragraph1')}</P>
                 <P>{t('aboutClinic.paragraph2')}</P>
+                <P>{t('aboutClinic.paragraph3')}</P>
               </Pillar>
             }
           />

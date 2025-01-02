@@ -118,7 +118,7 @@ const Brostoperationer = () => {
         </SpaceContainer>
 
         <SimpleCard
-          bgColor={BgColors.Grey}
+          bgColor={BgColors.White}
           bgPosition="right"
           content={
             <Pillar>
