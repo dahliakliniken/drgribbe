@@ -259,191 +259,178 @@
     "title": "Bröstimplantat",
     "text1": "De första bröstimplantaten av silikon tillverkades 1961 och de har sedan dess kontinuerligt utvecklats och förbättrats. Den första bröstförstoringen genomfördes 1962 med lyckat resultat. Intressant nog så har just denna patient Timmie Jean Lindsey fortfarande kvar sina ursprungsimplantat och säger sig ännu vara nöjd.",
     "text2": "Det finns en rad olika märken och modeller av bröstimplantat och det går att variera egenskaperna hos bröstimplantaten på en rad olika sätt.",
-    "listItem1": {
-      "heading": "Innehållet",
-      "text1": "Beroende på vilket material man använder i bröstimplantaten ändras mjukheten och känslan när man känner på brösten. Det absolut vanligaste materialet i bröstimplantat är silikon. Från början användes flytande silikon vilket gjorde bröstimplantaten mycket mjuka. Implantaten upplevdes av många för mjuka och lösa. Dessutom var problemet att om ett implantat gick sönder så rann det flytande silikonet ut i bröstet och ibland även vidare till armhålan. Detta gjorde att man på 90-talet utvecklade implantat med ett halvfast, “kohesivt” innehåll. Dessa implantat kallas för “geléhallon” eller på engelska “gummy bears” då konsistensen liknar dessa godis. Silikonet kunde nu göras mer eller mindre mjukt vilket påverkar både formen på bröstimplantaten och hur de känns att ta på. Ett fastare silikon ger fastare bröstimplantat och en fastare och mer stabil form vilket i runda bröstimplantat utnyttjas för att ge mer fyllighet upptill i klyfta och dekolletage och mer “push up” i naket. I anatomiska bröstimplantat utnyttjas detta för att ge en formstabil droppformad, bröstformad ofta ansedd som “naturlig” form. Tvärtom ger en mjukare variant av kohesivt geléhallonsilikon bröstimplantat som faller ihop. Detta används i runda bröstimplantat för att skapa bröstimplantat som faller ihop vilket ger mindre fyllighet upptill i dekolletaget och i stället mer volym nertill i bröstens underpol. Man får på detta sätt ett droppformat och naturligt utseende och en mjuk och naturlig känsla på brösten.",
-      "text2": "Även andra material än silikon används. Exempel på detta är saltvatten “koksalt” vilket ger väldigt mjuka bröstimplantat. Dessa kan också ge ett mjukt och naturligt utseende, särskilt om man har en del egen bröstvävnad som täcker bröstimplantatet. Däremot så kan de upplevas som lite för lösa och till och med “skvalpiga”",
-      "text3": "En av de senaste innovationerna kommer från Polytech vars bröstimplantat B-lite innehåller silikon blandat med mikrosfärer (mycket små kulor) fyllda med luft. Funktionen är här att skapa ett innehåll som väger mindre vilket ger 30% lättare bröstimplantat. Lättare bröstimplantat är värdefullt särskilt när man använder större bröstimplantat då de minskar risker som tyngden annars ger."
-    },
-    "listItem2": {
-      "heading": "Fyllnadsgraden",
-      "text1": "Genom att fylla bröstimplantaten mer eller mindre ändrar man deras egenskaper. Ju mer fyllda de är desto stummare upplevs de att ta på. Dessutom faller de ihop mindre och blir på så vis mer fylliga upptill i klyftan och dekolletaget."
-    },
-    "listItem3": {
-      "heading": "Skalet, höljet",
-      "text1": "Innehållet i bröstimplantaten hålls på plats av ett skal. Detta skal är oftast gjort av silikon och kan varieras avseende till exempel tjocklek, antal lager och elasticitet."
-    },
-    "listItem4": {
-      "heading": "Formen",
-      "text1": "Formen på bröstimplantaten kan varieras och de absolut vanligaste varianterna är runda respektive anatomiska, droppformade bröstimplantat. Genom att variera formen på bröstimplantaten skapas möjligheten att skapa bröst med varierande utseende."
-    },
-    "listItem5": {
-      "heading": "Ytan",
-      "text1": "Även genom att variera ytan på bröstimplantaten kan man ändra deras egenskaper. De vanligaste ytorna som används på bröstimplantat är slät respektive texturerad yta. En annan yta som används är polyuretan. Polyuretanet har egenskapen att vävnaden växer in i implantatet vilket gör att implantaten inte alls roterar eller rör sig. En annan effekt av polyuretanytan är att risken för stram och hård kapselbildning helt och hållet elimineras.",
+    "accordion1": {
+      "content": {
+        "heading": "Innehållet",
+        "text1": "Beroende på vilket material man använder i bröstimplantaten ändras mjukheten och känslan när man känner på brösten. Det absolut vanligaste materialet i bröstimplantat är silikon. Från början användes flytande silikon vilket gjorde bröstimplantaten mycket mjuka. Implantaten upplevdes av många för mjuka och lösa. Dessutom var problemet att om ett implantat gick sönder så rann det flytande silikonet ut i bröstet och ibland även vidare till armhålan. Detta gjorde att man på 90-talet utvecklade implantat med ett halvfast, “kohesivt” innehåll. Dessa implantat kallas för “geléhallon” eller på engelska “gummy bears” då konsistensen liknar dessa godis. Silikonet kunde nu göras mer eller mindre mjukt vilket påverkar både formen på bröstimplantaten och hur de känns att ta på. Ett fastare silikon ger fastare bröstimplantat och en fastare och mer stabil form vilket i runda bröstimplantat utnyttjas för att ge mer fyllighet upptill i klyfta och dekolletage och mer “push up” i naket. I anatomiska bröstimplantat utnyttjas detta för att ge en formstabil droppformad, bröstformad ofta ansedd som “naturlig” form. Tvärtom ger en mjukare variant av kohesivt geléhallonsilikon bröstimplantat som faller ihop. Detta används i runda bröstimplantat för att skapa bröstimplantat som faller ihop vilket ger mindre fyllighet upptill i dekolletaget och i stället mer volym nertill i bröstens underpol. Man får på detta sätt ett droppformat och naturligt utseende och en mjuk och naturlig känsla på brösten.",
+        "text2": "Även andra material än silikon används. Exempel på detta är saltvatten “koksalt” vilket ger väldigt mjuka bröstimplantat. Dessa kan också ge ett mjukt och naturligt utseende, särskilt om man har en del egen bröstvävnad som täcker bröstimplantatet. Däremot så kan de upplevas som lite för lösa och till och med “skvalpiga”",
+        "text3": "En av de senaste innovationerna kommer från Polytech vars bröstimplantat B-lite innehåller silikon blandat med mikrosfärer (mycket små kulor) fyllda med luft. Funktionen är här att skapa ett innehåll som väger mindre vilket ger 30% lättare bröstimplantat. Lättare bröstimplantat är värdefullt särskilt när man använder större bröstimplantat då de minskar risker som tyngden annars ger."
+      },
+      "fullness": {
+        "heading": "Fyllnadsgraden",
+        "text1": "Genom att fylla bröstimplantaten mer eller mindre ändrar man deras egenskaper. Ju mer fyllda de är desto stummare upplevs de att ta på. Dessutom faller de ihop mindre och blir på så vis mer fylliga upptill i klyftan och dekolletaget."
+      },
+      "shell": {
+        "heading": "Skalet, höljet",
+        "text1": "Innehållet i bröstimplantaten hålls på plats av ett skal. Detta skal är oftast gjort av silikon och kan varieras avseende till exempel tjocklek, antal lager och elasticitet."
+      },
+      "form": {
+        "heading": "Formen",
+        "text1": "Formen på bröstimplantaten kan varieras och de absolut vanligaste varianterna är runda respektive anatomiska, droppformade bröstimplantat. Genom att variera formen på bröstimplantaten skapas möjligheten att skapa bröst med varierande utseende."
+      },
+      "surface": {
+        "heading": "Ytan",
+        "text1": "Även genom att variera ytan på bröstimplantaten kan man ändra deras egenskaper. De vanligaste ytorna som används på bröstimplantat är slät respektive texturerad yta. En annan yta som används är polyuretan. Polyuretanet har egenskapen att vävnaden växer in i implantatet vilket gör att implantaten inte alls roterar eller rör sig. En annan effekt av polyuretanytan är att risken för stram och hård kapselbildning helt och hållet elimineras."
+      },
       "smoothSurface": {
-        "title": "Slät yta",
+        "heading": "Slät yta",
         "text1": "Under lång tid så var en slät yta standard på de runda bröstimplantaten. De bröstimplantat med slät yta som vi använder på Dahliakliniken kommer från Mentor."
       },
       "texturedSurface": {
-        "title": "Texturerad yta",
+        "heading": "Texturerad yta",
         "text1": "Texturerad yta. Från början var bröstimplantaten släta men under 80-talet tog flera tillverkare av bröstimplantat fram en sandpappersliknande yta, en texturering. Funktionen hos textureringen är att minska risken att den kapsel som kroppen naturligt bildar runt bröstimplantaten blir tjock, hård och stram så kallad kapselsammandragning, kapselkontraktur. Textureringen skapar oordning bland kapselfibrerna så att de inte blir så långa och inte samverkar och drar åt samma håll. Detta gör att kapseln blir tunnare, mjukare och drar ihop sig mindre. Varje tillverkare av bröstimplantat har sin egen typ av texturering och den kan vara mer eller mindre grov. Mentor kallar sin texturering Siltex® och Polytech kallar sin POLYtxt®.",
         "text2": "På senare år har man sett att i mycket sällsynta fall vissa typer av texturering kan ge upphov till en ovanlig form av cancer, lymfom BIA-ALCL. Detta har gjort att vi för tillfället använder släta implantat på kliniken."
       },
       "nanoTexturedSurface": {
-        "title": "Nanotexturerad yta",
+        "heading": "Nanotexturerad yta",
         "text1": "Om texturering på ytan görs väldigt fin, nästan slät så kallas den för nanotexturerad (från och med 2025 mikrotexturerad). Meningen med denna typ av texturering är att minska risken för stram och tjock kapsel samtidigt som man eliminerar eller minimerar risken för ALCL. Exempel på denna typ av texturering och som vi använder på Dahliakliniken är Motiva SmoothSilk har en yta som är 4 mikrometer (mikron) och Polytech Mesmo som har en ytojämnhet på 25 mikrometer."
       },
       "polyuretan": {
-        "title": "Polyuretan",
-        "text1": "En yta av polyuretan är inte slät och inte texturerad utan i stället ett poröst nätverk som tillåter inväxt av kroppens egen vävnad. Detta gör att implantatytan växer fast i implantatfickan. Första månaderna känns brösten stumma och orörliga men när inläkningen är klar känns brösten mjuka och naturliga. Tack vare att bröstimplantaten växer fast i implantatfickan får de ett väldigt bra stöd från vävnaden. Polyuretan har den allra lägsta risken för tjock och stram kapselbildning och kan användas både vid primära bröstförstoring (första gången) eller om man har haft problem med hård kapsel upprepade gånger. Risken för BIA-ALCL är extremt liten med polyuretan."
-      }
+          "heading": "Polyuretan",
+          "text1": "En yta av polyuretan är inte slät och inte texturerad utan i stället ett poröst nätverk som tillåter inväxt av kroppens egen vävnad. Detta gör att implantatytan växer fast i implantatfickan. Första månaderna känns brösten stumma och orörliga men när inläkningen är klar känns brösten mjuka och naturliga. Tack vare att bröstimplantaten växer fast i implantatfickan får de ett väldigt bra stöd från vävnaden. Polyuretan har den allra lägsta risken för tjock och stram kapselbildning och kan användas både vid primära bröstförstoring (första gången) eller om man har haft problem med hård kapsel upprepade gånger. Risken för BIA-ALCL är extremt liten med polyuretan."
+        }
+      
     },
     "readMore": "Läs vidare under <link>runda bröstimplantat</link> och <link2>anatomiska bröstimplantat.</link2>",
     "text3": "Sammanfattningsvis kan man genom att variera egenskaperna hos bröstimplantat kan ändra hur brösten upplevs på kroppen, hur de känns att ta på samt hur de ser ut. Dessutom kan implantatets olika egenskaper påverka risken för olika komplikationer.",
-    "jelly": {
-      "title": "Geléhallon",
-      "text1": "De första 20 åren, under 60- och 70-talen var bröstimplantat av silikon fyllda med ett flytande silikon. På 80-talet introducerades bröstimplantat fyllda med halvfast även kallat kohesivt silikon. Nu för tiden är i princip alla bröstimplantat med silikon fyllda med denna typ av silikon och de är också den allra vanligaste typen av bröstimplantat. Geléhallon kallas för “gummy bear implants” och på svenska “geléhallon” då innehållet i sin konsistens liknar dessa godisar. Silikonet är här sammanhållet av bindningar mellan silikonmolekylerna. Beroende på hur molekylerna sitter ihop ändras silikonets fasthet, kohesivitet. Ett mjukare geléhallonimplantat har en lägre kohesivitet och ett fastare geléhallonimplantat har en högre kohesivitet. Se vidare ovan under innehåll i bröstimplantat."
+    "jelly": "Geléhallon",
+    "accordion2": {
+      "jelly": {
+        "heading": "Beskrivning",
+        "text1": "De första 20 åren, under 60- och 70-talen var bröstimplantat av silikon fyllda med ett flytande silikon. På 80-talet introducerades bröstimplantat fyllda med halvfast även kallat kohesivt silikon. Nu för tiden är i princip alla bröstimplantat med silikon fyllda med denna typ av silikon och de är också den allra vanligaste typen av bröstimplantat. Geléhallon kallas för “gummy bear implants” och på svenska “geléhallon” då innehållet i sin konsistens liknar dessa godisar. Silikonet är här sammanhållet av bindningar mellan silikonmolekylerna. Beroende på hur molekylerna sitter ihop ändras silikonets fasthet, kohesivitet. Ett mjukare geléhallonimplantat har en lägre kohesivitet och ett fastare geléhallonimplantat har en högre kohesivitet. Se vidare ovan under innehåll i bröstimplantat."
+      }
     },
-    "roundImplants": {
-      "title": "Runda implantat",
-      "text1": "Runda bröstimplantat har kommit att dominera marknaden för bröstimplantat. Med runda bröstimplantat blir patienterna generellt sett väldigt nöjda, de är lite lättare att jobba med än de anatomiska bröstimplantaten och det är färre komplikationer än med de anatomiska bröstimplantaten. Vi på kliniken har sedan 10-15 år märkt att det med runda bröstimplantat går att skapa bröst som patienterna både är mer nöjda med och tycker är mer naturliga än med de anatomiska bröstimplantaten. Mjuka, runda bröstimplantat faller ihop något och ger precis som anatomiska implantat en droppformad, naturlig bröstform. De mjuka runda implantaten är mjukare än de anatomiska, droppformade bröstimplantaten och ger därmed bröst som är mjukare och mer naturliga att ta på. De mjuka, runda bröstimplantaten går att pusha upp med bh vilket tvärtom ofta är mycket svårt med de anatomiska bröstimplantaten. Rotation är inte en komplikation med runda implantat då de ser likadana ut även när de vrider på sig. Slutligen så går det att välja släta, runda bröstimplantat om man så önskar. De anatomiska bröstimplantaten är alltid texturerade för att minska risken för rotation.",
-      "text2": "Det finns väldigt många tillverkare av runda bröstimplantat och på Dahliakliniken i Stockholm använder vi märkena Mentor, Motiva och Polytech. För att särskilja sig och stå ut i mängden väljer de olika tillverkarna av bröstimplantat att variera egenskaper som volym, mått, silikongel, ytstruktur och fyllnadsgrad. Gemensamt är dock att alla tillverkare har bröstimplantat med varierande grad av projektion eller put, det vill säga att de har implantat som sticker ut från kroppen olika mycket. Man brukar här prata om olika profiler och då projektionerna låg, mellan, hög och ultrahög profil."
+    "roundImplants": "Runda implantat",
+    "accordion3": {
+      "roundImplants": {
+        "heading": "Beskrivning",
+        "text1": "Runda bröstimplantat har kommit att dominera marknaden för bröstimplantat. Med runda bröstimplantat blir patienterna generellt sett väldigt nöjda, de är lite lättare att jobba med än de anatomiska bröstimplantaten och det är färre komplikationer än med de anatomiska bröstimplantaten. Vi på kliniken har sedan 10-15 år märkt att det med runda bröstimplantat går att skapa bröst som patienterna både är mer nöjda med och tycker är mer naturliga än med de anatomiska bröstimplantaten. Mjuka, runda bröstimplantat faller ihop något och ger precis som anatomiska implantat en droppformad, naturlig bröstform. De mjuka runda implantaten är mjukare än de anatomiska, droppformade bröstimplantaten och ger därmed bröst som är mjukare och mer naturliga att ta på. De mjuka, runda bröstimplantaten går att pusha upp med bh vilket tvärtom ofta är mycket svårt med de anatomiska bröstimplantaten. Rotation är inte en komplikation med runda implantat då de ser likadana ut även när de vrider på sig. Slutligen så går det att välja släta, runda bröstimplantat om man så önskar. De anatomiska bröstimplantaten är alltid texturerade för att minska risken för rotation.",
+        "text2": "Det finns väldigt många tillverkare av runda bröstimplantat och på Dahliakliniken i Stockholm använder vi märkena Mentor, Motiva och Polytech. För att särskilja sig och stå ut i mängden väljer de olika tillverkarna av bröstimplantat att variera egenskaper som volym, mått, silikongel, ytstruktur och fyllnadsgrad. Gemensamt är dock att alla tillverkare har bröstimplantat med varierande grad av projektion eller put, det vill säga att de har implantat som sticker ut från kroppen olika mycket. Man brukar här prata om olika profiler och då projektionerna låg, mellan, hög och ultrahög profil."
+      },
+      "projection": {
+        "heading": "Projektion, profil",
+        "text1": "När man ska välja bröstimplantat för en bröstförstoring väljer man profil och då hur mycket bröstimplantaten ska komma ut, puta ut från kroppen. De plattaste, mest diskreta bröstimplantaten kallas för låg profil. Sedan kommer mellanprofil som kommer ut lite mer från kroppen följt av hög profil som putar ut ytterligare lite och slutligen ultrahög profil som sticker ut mest. Att profilen blir högre betyder alltså inte att bröstimplantaten kommer upp högt upp mot nyckelbenet utan i stället att de kommer ut mer från kroppen, vilket framför allt syns när man betraktar sig själv i profil eller när man tittar ner på brösten.",
+        "text2": "Olika tillverkare har olika namn för dessa profiler men gemensamt är att man kan välja bröstimplantat som har har mer eller mindre volym utåt från kroppen och i grunden är det olika namn för de olika familjerna låg, mellan, hög och extra hög profil. Se tabell som visar bröstimplantat av olika märken med bredden 12 cm och med olika profil, projektion.",
+        "text3": "På konsultationen väljer vi tillsammans vilken profil och hur mycket implantaten ska sticka ut från kroppen."
+      },
+      "width": {
+        "heading": "Bredd",
+        "text1": "Bröstimplantat av samma profil ökar i bredd med ökad storlek och volym. Detta gäller oavsett märke och oavsett om man pratar om låg, mellan eller hög profil. Till exempel den vanliga profilen Mentor hög profil där man ser hur en ökad volym på high profile från 350cc till 450cc ger över en cm bredare implantat medan projektionen bara ökar några mm, se tabell. Samma gäller för Motiva där man ser hur en ökad volym på demi från 300cc till 380cc ger en ökad bredd på 1 cm men bara en ökning av projektionen på 2 mm, se tabell. Man kan genom att välja bredden på implantaten matcha mått och utseende på axlar, bröstkorg, midja och höfter. Val av bredd på bröstimplantaten blir en viktig del i processen där plastikkirurgen på konsultationen stämmer av vad patienten har för önskemål och smak. Tar man lite smalare implantat blir utseendet framifrån lite nättare och sportigare medan om man tar lite bredare bröstimplantat upplevs kroppen som kurvigare och kvinnligare."
+      },
+      "content": {
+        "heading": "Innehåll",
+        "text1": "Det vanligaste innehållet i runda bröstimplantat generellt är kohesivt silikon, “geléhallon“. På Dahliakliniken använder vi Mentor True Touch Cohesive 1 och Cohesive 2 samt Motiva Round, Ergonomix 1 och Ergonomix 2. Förutom kohesivt silikon, “geléhallon“ använder vi på Dahliakliniken också runda bröstimplantat med innehållet Polytech B-lite och Mentor koksalt."
+      },
+      "surface": {
+        "heading": "Yta",
+        "text1": "Det finns en rad olika ytor på runda bröstimplantat vilket du kan <link>läsa mer om här.</link>",
+        "text2": "På Dahliakliniken använder vi runda bröstimplantat med antingen en slät yta från Mentor, en mycket fin texturerad, nanotexturerad (mikrotexturerad) yta från Motiva eller en yta av polyuretan från Polytech."
+      }
     },
-    "projection": {
-      "title": "Projektion, profil",
-      "text1": "När man ska välja bröstimplantat för en bröstförstoring väljer man profil och då hur mycket bröstimplantaten ska komma ut, puta ut från kroppen. De plattaste, mest diskreta bröstimplantaten kallas för låg profil. Sedan kommer mellanprofil som kommer ut lite mer från kroppen följt av hög profil som putar ut ytterligare lite och slutligen ultrahög profil som sticker ut mest. Att profilen blir högre betyder alltså inte att bröstimplantaten kommer upp högt upp mot nyckelbenet utan i stället att de kommer ut mer från kroppen, vilket framför allt syns när man betraktar sig själv i profil eller när man tittar ner på brösten.",
-      "text2": "Olika tillverkare har olika namn för dessa profiler men gemensamt är att man kan välja bröstimplantat som har har mer eller mindre volym utåt från kroppen och i grunden är det olika namn för de olika familjerna låg, mellan, hög och extra hög profil. Se tabell som visar bröstimplantat av olika märken med bredden 12 cm och med olika profil, projektion.",
-      "text3": "På konsultationen väljer vi tillsammans vilken profil och hur mycket implantaten ska sticka ut från kroppen."
-    },
-    "width": {
-      "title": "Bredd",
-      "text1": "Bröstimplantat av samma profil ökar i bredd med ökad storlek och volym. Detta gäller oavsett märke och oavsett om man pratar om låg, mellan eller hög profil. Till exempel den vanliga profilen Mentor hög profil där man ser hur en ökad volym på high profile från 350cc till 450cc ger över en cm bredare implantat medan projektionen bara ökar några mm, se tabell. Samma gäller för Motiva där man ser hur en ökad volym på demi från 300cc till 380cc ger en ökad bredd på 1 cm men bara en ökning av projektionen på 2 mm, se tabell. Man kan genom att välja bredden på implantaten matcha mått och utseende på axlar, bröstkorg, midja och höfter. Val av bredd på bröstimplantaten blir en viktig del i processen där plastikkirurgen på konsultationen stämmer av vad patienten har för önskemål och smak. Tar man lite smalare implantat blir utseendet framifrån lite nättare och sportigare medan om man tar lite bredare bröstimplantat upplevs kroppen som kurvigare och kvinnligare."
-    },
-    "content": {
-      "title": "Innehåll",
-      "text1": "Det vanligaste innehållet i runda bröstimplantat generellt är kohesivt silikon, “geléhallon“. På Dahliakliniken använder vi Mentor True Touch Cohesive 1 och Cohesive 2 samt Motiva Round, Ergonomix 1 och Ergonomix 2. Förutom kohesivt silikon, “geléhallon“ använder vi på Dahliakliniken också runda bröstimplantat med innehållet Polytech B-lite och Mentor koksalt."
-    },
-    "surface": {
-      "title": "Yta",
-      "text1": "Det finns en rad olika ytor på runda bröstimplantat vilket du kan läsa mer om här.",
-      "text2": "På Dahliakliniken använder vi runda bröstimplantat med antingen en slät yta från Mentor, en mycket fin texturerad, nanotexturerad (mikrotexturerad) yta från Motiva eller en yta av polyuretan från Polytech."
-    },
-    "anatomic": {
-      "title": "Anatomiska, droppformade bröstimplantat",
-      "text1": "Anatomiska bröstimplantat blev populära mot slutet av 90-talet och har varit fantastiska hjälpmedel när man som plastikkirurg vill skapa bröst med ett naturligt utseende. De anatomiska bröstimplantat som vi använder på Dahliakliniken är från Mentor och innehåller Mentor True Touch Cohesive 3.",
+    "anatomic": "Anatomiska, droppformade bröstimplantat",
+    "accordion4": {
+      "anatomic": {
+        "heading": "Beskrivning",
+        "text1": "Anatomiska bröstimplantat blev populära mot slutet av 90-talet och har varit fantastiska hjälpmedel när man som plastikkirurg vill skapa bröst med ett naturligt utseende. De anatomiska bröstimplantat som vi använder på Dahliakliniken är från Mentor och innehåller Mentor True Touch Cohesive 3."
+      },
       "measurements": {
-        "title": "Mått, bredd och höjd",
+        "heading": "Mått, bredd och höjd",
         "text1": "Ytan som ligger an mot kroppen hos de anatomiska bröstimplantaten går att variera på bredden och på höjden oberoende av varandra. Det betyder att det precis som hos runda bröstimplantat går det för en bröstförstoring att välja mer eller mindre bredd för att matcha patientens smak och bröstkorgsbredd. Dessutom så kan man välja implantat som har mer eller mindre höjd upp mot nyckelbenet för att matcha patientens höjd på bröstkorgen. Vissa patienter har ett längre avstånd från nyckelben till bröstvårta, en längre bröstkorg medan avståndet hos andra patienter är kortare. Vid en bröstförstoring går det alltså att välja bröstimplantat som är breda och låga om patienten är kort men har en bred bröstkorg. Tvärtom så kan man välja smala och höga bröstimplantat till en patient som är smal och lång."
       },
       "projections": {
-        "title": "Projektion",
+        "heading": "Projektion",
         "text1": "Precis som hos de runda bröstimplantaten går det att välja projektion, put hos de droppformade bröstimplantaten. Man pratar även här om låg profil, mellanprofil, hög profil och extra hög profil. Projektionen, putet på bröstimplantaten kan, som hos de runda bröstimplantaten, varieras beroende på tycke och smak, för att balansera kroppens utseende och för att kunna fylla ut patientens egen byst mer eller mindre."
       },
       "content": {
-        "title": "Innehåll",
+        "heading": "Innehåll",
         "text1": "Innehållet i de droppformade bröstimplantaten är fastare än i de runda bröstimplantaten. Detta för att kunna töja ut och forma vävnaden på ett effektivt sätt och för att sedan upprätthålla denna form och utseende.",
         "text2": "De droppformade bröstimplantaten är spännande att jobba med då det finns så många olika att välja mellan och då man som plastikkirurg kan välja bröstimplantat som passar väldigt många olika kroppstyper."
       },
       "surface": {
-        "title": "Yta",
+        "heading": "Yta",
         "text1": "De anatomiska bröstimplantaten har alltid en mer eller mindre texturerad yta för att antingen växa fast i vävnaden eller annars för att glida så lite som möjligt. Syftet med detta är att minimera risken för att bröstimplantaten vrider sig, roterar."
       },
       "results": {
-        "title": "Resultat",
+        "heading": "Resultat",
         "text1": "Med droppformade, anatomiska bröstimplantat uppnås ett vackert och naturligt resultat rent utseendemässigt. Detta framför allt när patienten har lite eller ingen bröstvävnad själv. Med de droppformade bröstimplantaten kan man här forma och skapa en naturligt bröstform. Effekten blir extra tydlig om patienten är relativt ung och stram i den egna vävnaden, huden. Den lite fastare gelen i bröstimplantaten till exempel Mentor True Touch kohesivitet 3 kan här “vinna över” stramheten, töja ut och forma nedre delen av brösten, underpolen och ge en naturlig droppform. Det vissa patienter dock upplever är att brösten kan kännas lite för fasta och att det går att pusha upp dem och skapa ett accentuerat dekolletage. En vanlig missuppfattning är att droppformade implantat ger ett naturligt resultat medan runda implantat ger ett onaturligt. Med rätt val av mjuka runda bröstimplantat kan man skapa bröst som är lika naturliga till utseendet men faktiskt mjukare att ta på än bröst med droppformade bröstimplantat. <link>Se även under runda bröstimplantat.</link>"
       }
     },
-    "ourImplants": {
-      "title": "Våra implantat",
-      "motiva": {
-        "title": "Motiva",
-        "text1": "Bröstimplantatföretaget Motiva har tillverkat bröstimplantat sedan 2016.",
-        "formAndProfiles": {
-          "title": "Form och Profiler",
-          "text1": "Motiva tillverkar runda bröstimplantat i fyra olika profiler, projektioner Mini, Demi, Full och Corsé. Mini (låg profil) är plattast följt av Demi (mellanprofil) som kommer ut lite mer från kroppen. Därefter kommer profilen Full (hög profil) som sticker ut mer och slutligen Corsé (extra hög eller ultrahög profil) som putar ut mest. Varje profil finns i ett 20-tal olika storlekar och med ökande storlek ökar bredden successivt för att passa olika patienters smak och bredd på bröstkorg. Se tabell där man i kolumnen längst till vänster ser bredden på implantaten. Följer man sedan horisontellt i tabellen ser man radvis vilken volym denna bredd har hos respektive projektion. Vanliga storlekar på kliniken är Motiva Mini 220cc till 275cc, Demi 285cc till 360cc, Full 335cc till 500cc, Corsé 450cc till 725cc."
-        },
-        "filling": {
-          "title": "Fylling, silikon",
-          "text1": "Bröstimplantaten från Motiva innehåller silikon i tre olika mjukheter: Round, Ergonomix 1 och Ergonomix 2. Alla är runda och inte bara den som heter just “round”.",
-          "text2": "<strong>Round</strong> är Motivas fastaste silikon och gör att bröstimplantaten känns lite fastare och att bröstimplantatens övre del inte faller ihop i upprätt läge, när man står upp. Resultatet blir en extra accentuerad fyllighet i klyftan och dekolletaget, en extra push-up i naket. Resultatet med dessa bröstimplantat blir mer onaturligt eller “fake”, särskilt om man är smal och inte har så mycket underhudsfett och inte heller så mycket egen bröstvävnad.",
-          "text3": "<strong>Ergonomix 1</strong> är ett mjukt, naturligt silikon som gör att bröstimplantaten och brösten känns mjuka och naturliga. Bröstimplantaten faller ihop upptill i överpolen när de hamnar i upprätt läge i kroppen när man står upp. Detta ger en naturlig, droppformad form på brösten med lite mindre fyllighet upptill än med bröstimplantat med fyllningen “round”. Dessutom får bröstimplantaten en mer uttalad nedre del, underpol på brösten. Många patienter upplever att brösten känns mjuka och naturliga med Ergonomix 1.",
-          "text4": "<strong>Ergonomix 2</strong> är Motivas senaste silikonfyllning till bröstimplantat. Ergonomix 2 är ett något mjukare silikon än Ergonomix 1 och ger en lite mer droppformad form på implantaten i kroppen när man står upp. Dessutom är silikonhöljet, skalet på Ergonomix 2 lite segare vilket kan motverka rippling vilket ofta är ett problem hos smala patienter. Patienter med Ergonomix 2 bröstimplantat upplever brösten som mjuka, naturliga och följsamma."
-        },
-        "surface": {
-          "title": "Yta",
-          "text1": "Alla bröstimplantat från Motiva har en slät, mycket fint texturerad, nanotexturerad yta och kallas SmoothSilk."
-        }
+    "ourImplants": "Våra implantat",
+    "motiva": {
+        "heading": "Motiva",
+        "text1": "Bröstimplantatföretaget Motiva har tillverkat bröstimplantat sedan 2016."
+    },
+    "accordion5": {
+      "formAndProfiles": {
+        "heading": "Form och Profiler",
+        "text1": "Motiva tillverkar runda bröstimplantat i fyra olika profiler, projektioner Mini, Demi, Full och Corsé. Mini (låg profil) är plattast följt av Demi (mellanprofil) som kommer ut lite mer från kroppen. Därefter kommer profilen Full (hög profil) som sticker ut mer och slutligen Corsé (extra hög eller ultrahög profil) som putar ut mest. Varje profil finns i ett 20-tal olika storlekar och med ökande storlek ökar bredden successivt för att passa olika patienters smak och bredd på bröstkorg. Se tabell där man i kolumnen längst till vänster ser bredden på implantaten. Följer man sedan horisontellt i tabellen ser man radvis vilken volym denna bredd har hos respektive projektion. Vanliga storlekar på kliniken är Motiva Mini 220cc till 275cc, Demi 285cc till 360cc, Full 335cc till 500cc, Corsé 450cc till 725cc."
       },
-      "mentor": {
-        "title": "Mentor",
-        "text1": "Mentor tillverkar mjuka bröstimplantat av hög kvalitet som upplevs mjuka och naturliga i kroppen. Läs även på sidan om bröstimplantat.",
+      "filling": {
+        "heading": "Fylling, silikon",
+        "text1": "Bröstimplantaten från Motiva innehåller silikon i tre olika mjukheter: Round, Ergonomix 1 och Ergonomix 2. Alla är runda och inte bara den som heter just “round”.",
+        "text2": "<strong>Round</strong> är Motivas fastaste silikon och gör att bröstimplantaten känns lite fastare och att bröstimplantatens övre del inte faller ihop i upprätt läge, när man står upp. Resultatet blir en extra accentuerad fyllighet i klyftan och dekolletaget, en extra push-up i naket. Resultatet med dessa bröstimplantat blir mer onaturligt eller “fake”, särskilt om man är smal och inte har så mycket underhudsfett och inte heller så mycket egen bröstvävnad.",
+        "text3": "<strong>Ergonomix 1</strong> är ett mjukt, naturligt silikon som gör att bröstimplantaten och brösten känns mjuka och naturliga. Bröstimplantaten faller ihop upptill i överpolen när de hamnar i upprätt läge i kroppen när man står upp. Detta ger en naturlig, droppformad form på brösten med lite mindre fyllighet upptill än med bröstimplantat med fyllningen “round”. Dessutom får bröstimplantaten en mer uttalad nedre del, underpol på brösten. Många patienter upplever att brösten känns mjuka och naturliga med Ergonomix 1.",
+        "text4": "<strong>Ergonomix 2</strong> är Motivas senaste silikonfyllning till bröstimplantat. Ergonomix 2 är ett något mjukare silikon än Ergonomix 1 och ger en lite mer droppformad form på implantaten i kroppen när man står upp. Dessutom är silikonhöljet, skalet på Ergonomix 2 lite segare vilket kan motverka rippling vilket ofta är ett problem hos smala patienter. Patienter med Ergonomix 2 bröstimplantat upplever brösten som mjuka, naturliga och följsamma."
+      },
+      "surface": {
+        "heading": "Yta",
+        "text1": "Alla bröstimplantat från Motiva har en slät, mycket fint texturerad, nanotexturerad yta och kallas SmoothSilk."
+      }
+    },
+    "mentor": {
+      "heading": "Mentor",
+      "text1": "Mentor tillverkar mjuka bröstimplantat av hög kvalitet som upplevs mjuka och naturliga i kroppen.",
+      "text2": "Mentor som ägs av Johnson & Johnson började tillverka bröstimplantat 1968. Mentors huvudkontor ligger i USA medan produktionen för den europeiska marknaden sker i Nederländerna."
+    },
+      "accordion6": {
         "formAndProfiles": {
-          "title": "Former och Profiler",
+          "heading": "Former och Profiler",
           "text1": "Mentor tillverkar runda bröstimplantat i sex olika projektioner, profiler. De plattaste heter Moderate Plus Profile följt av i tur och ordning med ökande projektion, put: Moderate Plus Xtra, High Profile, High Profile Xtra och slutligen Ultra High Profile. Detta gör att det finns stor valmöjlighet att välja och anpassa  bröstimplantatens profil, projektion efter patientens smak och former på kroppen såsom rumpa och svank.",
           "text2": "I var och en av profilerna kan man välja bröstimplantat med mer eller mindre volym. Med ökande volym i samma profil ökar bredden på bröstimplantaten vilket gör att man kan välja bröstimplantat som passar patientens smak, bredd på bröstkorg och kvinnliga former när man betraktar kroppen framifrån.",
           "text3": "Mentor tillverkar även anatomiska, droppformade bröstimplantat. De droppformade bröstimplantaten går att variera avseende bredd och höjd oberoende av varandra sett framifrån, det vill säga den yta som ligger an mot bröstkorgen. Detta gör att dessa bröstimplantat sett framifrån kan fås runda eller breda och låga eller smala och höga. Alla kan sedan väljas med mer eller mindre projektion. Mentor benämner de droppformade bröstimplantaten med sifferkombinationer som anger höjd och projektion."
         },
         "filling": {
-          "title": "Fyllning",
+          "heading": "Fyllning",
           "text1": "Det går att välja mellan två olika fyllningar av silikon i Mentors runda bröstimplantat, Mentor Memory Gel Kohesivitet 1 och Kohesivitet 2 vilka båda är geléhallonsilikon. Det skiljer mycket lite åt och nr 1 är mjukast och den som används allra mest. Gelen är mjuk och ger naturliga runda bröstimplantat då de i upprätt läge i kroppen faller ihop något vilket ger ett droppformad utseende med en viss ökning av klyfta och dekolletage och tydlig accentuering av bröstens undre del, underpol. Eftersom gelen är mjuk går den relativt lätt att pusha upp med bh när man önskar ytterligare tydligare fyllighet upptill i klyfta och dekolletage.",
           "text2": "I Mentor anatomiska, droppformade bröstimplantat är gelen fastare, Kohesivitet 3. Dessa bröstimplantat ger ett mycket naturligt utseende men upplevs ofta som lite för fasta i konsistensen.",
           "text3": "Mentor har även runda bröstimplantat med saltvatten “koksalt”. Dessa implantat blir mycket mjuka och känns naturliga, särskilt om man har lite egen bröstvävnad som bolstrar. Om man är smal och tunn i vävnaden kan bröstimplantat med koksalt upplevas lite “skvalpiga”. Vissa patienter väljer bröstimplantat med koksalt eftersom de av olika anledning inte vill ha bröstimplantat med silikon."
         },
         "surface": {
-          "title": "Yta",
-          "text1": "Mentors implantat är antingen släta (Smooth) eller texturerade (Siltex).",
-          "text2": "Mentor som ägs av Johnson & Johnson började tillverka bröstimplantat 1968. Mentors huvudkontor ligger i USA medan produktionen för den europeiska marknaden sker i Nederländerna."
+          "heading": "Yta",
+          "text1": "Mentors implantat är antingen släta (Smooth) eller texturerade (Siltex)."
         }
       },
       "polytech": {
-        "title": "Polytech",
-        "text1": "Företaget Polytech har tillverkat bröstimplantat sedan 1986. All produktion sker i Tyskland.",
+        "heading": "Polytech",
+        "text1": "Företaget Polytech har tillverkat bröstimplantat sedan 1986. All produktion sker i Tyskland."
+      },
+      "accordion7": {
         "formAndProfiles": {
-          "title": "Former och Profiler",
+          "heading": "Former och Profiler",
           "text1": "Polytech tillverkar både runda och anatomiska bröstimplantat med en stor variation på innehåll och yta. ",
           "text2": "De runda bröstimplantaten Même® tillverkas i fyra traditionella profiler, projektioner: låg (low profile), mellan (moderate profile), hög (high profile) och ultrahög eller extra hög (extra high profile).",
           "text3": "Anatomiska bröstimplantat från Polytech finns precis som hos Mentor tillgängliga i en rad olika former, mått och projektioner."
         },
         "filling": {
-          "title": "Fyllning",
+          "heading": "Fyllning",
           "text1": "Polytech tillverkar bröstimplantat med flera olika fyllningar. Dels traditionellt geléhallonsilikon och dels ett nytt, lättare material B-lite®. I B-lite® är geléhallonsilikon blandat med små kulor, mikrosfärer med luft vilket gör bröstimplantaten 30% lättare än traditionella bröstimplantaten av geléhallonsilikon."
         },
         "surface": {
-          "title": "Yta",
+          "heading": "Yta",
           "text1": "Det går att välja mellan fyra olika ytor på Polytechs bröstimplantat. Släta, nanotexturerade, mikrotesturerade och polyuretan. Den släta ytan och den mikrotexturerade liknar ytan på Mentors bröstimplantat medan den nanotexturerade liknar ytan på Motivas bröstimplantat. Ytan av polyuretan är unik för Polytech och helt unik. Den är porös varför kroppens vävnad växer in i ytan och förankrar implantaten i kroppen. Detta skapar som ett inre stöd, en inre bh som gör att bröstimplantaten tynger och töjer mindre i bröstvävnaden och brösthuden.",
           "text2": "Dahliakliniken har tillgång till och använder samtliga bröstimplantat från Polytech. Kombinationen av innehållet B-lite® med ytan av polyuretan Microthane® ger bröstimplantat med låg vikt och stöd från vävnaden. Exempel på runda bröstimplantat med denna kombination är hög profil 460cc, 510cc, 565cc och 625cc samt extra hög profil (samma som ultrahög profil) 495cc, 555cc, 615cc, 685cc och 755cc."
         }
       }
-    },
-    "accordion": {
-      "roundImplants": {
-        "title": "Runda implantat",
-        "text1": "De runda implantaten är de som används mest. Man kan här välja implantat som ger ett naturligt resultat med mycket underpol eller implantat som ger mer fyllighet i övre polen.",
-        "text2": "För ca 10 år sedan använde jag framför allt anatomiska implantat men jag har nu övergått till att använda nästan uteslutande runda implantat. Med runda implantat kan jag skapa ett utseendemässigt lika naturligt resultat som med anatomiska implantat.De runda implantaten är mjukare än de anatomiska och ger en mer naturlig känsla när man känner på brösten. Mjukheten hos de runda implantaten gör det också möjligt att pusha upp brösten med bh, vilket i princip inte är möjligt med anatomiska implantat.",
-        "text3": "Dessutom är runda implantaten säkrare än anatomiska, då man slipper risken med rotation och ALCL."
-      },
-      "firmness": {
-        "title": "Fasthet",
-        "text1": "Märket Mentor har i sina runda implantat två fastheter på silikon; kohesivitet 1 och kohesivitet 2. Kohesivitet 1 är mjukare och kohesivitet 2 som lite fastare. Skillnaden är mycket liten och ofta inte relevant i praktiken.Tanken med kohesivitet 1, som är vanligast, är att det ska kännas mjukt och naturligt samt ge en naturlig form. I Mentors anatomiska implantat är silikonet fastare av typen kohesivitet 3 för att bibehålla en för implantatet unik form."
-      },
-      "projection": {
-        "title": "Projektion",
-        "text1": "Mentors runda implantat finns i fem olika projektioner (put, toppighet). Plattast är Moderate plus. Därefter kommer Moderate plus Xtra som har lite mer projektion följt av High Profile, High Profile Xtra och slutligen Ultra High Profile som har mest projektion. I bilden nedan ser du hur implantat med samma bredd cirka 12 cm ökar i volym med ökande projektion.",
-        "text2": "Det gör att du kan utgå från en och samma bredd och välja bröst som sticker ut mer eller mindre i profil."
-      },
-      "width": {
-        "title": "Bredd",
-        "text1": "I en och samma familj av implantat t ex High Profile (Hög profil) ökar bredden med ökande volym. Det gör att du kan utgå från en projektion, ett put och sedan välja att få mer eller mindre breda bröst.I tabellerna nedan kan du se hur bredden ökar med ökande volym i respektive familj “Moderate plus, M+“ respektive “High profile, HP“. Till exempel så har HP 350cc 11,7cm bredd, 400cc 12,2 cm bredd och 450cc 12,8 cm bredd."
-      },
-      "degreeOfFilling": {
-        "title": "Fyllnadsgrad",
-        "text1": "Implantaten Moderate Plus Xtra och High Profile Xtra är mer fyllda än övriga implantat. Silikongelen är densamma så de känns fortfarande mjuka.Den ökade fyllnadsgraden gör i stället att implantaten hålls mer utspända och får en accentuerad volym upptill i klyftan och dekolletaget."
-      },
-      "anatomicalImplants": {
-        "title": "Anatomiska implantat",
-        "text1": "De anatomiska implantaten går att variera avseende bredd, höjd och projektion. De är fastare i konsistensen och ändrar inte form och utseende med kroppens rörelser.Tanken med de anatomiska implantaten är att de ska ge bröst som ser mycket naturliga ut."
-      }
-    }
   },
   "hudochinjektioner": {
     "title": "Hud & injektioner",

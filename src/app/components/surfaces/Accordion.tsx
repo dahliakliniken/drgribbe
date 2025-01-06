@@ -48,7 +48,7 @@ export const Accordion = ({ items }: AccordionProps) => {
             role="region"
             aria-labelledby={`accordion-${id}`}
             className={`transition-max-height overflow-hidden duration-300 ease-in-out ${
-              openAccordion === id ? 'max-h-screen' : 'max-h-0'
+              openAccordion === id ? 'max-h-[200vh]' : 'max-h-0'
             }`}
           >
             <div className="p-4">{content}</div>
