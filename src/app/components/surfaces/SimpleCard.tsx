@@ -31,7 +31,7 @@ export const SimpleCard = ({
     : 'before:lg:bg-110 before:bg-200'
 
   const backgroundPositionVariants = {
-    'left-top': 'before:bg-small-left-top',
+    'left-top': 'before:bg-small-left-top lg:before:bg-large-left-top',
     'right-top': 'before:bg-small-right-top',
     center: 'before:bg-small-center',
     left: 'before:bg-small-left lg:before:bg-large-left',

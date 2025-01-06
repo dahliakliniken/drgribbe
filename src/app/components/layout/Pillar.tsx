@@ -1,12 +1,14 @@
 export const Pillar = ({
   id,
+  noPadding,
   children
 }: {
   id?: string
+  noPadding?: boolean
   children: React.ReactNode
 }) => {
   return (
-    <div className="mx-auto max-w-3xl py-8" id={id}>
+    <div className={`mx-auto max-w-3xl ${noPadding ? '' : 'py-8'}`} id={id}>
       {children}
     </div>
   )

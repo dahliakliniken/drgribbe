@@ -1,10 +1,11 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { ChevronIcon } from '../icons/ChevronIcon'
 import { H3 } from '../typography/H3'
 
 type AccordionProps = {
+  coral?: boolean
   items: {
     id: string
     title: string
@@ -12,12 +13,32 @@ type AccordionProps = {
   }[]
 }
 
-export const Accordion = ({ items }: AccordionProps) => {
+export const Accordion = ({ items, coral }: AccordionProps) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null)
+  const accordionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
 
   const handleAccordionToggle = (id: string) => {
     setOpenAccordion((prev) => (prev === id ? null : id))
   }
+
+  const handleFocus = (id: string) => {
+    setOpenAccordion(id)
+  }
+
+  const handleBlur = (id: string) => {
+    setTimeout(() => {
+      if (
+        accordionRefs.current[id] &&
+        !accordionRefs.current[id]?.contains(document.activeElement)
+      ) {
+        setOpenAccordion(null)
+      }
+    }, 0)
+  }
+
+  const color = coral ? 'coral' : 'green'
+  const openAccordionColor = coral ? 'bg-[#c98f95]' : 'bg-[#338067]'
+  const focusRingColor = coral ? 'focus:ring-coral' : 'focus:ring-green'
 
   return (
     <div>
@@ -30,8 +51,8 @@ export const Accordion = ({ items }: AccordionProps) => {
               aria-controls={`panel-${id}`}
               onClick={() => handleAccordionToggle(id)}
               className={`flex w-full items-center justify-between px-4 py-3 text-left text-white transition-colors duration-300 ${
-                openAccordion === id ? 'bg-[#196A49]' : 'bg-green'
-              } rounded-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-green`}
+                openAccordion === id ? openAccordionColor : `bg-${color}`
+              } rounded-md hover:bg-opacity-80 focus:outline-none focus:ring-2 ${focusRingColor} focus:ring-offset-2`}
             >
               <span className="font-medium">{title}</span>
               <span
@@ -50,6 +71,11 @@ export const Accordion = ({ items }: AccordionProps) => {
             className={`transition-max-height overflow-hidden duration-300 ease-in-out ${
               openAccordion === id ? 'max-h-[200vh]' : 'max-h-0'
             }`}
+            ref={(el) => {
+              accordionRefs.current[id] = el
+            }}
+            onFocus={() => handleFocus(id)}
+            onBlur={() => handleBlur(id)}
           >
             <div className="p-4">{content}</div>
           </div>

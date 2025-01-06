@@ -35,7 +35,8 @@ const config: Config = {
         '500': '500%'
       },
       backgroundPosition: {
-        'small-left-top': '0% 50%',
+        'small-left-top': '100% 50%',
+        'large-left-top': '560% 100%',
         'small-right-top': '0% 50%',
         'small-center': '50% 50%',
         'small-left': '100% 50%',
