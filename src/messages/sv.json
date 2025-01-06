@@ -288,8 +288,9 @@
       },
       "texturedSurface": {
         "heading": "Texturerad yta",
-        "text1": "Texturerad yta. Från början var bröstimplantaten släta men under 80-talet tog flera tillverkare av bröstimplantat fram en sandpappersliknande yta, en texturering. Funktionen hos textureringen är att minska risken att den kapsel som kroppen naturligt bildar runt bröstimplantaten blir tjock, hård och stram så kallad kapselsammandragning, kapselkontraktur. Textureringen skapar oordning bland kapselfibrerna så att de inte blir så långa och inte samverkar och drar åt samma håll. Detta gör att kapseln blir tunnare, mjukare och drar ihop sig mindre. Varje tillverkare av bröstimplantat har sin egen typ av texturering och den kan vara mer eller mindre grov. Mentor kallar sin texturering Siltex® och Polytech kallar sin POLYtxt®.",
-        "text2": "På senare år har man sett att i mycket sällsynta fall vissa typer av texturering kan ge upphov till en ovanlig form av cancer, lymfom BIA-ALCL. Detta har gjort att vi för tillfället använder släta implantat på kliniken."
+        "text1": "Från början var bröstimplantaten släta men under 80-talet tog flera tillverkare av bröstimplantat fram en sandpappersliknande yta, en texturering. Funktionen hos textureringen är att minska risken att den kapsel som kroppen naturligt bildar runt bröstimplantaten blir tjock, hård och stram så kallad kapselsammandragning, kapselkontraktur. Textureringen skapar oordning bland kapselfibrerna så att de inte blir så långa och inte samverkar och drar åt samma håll. Detta gör att kapseln blir tunnare, mjukare och drar ihop sig mindre. Varje tillverkare av bröstimplantat har sin egen typ av texturering och den kan vara mer eller mindre grov. Mentor kallar sin texturering Siltex® och Polytech kallar sin POLYtxt®.",
+        "text2": "Textureringen gör dessutom att bröstimplantaten rör sig, glider mindre i implantatfickorna vilket minskar risken att implantatfickorna med tiden töjs och blir större åt sidorna och nedåt.",
+        "text3": "På senare år har man sett att i mycket sällsynta fall vissa typer av texturering kan ge upphov till en ovanlig form av cancer, lymfom BIA-ALCL. Detta har gjort att vi för tillfället använder släta implantat på kliniken."
       },
       "nanoTexturedSurface": {
         "heading": "Nanotexturerad yta",
@@ -434,7 +435,109 @@
   },
   "hudochinjektioner": {
     "title": "Hud & injektioner",
-    "text": "Text om hud och injektioner."
+    "text1": "Det finns olika behandlingar med muskelavslappnande medel som kan ge fint och bra resultat. Muskelavslappnande kan användas mot behandling av rynkor och för medicinsk användning t.ex. mot spänningshuvudvärk och svettningar. Välj och läs om det muskelavslappnande område som du vill få behandlat här nedanför.",
+    "text2": "När det gäller botulinumtoxin som muskelavslappnande så är det ett kemiskt ämne som blockerar kontakten mellan nerver och musklerna.",
+    "text3": "Botulinumtoxin som läkemedel doseras i mycket små mängder och används både medicinskt och vid estetiska behandlingar. Medicinskt ges det vid muskelkramper såsom pareser, migrän, tandgnissel (bruxism) och spänningshuvudvärk. Även överdrivna svettningar i armhålor, fotsulor och handflator går att behandla. Inom skönhetsvård används det för att släta ut rynkor i ansikte och hals.",
+    "text4": "Behandlingen med muskelavslappnande är mycket tacksam och ger tydliga resultat. Dr Gribbe har behandlat patienter sedan 2006 och ser det som en säker behandling där man har god kontroll över det förväntade resultatet.",
+    "text5": "Som vid alla estetiska och medicinska behandlingar är det vid behandlingen viktigt med en noggrann analys av patientens utgångsläge, muskulatur och önskemål. Inför en behandling träffas vi och diskuterar dina önskemål och förutsättningar. Vi går igenom vilken förändring du önskar uppnå och vilket resultat som är möjligt.",
+    "text6": "Normalt så går det alldeles utmärkt att behandla med muskelavslappnanden läkemedel. Det sticker till lite vid varje stick men smärtan är uthärdlig och försvinner snabbt. Se längre ner på sidan för övriga ev. biverkningar.",
+    "text7": "Vid alla behandlingar så använder vi läkemedel av märket Vistabel från Allergan.",
+    "effect": {
+      "heading": "Effekten av muskelavslappnade",
+      "text1": "Effekten märks efter 2-3 dagar och full effekt fås efter 7 dagar. Effekten håller i sig upp till 6 månader."
+    },
+    "treatmentAreas": {
+      "heading": "Behandlingsområden",
+      "text1": "De vanligaste områdena som man brukar behandla estetiskt är glabella, pannan och kråksparkarna.",
+      "accordion": {
+        "frownLines": {
+          "heading": "Glabella / argrynka / bekymmersrynka",
+          "text1": "Rynkan mellan ögonbrynen även kallad bekymmersrynkan eller argrynkan. Detta är det absolut vanligast området patienter söker för. Anledningen till rynkan är att man under många år spänner och drar ihop ögonbrynen mot mitten mellan ögonbrynen. Detta leder till en eller flera rynkor som först bara syns när man drar ihop musklerna med som så småningom ger bestående veck i huden som också syns i vila. Rynkan gör att man ser arg och bekymrad ut.",
+          "treatment": {
+            "heading": "Behandling:",
+            "text1": "Man lägger 5 stick med muskelavslappnande läkemedel mellan och strax ovanför ögonbrynen mot mitten. Musklerna som behandlas heter musculus (m.) procerus som sitter mitt emellan ögonbrynen och m. corrugator supercilii som sitter en liten bit ut från mitten just där ögonbrynen börjar."
+          },
+          "effect": {
+            "heading": "Effekt:",
+            "text1": "Musklerna slappnar av och rynkan eller rynkorna försvinner efter ca 1 vecka. Behandlingen är mycket tacksam och patienten upplever ofta en lättnad och mindre spänningskänsla mellan ögonen."
+          }
+        },
+        "forehead": {
+          "heading": "Pannan",
+          "text1": "Hela eller delar av pannan kan med tiden drabbas av en eller flera vågräta rynkor. Bakgrunden är att hela pannan och ögonbrynen med tiden faller ned på grund av minskad elasticitet i huden och tyngdkraftens inverkan. När ögonbrynen sjunker ner upplever vi dem som tunga och vi ser trötta ut. Som kompensation lyfter vi upp ögonbrynen och det är detta som ger rynkorna i pannan.",
+          "treatment": {
+            "heading": "Behandling:",
+            "text": "Man lägger muskelavslappnande läkemedel i många punkter enligt ett specifikt mönster utifrån dina förutsättningar. Muskeln som behandlas är m. frontalis."
+          },
+          "effect": {
+            "heading": "Effekt:",
+            "text": "Muskeln slappnar av och rynkorna minskar eller försvinner. Det är mycket viktigt att göra en korrekt analys och inte behandla för mycket eller fel. Samtidigt som muskeln slappnar av och rynkorna försvinner så sjunker hela pannan mer eller mindre. Om man behandlar för mycket eller fel så blir effekten att ögonbrynen sjunker varvid man ser trött ut. Det är givetvis inte bra. En korrekt behandling ger mindre rynkor i pannan utan att ögonbrynen sjunker ned. Behandlingen är mycket tacksam och patienten upplever ofta en lättnad och mindre spänningskänsla i pannan."
+          }
+        },
+        "crowFeet": {
+          "heading": "Kråksparkar",
+          "text1": "Solen skiner och vi kisar med ögonen. På sidan av ögonen bildas då små rynkor som med tiden blir till mer eller mindre bestående veck. Med hjälp av muskelavslappnande läkemedel så kan kan man behandla just dessa muskler så att de slappnar av.",
+          "treatment": {
+            "heading": "Behandling:",
+            "text": "Man lägger läkemedlet på 3-5 platser på sidan av ögonen på var sida utefter ett specifikt mönster utifrån dina förutsättningar."
+          },
+          "effect": {
+            "heading": "Effekt:",
+            "text": "Musklerna m. orbicularis oculi och m. temporalis slappnar av och rynkorna försvinner. Behandlingen är tacksam och ger ett tydligt resultat."
+          }
+        }
+      }
+    },
+    "otherAreas": {
+      "heading": "Övriga områden och muskler som kan behandlas estetiskt och medicinskt är:",
+      "text1": "Musculus orbicularis oculi, m. depressor anguli oris, m. nasalis, m. orbicularis oris, m. levator labii superioris, m. mentalis och platysma, se nedan.",
+      "accordion": {
+        "eyeBrow": {
+          "heading": "Höja sidan av ögonbrynen",
+          "text1": "Om jag lägger en liten mängd muskelavslappnande läkemedel i m. orbicularis oculi snett ovanför yttre kanten av ögat så får jag muskeln att slappna just här. Detta gör att sidan av (laterala) ögonbrynen höjs och man får ett öppnare, mer sensuellt utseende."
+        },
+        "mouthCorner": {
+          "heading": "Minska sura mungipor",
+          "text1": "Vissa personer har en tendens att ha mungipor som är vinklade lite neråt vilket gör att de ser lite sura ut till vardags. Med en liten mängd muskelavslappnande läkemedel i m. depressor anguli oris får jag muskeln att slappna och muskelns effekt att dra ner mungipan minskar. Det gör att mungipan i stället åker upp en liten bit vilket gör att man ser gladare ut."
+        },
+        "nose": {
+          "heading": "Rynkor på näsryggen, Bunny Lines",
+          "text1": "Ibland så kan man ha rynkor på näsryggen eller överdriven aktivitet i muskeln som rör näsans hud. Med en liten mängd muskelavslappnande läkemedel i m. nasalis får jag muskeln att slappna av. Rynkor försvinner eller minskar och den ökade muskelaktivitet som vissa har försvinner."
+        },
+        "lipFlip": {
+          "heading": "Rulla upp läppkanten, Lip Flip",
+          "text1": "Överläppen kan med hjälp av muskelavslappnande läkemedel fås att rulla upp en aning. Jag behandlar här med muskelavslappnande läkemedel precis ovan övre läppkanten och får m. orbicularis oris att slappna av nära läppkanten. Man får på så vis synligare och fylligare överläpp med en accentuerad övre läppkant."
+        },
+        "gummySmile": {
+          "heading": "Synligt tandkött när man skrattar, Gummy Smile",
+          "text1": "Hos vissa människor blir tandköttet synligt när de ler eller skrattar. Genom att lägga en liten mängd muskelavslappnande läkemedel i m. levator labii superioris som drar upp läppen slappnar muskeln av och läppen sänks. Härigenom döljs tandköttet när personen ler och skrattar."
+        },
+        "chin": {
+          "heading": "Rynkor på hakan",
+          "text1": "En skrynklig haka kan vara orsakad av muskelaktivitet. Ibland är det synligt när man pratar eller rör ansiktets muskler, ibland är det även synligt i vila. Med muskelavslappnande läkemedel kan jag få m. mentalis och därmed hakan att slappna av och rynkorna på hakan försvinner."
+        },
+        "neck": {
+          "heading": "Rynkor på halsen, Platysma band",
+          "text1": "På hela halsen finns en muskel, platysma som svarar för halsens mimik. Denna muskel ger med tiden ibland tydliga band i huden från hakan och nedåt. Med hjälp av muskelavslappnande läkemedel kan muskeln fås att slappna av varvid banden minskar."
+        },
+        "bruxism": {
+          "heading": "Bruxism, tandgnissel",
+          "text1": "Käkmusklerna är mycket kraftiga muskler vilket är nödvändigt för att vi ska kunna tugga och sönderdela maten. Ibland blir det problem då dessa muskler är aktiva när det inte behövs. Detta kan ske både dagtid och nattetid. Nattetid kallas detta bruxism och innebär att man biter ihop och gnisslar med tänderna. Tänderna slits och spänningarna i käkarna leder till försämrad sömn och spänningshuvudvärk. Med hjälp av muskelavslappnande läkemedel kan jag behandla käkmusklerna m. masseter som då slappnar av lite och minskar sin överaktivitet."
+        },
+        "headache": {
+          "heading": "Spänningshuvudvärk",
+          "text1": "Förutom spänningar i pannans muskler och käkmusklerna så kan man få spänningar i skalpens muskler m. frontalis och m. temporalis. Dessa kan efter noggrann analys behandlas med muskelavslappnande läkemedel på flera punkter."
+        },
+        "sweating": {
+          "heading": "Svettbehandling",
+          "text1": "Även svettkörtlarna påverkas av muskelavslappnande läkemedel. Med hjälp av läkemedlet kan jag behandla överdrivna svettning i armhålorna, handflatorna och fotsulorna."
+        }
+      }
+    },
+    "risks": {
+      "heading": "Risker och biverkningar",
+      "text1": "I sällsynta fall kan muskelavslappnande läkemedel orsaka biverkningar i form av en övergående svaghet i närliggande muskler. Även smärta vid injektion, rodnad, blåmärke vid injektionsstället, huvudvärk och klåda är exempel på biverkningar som dock oftast går över på ett par dagar. Om medlet inte ges på korrekt sätt med rätt analys innan kan ögonbrynen sjunka ner. Användning av muskelavslappnande läkemedel rekommenderas inte till gravida eller ammande kvinnor."
+    }
   },
   "varPersonal": {
     "title": "Vår Personal",
