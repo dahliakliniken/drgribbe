@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { H1 } from '../components/typography/H1'
 import { P } from '../components/typography/P'
@@ -6,11 +7,13 @@ import { BgColors } from '../types'
 import { Pillar } from '../components/layout/Pillar'
 import { H2 } from '../components/typography/H2'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
+import Botoxface from '../../public/images/botox-1000px.png'
 import { Accordion } from '../components/surfaces/Accordion'
 import {
   getOtherAreasAccordion,
   getTreatmentAreasAccordion
 } from './accordionData'
+
 
 const HudOchInjektioner = () => {
   const t = useTranslations()
@@ -20,7 +23,7 @@ const HudOchInjektioner = () => {
   return (
     <main className="mb-40 flex flex-col">
       <SimpleCard
-        bgColor={BgColors.Green}
+        bgColor={BgColors.Coral}
         bgPosition="right"
         content={
           <Pillar>
@@ -56,7 +59,7 @@ const HudOchInjektioner = () => {
           <SpaceContainer noPadding spaceTop>
             <Accordion coral items={treatmentAreasAccordion} />
           </SpaceContainer>
-
+          <Image src={Botoxface} alt={''} className="lg:hidden" />
           <SpaceContainer noPadding spaceTop>
             <H2>{t('hudochinjektioner.otherAreas.heading')}</H2>
             <P>{t('hudochinjektioner.otherAreas.text1')}</P>
