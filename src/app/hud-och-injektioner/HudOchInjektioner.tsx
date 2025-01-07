@@ -7,13 +7,12 @@ import { BgColors } from '../types'
 import { Pillar } from '../components/layout/Pillar'
 import { H2 } from '../components/typography/H2'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
-import Botoxface from '../../public/images/botox-1000px.png'
+import Botoxface from '../../../public/images/botox-1000px.png'
 import { Accordion } from '../components/surfaces/Accordion'
 import {
   getOtherAreasAccordion,
   getTreatmentAreasAccordion
 } from './accordionData'
-
 
 const HudOchInjektioner = () => {
   const t = useTranslations()
