@@ -55,10 +55,12 @@ const HudOchInjektioner = () => {
             <P>{t('hudochinjektioner.treatmentAreas.text1')}</P>
           </SpaceContainer>
 
+          <Image src={Botoxface} alt={''} className="max-h-[calc(100dvh-80px)] object-cover object-center" />
+
           <SpaceContainer noPadding spaceTop>
             <Accordion coral items={treatmentAreasAccordion} />
           </SpaceContainer>
-          <Image src={Botoxface} alt={''} className="lg:hidden" />
+          
           <SpaceContainer noPadding spaceTop>
             <H2>{t('hudochinjektioner.otherAreas.heading')}</H2>
             <P>{t('hudochinjektioner.otherAreas.text1')}</P>
