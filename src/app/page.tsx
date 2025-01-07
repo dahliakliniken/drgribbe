@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
 import WaitingRoom from '../../public/images/waiting-room.jpg'
@@ -82,8 +83,16 @@ const Page: React.FC = () => {
                 />
                 <P>{t('aboutClinic.paragraph1')}</P>
                 <P>{t('aboutClinic.paragraph2')}</P>
-                <H3>{t('aboutClinic.ourphilosophy')}</H3>
-                <P>{t('aboutClinic.paragraph3')}</P>
+                <SpaceContainer noPadding spaceTop>
+                  <H3>{t('aboutClinic.ourphilosophy')}</H3>
+                  <P>{t('aboutClinic.paragraph3')}</P>
+                  <Link
+                    href={"/garanti#phil"}
+                    className="text-sm underline underline-offset-2 hover:text-coral"
+                  >
+                    {t('aboutClinic.readMore')}
+                  </Link>
+                </SpaceContainer>
               </Pillar>
             }
           />
