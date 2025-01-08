@@ -253,7 +253,7 @@ const Brostoperationer = () => {
           }
         />
 
-       
+{/* Återbesök efter 3-4 månader */}
 
         <Pillar id="forberedelser">
           <SpaceContainer spaceVertically>
