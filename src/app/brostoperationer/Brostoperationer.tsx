@@ -80,85 +80,121 @@ const Brostoperationer = () => {
 
   return (
     <main className="mb-36 flex flex-col">
-      <SpaceContainer noPadding>
-        <Pillar>
-          <SpaceContainer>
-            <H1>{t('brostoperationer.title')}</H1>
-          </SpaceContainer>
-        </Pillar>
+      <SpaceContainer>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="right"
+          content={
+          <Pillar>
+            <SpaceContainer>
+              <H1 white>{t('brostoperationer.title')}</H1>
+              <P white>{t('brostoperationer.preamble')}</P>
+            </SpaceContainer>
+          </Pillar>
+          }
+        />
+      </SpaceContainer>
 
-        <div className="m-auto xl:max-w-7xl">
-          <TreatmentBox treatments={breastOperationsTreatmentsData} />
-        </div>
+        
+        <SpaceContainer spaceTop>
+          <div className="m-auto xl:max-w-7xl">
+            <TreatmentBox treatments={breastOperationsTreatmentsData} />
+          </div>
+        </SpaceContainer>
+          
+        
 
         <SpaceContainer spaceTop noPadding>
           <SimpleCard
-            bgColor={BgColors.Coral}
+            bgColor={BgColors.White}
             bgPosition="right"
             content={
-              <Pillar>
-                <H2 white>{t('brostoperationer.heading1')}</H2>
-                <H3 white>{t('brostoperationer.consultation.heading1')}</H3>
-                <P white>{t('brostoperationer.consultation.text1')}</P>
-                <P white>{t('brostoperationer.consultation.text2')}</P>
-                <P white>{t('brostoperationer.consultation.text3')}</P>
-                <P white>{t('brostoperationer.consultation.text4')}</P>
-                <P white>{t('brostoperationer.consultation.text5')}</P>
-                <P white>{t('brostoperationer.consultation.text6')}</P>
-                <P white>{t('brostoperationer.consultation.text7')}</P>
-                <P white>{t('brostoperationer.consultation.text8')}</P>
-              </Pillar>
+                <Pillar>
+                  <H2 >{t('brostoperationer.heading1')}</H2>
+                  <Image
+                    src={ConsultationImage}
+                    alt={t('altText.brostoperationerConsultation')}
+                    className="max-h-svh object-cover object-center"
+                  />
+                  <SpaceContainer noPadding spaceVertically>
+                    <H3 >{t('brostoperationer.consultation.heading1')}</H3>
+                    <P >{t('brostoperationer.consultation.text1')}</P>
+                    <P >{t('brostoperationer.consultation.text2')}</P>
+                    <P >{t('brostoperationer.consultation.text3')}</P>
+                    <P >{t('brostoperationer.consultation.text4')}</P>
+                    <P >{t('brostoperationer.consultation.text5')}</P>
+                    <P >{t('brostoperationer.consultation.text6')}</P>
+                    <P >{t('brostoperationer.consultation.text7')}</P>
+                    <P >{t('brostoperationer.consultation.text8')}</P>
+                  </SpaceContainer>                 
+                </Pillar>
             }
           />
-          <Image
-            src={ConsultationImage}
-            alt={t('altText.brostoperationerConsultation')}
-            className="max-h-svh object-cover object-center"
+          <SimpleCard
+            bgColor={BgColors.Green}
+            bgPosition="left"
+            content={
+              <>
+                <H2 upperCase white className="text-center">
+                  {t('common.freeConsultation')}
+                </H2>
+                <div className="m-auto flex max-w-xs justify-center">
+                  <A href="/boka" className="uppercase" buttonStyle>
+                    {t('common.bookNow')}
+                  </A>
+                </div>
+              </>
+            }
           />
-        </SpaceContainer>
+        </SpaceContainer>        
 
         <SimpleCard
           bgColor={BgColors.White}
           bgPosition="right"
           content={
             <Pillar>
-              <H3>{t('brostoperationer.dayOfSurgery.heading1')}</H3>
-              <div className="lg:columns-2">
-                <P>{t('brostoperationer.dayOfSurgery.text1')}</P>
-                <P>
-                  {t.rich('brostoperationer.dayOfSurgery.text2', {
-                    link: (chunks) => (
-                      <AnchorLink href="#forberedelser">{chunks}</AnchorLink>
-                    )
-                  })}
-                </P>
-                <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
-              </div>
+              <Image
+                src={DayOfSurgeryImage}
+                alt={t('altText.brostoperationerDayOfSurgery')}
+                className="max-h-svh object-cover object-center"
+              />
+              <SpaceContainer noPadding spaceTop>
+                <H3>{t('brostoperationer.dayOfSurgery.heading1')}</H3>
+                {/* <div className="lg:columns-2"> */}
+                  <P>{t('brostoperationer.dayOfSurgery.text1')}</P>
+                  <P>
+                    {t.rich('brostoperationer.dayOfSurgery.text2', {
+                      link: (chunks) => (
+                        <AnchorLink href="#forberedelser">{chunks}</AnchorLink>
+                      )
+                    })}
+                  </P>
+                  <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
+                {/* </div> */}
+              </SpaceContainer>
+              
             </Pillar>
           }
         />
-        <Image
-          src={DayOfSurgeryImage}
-          alt={t('altText.brostoperationerDayOfSurgery')}
-          className="max-h-svh object-cover object-center"
-        />
+       
 
         <SimpleCard
           bgColor={BgColors.White}
           bgPosition="right"
           content={
             <Pillar>
+              <Image
+                src={SurgeryImage}
+                alt={t('altText.brostoperationerSurgery')}
+                className="max-h-svh object-cover object-center"
+              />
               <H3>{t('brostoperationer.surgery.heading1')}</H3>
               <P>{t('brostoperationer.surgery.text1')}</P>
               <P>{t('brostoperationer.surgery.text2')}</P>
             </Pillar>
           }
         />
-        <Image
-          src={SurgeryImage}
-          alt={t('altText.brostoperationerSurgery')}
-          className="max-h-svh object-cover object-center"
-        />
+       
 
         <SimpleCard
           bgColor={BgColors.Green}
@@ -196,22 +232,7 @@ const Brostoperationer = () => {
           }
         />
 
-        <SimpleCard
-          bgColor={BgColors.Coral}
-          bgPosition="left"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {t('common.freeConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {t('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
+       
 
         <Pillar id="forberedelser">
           <SpaceContainer spaceVertically>
@@ -235,7 +256,6 @@ const Brostoperationer = () => {
             <Accordion items={afterFirstReturnVisitItems} />
           </SpaceContainer>
         </Pillar>
-      </SpaceContainer>
     </main>
   )
 }

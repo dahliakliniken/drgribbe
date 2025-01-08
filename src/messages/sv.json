@@ -133,6 +133,7 @@
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",
+    "preamble" : "Här saknas det en liten text om vilka operationer som erbjuds, och att man kan scrolla ner för att läsa om hur vilka steg proccessen innehåller",
     "heading1": "Så går operationen till",
     "consultation": {
       "heading1": "Konsultationen",

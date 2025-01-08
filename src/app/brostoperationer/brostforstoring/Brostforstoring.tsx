@@ -1,7 +1,6 @@
 import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
-import { AnchorLink } from '@/app/components/typography/AnchorLink'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
