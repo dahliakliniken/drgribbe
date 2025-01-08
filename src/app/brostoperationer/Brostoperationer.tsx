@@ -148,6 +148,7 @@ const Brostoperationer = () => {
           />
         </SpaceContainer>        
 
+{/* OPERATIONSDAGEN */}
         <SimpleCard
           bgColor={BgColors.White}
           bgPosition="right"
@@ -177,7 +178,7 @@ const Brostoperationer = () => {
           }
         />
        
-
+{/* NARKOS&OPERATION */}
         <SimpleCard
           bgColor={BgColors.White}
           bgPosition="right"
@@ -188,33 +189,53 @@ const Brostoperationer = () => {
                 alt={t('altText.brostoperationerSurgery')}
                 className="max-h-svh object-cover object-center"
               />
-              <H3>{t('brostoperationer.surgery.heading1')}</H3>
-              <P>{t('brostoperationer.surgery.text1')}</P>
-              <P>{t('brostoperationer.surgery.text2')}</P>
+              <SpaceContainer noPadding spaceTop>
+                <H3>{t('brostoperationer.surgery.heading1')}</H3>
+                <P>{t('brostoperationer.surgery.text1')}</P>
+                <P>{t('brostoperationer.surgery.text2')}</P>
+              </SpaceContainer>              
             </Pillar>
           }
         />
        
-
+{/* EFTEROPERATION */}
         <SimpleCard
-          bgColor={BgColors.Green}
+          bgColor={BgColors.White}
           bgPosition="right"
           content={
-            <>
-              <H3 white>{t('brostoperationer.postSurgery.heading1')}</H3>
-              <div className="lg:columns-3">
-                <P white>{t('brostoperationer.postSurgery.text1')}</P>
-                <P white>{t('brostoperationer.postSurgery.text2')}</P>
-              </div>
-            </>
+            <Pillar>
+              <Image
+                src={PostSurgeryImage}
+                alt={t('altText.brostoperationerPostSurgery')}
+                className="max-h-svh object-cover object-center"
+              />
+              <SpaceContainer noPadding spaceTop>
+                <H3 >{t('brostoperationer.postSurgery.heading1')}</H3>
+                <P >{t('brostoperationer.postSurgery.text1')}</P>
+                <P >{t('brostoperationer.postSurgery.text2')}</P>
+              </SpaceContainer>
+            </Pillar>
           }
         />
-        <Image
-          src={PostSurgeryImage}
-          alt={t('altText.brostoperationerPostSurgery')}
-          className="max-h-svh object-cover object-center"
-        />
+        
 
+        <SimpleCard
+            bgColor={BgColors.Green}
+            bgPosition="left"
+            content={
+              <>
+                <H2 upperCase white className="text-center">
+                  {t('common.freeConsultation')}
+                </H2>
+                <div className="m-auto flex max-w-xs justify-center">
+                  <A href="/boka" className="uppercase" buttonStyle>
+                    {t('common.bookNow')}
+                  </A>
+                </div>
+              </>
+            }
+          />
+{/* FÖRSTAÅTERBESÖKET */}
         <SimpleCard
           bgColor={BgColors.White}
           bgPosition="right"
