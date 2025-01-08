@@ -8,6 +8,10 @@ import { P } from '@/app/components/typography/P'
 import { useTranslations } from 'next-intl'
 import { H3 } from '@/app/components/typography/H3'
 import { AnchorLink } from '@/app/components/typography/AnchorLink'
+import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
+import { BgColors } from '@/app/types'
+import Image from 'next/image'
+import ImplantatImage from '../../../../public/images/implantaten.jpg'
 import {
   useAccordion1Items,
   useAccordion2Items,
@@ -30,13 +34,27 @@ const Implantaten = () => {
 
   return (
     <main className="mb-36 flex flex-col">
-      <SpaceContainer>
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="right"
+        content={
         <Pillar>
-          <Section>
-            <H1>{t('implantaten.title')}</H1>
-            <P>{t('implantaten.text1')}</P>
+            <H1 white>{t('implantaten.title')}</H1>
+            <P white>{t('implantaten.text1')}</P>
+        </Pillar>
+        }
+      />
+
+      <SpaceContainer>
+        <Pillar>          
+          <Image
+              src={ImplantatImage}
+              alt={t('altText.brostoperationerDayOfSurgery')}
+              className="max-h-svh object-cover object-center"
+            />
+          <SpaceContainer noPadding spaceVertically>
             <P>{t('implantaten.text2')}</P>
-          </Section>
+          </SpaceContainer>
 
           <Accordion items={accordion1Items} />
 
