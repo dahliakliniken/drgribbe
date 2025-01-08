@@ -133,6 +133,7 @@
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",
+    "preamble" : "Här saknas det en liten text om vilka operationer som erbjuds, och att man kan scrolla ner för att läsa om hur vilka steg proccessen innehåller",
     "heading1": "Så går operationen till",
     "consultation": {
       "heading1": "Konsultationen",
@@ -195,8 +196,10 @@
     }
   },
   "brostforstoring": {
-    "title": "Bröstförstoring med bröstimplantat",
-    "background": {
+    "title":"Bröstförstoring med bröstimplantat eller kroppseget fett",
+    "background": "Här saknas det just nu en kort text",
+    "implanttitle": "Bröstförstoring med bröstimplantat",
+    "implantbackground": {
       "heading1": "Bakgrund",
       "text1": "Bröstförstoring med bröstimplantat har under de senaste årtiondena blivit allt vanligare och mer och mer accepterat. Materialen som nu används är säkra och har mycket lång hållbarhet.",
       "text2": "Kvinnor väljer att förstora brösten av olika anledning. Vissa vill få hjälp att skapa en byst som de inte får av naturen och andra vill återskapa brösten efter graviditet och amning, viktnedgång eller efter att brösten krympt med ökad ålder."
@@ -224,7 +227,7 @@
       "text9": "På ärret läggs förband i form av tejp och kompresser. Därefter en skön, mjuk bh."
     },
     "placement": {
-      "heading1": "Implantatplacering, framför eller bakom bröstmuskeln",
+      "heading1": "Implantatplacering framför eller bakom bröstmuskeln",
       "text1": "Generellt så kan man säga att om man är tunn och smal och saknar underhudsfett eller egen bröstvävnad upptill i brösten så passar en placering under muskeln bäst. Muskeln blir då ett extra lager vävnad som gör att implantaten inte syns så direkt och tydligt utan man får i stället en harmonisk och gradvis övergång från bröstkorgen till bröstet. Om man är tunn i vävnaden och lägger implantaten framför muskeln så ser man implantatkanten och veckbildningar i själva implantatet, så kallad rippling mera. Har man däremot mer underhudsfett och/eller egen bröstvävnad upptill på bröstkorgen så täcks implantaten bättre och man kan då få ett resultat utan synlig implantatkant eller rippling. Även implantatens karaktär påverkar. Man kan med ökad fyllnadsgrad, ökad fasthet och mer elastiskt skal minska risken för rippling. Samtidigt så ger fastare implantat tydligare övre kant och mer uttalat dekolletage.",
       "text2": "De allra flesta kvinnor väljer implantat som är större än de egna brösten vilket på sätt och vis hänger ihop med ingreppets natur. Det vill säga man vill förstora brösten som är små och de önskade brösten och därmed bröstimplantaten är då oftast större än de egna brösten. De allra flesta kvinnor kan därför räknas som att de inte har tillräckligt vävnad upptill på bröstkorgen, varför bakom muskeln oftast passar bäst. Det finns även andra fördelar med bakom muskeln. Muskeln håller bröstimplantaten på plats, inte så bröstimplantaten växer fast i muskeln utan mer att de fungerar som ett stöd där muskeln hindrar bröstimplantaten från att röra sig för mycket."
     },
