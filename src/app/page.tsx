@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
 import WaitingRoom from '../../public/images/waiting-room.jpg'
@@ -6,6 +7,7 @@ import Doctor from '../../public/images/doctor.jpg'
 import SfepLogo from '../../public/images/sfep-logo.svg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
+import { H3 } from './components/typography/H3'
 import { Card } from './components/surfaces/Card'
 import { SpaceContainer } from './components/layout/SpaceContainer'
 import { P } from './components/typography/P'
@@ -81,7 +83,16 @@ const Page: React.FC = () => {
                 />
                 <P>{t('aboutClinic.paragraph1')}</P>
                 <P>{t('aboutClinic.paragraph2')}</P>
-                <P>{t('aboutClinic.paragraph3')}</P>
+                <SpaceContainer noPadding spaceTop>
+                  <H3>{t('aboutClinic.ourphilosophy')}</H3>
+                  <P>{t('aboutClinic.paragraph3')}</P>
+                  <Link
+                    href={"/garanti#phil"}
+                    className="text-sm underline underline-offset-2 hover:text-coral"
+                  >
+                    {t('aboutClinic.readMore')}
+                  </Link>
+                </SpaceContainer>
               </Pillar>
             }
           />
