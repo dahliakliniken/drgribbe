@@ -60,8 +60,11 @@ const Page: React.FC = () => {
             <H2 upperCase>{t('treatmentBox.title')}</H2>
           </Pillar>          
         </SpaceContainer>
-
-        <TreatmentBox treatments={allTreatmentsData} />      
+        
+        <div className="m-auto xl:max-w-7xl">
+          <TreatmentBox treatments={allTreatmentsData} />      
+        </div>
+        
         
         <SpaceContainer noPadding spaceTop>
           <SimpleCard

@@ -149,7 +149,7 @@ const ForeOchEfter = () => {
       />     
       <SimpleCard
         bgColor={BgColors.White}
-        bgPosition='right'
+        bgPosition='left'
         content={
           <div>
             <Pillar>
