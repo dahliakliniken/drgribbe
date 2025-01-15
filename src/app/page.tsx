@@ -30,7 +30,7 @@ const Page: React.FC = () => {
           </div>
         </section>
 
-        <Card
+        {/* <Card
           bgColor={BgColors.Coral}
           bgPosition="right"
           image={
@@ -39,33 +39,50 @@ const Page: React.FC = () => {
           title={<H2 white>{t('aboutBox.title')}</H2>}
           paragraphs={[t('aboutBox.paragraph1'), t('aboutBox.paragraph2')]}
           threeColumns
-        />
+        /> */}
 
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="right"
+          content={
+          <Pillar>
+            <SpaceContainer>
+              <H2 >{t('aboutBox.title')}</H2>
+              <P >{t('aboutBox.paragraph1')}</P>
+              <P >{t('aboutBox.paragraph2')}</P>
+            </SpaceContainer>
+          </Pillar>
+          }
+        />
         <Image src={Consultation} alt={''} className="lg:hidden" />
 
-        <SpaceContainer spaceVertically>
-          <H2 upperCase>{t('treatmentBox.title')}</H2>
+        <SpaceContainer noPadding>
+          <Pillar>
+            <H2 upperCase>{t('treatmentBox.title')}</H2>
+          </Pillar>          
         </SpaceContainer>
 
-        <TreatmentBox treatments={allTreatmentsData} />
-
-        <SpaceContainer spaceVertically noPadding>
+        <TreatmentBox treatments={allTreatmentsData} />      
+        
+        <SpaceContainer noPadding spaceTop>
           <SimpleCard
-            bgColor={BgColors.Coral}
-            bgPosition="left"
-            content={
-              <>
-                <H2 upperCase white className="text-center">
-                  {t('common.freeConsultation')}
-                </H2>
-                <div className="m-auto flex max-w-xs justify-center">
-                  <A href="/boka" className="uppercase" buttonStyle>
-                    {t('common.bookNow')}
-                  </A>
-                </div>
-              </>
-            }
-          />
+              bgColor={BgColors.Coral}
+              bgPosition="left"
+              content={
+                <>
+                  <H2 upperCase white className="text-center">
+                    {t('common.freeConsultation')}
+                  </H2>
+                  <div className="m-auto flex max-w-xs justify-center">
+                    <A href="/boka" className="uppercase" buttonStyle>
+                      {t('common.bookNow')}
+                    </A>
+                  </div>
+                </>
+              }
+            />
+        </SpaceContainer>
+          
 
           {/* About Section */}
           <SimpleCard
@@ -74,16 +91,23 @@ const Page: React.FC = () => {
             bgColor={BgColors.White}
             content={
               <Pillar>
-                <H2>{t('aboutClinic.title')}</H2>
-                <Image
-                  src={SfepLogo}
-                  alt={t('altText.sfepLogo')}
-                  height={200}
-                  className="m-auto mb-4 text-center lg:float-right lg:ml-4"
+                <Image 
+                  src={Consultation} 
+                  alt={''} 
+                  className="hidden lg:block" 
                 />
-                <P>{t('aboutClinic.paragraph1')}</P>
-                <P>{t('aboutClinic.paragraph2')}</P>
                 <SpaceContainer noPadding spaceTop>
+                  <H2>{t('aboutClinic.title')}</H2>                  
+                  <P>{t('aboutClinic.paragraph1')}</P>
+                  <Image
+                    src={SfepLogo}
+                    alt={t('altText.sfepLogo')}
+                    height={150}
+                    className="m-auto mb-4 text-center"
+                    // lg:float-right lg:ml-4 
+                  /> 
+                  <P>{t('aboutClinic.paragraph2')}</P>
+                
                   <H3>{t('aboutClinic.ourphilosophy')}</H3>
                   <P>{t('aboutClinic.paragraph3')}</P>
                   <Link
@@ -113,17 +137,21 @@ const Page: React.FC = () => {
               </Pillar>
             }
           />
+          <Pillar>
+            <Image
+              src={WaitingRoom}
+              alt={t('altText.patientRoom')}
+              className="max-h-[calc(100dvh-80px)] object-cover object-center"
+            />
+          </Pillar>
 
-          <Image
-            src={WaitingRoom}
-            alt={t('altText.patientRoom')}
-            className="max-h-[calc(100dvh-80px)] object-cover object-center"
-          />
-          <SimpleCard
+          {/* <SimpleCard
             bgColor={BgColors.Green}
             bgPosition="left"
             content={
-              <div className="lg:flex">
+              <Pillar>
+                <H2 white>{t('profileCard.title')}</H2>
+                <div className="lg:flex">
                 <div>
                   <P white className="lg:hidden">
                     {t('profileCard.imageText')}
@@ -143,11 +171,39 @@ const Page: React.FC = () => {
                   <P white>{t('profileCard.paragraph2')}</P>
                   <P white>{t('profileCard.paragraph3')}</P>
                 </div>
+              </div>  
+              </Pillar> 
+            }
+          /> */}
+
+          <SimpleCard
+            bgColor={BgColors.Green}
+            bgPosition="left"
+            content={
+              <div className="lg:flex">
+                <div>
+                  <P white className="lg:hidden">
+                    {t('profileCard.imageText')}
+                  </P>
+                  <Image
+                    src={Doctor}
+                    alt={t('profileCard.imageAlt')}
+                    className=" my-4 rounded-full mx-auto"
+                    height={280}
+                  />
+                  <P white className="hidden lg:block">
+                    {t('profileCard.imageText')}
+                  </P>
+                </div>
+                <div>
+                  <P white>{t('profileCard.paragraph1')}</P>
+                  <P white>{t('profileCard.paragraph2')}</P>
+                  <P white>{t('profileCard.paragraph3')}</P>
+                </div>
               </div>
             }
             title={<H2 white>{t('profileCard.title')}</H2>}
           />
-        </SpaceContainer>
       </main>
     </>
   )
