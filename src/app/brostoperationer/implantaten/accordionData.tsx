@@ -4,9 +4,9 @@ import { AnchorLink } from '@/app/components/typography/AnchorLink'
 import { P } from '@/app/components/typography/P'
 import MotivaTableImage from '../../../../public/images/motiva-tabell.jpg'
 
-export const useAccordion1Items = () => {
+export const useAccordionItems = () => {
   const t = useTranslations()
-  return [
+  const accordion1Items = [
     {
       id: '1-content',
       title: t('implantaten.accordion1.content.heading'),
@@ -77,22 +77,16 @@ export const useAccordion1Items = () => {
       content: <P>{t('implantaten.accordion1.polyuretan.text1')}</P>
     }
   ]
-}
 
-export const useAccordion2Items = () => {
-  const t = useTranslations()
-  return [
+  const accordion2Items = [
     {
       id: 'jelly',
       title: t('implantaten.accordion2.jelly.heading'),
       content: <P>{t('implantaten.accordion2.jelly.text1')}</P>
     }
   ]
-}
 
-export const useAccordion3Items = () => {
-  const t = useTranslations()
-  return [
+  const accordion3Items = [
     {
       id: 'roundImplants',
       title: t('implantaten.accordion3.roundImplants.heading'),
@@ -141,11 +135,8 @@ export const useAccordion3Items = () => {
       )
     }
   ]
-}
 
-export const useAccordion4Items = () => {
-  const t = useTranslations()
-  return [
+  const accordion4Items = [
     {
       id: 'anatomic',
       title: t('implantaten.accordion4.anatomic.heading'),
@@ -190,11 +181,8 @@ export const useAccordion4Items = () => {
       )
     }
   ]
-}
 
-export const useAccordion5Items = () => {
-  const t = useTranslations()
-  return [
+  const accordion5Items = [
     {
       id: '5-formAndProfiles',
       title: t('implantaten.accordion5.formAndProfiles.heading'),
@@ -238,12 +226,8 @@ export const useAccordion5Items = () => {
       content: <P>{t('implantaten.accordion5.surface.text1')}</P>
     }
   ]
-}
 
-export const useAccordion6Items = () => {
-  const t = useTranslations()
-
-  return [
+  const accordion6Items = [
     {
       id: '6-formAndProfiles',
       title: t('implantaten.accordion6.formAndProfiles.heading'),
@@ -276,11 +260,8 @@ export const useAccordion6Items = () => {
       )
     }
   ]
-}
 
-export const useAccordion7Items = () => {
-  const t = useTranslations()
-  return [
+  const accordion7Items = [
     {
       id: '7-formAndProfiles',
       title: t('implantaten.accordion7.formAndProfiles.heading'),
@@ -307,5 +288,15 @@ export const useAccordion7Items = () => {
         </>
       )
     }
+  ]
+
+  return [
+    accordion1Items,
+    accordion2Items,
+    accordion3Items,
+    accordion4Items,
+    accordion5Items,
+    accordion6Items,
+    accordion7Items
   ]
 }

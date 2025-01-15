@@ -9,15 +9,11 @@ import { H2 } from '../components/typography/H2'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import Botoxface from '../../../public/images/botox-1000px.png'
 import { Accordion } from '../components/surfaces/Accordion'
-import {
-  getOtherAreasAccordion,
-  getTreatmentAreasAccordion
-} from './accordionData'
+import { useAccordionItems } from './accordionData'
 
 const HudOchInjektioner = () => {
   const t = useTranslations()
-  const treatmentAreasAccordion = getTreatmentAreasAccordion(t)
-  const otherAreasAccordion = getOtherAreasAccordion(t)
+  const [treatmentAreasItems, otherAreasItems] = useAccordionItems()
 
   return (
     <main className="mb-40 flex flex-col">
@@ -38,35 +34,38 @@ const HudOchInjektioner = () => {
             <P>{t('hudochinjektioner.treatmentAreas.text1')}</P>
           </SpaceContainer>
           <SpaceContainer noPadding spaceTop>
-          <Image src={Botoxface} alt={''} className="max-h-[calc(100dvh-80px)] object-cover object-center" />
+            <Image
+              src={Botoxface}
+              alt={''}
+              className="max-h-[calc(100dvh-80px)] object-cover object-center"
+            />
           </SpaceContainer>
-
 
           <SpaceContainer noPadding spaceTop>
-            <Accordion coral items={treatmentAreasAccordion} />
+            <Accordion coral items={treatmentAreasItems} />
           </SpaceContainer>
-          
+
           <SpaceContainer noPadding spaceTop>
             <H2>{t('hudochinjektioner.otherAreas.heading')}</H2>
             <P>{t('hudochinjektioner.otherAreas.text1')}</P>
           </SpaceContainer>
 
           <SpaceContainer noPadding spaceTop>
-            <Accordion coral items={otherAreasAccordion} />
-          </SpaceContainer>          
+            <Accordion coral items={otherAreasItems} />
+          </SpaceContainer>
         </Pillar>
-        </SpaceContainer>
-        <SpaceContainer>
-          <Pillar>
-            <H2>{t('hudochinjektioner.effect.heading')}</H2>
-            <P>{t('hudochinjektioner.effect.text1')}</P>
-          </Pillar>
-        </SpaceContainer>
-        <SimpleCard
-          bgColor={BgColors.White}
-          bgPosition="left-top"
-          content={
-            <Pillar noPadding>
+      </SpaceContainer>
+      <SpaceContainer>
+        <Pillar>
+          <H2>{t('hudochinjektioner.effect.heading')}</H2>
+          <P>{t('hudochinjektioner.effect.text1')}</P>
+        </Pillar>
+      </SpaceContainer>
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition="left-top"
+        content={
+          <Pillar noPadding>
             <H2>{t('hudochinjektioner.heading2')}</H2>
             <P>{t('hudochinjektioner.text2')}</P>
             <P>{t('hudochinjektioner.text3')}</P>
@@ -74,17 +73,16 @@ const HudOchInjektioner = () => {
             <P>{t('hudochinjektioner.text5')}</P>
             <P>{t('hudochinjektioner.text6')}</P>
             <P>{t('hudochinjektioner.text7')}</P>
-            </Pillar>
-          }
-        />
-        
-        <SpaceContainer>
-          <Pillar>
-            <H2>{t('hudochinjektioner.risks.heading')}</H2>
-            <P>{t('hudochinjektioner.risks.text1')}</P>
           </Pillar>
-        </SpaceContainer>
-        
+        }
+      />
+
+      <SpaceContainer>
+        <Pillar>
+          <H2>{t('hudochinjektioner.risks.heading')}</H2>
+          <P>{t('hudochinjektioner.risks.text1')}</P>
+        </Pillar>
+      </SpaceContainer>
     </main>
   )
 }

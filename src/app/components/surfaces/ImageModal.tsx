@@ -28,6 +28,7 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
     setTimeout(() => {
       setIsVisible(false)
       document.body.style.overflow = '' // Restore background scrolling
+      openButtonRef.current?.focus()
     }, 300) // Duration of the transition
   }
 
@@ -79,9 +80,6 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
         document.removeEventListener('keydown', handleKeyDown)
         document.removeEventListener('mousedown', handleClickOutside)
       }
-    } else {
-      // Return focus to the button that triggered the modal
-      openButtonRef.current?.focus()
     }
   }, [isModalOpen])
 

@@ -5,7 +5,7 @@ type AProps = {
   children: React.ReactNode
   href: string
   className?: string
-  color?: string
+  white?: boolean
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void
   buttonStyle?: boolean
   inverted?: boolean
@@ -18,7 +18,7 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
     {
       children,
       href,
-      color = 'text-white',
+      white,
       className,
       onClick,
       buttonStyle,
@@ -29,10 +29,9 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
     },
     ref
   ) => {
-    const baseClass =
-      'font-josefin-sans text-base font-light leading-tight tracking-[0.06em]'
-    const buttonClass = `rounded-xl ${inverted ? 'border-black text-black hover:border-slate-500 hover:text-slate-500' : 'border-white text-white hover:border-beige hover:text-beige'} bg-transparent ${small ? 'border-2 p-2 text-small' : 'border-4 px-16 py-5 text-lg'}`
-    const linkClass = `hover:underline underline underline-offset-3 ${color}`
+    const baseClass = `font-josefin-sans font-light leading-tight tracking-[0.06em] ${small ? 'text-base' : 'text-xl'}`
+    const buttonClass = `rounded-xl ${inverted ? 'border-black text-black hover:border-slate-500 hover:text-slate-500' : 'border-white text-white hover:border-beige hover:text-beige'} bg-transparent ${small ? 'border-2 p-2' : 'border-4 px-16 py-5'}`
+    const linkClass = `hover:underline underline underline-offset-3 ${white ? 'text-white' : 'text-black'}`
     const overlayClass =
       'after:content-[""] after:block after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0'
     const combinedClass = `${baseClass} ${className} ${buttonStyle ? buttonClass : linkClass} ${overlay ? overlayClass : ''}`

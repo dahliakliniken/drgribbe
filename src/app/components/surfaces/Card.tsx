@@ -86,7 +86,7 @@ export const Card = ({
           </P>
         ))}
         {linkText && linkHref && (
-          <A ref={linkRef} href={linkHref} aria-label={linkTextAriaLabel}>
+          <A ref={linkRef} href={linkHref} aria-label={linkTextAriaLabel} white>
             {linkText}
           </A>
         )}
