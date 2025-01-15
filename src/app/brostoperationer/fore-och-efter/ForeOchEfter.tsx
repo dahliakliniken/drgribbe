@@ -7,19 +7,33 @@ import { P } from '@/app/components/typography/P'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { BgColors } from '@/app/types'
-import Image from 'next/image'
+import { BAImage } from '@/app/components/layout/beforeafterimages'
+import { A } from '@/app/components/typography/A'
 
 import lowRound11 from '../../../../public/images/runda-implantat-1.1-500px.jpg'
 import lowRound12 from '../../../../public/images/runda-implantat-1.2-500px.jpg'
-
 import lowRound21 from '../../../../public/images/runda-implantat-2.1-500px.jpg'
 import lowRound22 from '../../../../public/images/runda-implantat-2.2-500px.jpg'
-
 import lowRound31 from '../../../../public/images/runda-implantat-3.1-500px.jpg'
 import lowRound32 from '../../../../public/images/runda-implantat-3.2-500px.jpg'
 
+import medRound11 from '../../../../public/images/runda-mellan-implantat-1-1-500px.jpg'
+import medRound12 from '../../../../public/images/runda-mellan-implantat-1-2-500px.jpg'
+import medRound21 from '../../../../public/images/runda-mellan-implantat-2-1-500px.jpg'
+import medRound22 from '../../../../public/images/runda-mellan-implantat-2-2-500px.jpg'
+import medRound31 from '../../../../public/images/runda-mellan-implantat-3-1-500px.jpg'
+import medRound32 from '../../../../public/images/runda-mellan-implantat-3-2-500px.jpg'
+
+import highRound11 from '../../../../public/images/runda-hog-implantat-1-1-500px.jpg'
+import highRound12 from '../../../../public/images/runda-hog-implantat-1-2-500px.jpg'
+import highRound21 from '../../../../public/images/runda-hog-implantat-2-1-500px.jpg'
+import highRound22 from '../../../../public/images/runda-hog-implantat-2-2-500px.jpg'
+import highRound31 from '../../../../public/images/runda-hog-implantat-3-1-500px.jpg'
+import highRound32 from '../../../../public/images/runda-hog-implantat-3-2-500px.jpg'
+
 const ForeOchEfter = () => {
   const t = useTranslations('foreOchEfter')
+  const tc = useTranslations('common')
 
   return (
     <main className="mb-36 flex flex-col">
@@ -29,7 +43,7 @@ const ForeOchEfter = () => {
         bgPosition="right"
         content={
         <Pillar>
-          <SpaceContainer>
+          <SpaceContainer noPadding>
             <H1 white>{t('title')}</H1>
             <P white>{t('preamble')}</P>
           </SpaceContainer>
@@ -37,7 +51,7 @@ const ForeOchEfter = () => {
         }
       />
 
-      {/* lowprofile       */}
+      {/* round before after       */}
       <SimpleCard
         bgColor={BgColors.White}
         bgPosition='right'
@@ -51,39 +65,21 @@ const ForeOchEfter = () => {
               </SpaceContainer>
               <div className='columns-3 gap-y1'>
                   <div>
-                    <Image
-                        src={lowRound11}
-                        alt={t('')}
-                        className="mb-4"
-                      />
-                      <Image
-                        src={lowRound12}
-                        alt={t('')}
-                        className=""
-                      />
+                    <BAImage
+                        beforeimage={lowRound11}
+                        afterimage={lowRound12}
+                    />
                   </div>       
                   <div>
-                    <Image
-                        src={lowRound21}
-                        alt={t('')}
-                        className="mb-4"
-                      />
-                      <Image
-                        src={lowRound22}
-                        alt={t('')}
-                        className=""
-                      />
+                    <BAImage
+                        beforeimage={lowRound21}
+                        afterimage={lowRound22}
+                    />
                   </div>           
                   <div>
-                    <Image
-                        src={lowRound31}
-                        alt={t('')}
-                        className="mb-4"
-                      />
-                      <Image
-                        src={lowRound32}
-                        alt={t('')}
-                        className=""
+                    <BAImage
+                          beforeimage={lowRound31}
+                          afterimage={lowRound32}
                       />
                   </div>               
               </div>  
@@ -91,63 +87,75 @@ const ForeOchEfter = () => {
             </Pillar>        
             <Pillar>
               <SpaceContainer spaceTop noPadding>
-                <H2>{t('round_mediumprofileheading')}</H2>
+                <H3>{t('round_mediumprofileheading')}</H3>
               </SpaceContainer>
               <div className='columns-3 gap-y1'>
                   <div>
-                    <Image
-                        src={lowRound11}
-                        alt={t('')}
-                        className="mb-4"
-                      />
-                      <Image
-                        src={lowRound12}
-                        alt={t('')}
-                        className=""
-                      />
+                    <BAImage
+                        beforeimage={medRound11}
+                        afterimage={medRound12}
+                    />                  
                   </div>       
                   <div>
-                    <Image
-                        src={lowRound21}
-                        alt={t('')}
-                        className="mb-4"
-                      />
-                      <Image
-                        src={lowRound22}
-                        alt={t('')}
-                        className=""
-                      />
+                  <BAImage
+                        beforeimage={medRound21}
+                        afterimage={medRound22}
+                    />
                   </div>           
                   <div>
-                    <Image
-                        src={lowRound31}
-                        alt={t('')}
-                        className="mb-4"
-                      />
-                      <Image
-                        src={lowRound32}
-                        alt={t('')}
-                        className=""
-                      />
+                    <BAImage
+                        beforeimage={medRound31}
+                        afterimage={medRound32}
+                    />
                   </div>               
               </div>  
               <P className='mt-4'>{t('round_mediumprofileinfotext')}</P>
-            </Pillar> 
+            </Pillar>
+            <Pillar>
+              <SpaceContainer spaceTop noPadding>
+                <H3>{t('round_highprofileheading')}</H3>
+              </SpaceContainer>
+              <div className='columns-3 gap-y1'>
+                  <div>
+                    <BAImage
+                        beforeimage={highRound11}
+                        afterimage={highRound12}
+                    />                  
+                  </div>       
+                  <div>
+                  <BAImage
+                        beforeimage={highRound21}
+                        afterimage={highRound22}
+                    />
+                  </div>           
+                  <div>
+                    <BAImage
+                        beforeimage={highRound31}
+                        afterimage={highRound32}
+                    />
+                  </div>               
+              </div>  
+              <P className='mt-4'>{t('round_highprofileinfotext')}</P>
+            </Pillar>             
           </div>
         }
-      />
-
-      {/* mediumprofile       */}
+      />     
       <SimpleCard
-        bgColor={BgColors.White}
-        bgPosition='left'
+        bgColor={BgColors.Green}
+        bgPosition="left"
         content={
-          <SpaceContainer>
-       
-          </SpaceContainer>
+          <>
+            <H2 upperCase white className="text-center">
+              {tc('freeConsultation')}
+            </H2>
+            <div className="m-auto flex max-w-xs justify-center">
+              <A href="/boka" className="uppercase" buttonStyle>
+                {tc('bookNow')}
+              </A>
+            </div>
+          </>
         }
       />
-      
     </main>
   )
 }

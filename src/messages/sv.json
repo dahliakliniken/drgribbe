@@ -964,7 +964,9 @@
     "round_lowprofileheading" : "Runda bröstimplantat låg profil",
     "round_lowprofileinfotext" : "Patient opererad med runda bröstimplantat låg profil, Mentor 250cc. Ålder 32 år, längd 166 cm och 55 kg.",
     "round_mediumprofileheading" : "Runda bröstimplantat mellanprofil",
-    "round_mediumprofileinfotext": "Patient opererad med runda bröstimplantat mellanprofil, Mentor 325cc. Ålder 26 år, längd 169 cm och 57 kg."
+    "round_mediumprofileinfotext": "Patient opererad med runda bröstimplantat mellanprofil, Mentor 325cc. Ålder 26 år, längd 169 cm och 57 kg.",
+    "round_highprofileheading" : "Runda bröstimplantat hög profil",
+    "round_highprofileinfotext" : "Patient opererad med runda bröstimplantat hög profil, Mentor 400cc. Ålder 24 år, längd 165 cm och 58 kg."
   },
   "altText": {
     "brostoperationerConsultation": "Dr Gribbe och en patient i konsultationssamtal",
