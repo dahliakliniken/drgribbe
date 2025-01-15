@@ -3,6 +3,7 @@ import Reduction from '../../public/images/breastReduction.svg'
 import Lift from '../../public/images/breastLift.svg'
 import MuscleRelaxation from '../../public/images/muscleRelaxation.svg'
 import { BgPositions } from '@/app/types'
+import { BgColors } from '@/app/types'
 
 export const breastOperationsTreatmentsData = [
   {
@@ -16,7 +17,8 @@ export const breastOperationsTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.breastEnlargement.ariaLabel',
     linkHref: '/brostoperationer/brostforstoring',
-    bgPosition: BgPositions['bottom-right']
+    bgPosition: BgPositions['bottom-right'],
+    bgColor: BgColors.Green
   },
   {
     id: crypto.randomUUID(),
@@ -29,7 +31,8 @@ export const breastOperationsTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.breastReduction.ariaLabel',
     linkHref: '/brostoperationer/brostforminskning',
-    bgPosition: BgPositions['bottom-left']
+    bgPosition: BgPositions['bottom-left'],
+    bgColor: BgColors.Green
   },
   {
     id: crypto.randomUUID(),
@@ -42,7 +45,8 @@ export const breastOperationsTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
     linkHref: '/brostoperationer/brostlyft',
-    bgPosition: BgPositions['bottom-left']
+    bgPosition: BgPositions['bottom-left'],
+    bgColor: BgColors.Green
   },
   {
     id: crypto.randomUUID(),
@@ -54,6 +58,7 @@ export const breastOperationsTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.beforeAndAfter.ariaLabel',
     linkHref: '/brostoperationer/fore-och-efter',
-    bgPosition: BgPositions['bottom-right']
+    bgPosition: BgPositions['bottom-right'],
+    bgColor: BgColors.Green
   }
 ]

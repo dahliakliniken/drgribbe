@@ -17,6 +17,7 @@ type TreatmentBoxProps = {
     linkHref: string
     ariaLabel: string
     bgPosition?: keyof typeof BgPositions
+    bgColor: BgColors
   }[]
 }
 
@@ -31,7 +32,7 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
           rounded
           cardList
           key={treatment.id}
-          bgColor={BgColors.Green}
+          bgColor={treatment.bgColor}
           bgPosition={treatment.bgPosition}
           content={
             <div className="flex h-full flex-col">
