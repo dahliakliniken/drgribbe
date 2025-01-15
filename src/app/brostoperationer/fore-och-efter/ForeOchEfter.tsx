@@ -31,6 +31,13 @@ import highRound22 from '../../../../public/images/runda-hog-implantat-2-2-500px
 import highRound31 from '../../../../public/images/runda-hog-implantat-3-1-500px.jpg'
 import highRound32 from '../../../../public/images/runda-hog-implantat-3-2-500px.jpg'
 
+import anatomy_11 from '../../../../public/images/anatomiskaforeefter-1.1-500px.jpg'
+import anatomy_12 from '../../../../public/images/anatomiskaforeefter-1.2-500px.jpg'
+import anatomy_21 from '../../../../public/images/anatomiskaforeefter-2.1-500px.jpg'
+import anatomy_22 from '../../../../public/images/anatomiskaforeefter-2.2-500px.jpg'
+import anatomy_31 from '../../../../public/images/anatomiskaforeefter-3.1-500px.jpg'
+import anatomy_32 from '../../../../public/images/anatomiskaforeefter-3.2-500px.jpg'
+
 const ForeOchEfter = () => {
   const t = useTranslations('foreOchEfter')
   const tc = useTranslations('common')
@@ -140,6 +147,40 @@ const ForeOchEfter = () => {
           </div>
         }
       />     
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition='right'
+        content={
+          <div>
+            <Pillar>
+            <H2>{t('anatomy_title')}</H2>
+              <P>{t('anatomy_preamble')}</P>              
+              <div className='columns-3 gap-y1'>
+                <div>
+                  <BAImage
+                      beforeimage={anatomy_11}
+                      afterimage={anatomy_12}
+                  />                  
+                </div>       
+                <div>
+                <BAImage
+                      beforeimage={anatomy_21}
+                      afterimage={anatomy_22}
+                  />
+                </div>           
+                <div>
+                  <BAImage
+                      beforeimage={anatomy_31}
+                      afterimage={anatomy_32}
+                  />
+                </div>  
+              </div>
+              <P className='mt-4'>{t('anatomy_infotext')}</P>
+            </Pillar>
+          </div>
+        }
+      />
+
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="left"

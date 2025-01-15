@@ -966,7 +966,10 @@
     "round_mediumprofileheading" : "Runda bröstimplantat mellanprofil",
     "round_mediumprofileinfotext": "Patient opererad med runda bröstimplantat mellanprofil, Mentor 325cc. Ålder 26 år, längd 169 cm och 57 kg.",
     "round_highprofileheading" : "Runda bröstimplantat hög profil",
-    "round_highprofileinfotext" : "Patient opererad med runda bröstimplantat hög profil, Mentor 400cc. Ålder 24 år, längd 165 cm och 58 kg."
+    "round_highprofileinfotext" : "Patient opererad med runda bröstimplantat hög profil, Mentor 400cc. Ålder 24 år, längd 165 cm och 58 kg.",
+    "anatomy_title" : "Anatomiska implantat - Före och efter",
+    "anatomy_preamble" : "Anatomiska, även kallade droppformade bröstimplantat kan varieras avseende bredd, höjd och projektion oberoende av varandra. Det betyder att man kan ha smala, höga bröstimplantat som framifrån sett ser ovala ut med mer volym uppåt nyckelbenet än vad de fyller ut på bredden. På samma sätt så kan man välja implantat som är låga och breda med mer volym på bredden och mindre volym uppåt på bröstkorgen.",
+    "anatomy_infotext" : "Patient opererad med anatomiska bröstimplantat, Mentor 375cc (CPG 322). Ålder 25 år, längd 167 cm och 53 kg."
   },
   "altText": {
     "brostoperationerConsultation": "Dr Gribbe och en patient i konsultationssamtal",
