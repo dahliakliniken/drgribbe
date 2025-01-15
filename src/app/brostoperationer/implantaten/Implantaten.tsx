@@ -1,5 +1,4 @@
 import { Pillar } from '@/app/components/layout/Pillar'
-import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
 import { H1 } from '@/app/components/typography/H1'
@@ -13,26 +12,19 @@ import { BgColors } from '@/app/types'
 import Image from 'next/image'
 import ImplantatImage from '../../../../public/images/implantaten.jpg'
 import ImplantatVariansImage from '../../../../public/images/teardrop-runda-implantat-1000px.jpg'
-import {
-  useAccordion1Items,
-  useAccordion2Items,
-  useAccordion3Items,
-  useAccordion4Items,
-  useAccordion5Items,
-  useAccordion6Items,
-  useAccordion7Items
-} from './accordionData'
-import { Span } from 'next/dist/trace'
+import { useAccordionItems } from './accordionData'
 
 const Implantaten = () => {
   const t = useTranslations()
-  const accordion1Items = useAccordion1Items()
-  const accordion2Items = useAccordion2Items()
-  const accordion3Items = useAccordion3Items()
-  const accordion4Items = useAccordion4Items()
-  const accordion5Items = useAccordion5Items()
-  const accordion6Items = useAccordion6Items()
-  const accordion7Items = useAccordion7Items()
+  const [
+    accordion1Items,
+    accordion2Items,
+    accordion3Items,
+    accordion4Items,
+    accordion5Items,
+    accordion6Items,
+    accordion7Items
+  ] = useAccordionItems()
 
   return (
     <main className="mb-36 flex flex-col">
@@ -40,20 +32,20 @@ const Implantaten = () => {
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
-        <Pillar>
+          <Pillar>
             <H1 white>{t('implantaten.title')}</H1>
             <P white>{t('implantaten.text1')}</P>
-        </Pillar>
+          </Pillar>
         }
       />
 
       <SpaceContainer>
-        <Pillar>          
+        <Pillar>
           <Image
-              src={ImplantatImage}
-              alt={t('altText.brostoperationerDayOfSurgery')}
-              className="max-h-svh object-cover object-center"
-            />
+            src={ImplantatImage}
+            alt={t('altText.brostoperationerDayOfSurgery')}
+            className="max-h-svh object-cover object-center"
+          />
           <SpaceContainer noPadding spaceVertically>
             <P>{t('implantaten.text2')}</P>
           </SpaceContainer>
@@ -83,16 +75,18 @@ const Implantaten = () => {
             <H2>{t('implantaten.roundImplants')}</H2>
             <Accordion items={accordion3Items} />
           </SpaceContainer>
-          
-          <div className='relative'>
-            <div className='w-full text-center absolute top-1/4'>{'Ett runt och ett anatomiskt implantat'}</div>
+
+          <div className="relative">
+            <div className="absolute top-1/4 w-full text-center">
+              {'Ett runt och ett anatomiskt implantat'}
+            </div>
             <Image
               src={ImplantatVariansImage}
               alt={t('altText.brostoperationerDayOfSurgery')}
               className="max-h-svh object-cover object-center"
             />
           </div>
-          
+
           <SpaceContainer noPadding spaceTop id="anatomiska-implantat">
             <H2>{t('implantaten.anatomic')}</H2>
             <Accordion items={accordion4Items} />

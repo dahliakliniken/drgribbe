@@ -733,11 +733,11 @@
     },
     "bathingSauna": {
       "title": "Bad och bastu",
-      "text": "Du får inte bada eller basta innan första återbesöket."
+      "text1": "Du får inte bada eller basta innan första återbesöket."
     },
     "sunExposure": {
       "title": "Solning",
-      "text": "Du får inte sola fram till första återbesöket."
+      "text1": "Du får inte sola fram till första återbesöket."
     },
     "lifting": {
       "title": "Tunga lyft",

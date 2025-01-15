@@ -54,6 +54,8 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
                 className="mt-auto"
                 href={treatment.linkHref}
                 aria-label={t(treatment.ariaLabel)}
+                white
+                small
               >
                 {t('common.readMore')}
               </A>
