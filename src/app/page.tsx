@@ -8,7 +8,6 @@ import SfepLogo from '../../public/images/sfep-logo.svg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
 import { H3 } from './components/typography/H3'
-import { Card } from './components/surfaces/Card'
 import { SpaceContainer } from './components/layout/SpaceContainer'
 import { P } from './components/typography/P'
 import { SimpleCard } from './components/surfaces/SimpleCard'
@@ -61,8 +60,11 @@ const Page: React.FC = () => {
             <H2 upperCase>{t('treatmentBox.title')}</H2>
           </Pillar>          
         </SpaceContainer>
-
-        <TreatmentBox treatments={allTreatmentsData} />      
+        
+        <div className="m-auto xl:max-w-7xl">
+          <TreatmentBox treatments={allTreatmentsData} />      
+        </div>
+        
         
         <SpaceContainer noPadding spaceTop>
           <SimpleCard

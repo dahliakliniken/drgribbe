@@ -2,6 +2,7 @@ import Enlargement from '../../public/images/breastEnlargement.svg'
 import Reduction from '../../public/images/breastReduction.svg'
 import Lift from '../../public/images/breastLift.svg'
 import MuscleRelaxation from '../../public/images/muscleRelaxation.svg'
+import { BgColors } from '@/app/types'
 import { BgPositions } from '@/app/types'
 
 export const allTreatmentsData = [
@@ -16,7 +17,8 @@ export const allTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.breastEnlargement.ariaLabel',
     linkHref: '/brostoperationer/brostforstoring',
-    bgPosition: BgPositions['bottom-right']
+    bgPosition: BgPositions['bottom-right'],
+    bgColor: BgColors.Green
   },
   {
     id: crypto.randomUUID(),
@@ -29,7 +31,8 @@ export const allTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.breastReduction.ariaLabel',
     linkHref: '/brostoperationer/brostforminskning',
-    bgPosition: BgPositions['bottom-left']
+    bgPosition: BgPositions['bottom-left'],
+    bgColor: BgColors.Green
   },
   {
     id: crypto.randomUUID(),
@@ -42,7 +45,8 @@ export const allTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
     linkHref: '/brostoperationer/brostlyft',
-    bgPosition: BgPositions['bottom-right']
+    bgPosition: BgPositions['bottom-right'],
+    bgColor: BgColors.Green
   },
   {
     id: crypto.randomUUID(),
@@ -55,6 +59,7 @@ export const allTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.muscleRelaxation.ariaLabel',
     linkHref: '/hud-och-injektioner',
-    bgPosition: BgPositions['bottom-left']
+    bgPosition: BgPositions['bottom-left'],
+    bgColor: BgColors.Green
   }
 ]
