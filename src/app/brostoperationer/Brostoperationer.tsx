@@ -80,7 +80,6 @@ const Brostoperationer = () => {
 
   return (
     <main className="mb-36 flex flex-col">
-      <SpaceContainer>
         <SimpleCard
           bgColor={BgColors.Green}
           bgPosition="right"
@@ -93,7 +92,7 @@ const Brostoperationer = () => {
           </Pillar>
           }
         />
-      </SpaceContainer>
+      
 
         
         <SpaceContainer spaceTop>
