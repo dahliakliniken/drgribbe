@@ -12,6 +12,7 @@ import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { BgColors } from '@/app/types'
 import Image from 'next/image'
 import ImplantatImage from '../../../../public/images/implantaten.jpg'
+import ImplantatVariansImage from '../../../../public/images/teardrop-runda-implantat-1000px.jpg'
 import {
   useAccordion1Items,
   useAccordion2Items,
@@ -21,6 +22,7 @@ import {
   useAccordion6Items,
   useAccordion7Items
 } from './accordionData'
+import { Span } from 'next/dist/trace'
 
 const Implantaten = () => {
   const t = useTranslations()
@@ -81,7 +83,16 @@ const Implantaten = () => {
             <H2>{t('implantaten.roundImplants')}</H2>
             <Accordion items={accordion3Items} />
           </SpaceContainer>
-
+          
+          <div className='relative'>
+            <div className='w-full text-center absolute top-1/4'>{'Ett runt och ett anatomiskt implantat'}</div>
+            <Image
+              src={ImplantatVariansImage}
+              alt={t('altText.brostoperationerDayOfSurgery')}
+              className="max-h-svh object-cover object-center"
+            />
+          </div>
+          
           <SpaceContainer noPadding spaceTop id="anatomiska-implantat">
             <H2>{t('implantaten.anatomic')}</H2>
             <Accordion items={accordion4Items} />
