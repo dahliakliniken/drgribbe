@@ -60,9 +60,11 @@ const Page: React.FC = () => {
           </Pillar>
         </SpaceContainer>
 
-        <div className="m-auto xl:max-w-7xl">
-          <TreatmentBox treatments={allTreatmentsData} />
-        </div>
+        <SpaceContainer spaceTop>
+          <div className="m-auto xl:max-w-7xl">
+            <TreatmentBox treatments={allTreatmentsData} />
+          </div>
+        </SpaceContainer>
 
         <SpaceContainer noPadding spaceTop>
           <SimpleCard
