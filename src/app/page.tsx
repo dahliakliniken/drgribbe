@@ -52,17 +52,14 @@ const Page: React.FC = () => {
             </Pillar>
           }
         />
-        <Image src={Consultation} alt={''} className="lg:hidden" />
+        <Image src={Consultation} alt={''} className="lg:hidden" />      
 
-        <SpaceContainer noPadding>
-          <Pillar>
-            <H2 upperCase>{t('treatmentBox.title')}</H2>
-          </Pillar>
+        <SpaceContainer spaceTop>
+          <H2 upperCase className='px-gapSpace'>{t('treatmentBox.title')}</H2>  
+          <div className="m-auto xl:max-w-7xl">
+            <TreatmentBox treatments={allTreatmentsData} />
+          </div>
         </SpaceContainer>
-
-        <div className="m-auto xl:max-w-7xl">
-          <TreatmentBox treatments={allTreatmentsData} />
-        </div>
 
         <SpaceContainer noPadding spaceTop>
           <SimpleCard
