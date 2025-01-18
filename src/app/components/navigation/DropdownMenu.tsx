@@ -2,10 +2,9 @@ import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
-import { CloseIcon } from '../icons/CloseIcon'
-import { MenuIcon } from '../icons/MenuIcon'
 import { ChevronIcon } from '../icons/ChevronIcon'
 import { A } from '../typography/A'
+import { HamburgerButton } from '../inputs/HamburgerButton'
 
 export const DropdownMenu: React.FC = () => {
   const t = useTranslations()
@@ -91,13 +90,13 @@ export const DropdownMenu: React.FC = () => {
 
   return (
     <div className="relative z-50 flex items-center" ref={menuRef}>
-      <ButtonWithIcon
-        ref={buttonRef}
+      <HamburgerButton
         onClick={toggleMenu}
-        icon={isOpen ? <CloseIcon /> : <MenuIcon />}
+        ref={buttonRef}
         label={isOpen ? t('common.close') : t('common.open')}
         aria-haspopup="true"
         aria-expanded={isOpen}
+        isOpen={isOpen}
       />
 
       <div
