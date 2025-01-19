@@ -16,7 +16,8 @@ const config: Config = {
         coral: '#B06D74',
         green: '#0C412F',
         beige: '#EAE6E3',
-        grey: 'darkgrey'
+        grey: 'darkgrey',
+        gold: '#9C874C'
       },
       fontFamily: {
         'josefin-sans': ['"Josefin Sans"', 'sans-serif']
