@@ -6,22 +6,19 @@ import { ChevronIcon } from '../icons/ChevronIcon'
 import { A } from '../typography/A'
 import { HamburgerButton } from '../inputs/HamburgerButton'
 import cn from 'classnames'
+import { useLinksData } from './useLinksData'
+
+type Link = { text: string; href: string; id: string }
+
+type LinkProps = Array<Link & { subLinks?: Link[] }>
 
 export const DropdownMenu: React.FC = () => {
   const t = useTranslations()
   const [isOpen, setIsOpen] = useState(false)
+  const [activeLink, setActiveLink] = useState<string | null>(null)
   const menuRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
-
-  const toggleMenu = () => {
-    setIsOpen((prev) => !prev)
-  }
-
-  const handleClickOutside = (e: MouseEvent) => {
-    if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-      setIsOpen(false)
-    }
-  }
+  const [mainLinks] = useLinksData()
 
   useEffect(() => {
     if (isOpen) {
@@ -39,65 +36,76 @@ export const DropdownMenu: React.FC = () => {
     }
   }, [isOpen])
 
-  const renderLinks = () => {
-    const links = [
-      {
-        text: t('dropdown.clinic'),
-        href: '/#om-kliniken',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.breastSurgeries'),
-        href: '/brostoperationer',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.implants'),
-        href: '/brostoperationer/implantaten',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.skinInjections'),
-        href: '/hud-och-injektioner',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.ourStaff'),
-        href: '/var-personal',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.price'),
-        href: '/priser',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.faq'),
-        href: '/fragor-och-svar',
-        id: crypto.randomUUID()
-      }
-    ]
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev)
+    setActiveLink(null)
+  }
 
-    return links.map(({ text, href, id }) => (
-      <li key={id}>
-        <Link
-          href={href}
-          className="hover:underline"
-          onClick={() => setIsOpen(false)}
-          tabIndex={isOpen ? 0 : -1}
-        >
-          {text}
-        </Link>
-      </li>
-    ))
+  const handleClickOutside = (e: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+      setIsOpen(false)
+    }
+  }
+
+  const handleClickOnMenuLink = (id: string, hasSubLinks: boolean) => {
+    if (window.innerWidth >= 1024 && hasSubLinks) {
+      setActiveLink((prev) => (prev === id ? null : id))
+    } else {
+      setIsOpen(false)
+    }
+  }
+
+  const renderLinks = (links: LinkProps) => {
+    return links.map(({ text, href, id, subLinks }) => {
+      return (
+        <li key={id} className="relative">
+          <Link
+            href={href}
+            className={cn('hover:text-gold transition-colors duration-300', {
+              'text-gold': activeLink === id,
+              "lg:before:absolute lg:before:-left-3 lg:before:-top-px lg:before:content-['_«']":
+                !!subLinks
+            })}
+            onClick={(e) => {
+              if (window.innerWidth >= 1024 && subLinks) {
+                e.preventDefault()
+                handleClickOnMenuLink(id, !!subLinks)
+              } else {
+                handleClickOnMenuLink(id, !!subLinks)
+              }
+            }}
+            tabIndex={isOpen ? 0 : -1}
+          >
+            {text}
+          </Link>
+          {subLinks && (
+            <ul
+              className={cn(
+                'absolute top-0 hidden flex-col gap-5 font-normal text-white transition-all duration-300 ease-in-out lg:flex',
+                {
+                  'pointer-events-auto -translate-x-48 opacity-100':
+                    activeLink === id
+                },
+                {
+                  'pointer-events-none -translate-x-44 opacity-0':
+                    activeLink !== id
+                }
+              )}
+            >
+              {renderLinks(subLinks)}
+            </ul>
+          )}
+        </li>
+      )
+    })
   }
 
   return (
-    <div className="relative z-50 flex items-center" ref={menuRef}>
+    <div className="relative z-50 flex items-center gap-1" ref={menuRef}>
       <HamburgerButton
         onClick={toggleMenu}
         ref={buttonRef}
-        label={isOpen ? t('common.close') : t('common.open')}
+        label={isOpen ? t('common.closeMenu') : t('common.openMenu')}
         aria-haspopup="true"
         aria-expanded={isOpen}
         isOpen={isOpen}
@@ -135,15 +143,15 @@ export const DropdownMenu: React.FC = () => {
           label={t('common.close')}
         />
         <div className="lg:relative lg:flex-1 lg:bg-custom-gradient lg:before:pointer-events-none lg:before:absolute lg:before:left-0 lg:before:top-0 lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-200 lg:before:bg-[20%_20%] lg:before:opacity-20">
-          <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace">
-            {renderLinks()}
+          <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace lg:ml-gapSpaceL lg:font-bold">
+            {renderLinks(mainLinks)}
           </ul>
           <A
             inverted
             small
             href="/boka"
             buttonStyle
-            className="text-center lg:m-gapSpace"
+            className="text-center lg:m-gapSpace lg:ml-gapSpaceL lg:font-bold"
             onClick={() => setIsOpen(false)}
           >
             {t('common.bookConsultation')}

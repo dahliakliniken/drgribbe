@@ -29,7 +29,12 @@
     "skinInjections": "Hud & injektioner",
     "ourStaff": "Vår Personal",
     "price": "Pris",
-    "faq": "Frågor & svar"
+    "faq": "Frågor & svar",
+    "overview": "Översikt",
+    "breastReduction": "Bröstförminskning",
+    "breastAugmentation": "Bröstförstoring",
+    "breastLift": "Bröstlyft",
+    "beforeAfter": "Före & efterbilder"
   },
   "treatmentBox": {
     "title": "Behandlingar",
@@ -126,10 +131,11 @@
     "bookConsultation": "Boka konsultation",
     "bookFreeConsultation": "Boka fri konsultation",
     "freeConsultation": "Kostnadsfri konsultation",
-    "close": "Stäng",
-    "open": "Öppna",
+    "closeMenu": "Stäng menyn",
+    "openMenu": "Öppna menyn",
     "bookNow": "Boka nu",
-    "readMore": "Läs mer"
+    "readMore": "Läs mer",
+    "menu": "Meny"
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",
