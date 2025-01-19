@@ -16,7 +16,7 @@ const HudOchInjektioner = () => {
   const [treatmentAreasItems, otherAreasItems] = useAccordionItems()
 
   return (
-    <main className="mb-40 flex flex-col">
+    <>
       <SimpleCard
         bgColor={BgColors.Coral}
         bgPosition="right"
@@ -83,7 +83,7 @@ const HudOchInjektioner = () => {
           <P>{t('hudochinjektioner.risks.text1')}</P>
         </Pillar>
       </SpaceContainer>
-    </main>
+    </>
   )
 }
 

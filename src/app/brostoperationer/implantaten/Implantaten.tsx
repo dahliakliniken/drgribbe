@@ -27,7 +27,7 @@ const Implantaten = () => {
   ] = useAccordionItems()
 
   return (
-    <main className="mb-36 flex flex-col">
+    <>
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="right"
@@ -113,7 +113,7 @@ const Implantaten = () => {
           </SpaceContainer>
         </Pillar>
       </SpaceContainer>
-    </main>
+    </>
   )
 }
 

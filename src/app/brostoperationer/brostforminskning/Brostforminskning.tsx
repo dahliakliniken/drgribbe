@@ -11,14 +11,14 @@ import { useTranslations } from 'next-intl'
 const Brostforminskning = () => {
   const t = useTranslations('brostforminskning')
   return (
-    <main className="mb-36 flex flex-col">
+    <>
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
           <Pillar>
             <H1 white>{t('title')}</H1>
-            <P white>{t('background.text1')}</P>            
+            <P white>{t('background.text1')}</P>
           </Pillar>
         }
       />
@@ -32,7 +32,7 @@ const Brostforminskning = () => {
               <P>{t('background.text2')}</P>
               <P>{t('background.text3')}</P>
             </SpaceContainer>
-              
+
             <H2>{t('consultation.heading1')}</H2>
             <P>{t('consultation.text1')}</P>
           </Pillar>
@@ -53,7 +53,7 @@ const Brostforminskning = () => {
           </Pillar>
         }
       />
-    </main>
+    </>
   )
 }
 

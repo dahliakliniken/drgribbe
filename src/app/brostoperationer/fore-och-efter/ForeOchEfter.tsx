@@ -43,25 +43,24 @@ const ForeOchEfter = () => {
   const tc = useTranslations('common')
 
   return (
-    <main className="mb-36 flex flex-col">
-
+    <>
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
-        <Pillar>
-          <SpaceContainer noPadding>
-            <H1 white>{t('title')}</H1>
-            <P white>{t('preamble')}</P>
-          </SpaceContainer>
-        </Pillar>
+          <Pillar>
+            <SpaceContainer noPadding>
+              <H1 white>{t('title')}</H1>
+              <P white>{t('preamble')}</P>
+            </SpaceContainer>
+          </Pillar>
         }
       />
 
       {/* round before after       */}
       <SimpleCard
         bgColor={BgColors.White}
-        bgPosition='right'
+        bgPosition="right"
         content={
           <div>
             <Pillar>
@@ -70,112 +69,76 @@ const ForeOchEfter = () => {
               <SpaceContainer spaceTop noPadding>
                 <H3>{t('round_lowprofileheading')}</H3>
               </SpaceContainer>
-              <div className='columns-3 gap-y1'>
-                  <div>
-                    <BAImage
-                        beforeimage={lowRound11}
-                        afterimage={lowRound12}
-                    />
-                  </div>       
-                  <div>
-                    <BAImage
-                        beforeimage={lowRound21}
-                        afterimage={lowRound22}
-                    />
-                  </div>           
-                  <div>
-                    <BAImage
-                          beforeimage={lowRound31}
-                          afterimage={lowRound32}
-                      />
-                  </div>               
-              </div>  
-              <P className='mt-4'>{t('round_lowprofileinfotext')}</P>
-            </Pillar>        
+              <div className="gap-y1 columns-3">
+                <div>
+                  <BAImage beforeimage={lowRound11} afterimage={lowRound12} />
+                </div>
+                <div>
+                  <BAImage beforeimage={lowRound21} afterimage={lowRound22} />
+                </div>
+                <div>
+                  <BAImage beforeimage={lowRound31} afterimage={lowRound32} />
+                </div>
+              </div>
+              <P className="mt-4">{t('round_lowprofileinfotext')}</P>
+            </Pillar>
             <Pillar>
               <SpaceContainer spaceTop noPadding>
                 <H3>{t('round_mediumprofileheading')}</H3>
               </SpaceContainer>
-              <div className='columns-3 gap-y1'>
-                  <div>
-                    <BAImage
-                        beforeimage={medRound11}
-                        afterimage={medRound12}
-                    />                  
-                  </div>       
-                  <div>
-                  <BAImage
-                        beforeimage={medRound21}
-                        afterimage={medRound22}
-                    />
-                  </div>           
-                  <div>
-                    <BAImage
-                        beforeimage={medRound31}
-                        afterimage={medRound32}
-                    />
-                  </div>               
-              </div>  
-              <P className='mt-4'>{t('round_mediumprofileinfotext')}</P>
+              <div className="gap-y1 columns-3">
+                <div>
+                  <BAImage beforeimage={medRound11} afterimage={medRound12} />
+                </div>
+                <div>
+                  <BAImage beforeimage={medRound21} afterimage={medRound22} />
+                </div>
+                <div>
+                  <BAImage beforeimage={medRound31} afterimage={medRound32} />
+                </div>
+              </div>
+              <P className="mt-4">{t('round_mediumprofileinfotext')}</P>
             </Pillar>
             <Pillar>
               <SpaceContainer spaceTop noPadding>
                 <H3>{t('round_highprofileheading')}</H3>
               </SpaceContainer>
-              <div className='columns-3 gap-y1'>
-                  <div>
-                    <BAImage
-                        beforeimage={highRound11}
-                        afterimage={highRound12}
-                    />                  
-                  </div>       
-                  <div>
-                  <BAImage
-                        beforeimage={highRound21}
-                        afterimage={highRound22}
-                    />
-                  </div>           
-                  <div>
-                    <BAImage
-                        beforeimage={highRound31}
-                        afterimage={highRound32}
-                    />
-                  </div>               
-              </div>  
-              <P className='mt-4'>{t('round_highprofileinfotext')}</P>
-            </Pillar>             
+              <div className="gap-y1 columns-3">
+                <div>
+                  <BAImage beforeimage={highRound11} afterimage={highRound12} />
+                </div>
+                <div>
+                  <BAImage beforeimage={highRound21} afterimage={highRound22} />
+                </div>
+                <div>
+                  <BAImage beforeimage={highRound31} afterimage={highRound32} />
+                </div>
+              </div>
+              <P className="mt-4">{t('round_highprofileinfotext')}</P>
+            </Pillar>
           </div>
         }
-      />     
+      />
       <SimpleCard
         bgColor={BgColors.White}
-        bgPosition='left'
+        bgPosition="left"
         content={
           <div>
             <Pillar>
-            <H2>{t('anatomy_title')}</H2>
-              <P>{t('anatomy_preamble')}</P>              
-              <div className='columns-3 gap-y1'>
+              <H2>{t('anatomy_title')}</H2>
+              <P>{t('anatomy_preamble')}</P>
+              <div className="gap-y1 columns-3">
                 <div>
-                  <BAImage
-                      beforeimage={anatomy_11}
-                      afterimage={anatomy_12}
-                  />                  
-                </div>       
+                  <BAImage beforeimage={anatomy_11} afterimage={anatomy_12} />
+                </div>
                 <div>
-                <BAImage
-                      beforeimage={anatomy_21}
-                      afterimage={anatomy_22}
-                  />
-                </div>           
+                  <BAImage beforeimage={anatomy_21} afterimage={anatomy_22} />
+                </div>
                 <div>
-                  <BAImage
-                      beforeimage={anatomy_31}
-                      afterimage={anatomy_32}
-                  />
-                </div>  
+                  <BAImage beforeimage={anatomy_31} afterimage={anatomy_32} />
+                </div>
               </div>
-              <P className='mt-4'>{t('anatomy_infotext')}</P>
+              <P className="mt-4">{t('anatomy_infotext')}</P>
             </Pillar>
           </div>
         }
@@ -197,7 +160,7 @@ const ForeOchEfter = () => {
           </>
         }
       />
-    </main>
+    </>
   )
 }
 

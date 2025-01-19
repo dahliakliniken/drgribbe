@@ -15,13 +15,12 @@ const Garanti = () => {
   const securityPackagePoints = Object.keys(
     t.raw('garanti.securityPackage.points')
   ).map((key) => t(`garanti.securityPackage.points.${key}`))
-  const philosophyPoints = Object.keys(
-    t.raw('ourphilosophy.points')
-  ).map((key) => t(`ourphilosophy.points.${key}`))
-
+  const philosophyPoints = Object.keys(t.raw('ourphilosophy.points')).map(
+    (key) => t(`ourphilosophy.points.${key}`)
+  )
 
   return (
-    <main className="mb-36 flex flex-col">
+    <>
       <SimpleCard
         fullWidth
         bgColor={BgColors.Green}
@@ -73,16 +72,17 @@ const Garanti = () => {
             <H2 white>{t('ourphilosophy.heading')}</H2>
             <P white>{t('ourphilosophy.text1')}</P>
             <ol className="list-decimal space-y-6 pl-6 marker:text-lg marker:font-semibold marker:text-white">
-            {philosophyPoints.map((point, index) => (
-                <li className="text-white text-xl" key={index}>{point}</li>
+              {philosophyPoints.map((point, index) => (
+                <li className="text-xl text-white" key={index}>
+                  {point}
+                </li>
               ))}
-              
             </ol>
             <SpaceContainer noPadding spaceTop>
               <H2 white>{t('ourphilosophy.text2Heading')}</H2>
               <P white>{t('ourphilosophy.text2')}</P>
             </SpaceContainer>
-          </Pillar>      
+          </Pillar>
         }
       />
       <SpaceContainer>
@@ -94,7 +94,7 @@ const Garanti = () => {
           <P>{t('ourphilosophy.text5')}</P>
         </Pillar>
       </SpaceContainer>
-    </main>
+    </>
   )
 }
 export default Garanti
