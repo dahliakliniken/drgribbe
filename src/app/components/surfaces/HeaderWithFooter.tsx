@@ -25,7 +25,7 @@ export const HeaderWithFooter = () => {
 
   return (
     <header
-      className={`fixed bottom-0 left-0 right-0 w-full transition-all duration-300 ${
+      className={`fixed bottom-0 left-0 right-0 w-full transition-all duration-300 lg:top-0 ${
         isAtBottom ? 'h-40' : 'h-20'
       } z-50 bg-[#EAE6E3]`}
     >
