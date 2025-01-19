@@ -25,9 +25,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Breadcrumbs />
           <HeaderWithFooter />
           <main className="mb-36 flex flex-col lg:mb-0 lg:mt-20">
+            <Breadcrumbs />
             {children}
           </main>
         </NextIntlClientProvider>

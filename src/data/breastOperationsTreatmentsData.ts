@@ -45,7 +45,7 @@ export const breastOperationsTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
     linkHref: '/brostoperationer/brostlyft',
-    bgPosition: BgPositions['bottom-left'],
+    bgPosition: BgPositions['bottom-right'],
     bgColor: BgColors.Green
   },
   {
@@ -58,7 +58,7 @@ export const breastOperationsTreatmentsData = [
     ],
     ariaLabel: 'treatmentBox.treatments.beforeAndAfter.ariaLabel',
     linkHref: '/brostoperationer/fore-och-efter',
-    bgPosition: BgPositions['bottom-right'],
+    bgPosition: BgPositions['bottom-left'],
     bgColor: BgColors.Green
   }
 ]
