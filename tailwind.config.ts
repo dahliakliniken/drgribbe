@@ -10,30 +10,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      keyframes: {
-        'fade-in-right': {
-          '0%': { opacity: '0', transform: 'translateX(10px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' }
-        },
-        'fade-out-right': {
-          '0%': { opacity: '1', transform: 'translateX(0)' },
-          '100%': { opacity: '0', transform: 'translateX(10px)' }
-        },
-        'fade-in-bottom': {
-          '0%': { opacity: '0', transform: 'translateY(5px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' }
-        },
-        'fade-out-bottom': {
-          '0%': { opacity: '1', transform: 'translateY(0)' },
-          '100%': { opacity: '0', transform: 'translateY(5px)' }
-        }
-      },
-      animation: {
-        'fade-in-right': 'fade-in-right 0.3s ease-out forwards',
-        'fade-out-right': 'fade-out-right 0.3s ease-in forwards',
-        'fade-in-bottom': 'fade-in-bottom 0.3s ease-out forwards',
-        'fade-out-bottom': 'fade-out-bottom 0.3s ease-in forwards'
-      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
