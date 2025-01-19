@@ -12,7 +12,7 @@ const FragorOchSvar = () => {
   const faqItems = useAccordionItems()
 
   return (
-    <main className="mb-36 flex flex-col">
+    <>
       <Pillar>
         <SpaceContainer>
           <H1>{t('title')}</H1>
@@ -22,7 +22,7 @@ const FragorOchSvar = () => {
           </SpaceContainer>
         </SpaceContainer>
       </Pillar>
-    </main>
+    </>
   )
 }
 

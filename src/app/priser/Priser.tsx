@@ -34,14 +34,12 @@ const Priser = () => {
   })
 
   return (
-    <main className="mb-36 flex flex-col">
-      <SpaceContainer spaceVertically>
-        <Pillar>
-          <H1>{t('priser.title')}</H1>
-          <PriceList items={items} />
-        </Pillar>
-      </SpaceContainer>
-    </main>
+    <SpaceContainer spaceVertically>
+      <Pillar>
+        <H1>{t('priser.title')}</H1>
+        <PriceList items={items} />
+      </Pillar>
+    </SpaceContainer>
   )
 }
 

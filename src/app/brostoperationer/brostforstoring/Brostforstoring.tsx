@@ -9,9 +9,7 @@ import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
 import { useTranslations } from 'next-intl'
 import { Accordion } from '@/app/components/surfaces/Accordion'
-import {
-  getTeknikAccordion  
-} from './accordionData'
+import { getTeknikAccordion } from './accordionData'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 
 const Brostforstoring = () => {
@@ -19,14 +17,14 @@ const Brostforstoring = () => {
   const teknikAccordion = getTeknikAccordion(t)
 
   return (
-    <main className="mb-36 flex flex-col">
+    <>
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
           <Pillar>
             <H1 white>{t('title')}</H1>
-            <P white>{t('background')}</P>            
+            <P white>{t('background')}</P>
           </Pillar>
         }
       />
@@ -37,16 +35,16 @@ const Brostforstoring = () => {
         content={
           <Pillar>
             <Section>
-            <H2>{t('implanttitle')}</H2>
-            <P>{t('implantbackground.text1')}</P>
-            <P>{t('implantbackground.text2')}</P>
+              <H2>{t('implanttitle')}</H2>
+              <P>{t('implantbackground.text1')}</P>
+              <P>{t('implantbackground.text2')}</P>
 
-            <H3 >{t('technique.heading1')}</H3>
-            <P >{t('technique.text1')}</P>
+              <H3>{t('technique.heading1')}</H3>
+              <P>{t('technique.text1')}</P>
 
-            <Accordion items={teknikAccordion} />
+              <Accordion items={teknikAccordion} />
 
-{/* 
+              {/* 
               
 
               <H3 >{t('technique.heading2')}</H3>
@@ -68,7 +66,7 @@ const Brostforstoring = () => {
               <P >{t('technique.text5')}</P> */}
             </Section>
           </Pillar>
-         }
+        }
       />
 
       {/* <SimpleCard
@@ -96,14 +94,12 @@ const Brostforstoring = () => {
       /> */}
       <SpaceContainer>
         <Pillar>
-          <H2 id="placering">
-            {t('placement.heading1')}
-          </H2>
-          <P >{t('placement.text1')}</P>
-          <P >{t('placement.text2')}</P>
+          <H2 id="placering">{t('placement.heading1')}</H2>
+          <P>{t('placement.text1')}</P>
+          <P>{t('placement.text2')}</P>
         </Pillar>
       </SpaceContainer>
-      
+
       {/* <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="right"
@@ -142,16 +138,15 @@ const Brostforstoring = () => {
               </li>
             </ol>
             <SpaceContainer spaceTop noPadding>
-              <P white >{t('withBodyFat.technique.text2')}</P>
+              <P white>{t('withBodyFat.technique.text2')}</P>
             </SpaceContainer>
-            
-            </Pillar>
+          </Pillar>
         }
       />
       <SpaceContainer>
         <Pillar>
-          <H2 >{t('withBodyFat.hybrid.title')}</H2>
-          <P >{t('withBodyFat.hybrid.text1')}</P>
+          <H2>{t('withBodyFat.hybrid.title')}</H2>
+          <P>{t('withBodyFat.hybrid.text1')}</P>
         </Pillar>
       </SpaceContainer>
 
@@ -172,8 +167,8 @@ const Brostforstoring = () => {
             </>
           }
         />
-      </SpaceContainer>      
-    </main>
+      </SpaceContainer>
+    </>
   )
 }
 

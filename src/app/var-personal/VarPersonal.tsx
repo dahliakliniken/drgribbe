@@ -53,37 +53,35 @@ const VarPersonal = () => {
   ]
 
   return (
-    <main className="mb-36">
-      <Pillar>
-        <SpaceContainer>
-          <H1>{t('title')}</H1>
-          <ul className="grid gap-6 md:grid-cols-2">
-            {staff.map((member) => (
-              <li key={member.id}>
-                <SimpleCard
-                  bgColor={BgColors.Coral}
-                  bgPosition="right"
-                  content={
-                    <Pillar>
-                      <H2 white>{member.name}</H2>
-                      <ul>
-                        {member.titles.map((title, index) => (
-                          <li key={`${member.id}-${index}`}>
-                            <P small white>
-                              {title}
-                            </P>
-                          </li>
-                        ))}
-                      </ul>
-                    </Pillar>
-                  }
-                />
-              </li>
-            ))}
-          </ul>
-        </SpaceContainer>
-      </Pillar>
-    </main>
+    <Pillar>
+      <SpaceContainer>
+        <H1>{t('title')}</H1>
+        <ul className="grid gap-6 md:grid-cols-2">
+          {staff.map((member) => (
+            <li key={member.id}>
+              <SimpleCard
+                bgColor={BgColors.Coral}
+                bgPosition="right"
+                content={
+                  <Pillar>
+                    <H2 white>{member.name}</H2>
+                    <ul>
+                      {member.titles.map((title, index) => (
+                        <li key={`${member.id}-${index}`}>
+                          <P small white>
+                            {title}
+                          </P>
+                        </li>
+                      ))}
+                    </ul>
+                  </Pillar>
+                }
+              />
+            </li>
+          ))}
+        </ul>
+      </SpaceContainer>
+    </Pillar>
   )
 }
 
