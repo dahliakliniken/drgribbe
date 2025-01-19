@@ -105,11 +105,10 @@ export const DropdownMenu: React.FC = () => {
 
       <div
         className={cn(
-          'absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-custom-gradient p-4 pl-gapSpace pt-4 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 lg:fixed lg:inset-0 lg:bottom-0 lg:top-20 lg:flex lg:w-full lg:flex-row lg:rounded-none lg:bg-white lg:bg-none lg:p-0 lg:before:bg-none',
+          'absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-custom-gradient p-4 pl-gapSpace pt-4 transition-all duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 lg:fixed lg:inset-0 lg:bottom-0 lg:top-20 lg:flex lg:w-full lg:flex-row lg:rounded-none lg:bg-white lg:bg-none lg:p-0 lg:duration-500 lg:before:bg-none',
           {
-            'lg:animate-fade-in-right animate-fade-in-bottom pointer-events-auto':
-              isOpen,
-            'lg:animate-fade-out-right animate-fade-out-bottom pointer-events-none':
+            'pointer-events-auto translate-y-0 opacity-100': isOpen,
+            'pointer-events-none translate-y-2 opacity-0 lg:translate-y-0':
               !isOpen
           }
         )}
