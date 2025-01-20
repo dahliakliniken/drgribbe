@@ -143,7 +143,7 @@ export const DropdownMenu: React.FC = () => {
           label={t('common.close')}
         />
         <div className="lg:relative lg:flex-1 lg:bg-custom-gradient lg:before:pointer-events-none lg:before:absolute lg:before:left-0 lg:before:top-0 lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-200 lg:before:bg-[20%_20%] lg:before:opacity-20">
-          <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace lg:ml-gapSpaceL lg:font-bold">
+          <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace lg:ml-gapSpaceL">
             {renderLinks(mainLinks)}
           </ul>
           <A
@@ -151,7 +151,7 @@ export const DropdownMenu: React.FC = () => {
             small
             href="/boka"
             buttonStyle
-            className="text-center lg:m-gapSpace lg:ml-gapSpaceL lg:font-bold"
+            className="text-center lg:m-gapSpace lg:ml-gapSpaceL rounded-lg"
             onClick={() => setIsOpen(false)}
           >
             {t('common.bookConsultation')}
