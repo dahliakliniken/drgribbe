@@ -19,7 +19,8 @@ const Page: React.FC = () => {
   const t = useTranslations()
   return (
     <>
-      <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">
+      <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">        
+        <div className='w-full h-full herogradient'></div>
         <div className="absolute bottom-24">
           <A href="/boka" buttonStyle>
             {t('common.bookConsultation')}
