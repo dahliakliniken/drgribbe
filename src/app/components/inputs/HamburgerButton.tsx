@@ -19,7 +19,7 @@ export const HamburgerButton = forwardRef<
       onClick={onClick}
       aria-label={label}
     >
-      <span className="hidden font-bold uppercase lg:inline">
+      <span className="hidden uppercase lg:inline">
         {t('common.menu')}
       </span>
       <div className="relative h-10 w-10 translate-y-4 transform">
