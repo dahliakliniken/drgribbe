@@ -7,6 +7,7 @@ import { A } from '../typography/A'
 import { HamburgerButton } from '../inputs/HamburgerButton'
 import cn from 'classnames'
 import { useLinksData } from './useLinksData'
+import { useFocusTrap } from '@/hooks/useFocusTrap'
 
 type Link = { text: string; href: string; id: string }
 
@@ -20,21 +21,13 @@ export const DropdownMenu: React.FC = () => {
   const buttonRef = useRef<HTMLButtonElement>(null)
   const [mainLinks] = useLinksData()
 
-  useEffect(() => {
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside)
-      buttonRef.current?.focus()
-      document.body.classList.add('lg:overflow-hidden')
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside)
-      document.body.classList.remove('lg:overflow-hidden')
-    }
+  useFocusTrap(isOpen, menuRef)
 
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-      document.body.classList.remove('lg:overflow-hidden')
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setIsOpen(false)
     }
-  }, [isOpen])
+  }
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev)
@@ -46,6 +39,25 @@ export const DropdownMenu: React.FC = () => {
       setIsOpen(false)
     }
   }
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('keydown', handleKeyDown)
+      buttonRef.current?.focus()
+      document.body.classList.add('lg:overflow-hidden')
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleKeyDown)
+      document.body.classList.remove('lg:overflow-hidden')
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleKeyDown)
+      document.body.classList.remove('lg:overflow-hidden')
+    }
+  }, [isOpen])
 
   const handleClickOnMenuLink = (id: string, hasSubLinks: boolean) => {
     if (window.innerWidth >= 1024 && hasSubLinks) {
@@ -92,7 +104,17 @@ export const DropdownMenu: React.FC = () => {
                 }
               )}
             >
-              {renderLinks(subLinks)}
+              {subLinks.map(({ text, href, id: subLinkId }) => (
+                <li key={subLinkId} className="relative">
+                  <Link
+                    href={href}
+                    className={'hover:text-gold transition-colors duration-300'}
+                    tabIndex={activeLink === id ? 0 : -1}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
             </ul>
           )}
         </li>
@@ -128,7 +150,12 @@ export const DropdownMenu: React.FC = () => {
             <span>
               {t.rich('contact.email', {
                 email: (chunks) => (
-                  <a href="mailto:info@dahliakliniken.se">{chunks}</a>
+                  <a
+                    href="mailto:info@dahliakliniken.se"
+                    tabIndex={isOpen ? 0 : -1}
+                  >
+                    {chunks}
+                  </a>
                 )
               })}
             </span>
@@ -151,7 +178,7 @@ export const DropdownMenu: React.FC = () => {
             small
             href="/boka"
             buttonStyle
-            className="text-center lg:m-gapSpace lg:ml-gapSpaceL rounded-lg"
+            className="rounded-lg text-center lg:m-gapSpace lg:ml-gapSpaceL"
             onClick={() => setIsOpen(false)}
           >
             {t('common.bookConsultation')}

@@ -51,7 +51,7 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
               ))}
               <A
                 overlay
-                className="mt-auto"
+                className="mr-auto mt-auto"
                 href={treatment.linkHref}
                 aria-label={t(treatment.ariaLabel)}
                 white
