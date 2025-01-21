@@ -15,7 +15,7 @@ export const ButtonWithIcon = forwardRef<
     ref={ref}
     onClick={onClick}
     aria-label={label}
-    className={`rounded-full p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${className}`}
+    className={`rounded-full p-2 ${className}`}
   >
     {icon}
   </button>

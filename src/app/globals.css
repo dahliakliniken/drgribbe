@@ -7,6 +7,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gold: '#9C874C'
 }
 
 body {
@@ -28,6 +29,14 @@ p:not(:last-child) {
 b,
 strong {
   font-weight: 700;
+}
+
+button:focus,
+input:focus,
+a:focus {
+  outline: 2px solid #9C874C;
+  border-radius: 4px;
+  outline-offset: 4px;
 }
 
 .herogradient{

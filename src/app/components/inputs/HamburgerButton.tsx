@@ -14,14 +14,13 @@ export const HamburgerButton = forwardRef<
   const t = useTranslations()
   return (
     <button
-      className="flex items-center gap-2"
+      className="flex items-center gap-2 pl-2"
       ref={ref}
       onClick={onClick}
       aria-label={label}
+      aria-expanded={isOpen}
     >
-      <span className="hidden uppercase lg:inline">
-        {t('common.menu')}
-      </span>
+      <span className="hidden uppercase lg:inline">{t('common.menu')}</span>
       <div className="relative h-10 w-10 translate-y-4 transform">
         <span
           aria-hidden="true"
