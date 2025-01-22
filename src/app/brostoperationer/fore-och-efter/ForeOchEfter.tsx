@@ -51,7 +51,6 @@ const ForeOchEfter = () => {
           <Pillar>
             <SpaceContainer noPadding>
               <H1 white>{t('title')}</H1>
-              <P white>{t('preamble')}</P>
             </SpaceContainer>
           </Pillar>
         }

@@ -110,6 +110,7 @@ export const DropdownMenu: React.FC = () => {
                     href={href}
                     className={'hover:text-gold transition-colors duration-300'}
                     tabIndex={activeLink === id ? 0 : -1}
+                    onClick={() => setIsOpen(false)}
                   >
                     {text}
                   </Link>
