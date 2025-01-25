@@ -19,7 +19,7 @@ const Page: React.FC = () => {
   const t = useTranslations()
   return (
     <>
-      <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">        
+      <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">                     
         <div className='w-full h-full herogradient'></div>
         <div className="absolute bottom-24">
           <A href="/boka" buttonStyle>
@@ -53,6 +53,23 @@ const Page: React.FC = () => {
         }
       />
       <Image src={Consultation} alt={''} className="lg:hidden" />
+      <SpaceContainer>
+        <div className="m-auto xl:max-w-7xl">
+          <div className='flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch'>
+            <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
+              <i>{"Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen..."}</i>
+            </blockquote>
+
+            <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
+              <i>{"Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen..."}</i>
+            </blockquote>
+
+            <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
+              <i>{"Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen..."}</i>
+            </blockquote>
+          </div>
+        </div>        
+      </SpaceContainer>
 
       <SpaceContainer noPadding>
         <Pillar>
