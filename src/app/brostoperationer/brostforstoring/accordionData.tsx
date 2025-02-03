@@ -9,8 +9,8 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading2'),
     content: (
       <>
-      <H3>{t('technique.heading2')}</H3>
-      <P >{t('technique.text2')}</P>
+        <H3>{t('technique.heading2')}</H3>
+        <P>{t('technique.text2')}</P>
       </>
     )
   },
@@ -19,16 +19,14 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading3'),
     content: (
       <>
-      <H3>{t('technique.heading3')}</H3>
-       <P >
-        {useTranslations('brostforstoring').rich('technique.text3', {
-          link: (chunks) => (
-            <AnchorLink href="#placering">
-              {chunks}
-            </AnchorLink>
-          )
-        })}
-      </P>
+        <H3>{t('technique.heading3')}</H3>
+        <P>
+          {useTranslations('brostforstoring').rich('technique.text3', {
+            link: (chunks) => (
+              <AnchorLink href="#placering">{chunks}</AnchorLink>
+            )
+          })}
+        </P>
       </>
     )
   },
@@ -37,9 +35,8 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading4'),
     content: (
       <>
-      <H3>{t('technique.heading4')}</H3>
+        <H3>{t('technique.heading4')}</H3>
         <P>{t('technique.text4')}</P>
-        
       </>
     )
   },
@@ -48,8 +45,8 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading5'),
     content: (
       <>
-      <H3>{t('technique.heading5')}</H3>
-      <P>{t('technique.text5')}</P>        
+        <H3>{t('technique.heading5')}</H3>
+        <P>{t('technique.text5')}</P>
       </>
     )
   },
@@ -58,11 +55,10 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading6'),
     content: (
       <>
-      <H3>{t('technique.heading6')}</H3>
-      <P>{t('technique.text6_1')}</P>
-      <P>{t('technique.text6_2')}</P>
-      <P>{t('technique.text6_3')}</P>
-      
+        <H3>{t('technique.heading6')}</H3>
+        <P>{t('technique.text6_1')}</P>
+        <P>{t('technique.text6_2')}</P>
+        <P>{t('technique.text6_3')}</P>
       </>
     )
   },
@@ -71,8 +67,8 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading7'),
     content: (
       <>
-      <H3>{t('technique.heading7')}</H3>
-      <P>{t('technique.text7')}</P>
+        <H3>{t('technique.heading7')}</H3>
+        <P>{t('technique.text7')}</P>
       </>
     )
   },
@@ -81,8 +77,8 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading8'),
     content: (
       <>
-      <H3>{t('technique.heading8')}</H3>
-      <P>{t('technique.text8')}</P>
+        <H3>{t('technique.heading8')}</H3>
+        <P>{t('technique.text8')}</P>
       </>
     )
   },
@@ -91,12 +87,11 @@ export const getTeknikAccordion = (t: (key: string) => string) => [
     title: t('technique.heading9'),
     content: (
       <>
-      <H3>{t('technique.heading9')}</H3>
-      <P>{t('technique.text9')}</P>
+        <H3>{t('technique.heading9')}</H3>
+        <P>{t('technique.text9')}</P>
       </>
     )
   }
-
 ]
 
 export const getOtherAreasAccordion = (t: (key: string) => string) => [
