@@ -67,6 +67,11 @@ export const useLinksData = () => {
         text: t('dropdown.faq'),
         href: '/fragor-och-svar',
         id: crypto.randomUUID()
+      },
+      {
+        text: t('dropdown.findUs'),
+        href: '/hitta-hit',
+        id: crypto.randomUUID()
       }
     ],
     [t]

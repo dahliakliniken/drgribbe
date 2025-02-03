@@ -16,7 +16,8 @@
     "garanti": "Garanti",
     "boka": "Boka",
     "fragor-och-svar": "Frågor & svar",
-    "fore-och-efter": "Före & efterbilder"
+    "fore-och-efter": "Före & efterbilder",
+    "hitta-hit": "Hitta hit"
   },
   "home": {
     "title": "Hello world!",
@@ -34,7 +35,8 @@
     "breastReduction": "Bröstförminskning",
     "breastAugmentation": "Bröstförstoring",
     "breastLift": "Bröstlyft",
-    "beforeAfter": "Före & efterbilder"
+    "beforeAfter": "Före & efterbilder",
+    "findUs": "Hitta hit"
   },
   "treatmentBox": {
     "title": "Behandlingar",
@@ -976,6 +978,16 @@
     "anatomy_title" : "Anatomiska implantat - Före och efter",
     "anatomy_preamble" : "Anatomiska, även kallade droppformade bröstimplantat kan varieras avseende bredd, höjd och projektion oberoende av varandra. Det betyder att man kan ha smala, höga bröstimplantat som framifrån sett ser ovala ut med mer volym uppåt nyckelbenet än vad de fyller ut på bredden. På samma sätt så kan man välja implantat som är låga och breda med mer volym på bredden och mindre volym uppåt på bröstkorgen.",
     "anatomy_infotext" : "Patient opererad med anatomiska bröstimplantat, Mentor 375cc (CPG 322). Ålder 25 år, längd 167 cm och 53 kg."
+  },
+  "hittaHit": {
+    "title": "Hitta hit",
+    "heading": "Kungsholmen",
+    "address": "Sankt Göransgatan 126, mittemot Sankt Görans sjukhus",
+    "addressDetails": "Vår mottagning ligger på plan1 i Wonna Tower.",
+    "parking": "Parkering",
+    "parkingDetails": "Om du kommer med bil så finns ett fåtal parkeringsplatser direkt utanför. I övrigt hänvisar vi till parkeringen i anslutning till huvudentrén på S:t Görans sjukhus och på sjukhusområdet samt omkringliggande gator.",
+    "publicTransport": "Kollektivtrafik",
+    "publicTransportDetails": "Med kollektivtrafik når du vår mottagning i Wonna Tower med tunnelbanans blåa linje, uppgång Stadshagen eller grön linje Fridhemsplan. Om du tar buss nr 56, åk till hållplats S:t Görans sjukhus."
   },
   "altText": {
     "brostoperationerConsultation": "Dr Gribbe och en patient i konsultationssamtal",
