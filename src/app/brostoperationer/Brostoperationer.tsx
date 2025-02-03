@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useMessages, useTranslations } from 'next-intl'
 import { P } from '../components/typography/P'
 import { H1 } from '../components/typography/H1'
@@ -16,11 +17,13 @@ import ConsultationImage from '../../../public/images/brostoperation-konsultatio
 import DayOfSurgeryImage from '../../../public/images/brostoperationer-day-of-surgery.jpg'
 import SurgeryImage from '../../../public/images/brostoperationer-surgery.jpg'
 import PostSurgeryImage from '../../../public/images/brostoperationer-post-surgery.jpg'
-import Image from 'next/image'
+import { useAccordionItems } from './accordionData'
+import { ExpandableTextBox } from '../components/surfaces/ExpandableTextBox'
 
 const Brostoperationer = () => {
   const t = useTranslations()
   const messages = useMessages()
+  const [surgeryItems] = useAccordionItems()
   const beforeOperationKeys = Object.keys(messages.beforeOperation)
   const afterOperationKeys = Object.keys(messages.afterOperation)
   const aftercareKeys = Object.keys(messages.aftercare)
@@ -112,15 +115,20 @@ const Brostoperationer = () => {
                 className="max-h-svh object-cover object-center"
               />
               <SpaceContainer noPadding spaceVertically>
-                <H3>{t('brostoperationer.consultation.heading1')}</H3>
-                <P>{t('brostoperationer.consultation.text1')}</P>
-                <P>{t('brostoperationer.consultation.text2')}</P>
-                <P>{t('brostoperationer.consultation.text3')}</P>
-                <P>{t('brostoperationer.consultation.text4')}</P>
-                <P>{t('brostoperationer.consultation.text5')}</P>
-                <P>{t('brostoperationer.consultation.text6')}</P>
-                <P>{t('brostoperationer.consultation.text7')}</P>
-                <P>{t('brostoperationer.consultation.text8')}</P>
+                <ExpandableTextBox
+                  title={t('brostoperationer.consultation.heading1')}
+                  headingSize="H3"
+                  paragraphs={[
+                    t('brostoperationer.consultation.text1'),
+                    t('brostoperationer.consultation.text2'),
+                    t('brostoperationer.consultation.text3'),
+                    t('brostoperationer.consultation.text4'),
+                    t('brostoperationer.consultation.text5'),
+                    t('brostoperationer.consultation.text6'),
+                    t('brostoperationer.consultation.text7'),
+                    t('brostoperationer.consultation.text8')
+                  ]}
+                />
               </SpaceContainer>
             </Pillar>
           }
@@ -156,7 +164,6 @@ const Brostoperationer = () => {
             />
             <SpaceContainer noPadding spaceTop>
               <H3>{t('brostoperationer.dayOfSurgery.heading1')}</H3>
-              {/* <div className="lg:columns-2"> */}
               <P>{t('brostoperationer.dayOfSurgery.text1')}</P>
               <P>
                 {t.rich('brostoperationer.dayOfSurgery.text2', {
@@ -166,7 +173,6 @@ const Brostoperationer = () => {
                 })}
               </P>
               <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
-              {/* </div> */}
             </SpaceContainer>
           </Pillar>
         }
@@ -186,7 +192,7 @@ const Brostoperationer = () => {
             <SpaceContainer noPadding spaceTop>
               <H3>{t('brostoperationer.surgery.heading1')}</H3>
               <P>{t('brostoperationer.surgery.text1')}</P>
-              <P>{t('brostoperationer.surgery.text2')}</P>
+              <Accordion items={surgeryItems} />
             </SpaceContainer>
           </Pillar>
         }
@@ -248,28 +254,28 @@ const Brostoperationer = () => {
 
       {/* Återbesök efter 3-4 månader */}
 
-      <Pillar id="forberedelser">
-        <SpaceContainer spaceVertically>
+      <SpaceContainer>
+        <Pillar id="forberedelser" noPadding>
           <H2>{t('brostoperationer.beforeOperation')}</H2>
           <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
           <Accordion items={beforeOperationItems} />
-        </SpaceContainer>
 
-        <SpaceContainer spaceVertically>
-          <H2>{t('brostoperationer.afterOperation')}</H2>
-          <Accordion items={afterOperationItems} />
-        </SpaceContainer>
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{t('brostoperationer.afterOperation')}</H2>
+            <Accordion items={afterOperationItems} />
+          </SpaceContainer>
 
-        <SpaceContainer spaceVertically>
-          <H2>{t('brostoperationer.aftercare')}</H2>
-          <Accordion items={aftercareItems} />
-        </SpaceContainer>
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{t('brostoperationer.aftercare')}</H2>
+            <Accordion items={aftercareItems} />
+          </SpaceContainer>
 
-        <SpaceContainer spaceVertically>
-          <H2>{t('brostoperationer.afterFirstReturnVisit')}</H2>
-          <Accordion items={afterFirstReturnVisitItems} />
-        </SpaceContainer>
-      </Pillar>
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{t('brostoperationer.afterFirstReturnVisit')}</H2>
+            <Accordion items={afterFirstReturnVisitItems} />
+          </SpaceContainer>
+        </Pillar>
+      </SpaceContainer>
     </>
   )
 }
