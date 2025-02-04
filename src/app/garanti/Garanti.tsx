@@ -73,7 +73,7 @@ const Garanti = () => {
             <P white>{t('ourphilosophy.text1')}</P>
             <ol className="list-decimal space-y-6 pl-6 marker:text-lg marker:font-semibold marker:text-white">
               {philosophyPoints.map((point, index) => (
-                <li className="text-xl text-white" key={index}>
+                <li className="text-lg text-white" key={index}>
                   {point}
                 </li>
               ))}
