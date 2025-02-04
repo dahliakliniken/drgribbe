@@ -11,12 +11,10 @@ export const Hero = () => {
       <div className="absolute inset-0">
         <Image
           src={HeroImage}
-          alt="Hero Image"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+          className="h-full w-full object-cover object-center"
           priority
           placeholder="blur"
+          alt={t('altText.heroImage')}
         />
       </div>
       <div className="herogradient absolute inset-0"></div>
