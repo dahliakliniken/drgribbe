@@ -74,8 +74,8 @@ export const ExpandableTextBox = ({
         ))}
       </div>
       <Button
+        textButton
         inverted
-        small
         ariaExpanded={isExpanded}
         ariaControls="expandable-content"
         onClick={toggleExpand}
