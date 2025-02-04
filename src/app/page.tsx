@@ -15,6 +15,7 @@ import { Pillar } from './components/layout/Pillar'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { A } from './components/typography/A'
 import { Hero } from './components/surfaces/Hero'
+import { Testimonial } from './components/surfaces/Testimonial'
 
 const Page: React.FC = () => {
   const t = useTranslations()
@@ -37,37 +38,31 @@ const Page: React.FC = () => {
       <Image src={Consultation} alt={''} className="lg:hidden" />
       <SpaceContainer>
         <div className="m-auto xl:max-w-7xl">
-          <div className="flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch">
-            <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
-              <i>
-                {
-                  'Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
-                }
-              </i>
-            </blockquote>
-
-            <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
-              <i>
-                {
-                  'Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
-                }
-              </i>
-            </blockquote>
-
-            <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
-              <i>
-                {
-                  'Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
-                }
-              </i>
-            </blockquote>
+          <div className='flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch'>
+            <Testimonial
+                title='Alexandra'
+                content='Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
+                link='https://g.co/kgs/z36JbLX'
+            ></Testimonial>
+             <Testimonial
+                title='Maja'
+                content='Jag opererades av Örjan i slutet av sommaren och kunde inte vara nöjdare! På konsultationen tog sig Örjan tid och var väldigt noggrann så jag kände mig trygg i att han förstod mig...'
+                link='https://g.co/kgs/BniQsDi'
+            ></Testimonial>
+              <Testimonial
+                title='Regina'
+                content='Jag vill rekommendera er alla att välja Dr Örjan Gribbe och hans fantastiska team. Jag har aldrig känt mig så väl omhändertagen innan...'
+                link='https://g.co/kgs/uMa7AJa'
+            ></Testimonial>
           </div>
         </div>
       </SpaceContainer>
 
       <SpaceContainer noPadding>
         <Pillar>
+        <SpaceContainer>
           <H2 upperCase>{t('treatmentBox.title')}</H2>
+        </SpaceContainer>          
         </Pillar>
       </SpaceContainer>
 
@@ -79,15 +74,15 @@ const Page: React.FC = () => {
 
       <SpaceContainer noPadding spaceTop>
         <SimpleCard
-          bgColor={BgColors.Coral}
+          bgColor={BgColors.Beige}
           bgPosition="left"
           content={
             <>
-              <H2 upperCase white className="text-center">
+              <H2 upperCase className="text-center">
                 {t('common.freeConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
+                <A href="/boka" className="uppercase" buttonStyle inverted>
                   {t('common.bookNow')}
                 </A>
               </div>

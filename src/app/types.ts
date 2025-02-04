@@ -2,7 +2,8 @@ export enum BgColors {
   Coral = 'bg-coral',
   White = 'bg-white',
   Green = 'bg-green',
-  Grey = 'bg-grey'
+  Grey = 'bg-grey',
+  Beige = 'bg-beige'
 }
 
 export const BgPositions = {

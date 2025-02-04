@@ -24,7 +24,7 @@ export const SimpleCard = ({
   clickable,
   cardList
 }: CardProps) => {
-  const isWhite = bgColor === BgColors.White
+  const isWhite = (bgColor === BgColors.White || bgColor === BgColors.Beige)
 
   const bgSizeClass = cardList
     ? 'before:bg-200'
