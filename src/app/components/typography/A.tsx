@@ -47,7 +47,7 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
       'hover:underline underline underline-offset-3',
       {
         'text-white': white,
-        'text-black ': !white
+        'text-black hover:text-gold': !white
       }
     )
     const overlayClass =
