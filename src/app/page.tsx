@@ -14,31 +14,13 @@ import { BgColors } from './types'
 import { Pillar } from './components/layout/Pillar'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { A } from './components/typography/A'
+import { Hero } from './components/surfaces/Hero'
 
 const Page: React.FC = () => {
   const t = useTranslations()
   return (
     <>
-      <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">                     
-        <div className='w-full h-full herogradient'></div>
-        <div className="absolute bottom-24">
-          <A href="/boka" buttonStyle>
-            {t('common.bookConsultation')}
-          </A>
-        </div>
-      </section>
-
-      {/* <Card
-          bgColor={BgColors.Coral}
-          bgPosition="right"
-          image={
-            <Image src={Consultation} alt={''} className="hidden lg:block" />
-          }
-          title={<H2 white>{t('aboutBox.title')}</H2>}
-          paragraphs={[t('aboutBox.paragraph1'), t('aboutBox.paragraph2')]}
-          threeColumns
-        /> */}
-
+      <Hero />
       <SimpleCard
         bgColor={BgColors.White}
         bgPosition="right"
@@ -55,20 +37,32 @@ const Page: React.FC = () => {
       <Image src={Consultation} alt={''} className="lg:hidden" />
       <SpaceContainer>
         <div className="m-auto xl:max-w-7xl">
-          <div className='flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch'>
+          <div className="flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch">
             <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
-              <i>{"Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen..."}</i>
+              <i>
+                {
+                  'Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
+                }
+              </i>
             </blockquote>
 
             <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
-              <i>{"Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen..."}</i>
+              <i>
+                {
+                  'Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
+                }
+              </i>
             </blockquote>
 
             <blockquote className="testimonial w-[90%] flex-none sm:w-[60%] md:w-[40%] xl:w-auto">
-              <i>{"Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen..."}</i>
+              <i>
+                {
+                  'Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
+                }
+              </i>
             </blockquote>
           </div>
-        </div>        
+        </div>
       </SpaceContainer>
 
       <SpaceContainer noPadding>
@@ -153,37 +147,6 @@ const Page: React.FC = () => {
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
         />
       </Pillar>
-
-      {/* <SimpleCard
-            bgColor={BgColors.Green}
-            bgPosition="left"
-            content={
-              <Pillar>
-                <H2 white>{t('profileCard.title')}</H2>
-                <div className="lg:flex">
-                <div>
-                  <P white className="lg:hidden">
-                    {t('profileCard.imageText')}
-                  </P>
-                  <Image
-                    src={Doctor}
-                    alt={t('profileCard.imageAlt')}
-                    className="mx-auto my-4 rounded-full lg:mr-9"
-                    height={280}
-                  />
-                  <P white className="hidden lg:block">
-                    {t('profileCard.imageText')}
-                  </P>
-                </div>
-                <div>
-                  <P white>{t('profileCard.paragraph1')}</P>
-                  <P white>{t('profileCard.paragraph2')}</P>
-                  <P white>{t('profileCard.paragraph3')}</P>
-                </div>
-              </div>  
-              </Pillar> 
-            }
-          /> */}
 
       <SimpleCard
         bgColor={BgColors.Green}
