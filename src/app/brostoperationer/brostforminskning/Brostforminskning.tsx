@@ -50,6 +50,14 @@ const Brostforminskning = () => {
 
             <H3 white>{t('technique.surgery.heading1')}</H3>
             <P white>{t('technique.surgery.text1')}</P>
+            <P white>{t('technique.surgery.text2')}</P>
+            <P white>{t('technique.surgery.text3')}</P>
+            <P white>{t('technique.surgery.text4')}</P>
+            <P white>{t('technique.surgery.text5')}</P>
+            <P white>{t('technique.surgery.text6')}</P>
+            <P white>{t('technique.surgery.text7')}</P>
+            <P white>{t('technique.surgery.text8')}</P>
+            <P white>{t('technique.surgery.text9')}</P>
           </Pillar>
         }
       />
