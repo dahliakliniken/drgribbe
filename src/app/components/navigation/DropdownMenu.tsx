@@ -170,7 +170,7 @@ export const DropdownMenu: React.FC = () => {
           icon={<ChevronIcon />}
           label={t('common.closeMenu')}
         />
-        <div className="lg:relative lg:flex-1 lg:bg-custom-gradient">
+        <div className="lg:bg-custom-gradient-desktop lg:relative lg:flex-1">
           <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace lg:ml-gapSpaceL">
             {renderLinks(mainLinks)}
           </ul>

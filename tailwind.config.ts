@@ -28,7 +28,8 @@ const config: Config = {
       backgroundImage: {
         'card-pattern': "url('/images/dalia_icon_white.svg')",
         'card-pattern-light': "url('/images/dalia_icon_beige.svg')",
-        'custom-gradient': `linear-gradient(90deg, rgba(213,164,168,1) 0%, rgba(213,164,168,1) 10%, rgba(234,230,227,1) 100%)`
+        'custom-gradient': `linear-gradient(180deg, rgba(234,215,212,1) 0%, rgba(234,230,227,1) 80%)`,
+        'custom-gradient-desktop': `linear-gradient(180deg, rgba(234,230,227,1) 0%, rgba(234,215,212,1) 80%)`
       },
       backgroundSize: {
         '50': '50%',
