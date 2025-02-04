@@ -1,3 +1,3 @@
 export const Li = ({ children }: { children: React.ReactNode }) => {
-  return <li className="text-xl">{children}</li>
+  return <li className="text-lg">{children}</li>
 }

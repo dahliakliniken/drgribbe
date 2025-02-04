@@ -34,7 +34,7 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
       'transition-colors duration-300 font-josefin-sans font-light leading-tight tracking-[0.06em]',
       {
         'text-base': small,
-        'text-xl': !small
+        'text-lg': !small
       }
     )
     const buttonClass = classNames('rounded-xl bg-transparent', {
