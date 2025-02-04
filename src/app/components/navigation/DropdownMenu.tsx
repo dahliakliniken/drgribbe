@@ -145,7 +145,7 @@ export const DropdownMenu: React.FC = () => {
         )}
         aria-hidden={!isOpen}
       >
-        <div className="lg:bg-custom-dark hidden lg:flex lg:w-2/3">
+        <div className="lg:bg-custom-dark hidden lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-110 lg:before:bg-[20%_20%] lg:before:opacity-5">
           <div className="flex flex-col p-gapSpace text-white">
             <span>{t('contact.contactUs')}</span>
             <span>
@@ -170,7 +170,7 @@ export const DropdownMenu: React.FC = () => {
           icon={<ChevronIcon />}
           label={t('common.closeMenu')}
         />
-        <div className="lg:relative lg:flex-1 lg:bg-custom-gradient lg:before:pointer-events-none lg:before:absolute lg:before:left-0 lg:before:top-0 lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-200 lg:before:bg-[20%_20%] lg:before:opacity-20">
+        <div className="lg:relative lg:flex-1 lg:bg-custom-gradient">
           <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace lg:ml-gapSpaceL">
             {renderLinks(mainLinks)}
           </ul>
