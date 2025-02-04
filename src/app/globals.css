@@ -78,3 +78,20 @@ a:focus {
   display: block;
   color: #9C874C;
 }
+
+@keyframes page-bounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-15px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-5px); }
+}
+.animate-page-bounce {
+  animation: page-bounce 0.8s ease-in-out;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
