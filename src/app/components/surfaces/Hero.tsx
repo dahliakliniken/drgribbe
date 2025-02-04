@@ -14,7 +14,7 @@ export const Hero = () => {
 
   const scrollDown = () => {
     window.scrollTo({
-      top: window.innerHeight,
+      top: window.innerHeight - 80,
       behavior: 'smooth'
     })
   }
