@@ -145,7 +145,7 @@ export const DropdownMenu: React.FC = () => {
         )}
         aria-hidden={!isOpen}
       >
-        <div className="lg:bg-custom-dark hidden lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-110 lg:before:bg-[20%_20%] lg:before:opacity-5">
+        <div className="lg:bg-custom-dark hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-110 lg:before:bg-[20%_20%] lg:before:opacity-5">
           <div className="flex flex-col p-gapSpace text-white">
             <span>{t('contact.contactUs')}</span>
             <span>
