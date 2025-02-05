@@ -24,6 +24,7 @@ const HudOchInjektioner = () => {
           <Pillar>
             <H1 white>{t('hudochinjektioner.title')}</H1>
             <P white>{t('hudochinjektioner.text1')}</P>
+            <P white>{t('treatmentBox.treatments.muscleRelaxation.paragraph2')}</P>
           </Pillar>
         }
       />

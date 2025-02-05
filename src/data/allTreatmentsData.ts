@@ -12,7 +12,7 @@ export const allTreatmentsData = [
     image: Enlargement,
     paragraphs: [
       'treatmentBox.treatments.breastEnlargement.paragraph1',
-      'treatmentBox.treatments.breastEnlargement.paragraph2',
+      //  'treatmentBox.treatments.breastEnlargement.paragraph2',
       'treatmentBox.treatments.breastEnlargement.paragraph3'
     ],
     ariaLabel: 'treatmentBox.treatments.breastEnlargement.ariaLabel',
@@ -26,7 +26,7 @@ export const allTreatmentsData = [
     image: Reduction,
     paragraphs: [
       'treatmentBox.treatments.breastReduction.paragraph1',
-      'treatmentBox.treatments.breastReduction.paragraph2',
+      //  'treatmentBox.treatments.breastReduction.paragraph2',
       'treatmentBox.treatments.breastReduction.paragraph3'
     ],
     ariaLabel: 'treatmentBox.treatments.breastReduction.ariaLabel',
@@ -40,7 +40,7 @@ export const allTreatmentsData = [
     image: Lift,
     paragraphs: [
       'treatmentBox.treatments.breastLift.paragraph1',
-      'treatmentBox.treatments.breastLift.paragraph2',
+      //  'treatmentBox.treatments.breastLift.paragraph2',
       'treatmentBox.treatments.breastLift.paragraph3'
     ],
     ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
@@ -54,7 +54,7 @@ export const allTreatmentsData = [
     image: MuscleRelaxation,
     paragraphs: [
       'treatmentBox.treatments.muscleRelaxation.paragraph1',
-      'treatmentBox.treatments.muscleRelaxation.paragraph2',
+      //  'treatmentBox.treatments.muscleRelaxation.paragraph2',
       'treatmentBox.treatments.muscleRelaxation.paragraph3'
     ],
     ariaLabel: 'treatmentBox.treatments.muscleRelaxation.ariaLabel',
