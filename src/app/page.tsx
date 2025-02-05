@@ -16,6 +16,7 @@ import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { A } from './components/typography/A'
 import { Hero } from './components/surfaces/Hero'
 import { Testimonial } from './components/surfaces/Testimonial'
+import { H1 } from './components/typography/H1'
 
 const Page: React.FC = () => {
   const t = useTranslations()
@@ -27,8 +28,9 @@ const Page: React.FC = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <SpaceContainer>
-              <H2>{t('aboutBox.title')}</H2>
+            <SpaceContainer>              
+              <H1>{t('aboutBox.title')}</H1>
+              <P>{'Välkommen till en klinik helt specialiserad på estetiska bröstoperationer'}</P>
               <P>{t('aboutBox.paragraph1')}</P>
               <P>{t('aboutBox.paragraph2')}</P>
             </SpaceContainer>
@@ -99,16 +101,17 @@ const Page: React.FC = () => {
         content={
           <Pillar>
             <Image src={Consultation} alt={''} className="hidden lg:block" />
+            <span className='imagetext'>{'Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.'}</span>
             <SpaceContainer noPadding spaceTop>
               <H2>{t('aboutClinic.title')}</H2>
               <P>{t('aboutClinic.paragraph1')}</P>
-              <Image
+              {/*<Image
                 src={SfepLogo}
                 alt={t('altText.sfepLogo')}
                 height={150}
                 className="m-auto mb-4 text-center"
                 // lg:float-right lg:ml-4
-              />
+              />*/}
               <P>{t('aboutClinic.paragraph2')}</P>
 
               <H3>{t('aboutClinic.ourphilosophy')}</H3>
@@ -142,7 +145,7 @@ const Page: React.FC = () => {
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
         />
       </Pillar>
-
+{/* 
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="left"
@@ -170,7 +173,7 @@ const Page: React.FC = () => {
           </div>
         }
         title={<H2 white>{t('profileCard.title')}</H2>}
-      />
+      /> */}
     </>
   )
 }
