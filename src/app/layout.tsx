@@ -22,7 +22,7 @@ export default async function RootLayout({
   const messages = await getMessages()
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="lg:bg-beige">
       <head>
         <link rel="preload" href="/images/hero-image.jpg" as="image" />
       </head>

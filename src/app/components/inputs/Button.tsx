@@ -8,6 +8,7 @@ type ButtonProps = {
   className?: string
   ariaExpanded?: boolean
   ariaControls?: string
+  textButton?: boolean
   children: React.ReactNode
 }
 
@@ -19,6 +20,7 @@ export const Button = ({
   className,
   ariaExpanded,
   ariaControls,
+  textButton,
   children
 }: ButtonProps) => {
   return (
@@ -31,12 +33,12 @@ export const Button = ({
         'flex items-center gap-1 rounded-xl bg-transparent',
         {
           'w-full': fullWidth,
-          'border-2 p-2': small,
-          'border-4 px-16 py-5 text-lg': !small,
-          'border-black text-black hover:border-slate-500 hover:text-slate-500':
-            inverted,
+          'border-2 p-2': small && !textButton,
+          'border-4 px-16 py-5 text-lg': !small && !textButton,
+          'hover:border-gold hover:text-gold border-black text-black': inverted,
           'border-white text-white hover:border-beige hover:text-beige':
-            !inverted
+            !inverted,
+          'border-none px-0 py-0 text-lg hover:underline': textButton
         }
       )}
     >

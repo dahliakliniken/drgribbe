@@ -4,15 +4,14 @@ import { Fragment } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-import { SpaceContainer } from '../layout/SpaceContainer'
 
 export const Breadcrumbs = () => {
   const t = useTranslations()
   const paths = usePathname()
   const pathNames = paths.split('/').filter((path) => path)
   const separator = <span>{' / '}</span>
-  const activeClass = 'text-coral mx-2 font-bold'
-  const listClasses = 'hover:underline mx-2'
+  const activeClass = 'mx-2 text-gold'
+  const listClasses = 'hover:underline hover:text-gold mx-2'
 
   /* Don't show breadcrumbs on the home page */
   if (paths === '/') {
@@ -20,7 +19,7 @@ export const Breadcrumbs = () => {
   }
 
   return (
-    <SpaceContainer>
+    <div className="w-full px-gapSpace lg:bg-beige">
       <nav className="py-2">
         <ul className="flex">
           <li className={listClasses}>
@@ -48,6 +47,6 @@ export const Breadcrumbs = () => {
           })}
         </ul>
       </nav>
-    </SpaceContainer>
+    </div>
   )
 }

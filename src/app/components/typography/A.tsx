@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import Link from 'next/link'
 import { forwardRef } from 'react'
 
@@ -29,12 +30,33 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
     },
     ref
   ) => {
-    const baseClass = `transition-colors duration-300 font-josefin-sans font-light leading-tight tracking-[0.06em] ${small ? 'text-base' : 'text-xl'}`
-    const buttonClass = `rounded-xl ${inverted ? 'border-black text-black hover:border-gold hover:text-gold' : 'border-white text-white hover:border-beige hover:text-beige'} bg-transparent ${small ? 'border-2 p-2' : 'border-4 px-16 py-5'}`
-    const linkClass = `hover:underline underline underline-offset-3 ${white ? 'text-white' : 'text-black'}`
+    const baseClass = classNames(
+      'transition-colors duration-300 font-josefin-sans font-light leading-tight tracking-[0.06em]',
+      {
+        'text-base': small,
+        'text-lg': !small
+      }
+    )
+    const buttonClass = classNames('rounded-xl bg-transparent', {
+      'border-black text-black hover:border-gold hover:text-gold': inverted,
+      'border-white text-white hover:border-beige hover:text-beige': !inverted,
+      'border-2 p-2': small,
+      'border-4 px-16 py-5': !small
+    })
+    const linkClass = classNames(
+      'hover:underline underline underline-offset-3',
+      {
+        'text-white': white,
+        'text-black hover:text-gold': !white
+      }
+    )
     const overlayClass =
       'after:content-[""] after:block after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0'
-    const combinedClass = `${baseClass} ${className} ${buttonStyle ? buttonClass : linkClass} ${overlay ? overlayClass : ''}`
+    const combinedClass = classNames(baseClass, className, {
+      [buttonClass]: buttonStyle,
+      [linkClass]: !buttonStyle,
+      [overlayClass]: overlay
+    })
 
     return (
       <Link

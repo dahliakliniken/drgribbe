@@ -40,21 +40,21 @@ const Page: React.FC = () => {
       <Image src={Consultation} alt={''} className="lg:hidden" />
       <SpaceContainer>
         <div className="m-auto xl:max-w-7xl">
-          <div className='flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch'>
+          <div className="flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch">
             <Testimonial
-                title='Alexandra'
-                content='Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...'
-                link='https://g.co/kgs/z36JbLX'
+              title="Alexandra"
+              content="Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen..."
+              link="https://g.co/kgs/z36JbLX"
             ></Testimonial>
-             <Testimonial
-                title='Maja'
-                content='Jag opererades av Örjan i slutet av sommaren och kunde inte vara nöjdare! På konsultationen tog sig Örjan tid och var väldigt noggrann så jag kände mig trygg i att han förstod mig...'
-                link='https://g.co/kgs/BniQsDi'
+            <Testimonial
+              title="Maja"
+              content="Jag opererades av Örjan i slutet av sommaren och kunde inte vara nöjdare! På konsultationen tog sig Örjan tid och var väldigt noggrann så jag kände mig trygg i att han förstod mig..."
+              link="https://g.co/kgs/BniQsDi"
             ></Testimonial>
-              <Testimonial
-                title='Regina'
-                content='Jag vill rekommendera er alla att välja Dr Örjan Gribbe och hans fantastiska team. Jag har aldrig känt mig så väl omhändertagen innan...'
-                link='https://g.co/kgs/uMa7AJa'
+            <Testimonial
+              title="Regina"
+              content="Jag vill rekommendera er alla att välja Dr Örjan Gribbe och hans fantastiska team. Jag har aldrig känt mig så väl omhändertagen innan..."
+              link="https://g.co/kgs/uMa7AJa"
             ></Testimonial>
           </div>
         </div>
@@ -62,9 +62,9 @@ const Page: React.FC = () => {
 
       <SpaceContainer noPadding>
         <Pillar>
-        <SpaceContainer>
-          <H2 upperCase>{t('treatmentBox.title')}</H2>
-        </SpaceContainer>          
+          <SpaceContainer>
+            <H2 upperCase>{t('treatmentBox.title')}</H2>
+          </SpaceContainer>
         </Pillar>
       </SpaceContainer>
 

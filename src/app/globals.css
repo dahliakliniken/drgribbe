@@ -32,9 +32,9 @@ strong {
   font-weight: 700;
 }
 
-button:focus,
-input:focus,
-a:focus {
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
   outline: 2px solid #9C874C;
   border-radius: 4px;
   outline-offset: 4px;
@@ -83,4 +83,20 @@ a:focus {
   margin-top: 1rem;
   display: block;
   font-style: italic;
+}
+@keyframes page-bounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-15px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-5px); }
+}
+.animate-page-bounce {
+  animation: page-bounce 0.8s ease-in-out;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce {
+  animation: bounce 1.5s infinite;
 }
