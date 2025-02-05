@@ -102,6 +102,7 @@ const Page: React.FC = () => {
           <Pillar>
             <Image src={Consultation} alt={''} className="hidden lg:block" />
             <span className='imagetext'>{'Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.'}</span>
+            <span className='imagetext'>{t('profileCard.paragraph1')}</span>
             <SpaceContainer noPadding spaceTop>
               <H2>{t('aboutClinic.title')}</H2>
               <P>{t('aboutClinic.paragraph1')}</P>
