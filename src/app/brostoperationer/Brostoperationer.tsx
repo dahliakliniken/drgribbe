@@ -181,7 +181,7 @@ const Brostoperationer = () => {
       {/* NARKOS&OPERATION */}
       <SimpleCard
         bgColor={BgColors.White}
-        bgPosition="right"
+        bgPosition="left"
         content={
           <Pillar>
             <Image
@@ -210,9 +210,21 @@ const Brostoperationer = () => {
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
-              <H3>{t('brostoperationer.postSurgery.heading1')}</H3>
-              <P>{t('brostoperationer.postSurgery.text1')}</P>
-              <P>{t('brostoperationer.postSurgery.text2')}</P>
+              <ExpandableTextBox
+                title={t('brostoperationer.postSurgery.heading1')}
+                headingSize="H3"
+                paragraphs={[
+                  t('brostoperationer.postSurgery.text1'),
+                  t('brostoperationer.postSurgery.text2'),
+                  t('brostoperationer.postSurgery.text3'),
+                  t('brostoperationer.postSurgery.text4'),
+                  t('brostoperationer.postSurgery.text5'),
+                  t('brostoperationer.postSurgery.text6'),
+                  t('brostoperationer.postSurgery.text7'),
+                  t('brostoperationer.postSurgery.text8'),
+                  t('brostoperationer.postSurgery.text9')
+                ]}
+              />
             </SpaceContainer>
           </Pillar>
         }

@@ -2,8 +2,6 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
 import WaitingRoom from '../../public/images/waiting-room.jpg'
-import Doctor from '../../public/images/doctor.jpg'
-import SfepLogo from '../../public/images/sfep-logo.svg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
 import { H3 } from './components/typography/H3'
@@ -28,9 +26,13 @@ const Page: React.FC = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <SpaceContainer>              
+            <SpaceContainer>
               <H1>{t('aboutBox.title')}</H1>
-              <P>{'Välkommen till en klinik helt specialiserad på estetiska bröstoperationer'}</P>
+              <P>
+                {
+                  'Välkommen till en klinik helt specialiserad på estetiska bröstoperationer'
+                }
+              </P>
               <P>{t('aboutBox.paragraph1')}</P>
               <P>{t('aboutBox.paragraph2')}</P>
             </SpaceContainer>
@@ -77,7 +79,7 @@ const Page: React.FC = () => {
       <SpaceContainer noPadding spaceTop>
         <SimpleCard
           bgColor={BgColors.Beige}
-          bgPosition="left"
+          className="before:bg-[50%_30%]"
           content={
             <>
               <H2 upperCase className="text-center">
@@ -101,8 +103,8 @@ const Page: React.FC = () => {
         content={
           <Pillar>
             <Image src={Consultation} alt={''} className="hidden lg:block" />
-            <span className='imagetext'>{'Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.'}</span>
-            <span className='imagetext'>{t('profileCard.paragraph1')}</span>
+            <span className="imagetext">{t('profileCard.imageText')}</span>
+            <span className="imagetext">{t('profileCard.paragraph1')}</span>
             <SpaceContainer noPadding spaceTop>
               <H2>{t('aboutClinic.title')}</H2>
               <P>{t('aboutClinic.paragraph1')}</P>
@@ -146,7 +148,7 @@ const Page: React.FC = () => {
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
         />
       </Pillar>
-{/* 
+      {/* 
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="left"

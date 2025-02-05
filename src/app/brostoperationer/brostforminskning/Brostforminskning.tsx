@@ -35,6 +35,10 @@ const Brostforminskning = () => {
 
             <H2>{t('consultation.heading1')}</H2>
             <P>{t('consultation.text1')}</P>
+            <P>{t('consultation.text2')}</P>
+            <P>{t('consultation.text3')}</P>
+            <P>{t('consultation.text4')}</P>
+            <P>{t('consultation.text5')}</P>
           </Pillar>
         }
       />
