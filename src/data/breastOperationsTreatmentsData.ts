@@ -12,7 +12,7 @@ export const breastOperationsTreatmentsData = [
     image: Enlargement,
     paragraphs: [
       'treatmentBox.treatments.breastEnlargement.paragraph1',
-      'treatmentBox.treatments.breastEnlargement.paragraph2',
+      // 'treatmentBox.treatments.breastEnlargement.paragraph2',
       'treatmentBox.treatments.breastEnlargement.paragraph3'
     ],
     ariaLabel: 'treatmentBox.treatments.breastEnlargement.ariaLabel',
@@ -26,7 +26,7 @@ export const breastOperationsTreatmentsData = [
     image: Reduction,
     paragraphs: [
       'treatmentBox.treatments.breastReduction.paragraph1',
-      'treatmentBox.treatments.breastReduction.paragraph2',
+      // 'treatmentBox.treatments.breastReduction.paragraph2',
       'treatmentBox.treatments.breastReduction.paragraph3'
     ],
     ariaLabel: 'treatmentBox.treatments.breastReduction.ariaLabel',
@@ -40,7 +40,7 @@ export const breastOperationsTreatmentsData = [
     image: Lift,
     paragraphs: [
       'treatmentBox.treatments.breastLift.paragraph1',
-      'treatmentBox.treatments.breastLift.paragraph2',
+      // 'treatmentBox.treatments.breastLift.paragraph2',
       'treatmentBox.treatments.breastLift.paragraph3'
     ],
     ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
@@ -53,8 +53,8 @@ export const breastOperationsTreatmentsData = [
     title: 'treatmentBox.treatments.beforeAndAfter.title',
     image: MuscleRelaxation,
     paragraphs: [
-      'treatmentBox.treatments.beforeAndAfter.paragraph1',
-      'treatmentBox.treatments.beforeAndAfter.paragraph2'
+      'treatmentBox.treatments.beforeAndAfter.paragraph1'
+      // 'treatmentBox.treatments.beforeAndAfter.paragraph2'
     ],
     ariaLabel: 'treatmentBox.treatments.beforeAndAfter.ariaLabel',
     linkHref: '/brostoperationer/fore-och-efter',
