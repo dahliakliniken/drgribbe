@@ -36,7 +36,7 @@ export const HeaderWithFooter = () => {
 
       {/* Expanding Footer with contact information */}
       {isAtBottom && (
-        <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3">
+        <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3 lg:pr-16">
           <div className="flex flex-col text-center text-sm">
             <span>{t('contact.contactUs')}</span>
             <span>

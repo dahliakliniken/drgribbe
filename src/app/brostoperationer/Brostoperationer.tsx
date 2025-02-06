@@ -266,8 +266,8 @@ const Brostoperationer = () => {
 
       {/* Återbesök efter 3-4 månader */}
 
-      <SpaceContainer>
-        <Pillar id="forberedelser" noPadding>
+      <SpaceContainer id="forberedelser">
+        <Pillar noPadding>
           <H2>{t('brostoperationer.beforeOperation')}</H2>
           <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
           <Accordion items={beforeOperationItems} />
