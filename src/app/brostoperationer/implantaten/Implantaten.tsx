@@ -46,36 +46,52 @@ const Implantaten = () => {
             alt={t('altText.brostoperationerDayOfSurgery')}
             className="max-h-svh object-cover object-center"
           />
-          <SpaceContainer noPadding spaceVertically>
-            <P>{t('implantaten.text2')}</P>
-          </SpaceContainer>
+        </Pillar>
 
-          <Accordion items={accordion1Items} />
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="left-top"
+          content={
+            <Pillar>
+              <P>{t('implantaten.text2')}</P>
+              <Accordion items={accordion1Items} />
+            </Pillar>
+          }
+        />
 
-          <SpaceContainer noPadding spaceVertically>
-            <P>
-              {t.rich('implantaten.readMore', {
-                link: (chunks) => (
-                  <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
-                ),
-                link2: (chunks) => (
-                  <AnchorLink href="#anatomiska-implantat">{chunks}</AnchorLink>
-                )
-              })}
-            </P>
-            <P>{t('implantaten.text3')}</P>
-          </SpaceContainer>
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="right"
+          content={
+            <Pillar>
+              <P>
+                {t.rich('implantaten.readMore', {
+                  link: (chunks) => (
+                    <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
+                  ),
+                  link2: (chunks) => (
+                    <AnchorLink href="#anatomiska-implantat">
+                      {chunks}
+                    </AnchorLink>
+                  )
+                })}
+              </P>
+              <P>{t('implantaten.text3')}</P>
 
-          <SpaceContainer noPadding spaceTop>
-            <H2>{t('implantaten.jelly')}</H2>
-            <Accordion items={accordion2Items} />
-          </SpaceContainer>
+              <SpaceContainer noPadding spaceTop>
+                <H2>{t('implantaten.jelly')}</H2>
+                <Accordion items={accordion2Items} />
+              </SpaceContainer>
 
-          <SpaceContainer noPadding spaceTop id="runda-implantat">
-            <H2>{t('implantaten.roundImplants')}</H2>
-            <Accordion items={accordion3Items} />
-          </SpaceContainer>
+              <SpaceContainer noPadding spaceTop id="runda-implantat">
+                <H2>{t('implantaten.roundImplants')}</H2>
+                <Accordion items={accordion3Items} />
+              </SpaceContainer>
+            </Pillar>
+          }
+        />
 
+        <Pillar>
           <div className="relative">
             <div className="absolute top-1/4 w-full text-center">
               {'Ett runt och ett anatomiskt implantat'}
@@ -86,32 +102,40 @@ const Implantaten = () => {
               className="max-h-svh object-cover object-center"
             />
           </div>
-
-          <SpaceContainer noPadding spaceTop id="anatomiska-implantat">
-            <H2>{t('implantaten.anatomic')}</H2>
-            <Accordion items={accordion4Items} />
-          </SpaceContainer>
-
-          <SpaceContainer noPadding spaceTop>
-            <H2>{t('implantaten.ourImplants')}</H2>
-            <H3>{t('implantaten.motiva.heading')}</H3>
-            <P>{t('implantaten.motiva.text1')}</P>
-            <Accordion items={accordion5Items} />
-          </SpaceContainer>
-
-          <SpaceContainer noPadding spaceTop>
-            <H3>{t('implantaten.mentor.heading')}</H3>
-            <P>{t('implantaten.mentor.text1')}</P>
-            <P>{t('implantaten.mentor.text2')}</P>
-            <Accordion items={accordion6Items} />
-          </SpaceContainer>
-
-          <SpaceContainer noPadding spaceTop>
-            <H3>{t('implantaten.polytech.heading')}</H3>
-            <P>{t('implantaten.polytech.text1')}</P>
-            <Accordion items={accordion7Items} />
-          </SpaceContainer>
         </Pillar>
+
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="left"
+          content={
+            <Pillar>
+              <SpaceContainer noPadding spaceTop id="anatomiska-implantat">
+                <H2>{t('implantaten.anatomic')}</H2>
+                <Accordion items={accordion4Items} />
+              </SpaceContainer>
+
+              <SpaceContainer noPadding spaceTop>
+                <H2>{t('implantaten.ourImplants')}</H2>
+                <H3>{t('implantaten.motiva.heading')}</H3>
+                <P>{t('implantaten.motiva.text1')}</P>
+                <Accordion items={accordion5Items} />
+              </SpaceContainer>
+
+              <SpaceContainer noPadding spaceTop>
+                <H3>{t('implantaten.mentor.heading')}</H3>
+                <P>{t('implantaten.mentor.text1')}</P>
+                <P>{t('implantaten.mentor.text2')}</P>
+                <Accordion items={accordion6Items} />
+              </SpaceContainer>
+
+              <SpaceContainer noPadding spaceTop>
+                <H3>{t('implantaten.polytech.heading')}</H3>
+                <P>{t('implantaten.polytech.text1')}</P>
+                <Accordion items={accordion7Items} />
+              </SpaceContainer>
+            </Pillar>
+          }
+        />
       </SpaceContainer>
     </>
   )

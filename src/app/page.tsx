@@ -148,6 +148,29 @@ const Page: React.FC = () => {
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
         />
       </Pillar>
+      <SpaceContainer noPadding>
+        <SimpleCard
+          bgColor={BgColors.Beige}
+          className="before:bg-[30%_30%] lg:before:bg-200"
+          content={
+            <Pillar>
+              <H2 className="text-center">
+                {'Vill du veta mer om våra behandlingar?'}
+              </H2>
+              <P className="text-center">
+                {
+                  'Boka en kostnadsfri konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                }
+              </P>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle inverted>
+                  {t('common.bookNow')}
+                </A>
+              </div>
+            </Pillar>
+          }
+        />
+      </SpaceContainer>
       {/* 
       <SimpleCard
         bgColor={BgColors.Green}

@@ -18,7 +18,7 @@ const FragorOchSvar = () => {
           <H1>{t('title')}</H1>
           <P>{t('introduction')}</P>
           <SpaceContainer noPadding spaceVertically>
-            <Accordion items={faqItems} />
+            <Accordion outLine items={faqItems} />
           </SpaceContainer>
         </SpaceContainer>
       </Pillar>

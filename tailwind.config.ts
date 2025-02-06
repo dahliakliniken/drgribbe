@@ -16,6 +16,7 @@ const config: Config = {
         coral: '#B06D74',
         green: '#0C412F',
         beige: '#EAE6E3',
+        lightBeige: '#F5F3F2',
         grey: 'darkgrey',
         gold: '#9C874C'
       },
