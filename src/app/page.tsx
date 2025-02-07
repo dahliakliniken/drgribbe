@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
 import WaitingRoom from '../../public/images/waiting-room.jpg'
+import belowheadingImage from '../../public/images/_N3A9899.jpg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
 import { H3 } from './components/typography/H3'
@@ -107,7 +108,16 @@ const Page: React.FC = () => {
             <span className="imagetext">{t('profileCard.paragraph1')}</span>
             <SpaceContainer noPadding spaceTop>
               <H2>{t('aboutClinic.title')}</H2>
-              <P>{t('aboutClinic.paragraph1')}</P>
+              <P>{t('aboutClinic.paragraph1')}</P>              
+              <SpaceContainer noPadding spaceVertically>
+                <Image
+                  src={belowheadingImage}
+                  alt={t('altText.brostoperationerConsultation')}
+                  className="max-h-svh object-cover object-center"
+                />
+              </SpaceContainer>
+              
+
               {/*<Image
                 src={SfepLogo}
                 alt={t('altText.sfepLogo')}

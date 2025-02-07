@@ -13,10 +13,11 @@ import { BgColors } from '../types'
 import { H3 } from '../components/typography/H3'
 import { AnchorLink } from '../components/typography/AnchorLink'
 import { A } from '../components/typography/A'
-import ConsultationImage from '../../../public/images/brostoperation-konsultation.jpg'
-import DayOfSurgeryImage from '../../../public/images/brostoperationer-day-of-surgery.jpg'
-import SurgeryImage from '../../../public/images/brostoperationer-surgery.jpg'
+import ConsultationImage from '../../../public/images/_N3A7347.jpg'
+import DayOfSurgeryImage from '../../../public/images/_N3A0187.jpg'
+import SurgeryImage from '../../../public/images/_N3A0184.jpg'
 import PostSurgeryImage from '../../../public/images/brostoperationer-post-surgery.jpg'
+// import belowheadingImage from '../../../public/images/_N3A9899.jpg'
 import { useAccordionItems } from './accordionData'
 import { ExpandableTextBox } from '../components/surfaces/ExpandableTextBox'
 
@@ -95,6 +96,15 @@ const Brostoperationer = () => {
           </Pillar>
         }
       />
+      {/* <SpaceContainer>
+        <Pillar>
+          <Image
+            src={belowheadingImage}
+            alt={t('altText.brostoperationerConsultation')}
+            className="max-h-svh object-cover object-center"
+          />
+        </Pillar>
+      </SpaceContainer> */}
 
       <SpaceContainer spaceTop>
         <div className="m-auto xl:max-w-7xl">

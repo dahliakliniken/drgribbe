@@ -7,7 +7,7 @@ import { BgColors } from '../types'
 import { Pillar } from '../components/layout/Pillar'
 import { H2 } from '../components/typography/H2'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
-import Botoxface from '../../../public/images/botox-1000px.png'
+import Botoxface from '../../../public/images/ansiktsmuskler.jpeg'
 import { Accordion } from '../components/surfaces/Accordion'
 import { useAccordionItems } from './accordionData'
 
