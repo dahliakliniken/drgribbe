@@ -6,6 +6,14 @@ import { BgColors } from '../types'
 import { Pillar } from '../components/layout/Pillar'
 import { P } from '../components/typography/P'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
+import selda from '../../../public/images/selda.png'
+import najwa from '../../../public/images/Najwa.png'
+import anna from '../../../public/images/Anna.png'
+import orjan from '../../../public/images/orjan.png'
+import kristina from '../../../public/images/kristina.png'
+import johanna from '../../../public/images/Johanna.png'
+import malin from '../../../public/images/Malin.png'
+import Image from 'next/image'
 
 const VarPersonal = () => {
   const t = useTranslations('varPersonal')
@@ -13,42 +21,50 @@ const VarPersonal = () => {
     {
       id: crypto.randomUUID(),
       name: 'Örjan Gribbe',
-      titles: ['Leg läkare', 'Medicine doktor', 'Specialist i plastikkirurgi']
+      titles: ['Leg läkare', 'Medicine doktor', 'Specialist i plastikkirurgi'],
+      image: orjan
     },
     {
       id: crypto.randomUUID(),
       name: 'Kristina',
       titles: ['Deltid i reception och omvårdnad på operation']
+      
     },
     {
       id: crypto.randomUUID(),
       name: 'Najwa Al-Ibrahim',
-      titles: ['Narkosläkare']
+      titles: ['Narkosläkare'],
+      image: najwa
     },
     {
       id: crypto.randomUUID(),
       name: 'Karin Björkman',
       titles: ['Narkosläkare']
+
     },
     {
       id: crypto.randomUUID(),
       name: 'Johanna Berg',
-      titles: ['Operationssjuksköterska']
+      titles: ['Operationssjuksköterska'],
+      image: johanna
     },
     {
       id: crypto.randomUUID(),
       name: 'Malin Bosson',
-      titles: ['Operationssjuksköterska']
+      titles: ['Operationssjuksköterska'],
+      image: malin
     },
     {
       id: crypto.randomUUID(),
       name: 'Anna Berggren',
-      titles: ['Narkossjuksköterska']
+      titles: ['Narkossjuksköterska'],
+      image: anna
     },
     {
       id: crypto.randomUUID(),
       name: 'Selda',
-      titles: ['Undersköterska']
+      titles: ['Undersköterska'],
+      image: selda
     }
   ]
 
@@ -58,14 +74,21 @@ const VarPersonal = () => {
         <H1>{t('title')}</H1>
         <ul className="grid gap-6 md:grid-cols-2">
           {staff.map((member) => (
-            <li key={member.id}>
+            <li key={member.id} className='overflow-hidden'>
               <SimpleCard
                 bgColor={BgColors.Coral}
                 bgPosition="right"
                 content={
                   <Pillar>
-                    <H2 white>{member.name}</H2>
-                    <ul>
+                    <H2 white className='staffh2'>{member.name}</H2>
+                    {member.image && (
+                      <Image
+                        src={member.image}
+                        alt={t('altText.patientRoom')}
+                        className="rounded-full w-1/2 staffportrait"
+                      />
+                    )}
+                    <ul className='staffh2'>
                       {member.titles.map((title, index) => (
                         <li key={`${member.id}-${index}`}>
                           <P small white>

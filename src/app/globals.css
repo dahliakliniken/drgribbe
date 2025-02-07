@@ -84,6 +84,16 @@ a:focus-visible {
   display: block;
   font-style: italic;
 }
+
+.staffportrait{
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+.staffh2{
+  max-width: 64%;
+}
+
 @keyframes page-bounce {
   0%, 100% { transform: translateY(0); }
   25% { transform: translateY(-15px); }
