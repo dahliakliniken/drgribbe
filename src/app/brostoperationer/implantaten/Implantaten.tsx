@@ -10,7 +10,7 @@ import { AnchorLink } from '@/app/components/typography/AnchorLink'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { BgColors } from '@/app/types'
 import Image from 'next/image'
-import ImplantatImage from '../../../../public/images/implantaten.jpg'
+import ImplantatImage from '../../../../public/images/_N3A0080.jpg'
 import ImplantatVariansImage from '../../../../public/images/teardrop-runda-implantat-1000px.jpg'
 import { useAccordionItems } from './accordionData'
 
