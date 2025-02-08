@@ -11,7 +11,7 @@ const colorMapping: { [key in Paths]: string } = {
   [Paths.HUD_OCH_INJEKTIONER]: 'text-coral',
   [Paths.VAR_PERSONAL]: 'text-coral',
   [Paths.PRISER]: 'text-coral',
-  [Paths.HITTA_HIT]: 'text-coral',
+  [Paths.KONTAKT_OCH_BESOK]: 'text-coral',
   [Paths.FRAGOR_OCH_SVAR]: 'text-gold'
 }
 

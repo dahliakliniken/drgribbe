@@ -151,10 +151,7 @@ export const DropdownMenu: React.FC = () => {
             <span>
               {t.rich('contact.email', {
                 email: (chunks) => (
-                  <a
-                    href="mailto:info@dahliakliniken.se"
-                    tabIndex={isOpen ? 0 : -1}
-                  >
+                  <a href="mailto:info@drgribbe.se" tabIndex={isOpen ? 0 : -1}>
                     {chunks}
                   </a>
                 )

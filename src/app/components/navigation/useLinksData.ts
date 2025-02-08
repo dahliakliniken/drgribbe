@@ -70,7 +70,7 @@ export const useLinksData = () => {
       },
       {
         text: t('dropdown.findUs'),
-        href: '/hitta-hit',
+        href: '/kontakt-och-besok',
         id: crypto.randomUUID()
       }
     ],

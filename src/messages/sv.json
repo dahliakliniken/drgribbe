@@ -17,7 +17,7 @@
     "boka": "Boka",
     "fragor-och-svar": "Frågor & svar",
     "fore-och-efter": "Före & efterbilder",
-    "hitta-hit": "Hitta hit"
+    "kontakt-och-besok": "Kontakt & besök"
   },
   "home": {
     "title": "Hello world!",
@@ -36,7 +36,7 @@
     "breastAugmentation": "Bröstförstoring",
     "breastLift": "Bröstlyft",
     "beforeAfter": "Före & efterbilder",
-    "findUs": "Hitta hit"
+    "findUs": "Kontakt & besök"
   },
   "treatmentBox": {
     "title": "Behandlingar",
@@ -1012,9 +1012,13 @@
     "anatomy_preamble" : "Anatomiska, även kallade droppformade bröstimplantat kan varieras avseende bredd, höjd och projektion oberoende av varandra. Det betyder att man kan ha smala, höga bröstimplantat som framifrån sett ser ovala ut med mer volym uppåt nyckelbenet än vad de fyller ut på bredden. På samma sätt så kan man välja implantat som är låga och breda med mer volym på bredden och mindre volym uppåt på bröstkorgen.",
     "anatomy_infotext" : "Patient opererad med anatomiska bröstimplantat, Mentor 375cc (CPG 322). Ålder 25 år, längd 167 cm och 53 kg."
   },
-  "hittaHit": {
-    "title": "Hitta hit",
+  "kontaktOchBesok": {
+    "title": "Kontakt & besök",
+    "preamble": "Nedan hittar du all information du behöver för att nå oss eller besöka vår klinik.",
     "heading": "Kungsholmen",
+    "contact": "Kontakta oss",
+    "contactEmail": "Email: <email>info@drgribbe.se</email>",
+    "contactPhone": "Telefon: <phone>08- 520 278 78</phone>",
     "address": "Sankt Göransgatan 126, mittemot Sankt Görans sjukhus",
     "addressDetails": "Vår mottagning ligger på plan1 i Wonna Tower.",
     "parking": "Parkering",
