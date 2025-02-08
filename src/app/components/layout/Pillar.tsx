@@ -8,7 +8,7 @@ export const Pillar = ({
   children: React.ReactNode
 }) => {
   return (
-    <div className={`mx-auto max-w-3xl ${noPadding ? '' : 'py-8'}`} id={id}>
+    <div className={`mx-auto max-w-3xl lg:max-w-4xl ${noPadding ? '' : 'py-8'}`} id={id}>
       {children}
     </div>
   )

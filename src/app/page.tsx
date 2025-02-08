@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/konsultation_med_patient.jpg'
-import WaitingRoom from '../../public/images/waiting-room.jpg'
+import WaitingRoom from '../../public/images/_N3A7746.jpg'
 import belowheadingImage from '../../public/images/_N3A9899.jpg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
@@ -105,7 +105,10 @@ const Page: React.FC = () => {
           <Pillar>
             <Image src={Consultation} alt={''} className="hidden lg:block" />
             <span className="imagetext">{t('profileCard.imageText')}</span>
-            <span className="imagetext">{t('profileCard.paragraph1')}</span>
+            <span className="imagetext-inline">{t('profileCard.paragraph1')}</span>
+            <span className="imagetext-inline">
+                <A href={'https://sfep.se/'}>{t('profileCard.linkpre')}</A>
+            </span>
             <SpaceContainer noPadding spaceTop>
               <H2>{t('aboutClinic.title')}</H2>
               <P>{t('aboutClinic.paragraph1')}</P>
