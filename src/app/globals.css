@@ -85,6 +85,14 @@ a:focus-visible {
   font-style: italic;
 }
 
+.imagetext-inline{
+  margin-top: 1rem;
+  font-style: italic;
+  display: inline;
+}
+.imagetext-inline>a{
+  font-size: inherit;
+}
 .staffportrait{
   position: absolute;
   top: -25px;
