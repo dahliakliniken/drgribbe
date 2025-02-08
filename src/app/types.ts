@@ -26,7 +26,7 @@ export enum Paths {
   FORE_OCH_EFTER = 'fore-och-efter',
   FRAGOR_OCH_SVAR = 'fragor-och-svar',
   GARANTI = 'garanti',
-  HITTA_HIT = 'hitta-hit',
+  KONTAKT_OCH_BESOK = 'kontakt-och-besok',
   HUD_OCH_INJEKTIONER = 'hud-och-injektioner',
   IMPLANTATEN = 'implantaten',
   PRISER = 'priser',
