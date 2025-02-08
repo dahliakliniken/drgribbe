@@ -4,13 +4,16 @@ import { Fragment } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import { determineActiveLinkColor } from '@/utils/determineActiveLinkColor'
 
 export const Breadcrumbs = () => {
   const t = useTranslations()
   const paths = usePathname()
   const pathNames = paths.split('/').filter((path) => path)
   const separator = <span>{' / '}</span>
-  const activeClass = 'mx-2 text-gold'
+  const lastPartOfPath = pathNames[pathNames.length - 1]
+  const activeLinkColor = determineActiveLinkColor(lastPartOfPath)
+  const activeClass = `mx-2 ${activeLinkColor}`
   const listClasses = 'hover:underline hover:text-gold mx-2'
 
   /* Don't show breadcrumbs on the home page */

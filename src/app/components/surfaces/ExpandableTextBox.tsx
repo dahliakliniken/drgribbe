@@ -53,8 +53,6 @@ export const ExpandableTextBox = ({
   }
   const HeadingTag = headingComponents[headingSize]
 
-  console.log(restOfContent)
-
   return (
     <>
       <div ref={titleRef}>
