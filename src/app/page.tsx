@@ -108,7 +108,7 @@ const Page: React.FC = () => {
             <span className="imagetext">{t('profileCard.paragraph1')}</span>
             <SpaceContainer noPadding spaceTop>
               <H2>{t('aboutClinic.title')}</H2>
-              <P>{t('aboutClinic.paragraph1')}</P>              
+              <P>{t('aboutClinic.paragraph1')}</P>
               <SpaceContainer noPadding spaceVertically>
                 <Image
                   src={belowheadingImage}
@@ -116,15 +116,7 @@ const Page: React.FC = () => {
                   className="max-h-svh object-cover object-center"
                 />
               </SpaceContainer>
-              
 
-              {/*<Image
-                src={SfepLogo}
-                alt={t('altText.sfepLogo')}
-                height={150}
-                className="m-auto mb-4 text-center"
-                // lg:float-right lg:ml-4
-              />*/}
               <P>{t('aboutClinic.paragraph2')}</P>
 
               <H3>{t('aboutClinic.ourphilosophy')}</H3>
@@ -181,35 +173,6 @@ const Page: React.FC = () => {
           }
         />
       </SpaceContainer>
-      {/* 
-      <SimpleCard
-        bgColor={BgColors.Green}
-        bgPosition="left"
-        content={
-          <div className="lg:flex">
-            <div>
-              <P white className="lg:hidden">
-                {t('profileCard.imageText')}
-              </P>
-              <Image
-                src={Doctor}
-                alt={t('profileCard.imageAlt')}
-                className="mx-auto my-4 rounded-full"
-                height={280}
-              />
-              <P white className="hidden lg:block">
-                {t('profileCard.imageText')}
-              </P>
-            </div>
-            <div>
-              <P white>{t('profileCard.paragraph1')}</P>
-              <P white>{t('profileCard.paragraph2')}</P>
-              <P white>{t('profileCard.paragraph3')}</P>
-            </div>
-          </div>
-        }
-        title={<H2 white>{t('profileCard.title')}</H2>}
-      /> */}
     </>
   )
 }
