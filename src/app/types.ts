@@ -17,3 +17,18 @@ export const BgPositions = {
 } as const
 
 export type BgPositions = (typeof BgPositions)[keyof typeof BgPositions]
+
+export enum Paths {
+  BROSTFORMINSKNING = 'brostforminskning',
+  BROSTFORSTORING = 'brostforstoring',
+  BROSTLYFT = 'brostlyft',
+  BROSTOPERATIONER = 'brostoperationer',
+  FORE_OCH_EFTER = 'fore-och-efter',
+  FRAGOR_OCH_SVAR = 'fragor-och-svar',
+  GARANTI = 'garanti',
+  HITTA_HIT = 'hitta-hit',
+  HUD_OCH_INJEKTIONER = 'hud-och-injektioner',
+  IMPLANTATEN = 'implantaten',
+  PRISER = 'priser',
+  VAR_PERSONAL = 'var-personal'
+}
