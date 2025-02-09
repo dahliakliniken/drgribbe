@@ -1,15 +1,25 @@
 import { NextIntlClientProvider } from 'next-intl'
-import { getLocale, getMessages, getTranslations } from 'next-intl/server'
+import { getLocale, getMessages } from 'next-intl/server'
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import './globals.css'
+import { Metadata } from 'next'
 
-export async function generateMetadata() {
-  const t = await getTranslations()
-
-  return {
-    title: t('metadata.title'),
-    description: t('metadata.description')
+export const metadata: Metadata = {
+  title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
+  description:
+    'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.',
+  openGraph: {
+    title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
+    description:
+      'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.',
+    url: 'https://www.drgribbe.se/',
+    siteName: 'Dr Gribbe'
+  },
+  twitter: {
+    title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
+    description:
+      'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.'
   }
 }
 

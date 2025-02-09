@@ -15,7 +15,7 @@ import malin from '../../../public/images/Malin.png'
 import Image from 'next/image'
 
 const VarPersonal = () => {
-  const t = useTranslations('varPersonal')
+  const t = useTranslations()
   const staff = [
     {
       id: crypto.randomUUID(),
@@ -27,7 +27,6 @@ const VarPersonal = () => {
       id: crypto.randomUUID(),
       name: 'Kristina',
       titles: ['Deltid i reception och omvårdnad på operation']
-      
     },
     {
       id: crypto.randomUUID(),
@@ -39,7 +38,6 @@ const VarPersonal = () => {
       id: crypto.randomUUID(),
       name: 'Karin Björkman',
       titles: ['Narkosläkare']
-
     },
     {
       id: crypto.randomUUID(),
@@ -70,24 +68,26 @@ const VarPersonal = () => {
   return (
     <Pillar>
       <SpaceContainer>
-        <H1>{t('title')}</H1>
+        <H1>{t('varPersonal.title')}</H1>
         <ul className="grid gap-6 md:grid-cols-2">
           {staff.map((member) => (
-            <li key={member.id} className='overflow-hidden'>
+            <li key={member.id} className="overflow-hidden">
               <SimpleCard
                 bgColor={BgColors.Coral}
                 bgPosition="right"
                 content={
                   <Pillar>
-                    <H2 white className='staffh2'>{member.name}</H2>
+                    <H2 white className="staffh2">
+                      {member.name}
+                    </H2>
                     {member.image && (
                       <Image
                         src={member.image}
                         alt={t('altText.patientRoom')}
-                        className="rounded-full w-1/2 staffportrait"
+                        className="staffportrait w-1/2 rounded-full"
                       />
                     )}
-                    <ul className='staffh2'>
+                    <ul className="staffh2">
                       {member.titles.map((title, index) => (
                         <li key={`${member.id}-${index}`}>
                           <P small white>
