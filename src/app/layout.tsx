@@ -23,9 +23,6 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className="lg:bg-beige">
-      <head>
-        <link rel="preload" href="/images/hero-image.jpg" as="image" />
-      </head>
       <body>
         <NextIntlClientProvider messages={messages}>
           <HeaderWithFooter />
