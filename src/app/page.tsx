@@ -103,11 +103,13 @@ const Page: React.FC = () => {
         bgColor={BgColors.White}
         content={
           <Pillar>
-            <Image src={Consultation} alt={''} className="hidden lg:block" />
+            <Image src={Consultation} alt={''} />
             <span className="imagetext">{t('profileCard.imageText')}</span>
-            <span className="imagetext-inline">{t('profileCard.paragraph1')}</span>
             <span className="imagetext-inline">
-                <A href={'https://sfep.se/'}>{t('profileCard.linkpre')}</A>
+              {t('profileCard.paragraph1')}
+            </span>
+            <span className="imagetext-inline">
+              <A href={'https://sfep.se/'}>{t('profileCard.linkpre')}</A>
             </span>
             <SpaceContainer noPadding spaceTop>
               <H2>{t('aboutClinic.title')}</H2>
