@@ -4,6 +4,7 @@ import { Breadcrumbs } from './components/navigation/Breadcrumbs'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import './globals.css'
 import { Metadata } from 'next'
+import { CookieBanner } from './components/surfaces/CookieBanner'
 
 export const metadata: Metadata = {
   title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
@@ -39,6 +40,7 @@ export default async function RootLayout({
           <main className="mb-36 flex flex-col lg:mb-0 lg:mt-20">
             <Breadcrumbs />
             {children}
+            <CookieBanner />
           </main>
         </NextIntlClientProvider>
       </body>
