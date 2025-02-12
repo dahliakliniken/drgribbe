@@ -95,17 +95,17 @@
     "linkpre": "Svensk Förening för Estetisk Plastikkirurgi.", 
     "imageAlt": "Dr. Örjan Gribbe",
     "imageText": "Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.",
-    "paragraph1": "Sedan 2007 har han fokuserat på estetisk plastikkirurgi, framför allt estetiska bröstoperationer och har utfört över 8 000 operationer med bröstimplantat på klinikerna Victoriakliniken, Proforma Clinic och Plastikkirurgen Stockholm. Dr Örjan Gribbe är medlem i (SFEP) ",
+    "paragraph1": "Sedan 2007 har han fokuserat på estetisk plastikkirurgi, framför allt estetiska bröstoperationer och har utfört över 8 000 operationer med bröstimplantat på klinikerna Victoriakliniken och Proforma Clinic. Dr Örjan Gribbe är medlem i (SFEP) ",
     "paragraph2": "Hans nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.",
     "paragraph3": "Med Dr Gribbe vid din sida kan du känna dig trygg genom hela processen. Oavsett om du drömmer om diskreta och eleganta bröst, en minskning för att skapa en nättare siluett, eller en förstoring för en fylligare form, kommer Dr Gribbe och hans erfarna team att hjälpa dig nå ditt önskade resultat."
   },
   "aboutClinic": {
     "title": "Om Kliniken",
-    "readMore": "Läs mer om vår filosofi",
-    "ourphilosophy" : "Dahliaklinikens filosofi. Kvalitet, säkerhet, omvårdnad, personalpolicy och prisbild.",
+    "readMore": "Läs mer om vår hållbarhetsfilosofi",
+    "ourphilosophy" : "Dahliaklinikens hållbarhets och prissättningsfilosofi",
     "paragraph1": "Dahliakliniken är en nyetablerad klinik lanserad av Dr Örjan Gribbe som har en omfattande erfarenhet av plastikkirurgi, specialiserad inom såväl rekonstruktiv som estetisk kirurgi. Kliniken är Sveriges enda klinik specialiserad på estetiska bröstoperationer av alla slag, såväl bröstförstoring som bröstlyft, bröstförminskning och kombinerade ingrepp med bröstimplantat. Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, tillsammans med sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
     "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet inom sin specialitet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Kliniken ligger i nyrenoverade lokaler med operationssalar med toppmodern utrustning. Vi använder oss av de senaste teknikerna och material och kirurgiska instrument av mycket hög kvalitet för att säkerställa att patienten får bästa möjliga resultat. Det ger plastikkirurgen hög precision och tillförlitlighet och möjliggör kirurgisk perfektion. .Allt i linje med klinikens strävan. Fokus är att öka kvinnors livskvalité och förändra deras kroppsuppfattning genom att förändra brösten på ett sätt som de ofta drömt om länge. Såväl tidigare patienter som nya välkomnas!",
-    "paragraph3": "En stabil klinik som håller i längden. Det är viktigt att det blir en viss summa över som en buffert för att kliniken ska kunna stå sig år efter år och kunna erbjuda uppföljning och hjälp av tidigare opererade patienter. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär."
+    "paragraph3": "En stabil klinik som håller i längden. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär."
   },
   "ourphilosophy":{
     "heading": "Dahliaklinikens filosofi",
@@ -132,11 +132,11 @@
   },
   "common": {
     "bookConsultation": "Boka konsultation",
-    "bookFreeConsultation": "Boka fri konsultation",
-    "freeConsultation": "Kostnadsfri konsultation",
+    "bookFreeConsultation": "Boka konsultation",
+    "freeConsultation": "Boka konsultation",
     "closeMenu": "Stäng menyn",
     "openMenu": "Öppna menyn",
-    "bookNow": "Boka nu",
+    "bookNow": "Boka tid",
     "readMore": "Läs mer",
     "readLess": "Läs mindre",
     "menu": "Meny"

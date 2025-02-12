@@ -40,7 +40,7 @@ const Page: React.FC = () => {
           </Pillar>
         }
       />
-      <Image src={Consultation} alt={''} className="lg:hidden" />
+      {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
       <SpaceContainer>
         <div className="m-auto xl:max-w-7xl">
           <div className="flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch">
@@ -84,7 +84,7 @@ const Page: React.FC = () => {
           content={
             <>
               <H2 upperCase className="text-center">
-                {t('common.freeConsultation')}
+                {t('common.bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>

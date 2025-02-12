@@ -149,7 +149,7 @@ const Brostoperationer = () => {
           content={
             <>
               <H2 upperCase white className="text-center">
-                {t('common.freeConsultation')}
+                {t('common.bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle>
