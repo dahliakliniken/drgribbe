@@ -166,7 +166,7 @@ const Page: React.FC = () => {
               </H2>
               <P className="text-center">
                 {
-                  'Boka en kostnadsfri konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
                 }
               </P>
               <div className="m-auto flex max-w-xs justify-center">
