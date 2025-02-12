@@ -25,6 +25,7 @@ const Brostforstoring = () => {
           <Pillar>
             <H1 white>{t('title')}</H1>
             <P white>{t('background')}</P>
+            <P white>{t('background2')}</P>
           </Pillar>
         }
       />
