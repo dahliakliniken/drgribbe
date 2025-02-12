@@ -95,17 +95,17 @@
     "linkpre": "Svensk Förening för Estetisk Plastikkirurgi.", 
     "imageAlt": "Dr. Örjan Gribbe",
     "imageText": "Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.",
-    "paragraph1": "Sedan 2007 har han fokuserat på estetisk plastikkirurgi, framför allt estetiska bröstoperationer och har utfört över 8 000 operationer med bröstimplantat på klinikerna Victoriakliniken, Proforma Clinic och Plastikkirurgen Stockholm. Dr Örjan Gribbe är medlem i (SFEP) ",
+    "paragraph1": "Sedan 2007 har han fokuserat på estetisk plastikkirurgi, framför allt estetiska bröstoperationer och har utfört över 8 000 operationer med bröstimplantat på klinikerna Victoriakliniken och Proforma Clinic. Dr Örjan Gribbe är medlem i (SFEP) ",
     "paragraph2": "Hans nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.",
     "paragraph3": "Med Dr Gribbe vid din sida kan du känna dig trygg genom hela processen. Oavsett om du drömmer om diskreta och eleganta bröst, en minskning för att skapa en nättare siluett, eller en förstoring för en fylligare form, kommer Dr Gribbe och hans erfarna team att hjälpa dig nå ditt önskade resultat."
   },
   "aboutClinic": {
     "title": "Om Kliniken",
-    "readMore": "Läs mer om vår filosofi",
-    "ourphilosophy" : "Dahliaklinikens filosofi. Kvalitet, säkerhet, omvårdnad, personalpolicy och prisbild.",
+    "readMore": "Läs mer om vår hållbarhetsfilosofi",
+    "ourphilosophy" : "Dahliaklinikens hållbarhets och prissättningsfilosofi",
     "paragraph1": "Dahliakliniken är en nyetablerad klinik lanserad av Dr Örjan Gribbe som har en omfattande erfarenhet av plastikkirurgi, specialiserad inom såväl rekonstruktiv som estetisk kirurgi. Kliniken är Sveriges enda klinik specialiserad på estetiska bröstoperationer av alla slag, såväl bröstförstoring som bröstlyft, bröstförminskning och kombinerade ingrepp med bröstimplantat. Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, tillsammans med sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
     "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet inom sin specialitet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Kliniken ligger i nyrenoverade lokaler med operationssalar med toppmodern utrustning. Vi använder oss av de senaste teknikerna och material och kirurgiska instrument av mycket hög kvalitet för att säkerställa att patienten får bästa möjliga resultat. Det ger plastikkirurgen hög precision och tillförlitlighet och möjliggör kirurgisk perfektion. .Allt i linje med klinikens strävan. Fokus är att öka kvinnors livskvalité och förändra deras kroppsuppfattning genom att förändra brösten på ett sätt som de ofta drömt om länge. Såväl tidigare patienter som nya välkomnas!",
-    "paragraph3": "En stabil klinik som håller i längden. Det är viktigt att det blir en viss summa över som en buffert för att kliniken ska kunna stå sig år efter år och kunna erbjuda uppföljning och hjälp av tidigare opererade patienter. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär."
+    "paragraph3": "En stabil klinik som håller i längden. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär."
   },
   "ourphilosophy":{
     "heading": "Dahliaklinikens filosofi",
@@ -132,11 +132,11 @@
   },
   "common": {
     "bookConsultation": "Boka konsultation",
-    "bookFreeConsultation": "Boka fri konsultation",
-    "freeConsultation": "Kostnadsfri konsultation",
+    "bookFreeConsultation": "Boka konsultation",
+    "freeConsultation": "Boka konsultation",
     "closeMenu": "Stäng menyn",
     "openMenu": "Öppna menyn",
-    "bookNow": "Boka nu",
+    "bookNow": "Boka tid",
     "readMore": "Läs mer",
     "readLess": "Läs mindre",
     "menu": "Meny"
@@ -168,13 +168,19 @@
       "anesthesia": "Narkosprocessen",
       "duringOperation": "Under operationen",
       "care": "Specialiserad vård",
-      "text1": "När det är din tur blir du hämtad av narkospersonalen. Du promenerar in till operation och vidare till operationssalen.", 
+      "text1": "Vi utför operationer under narkos. Många känner oro för narkosen. Därför går vi igenom viktiga delar av narkosprocessen här så att du kan läsa om det i lugn och ro för att känna dig trygg och säker.",
+      "text1-2": "När det är din tur blir du hämtad av narkospersonalen. Du promenerar in till operation och vidare till operationssalen.",  
       "text2": "Inne på operationssalen möts du av operationssjuksköterskan och en undersköterska. Operationssjuksköterskan är här ofta redan sterilklädd med operationsrock och dubbla operationshandskar. All personal bär operationskläder, mössor och munskydd. Sammanlagt så är det mellan tre och fem personer på plats och hjälper till.",
+      "text2-2" : "All narkospersonal som är med under operationen är specialistutbildad och har flerårig erfarenhet av att arbeta med anestesi. Det är en kvalitetsmärkning och något som aldrig frångås när jag opererar.",
+      "text2-3" : "Inför narkosen är det viktigt att se över ditt hälsotillstånd i allmänhet och därför lämnar du innan operation in en ifylld hälsodeklaration. I den bör du särskilt tänka igenom och ange tidigare och nuvarande sjukdomar.",
+      "text2-4" : "Narkosläkaren kommer att prata med dig innan din operation. Du behöver meddela narkosläkaren om du har symptom på sjukdomar i luftvägarna, exempelvis feber, hosta eller andningsbesvär. Det kan öka risken för komplikationer i samband med narkos. Det är även viktigt att du berättar om du äter någon medicin.",
       "text3": "Väl inne på salen får du hjälp att komma upp på operationsbordet. På operationsbordet ligger du och vilar en stund och personalen ser till att du ligger skönt och bekvämt innan du sedan blir sövd.",
       "text4": "I samband med narkosens början andas du ren syrgas i en mask som hålls löst över din mun och näsa. Det är alltså inte narkosgas utan bara ren syrgas för att förbereda kroppen inför sövningen.",
       "text5": "Sövningen går till som så att två narkosläkemedel sprutas in via två stycken pumpar som kopplas till din infart via en slang. Det ena läkemedlet gör att du sover och det andra gör att du inte känner någonting under operationen. Det är just det, sömn och smärtfrihet som är narkos.",
       "text6": "Själva sövningen går snabbt, på någon minut, och brukar för de allra flesta upplevas som lugn och behaglig. När du väl sover får du antibiotikum, penicillin eller motsvarande (antibiotikaprofylax) intravenöst för att undvika risken för infektion.",
       "text7": "Samtidigt tvättar operationssjuksköterskan operationsområdet och huden utanför med sprit, klorhexidinsprit. Spriten lufttorkar och sedan kläs operationsområdet in, draperas med gröna operationslakan. Operationssjuksköterskan lägger fram operationsinstrumenten på olika bord som skjuts in över din kropp. Operationssjuksköterskan hjälper doktorn på med operationskläder och dubbla operationshandskar.",
+      "text7-2" : "När operationen snart är slut minskar man på mängden narkosmedel så att du vaknar upp exakt när allt är klart. När du blir medveten igen efter operationen kan du känna dig förvirrad och det kan kännas lite läskigt. Du kan även få biverkningar i form av yrsel eller illamående. Det är normalt och försvinner efter ett par timmar. När du vaknar upp tar vi hand om dig och säkerställer att du har det bra och har smärtlindring. När du är tillräckligt vaken förs du över till ditt/ett patientrum och du får gå hem efter ett par timmar alternativt stanna över natten med personal på plats redo att ta hand om dig.",
+      "text7-3" : "Om du har frågor kring hur det är att sövas vid en operation, tveka inte att höra av dig så förklarar vi mer.",
       "text8": "Operationen startar och varar mellan 30 minuter och 3 timmar beroende på vilket ingrepp som ska göras. När du sover lyssnar vi på musik och pratar med varandra. Doktorn opererar och operationssjuksköterskan instrumenterar, det vill säga ger rätt instrument till doktorn vid rätt tidpunkt. Ofta så läser hon av doktorns arbete och kan vara beredd med rätt instrument vid rätt tid. Ibland ber doktorn om ett specifikt instrument eller en specifik sutur, tråd att sy med.",
       "text9": "Under hela operationen så övervakar narkospersonalen operationen vid ditt huvud och håller koll på att du sover lagom djupt och att du inte har ont. Du är så pass lagom djupt sövd att du inte känner någon smärta och att du inte kan förnimma någonting under operationen.",
       "text10": "Samtidigt så ser vi det som viktigt att du är sövd på ett sånt sätt att du fortsätter andas spontant, det vill säga att du själv andas och att du inte ventileras av narkosapparaten. Lyckas man som narkospersonal med detta under operationen så mår lungorna bättre under operationen och du mår även mindre illa efteråt. Det är en konst att söva på detta sätt och kräver erfarenhet och uppmärksamhet.",
@@ -227,7 +233,8 @@
   },
   "brostforstoring": {
     "title":"Bröstförstoring med bröstimplantat eller kroppseget fett",
-    "background": "Här saknas det just nu en kort text",
+    "background": "Vid en bröstförstoring lägger man in bröstimplantat för att återskapa eller öka volymen i brösten.",
+    "background2": "Det finns många varianter och märken på bröstimplantat och vid konsultationen får du hjälp att välja.",
     "implanttitle": "Bröstförstoring med bröstimplantat",
     "implantbackground": {
       "heading1": "Bakgrund",
@@ -868,6 +875,69 @@
       "title": "Kapseloperation kapselektomi",
       "price": "Från 50 000 kr"
     },
+    "botox" : {
+      "title" : "Muskelavslappnande behandling",
+      "procedure1" :{
+        "name" : "Glabella/argrynka",
+        "price" : "3 000 kr"
+      },
+      "procedure2": {
+        "name": "Panna",
+        "price": "3 000 kr"
+      },
+      "procedure3": {
+        "name": "Kråksparkarna",
+        "price": "3 000 kr"
+      },
+      "procedure4": {
+        "name": "Höja sidan av ögonbrynen",
+        "price": "2 500 kr"
+      },
+      "procedure5": {
+        "name": "Minska sura mungipor ",
+        "price": "2 500 kr"
+      },
+      "procedure6": {
+        "name": "Rynkor på näsryggen, Bunny Lines",
+        "price": "2 000 kr"
+      },
+      "procedure7": {
+        "name": "Rulla upp läppkanten, Lip Flip",
+        "price": "2 000 kr"
+      },
+      "procedure8": {
+        "name": "Rökrynkor",
+        "price": "2 500 kr"
+      },
+      "procedure9": {
+        "name": "Synligt tandkött när man skrattar, Gummy Smile",
+        "price": "2 000 kr"
+      },
+      "procedure10": {
+        "name": "Rynkor på hakan",
+        "price": "2 000 kr"
+      },
+      "procedure11": {
+        "name": "Rynkor på halsen, Platysma band",
+        "price": "från 4 000 kr"
+      },
+      "procedure12": {
+        "name": "Bruxism, tandgnissel",
+        "price": "5 500 kr"
+      },
+      "procedure13": {
+        "name": "Skalpens muskler, spänningshuvudvärk",
+        "price": "från 3 000 kr"
+      },
+      "procedure14": {
+        "name": "Svettbehandling",
+        "price": "På förfrågan"
+      },
+      "procedure15": {
+        "name": "Kombination av flera områden till reducerat pris.",
+        "price" :""
+      }
+    },
     "other": {
       "title": "Övrigt",
       "procedure1": {
@@ -1041,6 +1111,7 @@
     "dahliaLogo": "Logotypen för Dahlia",
     "sfepLogo": "Logotypen för Svenska Föreningen för Estetisk Plastikkirurgi",
     "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
-    "motivaTable": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym"
+    "motivaTable": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
+    "forstaaterbesoket" : "Bild på en patient på återbesök hos Dahliakliniken"
   }
 }

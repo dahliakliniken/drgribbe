@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import Consultation from '../../public/images/konsultation_med_patient.jpg'
-import WaitingRoom from '../../public/images/_N3A7746.jpg'
+import Consultation from '../../public/images/_N3A7252.jpg'
+import WaitingRoom from '../../public/images/_N3A0088.jpg'
 import belowheadingImage from '../../public/images/_N3A9899.jpg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
@@ -40,7 +40,7 @@ const Page: React.FC = () => {
           </Pillar>
         }
       />
-      <Image src={Consultation} alt={''} className="lg:hidden" />
+      {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
       <SpaceContainer>
         <div className="m-auto xl:max-w-7xl">
           <div className="flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch">
@@ -84,7 +84,7 @@ const Page: React.FC = () => {
           content={
             <>
               <H2 upperCase className="text-center">
-                {t('common.freeConsultation')}
+                {t('common.bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
@@ -166,7 +166,7 @@ const Page: React.FC = () => {
               </H2>
               <P className="text-center">
                 {
-                  'Boka en kostnadsfri konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
                 }
               </P>
               <div className="m-auto flex max-w-xs justify-center">

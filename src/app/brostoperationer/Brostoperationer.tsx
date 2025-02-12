@@ -17,6 +17,7 @@ import ConsultationImage from '../../../public/images/_N3A7277.jpg'
 import DayOfSurgeryImage from '../../../public/images/_N3A0187.jpg'
 import SurgeryImage from '../../../public/images/_N3A0184.jpg'
 import PostSurgeryImage from '../../../public/images/_N3A0162.jpg'
+import aterbesokImage from '../../../public/images/_N3A9941.jpg'
 // import belowheadingImage from '../../../public/images/_N3A9899.jpg'
 import { useAccordionItems } from './accordionData'
 import { ExpandableTextBox } from '../components/surfaces/ExpandableTextBox'
@@ -149,7 +150,7 @@ const Brostoperationer = () => {
           content={
             <>
               <H2 upperCase white className="text-center">
-                {t('common.freeConsultation')}
+                {t('common.bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle>
@@ -202,6 +203,7 @@ const Brostoperationer = () => {
             <SpaceContainer noPadding spaceTop>
               <H3>{t('brostoperationer.surgery.heading1')}</H3>
               <P>{t('brostoperationer.surgery.text1')}</P>
+              <P>{t('brostoperationer.surgery.text1-2')}</P>
               <Accordion items={surgeryItems} />
             </SpaceContainer>
           </Pillar>
@@ -262,14 +264,21 @@ const Brostoperationer = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <H3>{t('brostoperationer.firstReturnVisit.heading1')}</H3>
-            <P>{t('brostoperationer.firstReturnVisit.text1')}</P>
-            <P>{t('brostoperationer.firstReturnVisit.text2')}</P>
+            <Image
+              src={aterbesokImage}
+              alt={t('altText.forstaaterbesoket')}
+              className="max-h-svh object-cover object-center"
+            />
+            <SpaceContainer noPadding spaceTop>
+              <H3>{t('brostoperationer.firstReturnVisit.heading1')}</H3>
+              <P>{t('brostoperationer.firstReturnVisit.text1')}</P>
+              <P>{t('brostoperationer.firstReturnVisit.text2')}</P>
 
-            <H3 className="mt-8">
-              {t('brostoperationer.secondReturnVisit.heading1')}
-            </H3>
-            <P>{t('brostoperationer.secondReturnVisit.text1')}</P>
+              <H3 className="mt-8">
+                {t('brostoperationer.secondReturnVisit.heading1')}
+              </H3>
+              <P>{t('brostoperationer.secondReturnVisit.text1')}</P>
+            </SpaceContainer>
           </Pillar>
         }
       />

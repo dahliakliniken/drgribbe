@@ -10,7 +10,27 @@ const Priser = () => {
   const priceListKeys = Object.keys(messages.priceList)
 
   const items = priceListKeys.map((key) => {
-    const procedureKeys = ['procedure1', 'procedure2', 'procedure3']
+    const procedureKeys = [
+      'procedure1', 
+      'procedure2', 
+      'procedure3', 
+      'procedure4', 
+      'procedure5', 
+      'procedure6', 
+      'procedure7', 
+      'procedure8',
+      'procedure9',
+      'procedure10',
+      'procedure11',
+      'procedure12',
+      'procedure13',
+      'procedure14',
+      'procedure15',
+      'procedure16',
+      'procedure17',
+      'procedure18',
+
+    ]
 
     const procedures = procedureKeys
       .filter((textKey) => t.has(`priceList.${key}.${textKey}`))

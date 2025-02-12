@@ -7,7 +7,14 @@ export const useAccordionItems = () => {
     {
       id: crypto.randomUUID(),
       title: t('brostoperationer.surgery.preparation'),
-      content: <P>{t('brostoperationer.surgery.text2')}</P>
+      content: (
+        <>
+          <P>{t('brostoperationer.surgery.text2')}</P>
+          <P>{t('brostoperationer.surgery.text2-2')}</P>
+          <P>{t('brostoperationer.surgery.text2-3')}</P>
+          <P>{t('brostoperationer.surgery.text2-4')}</P>
+        </>
+      )
     },
     {
       id: crypto.randomUUID(),
@@ -19,6 +26,8 @@ export const useAccordionItems = () => {
           <P>{t('brostoperationer.surgery.text5')}</P>
           <P>{t('brostoperationer.surgery.text6')}</P>
           <P>{t('brostoperationer.surgery.text7')}</P>
+          <P>{t('brostoperationer.surgery.text7-2')}</P>
+          <P>{t('brostoperationer.surgery.text7-3')}</P>
         </>
       )
     },
