@@ -1,6 +1,7 @@
-import { A } from '../typography/A'
+"use client";
+import { A } from '../typography/A';
 import { testimonials } from "@/data/testimonialdata";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
 type TestimonalProps = {
   content: string
@@ -26,7 +27,18 @@ const getRandomTestimonials = (count: number) => {
 };
 
 export default function Testimonials() {
-  const randomTestimonials = useMemo(() => getRandomTestimonials(3), []);
+  const [randomTestimonials, setRandomTestimonials] = useState<
+    { title: string; content: string; link: string }[] | null
+  >(null); // Start as null to avoid hydration mismatch
+
+  useEffect(() => {
+    setRandomTestimonials(getRandomTestimonials(3));
+  }, []);
+
+   // Prevent rendering until testimonials are ready
+   if (!randomTestimonials) {
+    return <p className="text-center">{"Laddar recensioner..."}</p>; // Optional loading state
+  }
 
   return (
     <div className="m-auto xl:max-w-7xl">
