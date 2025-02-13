@@ -1,4 +1,6 @@
 import { A } from '../typography/A'
+import { testimonials } from "@/data/testimonialdata";
+import { useMemo } from "react";
 
 type TestimonalProps = {
   content: string
@@ -16,4 +18,28 @@ export const Testimonial = ({ content, title, link }: TestimonalProps) => {
       </A>
     </blockquote>
   )
+}
+
+const getRandomTestimonials = (count: number) => {
+  const shuffled = [...testimonials].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
+};
+
+export default function Testimonials() {
+  const randomTestimonials = useMemo(() => getRandomTestimonials(3), []);
+
+  return (
+    <div className="m-auto xl:max-w-7xl">
+      <div className="flex space-x-3 overflow-x-auto px-gapSpace xl:grid xl:grid-cols-3 xl:items-stretch">
+        {randomTestimonials.map((testimonial, index) => (
+          <Testimonial
+            key={index}
+            title={testimonial.title}
+            content={testimonial.content}
+            link={testimonial.link}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }
