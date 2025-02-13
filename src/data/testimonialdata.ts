@@ -60,12 +60,6 @@ export const testimonials = [
       link: "https://maps.app.goo.gl/ZbzuxdPvNej44Uak9",
     },
     {
-      title: "Maja",
-      content:
-        "Jag har känt stöd från Örjan under hela resan och kan starkt rekommendera honom till alla som funderar på en operation.Tack för ett grymt bra jobb, du är topp!🤩",
-      link: "https://maps.app.goo.gl/vG6hs3JQqRgsSbG68",
-    },
-    {
       title: "Katarina",
       content:
         "Högsta betyg från mig! Supernöjd med resultatet,blev väldigt bra omhändertagen av Örjan och hans personal.",
