@@ -7,6 +7,8 @@ import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { BgColors } from '../types'
 import { SimpleCard } from '../components/surfaces/SimpleCard'
+import Image from 'next/image'
+import locationImage from "../../../public/images/Entren_Wonna_Tower_N3A2913.jpg"
 
 const KontaktOchBesok = () => {
   const t = useTranslations()
@@ -25,6 +27,13 @@ const KontaktOchBesok = () => {
       />
       <SpaceContainer>
         <Pillar>
+          <SpaceContainer noPadding spaceVertically>
+            <Image
+                src={locationImage}
+                alt={"En bild på entrén till Wonna Tower, där Dahlia kliniken finns "}
+                className="max-h-[calc(100dvh-80px)] object-cover object-center"
+              />
+          </SpaceContainer>            
           <div className="grid gap-4 gap-y-8 md:grid-cols-2">
             <div className="space-y-4">
               <H2>{t('kontaktOchBesok.contact')}</H2>
@@ -53,7 +62,6 @@ const KontaktOchBesok = () => {
                 </div>
               </div>
             </div>
-
             <div className="flex items-start gap-2">
               <MapPin className="mt-1 h-6 w-6 flex-shrink-0" />
               <div>
