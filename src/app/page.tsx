@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/_N3A7252.jpg'
-import WaitingRoom from '../../public/images/_N3A0088.jpg'
+import WaitingRoom from '../../public/images/_N3A7746.jpg'
 import belowheadingImage from '../../public/images/_N3A9899.jpg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
