@@ -1,10 +1,6 @@
 import { H1 } from '../components/typography/H1'
 import { useTranslations } from 'next-intl'
-import { H2 } from '../components/typography/H2'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
-import { BgColors } from '../types'
 import { Pillar } from '../components/layout/Pillar'
-import { P } from '../components/typography/P'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import selda from '../../../public/images/selda.png'
 import najwa from '../../../public/images/Najwa.png'
@@ -12,7 +8,7 @@ import anna from '../../../public/images/Anna.png'
 import orjan from '../../../public/images/orjan.png'
 import johanna from '../../../public/images/Johanna.png'
 import malin from '../../../public/images/Malin.png'
-import Image from 'next/image'
+import { FlippableCard } from '../components/surfaces/FlippableCard'
 
 const VarPersonal = () => {
   const t = useTranslations()
@@ -21,7 +17,9 @@ const VarPersonal = () => {
       id: crypto.randomUUID(),
       name: 'Örjan Gribbe',
       titles: ['Leg läkare', 'Medicine doktor', 'Specialist i plastikkirurgi'],
-      image: orjan
+      image: orjan,
+      description:
+        'Dr. Gribbe has over 20 years of experience in plastic surgery and is specialized in breast reconstruction. He completed his medical degree at Karolinska Institute and has since dedicated his career to helping patients achieve their desired results with a focus on natural-looking outcomes.'
     },
     {
       id: crypto.randomUUID(),
@@ -69,40 +67,14 @@ const VarPersonal = () => {
     <Pillar>
       <SpaceContainer>
         <H1>{t('varPersonal.title')}</H1>
-        <ul className="grid gap-6 md:grid-cols-2">
-          {staff.map((member) => (
-            <li key={member.id} className="overflow-hidden">
-              <SimpleCard
-                bgColor={BgColors.Coral}
-                bgPosition="right"
-                content={
-                  <Pillar>
-                    <H2 white className="staffh2">
-                      {member.name}
-                    </H2>
-                    {member.image && (
-                      <Image
-                        src={member.image}
-                        alt={t('altText.patientRoom')}
-                        className="staffportrait w-1/2 rounded-full"
-                      />
-                    )}
-                    <ul className="staffh2">
-                      {member.titles.map((title, index) => (
-                        <li key={`${member.id}-${index}`}>
-                          <P small white>
-                            {title}
-                          </P>
-                        </li>
-                      ))}
-                    </ul>
-                  </Pillar>
-                }
-              />
-            </li>
-          ))}
-        </ul>
       </SpaceContainer>
+      <ul className="grid gap-6 md:grid-cols-2">
+        {staff.map((member) => (
+          <li key={member.id} className="relative">
+            <FlippableCard member={member} />
+          </li>
+        ))}
+      </ul>
     </Pillar>
   )
 }

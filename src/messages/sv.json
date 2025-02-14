@@ -614,7 +614,9 @@
   },
   "varPersonal": {
     "title": "Vår Personal",
-    "text": "Text om vår personal."
+    "text": "Text om vår personal.",
+    "readMore": "Läs mer om {name}",
+    "readLess": "Läs mindre om {name}"
   },
   "priser": {
     "title": "Priser",
@@ -1112,6 +1114,7 @@
     "sfepLogo": "Logotypen för Svenska Föreningen för Estetisk Plastikkirurgi",
     "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
     "motivaTable": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
-    "forstaaterbesoket" : "Bild på en patient på återbesök hos Dahliakliniken"
+    "forstaaterbesoket" : "Bild på en patient på återbesök hos Dahliakliniken",
+    "staffImage": "Bild på {name}"
   }
 }
