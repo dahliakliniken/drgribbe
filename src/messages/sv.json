@@ -620,7 +620,27 @@
   },
   "priser": {
     "title": "Priser",
-    "readMore": "Läs mer om detta här"
+    "readMore": "Läs mer om detta här",
+    "paymentRules": {
+      "heading": "Betalningsregler",
+      "text1": "Senast 16 dagar innan operation ska full betalning ske.",
+      "text2": "21 dagar (3 veckor) innan operation ska minst 25 % av operationskostnaden vara betald.",
+      "text3": "Om operationen bokas in med kort varsel så gäller andra villkor som bestäms vid konsultationen."
+    },
+    "cancellationRules": {
+      "heading": "Av- och ombokningsregler",
+      "text1": "Avbokning av nybesök/konsultationstid ska ske senast 24 timmar innan bokad tid. Om avbokning görs senare debiteras en avgift för uteblivet besök om 500 kronor.",
+      "text2": "Du har alltid möjlighet att av- eller omboka din operation men detta måste enligt ovan ske minst 21 dagar (3 veckor) innan avtalad operationstid för att vara kostnadsfri.",
+      "text3": "Avbokning ska ske muntligen per telefon.",
+      "text4": "Vid avbokning av operationstid senare än 16 dagar innan operationsdagen debiterar vi enligt följande:",
+      "text5": "Vid av-ombokning som sker 7-16 dagar innan avtalad operationstid debiteras 50 procent av operationskostnaden.",
+      "text6": "Vid av-ombokning som sker 2-7 dagar innan avtalad operationstid debiteras 75 procent."
+    },
+    "financing": {
+      "heading": "Finansiering och delbetalning",
+      "text1": "Vi samarbetar med Medical Finance (och Svea) som erbjuder patienter finansiering av privat vård. Det ger dig möjlighet till delbetalning av din operation och en räntefri avbetalning på upp till 24 månader.",
+      "text2": "Tala med reception så hjälper de dig."
+    }
   },
   "garanti": {
     "preamble1": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
