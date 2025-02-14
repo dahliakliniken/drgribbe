@@ -67,14 +67,14 @@ const VarPersonal = () => {
     <Pillar>
       <SpaceContainer>
         <H1>{t('varPersonal.title')}</H1>
+        <ul className="grid gap-6 md:grid-cols-2">
+          {staff.map((member) => (
+            <li key={member.id} className="relative">
+              <FlippableCard member={member} />
+            </li>
+          ))}
+        </ul>
       </SpaceContainer>
-      <ul className="grid gap-6 md:grid-cols-2">
-        {staff.map((member) => (
-          <li key={member.id} className="relative">
-            <FlippableCard member={member} />
-          </li>
-        ))}
-      </ul>
     </Pillar>
   )
 }
