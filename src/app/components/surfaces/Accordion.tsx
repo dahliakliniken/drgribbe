@@ -12,11 +12,18 @@ type AccordionProps = {
     title: string
     content: React.ReactNode
   }[]
+  size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export const Accordion = ({ items, coral, outLine }: AccordionProps) => {
+export const Accordion = ({
+  items,
+  coral,
+  outLine,
+  size = 'h3'
+}: AccordionProps) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null)
   const accordionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
+  const HeadingTag = size
 
   const handleAccordionToggle = (id: string) => {
     setOpenAccordion((prev) => (prev === id ? null : id))
@@ -53,7 +60,7 @@ export const Accordion = ({ items, coral, outLine }: AccordionProps) => {
     <div>
       {items.map(({ id, title, content }) => (
         <div key={id} className={`${borderColor} mb-2 rounded-lg border`}>
-          <h3 className="text-lg font-light">
+          <HeadingTag className="text-lg font-light">
             <button
               id={`accordion-${id}`}
               aria-expanded={openAccordion === id}
@@ -80,7 +87,7 @@ export const Accordion = ({ items, coral, outLine }: AccordionProps) => {
                 <ChevronIcon />
               </span>
             </button>
-          </h3>
+          </HeadingTag>
           <div
             id={`panel-${id}`}
             role="region"

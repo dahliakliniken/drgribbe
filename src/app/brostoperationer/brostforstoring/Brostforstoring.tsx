@@ -43,56 +43,12 @@ const Brostforstoring = () => {
               <H3>{t('technique.heading1')}</H3>
               <P>{t('technique.text1')}</P>
 
-              <Accordion items={teknikAccordion} />
-
-              {/* 
-              
-
-              <H3 >{t('technique.heading2')}</H3>
-              <P >{t('technique.text2')}</P>
-
-              <H3 >{t('technique.heading3')}</H3>
-              <P >
-                {t.rich('technique.text3', {
-                  link: (chunks) => (
-                    <AnchorLink href="#placering" className="text-white">
-                      {chunks}
-                    </AnchorLink>
-                  )
-                })}
-              </P>
-              <H3 >{t('technique.heading4')}</H3>
-              <P >{t('technique.text4')}</P>
-              <H3 >{t('technique.heading5')}</H3>
-              <P >{t('technique.text5')}</P> */}
+              <Accordion size="h4" items={teknikAccordion} />
             </Section>
           </Pillar>
         }
       />
 
-      {/* <SimpleCard
-        bgColor={BgColors.White}
-        bgPosition="right"
-        content={
-          <Pillar>
-            <Section>
-              <H3>{t('technique.heading6')}</H3>
-              <P>{t('technique.text6_1')}</P>
-              <P>{t('technique.text6_2')}</P>
-              <P>{t('technique.text6_3')}</P>
-
-              <H3>{t('technique.heading7')}</H3>
-              <P>{t('technique.text7')}</P>
-
-              <H3>{t('technique.heading8')}</H3>
-              <P>{t('technique.text8')}</P>
-
-              <H3>{t('technique.heading9')}</H3>
-              <P>{t('technique.text9')}</P>
-            </Section>
-          </Pillar>
-        }
-      /> */}
       <SpaceContainer>
         <Pillar>
           <H2 id="placering">{t('placement.heading1')}</H2>
@@ -101,27 +57,12 @@ const Brostforstoring = () => {
         </Pillar>
       </SpaceContainer>
 
-      {/* <SimpleCard
-        bgColor={BgColors.Green}
-        bgPosition="right"
-        content={
-          <Pillar>
-            <H2 id="placering" white>
-              {t('placement.heading1')}
-            </H2>
-            <P white>{t('placement.text1')}</P>
-            <P white>{t('placement.text2')}</P>
-          </Pillar>
-        }
-      /> */}
-
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="left"
         content={
           <Pillar>
             <H2 white>{t('withBodyFat.title')}</H2>
-            {/* <H3 white>{t('withBodyFat.background.title')}</H3> */}
             <P white>{t('withBodyFat.background.text1')}</P>
 
             <H3 white>{t('withBodyFat.technique.title')}</H3>
