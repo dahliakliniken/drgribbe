@@ -204,7 +204,7 @@ const Brostoperationer = () => {
               <H3>{t('brostoperationer.surgery.heading1')}</H3>
               <P>{t('brostoperationer.surgery.text1')}</P>
               <P>{t('brostoperationer.surgery.text1-2')}</P>
-              <Accordion items={surgeryItems} />
+              <Accordion size="h4" items={surgeryItems} />
             </SpaceContainer>
           </Pillar>
         }

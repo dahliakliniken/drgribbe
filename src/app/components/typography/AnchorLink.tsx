@@ -32,7 +32,8 @@ export const AnchorLink = ({
     <A
       href={href}
       onClick={handleClick}
-      className={`${className} ${small ? 'text-base' : 'text-lg'}`}
+      small={small}
+      className={`${className}`}
     >
       {children}
     </A>

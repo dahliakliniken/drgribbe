@@ -35,7 +35,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
   )
 
   return (
-    <div className="card h-60 w-[400px]">
+    <div className="card h-60 w-[320px] lg:w-[400px]">
       <div
         className={`content absolute h-full w-full shadow-lg transition-transform duration-700 ${isFlipped ? 'flipped' : ''}`}
       >

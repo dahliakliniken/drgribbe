@@ -44,7 +44,7 @@ const PriceList = ({ items }: { items: Item[] }) => {
                       <div>
                         <Link
                           href={link}
-                          className="text-sm underline underline-offset-2 hover:text-coral"
+                          className="underline underline-offset-2 hover:text-coral"
                         >
                           {t('priser.readMore')}
                         </Link>
