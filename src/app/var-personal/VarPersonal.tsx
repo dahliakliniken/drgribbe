@@ -24,7 +24,7 @@ const VarPersonal = () => {
     {
       id: crypto.randomUUID(),
       name: 'Kristina',
-      titles: ['Deltid i reception och omvårdnad på operation']
+      titles: ['Reception och övrig administration']
     },
     {
       id: crypto.randomUUID(),
