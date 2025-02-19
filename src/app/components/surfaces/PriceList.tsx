@@ -16,7 +16,7 @@ type Item = {
 const PriceList = ({ items }: { items: Item[] }) => {
   const t = useTranslations()
   return (
-    <ul className="max-w-xl divide-y divide-gray-300">
+    <ul className="divide-y divide-gray-300">
       {items.map(({ title, price, procedures }, index) => {
         const hasSubProcedures = procedures.length > 0
 
@@ -44,7 +44,7 @@ const PriceList = ({ items }: { items: Item[] }) => {
                       <div>
                         <Link
                           href={link}
-                          className="text-sm underline underline-offset-2 hover:text-coral"
+                          className="underline underline-offset-2 hover:text-coral"
                         >
                           {t('priser.readMore')}
                         </Link>

@@ -7,11 +7,13 @@ type SmoothScrollLinkProps = {
   href: string
   children: React.ReactNode
   className?: string
+  small?: boolean
 }
 
 export const AnchorLink = ({
   href,
   children,
+  small,
   className
 }: SmoothScrollLinkProps) => {
   const router = useRouter()
@@ -30,8 +32,8 @@ export const AnchorLink = ({
     <A
       href={href}
       onClick={handleClick}
-      className={`${className} text-xl`}
-      color="text-black"
+      small={small}
+      className={`${className}`}
     >
       {children}
     </A>

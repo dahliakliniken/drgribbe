@@ -2,19 +2,36 @@ import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
-import { CloseIcon } from '../icons/CloseIcon'
-import { MenuIcon } from '../icons/MenuIcon'
 import { ChevronIcon } from '../icons/ChevronIcon'
 import { A } from '../typography/A'
+import { HamburgerButton } from '../inputs/HamburgerButton'
+import cn from 'classnames'
+import { useLinksData } from './useLinksData'
+import { useFocusTrap } from '@/hooks/useFocusTrap'
+
+type Link = { text: string; href: string; id: string }
+
+type LinkProps = Array<Link & { subLinks?: Link[] }>
 
 export const DropdownMenu: React.FC = () => {
   const t = useTranslations()
   const [isOpen, setIsOpen] = useState(false)
+  const [activeLink, setActiveLink] = useState<string | null>(null)
   const menuRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
+  const [mainLinks] = useLinksData()
+
+  useFocusTrap(isOpen, menuRef)
+
+  const handleKeyDown = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setIsOpen(false)
+    }
+  }
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev)
+    setActiveLink(null)
   }
 
   const handleClickOutside = (e: MouseEvent) => {
@@ -26,102 +43,145 @@ export const DropdownMenu: React.FC = () => {
   useEffect(() => {
     if (isOpen) {
       document.addEventListener('mousedown', handleClickOutside)
+      document.addEventListener('keydown', handleKeyDown)
       buttonRef.current?.focus()
+      document.body.classList.add('lg:overflow-hidden')
     } else {
       document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleKeyDown)
+      document.body.classList.remove('lg:overflow-hidden')
     }
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleKeyDown)
+      document.body.classList.remove('lg:overflow-hidden')
     }
   }, [isOpen])
 
-  const renderLinks = () => {
-    const links = [
-      {
-        text: t('dropdown.clinic'),
-        href: '/#om-kliniken',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.breastSurgeries'),
-        href: '/brostoperationer',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.implants'),
-        href: '/brostoperationer/implantaten',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.skinInjections'),
-        href: '/hud-och-injektioner',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.ourStaff'),
-        href: '/var-personal',
-        id: crypto.randomUUID()
-      },
-      {
-        text: t('dropdown.price'),
-        href: '/priser',
-        id: crypto.randomUUID()
-      }
-    ]
+  const handleClickOnMenuLink = (id: string, hasSubLinks: boolean) => {
+    if (window.innerWidth >= 1024 && hasSubLinks) {
+      setActiveLink((prev) => (prev === id ? null : id))
+    } else {
+      setIsOpen(false)
+    }
+  }
 
-    return links.map(({ text, href, id }) => (
-      <li key={id}>
-        <Link
-          href={href}
-          className="hover:underline"
-          onClick={() => setIsOpen(false)}
-          tabIndex={isOpen ? 0 : -1}
-        >
-          {text}
-        </Link>
-      </li>
-    ))
+  const renderLinks = (links: LinkProps) => {
+    return links.map(({ text, href, id, subLinks }) => {
+      return (
+        <li key={id} className="relative">
+          <Link
+            href={href}
+            className={cn('hover:text-gold transition-colors duration-300', {
+              'text-gold': activeLink === id,
+              "lg:before:absolute lg:before:-left-3 lg:before:-top-px lg:before:content-['_«']":
+                !!subLinks
+            })}
+            onClick={(e) => {
+              if (window.innerWidth >= 1024 && subLinks) {
+                e.preventDefault()
+                handleClickOnMenuLink(id, !!subLinks)
+              } else {
+                handleClickOnMenuLink(id, !!subLinks)
+              }
+            }}
+            tabIndex={isOpen ? 0 : -1}
+          >
+            {text}
+          </Link>
+          {subLinks && (
+            <ul
+              className={cn(
+                'absolute top-0 hidden flex-col gap-5 font-normal text-white transition-all duration-300 ease-in-out lg:flex',
+                {
+                  'pointer-events-auto -translate-x-48 opacity-100':
+                    activeLink === id
+                },
+                {
+                  'pointer-events-none -translate-x-44 opacity-0':
+                    activeLink !== id
+                }
+              )}
+            >
+              {subLinks.map(({ text, href, id: subLinkId }) => (
+                <li key={subLinkId} className="relative">
+                  <Link
+                    href={href}
+                    className={'hover:text-gold transition-colors duration-300'}
+                    tabIndex={activeLink === id ? 0 : -1}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      )
+    })
   }
 
   return (
-    <div className="relative z-50 flex items-center" ref={menuRef}>
-      <ButtonWithIcon
-        ref={buttonRef}
+    <div className="relative z-50 flex items-center gap-1" ref={menuRef}>
+      <HamburgerButton
         onClick={toggleMenu}
-        icon={isOpen ? <CloseIcon /> : <MenuIcon />}
-        label={isOpen ? t('common.close') : t('common.open')}
+        ref={buttonRef}
+        label={isOpen ? t('common.closeMenu') : t('common.openMenu')}
         aria-haspopup="true"
         aria-expanded={isOpen}
+        isOpen={isOpen}
       />
 
       <div
-        className={`absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-custom-gradient p-[10px] pl-gapSpace pt-10 transition-all duration-300 before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 ${
-          isOpen
-            ? 'pointer-events-auto translate-y-0 opacity-100'
-            : 'pointer-events-none translate-y-3 opacity-0'
-        }`}
+        className={cn(
+          'absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-custom-gradient p-4 pl-gapSpace pt-4 transition-all duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 lg:fixed lg:inset-0 lg:bottom-0 lg:top-20 lg:flex lg:w-full lg:flex-row lg:rounded-none lg:bg-white lg:bg-none lg:p-0 lg:duration-500 lg:before:bg-none',
+          {
+            'pointer-events-auto translate-y-0 opacity-100': isOpen,
+            'pointer-events-none translate-y-2 opacity-0 lg:translate-y-0':
+              !isOpen
+          }
+        )}
         aria-hidden={!isOpen}
       >
+        <div className="lg:bg-custom-dark hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-110 lg:before:bg-[20%_20%] lg:before:opacity-5">
+          <div className="flex flex-col p-gapSpace text-white">
+            <span>{t('contact.contactUs')}</span>
+            <span>
+              {t.rich('contact.email', {
+                email: (chunks) => (
+                  <a href="mailto:info@drgribbe.se" tabIndex={isOpen ? 0 : -1}>
+                    {chunks}
+                  </a>
+                )
+              })}
+            </span>
+            <span>{t('contact.phone')}</span>
+          </div>
+        </div>
+
         <ButtonWithIcon
-          className="-translate-y-4 self-end"
+          className="self-end lg:hidden"
           onClick={() => setIsOpen(false)}
           icon={<ChevronIcon />}
-          label={t('common.close')}
+          label={t('common.closeMenu')}
         />
-        <ul className="mb-gapSpace flex w-full flex-col gap-5">
-          {renderLinks()}
-        </ul>
-        <A
-          inverted
-          small
-          href="/boka"
-          buttonStyle
-          className="text-center"
-          onClick={() => setIsOpen(false)}
-        >
-          {t('common.bookConsultation')}
-        </A>
+        <div className="lg:bg-custom-gradient-desktop lg:relative lg:flex-1">
+          <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace lg:ml-gapSpaceL">
+            {renderLinks(mainLinks)}
+          </ul>
+          <A
+            inverted
+            small
+            href="/boka"
+            buttonStyle
+            className="rounded-lg text-center lg:m-gapSpace lg:ml-gapSpaceL"
+            onClick={() => setIsOpen(false)}
+          >
+            {t('common.bookConsultation')}
+          </A>
+        </div>
       </div>
     </div>
   )

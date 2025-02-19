@@ -25,9 +25,9 @@ export const HeaderWithFooter = () => {
 
   return (
     <header
-      className={`fixed bottom-0 left-0 right-0 w-full transition-all duration-300 ${
+      className={`fixed bottom-0 left-0 right-0 w-full transition-all lg:top-0 ${
         isAtBottom ? 'h-40' : 'h-20'
-      } z-50 bg-[#EAE6E3]`}
+      } z-50 bg-beige`}
     >
       <div className="flex items-center p-gapSpace">
         <Logo />
@@ -36,13 +36,13 @@ export const HeaderWithFooter = () => {
 
       {/* Expanding Footer with contact information */}
       {isAtBottom && (
-        <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3">
+        <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3 lg:pr-16">
           <div className="flex flex-col text-center text-sm">
             <span>{t('contact.contactUs')}</span>
             <span>
               {t.rich('contact.email', {
                 email: (chunks) => (
-                  <a href="mailto:info@dahliakliniken.se">{chunks}</a>
+                  <a href="mailto:info@drgribbe.se">{chunks}</a>
                 )
               })}
             </span>

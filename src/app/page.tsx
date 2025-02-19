@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import Consultation from '../../public/images/konsultation_med_patient.jpg'
-import WaitingRoom from '../../public/images/waiting-room.jpg'
-import Doctor from '../../public/images/doctor.jpg'
-import SfepLogo from '../../public/images/sfep-logo.svg'
+import Consultation from '../../public/images/N3A0033_.jpg'
+import WaitingRoom from '../../public/images/_N3A7746.jpg'
+import belowheadingImage from '../../public/images/_N3A9899.jpg'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { H2 } from './components/typography/H2'
-import { Card } from './components/surfaces/Card'
+import { H3 } from './components/typography/H3'
 import { SpaceContainer } from './components/layout/SpaceContainer'
 import { P } from './components/typography/P'
 import { SimpleCard } from './components/surfaces/SimpleCard'
@@ -14,128 +13,153 @@ import { BgColors } from './types'
 import { Pillar } from './components/layout/Pillar'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { A } from './components/typography/A'
+import { Hero } from './components/surfaces/Hero'
+import  Testimonials from './components/surfaces/Testimonial'
+import { H1 } from './components/typography/H1'
 
 const Page: React.FC = () => {
   const t = useTranslations()
   return (
     <>
-      <main className="mb-36 flex flex-col">
-        <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center bg-[url('/images/hero-image.jpg')] bg-cover bg-center bg-no-repeat">
-          <div className="absolute bottom-24">
-            <A href="/boka" buttonStyle>
-              {t('common.bookConsultation')}
-            </A>
-          </div>
-        </section>
+      <Hero />
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition="right"
+        content={
+          <Pillar>
+            <SpaceContainer>
+              <H1>{t('aboutBox.title')}</H1>
+              <P>
+                {
+                  'Välkommen till en klinik helt specialiserad på estetiska bröstoperationer'
+                }
+              </P>
+              <P>{t('aboutBox.paragraph1')}</P>
+              <P>{t('aboutBox.paragraph2')}</P>
+            </SpaceContainer>
+          </Pillar>
+        }
+      />
+      {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
+      <SpaceContainer>        
+        <Testimonials />
+      </SpaceContainer>
 
-        <Card
-          bgColor={BgColors.Coral}
-          bgPosition="right"
-          image={
-            <Image src={Consultation} alt={''} className="hidden lg:block" />
-          }
-          title={<H2 white>{t('aboutBox.title')}</H2>}
-          paragraphs={[t('aboutBox.paragraph1'), t('aboutBox.paragraph2')]}
-          threeColumns
-        />
+      <SpaceContainer noPadding>
+        <Pillar>
+          <SpaceContainer>
+            <H2 upperCase>{t('treatmentBox.title')}</H2>
+          </SpaceContainer>
+        </Pillar>
+      </SpaceContainer>
 
-        <Image src={Consultation} alt={''} className="lg:hidden" />
+      <SpaceContainer spaceTop>
+        <div className="m-auto xl:max-w-7xl">
+          <TreatmentBox treatments={allTreatmentsData} />
+        </div>
+      </SpaceContainer>
 
-        <SpaceContainer spaceVertically>
-          <H2 upperCase>{t('treatmentBox.title')}</H2>
-        </SpaceContainer>
-        <TreatmentBox treatments={allTreatmentsData} />
-
-        <SpaceContainer spaceVertically noPadding>
-          <SimpleCard
-            bgColor={BgColors.Coral}
-            bgPosition="left"
-            content={
-              <>
-                <H2 upperCase white className="text-center">
-                  {t('common.freeConsultation')}
-                </H2>
-                <div className="m-auto flex max-w-xs justify-center">
-                  <A href="/boka" className="uppercase" buttonStyle>
-                    {t('common.bookNow')}
-                  </A>
-                </div>
-              </>
-            }
-          />
-
-          {/* About Section */}
-          <SimpleCard
-            id="om-kliniken"
-            className="before:bg-500 before:bg-[30%_40%]"
-            bgColor={BgColors.White}
-            content={
-              <Pillar>
-                <H2>{t('aboutClinic.title')}</H2>
-                <Image
-                  src={SfepLogo}
-                  alt={t('altText.sfepLogo')}
-                  height={200}
-                  className="m-auto mb-4 text-center lg:float-right lg:ml-4"
-                />
-                <P>{t('aboutClinic.paragraph1')}</P>
-                <P>{t('aboutClinic.paragraph2')}</P>
-              </Pillar>
-            }
-          />
-
-          <SimpleCard
-            bgColor={BgColors.Coral}
-            bgPosition="right"
-            content={
-              <Pillar>
-                <H2 white>{t('operationDepartment.title')}</H2>
-                <div className="lg:columns-2">
-                  <P color="text-white">{t('operationDepartment.text1')}</P>
-                  <P color="text-white">{t('operationDepartment.text2')}</P>
-                  <P color="text-white">{t('operationDepartment.text3')}</P>
-                  <P color="text-white">{t('operationDepartment.text4')}</P>
-                  <P color="text-white">{t('operationDepartment.text5')}</P>
-                </div>
-              </Pillar>
-            }
-          />
-
-          <Image
-            src={WaitingRoom}
-            alt={t('altText.patientRoom')}
-            className="max-h-[calc(100dvh-80px)] object-cover object-center"
-          />
-          <SimpleCard
-            bgColor={BgColors.Green}
-            bgPosition="left"
-            content={
-              <div className="lg:flex">
-                <div>
-                  <P color="text-white" className="lg:hidden">
-                    {t('profileCard.imageText')}
-                  </P>
-                  <Image
-                    src={Doctor}
-                    alt={t('profileCard.imageAlt')}
-                    className="mx-auto my-4 rounded-full lg:mr-9"
-                    height={280}
-                  />
-                  <P color="text-white" className="hidden lg:block">
-                    {t('profileCard.imageText')}
-                  </P>
-                </div>
-                <div>
-                  <P color="text-white">{t('profileCard.paragraph1')}</P>
-                  <P color="text-white">{t('profileCard.paragraph2')}</P>
-                  <P color="text-white">{t('profileCard.paragraph3')}</P>
-                </div>
+      <SpaceContainer noPadding spaceTop>
+        <SimpleCard
+          bgColor={BgColors.Beige}
+          className="before:bg-[50%_30%]"
+          content={
+            <>
+              <H2 upperCase className="text-center">
+                {t('common.bookConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle inverted>
+                  {t('common.bookNow')}
+                </A>
               </div>
-            }
-            title={<H2 white>{t('profileCard.title')}</H2>}
-          />
-        </SpaceContainer>
-      </main>
+            </>
+          }
+        />
+      </SpaceContainer>
+
+      {/* About Section */}
+      <SimpleCard
+        id="om-kliniken"
+        className="before:bg-500 before:bg-[30%_40%]"
+        bgColor={BgColors.White}
+        content={
+          <Pillar>
+            <Image src={Consultation} alt={''} />
+            <span className="imagetext">{t('profileCard.imageText')}</span>
+            <span className="imagetext-inline">
+              {t('profileCard.paragraph1')}
+            </span>
+            <span className="imagetext-inline">
+              <A href={'https://sfep.se/'}>{t('profileCard.linkpre')}</A>
+            </span>
+            <SpaceContainer noPadding spaceTop>
+              <H2>{t('aboutClinic.title')}</H2>
+              <P>{t('aboutClinic.paragraph1')}</P>
+              <SpaceContainer noPadding spaceVertically>
+                <Image
+                  src={belowheadingImage}
+                  alt={t('altText.brostoperationerConsultation')}
+                  className="max-h-svh object-cover object-center"
+                />
+              </SpaceContainer>
+
+              <P>{t('aboutClinic.paragraph2')}</P>
+
+              <H3>{t('aboutClinic.ourphilosophy')}</H3>
+              <P>{t('aboutClinic.paragraph3')}</P>
+              <A href={'/garanti#phil'}>{t('aboutClinic.readMore')}</A>
+            </SpaceContainer>
+          </Pillar>
+        }
+      />
+
+      <SimpleCard
+        bgColor={BgColors.Coral}
+        bgPosition="right"
+        content={
+          <Pillar>
+            <H2 white>{t('operationDepartment.title')}</H2>
+            <div className="lg:columns-2">
+              <P white>{t('operationDepartment.text1')}</P>
+              <P white>{t('operationDepartment.text2')}</P>
+              <P white>{t('operationDepartment.text3')}</P>
+              <P white>{t('operationDepartment.text4')}</P>
+              <P white>{t('operationDepartment.text5')}</P>
+            </div>
+          </Pillar>
+        }
+      />
+      <Pillar>
+        <Image
+          src={WaitingRoom}
+          alt={t('altText.patientRoom')}
+          className="max-h-[calc(100dvh-80px)] object-cover object-center"
+        />
+      </Pillar>
+      <SpaceContainer noPadding>
+        <SimpleCard
+          bgColor={BgColors.Beige}
+          className="before:bg-[30%_30%] lg:before:bg-200"
+          content={
+            <Pillar>
+              <H2 className="text-center">
+                {'Vill du veta mer om våra behandlingar?'}
+              </H2>
+              <P className="text-center">
+                {
+                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                }
+              </P>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle inverted>
+                  {t('common.bookNow')}
+                </A>
+              </div>
+            </Pillar>
+          }
+        />
+      </SpaceContainer>
     </>
   )
 }

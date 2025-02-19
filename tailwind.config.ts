@@ -15,16 +15,22 @@ const config: Config = {
         foreground: 'var(--foreground)',
         coral: '#B06D74',
         green: '#0C412F',
-        beige: '#EAE6E3'
+        beige: '#EAE6E3',
+        lightBeige: '#F5F3F2',
+        grey: 'darkgrey',
+        gold: '#9C874C'
       },
       fontFamily: {
         'josefin-sans': ['"Josefin Sans"', 'sans-serif']
       },
+      backgroundColor: {
+        'custom-dark': 'rgba(20, 20, 20, 0.8)'
+      },
       backgroundImage: {
         'card-pattern': "url('/images/dalia_icon_white.svg')",
         'card-pattern-light': "url('/images/dalia_icon_beige.svg')",
-        'custom-gradient': `linear-gradient(0deg, #EAE6E3, #EAE6E3), 
-                              linear-gradient(177.97deg, rgba(213, 164, 168, 0.2) 55.19%, rgba(234, 230, 227, 0.2) 78.41%)`
+        'custom-gradient': `linear-gradient(180deg, rgba(234,215,212,1) 0%, rgba(234,230,227,1) 80%)`,
+        'custom-gradient-desktop': `linear-gradient(180deg, rgba(234,230,227,1) 0%, rgba(234,215,212,1) 80%)`
       },
       backgroundSize: {
         '50': '50%',
@@ -34,7 +40,8 @@ const config: Config = {
         '500': '500%'
       },
       backgroundPosition: {
-        'small-left-top': '0% 50%',
+        'small-left-top': '100% 50%',
+        'large-left-top': '560% 100%',
         'small-right-top': '0% 50%',
         'small-center': '50% 50%',
         'small-left': '100% 50%',

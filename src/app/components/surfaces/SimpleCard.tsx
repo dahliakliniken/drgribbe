@@ -1,4 +1,5 @@
 import { BgColors, BgPositions } from '@/app/types'
+import classNames from 'classnames'
 
 type CardProps = {
   content: React.ReactNode
@@ -7,7 +8,10 @@ type CardProps = {
   bgPosition?: keyof typeof BgPositions
   fullWidth?: boolean
   className?: string
+  rounded?: boolean
   id?: string
+  clickable?: boolean
+  cardList?: boolean
 }
 
 export const SimpleCard = ({
@@ -16,11 +20,20 @@ export const SimpleCard = ({
   bgColor,
   bgPosition,
   className,
-  id
+  rounded,
+  id,
+  clickable,
+  cardList
 }: CardProps) => {
   const isWhite = bgColor === BgColors.White
+  const isBeige = bgColor === BgColors.Beige
+
+  const bgSizeClass = cardList
+    ? 'before:bg-200'
+    : 'before:lg:bg-110 before:bg-200'
+
   const backgroundPositionVariants = {
-    'left-top': 'before:bg-small-left-top',
+    'left-top': 'before:bg-small-left-top lg:before:bg-large-left-top',
     'right-top': 'before:bg-small-right-top',
     center: 'before:bg-small-center',
     left: 'before:bg-small-left lg:before:bg-large-left',
@@ -32,7 +45,25 @@ export const SimpleCard = ({
   return (
     <div
       id={id}
-      className={`${className} z-0 px-6 py-8 before:-z-10 before:bg-200 before:lg:bg-110 ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} before:bg-no-repeat ${bgPosition ? backgroundPositionVariants[bgPosition] : ''}`}
+      className={classNames(
+        'before:pointer-events-none before:-z-10',
+        bgSizeClass,
+        className,
+        {
+          [bgPosition ? backgroundPositionVariants[bgPosition] : '']:
+            bgPosition,
+          'rounded-md': rounded,
+          'cursor-pointer': clickable
+        },
+        'z-0 px-6 py-8 before:bg-no-repeat',
+        bgColor,
+        'relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full',
+        {
+          'before:bg-card-pattern-light before:opacity-40': isWhite,
+          'before:bg-card-pattern before:opacity-40': isBeige,
+          'before:bg-card-pattern before:opacity-5': !isWhite && !isBeige
+        }
+      )}
     >
       {title && title}
 

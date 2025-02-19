@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { CloseIcon } from '../icons/CloseIcon'
 import Image, { StaticImageData } from 'next/image'
+import { useFocusTrap } from '@/hooks/useFocusTrap'
 
 type ImageModalProps = {
   imageSrc: StaticImageData
@@ -14,6 +15,8 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null)
   const openButtonRef = useRef<HTMLButtonElement>(null)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+
+  useFocusTrap(isModalOpen, modalRef)
 
   const openModal = () => {
     document.body.style.overflow = 'hidden' // Prevent background scrolling
@@ -28,6 +31,7 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
     setTimeout(() => {
       setIsVisible(false)
       document.body.style.overflow = '' // Restore background scrolling
+      openButtonRef.current?.focus()
     }, 300) // Duration of the transition
   }
 
@@ -45,29 +49,6 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
 
   useEffect(() => {
     if (isModalOpen) {
-      // Trap focus within the modal
-      const focusableElements = modalRef.current?.querySelectorAll(
-        "button, [href], input, select, textarea, [tabindex]:not([tabindex='-1'])"
-      ) as NodeListOf<HTMLElement>
-
-      const firstFocusable = focusableElements?.[0]
-      const lastFocusable = focusableElements?.[focusableElements.length - 1]
-
-      const trapFocus = (e: KeyboardEvent) => {
-        if (!firstFocusable || !lastFocusable) return
-
-        if (e.key === 'Tab') {
-          if (e.shiftKey && document.activeElement === firstFocusable) {
-            e.preventDefault()
-            lastFocusable?.focus()
-          } else if (!e.shiftKey && document.activeElement === lastFocusable) {
-            e.preventDefault()
-            firstFocusable?.focus()
-          }
-        }
-      }
-
-      document.addEventListener('keydown', trapFocus)
       document.addEventListener('keydown', handleKeyDown)
       document.addEventListener('mousedown', handleClickOutside)
 
@@ -75,13 +56,9 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
       closeButtonRef.current?.focus()
 
       return () => {
-        document.removeEventListener('keydown', trapFocus)
         document.removeEventListener('keydown', handleKeyDown)
         document.removeEventListener('mousedown', handleClickOutside)
       }
-    } else {
-      // Return focus to the button that triggered the modal
-      openButtonRef.current?.focus()
     }
   }, [isModalOpen])
 

@@ -3,15 +3,19 @@ import { SpaceContainer } from '../components/layout/SpaceContainer'
 import PriceList from '../components/surfaces/PriceList'
 import { H1 } from '../components/typography/H1'
 import { Pillar } from '../components/layout/Pillar'
+import { Accordion } from '../components/surfaces/Accordion'
+import { useAccordionItems } from './accordionData'
+
+const procedureKeys = Array.from({ length: 18 }, (_, i) => `procedure${i + 1}`)
 
 const Priser = () => {
   const t = useTranslations()
   const messages = useMessages()
+  const [pricesItems] = useAccordionItems()
+
   const priceListKeys = Object.keys(messages.priceList)
 
   const items = priceListKeys.map((key) => {
-    const procedureKeys = ['procedure1', 'procedure2', 'procedure3']
-
     const procedures = procedureKeys
       .filter((textKey) => t.has(`priceList.${key}.${textKey}`))
       .map((textKey) => {
@@ -34,14 +38,17 @@ const Priser = () => {
   })
 
   return (
-    <main className="mb-36 flex flex-col">
-      <SpaceContainer spaceVertically>
+    <>
+      <SpaceContainer>
         <Pillar>
           <H1>{t('priser.title')}</H1>
-          <PriceList items={items} />
+          <Accordion size="h2" outLine items={pricesItems} />
+          <SpaceContainer noPadding spaceTop>
+            <PriceList items={items} />
+          </SpaceContainer>
         </Pillar>
       </SpaceContainer>
-    </main>
+    </>
   )
 }
 

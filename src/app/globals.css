@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +8,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gold: '#9C874C';
 }
 
 body {
@@ -28,4 +30,112 @@ p:not(:last-child) {
 b,
 strong {
   font-weight: 700;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid #9C874C;
+  border-radius: 4px;
+  outline-offset: 4px;
+}
+
+.herogradient{
+  background: linear-gradient(0deg, rgba(0,0,0,0.4780287114845938) 0%, rgba(0,0,0,0) 68%, rgba(255,255,255,0) 100%);
+}
+
+.testimonial{
+  width: 20rem;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+
+}
+.testimonial::before, .testimonial::after{
+  content: '"';
+  font-family: 'Ephesis';
+  font-size: 3rem;
+  color: #9C874C;  
+  display: block;
+  width: 100%;
+  line-height: 1rem;
+  text-align: center;
+
+}
+.testimonial::after{  
+  margin-top: 20px;
+}
+.testimonialtitle{
+  margin-bottom: 1rem;
+  display: block;
+  color: rgba(20, 20, 20, 0.8);
+}
+
+.imagetext{
+  margin-top: 1rem;
+  display: block;
+  font-style: italic;
+}
+
+.imagetext-inline{
+  margin-top: 1rem;
+  font-style: italic;
+  display: inline;
+}
+.imagetext-inline>a{
+  font-size: inherit;
+}
+.staffportrait{
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+.staffh2{
+  max-width: 60%;
+}
+
+@keyframes page-bounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-15px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-5px); }
+}
+.animate-page-bounce {
+  animation: page-bounce 0.8s ease-in-out;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
+
+.card {
+  perspective: 800px;
+}
+
+.content {
+  transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #B06D74;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY( 180deg );
 }

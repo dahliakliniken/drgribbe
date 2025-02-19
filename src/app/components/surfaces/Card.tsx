@@ -19,6 +19,7 @@ type CardProps = {
   rounded?: boolean
   linkHref?: string
   linkText?: string
+  linkTextAriaLabel?: string
   clickable?: boolean
   cardList?: boolean
 }
@@ -36,6 +37,7 @@ export const Card = ({
   rounded = false,
   linkHref,
   linkText,
+  linkTextAriaLabel,
   clickable,
   cardList
 }: CardProps) => {
@@ -47,7 +49,7 @@ export const Card = ({
     }
   }
 
-  const isWhite = bgColor === BgColors.White
+  const isWhiteBackground = bgColor === BgColors.White
   const bgSizeClass = cardList
     ? 'before:bg-200'
     : 'before:lg:bg-110 before:bg-200'
@@ -64,7 +66,7 @@ export const Card = ({
 
   return (
     <div
-      className={`${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${bgSizeClass} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhite ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
+      className={`${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${bgSizeClass} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhiteBackground ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
       onClick={handleClick}
     >
       {title && title}
@@ -77,14 +79,14 @@ export const Card = ({
         {paragraphs.map((paragraph, idx) => (
           <P
             key={`${paragraph}-${idx}`}
-            color={`${isWhite ? 'text-black' : 'text-white'}`}
+            white={!isWhiteBackground}
             small={smallText}
           >
             {paragraph}
           </P>
         ))}
         {linkText && linkHref && (
-          <A ref={linkRef} href={linkHref}>
+          <A ref={linkRef} href={linkHref} aria-label={linkTextAriaLabel} white>
             {linkText}
           </A>
         )}

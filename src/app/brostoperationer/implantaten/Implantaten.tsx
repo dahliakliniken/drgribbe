@@ -1,316 +1,143 @@
-import ProjectionImage from '../../../../public/images/mentor-projektion.jpg'
-import WidthImage from '../../../../public/images/mentor-bredd.jpg'
-import AnatomicalImplantsImage from '../../../../public/images/mentor-anatomiska.jpg'
-import FillingImage from '../../../../public/images/mentor-fyllnadsgrad.jpg'
 import { Pillar } from '@/app/components/layout/Pillar'
-import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
 import { P } from '@/app/components/typography/P'
 import { useTranslations } from 'next-intl'
-import { ImageModal } from '@/app/components/surfaces/ImageModal'
 import { H3 } from '@/app/components/typography/H3'
 import { AnchorLink } from '@/app/components/typography/AnchorLink'
+import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
+import { BgColors } from '@/app/types'
+import Image from 'next/image'
+import ImplantatImage from '../../../../public/images/_N3A0080.jpg'
+import ImplantatVariansImage from '../../../../public/images/teardrop-runda-implantat-1000px.jpg'
+import { useAccordionItems } from './accordionData'
 
 const Implantaten = () => {
-  const t = useTranslations('implantaten')
-
-  const accordionItems = [
-    {
-      id: 'implants',
-      title: t('accordion.roundImplants.title'),
-      content: (
-        <>
-          <P small>{t('accordion.roundImplants.text1')}</P>
-          <P small>{t('accordion.roundImplants.text2')}</P>
-          <P small>{t('accordion.roundImplants.text3')}</P>
-        </>
-      )
-    },
-    {
-      id: 'firmness',
-      title: t('accordion.firmness.title'),
-      content: <P small>{t('accordion.firmness.text1')}</P>
-    },
-    {
-      id: 'projection',
-      title: t('accordion.projection.title'),
-      content: (
-        <>
-          <P small>{t('accordion.projection.text1')}</P>
-          <P small>{t('accordion.projection.text2')}</P>
-          <ImageModal imageSrc={ProjectionImage} imageAlt={'imageAlt'} />
-        </>
-      )
-    },
-    {
-      id: 'width',
-      title: t('accordion.width.title'),
-      content: (
-        <>
-          <P small>{t('accordion.width.text1')}</P>
-          <ImageModal imageSrc={WidthImage} imageAlt={'imageAlt'} />
-        </>
-      )
-    },
-    {
-      id: 'degreeOfFilling',
-      title: t('accordion.degreeOfFilling.title'),
-      content: (
-        <>
-          <P small>{t('accordion.degreeOfFilling.text1')}</P>
-          <ImageModal imageSrc={FillingImage} imageAlt={'imageAlt'} />
-        </>
-      )
-    },
-    {
-      id: 'anatomicalImplants',
-      title: t('accordion.anatomicalImplants.title'),
-      content: (
-        <>
-          <P small>{t('accordion.anatomicalImplants.text1')}</P>
-          <ImageModal
-            imageSrc={AnatomicalImplantsImage}
-            imageAlt={'imageAlt'}
-          />
-        </>
-      )
-    }
-  ]
+  const t = useTranslations()
+  const [
+    accordion1Items,
+    accordion2Items,
+    accordion3Items,
+    accordion4Items,
+    accordion5Items,
+    accordion6Items,
+    accordion7Items
+  ] = useAccordionItems()
 
   return (
-    <main className="mb-36 flex flex-col">
+    <>
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="right"
+        content={
+          <Pillar>
+            <H1 white>{t('implantaten.title')}</H1>
+            <P white>{t('implantaten.text1')}</P>
+          </Pillar>
+        }
+      />
+
       <SpaceContainer>
         <Pillar>
-          <Section>
-            <H1>{t('title')}</H1>
-            <P>{t('text1')}</P>
-            <P>{t('text2')}</P>
-          </Section>
-
-          <Section>
-            <ol>
-              <li>
-                <H2>{t('listItem1.heading')}</H2>
-                <P>{t('listItem1.text1')}</P>
-                <P>{t('listItem1.text2')}</P>
-                <P>{t('listItem1.text3')}</P>
-              </li>
-
-              <li>
-                <H2>{t('listItem2.heading')}</H2>
-                <P>{t('listItem2.text1')}</P>
-              </li>
-
-              <li>
-                <H2>{t('listItem3.heading')}</H2>
-                <P>{t('listItem3.text1')}</P>
-              </li>
-
-              <li>
-                <H2>{t('listItem4.heading')}</H2>
-                <P>{t('listItem4.text1')}</P>
-              </li>
-
-              <li>
-                <H2>{t('listItem5.heading')}</H2>
-                <P>{t('listItem4.text1')}</P>
-
-                <H3>{t('listItem5.smoothSurface.title')}</H3>
-                <P>{t('listItem5.smoothSurface.text1')}</P>
-
-                <H3>{t('listItem5.texturedSurface.title')}</H3>
-                <P>{t('listItem5.texturedSurface.text1')}</P>
-                <P>{t('listItem5.texturedSurface.text2')}</P>
-
-                <H3>{t('listItem5.nanoTexturedSurface.title')}</H3>
-                <P>{t('listItem5.nanoTexturedSurface.text1')}</P>
-
-                <H3>{t('listItem5.polyuretan.title')}</H3>
-                <P>{t('listItem5.polyuretan.text1')}</P>
-              </li>
-            </ol>
-            <P>
-              {t.rich('readMore', {
-                link: (chunks) => (
-                  <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
-                ),
-                link2: (chunks) => (
-                  <AnchorLink href="#anatomiska-implantat">{chunks}</AnchorLink>
-                )
-              })}
-            </P>
-            <P>{t('text3')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('jelly.title')}</H2>
-            <P>{t('jelly.text1')}</P>
-          </Section>
-
-          <Section id="runda-implantat">
-            <H2>{t('roundImplants.title')}</H2>
-            <P>{t('roundImplants.text1')}</P>
-            <P>{t('roundImplants.text2')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('projection.title')}</H2>
-            <P>{t('projection.text1')}</P>
-            <P>{t('projection.text2')}</P>
-            <P>{t('projection.text3')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('width.title')}</H2>
-            <P>{t('width.text1')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('content.title')}</H2>
-            <P>{t('content.text1')}</P>
-          </Section>
-
-          <Section>
-            <H2>{t('surface.title')}</H2>
-            <P>{t('surface.text1')}</P>
-            <P>{t('surface.text2')}</P>
-          </Section>
-
-          <Section id="anatomiska-implantat">
-            <H2>{t('anatomic.title')}</H2>
-            <P>{t('anatomic.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('anatomic.measurements.title')}</H3>
-            <P>{t('anatomic.measurements.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('anatomic.projections.title')}</H3>
-            <P>{t('anatomic.projections.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('anatomic.content.title')}</H3>
-            <P>{t('anatomic.content.text1')}</P>
-            <P>{t('anatomic.content.text2')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('anatomic.surface.title')}</H3>
-            <P>{t('anatomic.surface.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('anatomic.results.title')}</H3>
-            <P>
-              {t.rich('anatomic.results.text1', {
-                link: (chunks) => (
-                  <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
-                )
-              })}
-            </P>
-          </Section>
-
-          <Section>
-            <H2>{t('ourImplants.title')}</H2>
-            <H3>{t('ourImplants.motiva.title')}</H3>
-            <P>{t('ourImplants.motiva.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.motiva.formAndProfiles.title')}</H3>
-
-            <P>
-              {t.rich('ourImplants.motiva.formAndProfiles.text1', {
-                link: (chunks) => (
-                  <AnchorLink href="#tabell">{chunks}</AnchorLink>
-                )
-              })}
-            </P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.motiva.filling.title')}</H3>
-            <P>{t('ourImplants.motiva.filling.text1')}</P>
-            <P>
-              {t.rich('ourImplants.motiva.filling.text2', {
-                strong: (chunks) => <strong>{chunks}</strong>
-              })}
-            </P>
-            <P>
-              {t.rich('ourImplants.motiva.filling.text3', {
-                strong: (chunks) => <strong>{chunks}</strong>
-              })}
-            </P>
-            <P>
-              {t.rich('ourImplants.motiva.filling.text4', {
-                strong: (chunks) => <strong>{chunks}</strong>
-              })}
-            </P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.motiva.surface.title')}</H3>
-            <P>{t('ourImplants.motiva.surface.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.mentor.title')}</H3>
-            <P>{t('ourImplants.mentor.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.mentor.formAndProfiles.title')}</H3>
-            <P>{t('ourImplants.mentor.formAndProfiles.text1')}</P>
-            <P>{t('ourImplants.mentor.formAndProfiles.text2')}</P>
-            <P>{t('ourImplants.mentor.formAndProfiles.text3')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.mentor.filling.title')}</H3>
-            <P>{t('ourImplants.mentor.filling.text1')}</P>
-            <P>{t('ourImplants.mentor.filling.text2')}</P>
-            <P>{t('ourImplants.mentor.filling.text3')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.mentor.surface.title')}</H3>
-            <P>{t('ourImplants.mentor.surface.text1')}</P>
-            <P>{t('ourImplants.mentor.surface.text2')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.polytech.title')}</H3>
-            <P>{t('ourImplants.polytech.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.polytech.formAndProfiles.title')}</H3>
-            <P>{t('ourImplants.polytech.formAndProfiles.text1')}</P>
-            <P>{t('ourImplants.polytech.formAndProfiles.text2')}</P>
-            <P>{t('ourImplants.polytech.formAndProfiles.text3')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.polytech.filling.title')}</H3>
-            <P>{t('ourImplants.polytech.filling.text1')}</P>
-          </Section>
-
-          <Section>
-            <H3>{t('ourImplants.polytech.surface.title')}</H3>
-            <P>{t('ourImplants.polytech.surface.text1')}</P>
-            <P>{t('ourImplants.polytech.surface.text2')}</P>
-          </Section>
-
-          <Accordion items={accordionItems} />
+          <Image
+            src={ImplantatImage}
+            alt={t('altText.brostoperationerDayOfSurgery')}
+            className="max-h-svh object-cover object-center"
+          />
         </Pillar>
+
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="left-top"
+          content={
+            <Pillar>
+              <P>{t('implantaten.text2')}</P>
+              <Accordion items={accordion1Items} />
+            </Pillar>
+          }
+        />
+
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="right"
+          content={
+            <Pillar>
+              <P>
+                {t.rich('implantaten.readMore', {
+                  link: (chunks) => (
+                    <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
+                  ),
+                  link2: (chunks) => (
+                    <AnchorLink href="#anatomiska-implantat">
+                      {chunks}
+                    </AnchorLink>
+                  )
+                })}
+              </P>
+              <P>{t('implantaten.text3')}</P>
+
+              <SpaceContainer noPadding spaceTop>
+                <H2>{t('implantaten.jelly')}</H2>
+                <Accordion items={accordion2Items} />
+              </SpaceContainer>
+
+              <SpaceContainer noPadding spaceTop id="runda-implantat">
+                <H2>{t('implantaten.roundImplants')}</H2>
+                <Accordion items={accordion3Items} />
+              </SpaceContainer>
+            </Pillar>
+          }
+        />
+
+        <Pillar>
+          <div className="relative">
+            <div className="absolute top-1/4 w-full text-center">
+              {'Ett runt och ett anatomiskt implantat'}
+            </div>
+            <Image
+              src={ImplantatVariansImage}
+              alt={t('altText.brostoperationerDayOfSurgery')}
+              className="max-h-svh object-cover object-center"
+            />
+          </div>
+        </Pillar>
+
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="left"
+          content={
+            <Pillar>
+              <SpaceContainer noPadding spaceTop id="anatomiska-implantat">
+                <H2>{t('implantaten.anatomic')}</H2>
+                <Accordion items={accordion4Items} />
+              </SpaceContainer>
+
+              <SpaceContainer noPadding spaceTop>
+                <H2>{t('implantaten.ourImplants')}</H2>
+                <H3>{t('implantaten.motiva.heading')}</H3>
+                <P>{t('implantaten.motiva.text1')}</P>
+                <Accordion items={accordion5Items} />
+              </SpaceContainer>
+
+              <SpaceContainer noPadding spaceTop>
+                <H3>{t('implantaten.mentor.heading')}</H3>
+                <P>{t('implantaten.mentor.text1')}</P>
+                <P>{t('implantaten.mentor.text2')}</P>
+                <Accordion items={accordion6Items} />
+              </SpaceContainer>
+
+              <SpaceContainer noPadding spaceTop>
+                <H3>{t('implantaten.polytech.heading')}</H3>
+                <P>{t('implantaten.polytech.text1')}</P>
+                <Accordion items={accordion7Items} />
+              </SpaceContainer>
+            </Pillar>
+          }
+        />
       </SpaceContainer>
-    </main>
+    </>
   )
 }
 

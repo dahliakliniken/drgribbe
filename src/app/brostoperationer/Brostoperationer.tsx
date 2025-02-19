@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useMessages, useTranslations } from 'next-intl'
 import { P } from '../components/typography/P'
 import { H1 } from '../components/typography/H1'
@@ -10,18 +11,21 @@ import { Pillar } from '../components/layout/Pillar'
 import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { BgColors } from '../types'
 import { H3 } from '../components/typography/H3'
-import { Section } from '../components/layout/Section'
 import { AnchorLink } from '../components/typography/AnchorLink'
 import { A } from '../components/typography/A'
-import ConsultationImage from '../../../public/images/brostoperation-konsultation.jpg'
-import DayOfSurgeryImage from '../../../public/images/brostoperationer-day-of-surgery.jpg'
-import SurgeryImage from '../../../public/images/brostoperationer-surgery.jpg'
-import PostSurgeryImage from '../../../public/images/brostoperationer-post-surgery.jpg'
-import Image from 'next/image'
+import ConsultationImage from '../../../public/images/_N3A7277.jpg'
+import DayOfSurgeryImage from '../../../public/images/_N3A0187.jpg'
+import SurgeryImage from '../../../public/images/_N3A0184.jpg'
+import PostSurgeryImage from '../../../public/images/_N3A0162.jpg'
+import aterbesokImage from '../../../public/images/_N3A9941.jpg'
+// import belowheadingImage from '../../../public/images/_N3A9899.jpg'
+import { useAccordionItems } from './accordionData'
+import { ExpandableTextBox } from '../components/surfaces/ExpandableTextBox'
 
 const Brostoperationer = () => {
   const t = useTranslations()
   const messages = useMessages()
+  const [surgeryItems] = useAccordionItems()
   const beforeOperationKeys = Object.keys(messages.beforeOperation)
   const afterOperationKeys = Object.keys(messages.afterOperation)
   const aftercareKeys = Object.keys(messages.aftercare)
@@ -80,37 +84,96 @@ const Brostoperationer = () => {
   })
 
   return (
-    <main className="mb-36 flex flex-col">
-      <SpaceContainer noPadding>
+    <>
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="right"
+        content={
+          <Pillar>
+            <SpaceContainer>
+              <H1 white>{t('brostoperationer.title')}</H1>
+              <P white>{t('brostoperationer.preamble')}</P>
+            </SpaceContainer>
+          </Pillar>
+        }
+      />
+      {/* <SpaceContainer>
         <Pillar>
-          <SpaceContainer>
-            <H1>{t('brostoperationer.title')}</H1>
-          </SpaceContainer>
+          <Image
+            src={belowheadingImage}
+            alt={t('altText.brostoperationerConsultation')}
+            className="max-h-svh object-cover object-center"
+          />
         </Pillar>
+      </SpaceContainer> */}
 
+      <SpaceContainer spaceTop>
         <div className="m-auto xl:max-w-7xl">
           <TreatmentBox treatments={breastOperationsTreatmentsData} />
         </div>
-        <Pillar>
-          <SpaceContainer spaceVertically>
-            <H2>{t('brostoperationer.heading1')}</H2>
-            <Section>
-              <H3>{t('brostoperationer.consultation.heading1')}</H3>
-              <P>{t('brostoperationer.consultation.text1')}</P>
-              <P>{t('brostoperationer.consultation.text2')}</P>
-              <P>{t('brostoperationer.consultation.text3')}</P>
-              <P>{t('brostoperationer.consultation.text4')}</P>
-              <P>{t('brostoperationer.consultation.text5')}</P>
-              <P>{t('brostoperationer.consultation.text6')}</P>
-              <P>{t('brostoperationer.consultation.text7')}</P>
-              <P>{t('brostoperationer.consultation.text8')}</P>
+      </SpaceContainer>
+
+      <SpaceContainer spaceTop noPadding>
+        <SimpleCard
+          bgColor={BgColors.White}
+          bgPosition="right"
+          content={
+            <Pillar>
+              <H2>{t('brostoperationer.heading1')}</H2>
               <Image
                 src={ConsultationImage}
                 alt={t('altText.brostoperationerConsultation')}
+                className="max-h-svh object-cover object-center"
               />
-            </Section>
+              <SpaceContainer noPadding spaceVertically>
+                <ExpandableTextBox
+                  title={t('brostoperationer.consultation.heading1')}
+                  headingSize="H3"
+                  paragraphs={[
+                    t('brostoperationer.consultation.text1'),
+                    t('brostoperationer.consultation.text2'),
+                    t('brostoperationer.consultation.text3'),
+                    t('brostoperationer.consultation.text4'),
+                    t('brostoperationer.consultation.text5'),
+                    t('brostoperationer.consultation.text6'),
+                    t('brostoperationer.consultation.text7'),
+                    t('brostoperationer.consultation.text8')
+                  ]}
+                />
+              </SpaceContainer>
+            </Pillar>
+          }
+        />
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="left"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {t('common.bookConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {t('common.bookNow')}
+                </A>
+              </div>
+            </>
+          }
+        />
+      </SpaceContainer>
 
-            <Section>
+      {/* OPERATIONSDAGEN */}
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition="right"
+        content={
+          <Pillar>
+            <Image
+              src={DayOfSurgeryImage}
+              alt={t('altText.brostoperationerDayOfSurgery')}
+              className="max-h-svh object-cover object-center"
+            />
+            <SpaceContainer noPadding spaceTop>
               <H3>{t('brostoperationer.dayOfSurgery.heading1')}</H3>
               <P>{t('brostoperationer.dayOfSurgery.text1')}</P>
               <P>
@@ -121,89 +184,130 @@ const Brostoperationer = () => {
                 })}
               </P>
               <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
+            </SpaceContainer>
+          </Pillar>
+        }
+      />
 
-              <Image
-                src={DayOfSurgeryImage}
-                alt={t('altText.brostoperationerDayOfSurgery')}
-              />
-            </Section>
-
-            <Section>
+      {/* NARKOS&OPERATION */}
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition="left"
+        content={
+          <Pillar>
+            <Image
+              src={SurgeryImage}
+              alt={t('altText.brostoperationerSurgery')}
+              className="max-h-svh object-cover object-center"
+            />
+            <SpaceContainer noPadding spaceTop>
               <H3>{t('brostoperationer.surgery.heading1')}</H3>
               <P>{t('brostoperationer.surgery.text1')}</P>
-              <P>{t('brostoperationer.surgery.text2')}</P>
+              <P>{t('brostoperationer.surgery.text1-2')}</P>
+              <Accordion size="h4" items={surgeryItems} />
+            </SpaceContainer>
+          </Pillar>
+        }
+      />
 
-              <Image
-                src={SurgeryImage}
-                alt={t('altText.brostoperationerSurgery')}
+      {/* EFTEROPERATION */}
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition="right"
+        content={
+          <Pillar>
+            <Image
+              src={PostSurgeryImage}
+              alt={t('altText.brostoperationerPostSurgery')}
+              className="max-h-svh object-cover object-center"
+            />
+            <SpaceContainer noPadding spaceTop>
+              <ExpandableTextBox
+                title={t('brostoperationer.postSurgery.heading1')}
+                headingSize="H3"
+                paragraphs={[
+                  t('brostoperationer.postSurgery.text1'),
+                  t('brostoperationer.postSurgery.text2'),
+                  t('brostoperationer.postSurgery.text3'),
+                  t('brostoperationer.postSurgery.text4'),
+                  t('brostoperationer.postSurgery.text5'),
+                  t('brostoperationer.postSurgery.text6'),
+                  t('brostoperationer.postSurgery.text7'),
+                  t('brostoperationer.postSurgery.text8'),
+                  t('brostoperationer.postSurgery.text9')
+                ]}
               />
-            </Section>
+            </SpaceContainer>
+          </Pillar>
+        }
+      />
 
-            <Section>
-              <H3>{t('brostoperationer.postSurgery.heading1')}</H3>
-              <P>{t('brostoperationer.postSurgery.text1')}</P>
-              <P>{t('brostoperationer.postSurgery.text2')}</P>
-
-              <Image
-                src={PostSurgeryImage}
-                alt={t('altText.brostoperationerPostSurgery')}
-              />
-            </Section>
-
-            <Section>
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="left"
+        content={
+          <>
+            <H2 upperCase white className="text-center">
+              {t('common.freeConsultation')}
+            </H2>
+            <div className="m-auto flex max-w-xs justify-center">
+              <A href="/boka" className="uppercase" buttonStyle>
+                {t('common.bookNow')}
+              </A>
+            </div>
+          </>
+        }
+      />
+      {/* FÖRSTAÅTERBESÖKET */}
+      <SimpleCard
+        bgColor={BgColors.White}
+        bgPosition="right"
+        content={
+          <Pillar>
+            <Image
+              src={aterbesokImage}
+              alt={t('altText.forstaaterbesoket')}
+              className="max-h-svh object-cover object-center"
+            />
+            <SpaceContainer noPadding spaceTop>
               <H3>{t('brostoperationer.firstReturnVisit.heading1')}</H3>
               <P>{t('brostoperationer.firstReturnVisit.text1')}</P>
               <P>{t('brostoperationer.firstReturnVisit.text2')}</P>
-            </Section>
 
-            <Section>
-              <H3>{t('brostoperationer.secondReturnVisit.heading1')}</H3>
+              <H3 className="mt-8">
+                {t('brostoperationer.secondReturnVisit.heading1')}
+              </H3>
               <P>{t('brostoperationer.secondReturnVisit.text1')}</P>
-            </Section>
-          </SpaceContainer>
-        </Pillar>
+            </SpaceContainer>
+          </Pillar>
+        }
+      />
 
-        <SimpleCard
-          bgColor={BgColors.Coral}
-          bgPosition="left"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {t('common.freeConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {t('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
+      {/* Återbesök efter 3-4 månader */}
 
-        <Pillar>
-          <SpaceContainer spaceVertically>
-            <H2 id="forberedelser">{t('brostoperationer.beforeOperation')}</H2>
-            <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
-            <Accordion items={beforeOperationItems} />
-          </SpaceContainer>
+      <SpaceContainer id="forberedelser">
+        <Pillar noPadding>
+          <H2>{t('brostoperationer.beforeOperation')}</H2>
+          <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
+          <Accordion items={beforeOperationItems} />
 
-          <SpaceContainer spaceVertically>
+          <SpaceContainer noPadding spaceVertically>
             <H2>{t('brostoperationer.afterOperation')}</H2>
             <Accordion items={afterOperationItems} />
           </SpaceContainer>
 
-          <SpaceContainer spaceVertically>
+          <SpaceContainer noPadding spaceVertically>
             <H2>{t('brostoperationer.aftercare')}</H2>
             <Accordion items={aftercareItems} />
           </SpaceContainer>
 
-          <SpaceContainer spaceVertically>
+          <SpaceContainer noPadding spaceVertically>
             <H2>{t('brostoperationer.afterFirstReturnVisit')}</H2>
             <Accordion items={afterFirstReturnVisitItems} />
           </SpaceContainer>
         </Pillar>
       </SpaceContainer>
-    </main>
+    </>
   )
 }
 

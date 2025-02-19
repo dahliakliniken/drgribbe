@@ -1,37 +1,82 @@
 'use client'
 
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { ChevronIcon } from '../icons/ChevronIcon'
-import { H3 } from '../typography/H3'
+import classNames from 'classnames'
 
 type AccordionProps = {
+  outLine?: boolean
+  coral?: boolean
   items: {
     id: string
     title: string
     content: React.ReactNode
   }[]
+  size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export const Accordion = ({ items }: AccordionProps) => {
+export const Accordion = ({
+  items,
+  coral,
+  outLine,
+  size = 'h3'
+}: AccordionProps) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null)
+  const accordionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
+  const HeadingTag = size
 
   const handleAccordionToggle = (id: string) => {
     setOpenAccordion((prev) => (prev === id ? null : id))
   }
 
+  const handleFocus = (id: string) => {
+    setOpenAccordion(id)
+  }
+
+  const handleBlur = (id: string) => {
+    setTimeout(() => {
+      if (
+        accordionRefs.current[id] &&
+        !accordionRefs.current[id]?.contains(document.activeElement)
+      ) {
+        setOpenAccordion(null)
+      }
+    }, 0)
+  }
+
+  const borderColor = coral
+    ? 'border-coral'
+    : outLine
+      ? 'border-gold'
+      : 'border-green'
+  const color = coral ? 'coral' : outLine ? 'white' : 'green'
+  const openAccordionColor = coral
+    ? 'bg-[#c98f95]'
+    : outLine
+      ? 'bg-lightBeige'
+      : 'bg-[#338067]'
+
   return (
     <div>
       {items.map(({ id, title, content }) => (
-        <div key={id} className="mb-2 rounded-md">
-          <H3 className="text-lg">
+        <div key={id} className={`${borderColor} mb-2 rounded-lg border`}>
+          <HeadingTag className="text-lg font-light">
             <button
               id={`accordion-${id}`}
               aria-expanded={openAccordion === id}
               aria-controls={`panel-${id}`}
               onClick={() => handleAccordionToggle(id)}
-              className={`flex w-full items-center justify-between px-4 py-3 text-left text-white transition-colors duration-300 ${
-                openAccordion === id ? 'bg-[#196A49]' : 'bg-green'
-              } rounded-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-green`}
+              className={classNames(
+                'flex w-full items-center justify-between px-4 py-3 text-left transition-colors duration-300',
+                {
+                  [openAccordionColor]: openAccordion === id,
+                  [`bg-${color}`]: openAccordion !== id,
+                  'rounded-t-lg': openAccordion === id,
+                  'rounded-lg': openAccordion !== id,
+                  'hover:bg-lightBeige text-black': outLine,
+                  'text-white hover:bg-opacity-80': !outLine
+                }
+              )}
             >
               <span className="font-medium">{title}</span>
               <span
@@ -42,14 +87,19 @@ export const Accordion = ({ items }: AccordionProps) => {
                 <ChevronIcon />
               </span>
             </button>
-          </H3>
+          </HeadingTag>
           <div
             id={`panel-${id}`}
             role="region"
             aria-labelledby={`accordion-${id}`}
-            className={`transition-max-height overflow-hidden duration-300 ease-in-out ${
-              openAccordion === id ? 'max-h-screen' : 'max-h-0'
+            className={`transition-max-height bg-lightBeige overflow-hidden rounded-b-lg duration-300 ease-in-out ${
+              openAccordion === id ? 'max-h-[200vh]' : 'max-h-0'
             }`}
+            ref={(el) => {
+              accordionRefs.current[id] = el
+            }}
+            onFocus={() => handleFocus(id)}
+            onBlur={() => handleBlur(id)}
           >
             <div className="p-4">{content}</div>
           </div>

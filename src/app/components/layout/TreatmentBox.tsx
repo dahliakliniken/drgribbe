@@ -1,10 +1,12 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import { Card } from '../surfaces/Card'
 import { CardRow } from '../surfaces/CardRow'
 import { H3 } from '../typography/H3'
 import { BgColors, BgPositions } from '@/app/types'
+import { SimpleCard } from '../surfaces/SimpleCard'
+import { A } from '../typography/A'
+import { P } from '../typography/P'
 
 type TreatmentBoxProps = {
   treatments: {
@@ -13,8 +15,9 @@ type TreatmentBoxProps = {
     paragraphs: string[]
     image: string
     linkHref: string
-    linkText: string
+    ariaLabel: string
     bgPosition?: keyof typeof BgPositions
+    bgColor: BgColors
   }[]
 }
 
@@ -24,27 +27,40 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
   return (
     <CardRow>
       {treatments.map((treatment) => (
-        <Card
-          key={treatment.id}
-          title={<H3 white>{t(treatment.title)}</H3>}
-          paragraphs={treatment.paragraphs.map((paragraph) => t(paragraph))}
-          bgColor={BgColors.Green}
-          smallText
-          image={
-            <Image
-              className="m-auto my-6"
-              src={treatment.image}
-              alt={''}
-              height={125}
-            />
-          }
-          oneColumn
-          rounded
-          linkHref={treatment.linkHref}
-          linkText={t(treatment.linkText)}
+        <SimpleCard
           clickable
+          rounded
           cardList
+          key={treatment.id}
+          bgColor={treatment.bgColor}
           bgPosition={treatment.bgPosition}
+          content={
+            <div className="flex h-full flex-col">
+              <H3 white>{t(treatment.title)}</H3>
+              <Image
+                className="m-auto my-6"
+                src={treatment.image}
+                alt={''}
+                height={125}
+                aria-hidden={true}
+              />
+              {treatment.paragraphs.map((paragraph, index) => (
+                <P small white key={`${treatment.id}-${index}`}>
+                  {t(paragraph)}
+                </P>
+              ))}
+              <A
+                overlay
+                className="mr-auto mt-auto"
+                href={treatment.linkHref}
+                aria-label={t(treatment.ariaLabel)}
+                white
+                small
+              >
+                {t('common.readMore')}
+              </A>
+            </div>
+          }
         />
       ))}
     </CardRow>

@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl'
 export const Logo = () => {
   const t = useTranslations()
   return (
-    <div className="flex w-full justify-center bg-[#EAE6E3]">
+    <div className="flex w-full justify-center bg-beige">
       <Link href="/">
         <Image
           src={DahliaLogo}
