@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
@@ -33,6 +34,7 @@ export default async function RootLayout({
 }) {
   const locale = await getLocale()
   const messages = await getMessages()
+  const nonce = headers().get('x-nonce') || undefined
 
   return (
     <html lang={locale} className="lg:bg-beige">
@@ -44,7 +46,7 @@ export default async function RootLayout({
               <Breadcrumbs />
               {children}
               <CookieBanner />
-              <AnalyticsWrapper />
+              <AnalyticsWrapper nonce={nonce} />
             </main>
           </AnalyticsProvider>
         </NextIntlClientProvider>
