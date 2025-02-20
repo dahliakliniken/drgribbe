@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Consultation from '../../public/images/N3A0033_.jpg'
@@ -14,11 +16,14 @@ import { Pillar } from './components/layout/Pillar'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { A } from './components/typography/A'
 import { Hero } from './components/surfaces/Hero'
-import  Testimonials from './components/surfaces/Testimonial'
+import Testimonials from './components/surfaces/Testimonial'
 import { H1 } from './components/typography/H1'
+import { useTracking } from '@/hooks/useTracking'
 
 const Page: React.FC = () => {
   const t = useTranslations()
+  const trackEvent = useTracking()
+
   return (
     <>
       <Hero />
@@ -41,7 +46,7 @@ const Page: React.FC = () => {
         }
       />
       {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
-      <SpaceContainer>        
+      <SpaceContainer>
         <Testimonials />
       </SpaceContainer>
 
@@ -69,7 +74,15 @@ const Page: React.FC = () => {
                 {t('common.bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle inverted>
+                <A
+                  onClick={trackEvent('book_clicked', {
+                    link_location: 'homepage'
+                  })}
+                  href="/boka"
+                  className="uppercase"
+                  buttonStyle
+                  inverted
+                >
                   {t('common.bookNow')}
                 </A>
               </div>

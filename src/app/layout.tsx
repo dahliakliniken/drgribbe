@@ -1,10 +1,12 @@
+import { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
-import './globals.css'
-import { Metadata } from 'next'
 import { CookieBanner } from './components/surfaces/CookieBanner'
+import { AnalyticsWrapper } from './components/analytics/AnalyticsWrapper'
+import './globals.css'
+import { AnalyticsProvider } from './components/analytics/AnalyticsContext'
 
 export const metadata: Metadata = {
   title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
@@ -36,12 +38,15 @@ export default async function RootLayout({
     <html lang={locale} className="lg:bg-beige">
       <body>
         <NextIntlClientProvider messages={messages}>
-          <HeaderWithFooter />
-          <main className="mb-36 flex flex-col lg:mb-0 lg:mt-20">
-            <Breadcrumbs />
-            {children}
-            <CookieBanner />
-          </main>
+          <AnalyticsProvider>
+            <HeaderWithFooter />
+            <main className="mb-36 flex flex-col lg:mb-0 lg:mt-20">
+              <Breadcrumbs />
+              {children}
+              <CookieBanner />
+              <AnalyticsWrapper />
+            </main>
+          </AnalyticsProvider>
         </NextIntlClientProvider>
       </body>
     </html>
