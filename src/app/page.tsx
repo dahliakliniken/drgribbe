@@ -18,11 +18,10 @@ import { A } from './components/typography/A'
 import { Hero } from './components/surfaces/Hero'
 import Testimonials from './components/surfaces/Testimonial'
 import { H1 } from './components/typography/H1'
-import { useTracking } from '@/hooks/useTracking'
+import { sendGTMEvent } from '@next/third-parties/google'
 
 const Page: React.FC = () => {
   const t = useTranslations()
-  const trackEvent = useTracking()
 
   return (
     <>
@@ -75,9 +74,12 @@ const Page: React.FC = () => {
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
                 <A
-                  onClick={trackEvent('book_clicked', {
-                    link_location: 'homepage'
-                  })}
+                  onClick={() =>
+                    sendGTMEvent({
+                      event: 'book_clicked',
+                      location: 'homepage'
+                    })
+                  }
                   href="/boka"
                   className="uppercase"
                   buttonStyle

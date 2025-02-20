@@ -1,13 +1,13 @@
 'use client'
 
 import { useAnalytics } from './AnalyticsContext'
-import { ConditionalGA } from './ConditionalGA'
+import { ConditionalGTM } from './ConditionalGTM'
 
 export const AnalyticsWrapper = () => {
   const { isAnalyticsEnabled } = useAnalytics()
 
   if (isAnalyticsEnabled) {
-    return <ConditionalGA />
+    return <ConditionalGTM />
   }
 
   return null
