@@ -4,10 +4,12 @@ import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import Cookies from 'js-cookie'
 import classNames from 'classnames'
+import { useAnalytics } from '../analytics/AnalyticsContext'
 
 export const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
+  const { setIsAnalyticsEnabled } = useAnalytics()
   const t = useTranslations()
 
   useEffect(() => {
@@ -22,6 +24,7 @@ export const CookieBanner = () => {
   }, [])
 
   const handleAccept = () => {
+    setIsAnalyticsEnabled(true) // Update the analytics context
     Cookies.set('cookieConsent', 'true', {
       expires: 365,
       path: '/',
@@ -32,6 +35,7 @@ export const CookieBanner = () => {
   }
 
   const handleDeny = () => {
+    setIsAnalyticsEnabled(false) // Update the analytics context
     setIsVisible(false)
     setTimeout(() => setShowBanner(false), 300)
   }
