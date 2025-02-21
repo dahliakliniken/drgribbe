@@ -6,18 +6,27 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 import nextPlugin from '@next/eslint-plugin-next'
 import { FlatCompat } from '@eslint/eslintrc'
 
-const compat = new FlatCompat()
+const compat = new FlatCompat({
+  baseDirectory: import.meta.dirname
+})
 
-const eslintConfig = [
+export default [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
-  ...compat.config({ extends: ['next'] }),
+  ...compat.config({
+    extends: [
+      'next/core-web-vitals',
+      'plugin:@typescript-eslint/recommended',
+      'prettier'
+    ]
+  }),
   {
     plugins: {
-      '@next/next': nextPlugin
+      '@next/next': nextPlugin,
+      '@typescript-eslint': tseslint.plugin
     },
     rules: {
       ...nextPlugin.configs.recommended.rules,
@@ -31,5 +40,3 @@ const eslintConfig = [
   },
   eslintConfigPrettier
 ]
-
-export default eslintConfig
