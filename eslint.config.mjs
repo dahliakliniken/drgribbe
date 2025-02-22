@@ -25,8 +25,7 @@ export default [
   }),
   {
     plugins: {
-      '@next/next': nextPlugin,
-      '@typescript-eslint': tseslint.plugin
+      '@next/next': nextPlugin
     },
     rules: {
       ...nextPlugin.configs.recommended.rules,
