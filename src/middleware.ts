@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' blob: data: https://www.google-analytics.com https://www.googletagmanager.com;
     connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com;
-    frame-src 'self' https://app.meridiq.com;
+    frame-src 'self' https://app.meridiq.com https://www.google.com https://*.google.com;
     object-src 'none';
     base-uri 'self';
     form-action 'self';

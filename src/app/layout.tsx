@@ -34,7 +34,7 @@ export default async function RootLayout({
 }) {
   const locale = await getLocale()
   const messages = await getMessages()
-  const nonce = headers().get('x-nonce') || undefined
+  const nonce = (await headers()).get('x-nonce') || undefined
 
   return (
     <html lang={locale} className="lg:bg-beige">
