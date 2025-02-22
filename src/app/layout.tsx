@@ -8,6 +8,7 @@ import { CookieBanner } from './components/surfaces/CookieBanner'
 import { AnalyticsWrapper } from './components/analytics/AnalyticsWrapper'
 import './globals.css'
 import { AnalyticsProvider } from './components/analytics/AnalyticsContext'
+import { ephesis, josefinSans } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
@@ -37,12 +38,15 @@ export default async function RootLayout({
   const nonce = (await headers()).get('x-nonce') || undefined
 
   return (
-    <html lang={locale} className="lg:bg-beige">
-      <body>
+    <html
+      lang={locale}
+      className={`${josefinSans.variable} ${ephesis.variable} lg:bg-beige`}
+    >
+      <body className={josefinSans.className}>
         <NextIntlClientProvider messages={messages}>
           <AnalyticsProvider>
             <HeaderWithFooter />
-            <main className="mb-36 flex flex-col lg:mb-0 lg:mt-20">
+            <main className="mb-36 flex flex-col lg:mt-20 lg:mb-0">
               <Breadcrumbs />
               {children}
               <CookieBanner />

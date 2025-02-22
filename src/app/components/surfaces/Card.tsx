@@ -51,8 +51,8 @@ export const Card = ({
 
   const isWhiteBackground = bgColor === BgColors.White
   const bgSizeClass = cardList
-    ? 'before:bg-200'
-    : 'before:lg:bg-110 before:bg-200'
+    ? 'before:[background-size:200%]'
+    : 'lg:before:[background-size:110%] before:[background-size:200%]'
 
   const backgroundPositionVariants = {
     'left-top': 'before:bg-small-left-top',
@@ -66,7 +66,7 @@ export const Card = ({
 
   return (
     <div
-      className={`${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${bgSizeClass} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full ${isWhiteBackground ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
+      className={`${bgPosition ? backgroundPositionVariants[bgPosition] : ''} ${bgSizeClass} ${rounded && 'rounded-md'} z-0 px-6 py-8 before:bg-no-repeat ${bgColor} relative h-full before:absolute before:top-0 before:left-0 before:h-full before:w-full ${isWhiteBackground ? 'before:bg-card-pattern-light before:opacity-40' : 'before:bg-card-pattern before:opacity-5'} ${clickable && 'cursor-pointer'}`}
       onClick={handleClick}
     >
       {title && title}

@@ -5,9 +5,9 @@ export function middleware(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64')
   const cspHeader = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com https://www.google-analytics.com;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    font-src 'self' https://fonts.gstatic.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' 'nonce-${nonce}' 'strict-dynamic' https://www.googletagmanager.com https://www.google-analytics.com;
+    style-src 'self' 'unsafe-inline';
+    font-src 'self';
     img-src 'self' blob: data: https://www.google-analytics.com https://www.googletagmanager.com;
     connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com;
     frame-src 'self' https://app.meridiq.com https://www.google.com https://*.google.com;

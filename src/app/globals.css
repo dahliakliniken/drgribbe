@@ -1,26 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --gold: '#9C874C';
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
-}
+@config '../../tailwind.config.ts';
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --gold: '#9C874C';
   }
+
+  body {
+    text-wrap: balance;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+  }
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@theme {
+  --spacing-gapSpace: 1.5rem;
+  --spacing-gapSpaceL: 2.5rem;
+
+  --color-coral: #B06D74;
+  --color-green: #0C412F;
+  --color-beige: #EAE6E3;
+  --color-lightBeige: #F5F3F2;
+  --color-grey: darkgrey;
+  --color-gold: #9C874C;
+}
+
+@utility bg-small-left-top {
+  background-position: 100% 50%
+}
+@utility bg-large-left-top {
+  background-position: 560% 100%
+}
+@utility bg-small-right-top {
+  background-position: 0% 50%
+}
+@utility bg-small-center {
+  background-position: 50% 50%
+}
+@utility bg-small-left {
+  background-position: 100% 50%
+}
+@utility bg-large-left {
+  background-position: 560% 50%
+}
+@utility bg-small-right {
+  background-position: 0% 50%
+}
+@utility bg-large-right {
+  background-position: -450% 50%
+}
+@utility bg-small-bottom-right {
+  background-position: 0 100%
+}
+@utility bg-small-bottom-left {
+  background-position: 100% 100%
 }
 
 p:not(:last-child) {
@@ -53,9 +97,10 @@ a:focus-visible {
   text-align: center;
 
 }
-.testimonial::before, .testimonial::after{
+.testimonial::before, 
+.testimonial::after {
   content: '"';
-  font-family: 'Ephesis';
+  font-family: var(--font-ephesis);
   font-size: 3rem;
   color: #9C874C;  
   display: block;
