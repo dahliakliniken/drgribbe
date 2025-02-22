@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Blue Harvest
+# Dr Gribbe
 
 A brief description of the project, including its main purpose and any key features.
 
@@ -18,8 +18,8 @@ To get started with this project, ensure you have [pnpm](https://pnpm.io/) insta
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/jennieandersson/blue-harvest.git
-   cd blue-harvest
+   git clone https://github.com/dahliakliniken/drgribbe.git
+   cd drgribbe
    ```
 
 2. Install dependencies using pnpm:

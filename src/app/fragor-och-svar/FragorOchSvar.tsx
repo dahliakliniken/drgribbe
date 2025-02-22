@@ -19,7 +19,7 @@ const FragorOchSvar = () => {
     <>
       <SimpleCard
         bgColor={BgColors.Beige}
-        className="before:bg-500 before:bg-[30%_30%] lg:before:bg-200"
+        className="before:[background-size:500%] before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
           <SpaceContainer>
             <Pillar>
@@ -36,7 +36,7 @@ const FragorOchSvar = () => {
       </SpaceContainer>
       <SimpleCard
         bgColor={BgColors.Beige}
-        className="before:bg-[30%_30%] lg:before:bg-200"
+        className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
           <Pillar>
             <H2 className="text-center">

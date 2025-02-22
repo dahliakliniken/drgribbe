@@ -96,7 +96,7 @@ const Page: React.FC = () => {
       {/* About Section */}
       <SimpleCard
         id="om-kliniken"
-        className="before:bg-500 before:bg-[30%_40%]"
+        className="before:[background-size:500%] before:bg-[30%_40%]"
         bgColor={BgColors.White}
         content={
           <Pillar>
@@ -155,7 +155,7 @@ const Page: React.FC = () => {
       <SpaceContainer noPadding>
         <SimpleCard
           bgColor={BgColors.Beige}
-          className="before:bg-[30%_30%] lg:before:bg-200"
+          className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={
             <Pillar>
               <H2 className="text-center">

@@ -67,7 +67,7 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
       <button
         ref={openButtonRef}
         onClick={openModal}
-        className="focus:outline-none"
+        className="focus:outline-hidden"
         aria-label={`Open full view of ${imageAlt}`}
       >
         <Image

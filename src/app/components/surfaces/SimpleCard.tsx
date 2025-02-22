@@ -29,8 +29,8 @@ export const SimpleCard = ({
   const isBeige = bgColor === BgColors.Beige
 
   const bgSizeClass = cardList
-    ? 'before:bg-200'
-    : 'before:lg:bg-110 before:bg-200'
+    ? 'before:[background-size:200%]'
+    : 'lg:before:[background-size:110%] before:[background-size:200%]'
 
   const backgroundPositionVariants = {
     'left-top': 'before:bg-small-left-top lg:before:bg-large-left-top',
@@ -57,7 +57,7 @@ export const SimpleCard = ({
         },
         'z-0 px-6 py-8 before:bg-no-repeat',
         bgColor,
-        'relative h-full before:absolute before:left-0 before:top-0 before:h-full before:w-full',
+        'relative h-full before:absolute before:top-0 before:left-0 before:h-full before:w-full',
         {
           'before:bg-card-pattern-light before:opacity-40': isWhite,
           'before:bg-card-pattern before:opacity-40': isBeige,
