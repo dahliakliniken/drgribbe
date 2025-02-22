@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import { Button } from '../inputs/Button'
 import { H1 } from '../typography/H1'
@@ -12,7 +12,7 @@ import { useTranslations } from 'next-intl'
 
 interface ExpandableTextBoxProps {
   title: string
-  paragraphs: Array<string | JSX.Element>
+  paragraphs: Array<string | React.ReactNode>
   headingSize: 'H1' | 'H2' | 'H3'
 }
 
