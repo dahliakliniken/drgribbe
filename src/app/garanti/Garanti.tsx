@@ -26,10 +26,10 @@ const Garanti = () => {
         fullWidth
         bgColor={BgColors.Green}
         content={
-          <div className="mx-auto max-w-3xl px-4 py-8">
+          <Pillar>
             <P white>{t('garanti.preamble1')}</P>
             <P white>{t('garanti.preamble2')}</P>
-          </div>
+          </Pillar>
         }
       />
 
