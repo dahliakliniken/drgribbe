@@ -1,10 +1,11 @@
 'use client'
-import { useState } from 'react'
-import { H2 } from '../typography/H2'
-import { useTranslations } from 'next-intl'
-import Image, { StaticImageData } from 'next/image'
-import { P } from '../typography/P'
 import { IterationCcw } from 'lucide-react'
+import Image, { StaticImageData } from 'next/image'
+import { useTranslations } from 'next-intl'
+import { useState } from 'react'
+
+import { H2 } from '../typography/H2'
+import { P } from '../typography/P'
 
 export type Staff = {
   id: string

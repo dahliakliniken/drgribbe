@@ -1,14 +1,15 @@
-import { H1 } from '../components/typography/H1'
 import { useTranslations } from 'next-intl'
-import { Pillar } from '../components/layout/Pillar'
-import { SpaceContainer } from '../components/layout/SpaceContainer'
-import selda from '../../../public/images/selda.png'
-import najwa from '../../../public/images/Najwa.png'
+
 import anna from '../../../public/images/Anna.png'
-import orjan from '../../../public/images/orjan.png'
 import johanna from '../../../public/images/Johanna.png'
 import malin from '../../../public/images/Malin.png'
+import najwa from '../../../public/images/Najwa.png'
+import orjan from '../../../public/images/orjan.png'
+import selda from '../../../public/images/selda.png'
+import { Pillar } from '../components/layout/Pillar'
+import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { FlippableCard } from '../components/surfaces/FlippableCard'
+import { H1 } from '../components/typography/H1'
 
 const VarPersonal = () => {
   const t = useTranslations()

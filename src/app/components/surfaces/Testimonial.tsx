@@ -1,8 +1,10 @@
 'use client'
-import { ephesis } from '@/app/fonts'
-import { A } from '../typography/A'
-import { testimonials } from '@/data/testimonialdata'
 import { useEffect, useState } from 'react'
+
+import { ephesis } from '@/app/fonts'
+import { testimonials } from '@/data/testimonialdata'
+
+import { A } from '../typography/A'
 
 type TestimonalProps = {
   content: string

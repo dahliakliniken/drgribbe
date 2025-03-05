@@ -1,9 +1,10 @@
 import { useMessages, useTranslations } from 'next-intl'
+
+import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
+import { Accordion } from '../components/surfaces/Accordion'
 import PriceList from '../components/surfaces/PriceList'
 import { H1 } from '../components/typography/H1'
-import { Pillar } from '../components/layout/Pillar'
-import { Accordion } from '../components/surfaces/Accordion'
 import { useAccordionItems } from './accordionData'
 
 const procedureKeys = Array.from({ length: 18 }, (_, i) => `procedure${i + 1}`)

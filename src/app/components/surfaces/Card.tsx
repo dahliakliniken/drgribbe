@@ -1,9 +1,11 @@
 'use client'
 
 import { useRef } from 'react'
+
+import { BgColors, BgPositions } from '@/app/types'
+
 import { A } from '../typography/A'
 import { P } from '../typography/P'
-import { BgColors, BgPositions } from '@/app/types'
 
 type CardProps = {
   title?: React.ReactNode

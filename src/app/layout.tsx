@@ -1,13 +1,15 @@
+import './globals.css'
+
 import { Metadata } from 'next'
 import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
-import { Breadcrumbs } from './components/navigation/Breadcrumbs'
-import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
-import { CookieBanner } from './components/surfaces/CookieBanner'
-import { AnalyticsWrapper } from './components/analytics/AnalyticsWrapper'
-import './globals.css'
+
 import { AnalyticsProvider } from './components/analytics/AnalyticsContext'
+import { AnalyticsWrapper } from './components/analytics/AnalyticsWrapper'
+import { Breadcrumbs } from './components/navigation/Breadcrumbs'
+import { CookieBanner } from './components/surfaces/CookieBanner'
+import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import { ephesis, josefinSans } from './fonts'
 
 export const metadata: Metadata = {

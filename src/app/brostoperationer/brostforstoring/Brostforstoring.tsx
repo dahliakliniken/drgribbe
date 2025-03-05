@@ -1,5 +1,9 @@
+import { useTranslations } from 'next-intl'
+
 import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
+import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
+import { Accordion } from '@/app/components/surfaces/Accordion'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
@@ -7,10 +11,8 @@ import { H2 } from '@/app/components/typography/H2'
 import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
-import { useTranslations } from 'next-intl'
-import { Accordion } from '@/app/components/surfaces/Accordion'
+
 import { getTeknikAccordion } from './accordionData'
-import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')

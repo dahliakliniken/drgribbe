@@ -1,13 +1,15 @@
-import Link from 'next/link'
-import { useEffect, useRef, useState } from 'react'
-import { useTranslations } from 'next-intl'
-import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
-import { ChevronIcon } from '../icons/ChevronIcon'
-import { A } from '../typography/A'
-import { HamburgerButton } from '../inputs/HamburgerButton'
 import cn from 'classnames'
-import { useLinksData } from './useLinksData'
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { useEffect, useRef, useState } from 'react'
+
 import { useFocusTrap } from '@/hooks/useFocusTrap'
+
+import { ChevronIcon } from '../icons/ChevronIcon'
+import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
+import { HamburgerButton } from '../inputs/HamburgerButton'
+import { A } from '../typography/A'
+import { useLinksData } from './useLinksData'
 
 type Link = { text: string; href: string; id: string }
 

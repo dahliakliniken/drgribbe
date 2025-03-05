@@ -1,14 +1,15 @@
 import { useTranslations } from 'next-intl'
+
 import { Pillar } from '../components/layout/Pillar'
-import { H1 } from '../components/typography/H1'
-import { P } from '../components/typography/P'
-import { Accordion } from '../components/surfaces/Accordion'
-import { useAccordionItems } from './accordionData'
-import { BgColors } from '../types'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
-import { H2 } from '../components/typography/H2'
+import { Accordion } from '../components/surfaces/Accordion'
+import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { A } from '../components/typography/A'
+import { H1 } from '../components/typography/H1'
+import { H2 } from '../components/typography/H2'
+import { P } from '../components/typography/P'
+import { BgColors } from '../types'
+import { useAccordionItems } from './accordionData'
 
 const FragorOchSvar = () => {
   const t = useTranslations()

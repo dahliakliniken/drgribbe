@@ -1,9 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { useTranslations } from 'next-intl'
-import Cookies from 'js-cookie'
 import classNames from 'classnames'
+import Cookies from 'js-cookie'
+import { useTranslations } from 'next-intl'
+import { useEffect,useState } from 'react'
+
 import { useAnalytics } from '../analytics/AnalyticsContext'
 
 export const CookieBanner = () => {

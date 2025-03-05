@@ -1,8 +1,10 @@
 'use client'
-import { useEffect, useRef, useState } from 'react'
-import { CloseIcon } from '../icons/CloseIcon'
 import Image, { StaticImageData } from 'next/image'
+import { useEffect, useRef, useState } from 'react'
+
 import { useFocusTrap } from '@/hooks/useFocusTrap'
+
+import { CloseIcon } from '../icons/CloseIcon'
 
 type ImageModalProps = {
   imageSrc: StaticImageData

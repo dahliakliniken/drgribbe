@@ -1,13 +1,14 @@
 import { useTranslations } from 'next-intl'
-import { H1 } from '../components/typography/H1'
-import { P } from '../components/typography/P'
-import { SpaceContainer } from '../components/layout/SpaceContainer'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
-import { H2 } from '../components/typography/H2'
-import { Ul } from '../components/surfaces/Ul'
-import { Li } from '../components/surfaces/Li'
+
 import { Pillar } from '../components/layout/Pillar'
 import { Section } from '../components/layout/Section'
+import { SpaceContainer } from '../components/layout/SpaceContainer'
+import { Li } from '../components/surfaces/Li'
+import { SimpleCard } from '../components/surfaces/SimpleCard'
+import { Ul } from '../components/surfaces/Ul'
+import { H1 } from '../components/typography/H1'
+import { H2 } from '../components/typography/H2'
+import { P } from '../components/typography/P'
 import { BgColors } from '../types'
 
 const Garanti = () => {
