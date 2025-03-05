@@ -124,7 +124,10 @@ export const DropdownMenu: React.FC = () => {
   }
 
   return (
-    <div className="relative z-50 flex items-center gap-1" ref={menuRef}>
+    <div
+      className="relative z-50 flex items-center gap-1 md:top-1"
+      ref={menuRef}
+    >
       <HamburgerButton
         onClick={toggleMenu}
         ref={buttonRef}
