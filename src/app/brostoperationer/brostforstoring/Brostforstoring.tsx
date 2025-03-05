@@ -12,11 +12,11 @@ import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
 
-import { getTeknikAccordion } from './accordionData'
+import { useAccordionData } from './accordionData'
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
-  const teknikAccordion = getTeknikAccordion(t)
+  const [teknikAccordion] = useAccordionData()
 
   return (
     <>
