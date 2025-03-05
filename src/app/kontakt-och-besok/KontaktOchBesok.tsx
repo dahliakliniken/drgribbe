@@ -1,14 +1,15 @@
+import { Car, Mail,MapPin, Phone, Train } from 'lucide-react'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import { MapPin, Car, Train, Phone, Mail } from 'lucide-react'
+
+import locationImage from '../../../public/images/Entren_Wonna_Tower_N3A2913.jpg'
+import { Pillar } from '../components/layout/Pillar'
+import { SpaceContainer } from '../components/layout/SpaceContainer'
+import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { H1 } from '../components/typography/H1'
 import { H2 } from '../components/typography/H2'
 import { P } from '../components/typography/P'
-import { Pillar } from '../components/layout/Pillar'
-import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { BgColors } from '../types'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
-import Image from 'next/image'
-import locationImage from '../../../public/images/Entren_Wonna_Tower_N3A2913.jpg'
 
 const KontaktOchBesok = () => {
   const t = useTranslations()

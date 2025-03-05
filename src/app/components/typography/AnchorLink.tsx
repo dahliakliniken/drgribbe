@@ -1,6 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+
 import { A } from './A'
 
 type SmoothScrollLinkProps = {

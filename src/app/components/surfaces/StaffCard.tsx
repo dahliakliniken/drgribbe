@@ -1,14 +1,16 @@
 'use client'
+import classNames from 'classnames'
+import { ChevronDown } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
-import { SimpleCard } from './SimpleCard'
-import { Pillar } from '../layout/Pillar'
-import { BgColors } from '@/app/types'
-import { H2 } from '../typography/H2'
-import { P } from '../typography/P'
 import { useTranslations } from 'next-intl'
 import { useState } from 'react'
-import { ChevronDown } from 'lucide-react'
-import classNames from 'classnames'
+
+import { BgColors } from '@/app/types'
+
+import { Pillar } from '../layout/Pillar'
+import { H2 } from '../typography/H2'
+import { P } from '../typography/P'
+import { SimpleCard } from './SimpleCard'
 
 export type Staff = {
   id: string

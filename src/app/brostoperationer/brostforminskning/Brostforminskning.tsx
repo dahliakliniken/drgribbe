@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl'
+
 import { Pillar } from '@/app/components/layout/Pillar'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
@@ -6,7 +8,6 @@ import { H2 } from '@/app/components/typography/H2'
 import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
-import { useTranslations } from 'next-intl'
 
 const Brostforminskning = () => {
   const t = useTranslations('brostforminskning')

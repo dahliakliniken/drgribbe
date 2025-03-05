@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl'
+
 import { Pillar } from '@/app/components/layout/Pillar'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
@@ -5,7 +7,6 @@ import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
 import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
-import { useTranslations } from 'next-intl'
 
 const Brostlyft = () => {
   const t = useTranslations('brostlyft')

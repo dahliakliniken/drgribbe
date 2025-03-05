@@ -1,14 +1,15 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import { H1 } from '../components/typography/H1'
-import { P } from '../components/typography/P'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
-import { BgColors } from '../types'
-import { Pillar } from '../components/layout/Pillar'
-import { H2 } from '../components/typography/H2'
-import { SpaceContainer } from '../components/layout/SpaceContainer'
+
 import Botoxface from '../../../public/images/ansiktsmuskler.jpeg'
+import { Pillar } from '../components/layout/Pillar'
+import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { Accordion } from '../components/surfaces/Accordion'
+import { SimpleCard } from '../components/surfaces/SimpleCard'
+import { H1 } from '../components/typography/H1'
+import { H2 } from '../components/typography/H2'
+import { P } from '../components/typography/P'
+import { BgColors } from '../types'
 import { useAccordionItems } from './accordionData'
 
 const HudOchInjektioner = () => {

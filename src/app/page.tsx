@@ -1,24 +1,26 @@
 'use client'
 
+import { sendGTMEvent } from '@next/third-parties/google'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import Consultation from '../../public/images/N3A0033_.jpg'
+
+import { allTreatmentsData } from '@/data/allTreatmentsData'
+
 import WaitingRoom from '../../public/images/_N3A7746.jpg'
 import belowheadingImage from '../../public/images/_N3A9899.jpg'
+import Consultation from '../../public/images/N3A0033_.jpg'
+import { Pillar } from './components/layout/Pillar'
+import { SpaceContainer } from './components/layout/SpaceContainer'
 import { TreatmentBox } from './components/layout/TreatmentBox'
+import { Hero } from './components/surfaces/Hero'
+import { SimpleCard } from './components/surfaces/SimpleCard'
+import Testimonials from './components/surfaces/Testimonial'
+import { A } from './components/typography/A'
+import { H1 } from './components/typography/H1'
 import { H2 } from './components/typography/H2'
 import { H3 } from './components/typography/H3'
-import { SpaceContainer } from './components/layout/SpaceContainer'
 import { P } from './components/typography/P'
-import { SimpleCard } from './components/surfaces/SimpleCard'
 import { BgColors } from './types'
-import { Pillar } from './components/layout/Pillar'
-import { allTreatmentsData } from '@/data/allTreatmentsData'
-import { A } from './components/typography/A'
-import { Hero } from './components/surfaces/Hero'
-import Testimonials from './components/surfaces/Testimonial'
-import { H1 } from './components/typography/H1'
-import { sendGTMEvent } from '@next/third-parties/google'
 
 const Page: React.FC = () => {
   const t = useTranslations()

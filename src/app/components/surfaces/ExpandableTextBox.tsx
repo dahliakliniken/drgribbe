@@ -1,14 +1,15 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
+import classNames from 'classnames'
 import { ChevronDown, ChevronUp } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import React, { useEffect, useRef, useState } from 'react'
+
 import { Button } from '../inputs/Button'
 import { H1 } from '../typography/H1'
 import { H2 } from '../typography/H2'
 import { H3 } from '../typography/H3'
 import { P } from '../typography/P'
-import classNames from 'classnames'
-import { useTranslations } from 'next-intl'
 
 interface ExpandableTextBoxProps {
   title: string

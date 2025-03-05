@@ -1,4 +1,4 @@
-import { Josefin_Sans, Ephesis } from 'next/font/google'
+import { Ephesis,Josefin_Sans } from 'next/font/google'
 
 export const josefinSans = Josefin_Sans({
   subsets: ['latin'],

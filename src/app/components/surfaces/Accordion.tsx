@@ -1,8 +1,9 @@
 'use client'
 
-import { useRef, useState } from 'react'
-import { ChevronIcon } from '../icons/ChevronIcon'
 import classNames from 'classnames'
+import { useRef, useState } from 'react'
+
+import { ChevronIcon } from '../icons/ChevronIcon'
 
 type AccordionProps = {
   outLine?: boolean

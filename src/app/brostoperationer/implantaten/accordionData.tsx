@@ -1,7 +1,9 @@
 import { useTranslations } from 'next-intl'
+
 import { ImageModal } from '@/app/components/surfaces/ImageModal'
 import { AnchorLink } from '@/app/components/typography/AnchorLink'
 import { P } from '@/app/components/typography/P'
+
 import MotivaTableImage from '../../../../public/images/motiva-tabell.jpg'
 
 export const useAccordionItems = () => {

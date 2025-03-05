@@ -1,11 +1,13 @@
-import React from 'react'
-import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import { CardRow } from '../surfaces/CardRow'
-import { H3 } from '../typography/H3'
+import { useTranslations } from 'next-intl'
+import React from 'react'
+
 import { BgColors, BgPositions } from '@/app/types'
+
+import { CardRow } from '../surfaces/CardRow'
 import { SimpleCard } from '../surfaces/SimpleCard'
 import { A } from '../typography/A'
+import { H3 } from '../typography/H3'
 import { P } from '../typography/P'
 
 type TreatmentBoxProps = {

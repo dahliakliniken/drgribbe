@@ -1,8 +1,10 @@
-import { useTranslations } from 'next-intl'
-import { P } from '@/app/components/typography/P'
-import { Ul } from '../components/surfaces/Ul'
-import { Li } from '../components/surfaces/Li'
 import { Phone } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+
+import { P } from '@/app/components/typography/P'
+
+import { Li } from '../components/surfaces/Li'
+import { Ul } from '../components/surfaces/Ul'
 
 export const useAccordionItems = () => {
   const t = useTranslations()

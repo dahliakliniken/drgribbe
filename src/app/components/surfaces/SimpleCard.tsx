@@ -1,5 +1,6 @@
-import { BgColors, BgPositions } from '@/app/types'
 import classNames from 'classnames'
+
+import { BgColors, BgPositions } from '@/app/types'
 
 type CardProps = {
   content: React.ReactNode

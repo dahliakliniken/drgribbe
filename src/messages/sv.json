@@ -13,7 +13,7 @@
     "hud-och-injektioner": "Hud & injektioner",
     "var-personal": "Vår Personal",
     "priser": "Priser",
-    "garanti": "Garanti",
+    "garanti": "Trygghetsgaranti",
     "boka": "Boka",
     "fragor-och-svar": "Frågor & svar",
     "fore-och-efter": "Före & efterbilder",
@@ -30,6 +30,7 @@
     "skinInjections": "Hud & injektioner",
     "ourStaff": "Vår Personal",
     "price": "Pris",
+    "guarantee": "Trygghetsgaranti",
     "faq": "Frågor & svar",
     "overview": "Översikt",
     "breastReduction": "Bröstförminskning",
@@ -620,7 +621,7 @@
   },
   "priser": {
     "title": "Priser",
-    "readMore": "Läs mer om detta här",
+    "readMore": "Läs mer om kapselgaranti här",
     "paymentRules": {
       "heading": "Betalningsregler",
       "text1": "Senast 16 dagar innan operation ska full betalning ske.",
