@@ -21,6 +21,7 @@ import { H2 } from './components/typography/H2'
 import { H3 } from './components/typography/H3'
 import { P } from './components/typography/P'
 import { BgColors } from './types'
+import { Video } from './components/surfaces/Video'
 
 const Page: React.FC = () => {
   const t = useTranslations()
@@ -49,6 +50,16 @@ const Page: React.FC = () => {
       {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
       <SpaceContainer>
         <Testimonials />
+      </SpaceContainer>
+
+      <SpaceContainer>
+        <Pillar>
+          <Video
+            src="/videos/dr-gribbe.mp4"
+            alt={t('altText.video')}
+            playbackRate={0.75}
+          />
+        </Pillar>
       </SpaceContainer>
 
       <SpaceContainer noPadding>
