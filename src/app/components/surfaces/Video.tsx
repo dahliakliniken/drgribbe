@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import type React from 'react'
-import { useState, useRef, useEffect } from 'react'
+import { useEffect,useRef, useState } from 'react'
 
 type VideoProps = {
   src: string
