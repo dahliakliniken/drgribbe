@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import type React from 'react'
-import { useEffect,useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 type VideoProps = {
   src: string
@@ -12,6 +12,8 @@ type VideoProps = {
   className?: string
   showControls?: boolean
   playbackRate?: number
+  fadeTransition?: boolean
+  fadeDuration?: number
 }
 
 export const Video = ({
@@ -21,17 +23,50 @@ export const Video = ({
   width = '100%',
   className = '',
   showControls = true,
-  playbackRate = 1.0
+  playbackRate = 1.0,
+  fadeTransition = false,
+  fadeDuration = 1.0
 }: VideoProps) => {
   const t = useTranslations()
   const videoRef = useRef<HTMLVideoElement>(null)
   const [isPaused, setIsPaused] = useState(false)
+  const [isFading, setIsFading] = useState(false)
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.playbackRate = playbackRate
     }
   }, [playbackRate])
+
+  useEffect(() => {
+    if (!fadeTransition || !videoRef.current) return
+
+    const video = videoRef.current
+
+    // Function to handle time updates and trigger fade
+    const handleTimeUpdate = () => {
+      if (!video) return
+
+      // Calculate when to start fading (seconds before the end)
+      const fadeStartTime = video.duration - fadeDuration
+
+      // If we're in the fade zone and not already fading
+      if (video.currentTime >= fadeStartTime && !isFading) {
+        setIsFading(true)
+      }
+
+      // If we've looped back to the beginning, remove the fade
+      if (video.currentTime < fadeStartTime && isFading) {
+        setIsFading(false)
+      }
+    }
+
+    video.addEventListener('timeupdate', handleTimeUpdate)
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate)
+    }
+  }, [fadeTransition, fadeDuration, isFading])
 
   const togglePlayPause = () => {
     if (!videoRef.current) return
@@ -58,11 +93,22 @@ export const Video = ({
     }
   }
 
+  const fadeStyle = isFading
+    ? {
+        opacity: 0,
+        transition: `opacity ${fadeDuration}s ease-out`
+      }
+    : {
+        opacity: 1,
+        transition: `opacity 0.5s ease-in`
+      }
+
   return (
     <div className={`relative ${className}`} style={{ width, height }}>
       <video
         ref={videoRef}
         className="h-full w-full object-cover"
+        style={fadeTransition ? fadeStyle : undefined}
         autoPlay
         muted
         loop
