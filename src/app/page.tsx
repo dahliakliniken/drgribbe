@@ -58,6 +58,8 @@ const Page: React.FC = () => {
             src="/videos/dr-gribbe.mp4"
             alt={t('altText.video')}
             playbackRate={0.75}
+            fadeTransition={true}
+            fadeDuration={1.5}
           />
         </Pillar>
       </SpaceContainer>
