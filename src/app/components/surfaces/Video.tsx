@@ -1,8 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import type React from 'react'
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 type VideoProps = {
   src: string
@@ -29,96 +28,116 @@ export const Video = ({
 }: VideoProps) => {
   const t = useTranslations()
   const videoRef = useRef<HTMLVideoElement>(null)
-  const [isPaused, setIsPaused] = useState(false)
+  const [isPaused, setIsPaused] = useState(true)
   const [isFading, setIsFading] = useState(false)
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
+  // Check for reduced motion preference and setup video initial state
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = playbackRate
+    const video = videoRef.current
+    if (!video) return
+
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const isReducedMotion = mediaQuery.matches
+    setPrefersReducedMotion(isReducedMotion)
+
+    // Set playback rate
+    video.playbackRate = playbackRate
+
+    // If user prefers reduced motion, ensure video is paused
+    if (isReducedMotion && !video.paused) {
+      video.pause()
+    }
+
+    // Listen for changes in user preference
+    const handleChange = (e: MediaQueryListEvent) => {
+      setPrefersReducedMotion(e.matches)
+      if (e.matches && video && !video.paused) {
+        video.pause()
+      }
+    }
+
+    mediaQuery.addEventListener('change', handleChange)
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange)
     }
   }, [playbackRate])
 
-  useEffect(() => {
-    if (!fadeTransition || !videoRef.current) return
-
+  // Handle fade transition effect
+  const handleTimeUpdate = useCallback(() => {
     const video = videoRef.current
+    if (!video || video.duration === Infinity) return
 
-    // Function to handle time updates and trigger fade
-    const handleTimeUpdate = () => {
-      if (!video) return
+    const fadeStartTime = video.duration - fadeDuration
+    setIsFading(video.currentTime >= fadeStartTime)
+  }, [fadeDuration])
 
-      // Calculate when to start fading (seconds before the end)
-      const fadeStartTime = video.duration - fadeDuration
-
-      // If we're in the fade zone and not already fading
-      if (video.currentTime >= fadeStartTime && !isFading) {
-        setIsFading(true)
-      }
-
-      // If we've looped back to the beginning, remove the fade
-      if (video.currentTime < fadeStartTime && isFading) {
-        setIsFading(false)
-      }
-    }
+  useEffect(() => {
+    const video = videoRef.current
+    if (!fadeTransition || !video) return
 
     video.addEventListener('timeupdate', handleTimeUpdate)
+    return () => video.removeEventListener('timeupdate', handleTimeUpdate)
+  }, [fadeTransition, handleTimeUpdate])
+
+  // Play/pause toggle
+  const togglePlayPause = useCallback(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    if (video.paused) {
+      video.play().catch((err) => console.error('Failed to play video:', err))
+    } else {
+      video.pause()
+    }
+  }, [])
+
+  // Sync paused state with actual video state
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    const handlePause = () => setIsPaused(true)
+    const handlePlay = () => setIsPaused(false)
+
+    video.addEventListener('pause', handlePause)
+    video.addEventListener('play', handlePlay)
 
     return () => {
-      video.removeEventListener('timeupdate', handleTimeUpdate)
+      video.removeEventListener('pause', handlePause)
+      video.removeEventListener('play', handlePlay)
     }
-  }, [fadeTransition, fadeDuration, isFading])
+  }, [])
 
-  const togglePlayPause = () => {
-    if (!videoRef.current) return
+  // Memoize the fade style to prevent unnecessary recalculations
+  const fadeStyle = useMemo(() => {
+    if (!fadeTransition) return undefined
 
-    if (videoRef.current.paused) {
-      videoRef.current.play()
-      setIsPaused(false)
-    } else {
-      videoRef.current.pause()
-      setIsPaused(true)
+    const fadeInDuration = 0.5
+    const fadeOutDuration = fadeDuration
+
+    return {
+      opacity: isFading ? 0 : 1,
+      transition: `opacity ${
+        isFading ? fadeOutDuration : fadeInDuration
+      }s ease-${isFading ? 'out' : 'in'}`
     }
-  }
-
-  const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Space' || e.key === ' ' || e.key === 'Enter') {
-      e.preventDefault()
-      togglePlayPause()
-    }
-  }
-
-  const handleVideoLoaded = () => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = playbackRate
-    }
-  }
-
-  const fadeStyle = isFading
-    ? {
-        opacity: 0,
-        transition: `opacity ${fadeDuration}s ease-out`
-      }
-    : {
-        opacity: 1,
-        transition: `opacity 0.5s ease-in`
-      }
+  }, [fadeTransition, isFading, fadeDuration])
 
   return (
     <div className={`relative ${className}`} style={{ width, height }}>
       <video
         ref={videoRef}
         className="h-full w-full object-cover"
-        style={fadeTransition ? fadeStyle : undefined}
-        autoPlay
+        style={fadeStyle}
+        autoPlay={!prefersReducedMotion}
         muted
         loop
         playsInline
         aria-label={alt}
-        aria-hidden={alt ? 'false' : 'true'}
+        aria-hidden={!alt}
         tabIndex={showControls ? 0 : -1}
-        onKeyDown={showControls ? handleKeyDown : undefined}
         controls={showControls}
-        onLoadedData={handleVideoLoaded}
       >
         <source src={src} type="video/mp4" />
         {t('video.fallback')}
@@ -130,12 +149,13 @@ export const Video = ({
           onClick={togglePlayPause}
           aria-label={isPaused ? t('video.play') : t('video.pause')}
         >
-          {isPaused && (
+          {isPaused ? (
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-black/50">
               <div className="ml-1 h-0 w-0 border-t-8 border-b-8 border-l-12 border-transparent border-l-white"></div>
             </div>
+          ) : (
+            <span className="sr-only">{t('video.pause')}</span>
           )}
-          {!isPaused && <span className="sr-only">{t('video.pause')}</span>}
         </button>
       )}
     </div>
