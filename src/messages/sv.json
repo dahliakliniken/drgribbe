@@ -19,10 +19,6 @@
     "fore-och-efter": "Före & efterbilder",
     "kontakt-och-besok": "Kontakt & besök"
   },
-  "home": {
-    "title": "Hello world!",
-    "description": "This is a description."
-  },
   "dropdown": {
     "clinic": "Om Kliniken",
     "breastSurgeries": "Bröstoperationer",
@@ -125,6 +121,11 @@
     "text4": "Personalen på Dahliakliniken är specialistutbildad och experter inom sina respektive områden. Det gäller plastikkirurg, narkosläkare, operationssjuksköterskor, narkossköterskor, undersköterskor och receptionist. All personal har ett genuint intresse för just det de gör vilket vi märker att patienterna uppskattar.",
     "heading3": "Personligt och med en hög servicenivå.",
     "text5": "Vi på Dahliakliniken vill att du som patient får väldigt mycket information, hjälp och uppmärksamhet före, under och efter din operation. Troligen mer än vad du föreställt dig. Vår övertygelse är att välutbildade patienter ger patienter som är nöjda med slutresultatet efter operation. Vi finns tillgängliga både före och efter operationen så att du kan ställa frågor och det är alltid plastikkirurg Dr Örjan Gribbe som du träffar på konsultationer innan och på alla återbesöken efter operationen. Vid mötena, konsultationerna innan operation erbjuds du som patient gott om tid (60 minuter) och vi lägger stor vikt vid information och utprovning av bröstimplantat. Det finns även möjlighet till flera besök innan operationen för att du som patient ska känna dig helt säker. Dahliakliniken är en liten och personlig klinik där varje patient blir sedd och tas omhand individuellt."
+  },
+  "video": {
+    "fallback": "Din webbläsare stödjer inte uppspelning av video.",
+    "play": "Spela video",
+    "pause": "Pausa video"
   },
   "contact": {
     "contactUs": "Kontakta oss",
@@ -621,7 +622,7 @@
   },
   "priser": {
     "title": "Priser",
-    "readMore": "Läs mer om kapselgaranti här",
+    "readMore": "Läs mer om våra garantier här",
     "paymentRules": {
       "heading": "Betalningsregler",
       "text1": "Senast 16 dagar innan operation ska full betalning ske.",
@@ -1136,6 +1137,7 @@
     "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
     "motivaTable": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
     "forstaaterbesoket" : "Bild på en patient på återbesök hos Dahliakliniken",
-    "staffImage": "Bild på {name}"
+    "staffImage": "Bild på {name}",
+    "video": "Dr. Örjan Gribbe välkomnar kunder till sin klinik"
   }
 }
