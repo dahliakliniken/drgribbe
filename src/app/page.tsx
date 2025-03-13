@@ -15,7 +15,6 @@ import { TreatmentBox } from './components/layout/TreatmentBox'
 import { Hero } from './components/surfaces/Hero'
 import { SimpleCard } from './components/surfaces/SimpleCard'
 import Testimonials from './components/surfaces/Testimonial'
-import { Video } from './components/surfaces/Video'
 import { A } from './components/typography/A'
 import { H1 } from './components/typography/H1'
 import { H2 } from './components/typography/H2'
@@ -50,18 +49,6 @@ const Page: React.FC = () => {
       {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
       <SpaceContainer>
         <Testimonials />
-      </SpaceContainer>
-
-      <SpaceContainer>
-        <Pillar>
-          <Video
-            src="/videos/dr-gribbe.mp4"
-            alt={t('altText.video')}
-            playbackRate={0.75}
-            fadeTransition={true}
-            fadeDuration={1.5}
-          />
-        </Pillar>
       </SpaceContainer>
 
       <SpaceContainer noPadding>
