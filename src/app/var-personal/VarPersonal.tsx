@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 
 import anna from '../../../public/images/Anna.png'
 import johanna from '../../../public/images/Johanna.png'
-import kristina from '../../../public/images/kristina.png'
+import kristina from '../../../public/images/kristina.jpg'
 import malin from '../../../public/images/Malin.png'
 import najwa from '../../../public/images/Najwa.png'
 import orjan from '../../../public/images/orjan.png'
