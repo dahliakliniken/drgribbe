@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl'
 
 import anna from '../../../public/images/Anna.png'
 import johanna from '../../../public/images/Johanna.png'
+import kristina from '../../../public/images/kristina.png'
 import malin from '../../../public/images/Malin.png'
 import najwa from '../../../public/images/Najwa.png'
 import orjan from '../../../public/images/orjan.png'
@@ -18,14 +19,13 @@ const VarPersonal = () => {
       id: crypto.randomUUID(),
       name: 'Örjan Gribbe',
       titles: ['Leg läkare', 'Medicine doktor', 'Specialist i plastikkirurgi'],
-      image: orjan,
-      description:
-        'Dr. Gribbe has over 20 years of experience in plastic surgery and is specialized in breast reconstruction. He completed his medical degree at Karolinska Institute and has since dedicated his career to helping patients achieve their desired results with a focus on natural-looking outcomes.'
+      image: orjan
     },
     {
       id: crypto.randomUUID(),
       name: 'Kristina',
-      titles: ['Reception och övrig administration']
+      titles: ['Reception och övrig administration'],
+      image: kristina
     },
     {
       id: crypto.randomUUID(),

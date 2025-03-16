@@ -45,11 +45,14 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
             {member.name}
           </H2>
           {member.image && (
-            <Image
-              src={member.image}
-              alt={t('altText.staffImage', { name: member.name })}
-              className="staffportrait w-1/2 rounded-full"
-            />
+            <div className="staffportrait aspect-square w-1/2 overflow-hidden rounded-full">
+              <Image
+                src={member.image || '/placeholder.svg'}
+                alt={t('altText.staffImage', { name: member.name })}
+                className={`h-full w-full object-cover`}
+                fill
+              />
+            </div>
           )}
           <ul className="staffh2">
             {member.titles.map((title, index) => (
