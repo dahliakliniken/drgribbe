@@ -36,11 +36,11 @@ const VarPersonal = () => {
       image: najwa,
       description: "Dr Najwa har mycket stor erfarenhet av att söva och har ett stort hjärta. Hon är mycket mån om att patienterna ska känna sig trygga och sedda och lägger stor vikt vid säkerheten före, under och efter operationen. Dr Najwa är ursprungligen från Bagdad där hon utbildade sig till läkare och specialist i anestesi- och intensivvård. Hon arbetade under 10 år på olika sjukhus i Irak och då även under kriget mellan Iran och Irak. Dr Najwa kom till Sverige 1992 och arbetade de första 15 åren med anestesi- och intensivvård på Danderyds och Norrtälje sjukhus. Efter detta har hon varit verksam på Elisabethsjukhuset i Uppsala under många år samt även på privata kliniker i London, Oslo och Stockholm."
     },
-    {
+  /*   {
       id: crypto.randomUUID(),
       name: 'Karin Björkman',
       titles: ['Narkosläkare']
-    },
+    }, */
     {
       id: crypto.randomUUID(),
       name: 'Johanna Berg',
