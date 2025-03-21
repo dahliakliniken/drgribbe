@@ -70,7 +70,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
           )}
         </div>
         {hasDescription && (
-          <div className="back px-6 py-8">
+          <div className="back px-6 py-8 overflow-scroll">
             <P small white>
               {member.description}
             </P>
