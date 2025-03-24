@@ -1,10 +1,11 @@
 'use client'
-import { useState } from 'react'
-import { H2 } from '../typography/H2'
-import { useTranslations } from 'next-intl'
-import Image, { StaticImageData } from 'next/image'
-import { P } from '../typography/P'
 import { IterationCcw } from 'lucide-react'
+import Image, { StaticImageData } from 'next/image'
+import { useTranslations } from 'next-intl'
+import { useState } from 'react'
+
+import { H2 } from '../typography/H2'
+import { P } from '../typography/P'
 
 export type Staff = {
   id: string
@@ -27,7 +28,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
   const FlipButton = ({ ariaLabel }: { ariaLabel: string }) => (
     <button
       onClick={() => setIsFlipped(!isFlipped)}
-      className="absolute bottom-2 right-2 p-2 text-white/80 transition-colors hover:text-white"
+      className="absolute right-2 bottom-2 p-2 text-white/80 transition-colors hover:text-white"
       aria-label={ariaLabel}
     >
       <IterationCcw className="h-6 w-6" aria-hidden="true" />
@@ -39,16 +40,19 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
       <div
         className={`content absolute h-full w-full shadow-lg transition-transform duration-700 ${isFlipped ? 'flipped' : ''}`}
       >
-        <div className="front overflow-hidden px-6 py-8 before:pointer-events-none before:absolute before:inset-0 before:bg-card-pattern before:bg-200 before:bg-[120%_60%] before:bg-no-repeat before:opacity-5">
+        <div className="front before:bg-card-pattern overflow-hidden px-6 py-8 before:pointer-events-none before:absolute before:inset-0 before:[background-size:200%] before:bg-[120%_60%] before:bg-no-repeat before:opacity-5">
           <H2 white className="staffh2">
             {member.name}
           </H2>
           {member.image && (
-            <Image
-              src={member.image}
-              alt={t('altText.staffImage', { name: member.name })}
-              className="staffportrait w-1/2 rounded-full"
-            />
+            <div className="staffportrait aspect-square w-1/2 overflow-hidden rounded-full">
+              <Image
+                src={member.image || '/placeholder.svg'}
+                alt={t('altText.staffImage', { name: member.name })}
+                className={`h-full w-full object-cover`}
+                fill
+              />
+            </div>
           )}
           <ul className="staffh2">
             {member.titles.map((title, index) => (
@@ -66,7 +70,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
           )}
         </div>
         {hasDescription && (
-          <div className="back px-6 py-8">
+          <div className="back px-6 py-8 overflow-scroll">
             <P small white>
               {member.description}
             </P>

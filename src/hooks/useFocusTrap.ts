@@ -2,7 +2,7 @@ import { RefObject, useEffect, useRef } from 'react'
 
 export const useFocusTrap = (
   isOpen: boolean,
-  containerRef: RefObject<HTMLElement>
+  containerRef: RefObject<HTMLElement | null>
 ) => {
   const firstFocusableElementRef = useRef<HTMLElement | null>(null)
   const lastFocusableElementRef = useRef<HTMLElement | null>(null)

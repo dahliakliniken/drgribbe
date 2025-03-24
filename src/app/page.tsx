@@ -1,24 +1,30 @@
+'use client'
+
+import { sendGTMEvent } from '@next/third-parties/google'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import Consultation from '../../public/images/N3A0033_.jpg'
+
+import { allTreatmentsData } from '@/data/allTreatmentsData'
+
 import WaitingRoom from '../../public/images/_N3A7746.jpg'
 import belowheadingImage from '../../public/images/_N3A9899.jpg'
+import Consultation from '../../public/images/N3A0033_.jpg'
+import { Pillar } from './components/layout/Pillar'
+import { SpaceContainer } from './components/layout/SpaceContainer'
 import { TreatmentBox } from './components/layout/TreatmentBox'
+import { Hero } from './components/surfaces/Hero'
+import { SimpleCard } from './components/surfaces/SimpleCard'
+import Testimonials from './components/surfaces/Testimonial'
+import { A } from './components/typography/A'
+import { H1 } from './components/typography/H1'
 import { H2 } from './components/typography/H2'
 import { H3 } from './components/typography/H3'
-import { SpaceContainer } from './components/layout/SpaceContainer'
 import { P } from './components/typography/P'
-import { SimpleCard } from './components/surfaces/SimpleCard'
 import { BgColors } from './types'
-import { Pillar } from './components/layout/Pillar'
-import { allTreatmentsData } from '@/data/allTreatmentsData'
-import { A } from './components/typography/A'
-import { Hero } from './components/surfaces/Hero'
-import  Testimonials from './components/surfaces/Testimonial'
-import { H1 } from './components/typography/H1'
 
 const Page: React.FC = () => {
   const t = useTranslations()
+
   return (
     <>
       <Hero />
@@ -41,7 +47,7 @@ const Page: React.FC = () => {
         }
       />
       {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
-      <SpaceContainer>        
+      <SpaceContainer>
         <Testimonials />
       </SpaceContainer>
 
@@ -69,7 +75,18 @@ const Page: React.FC = () => {
                 {t('common.bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle inverted>
+                <A
+                  onClick={() =>
+                    sendGTMEvent({
+                      event: 'book_clicked',
+                      location: 'homepage'
+                    })
+                  }
+                  href="/boka"
+                  className="uppercase"
+                  buttonStyle
+                  inverted
+                >
                   {t('common.bookNow')}
                 </A>
               </div>
@@ -81,7 +98,7 @@ const Page: React.FC = () => {
       {/* About Section */}
       <SimpleCard
         id="om-kliniken"
-        className="before:bg-500 before:bg-[30%_40%]"
+        className="before:[background-size:500%] before:bg-[30%_40%]"
         bgColor={BgColors.White}
         content={
           <Pillar>
@@ -140,7 +157,7 @@ const Page: React.FC = () => {
       <SpaceContainer noPadding>
         <SimpleCard
           bgColor={BgColors.Beige}
-          className="before:bg-[30%_30%] lg:before:bg-200"
+          className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={
             <Pillar>
               <H2 className="text-center">

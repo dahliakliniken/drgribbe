@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl'
-import { P } from '@/app/components/typography/P'
+
 import { H3 } from '@/app/components/typography/H3'
+import { P } from '@/app/components/typography/P'
 
 export const useAccordionItems = () => {
   const t = useTranslations()

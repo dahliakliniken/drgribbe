@@ -1,9 +1,10 @@
 'use client'
 
-import { Fragment } from 'react'
-import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { Fragment } from 'react'
+
 import { determineActiveLinkColor } from '@/utils/determineActiveLinkColor'
 
 export const Breadcrumbs = () => {
@@ -22,7 +23,7 @@ export const Breadcrumbs = () => {
   }
 
   return (
-    <div className="w-full px-gapSpace lg:bg-beige">
+    <div className="px-gapSpace lg:bg-beige w-full">
       <nav className="py-2">
         <ul className="flex">
           <li className={listClasses}>

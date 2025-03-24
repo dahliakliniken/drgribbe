@@ -1,12 +1,14 @@
 'use client'
 
-import { useDelayedAnimation } from '@/hooks/useDelayedAnimation'
+import classNames from 'classnames'
 import { ChevronDown } from 'lucide-react'
-import HeroImage from '../../../../public/images/hero-image.jpg'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+
+import { useDelayedAnimation } from '@/hooks/useDelayedAnimation'
+
+import HeroImage from '../../../../public/images/hero-image.jpg'
 import { A } from '../typography/A'
-import classNames from 'classnames'
 
 export const Hero = () => {
   const t = useTranslations()

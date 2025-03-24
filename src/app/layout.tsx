@@ -1,10 +1,16 @@
+import './globals.css'
+
+import { Metadata } from 'next'
+import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
+
+import { AnalyticsProvider } from './components/analytics/AnalyticsContext'
+import { AnalyticsWrapper } from './components/analytics/AnalyticsWrapper'
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
-import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
-import './globals.css'
-import { Metadata } from 'next'
 import { CookieBanner } from './components/surfaces/CookieBanner'
+import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
+import { ephesis, josefinSans } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
@@ -31,17 +37,24 @@ export default async function RootLayout({
 }) {
   const locale = await getLocale()
   const messages = await getMessages()
+  const nonce = (await headers()).get('x-nonce') || undefined
 
   return (
-    <html lang={locale} className="lg:bg-beige">
-      <body>
+    <html
+      lang={locale}
+      className={`${josefinSans.variable} ${ephesis.variable} lg:bg-beige`}
+    >
+      <body className={josefinSans.className}>
         <NextIntlClientProvider messages={messages}>
-          <HeaderWithFooter />
-          <main className="mb-36 flex flex-col lg:mb-0 lg:mt-20">
-            <Breadcrumbs />
-            {children}
-            <CookieBanner />
-          </main>
+          <AnalyticsProvider>
+            <HeaderWithFooter />
+            <main className="mb-36 flex flex-col lg:mt-20 lg:mb-0">
+              <Breadcrumbs />
+              {children}
+              <CookieBanner />
+              <AnalyticsWrapper nonce={nonce} />
+            </main>
+          </AnalyticsProvider>
         </NextIntlClientProvider>
       </body>
     </html>

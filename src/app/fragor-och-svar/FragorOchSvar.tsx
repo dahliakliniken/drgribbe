@@ -1,14 +1,15 @@
 import { useTranslations } from 'next-intl'
+
 import { Pillar } from '../components/layout/Pillar'
-import { H1 } from '../components/typography/H1'
-import { P } from '../components/typography/P'
-import { Accordion } from '../components/surfaces/Accordion'
-import { useAccordionItems } from './accordionData'
-import { BgColors } from '../types'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
-import { H2 } from '../components/typography/H2'
+import { Accordion } from '../components/surfaces/Accordion'
+import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { A } from '../components/typography/A'
+import { H1 } from '../components/typography/H1'
+import { H2 } from '../components/typography/H2'
+import { P } from '../components/typography/P'
+import { BgColors } from '../types'
+import { useAccordionItems } from './accordionData'
 
 const FragorOchSvar = () => {
   const t = useTranslations()
@@ -19,7 +20,7 @@ const FragorOchSvar = () => {
     <>
       <SimpleCard
         bgColor={BgColors.Beige}
-        className="before:bg-500 before:bg-[30%_30%] lg:before:bg-200"
+        className="before:[background-size:500%] before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
           <SpaceContainer>
             <Pillar>
@@ -36,7 +37,7 @@ const FragorOchSvar = () => {
       </SpaceContainer>
       <SimpleCard
         bgColor={BgColors.Beige}
-        className="before:bg-[30%_30%] lg:before:bg-200"
+        className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
           <Pillar>
             <H2 className="text-center">
@@ -44,7 +45,7 @@ const FragorOchSvar = () => {
             </H2>
             <P className="text-center">
               {
-                'Boka en kostnadsfri konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
               }
             </P>
             <div className="m-auto flex max-w-xs justify-center">

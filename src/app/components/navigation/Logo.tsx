@@ -1,17 +1,18 @@
 import Image from 'next/image'
-import DahliaLogo from '../../../../public/images/logo.svg'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
 export const Logo = () => {
   const t = useTranslations()
   return (
-    <div className="flex w-full justify-center bg-beige">
+    <div className="bg-beige flex w-full justify-center">
       <Link href="/">
         <Image
-          src={DahliaLogo}
+          src="/images/logo.svg"
           alt={t('altText.dahliaLogo')}
-          className="h-25"
+          width={214}
+          height={39}
+          className="w-[214px] md:w-[260px]"
         />
       </Link>
     </div>

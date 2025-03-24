@@ -1,8 +1,10 @@
 'use client'
-import { useEffect, useRef, useState } from 'react'
-import { CloseIcon } from '../icons/CloseIcon'
 import Image, { StaticImageData } from 'next/image'
+import { useEffect, useRef, useState } from 'react'
+
 import { useFocusTrap } from '@/hooks/useFocusTrap'
+
+import { CloseIcon } from '../icons/CloseIcon'
 
 type ImageModalProps = {
   imageSrc: StaticImageData
@@ -35,19 +37,22 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
     }, 300) // Duration of the transition
   }
 
-  const handleKeyDown = (event: KeyboardEvent) => {
-    if (event.key === 'Escape') {
-      closeModal()
-    }
-  }
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-      closeModal()
-    }
-  }
-
   useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        closeModal()
+      }
+    }
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        closeModal()
+      }
+    }
+
     if (isModalOpen) {
       document.addEventListener('keydown', handleKeyDown)
       document.addEventListener('mousedown', handleClickOutside)
@@ -63,11 +68,11 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
   }, [isModalOpen])
 
   return (
-    <div className="focus-within:ring-green-500 relative inline-block focus-within:ring-2">
+    <div className="relative inline-block focus-within:ring-2 focus-within:ring-green-500">
       <button
         ref={openButtonRef}
         onClick={openModal}
-        className="focus:outline-none"
+        className="focus:outline-hidden"
         aria-label={`Open full view of ${imageAlt}`}
       >
         <Image
@@ -82,14 +87,14 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
         <div
           role="dialog"
           aria-modal="true"
-          className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
+          className={`bg-opacity-75 fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
         >
           <div ref={modalRef} className={`max-h-screen w-auto overflow-hidden`}>
             <button
               ref={closeButtonRef}
               onClick={closeModal}
               aria-label="Close modal"
-              className="absolute right-4 top-4 text-white"
+              className="absolute top-4 right-4 text-white"
             >
               <CloseIcon />
             </button>

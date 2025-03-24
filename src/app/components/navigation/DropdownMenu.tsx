@@ -1,13 +1,15 @@
-import Link from 'next/link'
-import { useEffect, useRef, useState } from 'react'
-import { useTranslations } from 'next-intl'
-import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
-import { ChevronIcon } from '../icons/ChevronIcon'
-import { A } from '../typography/A'
-import { HamburgerButton } from '../inputs/HamburgerButton'
 import cn from 'classnames'
-import { useLinksData } from './useLinksData'
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { useEffect, useRef, useState } from 'react'
+
 import { useFocusTrap } from '@/hooks/useFocusTrap'
+
+import { ChevronIcon } from '../icons/ChevronIcon'
+import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
+import { HamburgerButton } from '../inputs/HamburgerButton'
+import { A } from '../typography/A'
+import { useLinksData } from './useLinksData'
 
 type Link = { text: string; href: string; id: string }
 
@@ -75,7 +77,7 @@ export const DropdownMenu: React.FC = () => {
             href={href}
             className={cn('hover:text-gold transition-colors duration-300', {
               'text-gold': activeLink === id,
-              "lg:before:absolute lg:before:-left-3 lg:before:-top-px lg:before:content-['_«']":
+              "lg:before:absolute lg:before:-top-px lg:before:-left-3 lg:before:content-['_«']":
                 !!subLinks
             })}
             onClick={(e) => {
@@ -124,7 +126,10 @@ export const DropdownMenu: React.FC = () => {
   }
 
   return (
-    <div className="relative z-50 flex items-center gap-1" ref={menuRef}>
+    <div
+      className="relative z-50 flex items-center gap-1 md:top-1"
+      ref={menuRef}
+    >
       <HamburgerButton
         onClick={toggleMenu}
         ref={buttonRef}
@@ -136,7 +141,7 @@ export const DropdownMenu: React.FC = () => {
 
       <div
         className={cn(
-          'absolute -right-gapSpace bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] bg-custom-gradient p-4 pl-gapSpace pt-4 transition-all duration-300 ease-in-out before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:bg-card-pattern before:bg-500 before:bg-[20%_20%] before:opacity-20 lg:fixed lg:inset-0 lg:bottom-0 lg:top-20 lg:flex lg:w-full lg:flex-row lg:rounded-none lg:bg-white lg:bg-none lg:p-0 lg:duration-500 lg:before:bg-none',
+          '-right-gapSpace bg-custom-gradient pl-gapSpace before:bg-card-pattern absolute bottom-[60px] z-50 flex w-64 flex-col rounded-[16px_0px_0px_0px] p-4 pt-4 transition-all duration-300 ease-in-out before:absolute before:top-0 before:left-0 before:z-[-1] before:h-full before:w-full before:[background-size:500%] before:bg-[20%_20%] before:opacity-20 lg:fixed lg:inset-0 lg:top-20 lg:bottom-0 lg:flex lg:w-full lg:flex-row lg:rounded-none lg:bg-white lg:bg-none lg:p-0 lg:duration-500 lg:before:bg-none',
           {
             'pointer-events-auto translate-y-0 opacity-100': isOpen,
             'pointer-events-none translate-y-2 opacity-0 lg:translate-y-0':
@@ -145,8 +150,8 @@ export const DropdownMenu: React.FC = () => {
         )}
         aria-hidden={!isOpen}
       >
-        <div className="lg:bg-custom-dark hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:bg-110 lg:before:bg-[20%_20%] lg:before:opacity-5">
-          <div className="flex flex-col p-gapSpace text-white">
+        <div className="lg:bg-custom-dark lg:before:bg-card-pattern hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:[background-size:110%] lg:before:bg-[20%_20%] lg:before:opacity-5">
+          <div className="p-gapSpace flex flex-col text-white">
             <span>{t('contact.contactUs')}</span>
             <span>
               {t.rich('contact.email', {
@@ -168,7 +173,7 @@ export const DropdownMenu: React.FC = () => {
           label={t('common.closeMenu')}
         />
         <div className="lg:bg-custom-gradient-desktop lg:relative lg:flex-1">
-          <ul className="mb-gapSpace flex w-full flex-col gap-5 lg:m-gapSpace lg:ml-gapSpaceL">
+          <ul className="mb-gapSpace lg:m-gapSpace lg:ml-gapSpaceL flex w-full flex-col gap-5">
             {renderLinks(mainLinks)}
           </ul>
           <A
@@ -176,7 +181,7 @@ export const DropdownMenu: React.FC = () => {
             small
             href="/boka"
             buttonStyle
-            className="rounded-lg text-center lg:m-gapSpace lg:ml-gapSpaceL"
+            className="lg:m-gapSpace lg:ml-gapSpaceL rounded-lg text-center"
             onClick={() => setIsOpen(false)}
           >
             {t('common.bookConsultation')}

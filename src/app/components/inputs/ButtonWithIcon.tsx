@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 
 type ButtonWithIconProps = {
   label: string // Accessibility label
-  icon: JSX.Element
+  icon: React.ReactElement
   onClick: () => void
   className?: string
 }
