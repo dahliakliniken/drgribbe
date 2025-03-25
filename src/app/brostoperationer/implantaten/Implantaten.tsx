@@ -13,6 +13,7 @@ import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
 
 import ImplantatImage from '../../../../public/images/_N3A0080.jpg'
+import PolytechImage from '../../../../public/images/polytech_N3A7270.jpg'
 import ImplantatVariansImage from '../../../../public/images/teardrop-runda-implantat-1000px.jpg'
 import { useAccordionItems } from './accordionData'
 
@@ -132,6 +133,11 @@ const Implantaten = () => {
 
               <SpaceContainer noPadding spaceTop>
                 <H3>{t('implantaten.polytech.heading')}</H3>
+                <Image
+                  src={PolytechImage}
+                  alt={t('altText.polytechimplants')}
+                  className="max-h-svh object-cover object-center"
+                />
                 <P>{t('implantaten.polytech.text1')}</P>
                 <Accordion items={accordion7Items} />
               </SpaceContainer>
