@@ -103,9 +103,11 @@ export const Accordion = ({
             onBlur={() => handleBlur(id)}
           >
             <div className="p-4">
-              {(typeof content === 'string' ? content.split('\n') : []).map((line, index) => (
-                <p key={index}>{line}</p>
-              ))}
+              {typeof content === 'string' ? (
+                content.split('\n').map((line, index) => <p key={index}>{line}</p>)
+              ) : (
+                content // If it's already a React element, render it directly
+              )}
             </div>
           </div>
         </div>
