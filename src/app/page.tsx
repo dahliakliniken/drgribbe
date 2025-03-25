@@ -6,9 +6,9 @@ import { useTranslations } from 'next-intl'
 
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 
-import WaitingRoom from '../../public/images/_N3A7746.jpg'
 import belowheadingImage from '../../public/images/_N3A9899.jpg'
 import Consultation from '../../public/images/N3A0033_.jpg'
+import WaitingRoom from '../../public/images/N3A7746_edited.png'
 import { Pillar } from './components/layout/Pillar'
 import { SpaceContainer } from './components/layout/SpaceContainer'
 import { TreatmentBox } from './components/layout/TreatmentBox'
