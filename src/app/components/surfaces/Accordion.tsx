@@ -102,7 +102,11 @@ export const Accordion = ({
             onFocus={() => handleFocus(id)}
             onBlur={() => handleBlur(id)}
           >
-            <div className="p-4">{content}</div>
+            <div className="p-4">
+              {(typeof content === 'string' ? content.split('\n') : []).map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
+            </div>
           </div>
         </div>
       ))}

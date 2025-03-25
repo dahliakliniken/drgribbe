@@ -35,14 +35,14 @@ const Brostoperationer = () => {
 
   const beforeOperationItems = beforeOperationKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3'] // Predefined keys for texts
-    const content = contentKeys
+    const contentArray = contentKeys
       .filter((textKey) => t.has(`beforeOperation.${key}.${textKey}`)) // Filter out texts that don't exist
       .map((textKey) => t(`beforeOperation.${key}.${textKey}`))
 
     return {
       id: key,
       title: t(`beforeOperation.${key}.title`),
-      content
+      content: contentArray.join('\n') 
     }
   })
 
