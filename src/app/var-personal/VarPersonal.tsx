@@ -27,7 +27,8 @@ const VarPersonal = () => {
       name: 'Kristina',
       titles: ['Reception och övrig administration'],
       image: kristina,
-      description: "Doktorinnan och jur. kand. Kristina är klinikens receptionist, administratör, husfru och omvårdnadsexpert. Hon är lugn, positiv och varmhjärtad. Kristina är mycket mån om och har ett genuint intresse för varje enskild patient. Hon ser till att du som patient får hjälp med allt och mer därtill. Kristina hjälper dig med bokning av möten med Dr Gribbe, lugnar med samtal och information inför operationen, serverar den perfekta postoperativa måltiden, förmanar om väskan din är för tung och ett gläds åt att träffa dig på återbesöken."
+      //description: "Doktorinnan och jur. kand. Kristina är klinikens receptionist, administratör, husfru och omvårdnadsexpert. Hon är lugn, positiv och varmhjärtad. Kristina är mycket mån om och har ett genuint intresse för varje enskild patient. Hon ser till att du som patient får hjälp med allt och mer därtill. Kristina hjälper dig med bokning av möten med Dr Gribbe, lugnar med samtal och information inför operationen, serverar den perfekta postoperativa måltiden, förmanar om väskan din är för tung och ett gläds åt att träffa dig på återbesöken."
+      description: "Kristina - Doktorinnan och jur. kand. Kristina är klinikens receptionist och administratör. Hon är lugn, positiv och godhjärtad. Kristina är mån om varje enskild patient och ser till att du får hjälp med allt och mer därtill."
     },
     {
       id: crypto.randomUUID(),
