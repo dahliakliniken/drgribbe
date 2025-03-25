@@ -2,7 +2,7 @@ import { Car, Mail,MapPin, Phone, Train } from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
-import locationImage from '../../../public/images/Entren_Wonna_Tower_N3A2913.jpg'
+import locationImage from '../../../public/images/Wonna_Tower_IMG_7027.png'
 import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { SimpleCard } from '../components/surfaces/SimpleCard'

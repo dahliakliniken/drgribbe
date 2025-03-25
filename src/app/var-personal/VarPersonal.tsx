@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import anna from '../../../public/images/Anna.png'
 import johanna from '../../../public/images/Johanna.png'
 import kristina from '../../../public/images/kristina.jpg'
-import malin from '../../../public/images/Malin.png'
+// import malin from '../../../public/images/Malin.png'
 import najwa from '../../../public/images/Najwa.png'
 import orjan from '../../../public/images/orjan.png'
 import selda from '../../../public/images/selda.png'
@@ -27,7 +27,8 @@ const VarPersonal = () => {
       name: 'Kristina',
       titles: ['Reception och övrig administration'],
       image: kristina,
-      description: "Doktorinnan och jur. kand. Kristina är klinikens receptionist, administratör, husfru och omvårdnadsexpert. Hon är lugn, positiv och varmhjärtad. Kristina är mycket mån om och har ett genuint intresse för varje enskild patient. Hon ser till att du som patient får hjälp med allt och mer därtill. Kristina hjälper dig med bokning av möten med Dr Gribbe, lugnar med samtal och information inför operationen, serverar den perfekta postoperativa måltiden, förmanar om väskan din är för tung och ett gläds åt att träffa dig på återbesöken."
+      //description: "Doktorinnan och jur. kand. Kristina är klinikens receptionist, administratör, husfru och omvårdnadsexpert. Hon är lugn, positiv och varmhjärtad. Kristina är mycket mån om och har ett genuint intresse för varje enskild patient. Hon ser till att du som patient får hjälp med allt och mer därtill. Kristina hjälper dig med bokning av möten med Dr Gribbe, lugnar med samtal och information inför operationen, serverar den perfekta postoperativa måltiden, förmanar om väskan din är för tung och ett gläds åt att träffa dig på återbesöken."
+      description: "Kristina - Doktorinnan och jur. kand. Kristina är klinikens receptionist och administratör. Hon är lugn, positiv och godhjärtad. Kristina är mån om varje enskild patient och ser till att du får hjälp med allt och mer därtill."
     },
     {
       id: crypto.randomUUID(),
@@ -43,19 +44,6 @@ const VarPersonal = () => {
     }, */
     {
       id: crypto.randomUUID(),
-      name: 'Johanna Berg',
-      titles: ['Operationssjuksköterska'],
-      image: johanna,
-      description: "Sjuksköterska Johanna är glad och positiv. Hon är lyhörd för patienternas behov och är alltid fokuserad och noggrann under operationerna för att dessa ska ske så säkert och effektivt som möjligt. Johanna utbildade sig till operationssjuksköterska på Akademiska sjukhuset i Uppsala där hon sedan arbetade under flera år. Johanna är mycket erfaren och har arbetat med många olika specialiteter såsom gynekologi, obstetrik, urologi, transplantation, kirurgi och ortopedi på olika sjukhus i Stockholm."
-    },
-    {
-      id: crypto.randomUUID(),
-      name: 'Malin Bosson',
-      titles: ['Operationssjuksköterska'],
-      image: malin
-    },
-    {
-      id: crypto.randomUUID(),
       name: 'Anna Berggren',
       titles: ['Narkossjuksköterska'],
       image: anna,
@@ -63,10 +51,23 @@ const VarPersonal = () => {
     },
     {
       id: crypto.randomUUID(),
-      name: 'Selda',
+      name: 'Johanna Berg',
+      titles: ['Operationssjuksköterska'],
+      image: johanna,
+      description: "Sjuksköterska Johanna är glad och positiv. Hon är lyhörd för patienternas behov och är alltid fokuserad och noggrann under operationerna för att dessa ska ske så säkert och effektivt som möjligt. Johanna utbildade sig till operationssjuksköterska på Akademiska sjukhuset i Uppsala där hon sedan arbetade under flera år. Johanna är mycket erfaren och har arbetat med många olika specialiteter såsom gynekologi, obstetrik, urologi, transplantation, kirurgi och ortopedi på olika sjukhus i Stockholm."
+    },
+    /*{
+      id: crypto.randomUUID(),
+      name: 'Malin Bosson',
+      titles: ['Operationssjuksköterska'],
+      image: malin
+    },*/
+    {
+      id: crypto.randomUUID(),
+      name: 'Selda Demirkiran',
       titles: ['Undersköterska'],
       image: selda,
-      decription:"Selda är en lugn och positiv undersköterska som du träffar när du kommer in på operationssalen. Hon hjälper här till före, under och efter operationen. Hon stoppar om dig på operationsbordet och ser till att du ligger bekvämt. Selda assisterar operationssjuksköterskan och narkosläkaren på operationssalen och plockar fram de instrument, suturer och förband som behövs. Efter operationens slut hjälper hon till att varsamt ta på dig förbands-bh och försiktigt flytta över dig till sängen. Selda utbildade sig till undersköterska på Karolinska Huddinge. Hon har arbetat på flera närakuter och på operationsavdelning på Karolinska Huddinge och Considra gynekologi."
+      description:"Selda är en lugn och positiv undersköterska som du träffar när du kommer in på operationssalen. Hon hjälper här till före, under och efter operationen. Hon stoppar om dig på operationsbordet och ser till att du ligger bekvämt. Selda assisterar operationssjuksköterskan och narkosläkaren på operationssalen och plockar fram de instrument, suturer och förband som behövs. Efter operationens slut hjälper hon till att varsamt ta på dig förbands-bh och försiktigt flytta över dig till sängen. Selda utbildade sig till undersköterska på Karolinska Huddinge. Hon har arbetat på flera närakuter och på operationsavdelning på Karolinska Huddinge och Considra gynekologi."
     }
   ]
 
