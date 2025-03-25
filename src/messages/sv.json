@@ -100,7 +100,7 @@
     "title": "Om Kliniken",
     "readMore": "Läs mer om vår hållbarhetsfilosofi",
     "ourphilosophy" : "Dahliaklinikens hållbarhets och prissättningsfilosofi",
-    "paragraph1": "Dahliakliniken är en nyetablerad klinik lanserad av Dr Örjan Gribbe som har en omfattande erfarenhet av plastikkirurgi, specialiserad inom såväl rekonstruktiv som estetisk kirurgi. Kliniken är Sveriges enda klinik specialiserad på estetiska bröstoperationer av alla slag, såväl bröstförstoring som bröstlyft, bröstförminskning, kombinerade ingrepp med bröstimplantat. Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, tillsammans med sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
+    "paragraph1": "Dahliakliniken är en nyetablerad klinik lanserad av Dr Örjan Gribbe som har en omfattande erfarenhet av plastikkirurgi, specialiserad inom såväl rekonstruktiv som estetisk kirurgi. Kliniken är Sveriges enda klinik specialiserad på estetiska bröstoperationer av alla slag, såväl bröstförstoring som bröstlyft, bröstförminskning, kombinerade ingrepp med bröstimplantat. Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, med hjälp av sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
     "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet inom sin specialitet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Kliniken ligger i nyrenoverade lokaler med operationssalar med toppmodern utrustning. Vi använder oss av de senaste teknikerna och material och kirurgiska instrument av mycket hög kvalitet för att säkerställa att patienten får bästa möjliga resultat. Det ger plastikkirurgen hög precision och tillförlitlighet och möjliggör kirurgisk perfektion. .Allt i linje med klinikens strävan. Fokus är att öka kvinnors livskvalité och förändra deras kroppsuppfattning genom att förändra brösten på ett sätt som de ofta drömt om länge. Såväl tidigare patienter som nya välkomnas!",
     "paragraph3": "En stabil klinik som håller i längden. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär."
   },
@@ -185,7 +185,7 @@
       "text7-3" : "Om du har frågor kring hur det är att sövas vid en operation, tveka inte att höra av dig så förklarar vi mer.",
       "text8": "Operationen startar och varar mellan 30 minuter och 3 timmar beroende på vilket ingrepp som ska göras. När du sover lyssnar vi på musik och pratar med varandra. Doktorn opererar och operationssjuksköterskan instrumenterar, det vill säga ger rätt instrument till doktorn vid rätt tidpunkt. Ofta så läser hon av doktorns arbete och kan vara beredd med rätt instrument vid rätt tid. Ibland ber doktorn om ett specifikt instrument eller en specifik sutur, tråd att sy med.",
       "text9": "Under hela operationen så övervakar narkospersonalen operationen vid ditt huvud och håller koll på att du sover lagom djupt och att du inte har ont. Du är så pass lagom djupt sövd att du inte känner någon smärta och att du inte kan förnimma någonting under operationen.",
-      "text10": "Samtidigt så ser vi det som viktigt att du är sövd på ett sånt sätt att du fortsätter andas spontant, det vill säga att du själv andas och att du inte ventileras av narkosapparaten. Lyckas man som narkospersonal med detta under operationen så mår lungorna bättre under operationen och du mår även mindre illa efteråt. Det är en konst att söva på detta sätt och kräver erfarenhet och uppmärksamhet.",
+      "text10": "Vi ser det som viktigt att du är sövd på ett sånt sätt att du fortsätter andas spontant, det vill säga att du själv andas och att du inte ventileras av narkosapparaten. Lyckas man som narkospersonal med detta under operationen så mår lungorna bättre under operationen och du mår även mindre illa efteråt. Det är en konst att söva på detta sätt och kräver erfarenhet och uppmärksamhet.",
       "text11": "Undersköterskans roll under operationen är att assistera doktorn och operationssjuksköterskan som båda är sterilklädda. Hon tar då ur skåp och lådor fram extra instrument eller suturer som behövs under operationens gång. Undersköterskan packar även upp bröstimplantaten som är separat förpackade i flera lådor i varandra. Först en ytterkartong, sedan en osteril förpackning och innerst en steril förpackning. Det gör att undersköterskan kan öppna den näst sista förpackningen utan att röra den innersta. Operationssjuksköterskan kan sedan ta upp den innersta, sterila förpackningen utan att vidröra den osterila förpackningen. Operationssjuksköterskan kan sedan öppna locket på den innersta, sterila förpackningen och servera bröstimplantatet till doktorn. Det är då bara doktorn som vidrör bröstimplantaten och inför detta så byter doktorn till nya ytterhandskar."
     },
     "postSurgery": {
@@ -247,7 +247,7 @@
       "heading1": "Teknik",
       "text1": "Operationen bröstförstoring sker under full narkos. Inför operationen har du fått premedicinering och strax efter att du sövts och innan operationsstart så får du antibiotikum intravenöst.",
       "heading2": "Snitt",
-      "text2": "Ingreppet inleds med att man lägger ett snitt genom huden med skalpell i bröstvecket under bröstet. Det finns andra sätt men Dr Gribbe använder och rekommenderar denna metod av flera olika anledningar, framför allt att man på så vis har bäst insyn och kontroll under ingreppet. Därefter skär man med genom underhudsfettet ned till bröstmuskeln.",
+      "text2": "Ingreppet inleds med att man lägger ett snitt genom huden med skalpell i bröstvecket under bröstet. Det finns andra sätt men Dr Gribbe använder och rekommenderar denna metod av flera olika anledningar, framförallt att man på så vis har bäst insyn och kontroll under ingreppet. Därefter skär man ned genom underhudsfettet ned till bröstmuskeln.",
       "heading3": "Implantatficka",
       "text3": "Nästa steg är att skapa en lagom stor ficka för implantaten och man kan här välja att göra fickan under (submuskulärt) eller ovanpå muskeln (subglandulärt). Vilken placering för implantatet man väljer beror på patientens önskemål och förutsättningar. <link>Läs mer om val implantatplacering här.</link>",
       "heading4": "Diatermi",
@@ -726,6 +726,11 @@
       "title": "Hund",
       "text1": "Om du har hund, och då särskilt en större hund så kan det vara svårt att gå ut med de första 1-2 veckorna.",
       "text2": "Om hunden rycker till i kopplet kraftigt kan det påverka operationsområdet negativt. Det kan vara bra att planera för hundvakt. Det kan också vara bra att ha kopplet i en sele runt din kropp istället för i handen. När hunden rycker eller drar så fortplantas inte rycket till din hand och arm utan till selen och midjan, kroppen."
+    },
+    "nailsandlashes":{
+      "title": "Naglar och ögonfransar",
+      "text1": "Om du har lösögonfransar ber vi dig ta bort dem inför din operation. Limmade ögonfransar, som sitter fast, behöver du inte ta bort. Det finns dock risk för att enstaka strån lossnar vid operationen.",
+      "text2": "Om du har långa naglar ber vi dig fila ner höger respektive vänster pekfingernagel och undvika mörk färg på nagellacket."
     }
   },
   "afterOperation": {
@@ -764,7 +769,7 @@
     },
     "returnVisit": {
       "title": "Återbesök",
-      "text1": "Boka ett återbesök hos mig 7-10 dagar efter operationen. Återbesöket bokar du i receptionen på väg hem alternativt så hör du av dig så hittar vi en tid som passar. Vid återbesöket byter jag tejpen som du har på ärren och kontrollerar att allt läker som det ska."
+      "text1": "Boka ett återbesök 9-12 dagar efter din operation. Återbesöket bokar du i receptionen på väg hem alternativt så hör du av dig så hittar vi en tid som passar. Vid återbesöket byter doktorn tejpen som du har på ärren och kontrollerar att allt läker som det ska."
     }
   },
   "aftercare": {
@@ -836,7 +841,7 @@
     },
     "sportAndGymnastics": {
       "title": "Sport och gymnastik",
-      "text1": "Promenader går bra från första dagen efter op. Det är bra om du kommer ut och tar promenader då det minskar smärtorna. Efter 5-6 veckor kan du börja med spinning, lättare styrketräning av ben, mage, rygg och rumpa samt yoga. Vänta dock 3 månader innan du börjar med sporter som gör att brösten hoppar såsom tennis, ridning, joggning etc. Vänta även med styrketräning överkropp 3 månader. Detta för att vävnaden ska tillåtas läka i lugn och ro fram till dess. Jag har gjort fickor för implantaten som är lagom stora för just dina implantat och det är viktigt att implantaten inte skumpar omkring och töjer ut fickorna innan vävnaden läkt.Tänk på att ha en bra, kupad sport-bh när du sportar."
+      "text1": "Promenader går bra från första dagen efter op. Det är bra om du kommer ut och tar promenader då det minskar smärtorna. Efter 5-6 veckor kan du börja med spinning, lättare styrketräning av ben, mage, rygg och rumpa samt yoga. Vänta dock 3 månader innan du börjar med sporter som gör att brösten hoppar såsom tennis, ridning, joggning etc. Vänta även med styrketräning överkropp 3 månader. Detta för att vävnaden ska tillåtas läka i lugn och ro fram till dess. Doktorn har gjort fickor för implantaten som är lagom stora för just dina implantat och det är viktigt att implantaten inte skumpar omkring och töjer ut fickorna innan vävnaden läkt.Tänk på att ha en bra, kupad sport-bh när du sportar."
     },
     "braAndSupport": {
       "title": "Bh och stöd",
@@ -860,7 +865,7 @@
       "title": "Bröstförstoring och Implantatbyte",
       "procedure1": {
         "name": "Implantat från Mentor eller Motiva Ergonomix 1 och Round",
-        "price": "43 000 kr"
+        "price": "45 000 kr"
       },
       "procedure2": {
         "name": "Motiva Ergonomix 2 inklusive Joy",
@@ -1112,7 +1117,7 @@
     "preamble": "Nedan hittar du all information du behöver för att nå oss eller besöka vår klinik.",
     "heading": "Kungsholmen",
     "contact": "Kontakta oss",
-    "contactEmail": "Email: <email>info@drgribbe.se</email>",
+    "contactEmail": "Email: <email>info@dahliakliniken.se</email><email>drgribbe@dahliakliniken.se</email>",
     "contactPhone": "Telefon: <phone>08- 520 278 78</phone>",
     "address": "Sankt Göransgatan 126, mittemot Sankt Görans sjukhus",
     "addressDetails": "Vår mottagning ligger på plan1 i Wonna Tower.",
