@@ -27,6 +27,8 @@ const Garanti = () => {
         bgColor={BgColors.Green}
         content={
           <Pillar>
+            <H1 white>{t('garanti.title')}</H1>
+            <P white>{t('garanti.intro')}</P>
             <P white>{t('garanti.preamble1')}</P>
             <P white>{t('garanti.preamble2')}</P>
           </Pillar>
@@ -35,11 +37,6 @@ const Garanti = () => {
 
       <SpaceContainer spaceVertically>
         <Pillar>
-          <Section>
-            <H1>{t('garanti.title')}</H1>
-            <P>{t('garanti.intro')}</P>
-          </Section>
-
           <Section>
             <H2>{t('garanti.securityPackage.title')}</H2>
             <Ul>
