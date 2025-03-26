@@ -8,12 +8,12 @@ import { H1 } from '../components/typography/H1'
 import { H2 } from '../components/typography/H2'
 import { P } from '../components/typography/P'
 import { BgColors } from '../types'
-import { usePolicyAccordionItems, useRightsAccordionItems } from './accordionData'
+import { usePolicyAccordionItems } from './accordionData'
 
 const PersonuppgiftsPolicy = () => {
   const t = useTranslations()
-  const policyItems = usePolicyAccordionItems()
-  const rightsItems = useRightsAccordionItems()
+  const [policyItems, rightsItems] = usePolicyAccordionItems()
+
   return (
     <>
       <SimpleCard
