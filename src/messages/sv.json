@@ -1292,11 +1292,6 @@
     "publicTransport": "Kollektivtrafik",
     "publicTransportDetails": "Med kollektivtrafik når du vår mottagning i Wonna Tower med tunnelbanans blåa linje, uppgång Stadshagen eller grön linje Fridhemsplan. Om du tar buss nr 56, åk till hållplats S:t Görans sjukhus."
   },
-  "cookieBanner": {
-    "text": "Vi använder kakor för att förbättra din upplevelse och analysera trafik. Genom att godkänna hjälper du oss att förstå hur webbplatsen används.",
-    "accept": "Godkänn",
-    "reject": "Neka"
-  },
   "altText": {
     "heroImage": "Elegant och inbjudande väntrum på en klinik för plastikkirurgi, med en stilren inredning i grönt och guld. Hallen är dekorerad med sammetsfåtöljer, små sidobord med blommor, moderna ljuskronor och varma vägglampor, vilket skapar en lyxig och professionell atmosfär.",
     "brostoperationerConsultation": "Dr Gribbe och en patient i konsultationssamtal",
