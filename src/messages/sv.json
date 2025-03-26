@@ -17,7 +17,8 @@
     "boka": "Boka",
     "fragor-och-svar": "Frågor & svar",
     "fore-och-efter": "Före & efterbilder",
-    "kontakt-och-besok": "Kontakt & besök"
+    "kontakt-och-besok": "Kontakt & besök",
+    "personuppgiftspolicy": "Personuppgiftspolicy"
   },
   "dropdown": {
     "clinic": "Om Kliniken",
@@ -145,7 +146,7 @@
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",
-    "preamble" : "Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med bröstimplantat m.m.",
+    "preamble" : "Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning, kombinerade ingrepp med bröstimplantat m.m.",
     "heading1": "Så går operationen till",
     "consultation": {
       "heading1": "Konsultationen",
@@ -1095,7 +1096,11 @@
       "question29": {
         "question": "När kan jag sova på sidan efteråt?",
         "answer": "Så snart du känner att det känns okej."
-      }    
+      },      
+      "question30": {
+        "question": "Varför har ni så få före-och efterbilder?",
+        "answer": "Anledningen är att kliniken inte funnits som egen klinik så länge. Även om Dr Gribbe är mycket erfaren i branschen och har tagit tusentals före- och efterbilder på patienter så tillhör de bilderna den arbetsplats han tidigare arbetat på och lämnat varför vi jobbar intensivt med att ta fram nya bilder från denna klinik."
+      }       
     }
   },
   "foreOchEfter": {
@@ -1111,6 +1116,167 @@
     "anatomy_title" : "Anatomiska implantat - Före och efter",
     "anatomy_preamble" : "Anatomiska, även kallade droppformade bröstimplantat kan varieras avseende bredd, höjd och projektion oberoende av varandra. Det betyder att man kan ha smala, höga bröstimplantat som framifrån sett ser ovala ut med mer volym uppåt nyckelbenet än vad de fyller ut på bredden. På samma sätt så kan man välja implantat som är låga och breda med mer volym på bredden och mindre volym uppåt på bröstkorgen.",
     "anatomy_infotext" : "Patient opererad med anatomiska bröstimplantat, Mentor 375cc (CPG 322). Ålder 25 år, längd 167 cm och 53 kg."
+  },
+  "Personuppgiftspolicy": {
+    "title": "Behandling av personuppgifter",
+    "preamble": "Chirurgus AB, vi, är personuppgiftsansvarig för den behandling av personuppgifter som sker när du är hos oss och har kontakt med oss. Nedan framgår information om personuppgiftsbehandlingen. Av informationen framgår för vilka ändamål vi behandlar dina personuppgifter, vilka kategorier av personuppgifter vi behandlar, vilken rättslig grund vi har som stöd för att få behandla dina personuppgifter och hur länge vi lagrar dina personuppgifter.",
+    "yourRights": "Dina rättigheter",
+    "policyaccordion": {
+      "question1": {
+        "question": "Bakgrund",
+        "answer": "Vi behandlar dina personuppgifter för att fullfölja avtalet och våra förpliktelser mot dig, t.ex. vid bokning och köp av våra tjänster. Vi behandlar inte fler personuppgifter än vad som behövs för ändamålet och strävar efter att använda de minst integritetskänsliga uppgifterna. Vi kan också behöva dina personuppgifter för att uppfylla lagar såsom bokföringslagen m.m."
+      },
+      "question2": {
+        "question": "Vilka personuppgifter samlar vi in",
+        "answer": "Vi behandlar personuppgifter såsom namn, personnummer, kontaktinformation såsom telefonnummer, e-post och adressuppgifter, betalningsinformation, fotografier samt hälsoinformation om dig som patient. Hälsoinformationen rör information om hälsotillstånd, eventuella sjukdomar, allergier och överkänslighet för läkemedel, ev. medicinsk historia och bedömningar eventuella komplikationer av vård och behandling, infektioner och förskrivna läkemedel."
+      },
+      "question3": {
+        "question": "Rättslig grund för vår behandling av personuppgifter",
+        "answer": "Vi behandlar dina personuppgifter för att vi ska kunna fullgöra avtalet med dig som kund/patient vid t.ex. bokning av köp av våra tjänster och vid konsultation samt för att kunna uppfylla de rättsliga förpliktelser som åligger oss. Vi behandlar dina personuppgifter i enlighet med dataskyddsförordningen, patientdatalagen, Socialstyrelsens föreskrifter och allmänna råd om journalföring och behandling av personuppgifter i hälso-och sjukvården samt annan tillämplig lagstiftning. Vi måste behandla hälsouppgifter (känsliga personuppgifter) för att kunna tillhandahålla våra tjänster till dig som patient och för att kunna upprätthålla våra skyldigheter enligt tillämplig lagstiftning (såsom journalföring)."
+      },
+      "question4": {
+        "question": "Hur länge behandlar vi personuppgifterna",
+        "answer": "Uppgifter lagras inte längre tid än vad som är nödvändigt för att uppfylla ändamålen med behandlingen om inte annat följer av lag. Uppgifter som omfattas av bokföringslagen bevaras i sju år enligt bokföringslagen. Journalhandlingar bevaras i minst tio år från det att den sista uppgiften fördes in i handlingen i enlighet med patientdatalagen."
+      },
+      "question5": {
+        "question": "Ändamål med behandlingen",
+        "answer": "Vi behandlar dina personuppgifter för att utföra de behandlingar och ingrepp som efterfrågats och för att kunna säkerställa en korrekt medicinsk behandling och uppföljning samt ge råd inför och i samband med detta. "
+      },
+      "question6": {
+        "question": "Cookies",
+        "answer": "När du besöker vår webbplats kan vi komma att skicka, och lagra en cookie på din dator, surfplatta eller mobiltelefon. Denna cookie möjliggör att webbplatsen eller webbservern kan samla och spara specifik men begränsad information från webbläsaren om hur du använder den och förbättrar din användarupplevelse. Vi kan även komma att samla information om din IP-adress, operativsystem, vilken sökmotor du använder för statistiska och administrativa ändamål. Informationen som vi inhämtar genom ditt besök på vår hemsida är generellt anonymiserad och kan inte härledas till en specifik person."
+      },
+      "question7": {
+        "question": "När kan jag börja arbeta igen och blir jag sjukskriven efter operationen?",
+        "answer": "Om man har ett lättare jobb såsom ett kontorsjobb utan tunga lyft kan man faktiskt vara tillbaka dagen efter operationen. Vi brukar dock rekommendera att man tar minst 1 dag ledigt efter operationen och det kan vara skönt att sjukskriva sig en vecka. Ett vanligt upplägg är att man efter operationen är borta från jobbet resten av veckan och att man sedan är tillbaka på jobbet kommande måndag. Om man har ett tungt eller fysiskt krävande jobb sjukskriver vi dig 4 veckor om du så önskar."
+      },
+      "question8": {
+        "question": "Vilken livslängd har implantaten?",
+        "answer": "Många implantatmärken lämnar livstidsgaranti mot ruptur och det är säkert så att implantat från både Mentor och Motiva kan hålla en livstid. Det vi märkt är dock att patienter själva kommer och vill byta sina implantat efter ca 10-15 år då de upplever att de haft dem i kroppen länge och att man då fått en känsla av att de är gamla."
+      },
+      "question9": {
+        "question": "Påverkar operationen amningen?",
+        "answer": "Vid en vanlig bröstförstoring eller en bröstförstoring med bröstlyft påverkas inte amningen med den teknik som vi utvecklat. Det beror på att dr Gribbe är väldigt noggrann vid operationen för att inte komma in i och påverka bröstkörtelvävnaden och mjölkgångarna. Vid en bröstförminskning finns däremot en risk att amningen påverkas då delar av bröstvävnaden tas bort som en naturlig del av operationen."
+      },
+      "question10": {
+        "question": "Hur ser opererade bröst ut efter amning och graviditet?",
+        "answer": "Det är väldigt individuellt. Vissa kvinnor kan föda flera barn och inte behöva bröstlyft medan andra kvinnor kan behöva börstlyft utan att ha fött barn. Faktorer som påverkar är hur pass elastisk den egna huden är, hur stora de egna brösten är och därmed hur mycket de växer under graviditet och amning, hur länge man ammar och hur noggrann man är med stödjande bh under och efter graviditeten. Om brösten hänger till sig efter graviditet och amning går det ofta att lyfta upp bröstvävnaden utan att röra implantaten."
+      },
+      "question11": {
+        "question": "Kan jag genomgå mammografi?",
+        "answer": "Ja, det går bra. Personalen på mammografiavdelningen har stor erfarenhet av att göra undersökningar på bröst med implantat. I vissa fall så väljer man att undersöka med ultraljud i stället för mammografi."
+      },
+      "question12": {
+        "question": "Behöver jag kapselförsäkring?",
+        "answer": "Risken för stram kapsel är mycket liten och med den operationsteknik som dr Gribbe utvecklat så minimeras risken ytterligare. Trots detta så är ändå stram kapsel den allra vanligaste komplikationen efter en bröstimplantatoperation och störst risk är mellan 6 - 12 månader efter operationen. Man väljer här själv hur man vill göra. Antingen så betalar man lite extra för garantin i samband med operationen eller så får man vara beredd att betala mer i framtiden om den komplikationen skulle ske."
+      },
+      "question13": {
+        "question": "Spelar min bröstbredd någon roll?",
+        "answer": "Bredden på bröstkorgen är det mått som styr vilket resultat implantat av en viss bredd ger. En bredare bröstkorg kan bära upp ett bredare och större implantat medans det passar med smalare implantat på en smalare bröstkorg. Vi tittar på detta på konsultationen och du kommer här få god kunskap."
+      },
+      "question14": {
+        "question": "När mjuknar brösten?",
+        "answer": "Brösten mjuknar successivt första månaderna efter operationen. Ofta så har de mjuknat fint och fallit på plats efter ca 3 månader. Faktorer som påverkar förloppet är vad man själv har för hud och bröstvävnad. Generellt sett så kan man säga att en ung kvinna har stramare och mer elastisk vävnad än en äldre kvinna som istället med åren fått en mer eftergivlig vävnad. Graviditet och amning gör också vävnaden mer eftergivlig. Följaktligen så mjuknar brösten snabbare ju mer eftergivlig vävnaden är och vice versa."
+      },
+      "question15": {
+        "question": "Kan jag äta p-piller eller andra läkemedel?",
+        "answer": "Ja, det går oftast bra att äta p-piller vid ett kortare ingrepp såsom bröstförstoring. Vid en operation där även bröstlyft eller bröstförminskning genomförs kan man om operationstiden förväntas bli lång behöva göra uppehåll med p-piller. Läkemedel som Treo, Iprén, Naproxen samt preparat som vitaminer och Omega-3 ökar blödningsbenägenheten och ska undvikas 2 veckor innan operation."
+      },
+      "question16": {
+        "question": "Kan jag snusa eller röka?",
+        "answer": "Rökning ska helst undvikas fyra veckor innan en bröstoperation. Vid bröstlyft eller bröstförminskning är det ett krav att du inte röker minst fyra veckor innan och fyra veckor efter din operation. Snus går bra fram till dagen innan operation."
+      },
+      "question17": {
+        "question": "Kan jag resa/flyga efter operation?",
+        "answer": "När du åker hem efter operationen går det bra att få skjuts i bil, åka tåg eller buss. Flyg kortare sträckor till exempel inom Sverige går också bra på operationsdagen men du ska undvika längre utrikesflygningar ca två dygn efter operationen. Om man reser långt så funkar tåg bra då man kan komma upp och promenera runt när man vill. Om man åker bil hem och bor långt bort så är det viktigt att stanna och göra gymnastik regelbundet."
+      },
+      "question18": {
+        "question": "Vad kostar en korrigering?",
+        "answer": "Generellt sett så ingår korrektioner i säkerhetsgarantin som går att teckna i samband med operationen."
+      },
+      "question19": {
+        "question": "Kommer brösten krympa efter operationen?",
+        "answer": "Ja och nej. Första tiden efter operationen är brösten svullna upptill. Ibland väldigt svullna. Denna svullnad minskar successivt första veckorna, månaderna efter operationen och omfördelas neråt till underpolerna (nedanför bröstvårtorna) och till bröstens sidor. Volymen upptill omfördelas därmed neråt och åt sidorna samt även lite framåt. Många upplever minskningen i volym upptill som att brösten minskar i storlek men man kan säga att brösten ”blommar ut” och de blir faktiskt som helhet lite större efter några månader jämfört med precis efter operationen."
+      },
+      "question20": {
+        "question": "Är det normalt att brösten glider isär när jag ligger ner?",
+        "answer": "Precis som ett par naturliga bröst så glider även bröst med implantat isär, särskilt i liggande. Hur mycket och när det sker är individuellt. Om man har eftergivlig vävnad med sämre stöd och om man har valt stora implantat ökar tendensen. Viktigt är att ta hand om brösten med bra bh."
+      },
+      "question21": {
+        "question": "Kan jag bära tungt efter operation?",
+        "answer": "I början, första 2 veckorna efter operationen ska du ta det väldigt lugn och inte lyfta mer än ett kilo. Du kan sedan successivt öka på belastningen med lite mer vikt när du bär till exempel väskor, matkassar eller barn. Det är viktigt att du minst första månaden gör alla rörelser lugnt och inte ryckigt."
+      },
+      "question22": {
+        "question": "Behöver jag bröstband?",
+        "answer": "Nej, generellt sett inte. Den teknik som dr Gribbe utvecklat innebär att du generellt sett inte använder bröstband. I enstaka fall kan det dock bli aktuellt."
+      },
+      "question23": {
+        "question": "Nedstämd efter operation?",
+        "answer": "Vissa patienter upplever känner sig mer eller mindre nedstämda efter en bröstoperation. Anledningen till nedstämdheten är själva operationen i sig med fasta, narkos, olika mediciner, smärta, immobilisering och ändrat matintag efter operationen. På kliniken är vi experter på detta för att göra det så lindring och behagligt för patienterna som det bara går. Ytterligare en orsak till nedstämdheten är det faktum att man faktiskt vaknar upp till en mer eller mindre förändrad kropp. Hur mycket man än tänkt på de nya brösten innan operationen så kan det ändå i vissa fall komma lite som en chock. Det är dock mycket ovanligt att nedstämdhet är ett problem, särskilt om man är medveten om att det kan ske."
+      },
+      "question24": {
+        "question": "Hur länge behöver jag tejpa ärren?",
+        "answer": "Rekommendationen är att du tejpar ärren i 6 månader efter en bröstförstoring eller ett bröstlyft. Du kommer få noggranna instruktioner kring detta."
+      },
+      "question25": {
+        "question": "När kan jag börja sola?",
+        "answer": "Grundregeln är att ärren efter en bröstoperation inte får få sol på sig minst ett år efter operationen. Detta då de annars kan bli pigmenterade, bruna. Täck med hög solskyddsfaktor (SPF100), tejp och mörk baddräkt eller bikini. I övrigt så går det bra att sola brösten efter ca 2 veckor och resten av kroppen från och med dagen efter operation."
+      },
+      "question26": {
+        "question": "Kan jag gå utan BH efteråt?",
+        "answer": "Du vaknar upp med en bh som operationspersonalen sätter på dig. Den är mjuk och skön och du bär den sedan första veckan efter op, fram till första besöket. Du har efter en vecka möjlighet att ta av bh:n då och då när du är hemma. Vid första återbesöket pratar dr Gribbe med dig och ger individuella bh-råd."
+      },
+      "question27": {
+        "question": "När kan jag bada efteråt?",
+        "answer": "Rekommendationen är att avvakta med att bada badhus/badkar/bastu i 4 veckor efter din operation."
+      },
+      "question28": {
+        "question": "När kan jag börja träna efteråt?",
+        "answer": "Efter 5-6 veckor kan du börja med spinning och styrketräning av ben och rumpa. Successivt kan du övergå till att träna mage och rygg medan överkropp och bröstmuskler kan ske först efter 3 månader. Även aktiviteter som gör att brösten studsar såsom jogging, ridning, tennis ska du vänta med 3 månader."
+      },
+      "question29": {
+        "question": "När kan jag sova på sidan efteråt?",
+        "answer": "Så snart du känner att det känns okej."
+      } 
+    },
+    "rightsaccordion": {
+      "question1": {
+        "question": "Rätt till information",
+        "answer": "Du har rätt att kostnadsfritt få information om vår behandling av dina personuppgifter. Begäran om utdrag ska göras skriftligen till info@drgribbe.se."
+      },
+      "question2": {
+        "question": "Rätt till rättelse",
+        "answer": "Du har rätt att vända dig till oss för att be oss att rätta felaktiga uppgifter om dig. Du kan även begära ut information om till vem vi har lämnat ut dina personuppgifter. Vi ansvarar inte för problem som uppstår som en följd av att personuppgifter är gamla eller felaktiga om du underlåtit att informera oss om ändringen. Vi kommer att, på din begäran eller om vi upptäcker det, korrigera eller radera felaktig eller ofullständig information om dig."
+      },
+      "question3": {
+        "question": "Rätt till radering",
+        "answer": "Vi har en skyldighet att radera dina personuppgifter om de inte längre behövs för det/de ändamål som de samlades in för, om behandlingen av dem endast grundar sig på sitt samtycke och du återkallar det eller om behandlingen sker för direktmarknadsföring."
+      },
+      "question4": {
+        "question": "Rätt till begränsning av behandling",
+        "answer": "Du kan i vissa fall begära att vår behandling av dina personuppgifter begränsas till vissa avgränsade syften. Det kan du t.ex. göra när du anser att uppgifterna är felaktiga och har begärt rättelse."
+      },
+      "question5": {
+        "question": "Rätt till dataportabilitet",
+        "answer": "Vi kan hjälpa dig att flytta över personuppgifter som du har lämnat till oss till en annan leverantör av tjänster. En förutsättning är att den som tar emot personuppgifterna behandlar dem med stöd av ett samtycke från dig eller för att uppfylla ett avtal med dig. Rätten gäller bara i förhållande till sådana personuppgifter som du själv har lämnat oss."
+      },
+      "question6": {
+        "question": "Rätt att göra invändningar",
+        "answer": "Du har rätt att motsätta dig att vi använder dina personuppgifter för direktmarknadsföring."
+      },
+      "question7": {
+        "question": "Klagomål till Integritetsskyddsmyndigheten (IMY)",
+        "answer": "Om du anser att vi behandlar personuppgifter om dig i strid med dataskyddsförordningen (GDPR) kan du lämna in ett klagomål till Integritetsmyndigheten som är tillsynsmyndighet i Sverige eller motsvarande tillsynsmyndighet i det land du är bosatt eller arbetar i."
+      },
+      "question8": {
+        "question": "Rätt till skadestånd",
+        "answer": "Om du har lidit skada på grund av att vi har behandlat dina personuppgifter i strid med dataskyddsförordningen kan du ha rätt till skadestånd."
+      },
+      "question9": {
+        "question": "När och till vilka lämnar vi ut dina personuppgifter",
+        "answer": ""
+      }
+    }   
   },
   "kontaktOchBesok": {
     "title": "Kontakt & besök",

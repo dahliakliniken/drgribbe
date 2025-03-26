@@ -158,6 +158,11 @@ export const useAccordionItems = () => {
       id: crypto.randomUUID(),
       title: t('accordion.question29.question'),
       content: <P small>{t('accordion.question29.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: t('accordion.question30.question'),
+      content: <P small>{t('accordion.question30.answer')}</P>
     }
   ]
 }
