@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/dahliakliniken/drgribbe/compare/v1.6.0...v1.6.1) (2025-03-26)
+
+
+### Bug Fixes
+
+* update email address in HeaderWithFooter component ([5b05e5e](https://github.com/dahliakliniken/drgribbe/commit/5b05e5e2fa7c1d46b0ae3669fb08b61ed9ae01cd))
+
 # [1.6.0](https://github.com/dahliakliniken/drgribbe/compare/v1.5.0...v1.6.0) (2025-03-26)
 
 ### Bug Fixes
