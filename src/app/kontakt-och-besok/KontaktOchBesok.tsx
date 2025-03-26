@@ -13,7 +13,7 @@ import { BgColors } from '../types'
 
 const KontaktOchBesok = () => {
   const t = useTranslations()
-
+  let emailIndex = 0;
   return (
     <>
       <SimpleCard
@@ -55,11 +55,14 @@ const KontaktOchBesok = () => {
                 <div>
                   <P>
                     {t.rich('kontaktOchBesok.contactEmail', {
-                      email: (chunks) => (
-                        <a className="block" href="mailto:info@drgribbe.se">
-                          {chunks}
-                        </a>
-                      )
+                      email: (chunks) => {
+                        const email = String(chunks).trim(); // Ensure chunks is a string
+                        return (
+                          <a className="block" href={`mailto:${email}`} key={emailIndex++}>
+                            {email}
+                          </a>
+                        );
+                      }
                     })}
                   </P>
                 </div>
