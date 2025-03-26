@@ -1,6 +1,5 @@
 'use client'
 
-import { sendGTMEvent } from '@next/third-parties/google'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
@@ -75,18 +74,7 @@ const Page: React.FC = () => {
                 {t('common.bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
-                <A
-                  onClick={() =>
-                    sendGTMEvent({
-                      event: 'book_clicked',
-                      location: 'homepage'
-                    })
-                  }
-                  href="/boka"
-                  className="uppercase"
-                  buttonStyle
-                  inverted
-                >
+                <A href="/boka" className="uppercase" buttonStyle inverted>
                   {t('common.bookNow')}
                 </A>
               </div>

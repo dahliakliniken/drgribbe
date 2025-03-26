@@ -1,14 +1,12 @@
 import './globals.css'
 
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Metadata } from 'next'
 import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 
-import { AnalyticsProvider } from './components/analytics/AnalyticsContext'
-import { AnalyticsWrapper } from './components/analytics/AnalyticsWrapper'
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
-import { CookieBanner } from './components/surfaces/CookieBanner'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import { ephesis, josefinSans } from './fonts'
 
@@ -46,15 +44,15 @@ export default async function RootLayout({
     >
       <body className={josefinSans.className}>
         <NextIntlClientProvider messages={messages}>
-          <AnalyticsProvider>
-            <HeaderWithFooter />
-            <main className="mb-36 flex flex-col lg:mt-20 lg:mb-0">
-              <Breadcrumbs />
-              {children}
-              <CookieBanner />
-              <AnalyticsWrapper nonce={nonce} />
-            </main>
-          </AnalyticsProvider>
+          <HeaderWithFooter />
+          <main className="mb-36 flex flex-col lg:mt-20 lg:mb-0">
+            <Breadcrumbs />
+            {children}
+            <GoogleTagManager
+              gtmId={process.env.NEXT_PUBLIC_GTM_ID!}
+              nonce={nonce}
+            />
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>

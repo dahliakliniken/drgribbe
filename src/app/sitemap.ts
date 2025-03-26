@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/garanti`, lastModified: new Date() },
     { url: `${baseUrl}/hud-och-injektioner`, lastModified: new Date() },
     { url: `${baseUrl}/kontakt-och-besok`, lastModified: new Date() },
+    { url: `${baseUrl}/personuppgiftspolicy`, lastModified: new Date() },
     { url: `${baseUrl}/priser`, lastModified: new Date() },
     { url: `${baseUrl}/var-personal`, lastModified: new Date() }
   ]

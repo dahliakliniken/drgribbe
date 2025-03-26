@@ -28,7 +28,7 @@ const VarPersonal = () => {
       titles: ['Reception och övrig administration'],
       image: kristina,
       //description: "Doktorinnan och jur. kand. Kristina är klinikens receptionist, administratör, husfru och omvårdnadsexpert. Hon är lugn, positiv och varmhjärtad. Kristina är mycket mån om och har ett genuint intresse för varje enskild patient. Hon ser till att du som patient får hjälp med allt och mer därtill. Kristina hjälper dig med bokning av möten med Dr Gribbe, lugnar med samtal och information inför operationen, serverar den perfekta postoperativa måltiden, förmanar om väskan din är för tung och ett gläds åt att träffa dig på återbesöken."
-      description: "Kristina - Doktorinnan och jur. kand. Kristina är klinikens receptionist och administratör. Hon är lugn, positiv och godhjärtad. Kristina är mån om varje enskild patient och ser till att du får hjälp med allt och mer därtill."
+      description: "Doktorinnan och jur. kand. Kristina är klinikens receptionist, administratör och husfru. Hon är lugn, positiv och godhjärtad. Kristina är mån om varje enskild patient och ser till att du får hjälp med allt och mer därtill."
     },
     {
       id: crypto.randomUUID(),
@@ -67,7 +67,7 @@ const VarPersonal = () => {
       name: 'Selda Demirkiran',
       titles: ['Undersköterska'],
       image: selda,
-      description:"Selda är en lugn och positiv undersköterska som du träffar när du kommer in på operationssalen. Hon hjälper här till före, under och efter operationen. Hon stoppar om dig på operationsbordet och ser till att du ligger bekvämt. Selda assisterar operationssjuksköterskan och narkosläkaren på operationssalen och plockar fram de instrument, suturer och förband som behövs. Efter operationens slut hjälper hon till att varsamt ta på dig förbands-bh och försiktigt flytta över dig till sängen. Selda utbildade sig till undersköterska på Karolinska Huddinge. Hon har arbetat på flera närakuter och på operationsavdelning på Karolinska Huddinge och Considra gynekologi."
+      description:"Selda är en lugn och positiv undersköterska som du träffar när du kommer in på operationssalen. Hon hjälper till före, under och efter operationen. Hon stoppar om dig på operationsbordet och ser till att du ligger bekvämt. Selda assisterar operationssjuksköterskan och narkosläkaren på operationssalen och plockar fram de instrument, suturer och förband som behövs. Efter operationens slut hjälper hon till att varsamt ta på dig förbands-bh och försiktigt flytta över dig till sängen. Selda utbildade sig till undersköterska på Karolinska Huddinge. Hon har arbetat på flera närakuter och på operationsavdelning på Karolinska Huddinge och Considra gynekologi."
     }
   ]
 
