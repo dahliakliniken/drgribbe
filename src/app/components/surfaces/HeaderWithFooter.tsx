@@ -43,7 +43,7 @@ export const HeaderWithFooter = () => {
             <span>
               {t.rich('contact.email', {
                 email: (chunks) => (
-                  <a href="mailto:info@drgribbe.se">{chunks}</a>
+                  <a href="mailto:info@dahliakliniken.se">{chunks}</a>
                 )
               })}
             </span>
