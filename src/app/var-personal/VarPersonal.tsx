@@ -67,7 +67,7 @@ const VarPersonal = () => {
       name: 'Selda Demirkiran',
       titles: ['Undersköterska'],
       image: selda,
-      description:"Selda är en lugn och positiv undersköterska som du träffar när du kommer in på operationssalen. Hon hjälper här till före, under och efter operationen. Hon stoppar om dig på operationsbordet och ser till att du ligger bekvämt. Selda assisterar operationssjuksköterskan och narkosläkaren på operationssalen och plockar fram de instrument, suturer och förband som behövs. Efter operationens slut hjälper hon till att varsamt ta på dig förbands-bh och försiktigt flytta över dig till sängen. Selda utbildade sig till undersköterska på Karolinska Huddinge. Hon har arbetat på flera närakuter och på operationsavdelning på Karolinska Huddinge och Considra gynekologi."
+      description:"Selda är en lugn och positiv undersköterska som du träffar när du kommer in på operationssalen. Hon hjälper till före, under och efter operationen. Hon stoppar om dig på operationsbordet och ser till att du ligger bekvämt. Selda assisterar operationssjuksköterskan och narkosläkaren på operationssalen och plockar fram de instrument, suturer och förband som behövs. Efter operationens slut hjälper hon till att varsamt ta på dig förbands-bh och försiktigt flytta över dig till sängen. Selda utbildade sig till undersköterska på Karolinska Huddinge. Hon har arbetat på flera närakuter och på operationsavdelning på Karolinska Huddinge och Considra gynekologi."
     }
   ]
 

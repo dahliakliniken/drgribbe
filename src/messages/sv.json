@@ -146,7 +146,7 @@
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",
-    "preamble" : "Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med bröstimplantat m.m.",
+    "preamble" : "Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning, kombinerade ingrepp med bröstimplantat m.m.",
     "heading1": "Så går operationen till",
     "consultation": {
       "heading1": "Konsultationen",
@@ -1096,7 +1096,11 @@
       "question29": {
         "question": "När kan jag sova på sidan efteråt?",
         "answer": "Så snart du känner att det känns okej."
-      }    
+      },      
+      "question30": {
+        "question": "Varför har ni så få före-och efterbilder?",
+        "answer": "Anledningen är att kliniken inte funnits som egen klinik så länge. Även om Dr Gribbe är mycket erfaren i branschen och har tagit tusentals före- och efterbilder på patienter så tillhör de bilderna den arbetsplats han tidigare arbetat på och lämnat varför vi jobbar intensivt med att ta fram nya bilder från denna klinik."
+      }       
     }
   },
   "foreOchEfter": {
