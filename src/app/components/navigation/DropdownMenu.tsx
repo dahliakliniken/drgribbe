@@ -173,7 +173,7 @@ export const DropdownMenu: React.FC = () => {
           label={t('common.closeMenu')}
         />
         <div className="lg:bg-custom-gradient-desktop lg:relative lg:flex-1">
-          <ul className="mb-gapSpace lg:m-gapSpace lg:ml-gapSpaceL flex w-full flex-col gap-5">
+          <ul className="mb-gapSpace lg:m-gapSpace lg:ml-gapSpaceL flex w-full flex-col gap-5 font-light">
             {renderLinks(mainLinks)}
           </ul>
           <A
