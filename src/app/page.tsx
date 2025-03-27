@@ -34,11 +34,12 @@ const Page: React.FC = () => {
           <Pillar>
             <SpaceContainer>
               <H1>{t('aboutBox.title')}</H1>
+              <P className='fat'>{"Dr Örjan Gribbe lanserar nytt kliniknamn, Dahliakliniken."}</P>
               <P>
                 {
                   'Välkommen till en klinik helt specialiserad på estetiska bröstoperationer'
                 }
-              </P>
+              </P>              
               <P>{t('aboutBox.paragraph1')}</P>
               <P>{t('aboutBox.paragraph2')}</P>
             </SpaceContainer>
