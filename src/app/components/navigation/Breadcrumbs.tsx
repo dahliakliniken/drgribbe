@@ -36,7 +36,7 @@ export const Breadcrumbs = () => {
   }
 
   return (
-    <div className="px-gapSpace lg:bg-beige w-full">
+    <div className="px-gapSpace lg:bg-beige w-full font-light">
       <nav className="py-2">
         <ul className="flex">
           <li className={listClasses}>

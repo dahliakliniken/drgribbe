@@ -107,7 +107,7 @@ export const DropdownMenu: React.FC = () => {
               )}
             >
               {subLinks.map(({ text, href, id: subLinkId }) => (
-                <li key={subLinkId} className="relative">
+                <li key={subLinkId} className="relative font-light">
                   <Link
                     href={href}
                     className={'hover:text-gold transition-colors duration-300'}
@@ -127,7 +127,7 @@ export const DropdownMenu: React.FC = () => {
 
   return (
     <div
-      className="relative z-50 flex items-center gap-1 md:top-1"
+      className="relative z-50 flex items-center gap-1 md:top-1 font-light"
       ref={menuRef}
     >
       <HamburgerButton
@@ -151,7 +151,7 @@ export const DropdownMenu: React.FC = () => {
         aria-hidden={!isOpen}
       >
         <div className="lg:bg-custom-dark lg:before:bg-card-pattern hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:[background-size:110%] lg:before:bg-[20%_20%] lg:before:opacity-5">
-          <div className="p-gapSpace flex flex-col text-white">
+          <div className="p-gapSpace flex flex-col text-white font-light">
             <span>{t('contact.contactUs')}</span>
             <span>
               {t.rich('contact.email', {
