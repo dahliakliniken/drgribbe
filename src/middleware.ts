@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
     font-src 'self';
     img-src 'self' blob: data: https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com https://www.facebook.com/privacy_sandbox/pixel/register https://cookie-script.com;
     connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://www.facebook.com https://graph.facebook.com https://cookie-script.com;
-    frame-src 'self' https://app.meridiq.com https://www.google.com https://*.google.com https://www.googletagmanager.com https://www.facebook.com https://cookie-script.com;
+    frame-src 'self' https://app.meridiq.com https://www.google.com https://*.google.com https://www.googletagmanager.com https://www.facebook.com https://cookie-script.com https://vercel.live;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
