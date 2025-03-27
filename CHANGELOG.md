@@ -1,3 +1,10 @@
+# [1.7.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2025-03-27)
+
+
+### Features
+
+* improve breadcrumb translation handling and formatting ([318fb7d](https://github.com/dahliakliniken/drgribbe/commit/318fb7d1d08c253cf16b013501755a6fc0f2c1f6))
+
 # [1.7.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.6.1...v1.7.0-beta.1) (2025-03-27)
 
 
