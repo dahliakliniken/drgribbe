@@ -1,24 +1,21 @@
 # [1.7.0-beta.3](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0-beta.2...v1.7.0-beta.3) (2025-03-27)
 
-
 ### Bug Fixes
 
-* update Content Security Policy to include pagead2.googlesyndication.com ([3134d3d](https://github.com/dahliakliniken/drgribbe/commit/3134d3d8b3677fa224dc3ce0902579c2112d8a85))
+- update Content Security Policy to include pagead2.googlesyndication.com ([3134d3d](https://github.com/dahliakliniken/drgribbe/commit/3134d3d8b3677fa224dc3ce0902579c2112d8a85))
 
 # [1.7.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2025-03-27)
 
-
 ### Features
 
-* improve breadcrumb translation handling and formatting ([318fb7d](https://github.com/dahliakliniken/drgribbe/commit/318fb7d1d08c253cf16b013501755a6fc0f2c1f6))
+- improve breadcrumb translation handling and formatting ([318fb7d](https://github.com/dahliakliniken/drgribbe/commit/318fb7d1d08c253cf16b013501755a6fc0f2c1f6))
 
 # [1.7.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.6.1...v1.7.0-beta.1) (2025-03-27)
 
-
 ### Features
 
-* enhance Content Security Policy and add CSP report endpoint ([7a1abfc](https://github.com/dahliakliniken/drgribbe/commit/7a1abfc398e6332f77eaf5d1c4212043223ca7d1))
-* update frame-src in Content Security Policy to include vercel.live ([752f1fa](https://github.com/dahliakliniken/drgribbe/commit/752f1fab888611adc4ddbac68f48057c99e75cc4))
+- enhance Content Security Policy and add CSP report endpoint ([7a1abfc](https://github.com/dahliakliniken/drgribbe/commit/7a1abfc398e6332f77eaf5d1c4212043223ca7d1))
+- update frame-src in Content Security Policy to include vercel.live ([752f1fa](https://github.com/dahliakliniken/drgribbe/commit/752f1fab888611adc4ddbac68f48057c99e75cc4))
 
 ## [1.6.1](https://github.com/dahliakliniken/drgribbe/compare/v1.6.0...v1.6.1) (2025-03-26)
 
