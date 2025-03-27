@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/dahliakliniken/drgribbe/compare/v1.6.1...v1.7.0) (2025-03-27)
+
+
+### Features
+
+* enhance Content Security Policy and add CSP report endpoint ([7a1abfc](https://github.com/dahliakliniken/drgribbe/commit/7a1abfc398e6332f77eaf5d1c4212043223ca7d1))
+* improve breadcrumb translation handling and formatting ([318fb7d](https://github.com/dahliakliniken/drgribbe/commit/318fb7d1d08c253cf16b013501755a6fc0f2c1f6))
+* update frame-src in Content Security Policy to include vercel.live ([752f1fa](https://github.com/dahliakliniken/drgribbe/commit/752f1fab888611adc4ddbac68f48057c99e75cc4))
+
 # [1.7.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2025-03-27)
 
 
