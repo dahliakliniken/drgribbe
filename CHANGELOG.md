@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0...v1.7.1) (2025-03-27)
+
+
+### Bug Fixes
+
+* update Content Security Policy to include pagead2.googlesyndication.com ([3134d3d](https://github.com/dahliakliniken/drgribbe/commit/3134d3d8b3677fa224dc3ce0902579c2112d8a85))
+
 # [1.7.0-beta.3](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0-beta.2...v1.7.0-beta.3) (2025-03-27)
 
 ### Bug Fixes
