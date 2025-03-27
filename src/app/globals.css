@@ -87,11 +87,14 @@ a:focus-visible {
   background: linear-gradient(0deg, rgba(0,0,0,0.4780287114845938) 0%, rgba(0,0,0,0) 68%, rgba(255,255,255,0) 100%);
 }
 
+.fat{
+  font-weight: 400;
+}
 .testimonial{
   width: 20rem;
   color: black;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   padding: 20px;
   text-align: center;
 

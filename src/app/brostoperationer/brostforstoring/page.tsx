@@ -1,16 +1,16 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Bröstförstoring - Dahliakliniken',
+  title: 'Bröstförstoring i Stockholm - Dahliakliniken',
   description:
     'Brösten är för de flesta kvinnor mycket viktiga. De representerar kvinnlighet, skönhet och symboliserar fruktbarhet. Här kan du läsa om hur processen för bröstförstoring går till.',
   openGraph: {
-    title: 'Bröstförminskning - Dahliakliniken',
+    title: 'Bröstförminskning i Stockholm - Dahliakliniken',
     description:
       'Brösten är för de flesta kvinnor mycket viktiga. De representerar kvinnlighet, skönhet och symboliserar fruktbarhet. Här kan du läsa om hur processen för bröstförstoring går till.'
   },
   twitter: {
-    title: 'Bröstförminskning - Dahliakliniken',
+    title: 'Bröstförminskning i Stockholm - Dahliakliniken',
     description:
       'Brösten är för de flesta kvinnor mycket viktiga. De representerar kvinnlighet, skönhet och symboliserar fruktbarhet. Här kan du läsa om hur processen för bröstförstoring går till.'
   }

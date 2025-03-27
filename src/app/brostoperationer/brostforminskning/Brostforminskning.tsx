@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl'
 import { Pillar } from '@/app/components/layout/Pillar'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
+import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
 import { H3 } from '@/app/components/typography/H3'
@@ -33,7 +34,29 @@ const Brostforminskning = () => {
               <P>{t('background.text2')}</P>
               <P>{t('background.text3')}</P>
             </SpaceContainer>
-
+          </Pillar>
+        }
+      />
+      <SpaceContainer spaceVertically noPadding>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="right"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {useTranslations()('common.freeConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </>
+          }
+        />
+      </SpaceContainer>
+      <SpaceContainer>
+        <Pillar>
             <H2>{t('consultation.heading1')}</H2>
             <P>{t('consultation.text1')}</P>
             <P>{t('consultation.text2')}</P>
@@ -41,9 +64,7 @@ const Brostforminskning = () => {
             <P>{t('consultation.text4')}</P>
             <P>{t('consultation.text5')}</P>
           </Pillar>
-        }
-      />
-
+      </SpaceContainer>
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="right"
@@ -66,6 +87,24 @@ const Brostforminskning = () => {
           </Pillar>
         }
       />
+      <SpaceContainer spaceVertically noPadding>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="right"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {useTranslations()('common.freeConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </>
+          }
+        />
+      </SpaceContainer>
     </>
   )
 }
