@@ -1,9 +1,14 @@
-## [1.7.1](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0...v1.7.1) (2025-03-27)
+# [1.8.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.7.1-beta.1...v1.8.0-beta.1) (2025-03-30)
 
+### Features
+
+- add Google site verification metadata to the page component ([4e4f3bf](https://github.com/dahliakliniken/drgribbe/commit/4e4f3bf08774f2b7c728dd3fb985d63e4aef3499))
+
+## [1.7.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0...v1.7.1-beta.1) (2025-03-27)
 
 ### Bug Fixes
 
-* update Content Security Policy to include pagead2.googlesyndication.com ([3134d3d](https://github.com/dahliakliniken/drgribbe/commit/3134d3d8b3677fa224dc3ce0902579c2112d8a85))
+- update Content Security Policy to include pagead2.googlesyndication.com ([3134d3d](https://github.com/dahliakliniken/drgribbe/commit/3134d3d8b3677fa224dc3ce0902579c2112d8a85))
 
 # [1.7.0-beta.3](https://github.com/dahliakliniken/drgribbe/compare/v1.7.0-beta.2...v1.7.0-beta.3) (2025-03-27)
 
