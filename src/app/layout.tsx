@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
     description:
       'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.',
-    url: 'https://www.drgribbe.se/',
-    siteName: 'Dr Gribbe'
+    url: 'https://www.dahliakliniken.se/',
+    siteName: 'Dahliakliniken'
   },
   twitter: {
     title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
