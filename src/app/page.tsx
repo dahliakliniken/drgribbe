@@ -1,7 +1,5 @@
-'use client'
-
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 
@@ -27,8 +25,8 @@ export const metadata = {
   }
 }
 
-const Page: React.FC = () => {
-  const t = useTranslations()
+export default async function Home() {
+  const t = await getTranslations()
 
   return (
     <>
@@ -177,5 +175,3 @@ const Page: React.FC = () => {
     </>
   )
 }
-
-export default Page
