@@ -42,36 +42,37 @@ const Brostforstoring = () => {
               <P>{t('implantbackground.text1')}</P>
               <P>{t('implantbackground.text2')}</P>
             </Section>
-            </Pillar>
-            }
-        />
-    <SpaceContainer spaceVertically noPadding>
-      <SimpleCard
-        bgColor={BgColors.Green}
-        bgPosition="right"
-        content={
-          <>
-            <H2 upperCase white className="text-center">
-              {useTranslations()('common.freeConsultation')}
-            </H2>
-            <div className="m-auto flex max-w-xs justify-center">
-              <A href="/boka" className="uppercase" buttonStyle>
-                {useTranslations()('common.bookNow')}
-              </A>
-            </div>
-          </>
+          </Pillar>
         }
       />
-    </SpaceContainer>
-    <Pillar>
-      <Section>
-          <H3>{t('technique.heading1')}</H3>
-          <P>{t('technique.text1')}</P>
-          <Accordion size="h4" items={teknikAccordion} />
-      </Section>
-    </Pillar>
+      <SpaceContainer spaceVertically noPadding>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="right"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {useTranslations()('common.freeConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </>
+          }
+        />
+      </SpaceContainer>
 
-
+      <SpaceContainer>
+        <Pillar>
+          <Section>
+            <H3>{t('technique.heading1')}</H3>
+            <P>{t('technique.text1')}</P>
+            <Accordion size="h4" items={teknikAccordion} />
+          </Section>
+        </Pillar>
+      </SpaceContainer>
 
       <SpaceContainer>
         <Pillar>

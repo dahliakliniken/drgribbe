@@ -1,3 +1,5 @@
+import classNames from 'classnames'
+
 type SpaceContainerProps = {
   centered?: boolean
   noPadding?: boolean
@@ -17,7 +19,12 @@ export const SpaceContainer = ({
   return (
     <div
       id={id}
-      className={`w-full ${!noPadding && 'px-gapSpace'} ${spaceVertically && 'pb-gapSpace pt-gapSpaceL'} ${spaceTop && 'pt-gapSpaceL'}`}
+      className={classNames(
+        'w-full',
+        !noPadding && 'px-gapSpace',
+        spaceVertically && 'pb-gapSpace pt-gapSpaceL',
+        spaceTop && 'pt-gapSpaceL'
+      )}
     >
       {children}
     </div>

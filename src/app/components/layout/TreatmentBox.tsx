@@ -17,7 +17,6 @@ type TreatmentBoxProps = {
     paragraphs: string[]
     image: string
     linkHref: string
-    ariaLabel: string
     bgPosition?: keyof typeof BgPositions
     bgColor: BgColors
   }[]
@@ -38,7 +37,9 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
           bgPosition={treatment.bgPosition}
           content={
             <div className="flex h-full flex-col">
-              <H3 white>{t(treatment.title)}</H3>
+              <H3 white id={`treatment-title-${treatment.id}`}>
+                {t(treatment.title)}
+              </H3>
               <Image
                 className="m-auto my-6"
                 src={treatment.image}
@@ -53,9 +54,9 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
               ))}
               <A
                 overlay
-                className="mr-auto mt-auto"
+                className="mt-auto mr-auto"
                 href={treatment.linkHref}
-                aria-label={t(treatment.ariaLabel)}
+                aria-labelledby={`treatment-title-${treatment.id}`}
                 white
                 small
               >

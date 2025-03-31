@@ -1,3 +1,10 @@
+## [1.8.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.8.0...v1.8.1-beta.1) (2025-03-31)
+
+
+### Bug Fixes
+
+* correct phone number formatting in Swedish localization ([c70f639](https://github.com/dahliakliniken/drgribbe/commit/c70f639b078190cfb6e67963e1f7e272be47108f))
+
 # [1.8.0](https://github.com/dahliakliniken/drgribbe/compare/v1.7.1...v1.8.0) (2025-03-30)
 
 

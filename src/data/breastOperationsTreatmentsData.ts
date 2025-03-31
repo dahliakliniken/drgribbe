@@ -16,7 +16,6 @@ export const breastOperationsTreatmentsData = [
       // 'treatmentBox.treatments.breastEnlargement.paragraph2',
       'treatmentBox.treatments.breastEnlargement.paragraph3'
     ],
-    ariaLabel: 'treatmentBox.treatments.breastEnlargement.ariaLabel',
     linkHref: '/brostoperationer/brostforstoring',
     bgPosition: BgPositions['bottom-right'],
     bgColor: BgColors.Green
@@ -30,7 +29,6 @@ export const breastOperationsTreatmentsData = [
       // 'treatmentBox.treatments.breastReduction.paragraph2',
       'treatmentBox.treatments.breastReduction.paragraph3'
     ],
-    ariaLabel: 'treatmentBox.treatments.breastReduction.ariaLabel',
     linkHref: '/brostoperationer/brostforminskning',
     bgPosition: BgPositions['bottom-left'],
     bgColor: BgColors.Green
@@ -44,7 +42,6 @@ export const breastOperationsTreatmentsData = [
       // 'treatmentBox.treatments.breastLift.paragraph2',
       'treatmentBox.treatments.breastLift.paragraph3'
     ],
-    ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
     linkHref: '/brostoperationer/brostlyft',
     bgPosition: BgPositions['bottom-right'],
     bgColor: BgColors.Green
@@ -57,7 +54,6 @@ export const breastOperationsTreatmentsData = [
       'treatmentBox.treatments.beforeAndAfter.paragraph1'
       // 'treatmentBox.treatments.beforeAndAfter.paragraph2'
     ],
-    ariaLabel: 'treatmentBox.treatments.beforeAndAfter.ariaLabel',
     linkHref: '/brostoperationer/fore-och-efter',
     bgPosition: BgPositions['bottom-left'],
     bgColor: BgColors.Green
