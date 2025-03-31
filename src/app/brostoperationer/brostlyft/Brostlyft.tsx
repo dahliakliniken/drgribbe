@@ -32,54 +32,54 @@ const Brostlyft = () => {
             <P>{t('background.text3')}</P>
           </Pillar>
         }
+      />
+      <SpaceContainer spaceVertically noPadding>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="right"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {useTranslations()('common.freeConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </>
+          }
         />
-        <SpaceContainer spaceVertically noPadding>
-          <SimpleCard
-            bgColor={BgColors.Green}
-            bgPosition="right"
-            content={
-              <>
-                <H2 upperCase white className="text-center">
-                  {useTranslations()('common.freeConsultation')}
-                </H2>
-                <div className="m-auto flex max-w-xs justify-center">
-                  <A href="/boka" className="uppercase" buttonStyle>
-                    {useTranslations()('common.bookNow')}
-                  </A>
-                </div>
-              </>
-            }
-          />
-        </SpaceContainer>
-        <SpaceContainer noPadding spaceTop>
-          <Pillar>
-            <H2>{t('techniques.heading1')}</H2>
-            <P>{t('techniques.text1')}</P>
-            <P>{t('techniques.text2')}</P>
-            <P>{t('techniques.text3')}</P>
-            <P>{t('techniques.text4')}</P>
-            <P>{t('techniques.text5')}</P>
-            <P>{t('techniques.text6')}</P>
-          </Pillar>              
-        </SpaceContainer>
-        <SpaceContainer spaceVertically noPadding>
-          <SimpleCard
-            bgColor={BgColors.Green}
-            bgPosition="right"
-            content={
-              <>
-                <H2 upperCase white className="text-center">
-                  {useTranslations()('common.freeConsultation')}
-                </H2>
-                <div className="m-auto flex max-w-xs justify-center">
-                  <A href="/boka" className="uppercase" buttonStyle>
-                    {useTranslations()('common.bookNow')}
-                  </A>
-                </div>
-              </>
-            }
-          />
-        </SpaceContainer>
+      </SpaceContainer>
+      <SpaceContainer spaceTop>
+        <Pillar>
+          <H2>{t('techniques.heading1')}</H2>
+          <P>{t('techniques.text1')}</P>
+          <P>{t('techniques.text2')}</P>
+          <P>{t('techniques.text3')}</P>
+          <P>{t('techniques.text4')}</P>
+          <P>{t('techniques.text5')}</P>
+          <P>{t('techniques.text6')}</P>
+        </Pillar>
+      </SpaceContainer>
+      <SpaceContainer spaceVertically noPadding>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="right"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {useTranslations()('common.freeConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </>
+          }
+        />
+      </SpaceContainer>
     </>
   )
 }
