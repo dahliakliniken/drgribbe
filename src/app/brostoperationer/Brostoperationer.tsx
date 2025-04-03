@@ -308,6 +308,22 @@ const Brostoperationer = () => {
             <Accordion items={afterFirstReturnVisitItems} />
           </SpaceContainer>
         </Pillar>
+        <SimpleCard
+          bgColor={BgColors.Green}
+          bgPosition="left"
+          content={
+            <>
+              <H2 upperCase white className="text-center">
+                {t('common.bookConsultation')}
+              </H2>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle>
+                  {t('common.bookNow')}
+                </A>
+              </div>
+            </>
+          }
+        />
       </SpaceContainer>
     </>
   )
