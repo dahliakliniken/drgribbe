@@ -22,11 +22,6 @@ export const useLinksData = () => {
             id: crypto.randomUUID()
           },
           {
-            text: t('dropdown.breastReduction'),
-            href: '/brostoperationer/brostforminskning',
-            id: crypto.randomUUID()
-          },
-          {
             text: t('dropdown.breastAugmentation'),
             href: '/brostoperationer/brostforstoring',
             id: crypto.randomUUID()
@@ -34,6 +29,11 @@ export const useLinksData = () => {
           {
             text: t('dropdown.breastLift'),
             href: '/brostoperationer/brostlyft',
+            id: crypto.randomUUID()
+          },                    
+          {
+            text: t('dropdown.breastReduction'),
+            href: '/brostoperationer/brostforminskning',
             id: crypto.randomUUID()
           },
           {

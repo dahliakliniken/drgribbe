@@ -29,7 +29,7 @@
     "price": "Priser",
     "guarantee": "Trygghetspaket",
     "faq": "Frågor & svar",
-    "overview": "Översikt",
+    "overview": "Bröstoperationer",
     "breastReduction": "Bröstförminskning",
     "breastAugmentation": "Bröstförstoring",
     "breastLift": "Bröstlyft",
@@ -142,7 +142,8 @@
     "bookNow": "Boka tid",
     "readMore": "Läs mer",
     "readLess": "Läs mindre",
-    "menu": "Meny"
+    "menu": "Meny",
+    "bookTimeAndConsultation" : "Boka tid / konsultation"
   },
   "brostoperationer": {
     "title": "Bröstoperationer i Stockholm",
