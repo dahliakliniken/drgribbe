@@ -184,7 +184,7 @@ export const DropdownMenu: React.FC = () => {
             className="lg:m-gapSpace lg:ml-gapSpaceL rounded-lg text-center"
             onClick={() => setIsOpen(false)}
           >
-            {t('common.bookConsultation')}
+            {t('common.bookTimeAndConsultation')}
           </A>
         </div>
       </div>
