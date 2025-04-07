@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/dahliakliniken/drgribbe/compare/v1.8.1...v1.8.2) (2025-04-07)
+
+
+### Bug Fixes
+
+* update base URL in sitemap to use 'www' subdomain ([4d444d0](https://github.com/dahliakliniken/drgribbe/commit/4d444d00d1773c9256146a634f5b340031c1d512))
+* update sitemap URL to use 'www' subdomain ([4cb8ae7](https://github.com/dahliakliniken/drgribbe/commit/4cb8ae7aeec25be4e3337c46f69dd8066bdfa011))
+
 ## [1.8.2-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.8.1...v1.8.2-beta.1) (2025-04-07)
 
 
