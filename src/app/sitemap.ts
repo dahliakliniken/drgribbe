@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.SITE_URL || 'https://dahliakliniken.se'
+  const baseUrl = process.env.SITE_URL || 'https://www.dahliakliniken.se'
 
   return [
     { url: `${baseUrl}/boka`, lastModified: new Date() },
