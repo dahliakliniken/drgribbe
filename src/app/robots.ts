@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/private/'
       }
     ],
-    sitemap: process.env.SITE_URL || 'https://dahliakliniken.se'
+    sitemap: process.env.SITE_URL || 'https://www.dahliakliniken.se'
   }
 }
