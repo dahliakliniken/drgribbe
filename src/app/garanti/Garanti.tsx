@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import { Pillar } from '../components/layout/Pillar'
 import { Section } from '../components/layout/Section'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
-import { Accordion } from '../components/surfaces/Accordion'
+//import { Accordion } from '../components/surfaces/Accordion'
 import { Li } from '../components/surfaces/Li'
 import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { Ul } from '../components/surfaces/Ul'
@@ -13,11 +13,11 @@ import { H2 } from '../components/typography/H2'
 //import { H3 } from '../components/typography/H3'
 import { P } from '../components/typography/P'
 import { BgColors } from '../types'
-import { useAccordionItems } from './accordionData'
+//import { useAccordionItems } from './accordionData'
 
 const Garanti = () => {
   const t = useTranslations()
-  const [complications] = useAccordionItems()
+  //const [complications] = useAccordionItems()
   const securityPackagePoints = Object.keys(
     t.raw('garanti.securityPackage.points')
   ).map((key) => t(`garanti.securityPackage.points.${key}`))
@@ -29,7 +29,7 @@ const Garanti = () => {
     <>
       <SimpleCard
         fullWidth
-        bgColor={BgColors.Green}
+        bgColor={BgColors.Coral}
         content={
           <Pillar>
             <H1 white>{t('garanti.title')}</H1>
@@ -97,7 +97,7 @@ const Garanti = () => {
         }
       />
 
-
+{/* 
       <SimpleCard
         id="complications"
         fullWidth
@@ -110,7 +110,30 @@ const Garanti = () => {
             </SpaceContainer>
           </Pillar>          
         }
-      />
+      /> */}
+         <SpaceContainer noPadding>
+        <SimpleCard
+          bgColor={BgColors.Beige}
+          className="before:bg-[30%_30%] lg:before:[background-size:200%]"
+          content={
+            <Pillar>
+              <H2 className="text-center">
+                {'Vill du veta mer om våra behandlingar?'}
+              </H2>
+              <P className="text-center">
+                {
+                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                }
+              </P>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle inverted>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </Pillar>
+          }
+        />
+      </SpaceContainer>
     </>
   )
 }

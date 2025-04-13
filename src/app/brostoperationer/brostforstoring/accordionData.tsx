@@ -5,6 +5,45 @@ import { P } from '@/app/components/typography/P'
 
 export const useAccordionData = () => {
   const t = useTranslations('brostforstoring')
+  const ft = useTranslations('fragorOchSvar')
+
+  const faqAccordion = [
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question4.question'),
+      content: <P small>{ft('accordion.question4.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question11.question'),
+      content: <P small>{ft('accordion.question11.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question12.question'),
+      content: <P small>{ft('accordion.question12.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question1.question'),
+      content: <P small>{ft('accordion.question1.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question24.question'),
+      content: <P small>{ft('accordion.question24.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question21.question'),
+      content: <P small>{ft('accordion.question21.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question30.question'),
+      content: <P small>{ft('accordion.question30.answer')}</P>
+    }
+  ]
 
   const teknikAccordion = [
     {
@@ -91,5 +130,5 @@ export const useAccordionData = () => {
     }
   ]
 
-  return [teknikAccordion]
+  return [teknikAccordion, faqAccordion]
 }

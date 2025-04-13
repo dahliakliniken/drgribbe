@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 import { Pillar } from '@/app/components/layout/Pillar'
@@ -12,11 +13,12 @@ import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
 
+import ImplantsInHand from '../../../../public/images/_N3A7297.jpg'
 import { useAccordionData } from './accordionData'
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
-  const [teknikAccordion] = useAccordionData()
+  const [teknikAccordion, faqAccordion] = useAccordionData()
 
   return (
     <>
@@ -37,12 +39,27 @@ const Brostforstoring = () => {
         bgPosition="left"
         content={
           <Pillar>
-            <Section>
-              <H2>{t('implanttitle')}</H2>
-              <P>{t('implantbackground.text1')}</P>
-              <P>{t('implantbackground.text2')}</P>
-            </Section>
-          </Pillar>
+            <SpaceContainer>
+              <Image
+                src={ImplantsInHand}
+                alt={t('altText.ImplantsInHand')}
+                className="max-h-svh object-cover object-center"
+              />      
+            </SpaceContainer>
+            <SpaceContainer spaceTop>
+              <Section>
+                  <H2>{t('implanttitle')}</H2>
+                  <P>{t('implantbackground.text1')}</P>
+                  <P>{t('implantbackground.text2')}</P>
+              </Section>
+            </SpaceContainer>          
+            <SpaceContainer>
+              <Section>
+                <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
+                <Accordion size="h4" items={faqAccordion} />
+              </Section>
+            </SpaceContainer>
+          </Pillar>          
         }
       />
       <SpaceContainer spaceVertically noPadding>
@@ -67,6 +84,8 @@ const Brostforstoring = () => {
       <SpaceContainer>
         <Pillar>
           <Section>
+            <H2>{'Hur går en bröstförstoring till?'}</H2>
+            <P>{'Hos oss på Dahliakliniken är det vikigt att utblilda och att informera om hur olika ingrepp går till. Här nedan kan du läsa mer om hur en bröstförstoringsoperation går till'}</P>
             <H3>{t('technique.heading1')}</H3>
             <P>{t('technique.text1')}</P>
             <Accordion size="h4" items={teknikAccordion} />
@@ -76,7 +95,7 @@ const Brostforstoring = () => {
 
       <SpaceContainer>
         <Pillar>
-          <H2 id="placering">{t('placement.heading1')}</H2>
+          <H3 id="placering">{t('placement.heading1')}</H3>
           <P>{t('placement.text1')}</P>
           <P>{t('placement.text2')}</P>
         </Pillar>
@@ -117,7 +136,7 @@ const Brostforstoring = () => {
         </Pillar>
       </SpaceContainer>
 
-      <SpaceContainer spaceVertically noPadding>
+{/*       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
           bgPosition="right"
@@ -132,6 +151,29 @@ const Brostforstoring = () => {
                 </A>
               </div>
             </>
+          }
+        />
+      </SpaceContainer> */}
+      <SpaceContainer noPadding>
+        <SimpleCard
+          bgColor={BgColors.Beige}
+          className="before:bg-[30%_30%] lg:before:[background-size:200%]"
+          content={
+            <Pillar>
+              <H2 className="text-center">
+                {'Vill du veta mer om våra behandlingar?'}
+              </H2>
+              <P className="text-center">
+                {
+                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                }
+              </P>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle inverted>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </Pillar>
           }
         />
       </SpaceContainer>

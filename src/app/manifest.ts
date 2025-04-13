@@ -2,10 +2,10 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Dr Gribbe',
-    short_name: 'Dr Gribbe',
+    name: 'Dahliakliniken',
+    short_name: 'Dahliakliniken',
     description:
-      'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.',
+      'Dahliakliniken - Dr. Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
