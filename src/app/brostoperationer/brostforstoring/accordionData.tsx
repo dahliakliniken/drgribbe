@@ -10,6 +10,21 @@ export const useAccordionData = () => {
   const faqAccordion = [
     {
       id: crypto.randomUUID(),
+      title: ft('accordion.question4.question'),
+      content: <P small>{ft('accordion.question4.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question11.question'),
+      content: <P small>{ft('accordion.question11.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
+      title: ft('accordion.question12.question'),
+      content: <P small>{ft('accordion.question12.answer')}</P>
+    },
+    {
+      id: crypto.randomUUID(),
       title: ft('accordion.question1.question'),
       content: <P small>{ft('accordion.question1.answer')}</P>
     },
