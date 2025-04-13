@@ -38,22 +38,21 @@ const Brostforstoring = () => {
         bgColor={BgColors.White}
         bgPosition="left"
         content={
-          <Pillar>
-            <SpaceContainer>
+          <Pillar noPadding>
               <Image
                 src={ImplantsInHand}
                 alt={t('altText.ImplantsInHand')}
                 className="max-h-svh object-cover object-center"
               />      
-            </SpaceContainer>
-            <SpaceContainer spaceTop>
+
+            <SpaceContainer spaceTop noPadding>
               <Section>
                   <H2>{t('implanttitle')}</H2>
                   <P>{t('implantbackground.text1')}</P>
                   <P>{t('implantbackground.text2')}</P>
               </Section>
             </SpaceContainer>          
-            <SpaceContainer>
+            <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
                 <Accordion size="h4" items={faqAccordion} />
