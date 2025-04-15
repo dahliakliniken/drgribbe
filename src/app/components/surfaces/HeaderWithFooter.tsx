@@ -28,7 +28,7 @@ export const HeaderWithFooter = () => {
   return (
     <header
       className={`fixed right-0 bottom-0 left-0 w-full transition-all lg:top-0 ${
-        isAtBottom ? 'h-48' : 'h-20'
+        isAtBottom ? 'h-44' : 'h-20'
       } bg-beige z-50`}
     >
       <div className="p-gapSpace flex items-center md:p-4">
@@ -50,12 +50,12 @@ export const HeaderWithFooter = () => {
             </span>
             <span>{t('contact.phone')}</span>
             <Button
-              className="justify-center"
+              className="justify-center text-sm underline"
               inverted
-              small
+              textButton
               onClick={() => window.CookieScript?.instance?.show()}
             >
-              {'Hantera cookies'}
+              {t('contact.handleCookies')}
             </Button>
           </div>
         </div>

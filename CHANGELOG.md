@@ -1,45 +1,46 @@
-# [1.9.0](https://github.com/dahliakliniken/drgribbe/compare/v1.8.2...v1.9.0) (2025-04-15)
+## [1.9.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.9.0...v1.9.1-beta.1) (2025-04-15)
 
+
+### Bug Fixes
+
+* use text button for handle cookies ([507184c](https://github.com/dahliakliniken/drgribbe/commit/507184cb6992ccd0d95844c2ca8c133af7951c7d))
+
+# [1.9.0](https://github.com/dahliakliniken/drgribbe/compare/v1.8.2...v1.9.0) (2025-04-15)
 
 ### Features
 
-* add cookie management button to header and adjust height ([2557ebc](https://github.com/dahliakliniken/drgribbe/commit/2557ebcef5e0f40c1638641d801661b42b1ccc50))
+- add cookie management button to header and adjust height ([2557ebc](https://github.com/dahliakliniken/drgribbe/commit/2557ebcef5e0f40c1638641d801661b42b1ccc50))
 
 ## [1.8.2](https://github.com/dahliakliniken/drgribbe/compare/v1.8.1...v1.8.2) (2025-04-07)
 
-
 ### Bug Fixes
 
-* update base URL in sitemap to use 'www' subdomain ([4d444d0](https://github.com/dahliakliniken/drgribbe/commit/4d444d00d1773c9256146a634f5b340031c1d512))
-* update sitemap URL to use 'www' subdomain ([4cb8ae7](https://github.com/dahliakliniken/drgribbe/commit/4cb8ae7aeec25be4e3337c46f69dd8066bdfa011))
+- update base URL in sitemap to use 'www' subdomain ([4d444d0](https://github.com/dahliakliniken/drgribbe/commit/4d444d00d1773c9256146a634f5b340031c1d512))
+- update sitemap URL to use 'www' subdomain ([4cb8ae7](https://github.com/dahliakliniken/drgribbe/commit/4cb8ae7aeec25be4e3337c46f69dd8066bdfa011))
 
 ## [1.8.2-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.8.1...v1.8.2-beta.1) (2025-04-07)
 
-
 ### Bug Fixes
 
-* update base URL in sitemap to use 'www' subdomain ([4d444d0](https://github.com/dahliakliniken/drgribbe/commit/4d444d00d1773c9256146a634f5b340031c1d512))
+- update base URL in sitemap to use 'www' subdomain ([4d444d0](https://github.com/dahliakliniken/drgribbe/commit/4d444d00d1773c9256146a634f5b340031c1d512))
 
 ## [1.8.1](https://github.com/dahliakliniken/drgribbe/compare/v1.8.0...v1.8.1) (2025-03-31)
 
-
 ### Bug Fixes
 
-* correct phone number formatting in Swedish localization ([c70f639](https://github.com/dahliakliniken/drgribbe/commit/c70f639b078190cfb6e67963e1f7e272be47108f))
+- correct phone number formatting in Swedish localization ([c70f639](https://github.com/dahliakliniken/drgribbe/commit/c70f639b078190cfb6e67963e1f7e272be47108f))
 
 ## [1.8.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.8.0...v1.8.1-beta.1) (2025-03-31)
 
-
 ### Bug Fixes
 
-* correct phone number formatting in Swedish localization ([c70f639](https://github.com/dahliakliniken/drgribbe/commit/c70f639b078190cfb6e67963e1f7e272be47108f))
+- correct phone number formatting in Swedish localization ([c70f639](https://github.com/dahliakliniken/drgribbe/commit/c70f639b078190cfb6e67963e1f7e272be47108f))
 
 # [1.8.0](https://github.com/dahliakliniken/drgribbe/compare/v1.7.1...v1.8.0) (2025-03-30)
 
-
 ### Features
 
-* add Google site verification metadata to the page component ([4e4f3bf](https://github.com/dahliakliniken/drgribbe/commit/4e4f3bf08774f2b7c728dd3fb985d63e4aef3499))
+- add Google site verification metadata to the page component ([4e4f3bf](https://github.com/dahliakliniken/drgribbe/commit/4e4f3bf08774f2b7c728dd3fb985d63e4aef3499))
 
 # [1.8.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.7.1-beta.1...v1.8.0-beta.1) (2025-03-30)
 
