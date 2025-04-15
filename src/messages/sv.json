@@ -289,8 +289,11 @@
       "hybrid": {
         "title": "Hybrid bröstförstoring, bröstimplantat och fett",
         "text1": "Vid hybrid bröstförstoring används både bröstimplantat och transplantation med fett enligt ovan. Med endast transplantation av fett når man ofta inte önskat resultat, särskilt om man önskar en större volym på brösten. Vid en hybrid bröstförstoring lägg implantat av önskar volym in och transplantationen av fett blir ett komplement att för att till exempel öka volymen upptill i dekolletaget, i underpolen eller för att minska eller ta bort oönskade resultat såsom dubbelkontur eller rippling."
+      }      
+    },
+    "altText": {
+        "ImplantsInHand" : "Kvinna som ser glad ut och håller i två olika implantant för bröstförstoring"
       }
-    }
   },
   "brostforminskning": {
     "title": "Bröstförminskning i Stockholm",

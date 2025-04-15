@@ -27,7 +27,7 @@ import { useAccordionItems } from './accordionData'
 const Brostoperationer = () => {
   const t = useTranslations()
   const messages = useMessages()
-  const [surgeryItems] = useAccordionItems()
+  const [surgeryItems, complications] = useAccordionItems()
   const beforeOperationKeys = Object.keys(messages.beforeOperation)
   const afterOperationKeys = Object.keys(messages.afterOperation)
   const aftercareKeys = Object.keys(messages.aftercare)
@@ -306,6 +306,11 @@ const Brostoperationer = () => {
           <SpaceContainer noPadding spaceVertically>
             <H2>{t('brostoperationer.afterFirstReturnVisit')}</H2>
             <Accordion items={afterFirstReturnVisitItems} />
+          </SpaceContainer>
+
+          <SpaceContainer noPadding spaceVertically>
+            <H2>{'Komplikationer'}</H2>
+            <Accordion items={complications} />
           </SpaceContainer>
         </Pillar>
         <SimpleCard
