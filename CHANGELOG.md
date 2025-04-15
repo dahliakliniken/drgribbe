@@ -1,3 +1,10 @@
+## [1.9.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.9.0...v1.9.1-beta.1) (2025-04-15)
+
+
+### Bug Fixes
+
+* use text button for handle cookies ([507184c](https://github.com/dahliakliniken/drgribbe/commit/507184cb6992ccd0d95844c2ca8c133af7951c7d))
+
 # [1.9.0](https://github.com/dahliakliniken/drgribbe/compare/v1.8.2...v1.9.0) (2025-04-15)
 
 ### Features
