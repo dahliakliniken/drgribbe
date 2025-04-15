@@ -1,3 +1,10 @@
+# [1.9.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.8.2...v1.9.0-beta.1) (2025-04-15)
+
+
+### Features
+
+* add cookie management button to header and adjust height ([2557ebc](https://github.com/dahliakliniken/drgribbe/commit/2557ebcef5e0f40c1638641d801661b42b1ccc50))
+
 ## [1.8.2](https://github.com/dahliakliniken/drgribbe/compare/v1.8.1...v1.8.2) (2025-04-07)
 
 
