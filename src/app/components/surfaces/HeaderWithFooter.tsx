@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 
+import { Button } from '../inputs/Button'
 import { DropdownMenu } from '../navigation/DropdownMenu'
 import { Logo } from '../navigation/Logo'
 
@@ -27,7 +28,7 @@ export const HeaderWithFooter = () => {
   return (
     <header
       className={`fixed right-0 bottom-0 left-0 w-full transition-all lg:top-0 ${
-        isAtBottom ? 'h-40' : 'h-20'
+        isAtBottom ? 'h-48' : 'h-20'
       } bg-beige z-50`}
     >
       <div className="p-gapSpace flex items-center md:p-4">
@@ -48,6 +49,14 @@ export const HeaderWithFooter = () => {
               })}
             </span>
             <span>{t('contact.phone')}</span>
+            <Button
+              className="justify-center"
+              inverted
+              small
+              onClick={() => window.CookieScript?.instance?.show()}
+            >
+              {'Hantera cookies'}
+            </Button>
           </div>
         </div>
       )}
