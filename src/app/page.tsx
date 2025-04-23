@@ -60,7 +60,7 @@ export default async function Home() {
       <SpaceContainer noPadding>
         <Pillar>
           <SpaceContainer>
-            <H2 upperCase>{t('treatmentBox.title')}</H2>
+            <H2>{t('treatmentBox.title')}</H2>
           </SpaceContainer>
         </Pillar>
       </SpaceContainer>

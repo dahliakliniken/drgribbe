@@ -41,7 +41,7 @@ export const A = forwardRef<HTMLAnchorElement, AProps>(
       'border-black text-black hover:border-gold hover:text-gold': inverted,
       'border-white text-white hover:border-beige hover:text-beige': !inverted,
       'border-2 p-2': small,
-      'border-4 px-16 py-5': !small
+      'border-2 px-16 py-5': !small
     })
     const linkClass = classNames(
       'hover:underline underline underline-offset-3',
