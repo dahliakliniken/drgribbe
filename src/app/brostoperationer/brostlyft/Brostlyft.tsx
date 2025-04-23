@@ -70,6 +70,11 @@ const Brostlyft = () => {
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstlyft'}</H3>
                 <Accordion size="h4" items={faqAccordion} />
+                <div className="m-auto my-6 flex justify-center">
+                  <A href="/fragor-och-svar">
+                    {useTranslations()('common.linktoFaq')}
+                  </A>
+                </div>
               </Section>
             </SpaceContainer>
           </Pillar>

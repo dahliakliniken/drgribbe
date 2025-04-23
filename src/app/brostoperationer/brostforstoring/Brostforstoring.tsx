@@ -72,6 +72,11 @@ const Brostforstoring = () => {
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
                 <Accordion size="h4" items={faqAccordion} />
+                <div className="m-auto my-6 flex justify-center">
+                  <A href="/fragor-och-svar">
+                    {useTranslations()('common.linktoFaq')}
+                  </A>
+                </div>
               </Section>
             </SpaceContainer>
           </Pillar>          
