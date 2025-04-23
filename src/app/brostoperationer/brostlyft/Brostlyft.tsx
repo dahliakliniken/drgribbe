@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 import { Pillar } from '@/app/components/layout/Pillar'
@@ -12,6 +13,7 @@ import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
 
+import inchair from '../../../../public/images/_N3A7179.jpg'
 import { useAccordionData } from './accordionData'
 
 
@@ -27,7 +29,18 @@ const Brostlyft = () => {
         content={
           <Pillar>
             <H1 white>{t('title')}</H1>
-            <P white>{t('background.text1')}</P>
+            <P white>{t.rich('background.text1', {
+                strong: (chunks) => (
+                  <strong>{chunks}</strong>
+                )
+                })}
+            </P>
+            <P white>{t.rich('background.text1-2', {
+                strong: (chunks) => (
+                  <strong>{chunks}</strong>
+                )
+                })}
+            </P>
           </Pillar>
         }
       />
@@ -36,9 +49,23 @@ const Brostlyft = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <H2>{"Bröstlyft – lösningen när brösten förlorat volym, form eller symmetri"}</H2>
-            <P>{t('background.text2')}</P>
-            <P>{t('background.text3')}</P>
+            <Image
+              src={inchair}
+              alt={t('altText.inchair')}
+              className="max-h-svh object-cover object-center"
+            />  
+            <SpaceContainer spaceTop noPadding>
+              <Section>   
+                <H2>{"Bröstlyft – lösningen när brösten förlorat volym, form eller symmetri"}</H2>
+                <P>{t('background.text2')}</P>
+                <P>{t.rich('background.text3', {
+                    strong: (chunks) => (
+                      <strong>{chunks}</strong>
+                    )
+                    })}
+                </P>
+              </Section>
+            </SpaceContainer>
             <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstlyft'}</H3>
@@ -77,7 +104,7 @@ const Brostlyft = () => {
           <P>{t('techniques.text6')}</P>
         </Pillar>
       </SpaceContainer>
-      <SpaceContainer spaceVertically noPadding>
+{/*       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
           bgPosition="right"
@@ -94,7 +121,7 @@ const Brostlyft = () => {
             </>
           }
         />
-      </SpaceContainer>
+      </SpaceContainer> */}
       <SpaceContainer noPadding>
         <SimpleCard
           bgColor={BgColors.Beige}
