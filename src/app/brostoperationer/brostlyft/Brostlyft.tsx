@@ -1,16 +1,24 @@
 import { useTranslations } from 'next-intl'
 
 import { Pillar } from '@/app/components/layout/Pillar'
+import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
+import { Accordion } from '@/app/components/surfaces/Accordion'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
+import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
 
+import { useAccordionData } from './accordionData'
+
+
+
 const Brostlyft = () => {
   const t = useTranslations('brostlyft')
+  const [faqAccordion] = useAccordionData()
   return (
     <>
       <SimpleCard
@@ -28,8 +36,15 @@ const Brostlyft = () => {
         bgPosition="right"
         content={
           <Pillar>
+            <H2>{"Bröstlyft – lösningen när brösten förlorat volym, form eller symmetri"}</H2>
             <P>{t('background.text2')}</P>
             <P>{t('background.text3')}</P>
+            <SpaceContainer noPadding>
+              <Section>
+                <H3>{'Vanliga frågor & svar om bröstlyft'}</H3>
+                <Accordion size="h4" items={faqAccordion} />
+              </Section>
+            </SpaceContainer>
           </Pillar>
         }
       />
@@ -77,6 +92,29 @@ const Brostlyft = () => {
                 </A>
               </div>
             </>
+          }
+        />
+      </SpaceContainer>
+      <SpaceContainer noPadding>
+        <SimpleCard
+          bgColor={BgColors.Beige}
+          className="before:bg-[30%_30%] lg:before:[background-size:200%]"
+          content={
+            <Pillar>
+              <H2 className="text-center">
+                {'Vill du veta mer om våra behandlingar?'}
+              </H2>
+              <P className="text-center">
+                {
+                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
+                }
+              </P>
+              <div className="m-auto flex max-w-xs justify-center">
+                <A href="/boka" className="uppercase" buttonStyle inverted>
+                  {useTranslations()('common.bookNow')}
+                </A>
+              </div>
+            </Pillar>
           }
         />
       </SpaceContainer>
