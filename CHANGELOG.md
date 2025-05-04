@@ -1,3 +1,10 @@
+# [1.10.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.9.1...v1.10.0-beta.1) (2025-05-04)
+
+
+### Features
+
+* trigger semantic release ([730e1df](https://github.com/dahliakliniken/drgribbe/commit/730e1df65fcb88405986d3af30187a71772d2030))
+
 ## [1.9.1](https://github.com/dahliakliniken/drgribbe/compare/v1.9.0...v1.9.1) (2025-04-15)
 
 
