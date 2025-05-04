@@ -16,6 +16,7 @@ import { BgColors } from '@/app/types'
 import ImplantsInHand from '../../../../public/images/_N3A7297.jpg'
 import { useAccordionData } from './accordionData'
 
+
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
   const [teknikAccordion, faqAccordion] = useAccordionData()
@@ -28,7 +29,12 @@ const Brostforstoring = () => {
         content={
           <Pillar>
             <H1 white>{t('title')}</H1>
-            <P white>{t('background')}</P>
+            <P white>{t.rich('background', {
+                strong: (chunks) => (
+                  <strong>{chunks}</strong>
+                )
+              })}
+            </P>
             <P white>{t('background2')}</P>
           </Pillar>
         }
@@ -48,14 +54,29 @@ const Brostforstoring = () => {
             <SpaceContainer spaceTop noPadding>
               <Section>
                   <H2>{t('implanttitle')}</H2>
-                  <P>{t('implantbackground.text1')}</P>
-                  <P>{t('implantbackground.text2')}</P>
+                  <P>{t.rich('implantbackground.text1', {
+                      strong: (chunks) => (
+                        <strong>{chunks}</strong>
+                      )
+                      })}
+                  </P>
+                  <P>{t.rich('implantbackground.text2', {
+                      strong: (chunks) => (
+                        <strong>{chunks}</strong>
+                      )
+                      })}
+                  </P>
               </Section>
             </SpaceContainer>          
             <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
                 <Accordion size="h4" items={faqAccordion} />
+                <div className="m-auto my-6 flex justify-center">
+                  <A href="/fragor-och-svar">
+                    {useTranslations()('common.linktoFaq')}
+                  </A>
+                </div>
               </Section>
             </SpaceContainer>
           </Pillar>          
@@ -83,8 +104,8 @@ const Brostforstoring = () => {
       <SpaceContainer>
         <Pillar>
           <Section>
-            <H2>{'Hur går en bröstförstoring till?'}</H2>
-            <P>{'Hos oss på Dahliakliniken är det vikigt att utblilda och att informera om hur olika ingrepp går till. Här nedan kan du läsa mer om hur en bröstförstoringsoperation går till'}</P>
+            <H2>{'Hur går en bröstförstoring till? – En teknisk djupdykning'}</H2>
+            <P>{'På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?'}</P>
             <H3>{t('technique.heading1')}</H3>
             <P>{t('technique.text1')}</P>
             <Accordion size="h4" items={teknikAccordion} />
