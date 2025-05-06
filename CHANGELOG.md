@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/dahliakliniken/drgribbe/compare/v1.10.0...v1.11.0) (2025-05-06)
+
+
+### Features
+
+* add InstagramIcon ([cc37b02](https://github.com/dahliakliniken/drgribbe/commit/cc37b026cc73ef8d3b714ea07831a7283895a06e))
+
 # [1.11.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.10.0...v1.11.0-beta.1) (2025-05-06)
 
 
