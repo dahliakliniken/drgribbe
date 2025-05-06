@@ -375,7 +375,7 @@
         "heading": "Texturerad yta",
         "text1": "Från början var bröstimplantaten släta men under 80-talet tog flera tillverkare av bröstimplantat fram en sandpappersliknande yta, en texturering. Funktionen hos textureringen är att minska risken att den kapsel som kroppen naturligt bildar runt bröstimplantaten blir tjock, hård och stram så kallad kapselsammandragning, kapselkontraktur. Textureringen skapar oordning bland kapselfibrerna så att de inte blir så långa och inte samverkar och drar åt samma håll. Detta gör att kapseln blir tunnare, mjukare och drar ihop sig mindre. Varje tillverkare av bröstimplantat har sin egen typ av texturering och den kan vara mer eller mindre grov. Mentor kallar sin texturering Siltex® och Polytech kallar sin POLYtxt®.",
         "text2": "Textureringen gör dessutom att bröstimplantaten rör sig, glider mindre i implantatfickorna vilket minskar risken att implantatfickorna med tiden töjs och blir större åt sidorna och nedåt.",
-        "text3": "På senare år har man sett att i mycket sällsynta fall vissa typer av texturering kan ge upphov till en ovanlig form av cancer, lymfom BIA-ALCL. Detta har gjort att vi för tillfället använder släta implantat på kliniken."
+        "text3": "På senare år har man sett att i mycket sällsynta fall vissa typer av texturering kan ge upphov till en ovanlig form av cancer, lymfom BIA-ALCL."
       },
       "nanoTexturedSurface": {
         "heading": "Nanotexturerad yta",
@@ -493,7 +493,7 @@
         },
         "surface": {
           "heading": "Yta",
-          "text1": "Mentors implantat är antingen släta (Smooth) eller texturerade (Siltex)."
+          "text1": "Mentors implantat är antingen släta (Smooth) eller texturerade (Siltex). Vi använder båda"
         }
       },
       "polytech": {
@@ -651,7 +651,7 @@
     },
     "financing": {
       "heading": "Finansiering och delbetalning",
-      "text1": "Vi samarbetar med Medical Finance (och Svea) som erbjuder patienter finansiering av privat vård. Det ger dig möjlighet till delbetalning av din operation och en räntefri avbetalning på upp till 24 månader.",
+      "text1": "Vi samarbetar med Medical Finance, som erbjuder patienter finansiering av privat vård. Det ger dig möjlighet till delbetalning av din operation och en räntefri avbetalning på upp till 24 månader.",
       "text2": "Tala med reception så hjälper de dig."
     }
   },
