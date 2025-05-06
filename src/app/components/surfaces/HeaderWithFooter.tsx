@@ -1,8 +1,10 @@
 'use client'
 
+import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 
+import { InstagramIcon } from '../icons/InstagramIcon'
 import { Button } from '../inputs/Button'
 import { DropdownMenu } from '../navigation/DropdownMenu'
 import { Logo } from '../navigation/Logo'
@@ -28,7 +30,7 @@ export const HeaderWithFooter = () => {
   return (
     <header
       className={`fixed right-0 bottom-0 left-0 w-full transition-all lg:top-0 ${
-        isAtBottom ? 'h-44' : 'h-20'
+        isAtBottom ? 'h-52' : 'h-20'
       } bg-beige z-50`}
     >
       <div className="p-gapSpace flex items-center md:p-4">
@@ -57,6 +59,16 @@ export const HeaderWithFooter = () => {
             >
               {t('contact.handleCookies')}
             </Button>
+
+            <Link
+              href="https://www.instagram.com/dahliakliniken"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold self-center pt-1 transition-colors duration-300"
+              aria-label={t('contact.followOnInstagram')}
+            >
+              <InstagramIcon />
+            </Link>
           </div>
         </div>
       )}
