@@ -127,7 +127,7 @@ export const DropdownMenu: React.FC = () => {
 
   return (
     <div
-      className="relative z-50 flex items-center gap-1 md:top-1 font-light"
+      className="relative z-50 flex items-center gap-1 font-light md:top-1"
       ref={menuRef}
     >
       <HamburgerButton
@@ -151,12 +151,15 @@ export const DropdownMenu: React.FC = () => {
         aria-hidden={!isOpen}
       >
         <div className="lg:bg-custom-dark lg:before:bg-card-pattern hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:[background-size:110%] lg:before:bg-[20%_20%] lg:before:opacity-5">
-          <div className="p-gapSpace flex flex-col text-white font-light">
+          <div className="p-gapSpace flex flex-col font-light text-white">
             <span>{t('contact.contactUs')}</span>
             <span>
               {t.rich('contact.email', {
                 email: (chunks) => (
-                  <a href="mailto:info@dahliakliniken.se" tabIndex={isOpen ? 0 : -1}>
+                  <a
+                    href="mailto:info@dahliakliniken.se"
+                    tabIndex={isOpen ? 0 : -1}
+                  >
                     {chunks}
                   </a>
                 )
