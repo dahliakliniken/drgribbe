@@ -8,7 +8,9 @@ import { useFocusTrap } from '@/hooks/useFocusTrap'
 import { ChevronIcon } from '../icons/ChevronIcon'
 import { ButtonWithIcon } from '../inputs/ButtonWithIcon'
 import { HamburgerButton } from '../inputs/HamburgerButton'
+import { SocialMediaLinks } from '../surfaces/SocialMediaLinks'
 import { A } from '../typography/A'
+import { H2 } from '../typography/H2'
 import { useLinksData } from './useLinksData'
 
 type Link = { text: string; href: string; id: string }
@@ -152,7 +154,9 @@ export const DropdownMenu: React.FC = () => {
       >
         <div className="lg:bg-custom-dark lg:before:bg-card-pattern hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:[background-size:110%] lg:before:bg-[20%_20%] lg:before:opacity-5">
           <div className="p-gapSpace flex flex-col font-light text-white">
-            <span>{t('contact.contactUs')}</span>
+            <H2 white className="!mb-2 text-lg">
+              {t('contact.contactUs')}
+            </H2>
             <span>
               {t.rich('contact.email', {
                 email: (chunks) => (
@@ -166,6 +170,10 @@ export const DropdownMenu: React.FC = () => {
               })}
             </span>
             <span>{t('contact.phone')}</span>
+            <H2 white className="mt-2 !mb-2 text-lg">
+              {t('contact.socialMedia')}
+            </H2>
+            <SocialMediaLinks />
           </div>
         </div>
 
