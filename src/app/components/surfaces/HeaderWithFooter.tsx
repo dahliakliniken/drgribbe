@@ -1,13 +1,12 @@
 'use client'
 
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 
-import { InstagramIcon } from '../icons/InstagramIcon'
 import { Button } from '../inputs/Button'
 import { DropdownMenu } from '../navigation/DropdownMenu'
 import { Logo } from '../navigation/Logo'
+import { SocialMediaLinks } from './SocialMediaLinks'
 
 export const HeaderWithFooter = () => {
   const t = useTranslations()
@@ -59,16 +58,7 @@ export const HeaderWithFooter = () => {
             >
               {t('contact.handleCookies')}
             </Button>
-
-            <Link
-              href="https://www.instagram.com/dahliakliniken"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gold self-center pt-1 transition-colors duration-300"
-              aria-label={t('contact.followOnInstagram')}
-            >
-              <InstagramIcon />
-            </Link>
+            <SocialMediaLinks className="justify-center pt-2" />
           </div>
         </div>
       )}
