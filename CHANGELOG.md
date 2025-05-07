@@ -1,3 +1,10 @@
+# [1.12.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.12.0-beta.1...v1.12.0-beta.2) (2025-05-07)
+
+
+### Bug Fixes
+
+* adjust main margin for improved layout spacing ([eb36114](https://github.com/dahliakliniken/drgribbe/commit/eb3611404f5a6443eb09e9c4ac6edd58de4a57d4))
+
 # [1.12.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.11.0...v1.12.0-beta.1) (2025-05-07)
 
 
