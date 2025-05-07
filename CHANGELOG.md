@@ -1,3 +1,15 @@
+# [1.12.0](https://github.com/dahliakliniken/drgribbe/compare/v1.11.0...v1.12.0) (2025-05-07)
+
+
+### Bug Fixes
+
+* adjust main margin for improved layout spacing ([eb36114](https://github.com/dahliakliniken/drgribbe/commit/eb3611404f5a6443eb09e9c4ac6edd58de4a57d4))
+
+
+### Features
+
+* add social media links to header and dropdown menu ([0329187](https://github.com/dahliakliniken/drgribbe/commit/032918774edcbbdea6b92509542cf237af4b1086))
+
 # [1.12.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.12.0-beta.1...v1.12.0-beta.2) (2025-05-07)
 
 
