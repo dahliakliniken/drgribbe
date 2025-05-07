@@ -1,3 +1,10 @@
+# [1.12.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.11.0...v1.12.0-beta.1) (2025-05-07)
+
+
+### Features
+
+* add social media links to header and dropdown menu ([0329187](https://github.com/dahliakliniken/drgribbe/commit/032918774edcbbdea6b92509542cf237af4b1086))
+
 # [1.11.0](https://github.com/dahliakliniken/drgribbe/compare/v1.10.0...v1.11.0) (2025-05-06)
 
 
