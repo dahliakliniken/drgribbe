@@ -45,7 +45,7 @@ export default async function RootLayout({
       <body className={josefinSans.className}>
         <NextIntlClientProvider messages={messages}>
           <HeaderWithFooter />
-          <main className="mb-36 flex flex-col lg:mt-20 lg:mb-0">
+          <main className="mb-52 flex flex-col lg:mt-20 lg:mb-0">
             <Breadcrumbs />
             {children}
             <GoogleTagManager
