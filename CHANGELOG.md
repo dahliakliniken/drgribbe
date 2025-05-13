@@ -1,3 +1,15 @@
+# [1.13.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.12.0...v1.13.0-beta.1) (2025-05-13)
+
+
+### Bug Fixes
+
+* update consultation booking URL in Brostforstoring component ([0e4c09f](https://github.com/dahliakliniken/drgribbe/commit/0e4c09fece7680299626e1fb7aa50d6337dd7ea8))
+
+
+### Features
+
+* add QuickFacts component for displaying key information about breast augmentation ([5bcda3d](https://github.com/dahliakliniken/drgribbe/commit/5bcda3d58b75cc5570e4610b9153c1c36db0fe6d))
+
 # [1.12.0](https://github.com/dahliakliniken/drgribbe/compare/v1.11.0...v1.12.0) (2025-05-07)
 
 
