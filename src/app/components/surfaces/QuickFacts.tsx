@@ -84,7 +84,7 @@ export const QuickFacts = ({
               <div className="flex flex-wrap items-baseline">
                 <dt className="mr-2">{`${fact.label}:`}</dt>
                 <dd className="font-light">
-                  {typeof fact.value === 'string' ? fact.value : fact.value}
+                  {fact.value}
                 </dd>
               </div>
             </div>
