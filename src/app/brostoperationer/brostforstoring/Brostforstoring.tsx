@@ -62,7 +62,7 @@ const Brostforstoring = () => {
           { icon: Clock3, label: 'Sjukskrivning', value: '2-3 veckor' }
         ]}
         ctaText="Boka konsultation"
-        ctaUrl="/booking/consultation"
+        ctaUrl="/boka"
       />
 
       <SimpleCard
