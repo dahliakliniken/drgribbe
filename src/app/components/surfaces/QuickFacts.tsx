@@ -1,7 +1,8 @@
 import type { LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
-import { H2 } from '../typography/H2'
+
 import { A } from '../typography/A'
+import { H2 } from '../typography/H2'
 
 /**
  * Represents a single fact item in the QuickFacts component
@@ -81,7 +82,7 @@ export const QuickFacts = ({
                 aria-hidden="true"
               />
               <div className="flex flex-wrap items-baseline">
-                <dt className="mr-2">{fact.label}:</dt>
+                <dt className="mr-2">{`${fact.label}:`}</dt>
                 <dd className="font-light">
                   {typeof fact.value === 'string' ? fact.value : fact.value}
                 </dd>

@@ -1,3 +1,11 @@
+import {
+  Activity,
+  Banknote,
+  Calendar,
+  Clock,
+  Clock3,
+  Hospital
+} from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
@@ -5,6 +13,7 @@ import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
+import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
@@ -15,15 +24,6 @@ import { BgColors } from '@/app/types'
 
 import ImplantsInHand from '../../../../public/images/_N3A7297.jpg'
 import { useAccordionData } from './accordionData'
-import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
-import {
-  Activity,
-  Banknote,
-  Calendar,
-  Clock,
-  Clock3,
-  Hospital
-} from 'lucide-react'
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
