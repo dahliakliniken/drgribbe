@@ -15,7 +15,15 @@ import { BgColors } from '@/app/types'
 
 import ImplantsInHand from '../../../../public/images/_N3A7297.jpg'
 import { useAccordionData } from './accordionData'
-
+import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
+import {
+  Activity,
+  Banknote,
+  Calendar,
+  Clock,
+  Clock3,
+  Hospital
+} from 'lucide-react'
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
@@ -29,10 +37,9 @@ const Brostforstoring = () => {
         content={
           <Pillar>
             <H1 white>{t('title')}</H1>
-            <P white>{t.rich('background', {
-                strong: (chunks) => (
-                  <strong>{chunks}</strong>
-                )
+            <P white>
+              {t.rich('background', {
+                strong: (chunks) => <strong>{chunks}</strong>
               })}
             </P>
             <P white>{t('background2')}</P>
@@ -40,34 +47,50 @@ const Brostforstoring = () => {
         }
       />
 
+      <QuickFacts
+        title="Snabbfakta om bröstförstoring"
+        facts={[
+          { icon: Banknote, label: 'Pris', value: 'från 55 000 SEK' },
+          { icon: Clock, label: 'Operationstid', value: '1.5–2 timmar' },
+          { icon: Hospital, label: 'Anestesi', value: 'Narkos' },
+          { icon: Activity, label: 'Återhämtningstid', value: '2-4 veckor' },
+          {
+            icon: Calendar,
+            label: 'Klinikbesök',
+            value: 'Krävs för konsultation och uppföljning'
+          },
+          { icon: Clock3, label: 'Sjukskrivning', value: '2-3 veckor' }
+        ]}
+        ctaText="Boka konsultation"
+        ctaUrl="/booking/consultation"
+      />
+
       <SimpleCard
         bgColor={BgColors.White}
         bgPosition="left"
         content={
           <Pillar noPadding>
-              <Image
-                src={ImplantsInHand}
-                alt={t('altText.ImplantsInHand')}
-                className="max-h-svh object-cover object-center"
-              />      
+            <Image
+              src={ImplantsInHand}
+              alt={t('altText.ImplantsInHand')}
+              className="max-h-svh object-cover object-center"
+            />
 
             <SpaceContainer spaceTop noPadding>
               <Section>
-                  <H2>{t('implanttitle')}</H2>
-                  <P>{t.rich('implantbackground.text1', {
-                      strong: (chunks) => (
-                        <strong>{chunks}</strong>
-                      )
-                      })}
-                  </P>
-                  <P>{t.rich('implantbackground.text2', {
-                      strong: (chunks) => (
-                        <strong>{chunks}</strong>
-                      )
-                      })}
-                  </P>
+                <H2>{t('implanttitle')}</H2>
+                <P>
+                  {t.rich('implantbackground.text1', {
+                    strong: (chunks) => <strong>{chunks}</strong>
+                  })}
+                </P>
+                <P>
+                  {t.rich('implantbackground.text2', {
+                    strong: (chunks) => <strong>{chunks}</strong>
+                  })}
+                </P>
               </Section>
-            </SpaceContainer>          
+            </SpaceContainer>
             <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
@@ -79,7 +102,7 @@ const Brostforstoring = () => {
                 </div>
               </Section>
             </SpaceContainer>
-          </Pillar>          
+          </Pillar>
         }
       />
       <SpaceContainer spaceVertically noPadding>
@@ -104,8 +127,14 @@ const Brostforstoring = () => {
       <SpaceContainer>
         <Pillar>
           <Section>
-            <H2>{'Hur går en bröstförstoring till? – En teknisk djupdykning'}</H2>
-            <P>{'På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?'}</P>
+            <H2>
+              {'Hur går en bröstförstoring till? – En teknisk djupdykning'}
+            </H2>
+            <P>
+              {
+                'På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?'
+              }
+            </P>
             <H3>{t('technique.heading1')}</H3>
             <P>{t('technique.text1')}</P>
             <Accordion size="h4" items={teknikAccordion} />
@@ -156,7 +185,7 @@ const Brostforstoring = () => {
         </Pillar>
       </SpaceContainer>
 
-{/*       <SpaceContainer spaceVertically noPadding>
+      {/*       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
           bgPosition="right"
