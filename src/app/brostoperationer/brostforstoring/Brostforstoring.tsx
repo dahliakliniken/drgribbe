@@ -85,7 +85,7 @@ const Brostforstoring = () => {
                   label: 'Återbesök',
                   value: 'Ca 10 dagar och 3-4 månader efter operationen.'
                 },
-                { icon: Bandage, label: 'Återhämtningstid', value: 'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.' },
+                { icon: Bandage, label: 'Återhämtning', value: 'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.' },
                 { icon: Activity, label: 'Sport & Gym', value: 'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.' },
                 { icon: SquareChartGantt, label: 'Övrigt', value: 'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt.' }                              
               ]}

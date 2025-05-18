@@ -1,3 +1,14 @@
+import {
+  Activity,
+  Bandage,
+  Banknote,
+  CalendarCheck,
+  CircleDot,
+  Clock,
+  Hospital,
+  HousePlus,
+  SquareChartGantt
+} from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
@@ -5,6 +16,7 @@ import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
+import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
@@ -66,6 +78,28 @@ const Brostlyft = () => {
                 </P>
               </Section>
             </SpaceContainer>
+            <QuickFacts
+                title="Snabbfakta om Bröstförstoring med bröstlyft"
+                facts={[                
+                  { icon: CalendarCheck, label: 'Konsultation innan operation',value: '60 minuter, ibland flera besök.'},
+                  { icon: CircleDot, label: 'Bröstimplantat',value: 'Form och storlek delvis efter önskemål. Mer begränsat än vid bröstförstoring då det inte går att lägga in lika stora bröstimplantat vid bröstlyft. Ofta inte behov av stor volym.'},
+                  { icon: Clock, label: 'Operationstid', value: '2,5 - 3 timmar' },
+                  { icon: Hospital, label: 'Narkos/lokalbedövning:', value: 'Narkos' },
+                  { icon: Banknote, label: 'Pris', value: 'Från 75 tusen kr. Kapselgaranti 5 tusen kr.' },
+                  { icon: Clock, label: 'Tid på kliniken', value: '9 - 10 timmar' },
+                  { icon: HousePlus, label: 'Sjukskrivning', value: '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.' },
+                  {
+                    icon: CalendarCheck,
+                    label: 'Återbesök',
+                    value: 'Ca 10 dagar och 3-4 månader efter operationen.'
+                  },
+                  { icon: Bandage, label: 'Återhämtning', value: 'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.' },
+                  { icon: Activity, label: 'Sport & Gym', value: 'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.' },
+                  { icon: SquareChartGantt, label: 'Övrigt', value: ' Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 4-5 veckor. Sova på rygg eller sidan går bra direkt.' }                              
+                ]}
+                ctaText="Boka konsultation"
+                ctaUrl="/boka"
+              />
             <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstlyft'}</H3>
