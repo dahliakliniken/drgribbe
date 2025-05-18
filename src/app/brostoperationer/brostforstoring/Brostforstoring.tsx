@@ -1,3 +1,14 @@
+import {
+  Activity,
+  Bandage,
+  Banknote,
+  CalendarCheck,
+  CircleDot,
+  Clock,
+  Hospital,
+  HousePlus,
+  SquareChartGantt
+} from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
@@ -5,6 +16,7 @@ import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
+import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
 import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
@@ -15,7 +27,6 @@ import { BgColors } from '@/app/types'
 
 import ImplantsInHand from '../../../../public/images/_N3A7297.jpg'
 import { useAccordionData } from './accordionData'
-
 
 const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
@@ -29,45 +40,63 @@ const Brostforstoring = () => {
         content={
           <Pillar>
             <H1 white>{t('title')}</H1>
-            <P white>{t.rich('background', {
-                strong: (chunks) => (
-                  <strong>{chunks}</strong>
-                )
+            <P white>
+              {t.rich('background', {
+                strong: (chunks) => <strong>{chunks}</strong>
               })}
             </P>
             <P white>{t('background2')}</P>
           </Pillar>
         }
-      />
+      />      
 
       <SimpleCard
         bgColor={BgColors.White}
         bgPosition="left"
         content={
           <Pillar noPadding>
-              <Image
-                src={ImplantsInHand}
-                alt={t('altText.ImplantsInHand')}
-                className="max-h-svh object-cover object-center"
-              />      
-
             <SpaceContainer spaceTop noPadding>
               <Section>
-                  <H2>{t('implanttitle')}</H2>
-                  <P>{t.rich('implantbackground.text1', {
-                      strong: (chunks) => (
-                        <strong>{chunks}</strong>
-                      )
-                      })}
-                  </P>
-                  <P>{t.rich('implantbackground.text2', {
-                      strong: (chunks) => (
-                        <strong>{chunks}</strong>
-                      )
-                      })}
-                  </P>
+                <H2>{t('implanttitle')}</H2>
+                <P>
+                  {t.rich('implantbackground.text1', {
+                    strong: (chunks) => <strong>{chunks}</strong>
+                  })}
+                </P>
+                <P>
+                  {t.rich('implantbackground.text2', {
+                    strong: (chunks) => <strong>{chunks}</strong>
+                  })}
+                </P>
               </Section>
-            </SpaceContainer>          
+            </SpaceContainer>
+            <QuickFacts
+              title="Snabbfakta om bröstförstoring"
+              facts={[                
+                { icon: CalendarCheck, label: 'Konsultation innan operation',value: '60 minuter, ibland flera besök.'},
+                { icon: CircleDot, label: 'Bröstimplantat',value: 'Form och storlek efter önskemål. Från som minst 150 cc (ml, gram) till som mest ca 600 cc (ml, gram).'},
+                { icon: Clock, label: 'Operationstid', value: '30 - 45 minuter' },
+                { icon: Hospital, label: 'Narkos/lokalbedövning:', value: 'Narkos' },
+                { icon: Banknote, label: 'Pris', value: 'Från 45 tusen kr. Kapselgaranti 5 tusen kr.' },
+                { icon: Clock, label: 'Tid på kliniken', value: '7 - 8 timmar' },
+                { icon: HousePlus, label: 'Sjukskrivning', value: '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.' },
+                {
+                  icon: CalendarCheck,
+                  label: 'Återbesök',
+                  value: 'Ca 10 dagar och 3-4 månader efter operationen.'
+                },
+                { icon: Bandage, label: 'Återhämtning', value: 'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.' },
+                { icon: Activity, label: 'Sport & Gym', value: 'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.' },
+                { icon: SquareChartGantt, label: 'Övrigt', value: 'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt.' }                              
+              ]}
+              ctaText="Boka konsultation"
+              ctaUrl="/boka"
+            />
+            <Image
+              src={ImplantsInHand}
+              alt={t('altText.ImplantsInHand')}
+              className="max-h-svh object-cover object-center"
+            />
             <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
@@ -79,9 +108,10 @@ const Brostforstoring = () => {
                 </div>
               </Section>
             </SpaceContainer>
-          </Pillar>          
+          </Pillar>
         }
       />
+
       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
@@ -104,8 +134,14 @@ const Brostforstoring = () => {
       <SpaceContainer>
         <Pillar>
           <Section>
-            <H2>{'Hur går en bröstförstoring till? – En teknisk djupdykning'}</H2>
-            <P>{'På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?'}</P>
+            <H2>
+              {'Hur går en bröstförstoring till? – En teknisk djupdykning'}
+            </H2>
+            <P>
+              {
+                'På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?'
+              }
+            </P>
             <H3>{t('technique.heading1')}</H3>
             <P>{t('technique.text1')}</P>
             <Accordion size="h4" items={teknikAccordion} />
@@ -156,7 +192,7 @@ const Brostforstoring = () => {
         </Pillar>
       </SpaceContainer>
 
-{/*       <SpaceContainer spaceVertically noPadding>
+      {/*       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
           bgPosition="right"
