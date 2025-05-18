@@ -84,7 +84,7 @@ const Brostlyft = () => {
                   { icon: CalendarCheck, label: 'Konsultation innan operation',value: '60 minuter, ibland flera besök.'},
                   { icon: CircleDot, label: 'Bröstimplantat',value: 'Form och storlek delvis efter önskemål. Mer begränsat än vid bröstförstoring då det inte går att lägga in lika stora bröstimplantat vid bröstlyft. Ofta inte behov av stor volym.'},
                   { icon: Clock, label: 'Operationstid', value: '2,5 - 3 timmar' },
-                  { icon: Hospital, label: 'Narkos/lokalbedövning:', value: 'Narkos' },
+                  { icon: Hospital, label: 'Narkos/lokalbedövning', value: 'Narkos' },
                   { icon: Banknote, label: 'Pris', value: 'Från 75 tusen kr. Kapselgaranti 5 tusen kr.' },
                   { icon: Clock, label: 'Tid på kliniken', value: '9 - 10 timmar' },
                   { icon: HousePlus, label: 'Sjukskrivning', value: '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.' },
