@@ -62,7 +62,7 @@ export const QuickFacts = ({
 }: QuickFactsProps) => {
   return (
     <section
-      className={`mx-auto my-8 w-full max-w-3xl border border-gray-200 bg-white ${className}`}
+      className={`mx-auto my-8 w-full border border-gray-200 bg-white ${className}`}
       aria-labelledby="quick-facts-title"
     >
       <H2

@@ -1,10 +1,13 @@
 import {
   Activity,
+  Bandage,
   Banknote,
-  Calendar,
+  CalendarCheck,
+  CircleDot,
   Clock,
-  Clock3,
-  Hospital
+  Hospital,
+  HousePlus,
+  SquareChartGantt
 } from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
@@ -45,37 +48,13 @@ const Brostforstoring = () => {
             <P white>{t('background2')}</P>
           </Pillar>
         }
-      />
-
-      <QuickFacts
-        title="Snabbfakta om bröstförstoring"
-        facts={[
-          { icon: Banknote, label: 'Pris', value: 'från 55 000 SEK' },
-          { icon: Clock, label: 'Operationstid', value: '1.5–2 timmar' },
-          { icon: Hospital, label: 'Anestesi', value: 'Narkos' },
-          { icon: Activity, label: 'Återhämtningstid', value: '2-4 veckor' },
-          {
-            icon: Calendar,
-            label: 'Klinikbesök',
-            value: 'Krävs för konsultation och uppföljning'
-          },
-          { icon: Clock3, label: 'Sjukskrivning', value: '2-3 veckor' }
-        ]}
-        ctaText="Boka konsultation"
-        ctaUrl="/boka"
-      />
+      />      
 
       <SimpleCard
         bgColor={BgColors.White}
         bgPosition="left"
         content={
           <Pillar noPadding>
-            <Image
-              src={ImplantsInHand}
-              alt={t('altText.ImplantsInHand')}
-              className="max-h-svh object-cover object-center"
-            />
-
             <SpaceContainer spaceTop noPadding>
               <Section>
                 <H2>{t('implanttitle')}</H2>
@@ -91,6 +70,33 @@ const Brostforstoring = () => {
                 </P>
               </Section>
             </SpaceContainer>
+            <QuickFacts
+              title="Snabbfakta om bröstförstoring"
+              facts={[                
+                { icon: CalendarCheck, label: 'Konsultation innan operation',value: '60 minuter, ibland flera besök.'},
+                { icon: CircleDot, label: 'Bröstimplantat',value: 'Form och storlek efter önskemål. Från som minst 150 cc (ml, gram) till som mest ca 600 cc (ml, gram).'},
+                { icon: Clock, label: 'Operationstid', value: '30 - 45 minuter' },
+                { icon: Hospital, label: 'Narkos/lokalbedövning:', value: 'Narkos' },
+                { icon: Banknote, label: 'Pris', value: 'Från 45 tusen kr. Kapselgaranti 5 tusen kr.' },
+                { icon: Clock, label: 'Tid på kliniken', value: '7 - 8 timmar' },
+                { icon: HousePlus, label: 'Sjukskrivning', value: '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.' },
+                {
+                  icon: CalendarCheck,
+                  label: 'Återbesök',
+                  value: 'Ca 10 dagar och 3-4 månader efter operationen.'
+                },
+                { icon: Bandage, label: 'Återhämtningstid', value: 'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.' },
+                { icon: Activity, label: 'Sport & Gym', value: 'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.' },
+                { icon: SquareChartGantt, label: 'Övrigt', value: 'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt.' }                              
+              ]}
+              ctaText="Boka konsultation"
+              ctaUrl="/boka"
+            />
+            <Image
+              src={ImplantsInHand}
+              alt={t('altText.ImplantsInHand')}
+              className="max-h-svh object-cover object-center"
+            />
             <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
@@ -105,6 +111,7 @@ const Brostforstoring = () => {
           </Pillar>
         }
       />
+
       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
