@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import { Button } from '../inputs/Button'
@@ -10,6 +11,7 @@ import { SocialMediaLinks } from './SocialMediaLinks'
 
 export const HeaderWithFooter = () => {
   const t = useTranslations()
+  const pathname = usePathname()
   const [isAtBottom, setIsAtBottom] = useState(false)
 
   // Check if the user has scrolled to the bottom of the page
@@ -17,14 +19,24 @@ export const HeaderWithFooter = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight
       const pageHeight = document.body.scrollHeight
+      const isScrollable = pageHeight > window.innerHeight
 
-      // Expand when scrolled to the bottom, shrink when scrolling up
-      setIsAtBottom(scrollPosition >= pageHeight)
+      // Expand only when scrollable and scrolled to bottom
+      setIsAtBottom(isScrollable && scrollPosition >= pageHeight)
     }
 
     window.addEventListener('scroll', handleScroll)
+    handleScroll() // initialize on mount
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Recalculate on route change to reset footer state on short pages
+  useEffect(() => {
+    const pageHeight = document.body.scrollHeight
+    const isScrollable = pageHeight > window.innerHeight
+    const scrollPosition = window.scrollY + window.innerHeight
+    setIsAtBottom(isScrollable && scrollPosition >= pageHeight)
+  }, [pathname])
 
   return (
     <header
