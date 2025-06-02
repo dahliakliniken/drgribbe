@@ -18,7 +18,7 @@ export const HeaderWithFooter = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight
-      const pageHeight = document.body.scrollHeight
+      const pageHeight = document.documentElement.scrollHeight
       const isScrollable = pageHeight > window.innerHeight
 
       // Expand only when scrollable and scrolled to bottom
