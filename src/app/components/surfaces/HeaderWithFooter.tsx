@@ -32,7 +32,7 @@ export const HeaderWithFooter = () => {
 
   // Recalculate on route change to reset footer state on short pages
   useEffect(() => {
-    const pageHeight = document.body.scrollHeight
+    const pageHeight = document.documentElement.scrollHeight
     const isScrollable = pageHeight > window.innerHeight
     const scrollPosition = window.scrollY + window.innerHeight
     setIsAtBottom(isScrollable && scrollPosition >= pageHeight)
