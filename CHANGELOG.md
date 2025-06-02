@@ -1,3 +1,12 @@
+## [1.13.1](https://github.com/dahliakliniken/drgribbe/compare/v1.13.0...v1.13.1) (2025-06-02)
+
+
+### Bug Fixes
+
+* ensure footer state resets on route change ([5b4dde7](https://github.com/dahliakliniken/drgribbe/commit/5b4dde704e6e05af4a103536f7320a41c50f160c))
+* reorder imports for consistency in HeaderWithFooter component ([752db1a](https://github.com/dahliakliniken/drgribbe/commit/752db1ad1a11de2a6857bfe7fefefd592328b3ff))
+* use document.documentElement for accurate page height calculation in HeaderWithFooter ([86c31f7](https://github.com/dahliakliniken/drgribbe/commit/86c31f7521957779b8ab3b04922c6a151f43a09a))
+
 ## [1.13.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.13.0...v1.13.1-beta.1) (2025-06-02)
 
 
