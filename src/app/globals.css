@@ -18,7 +18,7 @@
 
 @layer base {
   button:not(:disabled),
-  [role="button"]:not(:disabled) {
+  [role='button']:not(:disabled) {
     cursor: pointer;
   }
 }
@@ -27,43 +27,43 @@
   --spacing-gapSpace: 1.5rem;
   --spacing-gapSpaceL: 2.5rem;
 
-  --color-coral: #B06D74;
-  --color-green: #0C412F;
-  --color-beige: #EAE6E3;
-  --color-lightBeige: #F5F3F2;
+  --color-coral: #b06d74;
+  --color-green: #0c412f;
+  --color-beige: #eae6e3;
+  --color-lightBeige: #f5f3f2;
   --color-grey: darkgrey;
-  --color-gold: #9C874C;
+  --color-gold: #9c874c;
 }
 
 @utility bg-small-left-top {
-  background-position: 100% 50%
+  background-position: 100% 50%;
 }
 @utility bg-large-left-top {
-  background-position: 560% 100%
+  background-position: 560% 100%;
 }
 @utility bg-small-right-top {
-  background-position: 0% 50%
+  background-position: 0% 50%;
 }
 @utility bg-small-center {
-  background-position: 50% 50%
+  background-position: 50% 50%;
 }
 @utility bg-small-left {
-  background-position: 100% 50%
+  background-position: 100% 50%;
 }
 @utility bg-large-left {
-  background-position: 560% 50%
+  background-position: 560% 50%;
 }
 @utility bg-small-right {
-  background-position: 0% 50%
+  background-position: 0% 50%;
 }
 @utility bg-large-right {
-  background-position: -450% 50%
+  background-position: -450% 50%;
 }
 @utility bg-small-bottom-right {
-  background-position: 0 100%
+  background-position: 0 100%;
 }
 @utility bg-small-bottom-left {
-  background-position: 100% 100%
+  background-position: 100% 100%;
 }
 
 p:not(:last-child) {
@@ -78,83 +78,92 @@ strong {
 button:focus-visible,
 input:focus-visible,
 a:focus-visible {
-  outline: 2px solid #9C874C;
+  outline: 2px solid #9c874c;
   border-radius: 4px;
   outline-offset: 4px;
 }
 
-.herogradient{
-  background: linear-gradient(0deg, rgba(0,0,0,0.4780287114845938) 0%, rgba(0,0,0,0) 68%, rgba(255,255,255,0) 100%);
+.herogradient {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4780287114845938) 0%,
+    rgba(0, 0, 0, 0) 68%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-.fat{
+.fat {
   font-weight: 400;
 }
-.testimonial{
+.testimonial {
   width: 20rem;
   color: black;
   font-size: 1.25rem;
   font-weight: 300;
   padding: 20px;
   text-align: center;
-
 }
-.testimonial::before, 
+.testimonial::before,
 .testimonial::after {
   content: '"';
   font-family: var(--font-ephesis);
   font-size: 3rem;
-  color: #9C874C;  
+  color: #9c874c;
   display: block;
   width: 100%;
   line-height: 1rem;
   text-align: center;
-
 }
-.testimonial::after{  
+.testimonial::after {
   margin-top: 20px;
 }
-.testimonialtitle{
+.testimonialtitle {
   margin-bottom: 1rem;
   display: block;
   color: rgba(20, 20, 20, 0.8);
 }
 
-.imagetext{
+.imagetext {
   margin-top: 1rem;
   display: block;
   font-style: italic;
 }
 
-.imagetext-inline{
+.imagetext-inline {
   margin-top: 1rem;
   font-style: italic;
   display: inline;
 }
-.imagetext-inline>a{
+.imagetext-inline > a {
   font-size: inherit;
-}
-.staffportrait{
-  position: absolute;
-  top: -25px;
-  right: -25px;
-}
-.staffh2{
-  max-width: 60%;
 }
 
 @keyframes page-bounce {
-  0%, 100% { transform: translateY(0); }
-  25% { transform: translateY(-15px); }
-  50% { transform: translateY(0); }
-  75% { transform: translateY(-5px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
 }
 .animate-page-bounce {
   animation: page-bounce 0.8s ease-in-out;
 }
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 .animate-bounce {
   animation: bounce 1.5s infinite;
@@ -169,7 +178,7 @@ a:focus-visible {
 }
 
 .flipped {
-  transform: rotateY( 180deg ) ;
+  transform: rotateY(180deg);
   transition: transform 0.5s;
 }
 
@@ -178,11 +187,11 @@ a:focus-visible {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #B06D74;
+  background-color: #b06d74;
   border-radius: 5px;
   backface-visibility: hidden;
 }
 
 .back {
-  transform: rotateY( 180deg );
+  transform: rotateY(180deg);
 }

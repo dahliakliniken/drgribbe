@@ -28,8 +28,6 @@ import { BgColors } from '@/app/types'
 import inchair from '../../../../public/images/_N3A7179.jpg'
 import { useAccordionData } from './accordionData'
 
-
-
 const Brostlyft = () => {
   const t = useTranslations('brostlyft')
   const [faqAccordion] = useAccordionData()
@@ -41,17 +39,15 @@ const Brostlyft = () => {
         content={
           <Pillar>
             <H1 white>{t('title')}</H1>
-            <P white>{t.rich('background.text1', {
-                strong: (chunks) => (
-                  <strong>{chunks}</strong>
-                )
-                })}
+            <P white>
+              {t.rich('background.text1', {
+                strong: (chunks) => <strong>{chunks}</strong>
+              })}
             </P>
-            <P white>{t.rich('background.text1-2', {
-                strong: (chunks) => (
-                  <strong>{chunks}</strong>
-                )
-                })}
+            <P white>
+              {t.rich('background.text1-2', {
+                strong: (chunks) => <strong>{chunks}</strong>
+              })}
             </P>
           </Pillar>
         }
@@ -60,46 +56,94 @@ const Brostlyft = () => {
         bgColor={BgColors.White}
         bgPosition="right"
         content={
-          <Pillar>
+          <Pillar noPadding>
             <Image
               src={inchair}
               alt={t('altText.inchair')}
               className="max-h-svh object-cover object-center"
-            />  
+            />
             <SpaceContainer spaceTop noPadding>
-              <Section>   
-                <H2>{"Bröstlyft – lösningen när brösten förlorat volym, form eller symmetri"}</H2>
+              <Section>
+                <H2>
+                  {
+                    'Bröstlyft – lösningen när brösten förlorat volym, form eller symmetri'
+                  }
+                </H2>
                 <P>{t('background.text2')}</P>
-                <P>{t.rich('background.text3', {
-                    strong: (chunks) => (
-                      <strong>{chunks}</strong>
-                    )
-                    })}
+                <P>
+                  {t.rich('background.text3', {
+                    strong: (chunks) => <strong>{chunks}</strong>
+                  })}
                 </P>
               </Section>
             </SpaceContainer>
             <QuickFacts
-                title="Snabbfakta om Bröstförstoring med bröstlyft"
-                facts={[                
-                  { icon: CalendarCheck, label: 'Konsultation innan operation',value: '60 minuter, ibland flera besök.'},
-                  { icon: CircleDot, label: 'Bröstimplantat',value: 'Form och storlek delvis efter önskemål. Mer begränsat än vid bröstförstoring då det inte går att lägga in lika stora bröstimplantat vid bröstlyft. Ofta inte behov av stor volym.'},
-                  { icon: Clock, label: 'Operationstid', value: '2,5 - 3 timmar' },
-                  { icon: Hospital, label: 'Narkos/lokalbedövning', value: 'Narkos' },
-                  { icon: Banknote, label: 'Pris', value: 'Från 75 tusen kr. Kapselgaranti 5 tusen kr.' },
-                  { icon: Clock, label: 'Tid på kliniken', value: '9 - 10 timmar' },
-                  { icon: HousePlus, label: 'Sjukskrivning', value: '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.' },
-                  {
-                    icon: CalendarCheck,
-                    label: 'Återbesök',
-                    value: 'Ca 10 dagar och 3-4 månader efter operationen.'
-                  },
-                  { icon: Bandage, label: 'Återhämtning', value: 'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.' },
-                  { icon: Activity, label: 'Sport & Gym', value: 'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.' },
-                  { icon: SquareChartGantt, label: 'Övrigt', value: ' Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 4-5 veckor. Sova på rygg eller sidan går bra direkt.' }                              
-                ]}
-                ctaText="Boka konsultation"
-                ctaUrl="/boka"
-              />
+              title="Snabbfakta om Bröstförstoring med bröstlyft"
+              facts={[
+                {
+                  icon: CalendarCheck,
+                  label: 'Konsultation innan operation',
+                  value: '60 minuter, ibland flera besök.'
+                },
+                {
+                  icon: CircleDot,
+                  label: 'Bröstimplantat',
+                  value:
+                    'Form och storlek delvis efter önskemål. Mer begränsat än vid bröstförstoring då det inte går att lägga in lika stora bröstimplantat vid bröstlyft. Ofta inte behov av stor volym.'
+                },
+                {
+                  icon: Clock,
+                  label: 'Operationstid',
+                  value: '2,5 - 3 timmar'
+                },
+                {
+                  icon: Hospital,
+                  label: 'Narkos/lokalbedövning',
+                  value: 'Narkos'
+                },
+                {
+                  icon: Banknote,
+                  label: 'Pris',
+                  value: 'Från 75 tusen kr. Kapselgaranti 5 tusen kr.'
+                },
+                {
+                  icon: Clock,
+                  label: 'Tid på kliniken',
+                  value: '9 - 10 timmar'
+                },
+                {
+                  icon: HousePlus,
+                  label: 'Sjukskrivning',
+                  value:
+                    '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.'
+                },
+                {
+                  icon: CalendarCheck,
+                  label: 'Återbesök',
+                  value: 'Ca 10 dagar och 3-4 månader efter operationen.'
+                },
+                {
+                  icon: Bandage,
+                  label: 'Återhämtning',
+                  value:
+                    'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.'
+                },
+                {
+                  icon: Activity,
+                  label: 'Sport & Gym',
+                  value:
+                    'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.'
+                },
+                {
+                  icon: SquareChartGantt,
+                  label: 'Övrigt',
+                  value:
+                    'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 4-5 veckor. Sova på rygg eller sidan går bra direkt.'
+                }
+              ]}
+              ctaText="Boka konsultation"
+              ctaUrl="/boka"
+            />
             <SpaceContainer noPadding>
               <Section>
                 <H3>{'Vanliga frågor & svar om bröstlyft'}</H3>
@@ -114,24 +158,24 @@ const Brostlyft = () => {
           </Pillar>
         }
       />
-      <SpaceContainer spaceVertically noPadding>
-        <SimpleCard
-          bgColor={BgColors.Green}
-          bgPosition="right"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {useTranslations()('common.freeConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {useTranslations()('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
-      </SpaceContainer>
+
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="right"
+        content={
+          <>
+            <H2 upperCase white className="text-center">
+              {useTranslations()('common.freeConsultation')}
+            </H2>
+            <div className="m-auto flex max-w-xs justify-center">
+              <A href="/boka" className="uppercase" buttonStyle>
+                {useTranslations()('common.bookNow')}
+              </A>
+            </div>
+          </>
+        }
+      />
+
       <SpaceContainer spaceTop>
         <Pillar>
           <H2>{t('techniques.heading1')}</H2>
@@ -143,7 +187,7 @@ const Brostlyft = () => {
           <P>{t('techniques.text6')}</P>
         </Pillar>
       </SpaceContainer>
-{/*       <SpaceContainer spaceVertically noPadding>
+      {/*       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
           bgPosition="right"

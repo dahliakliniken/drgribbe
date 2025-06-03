@@ -1,3 +1,15 @@
+# [1.14.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.13.1...v1.14.0-beta.1) (2025-06-03)
+
+
+### Bug Fixes
+
+* reorder imports in FlippableCard component ([fe4d564](https://github.com/dahliakliniken/drgribbe/commit/fe4d564ba9f699edc1ea5c3165d06e59b7296218))
+
+
+### Features
+
+* add animation on arrow ([32248a7](https://github.com/dahliakliniken/drgribbe/commit/32248a7a83b81ad55b45d82449ebd0dc3890d36a))
+
 ## [1.13.1](https://github.com/dahliakliniken/drgribbe/compare/v1.13.0...v1.13.1) (2025-06-02)
 
 
