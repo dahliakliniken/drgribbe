@@ -91,7 +91,7 @@ const Brostforstoring = () => {
                 },
                 {
                   icon: Hospital,
-                  label: 'Narkos/lokalbedövning:',
+                  label: 'Narkos/lokalbedövning',
                   value: 'Narkos'
                 },
                 {
