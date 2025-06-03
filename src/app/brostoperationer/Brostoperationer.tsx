@@ -42,7 +42,7 @@ const Brostoperationer = () => {
     return {
       id: key,
       title: t(`beforeOperation.${key}.title`),
-      content: contentArray.join('\n') 
+      content: contentArray.join('\n')
     }
   })
 
@@ -313,23 +313,23 @@ const Brostoperationer = () => {
             <Accordion items={complications} />
           </SpaceContainer>
         </Pillar>
-        <SimpleCard
-          bgColor={BgColors.Green}
-          bgPosition="left"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {t('common.bookConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {t('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
       </SpaceContainer>
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="left"
+        content={
+          <>
+            <H2 upperCase white className="text-center">
+              {t('common.bookConsultation')}
+            </H2>
+            <div className="m-auto flex max-w-xs justify-center">
+              <A href="/boka" className="uppercase" buttonStyle>
+                {t('common.bookNow')}
+              </A>
+            </div>
+          </>
+        }
+      />
     </>
   )
 }

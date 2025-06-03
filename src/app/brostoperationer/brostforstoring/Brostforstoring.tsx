@@ -48,7 +48,7 @@ const Brostforstoring = () => {
             <P white>{t('background2')}</P>
           </Pillar>
         }
-      />      
+      />
 
       <SimpleCard
         bgColor={BgColors.White}
@@ -72,22 +72,67 @@ const Brostforstoring = () => {
             </SpaceContainer>
             <QuickFacts
               title="Snabbfakta om bröstförstoring"
-              facts={[                
-                { icon: CalendarCheck, label: 'Konsultation innan operation',value: '60 minuter, ibland flera besök.'},
-                { icon: CircleDot, label: 'Bröstimplantat',value: 'Form och storlek efter önskemål. Från som minst 150 cc (ml, gram) till som mest ca 600 cc (ml, gram).'},
-                { icon: Clock, label: 'Operationstid', value: '30 - 45 minuter' },
-                { icon: Hospital, label: 'Narkos/lokalbedövning:', value: 'Narkos' },
-                { icon: Banknote, label: 'Pris', value: 'Från 45 tusen kr. Kapselgaranti 5 tusen kr.' },
-                { icon: Clock, label: 'Tid på kliniken', value: '7 - 8 timmar' },
-                { icon: HousePlus, label: 'Sjukskrivning', value: '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.' },
+              facts={[
+                {
+                  icon: CalendarCheck,
+                  label: 'Konsultation innan operation',
+                  value: '60 minuter, ibland flera besök.'
+                },
+                {
+                  icon: CircleDot,
+                  label: 'Bröstimplantat',
+                  value:
+                    'Form och storlek efter önskemål. Från som minst 150 cc (ml, gram) till som mest ca 600 cc (ml, gram).'
+                },
+                {
+                  icon: Clock,
+                  label: 'Operationstid',
+                  value: '30 - 45 minuter'
+                },
+                {
+                  icon: Hospital,
+                  label: 'Narkos/lokalbedövning',
+                  value: 'Narkos'
+                },
+                {
+                  icon: Banknote,
+                  label: 'Pris',
+                  value: 'Från 45 tusen kr. Kapselgaranti 5 tusen kr.'
+                },
+                {
+                  icon: Clock,
+                  label: 'Tid på kliniken',
+                  value: '7 - 8 timmar'
+                },
+                {
+                  icon: HousePlus,
+                  label: 'Sjukskrivning',
+                  value:
+                    '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.'
+                },
                 {
                   icon: CalendarCheck,
                   label: 'Återbesök',
                   value: 'Ca 10 dagar och 3-4 månader efter operationen.'
                 },
-                { icon: Bandage, label: 'Återhämtning', value: 'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.' },
-                { icon: Activity, label: 'Sport & Gym', value: 'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.' },
-                { icon: SquareChartGantt, label: 'Övrigt', value: 'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt.' }                              
+                {
+                  icon: Bandage,
+                  label: 'Återhämtning',
+                  value:
+                    'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.'
+                },
+                {
+                  icon: Activity,
+                  label: 'Sport & Gym',
+                  value:
+                    'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.'
+                },
+                {
+                  icon: SquareChartGantt,
+                  label: 'Övrigt',
+                  value:
+                    'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt.'
+                }
               ]}
               ctaText="Boka konsultation"
               ctaUrl="/boka"
@@ -97,42 +142,38 @@ const Brostforstoring = () => {
               alt={t('altText.ImplantsInHand')}
               className="max-h-svh object-cover object-center"
             />
-            <SpaceContainer noPadding>
-              <Section>
-                <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
-                <Accordion size="h4" items={faqAccordion} />
-                <div className="m-auto my-6 flex justify-center">
-                  <A href="/fragor-och-svar">
-                    {useTranslations()('common.linktoFaq')}
-                  </A>
-                </div>
-              </Section>
+            <SpaceContainer noPadding spaceTop>
+              <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
+              <Accordion size="h4" items={faqAccordion} />
+              <div className="m-auto my-6 flex justify-center">
+                <A href="/fragor-och-svar">
+                  {useTranslations()('common.linktoFaq')}
+                </A>
+              </div>
             </SpaceContainer>
           </Pillar>
         }
       />
 
-      <SpaceContainer spaceVertically noPadding>
-        <SimpleCard
-          bgColor={BgColors.Green}
-          bgPosition="right"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {useTranslations()('common.freeConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {useTranslations()('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
-      </SpaceContainer>
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="right"
+        content={
+          <>
+            <H2 upperCase white className="text-center">
+              {useTranslations()('common.freeConsultation')}
+            </H2>
+            <div className="m-auto flex max-w-xs justify-center">
+              <A href="/boka" className="uppercase" buttonStyle>
+                {useTranslations()('common.bookNow')}
+              </A>
+            </div>
+          </>
+        }
+      />
 
-      <SpaceContainer>
-        <Pillar>
+      <Pillar noPadding>
+        <SpaceContainer spaceTop>
           <Section>
             <H2>
               {'Hur går en bröstförstoring till? – En teknisk djupdykning'}
@@ -146,8 +187,8 @@ const Brostforstoring = () => {
             <P>{t('technique.text1')}</P>
             <Accordion size="h4" items={teknikAccordion} />
           </Section>
-        </Pillar>
-      </SpaceContainer>
+        </SpaceContainer>
+      </Pillar>
 
       <SpaceContainer>
         <Pillar>
