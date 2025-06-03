@@ -1,9 +1,9 @@
 'use client'
-import { useState } from 'react'
+import classNames from 'classnames'
 import { IterationCcw } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
 import { useTranslations } from 'next-intl'
-import classNames from 'classnames'
+import { useState } from 'react'
 
 import { H2 } from '../typography/H2'
 import { P } from '../typography/P'
