@@ -20,7 +20,7 @@ import { useAccordionData } from './accordionData'
 const Brostforminskning = () => {
   const t = useTranslations('brostforminskning')
   const [faqItems] = useAccordionData()
-  
+
   return (
     <>
       <SimpleCard
@@ -38,13 +38,15 @@ const Brostforminskning = () => {
         bgColor={BgColors.White}
         bgPosition="left"
         content={
-          <Pillar>
+          <Pillar noPadding>
             <SpaceContainer noPadding>
               <Image
                 src={forminskning1}
-                alt={'Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning'}
+                alt={
+                  'Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning'
+                }
                 className="max-h-svh object-cover object-center"
-              />      
+              />
             </SpaceContainer>
             <SpaceContainer noPadding spaceVertically>
               <H2>{'Hur går en bröstförminskning till?'}</H2>
@@ -65,24 +67,24 @@ const Brostforminskning = () => {
           </Pillar>
         }
       />
-      <SpaceContainer spaceVertically noPadding>
-        <SimpleCard
-          bgColor={BgColors.Green}
-          bgPosition="right"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {useTranslations()('common.freeConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {useTranslations()('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
-      </SpaceContainer>
+
+      <SimpleCard
+        bgColor={BgColors.Green}
+        bgPosition="right"
+        content={
+          <>
+            <H2 upperCase white className="text-center">
+              {useTranslations()('common.freeConsultation')}
+            </H2>
+            <div className="m-auto flex max-w-xs justify-center">
+              <A href="/boka" className="uppercase" buttonStyle>
+                {useTranslations()('common.bookNow')}
+              </A>
+            </div>
+          </>
+        }
+      />
+
       <SpaceContainer>
         <Pillar>
           <H2>{t('consultation.heading1')}</H2>
@@ -91,12 +93,12 @@ const Brostforminskning = () => {
           <P>{t('consultation.text3')}</P>
           <P>{t('consultation.text4')}</P>
           <P>{t('consultation.text5')}</P>
-          </Pillar>
+        </Pillar>
       </SpaceContainer>
       <SimpleCard
         bgColor={BgColors.Green}
         bgPosition="right"
-        content={        
+        content={
           <Pillar>
             <H2 white>{t('technique.heading1')}</H2>
             <H3 white>{t('technique.preSurgery.heading1')}</H3>
@@ -104,9 +106,11 @@ const Brostforminskning = () => {
             <SpaceContainer noPadding>
               <Image
                 src={forminskning2}
-                alt={'Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning'}
+                alt={
+                  'Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning'
+                }
                 className="max-h-svh object-cover object-center"
-              />      
+              />
             </SpaceContainer>
             <SpaceContainer noPadding spaceTop>
               <H3 white>{t('technique.surgery.heading1')}</H3>
@@ -119,11 +123,11 @@ const Brostforminskning = () => {
               <P white>{t('technique.surgery.text7')}</P>
               <P white>{t('technique.surgery.text8')}</P>
               <P white>{t('technique.surgery.text9')}</P>
-            </SpaceContainer>              
+            </SpaceContainer>
           </Pillar>
         }
       />
-{/*       <SpaceContainer spaceVertically noPadding>
+      {/*       <SpaceContainer spaceVertically noPadding>
         <SimpleCard
           bgColor={BgColors.Green}
           bgPosition="right"
