@@ -138,7 +138,7 @@ const Brostlyft = () => {
                   icon: SquareChartGantt,
                   label: 'Övrigt',
                   value:
-                    ' Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 4-5 veckor. Sova på rygg eller sidan går bra direkt.'
+                    'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 4-5 veckor. Sova på rygg eller sidan går bra direkt.'
                 }
               ]}
               ctaText="Boka konsultation"
