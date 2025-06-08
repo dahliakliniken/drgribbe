@@ -73,9 +73,10 @@
       },
       "beforeAndAfter": {
         "title": "Före & efterbilder",
+        "altText": "Dekorativ ikon som symboliserar före- och efterbilder",
         "paragraph1": "Se före- och efterbilder på patienter opererade av Dr Gribbe.",
         "paragraph2": "Lorem ispum dolor sit amet, consectetur adipiscing elit.",
-        "linkText": "Se före och efter-bilder"
+        "linkText": "Se före- och efterbilder"
       }
     }
   },

@@ -47,7 +47,7 @@ export default function Testimonials() {
 
   return (
     <div className="m-auto xl:max-w-7xl">
-      <div className="px-gapSpace flex space-x-3 xl:grid xl:grid-cols-3 xl:items-stretch">
+      <div className="px-gapSpace flex space-x-3 overflow-x-auto xl:grid xl:grid-cols-3 xl:items-stretch">
         {randomTestimonials.map((testimonial, index) => (
           <Testimonial
             key={index}

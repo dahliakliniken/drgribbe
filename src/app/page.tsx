@@ -147,9 +147,7 @@ export default async function Home() {
           <Pillar>
             <Image
               src={Consultation}
-              alt={
-                ' Bild på dr Örjan Gribbe som visar olika bröstimplantat för en patient. '
-              }
+              alt="Bild på dr Örjan Gribbe som visar olika bröstimplantat för en patient."
             />
             <span className="imagetext">{t('profileCard.imageText')}</span>
             <span className="imagetext-inline">
