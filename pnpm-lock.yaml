@@ -89,10 +89,10 @@ importers:
         specifier: 16.1.0
         version: 16.1.0
       husky:
-        specifier: ^8.0.0
-        version: 8.0.3
+        specifier: 8.0.0
+        version: 8.0.0
       lint-staged:
-        specifier: ^16.1.0
+        specifier: 16.1.0
         version: 16.1.0
       postcss:
         specifier: 8.5.3
@@ -1802,8 +1802,8 @@ packages:
     resolution: {integrity: sha512-/1/GPCpDUCCYwlERiYjxoczfP0zfvZMU/OWgQPMya9AbAE24vseigFdhAMObpc8Q4lc/kjutPfUddDYyAmejnA==}
     engines: {node: '>=18.18.0'}
 
-  husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+  husky@8.0.0:
+    resolution: {integrity: sha512-4qbE/5dzNDNxFEkX9MNRPKl5+omTXQzdILCUWiqG/lWIAioiM5vln265/l6I2Zx8gpW8l1ukZwGQeCFbBZ6+6w==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5578,7 +5578,7 @@ snapshots:
 
   human-signals@8.0.0: {}
 
-  husky@8.0.3: {}
+  husky@8.0.0: {}
 
   iconv-lite@0.6.3:
     dependencies:
