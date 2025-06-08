@@ -17,7 +17,43 @@ import { H1 } from './components/typography/H1'
 import { H2 } from './components/typography/H2'
 import { H3 } from './components/typography/H3'
 import { P } from './components/typography/P'
+
+import { JsonLd } from './components/surfaces/JsonLd'
 import { BgColors } from './types'
+
+const schemaData = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalClinic',
+  name: 'Dahliakliniken',
+  image: 'https://www.dahliakliniken.se/opengraph-image.jpg',
+  url: 'https://www.dahliakliniken.se',
+  telephone: '+46 8 520 278 78',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'S:t Göransgatan 126',
+    addressLocality: 'Stockholm',
+    postalCode: '112 45',
+    addressCountry: 'SE'
+  },
+  description:
+    'Dahliakliniken är en modern klinik i Stockholm som är specialiserad på estetiska bröstoperationer som bröstförstoring, bröstlyft och bröstförminskning.',
+  medicalSpecialty: {
+    '@type': 'MedicalSpecialty',
+    name: 'PlasticSurgery'
+  },
+  founder: {
+    '@type': 'Person',
+    name: 'Dr Örjan Gribbe'
+  },
+  areaServed: {
+    '@type': 'Place',
+    name: 'Stockholm'
+  },
+  sameAs: [
+    'https://www.facebook.com/dahliakliniken',
+    'https://www.instagram.com/dahliakliniken'
+  ]
+}
 
 export const metadata = {
   other: {
@@ -30,30 +66,45 @@ export default async function Home() {
 
   return (
     <>
+      <JsonLd data={schemaData} />
       <Hero />
       <SimpleCard
         bgColor={BgColors.White}
         bgPosition="right"
         content={
-          <Pillar>
+          <Pillar noPadding>
             <SpaceContainer>
-              <H1>{t('aboutBox.title')}</H1>
+              <H1>
+                {t.rich('aboutBox.title', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </H1>
               <P className="fat">
-                {'Dr Örjan Gribbe lanserar nytt kliniknamn, Dahliakliniken.'}
+                {t.rich('aboutBox.newClinicName', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
               </P>
               <P>
-                {
-                  'Välkommen till en klinik helt specialiserad på estetiska bröstoperationer'
-                }
+                {t.rich('aboutBox.welcomeMessage', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
               </P>
-              <P>{t('aboutBox.paragraph1')}</P>
-              <P>{t('aboutBox.paragraph2')}</P>
+              <P>
+                {t.rich('aboutBox.paragraph1', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
             </SpaceContainer>
           </Pillar>
         }
       />
-      {/* <Image src={Consultation} alt={''} className="lg:hidden" /> */}
-      <SpaceContainer>
+
+      <SpaceContainer noPadding>
+        <Pillar>
+          <SpaceContainer>
+            <H2>{t('testimonials.title')}</H2>
+          </SpaceContainer>
+        </Pillar>
         <Testimonials />
       </SpaceContainer>
 
@@ -63,9 +114,7 @@ export default async function Home() {
             <H2>{t('treatmentBox.title')}</H2>
           </SpaceContainer>
         </Pillar>
-      </SpaceContainer>
 
-      <SpaceContainer spaceTop>
         <div className="m-auto xl:max-w-7xl">
           <TreatmentBox treatments={allTreatmentsData} />
         </div>
@@ -97,7 +146,12 @@ export default async function Home() {
         bgColor={BgColors.White}
         content={
           <Pillar>
-            <Image src={Consultation} alt={''} />
+            <Image
+              src={Consultation}
+              alt={
+                ' Bild på dr Örjan Gribbe som visar olika bröstimplantat för en patient. '
+              }
+            />
             <span className="imagetext">{t('profileCard.imageText')}</span>
             <span className="imagetext-inline">
               {t('profileCard.paragraph1')}
@@ -105,9 +159,19 @@ export default async function Home() {
             <span className="imagetext-inline">
               <A href={'https://sfep.se/'}>{t('profileCard.linkpre')}</A>
             </span>
+
             <SpaceContainer noPadding spaceTop>
-              <H2>{t('aboutClinic.title')}</H2>
-              <P>{t('aboutClinic.paragraph1')}</P>
+              <H2>
+                {t.rich('aboutClinic.title', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </H2>
+              <P>
+                {t.rich('aboutClinic.paragraph1', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
+              <P>{t('aboutClinic.paragraph2')}</P>
               <SpaceContainer noPadding spaceVertically>
                 <Image
                   src={belowheadingImage}
@@ -115,11 +179,27 @@ export default async function Home() {
                   className="max-h-svh object-cover object-center"
                 />
               </SpaceContainer>
+              <P>
+                {t.rich('aboutClinic.paragraph3', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
+              <P>
+                {t.rich('aboutClinic.paragraph4', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
 
-              <P>{t('aboutClinic.paragraph2')}</P>
-
-              <H3>{t('aboutClinic.ourphilosophy')}</H3>
-              <P>{t('aboutClinic.paragraph3')}</P>
+              <H3>
+                {t.rich('aboutClinic.ourPhilosophy', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </H3>
+              <P>
+                {t.rich('aboutClinic.paragraph5', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
               <A href={'/garanti#phil'}>{t('aboutClinic.readMore')}</A>
             </SpaceContainer>
           </Pillar>
@@ -131,17 +211,42 @@ export default async function Home() {
         bgPosition="right"
         content={
           <Pillar>
-            <H2 white>{t('operationDepartment.title')}</H2>
+            <H2 white>
+              {t.rich('operationDepartment.title', {
+                strong: (chunks) => <strong>{chunks}</strong>
+              })}
+            </H2>
             <div className="lg:columns-2">
-              <P white>{t('operationDepartment.text1')}</P>
-              <P white>{t('operationDepartment.text2')}</P>
-              <P white>{t('operationDepartment.text3')}</P>
-              <P white>{t('operationDepartment.text4')}</P>
-              <P white>{t('operationDepartment.text5')}</P>
+              <P white>
+                {t.rich('operationDepartment.text1', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
+              <P white>
+                {t.rich('operationDepartment.text2', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
+              <P white>
+                {t.rich('operationDepartment.text3', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
+              <P white>
+                {t.rich('operationDepartment.text4', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
+              <P white>
+                {t.rich('operationDepartment.text5', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
             </div>
           </Pillar>
         }
       />
+
       <Pillar>
         <Image
           src={WaitingRoom}
@@ -149,6 +254,7 @@ export default async function Home() {
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
         />
       </Pillar>
+
       <SpaceContainer noPadding>
         <SimpleCard
           bgColor={BgColors.Beige}
@@ -156,7 +262,7 @@ export default async function Home() {
           content={
             <Pillar>
               <H2 className="text-center">
-                {'Vill du veta mer om våra behandlingar?'}
+                {'Boka en konsultation med vår specialist idag'}
               </H2>
               <P className="text-center">
                 {

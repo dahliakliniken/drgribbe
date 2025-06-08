@@ -44,7 +44,7 @@ export const SimpleCard = ({
   }
 
   return (
-    <div
+    <section
       id={id}
       className={classNames(
         'before:pointer-events-none before:-z-10',
@@ -69,6 +69,6 @@ export const SimpleCard = ({
       {title && title}
 
       {content && content}
-    </div>
+    </section>
   )
 }
