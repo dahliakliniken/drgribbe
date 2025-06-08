@@ -11,18 +11,24 @@ import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import { ephesis, josefinSans } from './fonts'
 
 export const metadata: Metadata = {
-  title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
+  title:
+    'Dahliakliniken – Expert på estetisk bröstförstoring och bröstlyft i Stockholm',
   description:
     'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.',
   openGraph: {
-    title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
+    title:
+      'Dahliakliniken – Expert på estetisk bröstförstoring och bröstlyft i Stockholm',
     description:
       'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.',
     url: 'https://www.dahliakliniken.se/',
-    siteName: 'Dahliakliniken'
+    siteName: 'Dahliakliniken',
+    type: 'website',
+    locale: 'sv_SE'
   },
   twitter: {
-    title: 'Kliniken för estetisk bröstförstoring och bröstlyft',
+    card: 'summary_large_image',
+    title:
+      'Dahliakliniken – Expert på estetisk bröstförstoring och bröstlyft i Stockholm',
     description:
       'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.'
   }

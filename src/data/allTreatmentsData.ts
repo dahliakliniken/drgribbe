@@ -11,12 +11,12 @@ export const allTreatmentsData = [
     id: crypto.randomUUID(),
     title: 'treatmentBox.treatments.breastEnlargement.title',
     image: Enlargement,
+    altText: 'treatmentBox.treatments.breastEnlargement.altText',
     paragraphs: [
       'treatmentBox.treatments.breastEnlargement.paragraph1',
-      //  'treatmentBox.treatments.breastEnlargement.paragraph2',
-      'treatmentBox.treatments.breastEnlargement.paragraph3'
+      'treatmentBox.treatments.breastEnlargement.paragraph2'
     ],
-    ariaLabel: 'treatmentBox.treatments.breastEnlargement.ariaLabel',
+    linkText: 'treatmentBox.treatments.breastEnlargement.linkText',
     linkHref: '/brostoperationer/brostforstoring',
     bgPosition: BgPositions['bottom-right'],
     bgColor: BgColors.Green
@@ -25,12 +25,12 @@ export const allTreatmentsData = [
     id: crypto.randomUUID(),
     title: 'treatmentBox.treatments.breastReduction.title',
     image: Reduction,
+    altText: 'treatmentBox.treatments.breastReduction.altText',
     paragraphs: [
       'treatmentBox.treatments.breastReduction.paragraph1',
-      //  'treatmentBox.treatments.breastReduction.paragraph2',
-      'treatmentBox.treatments.breastReduction.paragraph3'
+      'treatmentBox.treatments.breastReduction.paragraph2'
     ],
-    ariaLabel: 'treatmentBox.treatments.breastReduction.ariaLabel',
+    linkText: 'treatmentBox.treatments.breastReduction.linkText',
     linkHref: '/brostoperationer/brostforminskning',
     bgPosition: BgPositions['bottom-left'],
     bgColor: BgColors.Green
@@ -39,12 +39,12 @@ export const allTreatmentsData = [
     id: crypto.randomUUID(),
     title: 'treatmentBox.treatments.breastLift.title',
     image: Lift,
+    altText: 'treatmentBox.treatments.breastLift.altText',
     paragraphs: [
       'treatmentBox.treatments.breastLift.paragraph1',
-      //  'treatmentBox.treatments.breastLift.paragraph2',
-      'treatmentBox.treatments.breastLift.paragraph3'
+      'treatmentBox.treatments.breastLift.paragraph2'
     ],
-    ariaLabel: 'treatmentBox.treatments.breastLift.ariaLabel',
+    linkText: 'treatmentBox.treatments.breastLift.linkText',
     linkHref: '/brostoperationer/brostlyft',
     bgPosition: BgPositions['bottom-right'],
     bgColor: BgColors.Green
@@ -53,12 +53,12 @@ export const allTreatmentsData = [
     id: crypto.randomUUID(),
     title: 'treatmentBox.treatments.muscleRelaxation.title',
     image: MuscleRelaxation,
+    altText: 'treatmentBox.treatments.muscleRelaxation.altText',
     paragraphs: [
       'treatmentBox.treatments.muscleRelaxation.paragraph1',
-      //  'treatmentBox.treatments.muscleRelaxation.paragraph2',
-      'treatmentBox.treatments.muscleRelaxation.paragraph3'
+      'treatmentBox.treatments.muscleRelaxation.paragraph2'
     ],
-    ariaLabel: 'treatmentBox.treatments.muscleRelaxation.ariaLabel',
+    linkText: 'treatmentBox.treatments.muscleRelaxation.linkText',
     linkHref: '/hud-och-injektioner',
     bgPosition: BgPositions['bottom-left'],
     bgColor: BgColors.Green
