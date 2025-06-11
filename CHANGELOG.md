@@ -1,3 +1,21 @@
+# [1.15.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.14.0...v1.15.0-beta.1) (2025-06-11)
+
+
+### Bug Fixes
+
+* remove duplicate import of JsonLd component ([006a06f](https://github.com/dahliakliniken/drgribbe/commit/006a06f1c768f9232af6bdfa4d31829cc442c4a7))
+* reorder paragraphs for clarity in skin and injection treatments ([342cfad](https://github.com/dahliakliniken/drgribbe/commit/342cfadd95949a104ab8f454196975c266955f71))
+* replace SimpleCard with Card component across multiple files ([29239f7](https://github.com/dahliakliniken/drgribbe/commit/29239f73285b81098b66f83eb97aecd7a4f88d99))
+* update muscle relaxation treatment paragraph for accuracy ([fee48f9](https://github.com/dahliakliniken/drgribbe/commit/fee48f97576e9c5d14e28ccb0ee2b59b3c8fa307))
+* update pre-commit script to use bash and npx for lint-staged ([7d13521](https://github.com/dahliakliniken/drgribbe/commit/7d13521c35c1115a125341fdaf93fda7fd128780))
+
+
+### Features
+
+* add husky and lint-staged configuration for pre-commit hooks ([f6a1bd5](https://github.com/dahliakliniken/drgribbe/commit/f6a1bd55de785925aac424fcb49203f1f7d351f0))
+* enhance testimonials and treatment data with alt text and link text updates ([d2c711f](https://github.com/dahliakliniken/drgribbe/commit/d2c711f531374cd626dc9510300e18fd01ca6389))
+* eseo improvements ([7b05d59](https://github.com/dahliakliniken/drgribbe/commit/7b05d59dcd82cf3520b048b77d2ac5d7ee7ef55e))
+
 # [1.14.0](https://github.com/dahliakliniken/drgribbe/compare/v1.13.1...v1.14.0) (2025-06-03)
 
 
