@@ -1,3 +1,10 @@
+# [1.15.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.15.0-beta.1...v1.15.0-beta.2) (2025-06-11)
+
+
+### Features
+
+* add structured data for medical procedures and improve layout in breast operation components ([9e649b0](https://github.com/dahliakliniken/drgribbe/commit/9e649b0e52c4855cd98b92f985b0e27484de30df))
+
 # [1.15.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.14.0...v1.15.0-beta.1) (2025-06-11)
 
 
