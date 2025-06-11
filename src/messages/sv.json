@@ -36,57 +36,63 @@
     "beforeAfter": "Före & efterbilder",
     "findUs": "Kontakt & besök"
   },
+  "testimonials": {
+    "title": "Vad våra patienter säger om sina bröstoperationer"
+  },
   "treatmentBox": {
-    "title": "Behandlingar",
+    "title": "Våra behandlingar inom estetisk bröstkirurgi",
     "treatments": {
       "breastReduction": {
         "title": "Bröstförminskning",
-        "paragraph1": "Många kvinnor lider av stor och tung byst.",
-        "paragraph2": "Operationen bröstförminskning är ett mycket tacksamt ingrepp där man precis som vid ett bröstlyft tar bort lös hud för att strama till bysten.",
-        "paragraph3": "Vid en bröstförminskning tas även mer eller mindre av den egna bröstvävnaden bort för att göra brösten mindre och nättare.",
-        "ariaLabel": "Läs mer om bröstförminskning"
+        "altText": "Illustration av bröstförminskning",
+        "paragraph1": "Många kvinnor upplever smärta och obehag på grund av en stor och tung byst.",
+        "paragraph2": "Vid en <strong>bröstförminskningsoperation</strong> tas en del av den egna bröstvävnaden bort för att göra brösten mindre, nättare och mer proportionerliga till kroppen. Vi skräddarsyr alltid ingreppet efter dina behov.",
+        "linkText": "Läs mer om bröstförminskning"
       },
       "breastEnlargement": {
         "title": "Bröstförstoring",
-        "paragraph1": "Vid en bröstförstoring lägger man in bröstimplantat för att återskapa eller öka volymen i brösten.",
-        "paragraph2": "Bröstimplantaten läggs i en ficka bakom eller framför stora bröstmuskeln och görs säkrast via ett snitt under brösten, en teknik som Dr Gribbe utvecklat och förfinat i drygt 15 år.",
-        "paragraph3": "Det finns många varianter och märken på bröstimplantat och vid konsultationen får du hjälp att välja.",
-        "ariaLabel": "Läs mer om bröstförstoring"
+        "altText": "Illustration av bröstimplantat vid bröstförstoring",
+        "paragraph1": "Vid en <strong>bröstförstoring</strong> placeras <strong>bröstimplantat</strong> för att öka eller återställa volymen i brösten.",
+        "paragraph2": "Vi använder <strong>implantat av högsta kvalitet</strong> från välkända tillverkare. Under konsultationen går vi tillsammans igenom form, storlek och placering.",
+        "linkText": "Läs mer om bröstförstoring"
       },
       "breastLift": {
         "title": "Bröstlyft",
-        "paragraph1": "Bröstlyft är en vanlig bröstoperation där hängande överskottshud tas bort, lös brösthud stramas till och bröstvårtorna flyttas upp.",
-        "paragraph2": "Vanligtvis förminskas också vårtgårdarna vid ett bröstlyft.",
-        "paragraph3": "Vid operationen läggs, precis som vid en bröstförstoring oftast även bröstimplantat in för att återskapa volym upptill i dekolletaget.",
-        "ariaLabel": "Läs mer om bröstlyft"
+        "altText": "Illustration av bröstlyft",
+        "paragraph1": "<strong>Bröstlyft</strong> är en vanlig <strong>bröstoperation</strong> som återställer en fastare form genom att ta bort överskottshud, strama åt bröstvävnaden och lyfta <strong>bröstvårtan</strong>.",
+        "paragraph2": "För dig som vill ha mer volym upptill kan <strong>bröstimplantat</strong> kombineras med bröstlyftet för ett fylligare dekolletage.",
+        "linkText": "Läs mer om bröstlyft"
       },
       "muscleRelaxation": {
         "title": "Hud & injektioner",
-        "paragraph1": "Genom att med mycket tunn nål injicera muskelavslappnande läkemedel kan man få muskler att slappna av och rynkor att försvinna eller minska.",
-        "paragraph2": "Effekten av läkemedlet kommer efter ca en vecka och varar i 3-6 månader. Inför behandlingen pratar du med dr Gribbe som gör en noggrann analys av dina önskemål och förutsättningar.",
-        "paragraph3": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
-        "ariaLabel": "Läs mer om muskelavslappnande behandling"
+        "altText": "Dekorativ ikon som symboliserar hud- och injektionsbehandlingar",
+        "paragraph1": "<strong>Muskelavslappnande behandling</strong> är en vanlig metod inom <strong>estetiska injektioner</strong> för att reducera rynkor. Med en tunn nål injiceras läkemedlet som får ansiktsmusklerna att slappna av.",
+        "paragraph2": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
+        "paragraph3": "Effekten syns efter cirka en vecka och varar i 3–6 månader. Dr Gribbe erbjuder en personlig konsultation inför behandlingen.",
+        "linkText": "Läs mer om hud & injektioner"
       },
       "beforeAndAfter": {
         "title": "Före & efterbilder",
+        "altText": "Dekorativ ikon som symboliserar före- och efterbilder",
         "paragraph1": "Se före- och efterbilder på patienter opererade av Dr Gribbe.",
         "paragraph2": "Lorem ispum dolor sit amet, consectetur adipiscing elit.",
-        "ariaLabel": "Se före och efter-bilder"
+        "linkText": "Se före- och efterbilder"
       }
     }
   },
   "aboutBox": {
-    "title": "Bröstoperationer i Stockholm",
-    "paragraph1": "Vi finns i Stockholm och tar emot patienter på vår mottagning som ligger på Kungsholmen.",
-    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer.  Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning och kombinerade ingrepp med implantat. Vi använder oss av de senaste teknikerna och material av högsta kvalitet för att säkerställa att du får bästa möjliga resultat."
+    "title": "Bröstoperationer i Stockholm  <span><strong>Bröstförstoring</strong>, <strong>Bröstlyft</strong> & <strong>Bröstförminskning</strong> hos Dahliakliniken</span>",
+    "newClinicName": "<strong>Dr Örjan Gribbe</strong> lanserar nytt kliniknamn: <strong>Dahliakliniken</strong>.",
+    "welcomeMessage": "Välkommen till en klinik i <strong>centrala Stockholm</strong>, helt specialiserad på <strong>estetisk bröstkirurgi</strong>. Vår mottagning ligger på <strong>Kungsholmen</strong> och vi tar emot patienter från hela Sverige.",
+    "paragraph1": "All personal är <strong>specialistutbildad</strong> med flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Vi erbjuder ett brett utbud av <strong>bröstoperationer i Stockholm</strong> – inklusive <strong>bröstförstoring</strong>, <strong>bröstlyft</strong>, <strong>bröstförminskning</strong> och kombinerade ingrepp med implantat. Vi använder de senaste teknikerna och <strong>material av högsta kvalitet</strong> för att ge dig bästa möjliga resultat."
   },
   "operationDepartment": {
-    "title": "Dahliaklinikens operationsavdelning",
-    "text1": "Vi värnar om din hälsa och ditt välbefinnande.",
-    "text2": "För oss är det viktigt med en vilsam och lugn miljö så att du som besökare får bästa möjliga upplevelse vid ditt besök. Detta har vi haft i åtanke vid utformningen av kliniken och val av operationsavdelning.",
-    "text3": "Dahliakliniken har en operationsavdelning som håller mycket hög standard. Den är avskild från mottagningen och ligger på ett eget våningsplan med tillträde enbart för patienter och personal.",
-    "text4": "Operationssalarna är utrustade för att hålla högsta nivå med avseende på samtliga väsentliga kvalitetsparametrar. Utrustningen som används är ny, modern och högteknologisk. Renlighet och sterilitet är oerhört väsentligt för att en operationsavdelning ska vara patientsäker och salarna är därför utrustade med en särskild ventilation som tillför en hög grad av sterilitet och ren luft vilket förebygger risken för infektioner. Operationssalarnas inredning följer socialstyrelsens riktlinjer och gällande EU-regler. Därutöver är verksamheten och operationsavdelningen ISO-certifierad vilket innebär att vi uppfyller internationella kvalitets- och miljökrav.",
-    "text5": "Vår operationsavdelning har en avancerad steril med förstklassig utrustning. Den har separata renrum avsedda för rengöring och sterilisering av instrument dvs- icke-steriliserade och steriliserade verktyg, tvätt och övrigt separeras från varandra. Allt detta medför att operationsavdelningen håller en hög nivå avseende sterilitet och renlighet."
+    "title": "Trygg och modern <strong>operationsavdelning</strong> i centrala Stockholm",
+    "text1": "Vi värnar om din <strong>hälsa</strong> och ditt <strong>välbefinnande</strong>.",
+    "text2": "För oss är det viktigt med en vilsam och lugn miljö så att du som besökare får bästa möjliga upplevelse vid ditt besök. Detta har vi haft i åtanke vid utformningen av kliniken och val av <strong>operationsavdelning</strong>.",
+    "text3": "Dahliakliniken har en <strong>operationsavdelning</strong> som håller mycket hög standard. Den är avskild från mottagningen och ligger på ett eget våningsplan med tillträde enbart för patienter och personal.",
+    "text4": "Operationssalarna är utrustade för att hålla högsta nivå med avseende på samtliga väsentliga kvalitetsparametrar. Utrustningen som används är ny, modern och högteknologisk. Renlighet och sterilitet är oerhört väsentligt för att en <strong>operationsavdelning</strong> ska vara patientsäker. Salarna är därför utrustade med en särskild ventilation som tillför en hög grad av sterilitet och ren luft, vilket förebygger risken för infektioner. Operationssalarnas inredning följer Socialstyrelsens riktlinjer och gällande EU-regler. Därutöver är verksamheten och <strong>operationsavdelningen</strong> ISO-certifierad, vilket innebär att vi uppfyller internationella kvalitets- och miljökrav.",
+    "text5": "Vår <strong>operationsavdelning</strong> har en avancerad steril med förstklassig utrustning. Den har separata renrum avsedda för rengöring och sterilisering av instrument, dvs. icke-steriliserade och steriliserade verktyg, tvätt och övrigt separeras från varandra. Allt detta medför att <strong>operationsavdelningen</strong> håller en hög nivå avseende sterilitet och renlighet."
   },
   "profileCard": {
     "title": "Specialist på bröstoperationer",
@@ -98,12 +104,14 @@
     "paragraph3": "Med Dr Gribbe vid din sida kan du känna dig trygg genom hela processen. Oavsett om du drömmer om diskreta och eleganta bröst, en minskning för att skapa en nättare siluett, eller en förstoring för en fylligare form, kommer Dr Gribbe och hans erfarna team att hjälpa dig nå ditt önskade resultat."
   },
   "aboutClinic": {
-    "title": "Om Kliniken",
+    "title": "Om <strong>Dahliakliniken</strong> – erfaren <strong>bröstkirurg i Stockholm</strong>",
     "readMore": "Läs mer om vår hållbarhetsfilosofi",
-    "ourphilosophy": "Dahliaklinikens hållbarhets och prissättningsfilosofi",
-    "paragraph1": "Dahliakliniken är en nyetablerad klinik lanserad av Dr Örjan Gribbe som har en omfattande erfarenhet av plastikkirurgi, specialiserad inom såväl rekonstruktiv som estetisk kirurgi. Kliniken är Sveriges enda klinik specialiserad på estetiska bröstoperationer av alla slag, såväl bröstförstoring som bröstlyft, bröstförminskning, kombinerade ingrepp med bröstimplantat m.m. Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, med hjälp av sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
-    "paragraph2": "All personal är specialistutbildad och har flerårig erfarenhet inom sin specialitet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Kliniken ligger i nyrenoverade lokaler med operationssalar med toppmodern utrustning. Vi använder oss av de senaste teknikerna och material och kirurgiska instrument av mycket hög kvalitet för att säkerställa att patienten får bästa möjliga resultat. Det ger plastikkirurgen hög precision och tillförlitlighet och möjliggör kirurgisk perfektion. .Allt i linje med klinikens strävan. Fokus är att öka kvinnors livskvalité och förändra deras kroppsuppfattning genom att förändra brösten på ett sätt som de ofta drömt om länge. Såväl tidigare patienter som nya välkomnas!",
-    "paragraph3": "En stabil klinik som håller i längden. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär."
+    "ourPhilosophy": "Dahliaklinikens <strong>hållbarhets- och prissättningsfilosofi</strong>",
+    "paragraph1": "<strong>Dahliakliniken</strong> är en nyetablerad plastikkirurgisk klinik i Stockholm, grundad av <strong>Dr Örjan Gribbe</strong>, en erfaren och specialiserad <strong>plastikkirurg</strong> med inriktning på både <strong>rekonstruktiv</strong> och <strong>estetisk kirurgi</strong>. Kliniken är <strong>Sveriges enda klinik</strong> som fokuserar uteslutande på <strong>estetiska bröstoperationer</strong> i alla former, inklusive <strong>bröstförstoring</strong>, <strong>bröstlyft</strong>, <strong>bröstförminskning</strong> och kombinerade ingrepp med bröstimplantat.",
+    "paragraph2": "Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, med hjälp av sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
+    "paragraph3": "All personal på Dahliakliniken är <strong>specialistutbildad</strong> och har mångårig erfarenhet inom sin respektive specialitet, vilket garanterar <strong>trygghet</strong> och <strong>säkerhet</strong> med minimal risk för komplikationer. Kliniken är belägen i nyrenoverade lokaler med <strong>operationssalar utrustade med toppmodern teknik</strong>. Vi använder endast de senaste och bästa materialen och kirurgiska instrumenten för att säkerställa <strong>optimerade resultat</strong> och hög precision i varje ingrepp.",
+    "paragraph4": "Vår mission är att <strong>höja kvinnors livskvalitet</strong> genom att förändra deras kroppsuppfattning på det sätt de drömt om, med hjälp av <strong>skicklig bröstkirurgi</strong>. Vi välkomnar både nya och tidigare patienter till en trygg och personlig vårdupplevelse.",
+    "paragraph5": "Vi är en <strong>stabil klinik med långsiktigt fokus</strong>. Med över 17 års erfarenhet av privat plastikkirurgisk vård vet vi vad det innebär att leverera <strong>hållbara och rättvisa priser</strong> utan att kompromissa på kvalitet eller säkerhet."
   },
   "ourphilosophy": {
     "heading": "Dahliaklinikens filosofi",

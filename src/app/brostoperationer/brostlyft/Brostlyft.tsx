@@ -16,8 +16,9 @@ import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
+import { Card } from '@/app/components/surfaces/Card'
+import { JsonLd } from '@/app/components/surfaces/JsonLd'
 import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
-import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
@@ -31,9 +32,30 @@ import { useAccordionData } from './accordionData'
 const Brostlyft = () => {
   const t = useTranslations('brostlyft')
   const [faqAccordion] = useAccordionData()
+
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalProcedure',
+    name: 'Bröstlyft i Stockholm - Dahliakliniken',
+    description:
+      'Om brösthuden är lös och hänger kan den ofta fyllas ut med bröstimplantat på ett estetiskt vackert sätt. Här kan du läsa om hur ett bröstlyft går till.',
+    image: 'https://www.dahliakliniken.se/images/_N3A7179.jpg',
+    procedureType: 'Bröstlyft',
+    medicalSpecialty: 'PlasticSurgery',
+    potentialAction: {
+      '@type': 'Action',
+      name: 'Boka en konsultation för bröstlyft',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.dahliakliniken.se/boka'
+      }
+    }
+  }
+
   return (
     <>
-      <SimpleCard
+      <JsonLd data={schemaData} />
+      <Card
         bgColor={BgColors.Green}
         bgPosition="left"
         content={
@@ -52,7 +74,7 @@ const Brostlyft = () => {
           </Pillar>
         }
       />
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="right"
         content={
@@ -159,7 +181,7 @@ const Brostlyft = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -188,7 +210,7 @@ const Brostlyft = () => {
         </Pillar>
       </SpaceContainer>
       {/*       <SpaceContainer spaceVertically noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Green}
           bgPosition="right"
           content={
@@ -206,7 +228,7 @@ const Brostlyft = () => {
         />
       </SpaceContainer> */}
       <SpaceContainer noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={

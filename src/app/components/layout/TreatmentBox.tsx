@@ -4,8 +4,8 @@ import React from 'react'
 
 import { BgColors, BgPositions } from '@/app/types'
 
+import { Card } from '../surfaces/Card'
 import { CardRow } from '../surfaces/CardRow'
-import { SimpleCard } from '../surfaces/SimpleCard'
 import { A } from '../typography/A'
 import { H3 } from '../typography/H3'
 import { P } from '../typography/P'
@@ -16,7 +16,9 @@ type TreatmentBoxProps = {
     title: string
     paragraphs: string[]
     image: string
+    altText: string
     linkHref: string
+    linkText: string
     bgPosition?: keyof typeof BgPositions
     bgColor: BgColors
   }[]
@@ -28,7 +30,7 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
   return (
     <CardRow>
       {treatments.map((treatment) => (
-        <SimpleCard
+        <Card
           clickable
           rounded
           cardList
@@ -43,24 +45,24 @@ export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
               <Image
                 className="m-auto my-6"
                 src={treatment.image}
-                alt={''}
+                alt={t(treatment.altText)}
                 height={125}
-                aria-hidden={true}
               />
               {treatment.paragraphs.map((paragraph, index) => (
                 <P small white key={`${treatment.id}-${index}`}>
-                  {t(paragraph)}
+                  {t.rich(paragraph, {
+                    strong: (chunks) => <strong>{chunks}</strong>
+                  })}
                 </P>
               ))}
               <A
                 overlay
                 className="mt-auto mr-auto"
                 href={treatment.linkHref}
-                aria-labelledby={`treatment-title-${treatment.id}`}
                 white
                 small
               >
-                {t('common.readMore')}
+                {t(treatment.linkText)}
               </A>
             </div>
           }

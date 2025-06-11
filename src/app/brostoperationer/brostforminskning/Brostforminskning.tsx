@@ -5,7 +5,8 @@ import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
-import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
+import { Card } from '@/app/components/surfaces/Card'
+import { JsonLd } from '@/app/components/surfaces/JsonLd'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
@@ -21,9 +22,29 @@ const Brostforminskning = () => {
   const t = useTranslations('brostforminskning')
   const [faqItems] = useAccordionData()
 
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalProcedure',
+    name: 'Bröstförminskning i Stockholm - Dahliakliniken',
+    description:
+      'Om den egna bysten är stor och tung kan brösten minskas genom en bröstförminskning. Operationen är mycket lik operationen bröstlyft med skillnaden att mer eller mindre egen bröstvävnad tas bort.',
+    image: 'https://www.dahliakliniken.se/images/_N3A7302.jpg',
+    procedureType: 'Bröstförminskning',
+    medicalSpecialty: 'PlasticSurgery',
+    potentialAction: {
+      '@type': 'Action',
+      name: 'Boka en konsultation för bröstförminskning',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.dahliakliniken.se/boka'
+      }
+    }
+  }
+
   return (
     <>
-      <SimpleCard
+      <JsonLd data={schemaData} />
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -34,7 +55,7 @@ const Brostforminskning = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="left"
         content={
@@ -68,7 +89,7 @@ const Brostforminskning = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -95,7 +116,7 @@ const Brostforminskning = () => {
           <P>{t('consultation.text5')}</P>
         </Pillar>
       </SpaceContainer>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -128,7 +149,7 @@ const Brostforminskning = () => {
         }
       />
       {/*       <SpaceContainer spaceVertically noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Green}
           bgPosition="right"
           content={
@@ -146,7 +167,7 @@ const Brostforminskning = () => {
         />
       </SpaceContainer> */}
       <SpaceContainer noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={

@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import { Pillar } from '@/app/components/layout/Pillar'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
-import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
+import { Card } from '@/app/components/surfaces/Card'
 import { AnchorLink } from '@/app/components/typography/AnchorLink'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
@@ -31,7 +31,7 @@ const Implantaten = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -51,7 +51,7 @@ const Implantaten = () => {
           />
         </Pillar>
 
-        <SimpleCard
+        <Card
           bgColor={BgColors.White}
           bgPosition="left-top"
           content={
@@ -62,11 +62,11 @@ const Implantaten = () => {
           }
         />
 
-        <SimpleCard
+        <Card
           bgColor={BgColors.White}
           bgPosition="right"
           content={
-            <Pillar>
+            <Pillar noPadding>
               <P>
                 {t.rich('implantaten.readMore', {
                   link: (chunks) => (
@@ -95,24 +95,22 @@ const Implantaten = () => {
         />
 
         <Pillar>
-          <div className="relative">
-            <div className="absolute top-1/4 w-full text-center">
-              {'Ett runt och ett anatomiskt implantat'}
-            </div>
-            <Image
-              src={ImplantatVariansImage}
-              alt={t('altText.brostoperationerDayOfSurgery')}
-              className="max-h-svh object-cover object-center"
-            />
-          </div>
+          <P className="text-center">
+            {'Ett runt och ett anatomiskt implantat'}
+          </P>
+          <Image
+            src={ImplantatVariansImage}
+            alt={t('altText.brostoperationerDayOfSurgery')}
+            className="max-h-svh object-cover object-center"
+          />
         </Pillar>
 
-        <SimpleCard
+        <Card
           bgColor={BgColors.White}
           bgPosition="left"
           content={
-            <Pillar>
-              <SpaceContainer noPadding spaceTop id="anatomiska-implantat">
+            <Pillar noPadding>
+              <SpaceContainer noPadding id="anatomiska-implantat">
                 <H2>{t('implantaten.anatomic')}</H2>
                 <Accordion items={accordion4Items} />
               </SpaceContainer>
