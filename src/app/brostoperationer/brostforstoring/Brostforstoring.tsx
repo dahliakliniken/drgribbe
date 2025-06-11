@@ -17,6 +17,7 @@ import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
 import { Card } from '@/app/components/surfaces/Card'
+import { JsonLd } from '@/app/components/surfaces/JsonLd'
 import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
@@ -32,8 +33,29 @@ const Brostforstoring = () => {
   const t = useTranslations('brostforstoring')
   const [teknikAccordion, faqAccordion] = useAccordionData()
 
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalProcedure',
+    name: 'Bröstförstoring i Stockholm - Dahliakliniken',
+    description:
+      'Brösten är för de flesta kvinnor mycket viktiga. De representerar kvinnlighet, skönhet och symboliserar fruktbarhet. Här kan du läsa om hur processen för bröstförstoring går till.',
+    image: 'https://www.dahliakliniken.se/images/_N3A7297.jpg',
+    procedureType: 'Bröstförstoring',
+    medicalSpecialty: 'PlasticSurgery',
+    url: 'https://www.dahliakliniken.se/brostoperationer/brostforstoring',
+    potentialAction: {
+      '@type': 'Action',
+      name: 'Boka konsultation för bröstförstoring',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.dahliakliniken.se/boka'
+      }
+    }
+  }
+
   return (
     <>
+      <JsonLd data={schemaData} />
       <Card
         bgColor={BgColors.Green}
         bgPosition="right"

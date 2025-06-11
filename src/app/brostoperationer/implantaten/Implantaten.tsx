@@ -66,7 +66,7 @@ const Implantaten = () => {
           bgColor={BgColors.White}
           bgPosition="right"
           content={
-            <Pillar>
+            <Pillar noPadding>
               <P>
                 {t.rich('implantaten.readMore', {
                   link: (chunks) => (
@@ -95,24 +95,22 @@ const Implantaten = () => {
         />
 
         <Pillar>
-          <div className="relative">
-            <div className="absolute top-1/4 w-full text-center">
-              {'Ett runt och ett anatomiskt implantat'}
-            </div>
-            <Image
-              src={ImplantatVariansImage}
-              alt={t('altText.brostoperationerDayOfSurgery')}
-              className="max-h-svh object-cover object-center"
-            />
-          </div>
+          <P className="text-center">
+            {'Ett runt och ett anatomiskt implantat'}
+          </P>
+          <Image
+            src={ImplantatVariansImage}
+            alt={t('altText.brostoperationerDayOfSurgery')}
+            className="max-h-svh object-cover object-center"
+          />
         </Pillar>
 
         <Card
           bgColor={BgColors.White}
           bgPosition="left"
           content={
-            <Pillar>
-              <SpaceContainer noPadding spaceTop id="anatomiska-implantat">
+            <Pillar noPadding>
+              <SpaceContainer noPadding id="anatomiska-implantat">
                 <H2>{t('implantaten.anatomic')}</H2>
                 <Accordion items={accordion4Items} />
               </SpaceContainer>
