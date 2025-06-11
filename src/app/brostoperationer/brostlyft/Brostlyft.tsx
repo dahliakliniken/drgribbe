@@ -16,8 +16,8 @@ import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
+import { Card } from '@/app/components/surfaces/Card'
 import { QuickFacts } from '@/app/components/surfaces/QuickFacts'
-import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
@@ -33,7 +33,7 @@ const Brostlyft = () => {
   const [faqAccordion] = useAccordionData()
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="left"
         content={
@@ -52,7 +52,7 @@ const Brostlyft = () => {
           </Pillar>
         }
       />
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="right"
         content={
@@ -159,7 +159,7 @@ const Brostlyft = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -188,7 +188,7 @@ const Brostlyft = () => {
         </Pillar>
       </SpaceContainer>
       {/*       <SpaceContainer spaceVertically noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Green}
           bgPosition="right"
           content={
@@ -206,7 +206,7 @@ const Brostlyft = () => {
         />
       </SpaceContainer> */}
       <SpaceContainer noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={

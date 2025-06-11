@@ -12,8 +12,8 @@ import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { TreatmentBox } from '../components/layout/TreatmentBox'
 import { Accordion } from '../components/surfaces/Accordion'
+import { Card } from '../components/surfaces/Card'
 import { ExpandableTextBox } from '../components/surfaces/ExpandableTextBox'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { A } from '../components/typography/A'
 import { AnchorLink } from '../components/typography/AnchorLink'
 import { H1 } from '../components/typography/H1'
@@ -87,7 +87,7 @@ const Brostoperationer = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -116,7 +116,7 @@ const Brostoperationer = () => {
       </SpaceContainer>
 
       <SpaceContainer spaceTop noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.White}
           bgPosition="right"
           content={
@@ -146,7 +146,7 @@ const Brostoperationer = () => {
             </Pillar>
           }
         />
-        <SimpleCard
+        <Card
           bgColor={BgColors.Green}
           bgPosition="left"
           content={
@@ -165,7 +165,7 @@ const Brostoperationer = () => {
       </SpaceContainer>
 
       {/* OPERATIONSDAGEN */}
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="right"
         content={
@@ -192,7 +192,7 @@ const Brostoperationer = () => {
       />
 
       {/* NARKOS&OPERATION */}
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="left"
         content={
@@ -213,7 +213,7 @@ const Brostoperationer = () => {
       />
 
       {/* EFTEROPERATION */}
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="right"
         content={
@@ -244,7 +244,7 @@ const Brostoperationer = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="left"
         content={
@@ -261,7 +261,7 @@ const Brostoperationer = () => {
         }
       />
       {/* FÖRSTAÅTERBESÖKET */}
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="right"
         content={
@@ -314,7 +314,7 @@ const Brostoperationer = () => {
           </SpaceContainer>
         </Pillar>
       </SpaceContainer>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="left"
         content={

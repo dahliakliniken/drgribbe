@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { Accordion } from '../components/surfaces/Accordion'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
+import { Card } from '../components/surfaces/Card'
 import { H1 } from '../components/typography/H1'
 import { H2 } from '../components/typography/H2'
 import { P } from '../components/typography/P'
@@ -16,7 +16,7 @@ const PersonuppgiftsPolicy = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Coral}
         className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={

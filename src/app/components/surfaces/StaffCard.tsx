@@ -10,7 +10,7 @@ import { BgColors } from '@/app/types'
 import { Pillar } from '../layout/Pillar'
 import { H2 } from '../typography/H2'
 import { P } from '../typography/P'
-import { SimpleCard } from './SimpleCard'
+import { Card } from './Card'
 
 export type Staff = {
   id: string
@@ -32,7 +32,7 @@ export const StaffCard = ({ member }: StaffCardProps) => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         className="overflow-hidden"
         bgColor={BgColors.Coral}
         bgPosition="right"
@@ -60,7 +60,7 @@ export const StaffCard = ({ member }: StaffCardProps) => {
             {hasDescription && (
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="absolute bottom-2 right-2 p-2 text-white/80 transition-colors hover:text-white"
+                className="absolute right-2 bottom-2 p-2 text-white/80 transition-colors hover:text-white"
                 aria-expanded={isExpanded}
                 aria-label={
                   isExpanded
@@ -82,7 +82,7 @@ export const StaffCard = ({ member }: StaffCardProps) => {
       {hasDescription && (
         <div
           className={classNames(
-            'absolute left-0 right-0 top-full z-50 mt-1 rounded-lg bg-coral p-6 shadow-lg transition-all duration-300 ease-in-out',
+            'bg-coral absolute top-full right-0 left-0 z-50 mt-1 rounded-lg p-6 shadow-lg transition-all duration-300 ease-in-out',
             isExpanded
               ? 'translate-y-0 opacity-100'
               : 'pointer-events-none -translate-y-4 opacity-0'

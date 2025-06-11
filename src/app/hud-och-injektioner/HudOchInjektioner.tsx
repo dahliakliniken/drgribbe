@@ -5,7 +5,7 @@ import Botoxface from '../../../public/images/ansiktsmuskler.jpeg'
 import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { Accordion } from '../components/surfaces/Accordion'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
+import { Card } from '../components/surfaces/Card'
 import { H1 } from '../components/typography/H1'
 import { H2 } from '../components/typography/H2'
 import { P } from '../components/typography/P'
@@ -18,7 +18,7 @@ const HudOchInjektioner = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Coral}
         bgPosition="right"
         content={
@@ -65,7 +65,7 @@ const HudOchInjektioner = () => {
           <P>{t('hudochinjektioner.effect.text1')}</P>
         </Pillar>
       </SpaceContainer>
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="left-top"
         content={

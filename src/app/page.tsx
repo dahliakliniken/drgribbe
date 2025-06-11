@@ -9,9 +9,9 @@ import WaitingRoom from '../../public/images/N3A7746_edited.png'
 import { Pillar } from './components/layout/Pillar'
 import { SpaceContainer } from './components/layout/SpaceContainer'
 import { TreatmentBox } from './components/layout/TreatmentBox'
+import { Card } from './components/surfaces/Card'
 import { Hero } from './components/surfaces/Hero'
 import { JsonLd } from './components/surfaces/JsonLd'
-import { SimpleCard } from './components/surfaces/SimpleCard'
 import Testimonials from './components/surfaces/Testimonial'
 import { A } from './components/typography/A'
 import { H1 } from './components/typography/H1'
@@ -67,7 +67,7 @@ export default async function Home() {
     <>
       <JsonLd data={schemaData} />
       <Hero />
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="right"
         content={
@@ -75,6 +75,9 @@ export default async function Home() {
             <SpaceContainer>
               <H1>
                 {t.rich('aboutBox.title', {
+                  span: (chunks) => (
+                    <span className="block text-lg">{chunks}</span>
+                  ),
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </H1>
@@ -120,7 +123,7 @@ export default async function Home() {
       </SpaceContainer>
 
       <SpaceContainer noPadding spaceTop>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Beige}
           className="before:bg-[50%_30%]"
           content={
@@ -139,7 +142,7 @@ export default async function Home() {
       </SpaceContainer>
 
       {/* About Section */}
-      <SimpleCard
+      <Card
         id="om-kliniken"
         className="before:[background-size:500%] before:bg-[30%_40%]"
         bgColor={BgColors.White}
@@ -203,7 +206,7 @@ export default async function Home() {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.Coral}
         bgPosition="right"
         content={
@@ -253,7 +256,7 @@ export default async function Home() {
       </Pillar>
 
       <SpaceContainer noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={

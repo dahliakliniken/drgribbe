@@ -1,11 +1,11 @@
-import { Car, Mail,MapPin, Phone, Train } from 'lucide-react'
+import { Car, Mail, MapPin, Phone, Train } from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 import locationImage from '../../../public/images/Wonna_Tower_IMG_7027.png'
 import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
+import { Card } from '../components/surfaces/Card'
 import { H1 } from '../components/typography/H1'
 import { H2 } from '../components/typography/H2'
 import { P } from '../components/typography/P'
@@ -13,10 +13,10 @@ import { BgColors } from '../types'
 
 const KontaktOchBesok = () => {
   const t = useTranslations()
-  let emailIndex = 0;
+  let emailIndex = 0
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Coral}
         className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
@@ -56,12 +56,16 @@ const KontaktOchBesok = () => {
                   <P>
                     {t.rich('kontaktOchBesok.contactEmail', {
                       email: (chunks) => {
-                        const email = String(chunks).trim(); // Ensure chunks is a string
+                        const email = String(chunks).trim() // Ensure chunks is a string
                         return (
-                          <a className="block" href={`mailto:${email}`} key={emailIndex++}>
+                          <a
+                            className="block"
+                            href={`mailto:${email}`}
+                            key={emailIndex++}
+                          >
                             {email}
                           </a>
-                        );
+                        )
                       }
                     })}
                   </P>
