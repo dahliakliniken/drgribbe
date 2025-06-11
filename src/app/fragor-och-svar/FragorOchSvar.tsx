@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import { Pillar } from '../components/layout/Pillar'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
 import { Accordion } from '../components/surfaces/Accordion'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
+import { Card } from '../components/surfaces/Card'
 import { A } from '../components/typography/A'
 import { H1 } from '../components/typography/H1'
 import { H2 } from '../components/typography/H2'
@@ -18,7 +18,7 @@ const FragorOchSvar = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Beige}
         className="before:[background-size:500%] before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
@@ -35,7 +35,7 @@ const FragorOchSvar = () => {
           <Accordion outLine items={faqItems} />
         </Pillar>
       </SpaceContainer>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Beige}
         className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={

@@ -5,7 +5,7 @@ import { Pillar } from '@/app/components/layout/Pillar'
 import { Section } from '@/app/components/layout/Section'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
 import { Accordion } from '@/app/components/surfaces/Accordion'
-import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
+import { Card } from '@/app/components/surfaces/Card'
 import { A } from '@/app/components/typography/A'
 import { H1 } from '@/app/components/typography/H1'
 import { H2 } from '@/app/components/typography/H2'
@@ -23,7 +23,7 @@ const Brostforminskning = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -34,7 +34,7 @@ const Brostforminskning = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="left"
         content={
@@ -68,7 +68,7 @@ const Brostforminskning = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -95,7 +95,7 @@ const Brostforminskning = () => {
           <P>{t('consultation.text5')}</P>
         </Pillar>
       </SpaceContainer>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -128,7 +128,7 @@ const Brostforminskning = () => {
         }
       />
       {/*       <SpaceContainer spaceVertically noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Green}
           bgPosition="right"
           content={
@@ -146,7 +146,7 @@ const Brostforminskning = () => {
         />
       </SpaceContainer> */}
       <SpaceContainer noPadding>
-        <SimpleCard
+        <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={

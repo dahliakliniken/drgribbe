@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 
 import { BAImage } from '@/app/components/layout/beforeafterimages'
 import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
-import { SimpleCard } from '@/app/components/surfaces/SimpleCard'
+import { Card } from '@/app/components/surfaces/Card'
 import { A } from '@/app/components/typography/A'
 import { H3 } from '@/app/components/typography/H3'
 import { P } from '@/app/components/typography/P'
@@ -42,7 +42,7 @@ const ForeOchEfter = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="right"
         content={
@@ -55,7 +55,7 @@ const ForeOchEfter = () => {
       />
 
       {/* round before after       */}
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="right"
         content={
@@ -116,7 +116,7 @@ const ForeOchEfter = () => {
           </div>
         }
       />
-      <SimpleCard
+      <Card
         bgColor={BgColors.White}
         bgPosition="left"
         content={
@@ -141,7 +141,7 @@ const ForeOchEfter = () => {
         }
       />
 
-      <SimpleCard
+      <Card
         bgColor={BgColors.Green}
         bgPosition="left"
         content={

@@ -3,9 +3,9 @@ import { useTranslations } from 'next-intl'
 import { Pillar } from '../components/layout/Pillar'
 import { Section } from '../components/layout/Section'
 import { SpaceContainer } from '../components/layout/SpaceContainer'
+import { Card } from '../components/surfaces/Card'
 //import { Accordion } from '../components/surfaces/Accordion'
 import { Li } from '../components/surfaces/Li'
-import { SimpleCard } from '../components/surfaces/SimpleCard'
 import { Ul } from '../components/surfaces/Ul'
 import { A } from '../components/typography/A'
 import { H1 } from '../components/typography/H1'
@@ -27,7 +27,7 @@ const Garanti = () => {
 
   return (
     <>
-      <SimpleCard
+      <Card
         fullWidth
         bgColor={BgColors.Coral}
         content={
@@ -67,7 +67,7 @@ const Garanti = () => {
         </Pillar>
       </SpaceContainer>
 
-      <SimpleCard
+      <Card
         id="phil"
         fullWidth
         bgColor={BgColors.Coral}
@@ -92,13 +92,13 @@ const Garanti = () => {
               <P white>{t('ourphilosophy.text4')}</P>
               <H2 white>{t('ourphilosophy.heading3')}</H2>
               <P white>{t('ourphilosophy.text5')}</P>
-            </SpaceContainer>            
+            </SpaceContainer>
           </Pillar>
         }
       />
 
-{/* 
-      <SimpleCard
+      {/* 
+      <Card
         id="complications"
         fullWidth
         bgColor={BgColors.White}
@@ -111,8 +111,8 @@ const Garanti = () => {
           </Pillar>          
         }
       /> */}
-         <SpaceContainer noPadding>
-        <SimpleCard
+      <SpaceContainer noPadding>
+        <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={
