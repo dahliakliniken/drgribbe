@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.0...v1.15.1) (2025-06-13)
+
+
+### Bug Fixes
+
+* update price for breast augmentation and implant exchange procedure ([255a0a1](https://github.com/dahliakliniken/drgribbe/commit/255a0a1b1a59d30309d772754b9af17266f6373b))
+
 ## [1.15.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.0...v1.15.1-beta.1) (2025-06-13)
 
 
