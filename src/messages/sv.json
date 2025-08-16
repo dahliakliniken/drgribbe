@@ -654,10 +654,12 @@
       "heading": "Av- och ombokningsregler",
       "text1": "Avbokning av nybesök/konsultationstid ska ske senast 24 timmar innan bokad tid. Om avbokning görs senare debiteras en avgift för uteblivet besök om 500 kronor.",
       "text2": "Du har alltid möjlighet att av- eller omboka din operation men detta måste enligt ovan ske minst 21 dagar (3 veckor) innan avtalad operationstid för att vara kostnadsfri.",
+      "text8": "Nybesök/konsultationstider är kostnadsfria. Ytterligare konsultationer 'återbesök inför operation' är också kostnadsfria för det fall operation bokas och genomförs, annars debiteras dessa besök 500 kr per tillfälle.",
       "text3": "Avbokning ska ske muntligen per telefon.",
-      "text4": "Vid avbokning av operationstid senare än 16 dagar innan operationsdagen debiterar vi enligt följande:",
+      "text4": "Vid avbokning av operationstid senare än 21 dagar innan operationsdagen debiterar vi enligt följande:",
       "text5": "Vid av-ombokning som sker 7-16 dagar innan avtalad operationstid debiteras 50 procent av operationskostnaden.",
-      "text6": "Vid av-ombokning som sker 2-7 dagar innan avtalad operationstid debiteras 75 procent."
+      "text6": "Vid av-ombokning som sker 2-7 dagar innan avtalad operationstid debiteras 75 procent.",
+      "text7": "Vid av-ombokning som sker 21-16 dagar innan avtalad operationstid debiteras 25 procent av operationskostnaden."
     },
     "financing": {
       "heading": "Finansiering och delbetalning",
@@ -1303,7 +1305,7 @@
     "preamble": "Nedan hittar du all information du behöver för att nå oss eller besöka vår klinik.",
     "heading": "Kungsholmen",
     "contact": "Kontakta oss",
-    "contactEmail": "Email: <email>info@dahliakliniken.se</email><email>gribbe@dahliakliniken.se</email>",
+    "contactEmail": "Email: <email>info@dahliakliniken.se</email>",
     "contactPhone": "Telefon: <phone>08- 520 278 78</phone>",
     "address": "Sankt Göransgatan 126, mittemot Sankt Görans sjukhus",
     "addressDetails": "Vår mottagning ligger på plan1 i Wonna Tower.",
