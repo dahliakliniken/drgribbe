@@ -43,7 +43,7 @@ Here are the available scripts for this project:
 - `pnpm dev`: Starts the development server at `localhost:3000`.
 - `pnpm build`: Builds the project for production.
 - `pnpm start`: Starts the production server after a build.
-- `pnpm lint`: Runs ESLint for code linting.
+- `pnpm lint`: Runs ESLint for code linting
 
 ## Project Structure
 
