@@ -1,3 +1,11 @@
+# [1.16.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.16.0-beta.1...v1.16.0-beta.2) (2025-08-18)
+
+
+### Bug Fixes
+
+* allow Stripe fonts in Content Security Policy ([e0f2e16](https://github.com/dahliakliniken/drgribbe/commit/e0f2e162e9e67770273c998cdea37e1f9dd797d2))
+* remove trailing period from lint script description in README ([cffbf1d](https://github.com/dahliakliniken/drgribbe/commit/cffbf1d9d970efabc9790d4208b4b60bf6a9958c))
+
 # [1.16.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.1...v1.16.0-beta.1) (2025-08-18)
 
 
