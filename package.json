@@ -29,7 +29,7 @@
     "@semantic-release/github": "11.0.4",
     "@tailwindcss/postcss": "4.1.12",
     "@types/js-cookie": "3.0.6",
-    "@types/node": "20.16.12",
+    "@types/node": "24.3.0",
     "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
     "eslint": "9.33.0",
@@ -46,7 +46,7 @@
     "semantic-release": "24.2.7",
     "tailwindcss": "4.1.12",
     "typescript": "5.9.2",
-    "typescript-eslint": "8.39.1"
+    "typescript-eslint": "8.40.0"
   },
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -78,12 +78,6 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ]
-  },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "19.0.10",
-      "@types/react-dom": "19.0.4"
-    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
