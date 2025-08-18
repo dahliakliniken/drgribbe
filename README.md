@@ -34,7 +34,7 @@ To get started with this project, ensure you have [pnpm](https://pnpm.io/) insta
    pnpm dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
 ## Scripts
 
@@ -43,7 +43,7 @@ Here are the available scripts for this project:
 - `pnpm dev`: Starts the development server at `localhost:3000`.
 - `pnpm build`: Builds the project for production.
 - `pnpm start`: Starts the production server after a build.
-- `pnpm lint`: Runs ESLint for code linting.
+- `pnpm lint`: Runs ESLint for code linting
 
 ## Project Structure
 
@@ -70,6 +70,14 @@ A high-level overview of the folder structure:
 └── tsconfig.json         # TypeScript configuration
 ```
 
+## Release Process
+
+This project uses [Semantic Release](https://semantic-release.gitbook.io/) for automated versioning and publishing:
+
+- **Production releases**: Merges to `main` branch trigger production releases
+- **Beta releases**: Merges to `develop` branch trigger pre-release versions
+- **Commit format**: Follow [Conventional Commits](https://conventionalcommits.org/) for proper versioning
+
 ## Technologies Used
 
 - [Next.js 14](https://nextjs.org/) - React framework for building web applications.
@@ -78,3 +86,4 @@ A high-level overview of the folder structure:
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
 - [ESLint](https://eslint.org/) - Linting tool for JavaScript/TypeScript.
 - [Prettier](https://prettier.io/) - Code formatting tool.
+- [Semantic Release](https://semantic-release.gitbook.io/) - Automated versioning and package publishing.

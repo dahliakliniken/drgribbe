@@ -26,6 +26,7 @@ export const useAccordionItems = () => {
       content: (
         <>
           <P small>{t('priser.cancellationRules.text1')}</P>
+          <P small>{t('priser.cancellationRules.text8')}</P>
           <P small>{t('priser.cancellationRules.text2')}</P>
           <P small className="mb-4 flex items-center gap-2 italic">
             <Phone className="h-5 w-5" />
@@ -33,8 +34,10 @@ export const useAccordionItems = () => {
           </P>
           <P small>{t('priser.cancellationRules.text4')}</P>
           <Ul>
+            <Li small>{t('priser.cancellationRules.text7')}</Li>
             <Li small>{t('priser.cancellationRules.text5')}</Li>
             <Li small>{t('priser.cancellationRules.text6')}</Li>
+            <Li small>{t('priser.cancellationRules.text9')}</Li>            
           </Ul>
         </>
       )
