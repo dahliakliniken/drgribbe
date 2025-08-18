@@ -36,7 +36,8 @@ export const useAccordionItems = () => {
           <Ul>
             <Li small>{t('priser.cancellationRules.text7')}</Li>
             <Li small>{t('priser.cancellationRules.text5')}</Li>
-            <Li small>{t('priser.cancellationRules.text6')}</Li>            
+            <Li small>{t('priser.cancellationRules.text6')}</Li>
+            <Li small>{t('priser.cancellationRules.text9')}</Li>            
           </Ul>
         </>
       )
