@@ -1,3 +1,10 @@
+# [1.16.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.1...v1.16.0-beta.1) (2025-08-18)
+
+
+### Features
+
+* dummy commit ([572ea8f](https://github.com/dahliakliniken/drgribbe/commit/572ea8fe8994220d1550ac0fabcdf984b85b4b4b))
+
 ## [1.15.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.0...v1.15.1) (2025-06-13)
 
 
