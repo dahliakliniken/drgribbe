@@ -34,7 +34,7 @@ To get started with this project, ensure you have [pnpm](https://pnpm.io/) insta
    pnpm dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
 ## Scripts
 
