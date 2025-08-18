@@ -70,6 +70,14 @@ A high-level overview of the folder structure:
 └── tsconfig.json         # TypeScript configuration
 ```
 
+## Release Process
+
+This project uses [Semantic Release](https://semantic-release.gitbook.io/) for automated versioning and publishing:
+
+- **Production releases**: Merges to `main` branch trigger production releases
+- **Beta releases**: Merges to `develop` branch trigger pre-release versions
+- **Commit format**: Follow [Conventional Commits](https://conventionalcommits.org/) for proper versioning
+
 ## Technologies Used
 
 - [Next.js 14](https://nextjs.org/) - React framework for building web applications.
@@ -78,3 +86,4 @@ A high-level overview of the folder structure:
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
 - [ESLint](https://eslint.org/) - Linting tool for JavaScript/TypeScript.
 - [Prettier](https://prettier.io/) - Code formatting tool.
+- [Semantic Release](https://semantic-release.gitbook.io/) - Automated versioning and package publishing.
