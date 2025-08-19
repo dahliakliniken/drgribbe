@@ -32,7 +32,10 @@ export async function POST(request: NextRequest) {
       ct.includes('application/csp-report') ||
       ct.includes('application/json')
     ) {
-      raw = await request.json().catch(() => undefined)
+      raw = await request.json().catch((err) => {
+        console.error('Error parsing JSON body:', err);
+        return undefined;
+      })
     } else {
       const text = await request.text().catch(() => '')
       try {
