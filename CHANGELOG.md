@@ -1,3 +1,10 @@
+## [1.17.2](https://github.com/dahliakliniken/drgribbe/compare/v1.17.1...v1.17.2) (2025-08-19)
+
+
+### Bug Fixes
+
+* add additional Google domain to CSP ([e0e47c6](https://github.com/dahliakliniken/drgribbe/commit/e0e47c67b2b8aa49cd509ce6cff7f43134a5439f))
+
 ## [1.17.1](https://github.com/dahliakliniken/drgribbe/compare/v1.17.0...v1.17.1) (2025-08-19)
 
 
