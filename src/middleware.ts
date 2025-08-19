@@ -62,7 +62,7 @@ export function middleware(request: NextRequest) {
       https://www.google.com
       https://*.google.com
       https://www.google.se
-  +   https://*.google.se
+      https://*.google.se
       https://www.google-analytics.com
       https://*.google-analytics.com
       https://analytics.google.com
