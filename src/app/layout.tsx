@@ -49,15 +49,15 @@ export default async function RootLayout({
       className={`${josefinSans.variable} ${ephesis.variable} lg:bg-beige`}
     >
       <body className={josefinSans.className}>
+        <GoogleTagManager
+          gtmId={process.env.NEXT_PUBLIC_GTM_ID!}
+          nonce={nonce}
+        />
         <NextIntlClientProvider messages={messages}>
           <HeaderWithFooter />
           <main className="mb-52 flex flex-col lg:mt-20 lg:mb-0">
             <Breadcrumbs />
             {children}
-            <GoogleTagManager
-              gtmId={process.env.NEXT_PUBLIC_GTM_ID!}
-              nonce={nonce}
-            />
           </main>
         </NextIntlClientProvider>
       </body>
