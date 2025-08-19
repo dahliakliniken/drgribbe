@@ -30,6 +30,8 @@ export function middleware(request: NextRequest) {
     style-src
       'self'
       'unsafe-inline'
+      https://www.googletagmanager.com
+      https://fonts.googleapis.com
       https://cookie-script.com
       https://*.cookie-script.com;
 
@@ -39,6 +41,7 @@ export function middleware(request: NextRequest) {
       blob:
       https://www.google-analytics.com
       https://www.googletagmanager.com
+      https://fonts.gstatic.com
       https://www.google.com
       https://*.google.com
       https://www.google.se
@@ -55,7 +58,7 @@ export function middleware(request: NextRequest) {
       https://cookie-script.com
       https://*.cookie-script.com;
 
-    font-src 'self';
+    font-src 'self' https://fonts.gstatic.com;
 
     connect-src
       'self'
