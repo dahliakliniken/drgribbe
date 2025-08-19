@@ -132,7 +132,9 @@ export function middleware(request: NextRequest) {
       `default="${origin}/api/csp-report"`
     )
   } catch {
+  } catch (err) {
     // Swallow any edge-case errors deriving origin (shouldn't happen in Next middleware)
+    console.warn('Error in CSP reporting headers:', err);
   }
   return response
 }
