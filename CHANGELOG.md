@@ -1,3 +1,15 @@
+# [1.17.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.16.0...v1.17.0-beta.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* improve error handling in CSP reporting headers ([d915211](https://github.com/dahliakliniken/drgribbe/commit/d915211d4c03d73b20fcd4933c79c8738beb2eb4))
+
+
+### Features
+
+* enhance CSP reporting and improve middleware structure ([637e098](https://github.com/dahliakliniken/drgribbe/commit/637e09866ee90e92825f9292c94896cacc10dc31))
+
 # [1.16.0](https://github.com/dahliakliniken/drgribbe/compare/v1.15.1...v1.16.0) (2025-08-18)
 
 
