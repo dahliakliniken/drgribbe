@@ -41,13 +41,17 @@ export function middleware(request: NextRequest) {
       https://www.googletagmanager.com
       https://www.google.com
       https://*.google.com
+      https://www.google.se
+      https://*.google.se
       https://www.facebook.com
       https://*.facebook.com
       https://connect.facebook.net
       https://stats.g.doubleclick.net
       https://*.doubleclick.net
       https://pagead2.googlesyndication.com
+      https://*.googlesyndication.com
       https://www.googleadservices.com
+      https://*.googleadservices.com
       https://cookie-script.com
       https://*.cookie-script.com;
 
@@ -57,6 +61,8 @@ export function middleware(request: NextRequest) {
       'self'
       https://www.google.com
       https://*.google.com
+      https://www.google.se
+  +   https://*.google.se
       https://www.google-analytics.com
       https://*.google-analytics.com
       https://analytics.google.com
@@ -67,7 +73,9 @@ export function middleware(request: NextRequest) {
       https://*.doubleclick.net
       https://td.doubleclick.net
       https://pagead2.googlesyndication.com
+      https://*.googlesyndication.com
       https://www.googleadservices.com
+      https://*.googleadservices.com
       https://tagassistant.google.com
       https://graph.facebook.com
       https://www.facebook.com
