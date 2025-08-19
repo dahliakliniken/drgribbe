@@ -18,6 +18,7 @@ function shouldLog(documentURL?: string) {
 
 function maskUrl(u: unknown): string | undefined {
   if (typeof u !== 'string') return undefined
+  // Remove query parameters and fragments from URLs for privacy
   return u.replace(/[?#].*$/, '')
 }
 
