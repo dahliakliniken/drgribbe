@@ -1,3 +1,10 @@
+## [1.17.3-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.17.2...v1.17.3-beta.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* update CSP to allow Google Tag Manager and Google Fonts ([42154c9](https://github.com/dahliakliniken/drgribbe/commit/42154c913ebf3ddf9ac0ab9ce79e7c403d541666))
+
 ## [1.17.2](https://github.com/dahliakliniken/drgribbe/compare/v1.17.1...v1.17.2) (2025-08-19)
 
 
