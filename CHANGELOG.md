@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/dahliakliniken/drgribbe/compare/v1.18.0...v1.18.1) (2025-09-03)
+
+
+### Bug Fixes
+
+* update logo URL in organization metadata ([93c024c](https://github.com/dahliakliniken/drgribbe/commit/93c024c0d6c6547b0c55319ef28c0d19c3bceefa))
+
 # [1.18.0](https://github.com/dahliakliniken/drgribbe/compare/v1.17.3...v1.18.0) (2025-09-03)
 
 
