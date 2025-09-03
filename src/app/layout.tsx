@@ -8,6 +8,8 @@ import { getLocale, getMessages } from 'next-intl/server'
 
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
+import { JsonLd } from './components/surfaces/JsonLd'
+import { SITE_URL } from './config/site'
 import { ephesis, josefinSans } from './fonts'
 
 export const metadata: Metadata = {
@@ -34,6 +36,22 @@ export const metadata: Metadata = {
   }
 }
 
+const org = {
+  '@id': `${SITE_URL}#organization`,
+  '@type': 'Organization',
+  name: 'Dahliakliniken',
+  url: SITE_URL,
+  logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.svg` }
+}
+
+const webSite = {
+  '@id': `${SITE_URL}#website`,
+  '@type': 'WebSite',
+  url: SITE_URL,
+  name: 'Dahliakliniken',
+  publisher: { '@id': `${SITE_URL}#organization` }
+}
+
 export default async function RootLayout({
   children
 }: {
@@ -48,6 +66,9 @@ export default async function RootLayout({
       lang={locale}
       className={`${josefinSans.variable} ${ephesis.variable} lg:bg-beige`}
     >
+      <JsonLd
+        data={{ '@context': 'https://schema.org', '@graph': [org, webSite] }}
+      />
       <body className={josefinSans.className}>
         <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GTM_ID!}
