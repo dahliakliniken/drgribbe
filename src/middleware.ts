@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64')
+  const isDev = process.env.NODE_ENV !== 'production'
 
   const cspHeader = `
     default-src 'self';
@@ -12,6 +13,7 @@ export function middleware(request: NextRequest) {
       'self'
       'nonce-${nonce}'
       'strict-dynamic'
+      ${isDev ? "'unsafe-eval'" : ''}
       https://www.google.com
       https://*.google.com
       https://www.googletagmanager.com
