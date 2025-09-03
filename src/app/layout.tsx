@@ -41,7 +41,7 @@ const org = {
   '@type': 'Organization',
   name: 'Dahliakliniken',
   url: SITE_URL,
-  logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.svg` }
+  logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.svg` }
 }
 
 const webSite = {
