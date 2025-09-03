@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 import { JsonLd } from '@/app/components/surfaces/JsonLd'
-import { canonicalUrl,SITE_URL } from '@/app/config/site'
+import { canonicalUrl, SITE_URL } from '@/app/config/site'
 
 import Brostoperationer from './Brostoperationer'
 
@@ -74,7 +74,7 @@ export default async function Page() {
             '@type': 'ListItem',
             position: 4,
             name: 'Före & efterbilder',
-            item: `${SITE_URL}/brostoperationer/fore-efterbilder`
+            item: `${SITE_URL}/brostoperationer/fore-och-efter`
           }
         ]
       },
