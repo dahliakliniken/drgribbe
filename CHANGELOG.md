@@ -1,3 +1,15 @@
+# [1.18.0](https://github.com/dahliakliniken/drgribbe/compare/v1.17.3...v1.18.0) (2025-09-03)
+
+
+### Bug Fixes
+
+* update URL for 'Före & efterbilder' in structured data ([6a27eb0](https://github.com/dahliakliniken/drgribbe/commit/6a27eb02913c4a77c730eed4168530ecb690ca83))
+
+
+### Features
+
+* implement structured data with JsonLd for various procedures ([b6c25bb](https://github.com/dahliakliniken/drgribbe/commit/b6c25bba4798ba5231098368871c23becb32ba39))
+
 # [1.18.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.17.3...v1.18.0-beta.1) (2025-09-03)
 
 
