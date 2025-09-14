@@ -1,3 +1,10 @@
+## [1.18.2](https://github.com/dahliakliniken/drgribbe/compare/v1.18.1...v1.18.2) (2025-09-14)
+
+
+### Bug Fixes
+
+* remove drug node ([743493a](https://github.com/dahliakliniken/drgribbe/commit/743493ada7d330fb0c3b1b0063e03763279b41a9))
+
 ## [1.18.1](https://github.com/dahliakliniken/drgribbe/compare/v1.18.0...v1.18.1) (2025-09-03)
 
 
