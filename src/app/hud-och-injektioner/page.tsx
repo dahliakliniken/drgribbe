@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 import { JsonLd } from '@/app/components/surfaces/JsonLd'
-import { canonicalUrl,SITE_URL } from '@/app/config/site'
+import { canonicalUrl, SITE_URL } from '@/app/config/site'
 
 import HudOchInjektioner from './HudOchInjektioner'
 
@@ -52,11 +52,6 @@ export default async function Page() {
           'Platysma-band (hals)',
           'Masseter (bruxism)'
         ],
-        drug: {
-          '@type': 'Drug',
-          name: 'Vistabel (botulinumtoxin typ A)',
-          manufacturer: { '@type': 'Organization', name: 'Allergan' }
-        },
         mainEntityOfPage: { '@id': canonical },
         potentialAction: {
           '@type': 'ScheduleAction',
@@ -92,7 +87,7 @@ export default async function Page() {
             '@type': 'ListItem',
             position: 1,
             name: 'Hem',
-            item: 'https://www.dahliakliniken.se/'
+            item: SITE_URL
           },
           {
             '@type': 'ListItem',
