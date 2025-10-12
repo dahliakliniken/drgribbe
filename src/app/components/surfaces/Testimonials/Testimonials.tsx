@@ -1,4 +1,4 @@
-import { Testimonial } from '@/app/components/surfaces/Testimonials/Testimonial'
+import { Testimonial } from '@/components/surfaces/Testimonials/Testimonial'
 import { testimonials } from '@/data/testimonialdata'
 
 const getRandomTestimonials = (count: number) => {
@@ -43,7 +43,7 @@ export default function Testimonials() {
         <span itemProp="reviewCount">{totalReviews}</span>
       </div>
 
-      <div className="px-gapSpace flex space-x-3 overflow-x-auto xl:grid xl:grid-cols-3 xl:items-stretch">
+      <div className="px-gapSpace flex space-x-3 overflow-x-visible xl:grid xl:grid-cols-3 xl:items-stretch">
         {randomTestimonials.map((testimonial) => (
           <Testimonial
             key={`${testimonial.title}-${testimonial.date}-${testimonial.content.slice(0, 20)}`}

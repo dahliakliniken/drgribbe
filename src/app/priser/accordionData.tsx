@@ -1,10 +1,9 @@
 import { Phone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
-import { P } from '@/app/components/typography/P'
-
-import { Li } from '../components/surfaces/Li'
-import { Ul } from '../components/surfaces/Ul'
+import { Li } from '@/components/surfaces/Li'
+import { Ul } from '@/components/surfaces/Ul'
+import { P } from '@/components/typography/P'
 
 export const useAccordionItems = () => {
   const t = useTranslations()
@@ -37,7 +36,7 @@ export const useAccordionItems = () => {
             <Li small>{t('priser.cancellationRules.text7')}</Li>
             <Li small>{t('priser.cancellationRules.text5')}</Li>
             <Li small>{t('priser.cancellationRules.text6')}</Li>
-            <Li small>{t('priser.cancellationRules.text9')}</Li>            
+            <Li small>{t('priser.cancellationRules.text9')}</Li>
           </Ul>
         </>
       )

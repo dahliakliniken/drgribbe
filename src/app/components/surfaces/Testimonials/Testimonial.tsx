@@ -1,7 +1,7 @@
 import { memo,useMemo } from 'react'
 
-import { P } from '@/app/components/typography/P'
 import { ephesis } from '@/app/fonts'
+import { P } from '@/components/typography/P'
 import { formatRelativeTime } from '@/utils/formatRelativeTime'
 
 type TestimonialProps = {

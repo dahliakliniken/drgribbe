@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 
-import { P } from '../components/typography/P'
+import { P } from '@/components/typography/P'
 
 export const usePolicyAccordionItems = () => {
   const t = useTranslations('Personuppgiftspolicy')

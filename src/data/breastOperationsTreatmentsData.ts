@@ -1,10 +1,9 @@
 import { BgPositions } from '@/app/types'
 import { BgColors } from '@/app/types'
-
-import Enlargement from '../../public/images/breastEnlargement.svg'
-import Lift from '../../public/images/breastLift.svg'
-import Reduction from '../../public/images/breastReduction.svg'
-import MuscleRelaxation from '../../public/images/muscleRelaxation.svg'
+import Enlargement from '@/public/images/breastEnlargement.svg'
+import Lift from '@/public/images/breastLift.svg'
+import Reduction from '@/public/images/breastReduction.svg'
+import MuscleRelaxation from '@/public/images/muscleRelaxation.svg'
 
 export const breastOperationsTreatmentsData = [
   {
