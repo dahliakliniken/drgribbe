@@ -1,3 +1,12 @@
+# [1.19.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.19.0-beta.1...v1.19.0-beta.2) (2025-10-12)
+
+
+### Bug Fixes
+
+* import paths to use absolute paths for components ([181df82](https://github.com/dahliakliniken/drgribbe/commit/181df824331ebddf606484127b1cd8200a270e0e))
+* update import paths to use absolute paths for consistency ([1e716c8](https://github.com/dahliakliniken/drgribbe/commit/1e716c8d216c3aaef13bc4a2c14f14ad40b0113e))
+* update overflow property in testimonials component for better layout ([a053a8d](https://github.com/dahliakliniken/drgribbe/commit/a053a8d99b24d2013eeb6a4eadb28a87f3ff7af7))
+
 # [1.19.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.18.2...v1.19.0-beta.1) (2025-10-12)
 
 
