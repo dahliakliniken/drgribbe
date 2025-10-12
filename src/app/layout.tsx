@@ -66,9 +66,11 @@ export default async function RootLayout({
       lang={locale}
       className={`${josefinSans.variable} ${ephesis.variable} lg:bg-beige`}
     >
-      <JsonLd
-        data={{ '@context': 'https://schema.org', '@graph': [org, webSite] }}
-      />
+      <head>
+        <JsonLd
+          data={{ '@context': 'https://schema.org', '@graph': [org, webSite] }}
+        />
+      </head>
       <body className={josefinSans.className}>
         <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GTM_ID!}
