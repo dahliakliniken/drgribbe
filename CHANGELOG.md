@@ -1,3 +1,10 @@
+## [1.19.2](https://github.com/dahliakliniken/drgribbe/compare/v1.19.1...v1.19.2) (2025-10-12)
+
+
+### Bug Fixes
+
+* improve layout structure and responsiveness of testimonials section ([4822d6b](https://github.com/dahliakliniken/drgribbe/commit/4822d6b003760e286f77795360d3b8571c2421b8))
+
 ## [1.19.1](https://github.com/dahliakliniken/drgribbe/compare/v1.19.0...v1.19.1) (2025-10-12)
 
 
