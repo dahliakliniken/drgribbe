@@ -6,8 +6,8 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 import { useDelayedAnimation } from '@/hooks/useDelayedAnimation'
+import HeroImage from '@/public/images/hero-image.jpg'
 
-import HeroImage from '../../../../public/images/hero-image.jpg'
 import { A } from '../typography/A'
 
 export const Hero = () => {

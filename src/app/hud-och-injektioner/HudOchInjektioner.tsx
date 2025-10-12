@@ -8,8 +8,8 @@ import { Card } from '@/components/surfaces/Card'
 import { H1 } from '@/components/typography/H1'
 import { H2 } from '@/components/typography/H2'
 import { P } from '@/components/typography/P'
+import Botoxface from '@/public/images/ansiktsmuskler.jpeg'
 
-import Botoxface from '../../../public/images/ansiktsmuskler.jpeg'
 import { BgColors } from '../types'
 import { useAccordionItems } from './accordionData'
 

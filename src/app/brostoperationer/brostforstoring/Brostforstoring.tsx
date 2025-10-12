@@ -24,8 +24,8 @@ import { H1 } from '@/components/typography/H1'
 import { H2 } from '@/components/typography/H2'
 import { H3 } from '@/components/typography/H3'
 import { P } from '@/components/typography/P'
+import ImplantsInHand from '@/public/images/_N3A7297.jpg'
 
-import ImplantsInHand from '../../../../public/images/_N3A7297.jpg'
 import { useAccordionData } from './accordionData'
 
 const Brostforstoring = () => {

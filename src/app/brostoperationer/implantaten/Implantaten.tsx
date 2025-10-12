@@ -11,10 +11,10 @@ import { H1 } from '@/components/typography/H1'
 import { H2 } from '@/components/typography/H2'
 import { H3 } from '@/components/typography/H3'
 import { P } from '@/components/typography/P'
+import ImplantatImage from '@/public/images/_N3A0080.jpg'
+import PolytechImage from '@/public/images/N3A7270_cut.png'
+import ImplantatVariansImage from '@/public/images/teardrop-runda-implantat-1000px.jpg'
 
-import ImplantatImage from '../../../../public/images/_N3A0080.jpg'
-import PolytechImage from '../../../../public/images/N3A7270_cut.png'
-import ImplantatVariansImage from '../../../../public/images/teardrop-runda-implantat-1000px.jpg'
 import { useAccordionItems } from './accordionData'
 
 const Implantaten = () => {

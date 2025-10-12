@@ -8,8 +8,8 @@ import { Card } from '@/components/surfaces/Card'
 import { H1 } from '@/components/typography/H1'
 import { H2 } from '@/components/typography/H2'
 import { P } from '@/components/typography/P'
+import locationImage from '@/public/images/Wonna_Tower_IMG_7027.png'
 
-import locationImage from '../../../public/images/Wonna_Tower_IMG_7027.png'
 import { BgColors } from '../types'
 
 const KontaktOchBesok = () => {

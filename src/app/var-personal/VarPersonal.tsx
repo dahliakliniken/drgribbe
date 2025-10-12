@@ -4,14 +4,13 @@ import { Pillar } from '@/components/layout/Pillar'
 import { SpaceContainer } from '@/components/layout/SpaceContainer'
 import { FlippableCard } from '@/components/surfaces/FlippableCard'
 import { H1 } from '@/components/typography/H1'
-
-import anna from '../../../public/images/Anna.png'
-import johanna from '../../../public/images/Johanna.png'
-import kristina from '../../../public/images/kristina.jpg'
-// import malin from '../../../public/images/Malin.png'
-import najwa from '../../../public/images/Najwa.png'
-import orjan from '../../../public/images/orjan.png'
-import selda from '../../../public/images/selda.png'
+import anna from '@/public/images/Anna.png'
+import johanna from '@/public/images/Johanna.png'
+import kristina from '@/public/images/kristina.jpg'
+// import malin from '@/public/images/Malin.png'
+import najwa from '@/public/images/Najwa.png'
+import orjan from '@/public/images/orjan.png'
+import selda from '@/public/images/selda.png'
 
 const VarPersonal = () => {
   const t = useTranslations()
