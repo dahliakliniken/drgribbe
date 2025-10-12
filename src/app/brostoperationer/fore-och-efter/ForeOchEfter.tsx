@@ -1,12 +1,15 @@
 import { useTranslations } from 'next-intl'
 
-import { BAImage } from '@/app/components/layout/beforeafterimages'
-import { SpaceContainer } from '@/app/components/layout/SpaceContainer'
-import { Card } from '@/app/components/surfaces/Card'
-import { A } from '@/app/components/typography/A'
-import { H3 } from '@/app/components/typography/H3'
-import { P } from '@/app/components/typography/P'
 import { BgColors } from '@/app/types'
+import { BAImage } from '@/components/layout/beforeafterimages'
+import { Pillar } from '@/components/layout/Pillar'
+import { SpaceContainer } from '@/components/layout/SpaceContainer'
+import { Card } from '@/components/surfaces/Card'
+import { A } from '@/components/typography/A'
+import { H1 } from '@/components/typography/H1'
+import { H2 } from '@/components/typography/H2'
+import { H3 } from '@/components/typography/H3'
+import { P } from '@/components/typography/P'
 
 import anatomy_11 from '../../../../public/images/anatomiskaforeefter-1.1-500px.jpg'
 import anatomy_12 from '../../../../public/images/anatomiskaforeefter-1.2-500px.jpg'
@@ -32,9 +35,6 @@ import medRound21 from '../../../../public/images/ba-fixed/runda-mellan-implanta
 import medRound22 from '../../../../public/images/ba-fixed/runda-mellan-implantat-2-2-500px.png'
 import medRound31 from '../../../../public/images/ba-fixed/runda-mellan-implantat-3-1-500px.png'
 import medRound32 from '../../../../public/images/ba-fixed/runda-mellan-implantat-3-2-500px.png'
-import { Pillar } from '../../components/layout/Pillar'
-import { H1 } from '../../components/typography/H1'
-import { H2 } from '../../components/typography/H2'
 
 const ForeOchEfter = () => {
   const t = useTranslations('foreOchEfter')

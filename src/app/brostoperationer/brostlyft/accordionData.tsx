@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 
-import { A } from '@/app/components/typography/A'
-import { P } from '@/app/components/typography/P'
+import { A } from '@/components/typography/A'
+import { P } from '@/components/typography/P'
 
 export const useAccordionData = () => {
   const ft = useTranslations('fragorOchSvar')

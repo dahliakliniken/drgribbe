@@ -2,13 +2,14 @@ import { Car, Mail, MapPin, Phone, Train } from 'lucide-react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
+import { Pillar } from '@/components/layout/Pillar'
+import { SpaceContainer } from '@/components/layout/SpaceContainer'
+import { Card } from '@/components/surfaces/Card'
+import { H1 } from '@/components/typography/H1'
+import { H2 } from '@/components/typography/H2'
+import { P } from '@/components/typography/P'
+
 import locationImage from '../../../public/images/Wonna_Tower_IMG_7027.png'
-import { Pillar } from '../components/layout/Pillar'
-import { SpaceContainer } from '../components/layout/SpaceContainer'
-import { Card } from '../components/surfaces/Card'
-import { H1 } from '../components/typography/H1'
-import { H2 } from '../components/typography/H2'
-import { P } from '../components/typography/P'
 import { BgColors } from '../types'
 
 const KontaktOchBesok = () => {

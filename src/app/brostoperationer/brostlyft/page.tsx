@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
-import { JsonLd } from '@/app/components/surfaces/JsonLd'
 import { canonicalUrl,SITE_URL } from '@/app/config/site'
+import { JsonLd } from '@/components/surfaces/JsonLd'
 
 import Brostlyft from './Brostlyft'
 

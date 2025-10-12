@@ -1,4 +1,4 @@
-import { Testimonial } from '@/app/components/surfaces/Testimonials/Testimonial'
+import { Testimonial } from '@/components/surfaces/Testimonials/Testimonial'
 import { testimonials } from '@/data/testimonialdata'
 
 const getRandomTestimonials = (count: number) => {
