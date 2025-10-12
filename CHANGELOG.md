@@ -1,3 +1,10 @@
+# [1.19.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.18.2...v1.19.0-beta.1) (2025-10-12)
+
+
+### Features
+
+* refactor testimonials component and add new features ([29d2132](https://github.com/dahliakliniken/drgribbe/commit/29d2132d53c5c6d36af9b6a5a06b8d420c2d1b12))
+
 ## [1.18.2](https://github.com/dahliakliniken/drgribbe/compare/v1.18.1...v1.18.2) (2025-09-14)
 
 

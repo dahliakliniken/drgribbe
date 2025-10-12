@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 
-import { AnchorLink } from '@/app/components/typography/AnchorLink'
-import { P } from '@/app/components/typography/P'
+import { AnchorLink } from '@/components/typography/AnchorLink'
+import { P } from '@/components/typography/P'
 
 export const useAccordionData = () => {
   const t = useTranslations('brostforstoring')
