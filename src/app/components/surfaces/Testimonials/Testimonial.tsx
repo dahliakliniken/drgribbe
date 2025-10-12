@@ -1,4 +1,4 @@
-import { memo,useMemo } from 'react'
+import { memo, useMemo } from 'react'
 
 import { ephesis } from '@/app/fonts'
 import { P } from '@/components/typography/P'
@@ -18,7 +18,7 @@ export const Testimonial = memo(
 
     return (
       <article
-        className={`testimonial flex w-[90%] flex-col sm:w-[60%] md:w-[40%] xl:w-auto before:${ephesis.className}`}
+        className={`testimonial flex w-[90%] flex-col sm:w-[60%] md:w-[40%] xl:w-auto before:${ephesis.className} flex-none`}
         itemScope
         itemType="https://schema.org/Review"
       >
