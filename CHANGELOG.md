@@ -1,3 +1,10 @@
+## [1.19.1](https://github.com/dahliakliniken/drgribbe/compare/v1.19.0...v1.19.1) (2025-10-12)
+
+
+### Bug Fixes
+
+* update overflow property to 'overflow-x-auto' for better responsiveness ([01e3f76](https://github.com/dahliakliniken/drgribbe/commit/01e3f766446c738d2e670dee9d12ec76d30fae34))
+
 # [1.19.0](https://github.com/dahliakliniken/drgribbe/compare/v1.18.2...v1.19.0) (2025-10-12)
 
 
