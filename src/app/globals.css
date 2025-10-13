@@ -95,14 +95,12 @@ a:focus-visible {
 .fat > * {
   font-weight: 400;
 }
+
 .testimonial {
-  width: 20rem;
-  color: black;
   font-size: 1.25rem;
   font-weight: 300;
-  padding: 20px;
-  text-align: center;
 }
+
 .testimonial::before,
 .testimonial::after {
   content: '"';

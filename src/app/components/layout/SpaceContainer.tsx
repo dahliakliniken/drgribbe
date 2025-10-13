@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 
 type SpaceContainerProps = {
+  as?: 'section' | 'article' | 'div'
   centered?: boolean
   noPadding?: boolean
   spaceVertically?: boolean
@@ -10,6 +11,7 @@ type SpaceContainerProps = {
 }
 
 export const SpaceContainer = ({
+  as: Component = 'div',
   noPadding,
   spaceVertically,
   spaceTop,
@@ -17,7 +19,7 @@ export const SpaceContainer = ({
   children
 }: SpaceContainerProps) => {
   return (
-    <div
+    <Component
       id={id}
       className={classNames(
         'w-full',
@@ -27,6 +29,6 @@ export const SpaceContainer = ({
       )}
     >
       {children}
-    </div>
+    </Component>
   )
 }

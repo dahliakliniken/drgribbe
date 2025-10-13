@@ -1,354 +1,306 @@
-## [1.19.2](https://github.com/dahliakliniken/drgribbe/compare/v1.19.1...v1.19.2) (2025-10-12)
+# [1.20.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.19.2...v1.20.0-beta.1) (2025-10-13)
 
+
+### Features
+
+* enhance SpaceContainer component and update Testimonial styles for improved layout ([e72857a](https://github.com/dahliakliniken/drgribbe/commit/e72857a8d8844921c4d6df408ee710db49a137a7))
+
+## [1.19.2](https://github.com/dahliakliniken/drgribbe/compare/v1.19.1...v1.19.2) (2025-10-12)
 
 ### Bug Fixes
 
-* improve layout structure and responsiveness of testimonials section ([4822d6b](https://github.com/dahliakliniken/drgribbe/commit/4822d6b003760e286f77795360d3b8571c2421b8))
+- improve layout structure and responsiveness of testimonials section ([4822d6b](https://github.com/dahliakliniken/drgribbe/commit/4822d6b003760e286f77795360d3b8571c2421b8))
 
 ## [1.19.1](https://github.com/dahliakliniken/drgribbe/compare/v1.19.0...v1.19.1) (2025-10-12)
 
-
 ### Bug Fixes
 
-* update overflow property to 'overflow-x-auto' for better responsiveness ([01e3f76](https://github.com/dahliakliniken/drgribbe/commit/01e3f766446c738d2e670dee9d12ec76d30fae34))
+- update overflow property to 'overflow-x-auto' for better responsiveness ([01e3f76](https://github.com/dahliakliniken/drgribbe/commit/01e3f766446c738d2e670dee9d12ec76d30fae34))
 
 # [1.19.0](https://github.com/dahliakliniken/drgribbe/compare/v1.18.2...v1.19.0) (2025-10-12)
 
-
 ### Bug Fixes
 
-* import paths to use absolute paths for components ([181df82](https://github.com/dahliakliniken/drgribbe/commit/181df824331ebddf606484127b1cd8200a270e0e))
-* update import paths to use absolute paths for consistency ([1e716c8](https://github.com/dahliakliniken/drgribbe/commit/1e716c8d216c3aaef13bc4a2c14f14ad40b0113e))
-* update overflow property in testimonials component for better layout ([a053a8d](https://github.com/dahliakliniken/drgribbe/commit/a053a8d99b24d2013eeb6a4eadb28a87f3ff7af7))
-
-
-### Features
-
-* refactor testimonials component and add new features ([29d2132](https://github.com/dahliakliniken/drgribbe/commit/29d2132d53c5c6d36af9b6a5a06b8d420c2d1b12))
+- import paths to use absolute paths for components ([181df82](https://github.com/dahliakliniken/drgribbe/commit/181df824331ebddf606484127b1cd8200a270e0e))
+- update import paths to use absolute paths for consistency ([1e716c8](https://github.com/dahliakliniken/drgribbe/commit/1e716c8d216c3aaef13bc4a2c14f14ad40b0113e))
+- update overflow property in testimonials component for better layout ([a053a8d](https://github.com/dahliakliniken/drgribbe/commit/a053a8d99b24d2013eeb6a4eadb28a87f3ff7af7))
 
 # [1.19.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.18.2...v1.19.0-beta.1) (2025-10-12)
 
-
 ### Features
 
-* refactor testimonials component and add new features ([29d2132](https://github.com/dahliakliniken/drgribbe/commit/29d2132d53c5c6d36af9b6a5a06b8d420c2d1b12))
+- refactor testimonials component and add new features ([29d2132](https://github.com/dahliakliniken/drgribbe/commit/29d2132d53c5c6d36af9b6a5a06b8d420c2d1b12))
 
 ## [1.18.2](https://github.com/dahliakliniken/drgribbe/compare/v1.18.1...v1.18.2) (2025-09-14)
 
-
 ### Bug Fixes
 
-* remove drug node ([743493a](https://github.com/dahliakliniken/drgribbe/commit/743493ada7d330fb0c3b1b0063e03763279b41a9))
+- remove drug node ([743493a](https://github.com/dahliakliniken/drgribbe/commit/743493ada7d330fb0c3b1b0063e03763279b41a9))
 
 ## [1.18.1](https://github.com/dahliakliniken/drgribbe/compare/v1.18.0...v1.18.1) (2025-09-03)
 
-
 ### Bug Fixes
 
-* update logo URL in organization metadata ([93c024c](https://github.com/dahliakliniken/drgribbe/commit/93c024c0d6c6547b0c55319ef28c0d19c3bceefa))
+- update logo URL in organization metadata ([93c024c](https://github.com/dahliakliniken/drgribbe/commit/93c024c0d6c6547b0c55319ef28c0d19c3bceefa))
 
 # [1.18.0](https://github.com/dahliakliniken/drgribbe/compare/v1.17.3...v1.18.0) (2025-09-03)
 
-
 ### Bug Fixes
 
-* update URL for 'Före & efterbilder' in structured data ([6a27eb0](https://github.com/dahliakliniken/drgribbe/commit/6a27eb02913c4a77c730eed4168530ecb690ca83))
-
+- update URL for 'Före & efterbilder' in structured data ([6a27eb0](https://github.com/dahliakliniken/drgribbe/commit/6a27eb02913c4a77c730eed4168530ecb690ca83))
 
 ### Features
 
-* implement structured data with JsonLd for various procedures ([b6c25bb](https://github.com/dahliakliniken/drgribbe/commit/b6c25bba4798ba5231098368871c23becb32ba39))
+- implement structured data with JsonLd for various procedures ([b6c25bb](https://github.com/dahliakliniken/drgribbe/commit/b6c25bba4798ba5231098368871c23becb32ba39))
 
 # [1.18.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.17.3...v1.18.0-beta.1) (2025-09-03)
 
-
 ### Bug Fixes
 
-* update URL for 'Före & efterbilder' in structured data ([6a27eb0](https://github.com/dahliakliniken/drgribbe/commit/6a27eb02913c4a77c730eed4168530ecb690ca83))
-
+- update URL for 'Före & efterbilder' in structured data ([6a27eb0](https://github.com/dahliakliniken/drgribbe/commit/6a27eb02913c4a77c730eed4168530ecb690ca83))
 
 ### Features
 
-* implement structured data with JsonLd for various procedures ([b6c25bb](https://github.com/dahliakliniken/drgribbe/commit/b6c25bba4798ba5231098368871c23becb32ba39))
+- implement structured data with JsonLd for various procedures ([b6c25bb](https://github.com/dahliakliniken/drgribbe/commit/b6c25bba4798ba5231098368871c23becb32ba39))
 
 ## [1.17.3](https://github.com/dahliakliniken/drgribbe/compare/v1.17.2...v1.17.3) (2025-08-19)
 
-
 ### Bug Fixes
 
-* update CSP to allow Google Tag Manager and Google Fonts ([42154c9](https://github.com/dahliakliniken/drgribbe/commit/42154c913ebf3ddf9ac0ab9ce79e7c403d541666))
+- update CSP to allow Google Tag Manager and Google Fonts ([42154c9](https://github.com/dahliakliniken/drgribbe/commit/42154c913ebf3ddf9ac0ab9ce79e7c403d541666))
 
 ## [1.17.3-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.17.2...v1.17.3-beta.1) (2025-08-19)
 
-
 ### Bug Fixes
 
-* update CSP to allow Google Tag Manager and Google Fonts ([42154c9](https://github.com/dahliakliniken/drgribbe/commit/42154c913ebf3ddf9ac0ab9ce79e7c403d541666))
+- update CSP to allow Google Tag Manager and Google Fonts ([42154c9](https://github.com/dahliakliniken/drgribbe/commit/42154c913ebf3ddf9ac0ab9ce79e7c403d541666))
 
 ## [1.17.2](https://github.com/dahliakliniken/drgribbe/compare/v1.17.1...v1.17.2) (2025-08-19)
 
-
 ### Bug Fixes
 
-* add additional Google domain to CSP ([e0e47c6](https://github.com/dahliakliniken/drgribbe/commit/e0e47c67b2b8aa49cd509ce6cff7f43134a5439f))
+- add additional Google domain to CSP ([e0e47c6](https://github.com/dahliakliniken/drgribbe/commit/e0e47c67b2b8aa49cd509ce6cff7f43134a5439f))
 
 ## [1.17.1](https://github.com/dahliakliniken/drgribbe/compare/v1.17.0...v1.17.1) (2025-08-19)
 
-
 ### Bug Fixes
 
-* update CSP to allow additional Google and Facebook domains ([a70fa80](https://github.com/dahliakliniken/drgribbe/commit/a70fa80f7736924334a528a557b274ff87e58533))
+- update CSP to allow additional Google and Facebook domains ([a70fa80](https://github.com/dahliakliniken/drgribbe/commit/a70fa80f7736924334a528a557b274ff87e58533))
 
 ## [1.17.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.17.0...v1.17.1-beta.1) (2025-08-19)
 
-
 ### Bug Fixes
 
-* update CSP to allow additional Google and Facebook domains ([a70fa80](https://github.com/dahliakliniken/drgribbe/commit/a70fa80f7736924334a528a557b274ff87e58533))
+- update CSP to allow additional Google and Facebook domains ([a70fa80](https://github.com/dahliakliniken/drgribbe/commit/a70fa80f7736924334a528a557b274ff87e58533))
 
 # [1.17.0](https://github.com/dahliakliniken/drgribbe/compare/v1.16.0...v1.17.0) (2025-08-19)
 
-
 ### Bug Fixes
 
-* improve error handling in CSP reporting headers ([d915211](https://github.com/dahliakliniken/drgribbe/commit/d915211d4c03d73b20fcd4933c79c8738beb2eb4))
-
+- improve error handling in CSP reporting headers ([d915211](https://github.com/dahliakliniken/drgribbe/commit/d915211d4c03d73b20fcd4933c79c8738beb2eb4))
 
 ### Features
 
-* enhance CSP reporting and improve middleware structure ([637e098](https://github.com/dahliakliniken/drgribbe/commit/637e09866ee90e92825f9292c94896cacc10dc31))
+- enhance CSP reporting and improve middleware structure ([637e098](https://github.com/dahliakliniken/drgribbe/commit/637e09866ee90e92825f9292c94896cacc10dc31))
 
 # [1.17.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.16.0...v1.17.0-beta.1) (2025-08-19)
 
-
 ### Bug Fixes
 
-* improve error handling in CSP reporting headers ([d915211](https://github.com/dahliakliniken/drgribbe/commit/d915211d4c03d73b20fcd4933c79c8738beb2eb4))
-
+- improve error handling in CSP reporting headers ([d915211](https://github.com/dahliakliniken/drgribbe/commit/d915211d4c03d73b20fcd4933c79c8738beb2eb4))
 
 ### Features
 
-* enhance CSP reporting and improve middleware structure ([637e098](https://github.com/dahliakliniken/drgribbe/commit/637e09866ee90e92825f9292c94896cacc10dc31))
+- enhance CSP reporting and improve middleware structure ([637e098](https://github.com/dahliakliniken/drgribbe/commit/637e09866ee90e92825f9292c94896cacc10dc31))
 
 # [1.16.0](https://github.com/dahliakliniken/drgribbe/compare/v1.15.1...v1.16.0) (2025-08-18)
 
-
 ### Bug Fixes
 
-* allow Stripe fonts in Content Security Policy ([e0f2e16](https://github.com/dahliakliniken/drgribbe/commit/e0f2e162e9e67770273c998cdea37e1f9dd797d2))
-* remove trailing period from lint script description in README ([cffbf1d](https://github.com/dahliakliniken/drgribbe/commit/cffbf1d9d970efabc9790d4208b4b60bf6a9958c))
-
+- allow Stripe fonts in Content Security Policy ([e0f2e16](https://github.com/dahliakliniken/drgribbe/commit/e0f2e162e9e67770273c998cdea37e1f9dd797d2))
+- remove trailing period from lint script description in README ([cffbf1d](https://github.com/dahliakliniken/drgribbe/commit/cffbf1d9d970efabc9790d4208b4b60bf6a9958c))
 
 ### Features
 
-* dummy commit ([572ea8f](https://github.com/dahliakliniken/drgribbe/commit/572ea8fe8994220d1550ac0fabcdf984b85b4b4b))
+- dummy commit ([572ea8f](https://github.com/dahliakliniken/drgribbe/commit/572ea8fe8994220d1550ac0fabcdf984b85b4b4b))
 
 # [1.16.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.16.0-beta.1...v1.16.0-beta.2) (2025-08-18)
 
-
 ### Bug Fixes
 
-* allow Stripe fonts in Content Security Policy ([e0f2e16](https://github.com/dahliakliniken/drgribbe/commit/e0f2e162e9e67770273c998cdea37e1f9dd797d2))
-* remove trailing period from lint script description in README ([cffbf1d](https://github.com/dahliakliniken/drgribbe/commit/cffbf1d9d970efabc9790d4208b4b60bf6a9958c))
+- allow Stripe fonts in Content Security Policy ([e0f2e16](https://github.com/dahliakliniken/drgribbe/commit/e0f2e162e9e67770273c998cdea37e1f9dd797d2))
+- remove trailing period from lint script description in README ([cffbf1d](https://github.com/dahliakliniken/drgribbe/commit/cffbf1d9d970efabc9790d4208b4b60bf6a9958c))
 
 # [1.16.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.1...v1.16.0-beta.1) (2025-08-18)
 
-
 ### Features
 
-* dummy commit ([572ea8f](https://github.com/dahliakliniken/drgribbe/commit/572ea8fe8994220d1550ac0fabcdf984b85b4b4b))
+- dummy commit ([572ea8f](https://github.com/dahliakliniken/drgribbe/commit/572ea8fe8994220d1550ac0fabcdf984b85b4b4b))
 
 ## [1.15.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.0...v1.15.1) (2025-06-13)
 
-
 ### Bug Fixes
 
-* update price for breast augmentation and implant exchange procedure ([255a0a1](https://github.com/dahliakliniken/drgribbe/commit/255a0a1b1a59d30309d772754b9af17266f6373b))
+- update price for breast augmentation and implant exchange procedure ([255a0a1](https://github.com/dahliakliniken/drgribbe/commit/255a0a1b1a59d30309d772754b9af17266f6373b))
 
 ## [1.15.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.15.0...v1.15.1-beta.1) (2025-06-13)
 
-
 ### Bug Fixes
 
-* update price for breast augmentation and implant exchange procedure ([255a0a1](https://github.com/dahliakliniken/drgribbe/commit/255a0a1b1a59d30309d772754b9af17266f6373b))
+- update price for breast augmentation and implant exchange procedure ([255a0a1](https://github.com/dahliakliniken/drgribbe/commit/255a0a1b1a59d30309d772754b9af17266f6373b))
 
 # [1.15.0](https://github.com/dahliakliniken/drgribbe/compare/v1.14.0...v1.15.0) (2025-06-11)
 
-
 ### Bug Fixes
 
-* remove duplicate import of JsonLd component ([006a06f](https://github.com/dahliakliniken/drgribbe/commit/006a06f1c768f9232af6bdfa4d31829cc442c4a7))
-* reorder paragraphs for clarity in skin and injection treatments ([342cfad](https://github.com/dahliakliniken/drgribbe/commit/342cfadd95949a104ab8f454196975c266955f71))
-* replace SimpleCard with Card component across multiple files ([29239f7](https://github.com/dahliakliniken/drgribbe/commit/29239f73285b81098b66f83eb97aecd7a4f88d99))
-* update muscle relaxation treatment paragraph for accuracy ([fee48f9](https://github.com/dahliakliniken/drgribbe/commit/fee48f97576e9c5d14e28ccb0ee2b59b3c8fa307))
-* update pre-commit script to use bash and npx for lint-staged ([7d13521](https://github.com/dahliakliniken/drgribbe/commit/7d13521c35c1115a125341fdaf93fda7fd128780))
-
+- remove duplicate import of JsonLd component ([006a06f](https://github.com/dahliakliniken/drgribbe/commit/006a06f1c768f9232af6bdfa4d31829cc442c4a7))
+- reorder paragraphs for clarity in skin and injection treatments ([342cfad](https://github.com/dahliakliniken/drgribbe/commit/342cfadd95949a104ab8f454196975c266955f71))
+- replace SimpleCard with Card component across multiple files ([29239f7](https://github.com/dahliakliniken/drgribbe/commit/29239f73285b81098b66f83eb97aecd7a4f88d99))
+- update muscle relaxation treatment paragraph for accuracy ([fee48f9](https://github.com/dahliakliniken/drgribbe/commit/fee48f97576e9c5d14e28ccb0ee2b59b3c8fa307))
+- update pre-commit script to use bash and npx for lint-staged ([7d13521](https://github.com/dahliakliniken/drgribbe/commit/7d13521c35c1115a125341fdaf93fda7fd128780))
 
 ### Features
 
-* add husky and lint-staged configuration for pre-commit hooks ([f6a1bd5](https://github.com/dahliakliniken/drgribbe/commit/f6a1bd55de785925aac424fcb49203f1f7d351f0))
-* add structured data for medical procedures and improve layout in breast operation components ([9e649b0](https://github.com/dahliakliniken/drgribbe/commit/9e649b0e52c4855cd98b92f985b0e27484de30df))
-* enhance testimonials and treatment data with alt text and link text updates ([d2c711f](https://github.com/dahliakliniken/drgribbe/commit/d2c711f531374cd626dc9510300e18fd01ca6389))
-* eseo improvements ([7b05d59](https://github.com/dahliakliniken/drgribbe/commit/7b05d59dcd82cf3520b048b77d2ac5d7ee7ef55e))
+- add husky and lint-staged configuration for pre-commit hooks ([f6a1bd5](https://github.com/dahliakliniken/drgribbe/commit/f6a1bd55de785925aac424fcb49203f1f7d351f0))
+- add structured data for medical procedures and improve layout in breast operation components ([9e649b0](https://github.com/dahliakliniken/drgribbe/commit/9e649b0e52c4855cd98b92f985b0e27484de30df))
+- enhance testimonials and treatment data with alt text and link text updates ([d2c711f](https://github.com/dahliakliniken/drgribbe/commit/d2c711f531374cd626dc9510300e18fd01ca6389))
+- eseo improvements ([7b05d59](https://github.com/dahliakliniken/drgribbe/commit/7b05d59dcd82cf3520b048b77d2ac5d7ee7ef55e))
 
 # [1.15.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.15.0-beta.1...v1.15.0-beta.2) (2025-06-11)
 
-
 ### Features
 
-* add structured data for medical procedures and improve layout in breast operation components ([9e649b0](https://github.com/dahliakliniken/drgribbe/commit/9e649b0e52c4855cd98b92f985b0e27484de30df))
+- add structured data for medical procedures and improve layout in breast operation components ([9e649b0](https://github.com/dahliakliniken/drgribbe/commit/9e649b0e52c4855cd98b92f985b0e27484de30df))
 
 # [1.15.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.14.0...v1.15.0-beta.1) (2025-06-11)
 
-
 ### Bug Fixes
 
-* remove duplicate import of JsonLd component ([006a06f](https://github.com/dahliakliniken/drgribbe/commit/006a06f1c768f9232af6bdfa4d31829cc442c4a7))
-* reorder paragraphs for clarity in skin and injection treatments ([342cfad](https://github.com/dahliakliniken/drgribbe/commit/342cfadd95949a104ab8f454196975c266955f71))
-* replace SimpleCard with Card component across multiple files ([29239f7](https://github.com/dahliakliniken/drgribbe/commit/29239f73285b81098b66f83eb97aecd7a4f88d99))
-* update muscle relaxation treatment paragraph for accuracy ([fee48f9](https://github.com/dahliakliniken/drgribbe/commit/fee48f97576e9c5d14e28ccb0ee2b59b3c8fa307))
-* update pre-commit script to use bash and npx for lint-staged ([7d13521](https://github.com/dahliakliniken/drgribbe/commit/7d13521c35c1115a125341fdaf93fda7fd128780))
-
+- remove duplicate import of JsonLd component ([006a06f](https://github.com/dahliakliniken/drgribbe/commit/006a06f1c768f9232af6bdfa4d31829cc442c4a7))
+- reorder paragraphs for clarity in skin and injection treatments ([342cfad](https://github.com/dahliakliniken/drgribbe/commit/342cfadd95949a104ab8f454196975c266955f71))
+- replace SimpleCard with Card component across multiple files ([29239f7](https://github.com/dahliakliniken/drgribbe/commit/29239f73285b81098b66f83eb97aecd7a4f88d99))
+- update muscle relaxation treatment paragraph for accuracy ([fee48f9](https://github.com/dahliakliniken/drgribbe/commit/fee48f97576e9c5d14e28ccb0ee2b59b3c8fa307))
+- update pre-commit script to use bash and npx for lint-staged ([7d13521](https://github.com/dahliakliniken/drgribbe/commit/7d13521c35c1115a125341fdaf93fda7fd128780))
 
 ### Features
 
-* add husky and lint-staged configuration for pre-commit hooks ([f6a1bd5](https://github.com/dahliakliniken/drgribbe/commit/f6a1bd55de785925aac424fcb49203f1f7d351f0))
-* enhance testimonials and treatment data with alt text and link text updates ([d2c711f](https://github.com/dahliakliniken/drgribbe/commit/d2c711f531374cd626dc9510300e18fd01ca6389))
-* eseo improvements ([7b05d59](https://github.com/dahliakliniken/drgribbe/commit/7b05d59dcd82cf3520b048b77d2ac5d7ee7ef55e))
+- add husky and lint-staged configuration for pre-commit hooks ([f6a1bd5](https://github.com/dahliakliniken/drgribbe/commit/f6a1bd55de785925aac424fcb49203f1f7d351f0))
+- enhance testimonials and treatment data with alt text and link text updates ([d2c711f](https://github.com/dahliakliniken/drgribbe/commit/d2c711f531374cd626dc9510300e18fd01ca6389))
+- eseo improvements ([7b05d59](https://github.com/dahliakliniken/drgribbe/commit/7b05d59dcd82cf3520b048b77d2ac5d7ee7ef55e))
 
 # [1.14.0](https://github.com/dahliakliniken/drgribbe/compare/v1.13.1...v1.14.0) (2025-06-03)
 
-
 ### Bug Fixes
 
-* reorder imports in FlippableCard component ([fe4d564](https://github.com/dahliakliniken/drgribbe/commit/fe4d564ba9f699edc1ea5c3165d06e59b7296218))
-
+- reorder imports in FlippableCard component ([fe4d564](https://github.com/dahliakliniken/drgribbe/commit/fe4d564ba9f699edc1ea5c3165d06e59b7296218))
 
 ### Features
 
-* add animation on arrow ([32248a7](https://github.com/dahliakliniken/drgribbe/commit/32248a7a83b81ad55b45d82449ebd0dc3890d36a))
+- add animation on arrow ([32248a7](https://github.com/dahliakliniken/drgribbe/commit/32248a7a83b81ad55b45d82449ebd0dc3890d36a))
 
 # [1.14.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.13.1...v1.14.0-beta.1) (2025-06-03)
 
-
 ### Bug Fixes
 
-* reorder imports in FlippableCard component ([fe4d564](https://github.com/dahliakliniken/drgribbe/commit/fe4d564ba9f699edc1ea5c3165d06e59b7296218))
-
+- reorder imports in FlippableCard component ([fe4d564](https://github.com/dahliakliniken/drgribbe/commit/fe4d564ba9f699edc1ea5c3165d06e59b7296218))
 
 ### Features
 
-* add animation on arrow ([32248a7](https://github.com/dahliakliniken/drgribbe/commit/32248a7a83b81ad55b45d82449ebd0dc3890d36a))
+- add animation on arrow ([32248a7](https://github.com/dahliakliniken/drgribbe/commit/32248a7a83b81ad55b45d82449ebd0dc3890d36a))
 
 ## [1.13.1](https://github.com/dahliakliniken/drgribbe/compare/v1.13.0...v1.13.1) (2025-06-02)
 
-
 ### Bug Fixes
 
-* ensure footer state resets on route change ([5b4dde7](https://github.com/dahliakliniken/drgribbe/commit/5b4dde704e6e05af4a103536f7320a41c50f160c))
-* reorder imports for consistency in HeaderWithFooter component ([752db1a](https://github.com/dahliakliniken/drgribbe/commit/752db1ad1a11de2a6857bfe7fefefd592328b3ff))
-* use document.documentElement for accurate page height calculation in HeaderWithFooter ([86c31f7](https://github.com/dahliakliniken/drgribbe/commit/86c31f7521957779b8ab3b04922c6a151f43a09a))
+- ensure footer state resets on route change ([5b4dde7](https://github.com/dahliakliniken/drgribbe/commit/5b4dde704e6e05af4a103536f7320a41c50f160c))
+- reorder imports for consistency in HeaderWithFooter component ([752db1a](https://github.com/dahliakliniken/drgribbe/commit/752db1ad1a11de2a6857bfe7fefefd592328b3ff))
+- use document.documentElement for accurate page height calculation in HeaderWithFooter ([86c31f7](https://github.com/dahliakliniken/drgribbe/commit/86c31f7521957779b8ab3b04922c6a151f43a09a))
 
 ## [1.13.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.13.0...v1.13.1-beta.1) (2025-06-02)
 
-
 ### Bug Fixes
 
-* ensure footer state resets on route change ([5b4dde7](https://github.com/dahliakliniken/drgribbe/commit/5b4dde704e6e05af4a103536f7320a41c50f160c))
-* reorder imports for consistency in HeaderWithFooter component ([752db1a](https://github.com/dahliakliniken/drgribbe/commit/752db1ad1a11de2a6857bfe7fefefd592328b3ff))
-* use document.documentElement for accurate page height calculation in HeaderWithFooter ([86c31f7](https://github.com/dahliakliniken/drgribbe/commit/86c31f7521957779b8ab3b04922c6a151f43a09a))
+- ensure footer state resets on route change ([5b4dde7](https://github.com/dahliakliniken/drgribbe/commit/5b4dde704e6e05af4a103536f7320a41c50f160c))
+- reorder imports for consistency in HeaderWithFooter component ([752db1a](https://github.com/dahliakliniken/drgribbe/commit/752db1ad1a11de2a6857bfe7fefefd592328b3ff))
+- use document.documentElement for accurate page height calculation in HeaderWithFooter ([86c31f7](https://github.com/dahliakliniken/drgribbe/commit/86c31f7521957779b8ab3b04922c6a151f43a09a))
 
 # [1.13.0](https://github.com/dahliakliniken/drgribbe/compare/v1.12.0...v1.13.0) (2025-05-18)
 
-
 ### Bug Fixes
 
-* update consultation booking URL in Brostforstoring component ([0e4c09f](https://github.com/dahliakliniken/drgribbe/commit/0e4c09fece7680299626e1fb7aa50d6337dd7ea8))
-
+- update consultation booking URL in Brostforstoring component ([0e4c09f](https://github.com/dahliakliniken/drgribbe/commit/0e4c09fece7680299626e1fb7aa50d6337dd7ea8))
 
 ### Features
 
-* add QuickFacts component for displaying key information about breast augmentation ([5bcda3d](https://github.com/dahliakliniken/drgribbe/commit/5bcda3d58b75cc5570e4610b9153c1c36db0fe6d))
+- add QuickFacts component for displaying key information about breast augmentation ([5bcda3d](https://github.com/dahliakliniken/drgribbe/commit/5bcda3d58b75cc5570e4610b9153c1c36db0fe6d))
 
 # [1.13.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.12.0...v1.13.0-beta.1) (2025-05-13)
 
-
 ### Bug Fixes
 
-* update consultation booking URL in Brostforstoring component ([0e4c09f](https://github.com/dahliakliniken/drgribbe/commit/0e4c09fece7680299626e1fb7aa50d6337dd7ea8))
-
+- update consultation booking URL in Brostforstoring component ([0e4c09f](https://github.com/dahliakliniken/drgribbe/commit/0e4c09fece7680299626e1fb7aa50d6337dd7ea8))
 
 ### Features
 
-* add QuickFacts component for displaying key information about breast augmentation ([5bcda3d](https://github.com/dahliakliniken/drgribbe/commit/5bcda3d58b75cc5570e4610b9153c1c36db0fe6d))
+- add QuickFacts component for displaying key information about breast augmentation ([5bcda3d](https://github.com/dahliakliniken/drgribbe/commit/5bcda3d58b75cc5570e4610b9153c1c36db0fe6d))
 
 # [1.12.0](https://github.com/dahliakliniken/drgribbe/compare/v1.11.0...v1.12.0) (2025-05-07)
 
-
 ### Bug Fixes
 
-* adjust main margin for improved layout spacing ([eb36114](https://github.com/dahliakliniken/drgribbe/commit/eb3611404f5a6443eb09e9c4ac6edd58de4a57d4))
-
+- adjust main margin for improved layout spacing ([eb36114](https://github.com/dahliakliniken/drgribbe/commit/eb3611404f5a6443eb09e9c4ac6edd58de4a57d4))
 
 ### Features
 
-* add social media links to header and dropdown menu ([0329187](https://github.com/dahliakliniken/drgribbe/commit/032918774edcbbdea6b92509542cf237af4b1086))
+- add social media links to header and dropdown menu ([0329187](https://github.com/dahliakliniken/drgribbe/commit/032918774edcbbdea6b92509542cf237af4b1086))
 
 # [1.12.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.12.0-beta.1...v1.12.0-beta.2) (2025-05-07)
 
-
 ### Bug Fixes
 
-* adjust main margin for improved layout spacing ([eb36114](https://github.com/dahliakliniken/drgribbe/commit/eb3611404f5a6443eb09e9c4ac6edd58de4a57d4))
+- adjust main margin for improved layout spacing ([eb36114](https://github.com/dahliakliniken/drgribbe/commit/eb3611404f5a6443eb09e9c4ac6edd58de4a57d4))
 
 # [1.12.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.11.0...v1.12.0-beta.1) (2025-05-07)
 
-
 ### Features
 
-* add social media links to header and dropdown menu ([0329187](https://github.com/dahliakliniken/drgribbe/commit/032918774edcbbdea6b92509542cf237af4b1086))
+- add social media links to header and dropdown menu ([0329187](https://github.com/dahliakliniken/drgribbe/commit/032918774edcbbdea6b92509542cf237af4b1086))
 
 # [1.11.0](https://github.com/dahliakliniken/drgribbe/compare/v1.10.0...v1.11.0) (2025-05-06)
 
-
 ### Features
 
-* add InstagramIcon ([cc37b02](https://github.com/dahliakliniken/drgribbe/commit/cc37b026cc73ef8d3b714ea07831a7283895a06e))
+- add InstagramIcon ([cc37b02](https://github.com/dahliakliniken/drgribbe/commit/cc37b026cc73ef8d3b714ea07831a7283895a06e))
 
 # [1.11.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.10.0...v1.11.0-beta.1) (2025-05-06)
 
-
 ### Features
 
-* add InstagramIcon ([cc37b02](https://github.com/dahliakliniken/drgribbe/commit/cc37b026cc73ef8d3b714ea07831a7283895a06e))
+- add InstagramIcon ([cc37b02](https://github.com/dahliakliniken/drgribbe/commit/cc37b026cc73ef8d3b714ea07831a7283895a06e))
 
 # [1.10.0](https://github.com/dahliakliniken/drgribbe/compare/v1.9.1...v1.10.0) (2025-05-04)
 
-
 ### Features
 
-* trigger semantic release ([730e1df](https://github.com/dahliakliniken/drgribbe/commit/730e1df65fcb88405986d3af30187a71772d2030))
+- trigger semantic release ([730e1df](https://github.com/dahliakliniken/drgribbe/commit/730e1df65fcb88405986d3af30187a71772d2030))
 
 # [1.10.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.9.1...v1.10.0-beta.1) (2025-05-04)
 
-
 ### Features
 
-* trigger semantic release ([730e1df](https://github.com/dahliakliniken/drgribbe/commit/730e1df65fcb88405986d3af30187a71772d2030))
+- trigger semantic release ([730e1df](https://github.com/dahliakliniken/drgribbe/commit/730e1df65fcb88405986d3af30187a71772d2030))
 
 ## [1.9.1](https://github.com/dahliakliniken/drgribbe/compare/v1.9.0...v1.9.1) (2025-04-15)
 
-
 ### Bug Fixes
 
-* use text button for handle cookies ([507184c](https://github.com/dahliakliniken/drgribbe/commit/507184cb6992ccd0d95844c2ca8c133af7951c7d))
+- use text button for handle cookies ([507184c](https://github.com/dahliakliniken/drgribbe/commit/507184cb6992ccd0d95844c2ca8c133af7951c7d))
 
 ## [1.9.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.9.0...v1.9.1-beta.1) (2025-04-15)
 
-
 ### Bug Fixes
 
-* use text button for handle cookies ([507184c](https://github.com/dahliakliniken/drgribbe/commit/507184cb6992ccd0d95844c2ca8c133af7951c7d))
+- use text button for handle cookies ([507184c](https://github.com/dahliakliniken/drgribbe/commit/507184cb6992ccd0d95844c2ca8c133af7951c7d))
 
 # [1.9.0](https://github.com/dahliakliniken/drgribbe/compare/v1.8.2...v1.9.0) (2025-04-15)
 
