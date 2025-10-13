@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/dahliakliniken/drgribbe/compare/v1.19.2...v1.20.0) (2025-10-13)
+
+
+### Features
+
+* enhance SpaceContainer component and update Testimonial styles for improved layout ([e72857a](https://github.com/dahliakliniken/drgribbe/commit/e72857a8d8844921c4d6df408ee710db49a137a7))
+
 # [1.20.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.19.2...v1.20.0-beta.1) (2025-10-13)
 
 
