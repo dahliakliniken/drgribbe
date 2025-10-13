@@ -18,7 +18,7 @@ export const Testimonial = memo(
 
     return (
       <article
-        className={`testimonial flex w-[90%] flex-col sm:w-[60%] md:w-[40%] xl:w-auto before:${ephesis.className} flex-none`}
+        className={`testimonial w-80 flex-shrink-0 before:${ephesis.className} flex flex-col p-2 text-center`}
         itemScope
         itemType="https://schema.org/Review"
       >
@@ -63,7 +63,7 @@ export const Testimonial = memo(
         </div>
 
         <a
-          className="text-gold font-josefin-sans mt-auto text-lg leading-tight font-light tracking-[0.06em] underline underline-offset-3 transition-colors duration-300 hover:underline"
+          className="text-gold font-josefin-sans mt-auto pt-2 text-lg leading-tight font-light tracking-[0.06em] underline underline-offset-3 transition-colors duration-300 hover:underline"
           href={link}
           target="_blank"
           rel="noopener noreferrer"
