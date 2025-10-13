@@ -71,8 +71,8 @@ export default async function Home() {
         bgColor={BgColors.White}
         bgPosition="right"
         content={
-          <Pillar noPadding>
-            <SpaceContainer>
+          <SpaceContainer noPadding>
+            <Pillar noPadding>
               <H1>
                 {t.rich('aboutBox.title', {
                   span: (chunks) => (
@@ -96,25 +96,21 @@ export default async function Home() {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
-            </SpaceContainer>
-          </Pillar>
+            </Pillar>
+          </SpaceContainer>
         }
       />
 
-      <SpaceContainer noPadding>
+      <SpaceContainer as="section">
         <Pillar>
-          <SpaceContainer>
-            <H2>{t('testimonials.title')}</H2>
-          </SpaceContainer>
+          <H2>{t('testimonials.title')}</H2>
         </Pillar>
         <Testimonials />
       </SpaceContainer>
 
-      <SpaceContainer noPadding>
+      <SpaceContainer as="section">
         <Pillar>
-          <SpaceContainer>
-            <H2>{t('treatmentBox.title')}</H2>
-          </SpaceContainer>
+          <H2>{t('treatmentBox.title')}</H2>
         </Pillar>
 
         <div className="m-auto xl:max-w-7xl">

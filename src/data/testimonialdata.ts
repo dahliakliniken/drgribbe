@@ -76,7 +76,7 @@ export const testimonials = [
     content:
       'Jag gjorde min bröstimplantatoperation hos dr Gribbe för sju år sedan, och jag är fortfarande oerhört nöjd med resultatet',
     link: 'https://maps.app.goo.gl/ZbzuxdPvNej44Uak9',
-    date: '2024-01-01',
+    date: '2025-01-01',
     rating: 5
   },
   {
@@ -84,7 +84,7 @@ export const testimonials = [
     content:
       'Högsta betyg från mig! Supernöjd med resultatet,blev väldigt bra omhändertagen av Örjan och hans personal.',
     link: 'https://maps.app.goo.gl/hwfN1r9X3YMw4EvN7',
-    date: '2024-01-01',
+    date: '2025-01-01',
     rating: 5
   },
   {
