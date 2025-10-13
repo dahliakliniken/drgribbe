@@ -1,5 +1,69 @@
 export const testimonials = [
+   {
+    title: 'Nora',
+    content:
+      'Jag opererade mig nyligen hos Dr. Gribbe och är så otroligt nöjd! Jag gjorde ett lyft, implantat och förminskning och resultatet är precis de bröst jag alltid drömt om. Förutom det fantastiska kirurgiska resultatet har jag fått tillbaka mitt självförtroende och en kärlek till mig själv som jag länge saknat.',
+    link: 'https://share.google/OFafhr4G7YwgZ8DWp',
+    date: '2025-09-10',
+    rating: 5
+  },
   {
+    title: 'Sara',
+    content:
+      'Jag gjorde en bröstoperation med implantat och lyft för 3 veckor sedan och kan bara säga WOW om denna fantastiska klinik som utstrålar en familjär känsla. Kombinationen av värme, trygghet och proffsighet gjorde valet av klinik enkel.',
+    link: 'https://share.google/i3A7i8g5r82FH0VDL',
+    date: '2025-09-10',
+    rating: 5
+  },
+  {
+    title: 'Alexia',
+    content:
+      'Jag opererade mig hos Örjan Gribbe för tio år sedan och är fortfarande otroligt nöjd med resultatet. Redan då blev jag väldigt väl omhändertagen, och hela processen kändes trygg och professionell från början till slut.',
+    link: 'https://share.google/cvO3XSuvTeV1iArFR',
+    date: '2025-06-13',
+    rating: 5
+  },
+  {
+    title: 'Michaela',
+    content:
+      'En fantastisk klinik med det lilla extra. Proffsigt bemötande och ett fantastisk team man känner sig trygg från första mötet. Dr Örjan är extremt nogran och informativ. Jag rekommenderar verkligen denna varma klinik.',
+    link: 'https://share.google/6Gq67ZMjhdJhffIEv',
+    date: '2025-08-13',
+    rating: 5
+  },
+  {
+    title: 'Jenny',
+    content:
+      'Ett stort tack till Dr. Gribbe, Kristina och hela operations-teamet för deras otroliga arbete och engagemang. Jag kommer definitivt att rekommendera er vidare till alla jag känner! Stort tack! 💕',
+    link: 'https://share.google/aXuMWcyJNGV9uVbne',
+    date: '2025-04-13',
+    rating: 5
+  },
+  {
+    title: 'Alona',
+    content:
+      'Det här var min första operation och första gång under narkos, men tack vare Dr Gribbe och hans fantastiska team kände jag mig lugn och säker från början till slut. Jag är otroligt tacksam att jag hittade denna klinik och kan varmt rekommendera den till alla som söker en trygg och professionell upplevelse.',
+    link: 'https://share.google/DM4dPlntU0kMdDgj6',
+    date: '2025-05-10',
+    rating: 5
+  },
+  {
+    title: 'Elena',
+    content:
+      'Fantastiskt! Från konsultation till operation. Duktig, lyhörd och empatisk. Stor eloge till Kristina, narkosläkaren och narkossköterska som var så grymma. Rekommenderas varmt.',
+    link: 'https://share.google/BBRXGnuKhpnHAVIse',
+    date: '2025-09-10',
+    rating: 5
+  },
+  {
+    title: 'Johanna',
+    content:
+      'Kan rekommendera ALLA som funderar på en bröstoperation att gå till Örjan Gribbe 👌. Högsta betyg från mig! Jag är verkligen supernöjd med hela erfarenheten, Örjan och hans team och klinik!!!',
+    link: 'https://share.google/vjAnqDQI8vto8rf3V',
+    date: '2025-03-10',
+    rating: 5
+  }
+/*  {
     title: 'Alexandra',
     content:
       'Jag är så väldigt nöjd med min bröstförstoring! Doktor Örjan Gribbe opererade mig för ett tag sedan och brösten är fantastiska, naturliga och ännu finare nu än strax efter operationen...',
@@ -126,5 +190,5 @@ export const testimonials = [
     link: 'https://maps.app.goo.gl/H44UUbtaKvjsQuz49',
     date: '2024-11-01',
     rating: 5
-  }
+  }*/
 ]
