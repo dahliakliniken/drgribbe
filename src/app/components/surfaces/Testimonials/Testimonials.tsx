@@ -29,7 +29,6 @@ export default function Testimonials() {
             content={testimonial.content}
             link={testimonial.link}
             date={testimonial.date}
-            rating={testimonial.rating}
           />
         ))}
       </div>

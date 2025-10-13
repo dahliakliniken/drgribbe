@@ -9,11 +9,10 @@ type TestimonialProps = {
   title: string
   link: string
   date: string
-  rating: number
 }
 
 export const Testimonial = memo(
-  ({ content, title, link, date, rating }: TestimonialProps) => {
+  ({ content, title, link, date }: TestimonialProps) => {
     const relativeTime = useMemo(() => formatRelativeTime(date), [date])
 
     return (
@@ -51,16 +50,6 @@ export const Testimonial = memo(
         <blockquote itemProp="reviewBody">
           <P className="leading-relaxed">{content}</P>
         </blockquote>
-
-        <div
-          itemProp="reviewRating"
-          itemScope
-          itemType="https://schema.org/Rating"
-          className="sr-only"
-        >
-          <meta itemProp="ratingValue" content={rating.toString()} />
-          <meta itemProp="bestRating" content="5" />
-        </div>
 
         <a
           className="text-gold font-josefin-sans mt-auto pt-2 text-lg leading-tight font-light tracking-[0.06em] underline underline-offset-3 transition-colors duration-300 hover:underline"
