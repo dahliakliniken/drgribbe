@@ -15,28 +15,12 @@ const getRandomTestimonials = (count: number) => {
 export default function Testimonials() {
   const randomTestimonials = getRandomTestimonials(3)
 
-  const averageRating = (
-    testimonials.reduce((sum, t) => sum + t.rating, 0) / testimonials.length
-  ).toFixed(1)
-
-  const totalReviews = testimonials.length
-
   return (
     <div
       className="w-full overflow-x-auto overflow-y-hidden"
       itemScope
       itemType="https://schema.org/MedicalBusiness"
     >
-      <div
-        itemProp="aggregateRating"
-        itemScope
-        itemType="https://schema.org/AggregateRating"
-        className="sr-only"
-      >
-        <span itemProp="ratingValue">{averageRating}</span>
-        <span itemProp="bestRating">{'5'}</span>
-        <span itemProp="reviewCount">{totalReviews}</span>
-      </div>
       <div className="flex min-w-min justify-center gap-4 lg:min-w-0">
         {randomTestimonials.map((testimonial) => (
           <Testimonial
