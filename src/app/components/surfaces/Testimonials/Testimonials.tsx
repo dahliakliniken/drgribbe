@@ -42,18 +42,19 @@ export default function Testimonials() {
         <span itemProp="bestRating">{'5'}</span>
         <span itemProp="reviewCount">{totalReviews}</span>
       </div>
-
-      <div className="px-gapSpace flex space-x-3 overflow-x-visible xl:grid xl:grid-cols-3 xl:items-stretch">
-        {randomTestimonials.map((testimonial) => (
-          <Testimonial
-            key={`${testimonial.title}-${testimonial.date}-${testimonial.content.slice(0, 20)}`}
-            title={testimonial.title}
-            content={testimonial.content}
-            link={testimonial.link}
-            date={testimonial.date}
-            rating={testimonial.rating}
-          />
-        ))}
+      <div className="m-auto xl:max-w-7xl">
+        <div className="px-gapSpace flex space-x-3 overflow-x-auto xl:grid xl:grid-cols-3 xl:items-stretch">
+          {randomTestimonials.map((testimonial) => (
+            <Testimonial
+              key={`${testimonial.title}-${testimonial.date}-${testimonial.content.slice(0, 20)}`}
+              title={testimonial.title}
+              content={testimonial.content}
+              link={testimonial.link}
+              date={testimonial.date}
+              rating={testimonial.rating}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )

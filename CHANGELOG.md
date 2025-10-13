@@ -1,4 +1,16 @@
-# [1.19.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.19.0-beta.1...v1.19.0-beta.2) (2025-10-12)
+## [1.19.2](https://github.com/dahliakliniken/drgribbe/compare/v1.19.1...v1.19.2) (2025-10-12)
+
+### Bug Fixes
+
+- improve layout structure and responsiveness of testimonials section ([4822d6b](https://github.com/dahliakliniken/drgribbe/commit/4822d6b003760e286f77795360d3b8571c2421b8))
+
+## [1.19.1](https://github.com/dahliakliniken/drgribbe/compare/v1.19.0...v1.19.1) (2025-10-12)
+
+### Bug Fixes
+
+- update overflow property to 'overflow-x-auto' for better responsiveness ([01e3f76](https://github.com/dahliakliniken/drgribbe/commit/01e3f766446c738d2e670dee9d12ec76d30fae34))
+
+# [1.19.0](https://github.com/dahliakliniken/drgribbe/compare/v1.18.2...v1.19.0) (2025-10-12)
 
 ### Bug Fixes
 
