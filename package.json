@@ -1,6 +1,6 @@
 {
   "name": "drgribbe",
-  "version": "1.19.2",
+  "version": "1.20.0-beta.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
