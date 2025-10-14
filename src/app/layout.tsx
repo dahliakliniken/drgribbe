@@ -6,6 +6,8 @@ import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 
+import { BUSINESS_IMAGES, BUSINESS_NAME } from '@/data/businessData'
+
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import { JsonLd } from './components/surfaces/JsonLd'
@@ -39,16 +41,16 @@ export const metadata: Metadata = {
 const org = {
   '@id': `${SITE_URL}#organization`,
   '@type': 'Organization',
-  name: 'Dahliakliniken',
+  name: BUSINESS_NAME,
   url: SITE_URL,
-  logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.svg` }
+  logo: { '@type': 'ImageObject', url: BUSINESS_IMAGES.logo }
 }
 
 const webSite = {
   '@id': `${SITE_URL}#website`,
   '@type': 'WebSite',
   url: SITE_URL,
-  name: 'Dahliakliniken',
+  name: BUSINESS_NAME,
   publisher: { '@id': `${SITE_URL}#organization` }
 }
 

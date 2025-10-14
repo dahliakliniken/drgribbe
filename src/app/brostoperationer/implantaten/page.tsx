@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { canonicalUrl,SITE_URL } from '@/app/config/site'
+import { canonicalUrl, SITE_URL } from '@/app/config/site'
 import { JsonLd } from '@/components/surfaces/JsonLd'
 
 import Implantaten from './Implantaten'
@@ -37,7 +37,7 @@ export default async function Page() {
         image: {
           '@type': 'ImageObject',
           '@id': `${canonical}#primaryimage`,
-          url: 'https://www.dahliakliniken.se/_next/static/media/_N3A0080.87f32f0b.jpg'
+          url: `${SITE_URL}/_next/static/media/_N3A0080.87f32f0b.jpg`
         },
         mainEntityOfPage: { '@id': canonical }
       },
