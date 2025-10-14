@@ -1,3 +1,10 @@
+# [1.21.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.20.0...v1.21.0-beta.1) (2025-10-14)
+
+
+### Features
+
+* introduce business data constants and update components to use them ([2e0bafa](https://github.com/dahliakliniken/drgribbe/commit/2e0bafafd695ad7f94e3a8bdbefbe0fc88341b32))
+
 # [1.20.0](https://github.com/dahliakliniken/drgribbe/compare/v1.19.2...v1.20.0) (2025-10-13)
 
 
