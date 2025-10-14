@@ -2,6 +2,13 @@ import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 
 import { allTreatmentsData } from '@/data/allTreatmentsData'
+import {
+  BUSINESS_ADDRESS,
+  BUSINESS_CONTACT,
+  BUSINESS_IMAGES,
+  BUSINESS_NAME,
+  BUSINESS_SOCIAL
+} from '@/data/businessData'
 import belowheadingImage from '@/public/images/_N3A9899.jpg'
 import Consultation from '@/public/images/N3A0033_.jpg'
 import WaitingRoom from '@/public/images/N3A7746_edited.png'
@@ -23,16 +30,16 @@ import { BgColors } from './types'
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': 'MedicalClinic',
-  name: 'Dahliakliniken',
-  image: 'https://www.dahliakliniken.se/opengraph-image.jpg',
-  url: 'https://www.dahliakliniken.se',
-  telephone: '+46 8 520 278 78',
+  name: BUSINESS_NAME,
+  image: BUSINESS_IMAGES.openGraph,
+  url: BUSINESS_CONTACT.url,
+  telephone: BUSINESS_CONTACT.telephone,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'S:t Göransgatan 126',
-    addressLocality: 'Stockholm',
-    postalCode: '112 45',
-    addressCountry: 'SE'
+    streetAddress: BUSINESS_ADDRESS.streetAddress,
+    addressLocality: BUSINESS_ADDRESS.addressLocality,
+    postalCode: BUSINESS_ADDRESS.postalCode,
+    addressCountry: BUSINESS_ADDRESS.addressCountry
   },
   description:
     'Dahliakliniken är en modern klinik i Stockholm som är specialiserad på estetiska bröstoperationer som bröstförstoring, bröstlyft och bröstförminskning.',
@@ -48,10 +55,7 @@ const schemaData = {
     '@type': 'Place',
     name: 'Stockholm'
   },
-  sameAs: [
-    'https://www.facebook.com/dahliakliniken',
-    'https://www.instagram.com/dahliakliniken'
-  ]
+  sameAs: [BUSINESS_SOCIAL.facebook, BUSINESS_SOCIAL.instagram]
 }
 
 export const metadata = {
