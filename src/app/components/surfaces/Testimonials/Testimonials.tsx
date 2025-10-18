@@ -16,11 +16,7 @@ export default function Testimonials() {
   const randomTestimonials = getRandomTestimonials(3)
 
   return (
-    <div
-      className="w-full overflow-x-auto overflow-y-hidden"
-      itemScope
-      itemType="https://schema.org/MedicalBusiness"
-    >
+    <div className="w-full overflow-x-auto overflow-y-hidden">
       <div className="flex min-w-min justify-center gap-4 lg:min-w-0">
         {randomTestimonials.map((testimonial) => (
           <Testimonial
