@@ -77,6 +77,11 @@ export default async function Home() {
         content={
           <SpaceContainer noPadding>
             <Pillar noPadding>
+              <P className="imagetext fat">
+                {t.rich('aboutBox.custommessage', {
+                  strong: (chunks) => <strong>{chunks}</strong>
+                })}
+              </P>
               <H1>
                 {t.rich('aboutBox.title', {
                   span: (chunks) => (
@@ -85,11 +90,6 @@ export default async function Home() {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </H1>
-                  <P className="fat">
-                {t.rich('aboutBox.custommessage', {
-                  strong: (chunks) => <strong>{chunks}</strong>
-                })}
-              </P>
               <P className="fat">
                 {t.rich('aboutBox.newClinicName', {
                   strong: (chunks) => <strong>{chunks}</strong>
