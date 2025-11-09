@@ -1,3 +1,10 @@
+## [1.22.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.22.0...v1.22.1-beta.1) (2025-11-09)
+
+
+### Bug Fixes
+
+* remove w44 message ([87ec697](https://github.com/dahliakliniken/drgribbe/commit/87ec697d4f7fdfa9563ff1bbdd5edce6a58112cc))
+
 # [1.22.0](https://github.com/dahliakliniken/drgribbe/compare/v1.21.0...v1.22.0) (2025-11-09)
 
 
