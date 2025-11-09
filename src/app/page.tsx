@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 
+import { CLINIC_ID } from '@/app/config/site'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 import {
   BUSINESS_ADDRESS,
@@ -30,6 +31,7 @@ import { BgColors } from './types'
 const schemaData = {
   '@context': 'https://schema.org',
   '@type': 'MedicalClinic',
+  '@id': CLINIC_ID,
   name: BUSINESS_NAME,
   image: BUSINESS_IMAGES.openGraph,
   url: BUSINESS_CONTACT.url,
@@ -110,9 +112,9 @@ export default async function Home() {
         }
       />
 
-      <SpaceContainer as="section">
+      <SpaceContainer as="section" ariaLabelledBy="testimonials-heading">
         <Pillar>
-          <H2>{t('testimonials.title')}</H2>
+          <H2 id="testimonials-heading">{t('testimonials.title')}</H2>
         </Pillar>
         <Testimonials />
       </SpaceContainer>

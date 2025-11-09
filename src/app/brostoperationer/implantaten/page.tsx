@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { canonicalUrl, SITE_URL } from '@/app/config/site'
+import { canonicalUrl, ORG_ID, SITE_URL } from '@/app/config/site'
 import { JsonLd } from '@/components/surfaces/JsonLd'
 
 import Implantaten from './Implantaten'
@@ -48,7 +48,7 @@ export default async function Page() {
         name: 'Implantaten | Dahliakliniken',
         inLanguage: 'sv-SE',
         isPartOf: { '@id': `${SITE_URL}#website` },
-        publisher: { '@id': `${SITE_URL}#organization` },
+        publisher: { '@id': ORG_ID },
         about: { '@id': `${canonical}#procedure` },
         breadcrumb: { '@id': `${canonical}#breadcrumb` },
         primaryImageOfPage: { '@id': `${canonical}#primaryimage` }

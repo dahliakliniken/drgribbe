@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import { canonicalUrl, SITE_URL } from '@/app/config/site'
+import { canonicalUrl, ORG_ID, SITE_URL } from '@/app/config/site'
 import { JsonLd } from '@/components/surfaces/JsonLd'
 
 import Brostoperationer from './Brostoperationer'
@@ -36,7 +36,7 @@ export default async function Page() {
         description:
           'Översikt över våra bröstoperationer i Stockholm – bröstförstoring, bröstlyft och bröstförminskning – samt information om konsultation, operationsdag och återhämtning.',
         isPartOf: { '@id': `${SITE_URL}#website` },
-        publisher: { '@id': `${SITE_URL}#organization` },
+        publisher: { '@id': ORG_ID },
         breadcrumb: { '@id': `${canonical}#breadcrumb` },
         mainEntity: {
           '@id': `${canonical}#procedures`
