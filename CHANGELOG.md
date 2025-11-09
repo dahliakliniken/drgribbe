@@ -1,3 +1,10 @@
+## [1.21.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.21.0...v1.21.1-beta.1) (2025-11-09)
+
+
+### Bug Fixes
+
+* FAQ title ([6804c15](https://github.com/dahliakliniken/drgribbe/commit/6804c15911d995024de69fa87380cfb0b8498188))
+
 # [1.21.0](https://github.com/dahliakliniken/drgribbe/compare/v1.20.0...v1.21.0) (2025-10-14)
 
 
