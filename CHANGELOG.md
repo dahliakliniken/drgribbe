@@ -1,3 +1,10 @@
+# [1.22.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.21.1-beta.1...v1.22.0-beta.1) (2025-11-09)
+
+
+### Features
+
+* change testimonial jsonld to quotations ([8fcae9b](https://github.com/dahliakliniken/drgribbe/commit/8fcae9b9910c719b2234876656772f203e18b4ab))
+
 ## [1.21.1-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.21.0...v1.21.1-beta.1) (2025-11-09)
 
 
