@@ -7,6 +7,7 @@ type SpaceContainerProps = {
   spaceVertically?: boolean
   spaceTop?: boolean
   id?: string
+  ariaLabelledBy?: string
   children: React.ReactNode
 }
 
@@ -16,11 +17,13 @@ export const SpaceContainer = ({
   spaceVertically,
   spaceTop,
   id,
+  ariaLabelledBy,
   children
 }: SpaceContainerProps) => {
   return (
     <Component
       id={id}
+      aria-labelledby={ariaLabelledBy}
       className={classNames(
         'w-full',
         !noPadding && 'px-gapSpace',
