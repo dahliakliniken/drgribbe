@@ -1,3 +1,15 @@
+# [1.22.0](https://github.com/dahliakliniken/drgribbe/compare/v1.21.0...v1.22.0) (2025-11-09)
+
+
+### Bug Fixes
+
+* FAQ title ([6804c15](https://github.com/dahliakliniken/drgribbe/commit/6804c15911d995024de69fa87380cfb0b8498188))
+
+
+### Features
+
+* change testimonial jsonld to quotations ([8fcae9b](https://github.com/dahliakliniken/drgribbe/commit/8fcae9b9910c719b2234876656772f203e18b4ab))
+
 # [1.22.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.21.1-beta.1...v1.22.0-beta.1) (2025-11-09)
 
 
