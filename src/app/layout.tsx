@@ -11,7 +11,7 @@ import { BUSINESS_IMAGES, BUSINESS_NAME } from '@/data/businessData'
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import { JsonLd } from './components/surfaces/JsonLd'
-import { SITE_URL } from './config/site'
+import { ORG_ID, SITE_URL } from './config/site'
 import { ephesis, josefinSans } from './fonts'
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 }
 
 const org = {
-  '@id': `${SITE_URL}#organization`,
+  '@id': ORG_ID,
   '@type': 'Organization',
   name: BUSINESS_NAME,
   url: SITE_URL,
@@ -51,7 +51,7 @@ const webSite = {
   '@type': 'WebSite',
   url: SITE_URL,
   name: BUSINESS_NAME,
-  publisher: { '@id': `${SITE_URL}#organization` }
+  publisher: { '@id': ORG_ID }
 }
 
 export default async function RootLayout({

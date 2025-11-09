@@ -1,3 +1,5 @@
+import { JsonLd } from '@/app/components/surfaces/JsonLd'
+import { CLINIC_ID, SITE_URL } from '@/app/config/site'
 import { Testimonial } from '@/components/surfaces/Testimonials/Testimonial'
 import { testimonials } from '@/data/testimonialdata'
 
@@ -15,6 +17,23 @@ const getRandomTestimonials = (count: number) => {
 export default function Testimonials() {
   const randomTestimonials = getRandomTestimonials(3)
 
+  const graph = randomTestimonials.map((t) => ({
+    '@type': 'Quotation',
+    '@id': `${SITE_URL}/#testimonial-${t.title}-${t.date}`,
+    text: t.content,
+    author: { '@type': 'Person', name: t.title },
+    datePublished: t.date,
+    inLanguage: 'sv',
+    isBasedOn: t.link,
+    url: t.link,
+    publisher: { '@type': 'Organization', name: 'Google' },
+    about: { '@id': CLINIC_ID },
+    mainEntityOfPage: SITE_URL,
+    citation: t.link
+  }))
+
+  const schema = { '@context': 'https://schema.org', '@graph': graph }
+
   return (
     <div className="w-full overflow-x-auto overflow-y-hidden">
       <div className="flex min-w-min justify-center gap-4 lg:min-w-0">
@@ -29,6 +48,7 @@ export default function Testimonials() {
           />
         ))}
       </div>
+      <JsonLd data={schema} id="jsonld-testimonials" />
     </div>
   )
 }
