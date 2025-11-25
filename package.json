@@ -1,6 +1,6 @@
 {
   "name": "drgribbe",
-  "version": "1.22.1",
+  "version": "1.23.0-beta.1",
   "private": true,
   "scripts": {
     "prebuild": "node scripts/generate-last-modified.mjs",
