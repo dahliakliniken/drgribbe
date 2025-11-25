@@ -3,6 +3,7 @@
   "version": "1.22.1",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/generate-last-modified.mjs",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",

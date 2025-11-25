@@ -6,6 +6,7 @@ import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 
+import { LastUpdated } from '@/app/components/surfaces/LastUpdated'
 import { BUSINESS_IMAGES, BUSINESS_NAME } from '@/data/businessData'
 
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
@@ -80,11 +81,12 @@ export default async function RootLayout({
         />
         <NextIntlClientProvider messages={messages}>
           <HeaderWithFooter />
-          <main className="mb-52 flex flex-col lg:mt-20 lg:mb-0">
+          <main className="flex flex-col lg:mt-20">
             <Breadcrumbs />
             {children}
           </main>
         </NextIntlClientProvider>
+        <LastUpdated />
       </body>
     </html>
   )
