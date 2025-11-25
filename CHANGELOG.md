@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/dahliakliniken/drgribbe/compare/v1.22.1...v1.23.0) (2025-11-25)
+
+
+### Features
+
+* add last modified date functionality and update pages accordingly ([d2b312e](https://github.com/dahliakliniken/drgribbe/commit/d2b312eb99989b2cc4a381a685e0917419ebf210))
+
 # [1.23.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.22.1...v1.23.0-beta.1) (2025-11-25)
 
 
