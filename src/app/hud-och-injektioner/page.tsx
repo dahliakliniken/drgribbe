@@ -1,7 +1,13 @@
 import { Metadata } from 'next'
 
-import { canonicalUrl, ORG_ID, SITE_URL } from '@/app/config/site'
+import {
+  canonicalUrl,
+  DATE_PUBLISHED,
+  ORG_ID,
+  SITE_URL
+} from '@/app/config/site'
 import { JsonLd } from '@/components/surfaces/JsonLd'
+import { getLastModified } from '@/utils/getLastModified'
 
 import HudOchInjektioner from './HudOchInjektioner'
 
@@ -23,6 +29,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   const canonical = canonicalUrl('/hud-och-injektioner')
+  const dateModified = getLastModified('/hud-och-injektioner')
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -77,7 +84,9 @@ export default async function Page() {
         specialty: 'PlasticSurgery',
         breadcrumb: {
           '@id': `${canonical}#breadcrumb`
-        }
+        },
+        datePublished: DATE_PUBLISHED,
+        ...(dateModified && { dateModified })
       },
       {
         '@type': 'BreadcrumbList',

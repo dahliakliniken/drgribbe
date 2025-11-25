@@ -145,7 +145,6 @@ export default async function Home() {
 
       {/* About Section */}
       <Card
-        id="om-kliniken"
         className="before:[background-size:500%] before:bg-[30%_40%]"
         bgColor={BgColors.White}
         content={
@@ -163,7 +162,7 @@ export default async function Home() {
             </span>
 
             <SpaceContainer noPadding spaceTop>
-              <H2>
+              <H2 id="om-kliniken" className="scroll-mt-4 lg:scroll-mt-24">
                 {t.rich('aboutClinic.title', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
