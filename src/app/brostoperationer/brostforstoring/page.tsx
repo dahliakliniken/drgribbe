@@ -1,7 +1,13 @@
 import { Metadata } from 'next'
 
-import { canonicalUrl, ORG_ID, SITE_URL } from '@/app/config/site'
+import {
+  canonicalUrl,
+  DATE_PUBLISHED,
+  ORG_ID,
+  SITE_URL
+} from '@/app/config/site'
 import { JsonLd } from '@/components/surfaces/JsonLd'
+import { getLastModified } from '@/utils/getLastModified'
 
 import Brostforstoring from './Brostforstoring'
 
@@ -23,6 +29,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   const canonical = canonicalUrl('/brostoperationer/brostforstoring')
+  const dateModified = getLastModified('/brostoperationer/brostforstoring')
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -55,7 +62,9 @@ export default async function Page() {
         publisher: { '@id': ORG_ID },
         about: { '@id': `${canonical}#procedure` },
         breadcrumb: { '@id': `${canonical}#breadcrumb` },
-        primaryImageOfPage: { '@id': `${canonical}#primaryimage` }
+        primaryImageOfPage: { '@id': `${canonical}#primaryimage` },
+        datePublished: DATE_PUBLISHED,
+        ...(dateModified && { dateModified })
       },
       {
         '@type': 'BreadcrumbList',

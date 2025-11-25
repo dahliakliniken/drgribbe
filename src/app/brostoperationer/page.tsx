@@ -1,7 +1,13 @@
 import { Metadata } from 'next'
 
-import { canonicalUrl, ORG_ID, SITE_URL } from '@/app/config/site'
+import {
+  canonicalUrl,
+  DATE_PUBLISHED,
+  ORG_ID,
+  SITE_URL
+} from '@/app/config/site'
 import { JsonLd } from '@/components/surfaces/JsonLd'
+import { getLastModified } from '@/utils/getLastModified'
 
 import Brostoperationer from './Brostoperationer'
 
@@ -23,6 +29,7 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   const canonical = canonicalUrl('/brostoperationer')
+  const dateModified = getLastModified('/brostoperationer')
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -45,7 +52,9 @@ export default async function Page() {
           '@type': 'ScheduleAction',
           target: `${SITE_URL}/boka`,
           name: 'Boka tid / konsultation'
-        }
+        },
+        datePublished: DATE_PUBLISHED,
+        ...(dateModified && { dateModified })
       },
       {
         '@type': 'ItemList',
