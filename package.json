@@ -2,6 +2,7 @@
   "name": "drgribbe",
   "version": "1.23.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "prebuild": "node scripts/generate-last-modified.mjs",
     "dev": "next dev --turbopack",
