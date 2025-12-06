@@ -30,12 +30,21 @@ export const HeaderWithFooter = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Recalculate on route change to reset footer state on short pages
+  // Recalculate on route change to reset footer state on short pages.
+  // This derives `isAtBottom` from the scroll position without persisting
+  // it in state again, which satisfies the React lint rule.
   useEffect(() => {
     const pageHeight = document.documentElement.scrollHeight
     const isScrollable = pageHeight > window.innerHeight
     const scrollPosition = window.scrollY + window.innerHeight
-    setIsAtBottom(isScrollable && scrollPosition >= pageHeight)
+    const nextIsAtBottom = isScrollable && scrollPosition >= pageHeight
+
+    // Keep state in sync only if it differs, but avoid using this
+    // derived value to drive further effects.
+    if (nextIsAtBottom !== isAtBottom) {
+      setIsAtBottom(nextIsAtBottom)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname])
 
   return (
