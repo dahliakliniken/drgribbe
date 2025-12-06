@@ -20,32 +20,37 @@ type StaffCardProps = {
   member: Staff
 }
 
+type FlipButtonProps = {
+  ariaLabel: string
+  onClick: () => void
+}
+
+const FlipButton = ({ ariaLabel, onClick }: FlipButtonProps) => (
+  <button
+    onClick={onClick}
+    className={classNames(
+      'absolute right-2 bottom-2 z-10 p-2',
+      'text-white/80 hover:text-white',
+      'group transition-colors duration-300'
+    )}
+    aria-label={ariaLabel}
+  >
+    <IterationCcw
+      className={classNames(
+        'h-6 w-6',
+        'transition-transform duration-300 ease-in-out',
+        'group-hover:rotate-[-180deg]'
+      )}
+      aria-hidden="true"
+    />
+  </button>
+)
+
 export const FlippableCard = ({ member }: StaffCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false)
   const t = useTranslations()
 
   const hasDescription = Boolean(member.description)
-
-  const FlipButton = ({ ariaLabel }: { ariaLabel: string }) => (
-    <button
-      onClick={() => setIsFlipped(!isFlipped)}
-      className={classNames(
-        'absolute right-2 bottom-2 z-10 p-2',
-        'text-white/80 hover:text-white',
-        'group transition-colors duration-300'
-      )}
-      aria-label={ariaLabel}
-    >
-      <IterationCcw
-        className={classNames(
-          'h-6 w-6',
-          'transition-transform duration-300 ease-in-out',
-          'group-hover:rotate-[-180deg]'
-        )}
-        aria-hidden="true"
-      />
-    </button>
-  )
 
   return (
     <div className="card h-60 w-[320px] lg:w-[400px]">
@@ -87,6 +92,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
           </ul>
           {hasDescription && (
             <FlipButton
+              onClick={() => setIsFlipped(!isFlipped)}
               ariaLabel={t('varPersonal.readMore', { name: member.name })}
             />
           )}
@@ -99,6 +105,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
               </P>
             </div>
             <FlipButton
+              onClick={() => setIsFlipped(!isFlipped)}
               ariaLabel={t('varPersonal.readLess', { name: member.name })}
             />
           </div>

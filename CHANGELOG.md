@@ -1,3 +1,10 @@
+# [1.24.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.23.0...v1.24.0-beta.1) (2025-12-06)
+
+
+### Features
+
+* update next ([9620c2e](https://github.com/dahliakliniken/drgribbe/commit/9620c2e25f4d76b97e5cb3eca1d531b88c775864))
+
 # [1.23.0](https://github.com/dahliakliniken/drgribbe/compare/v1.22.1...v1.23.0) (2025-11-25)
 
 

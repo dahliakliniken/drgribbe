@@ -39,7 +39,6 @@ export const Video = ({
 
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
     const isReducedMotion = mediaQuery.matches
-    setPrefersReducedMotion(isReducedMotion)
 
     // Set playback rate
     video.playbackRate = playbackRate
@@ -49,10 +48,11 @@ export const Video = ({
       video.pause()
     }
 
-    // Listen for changes in user preference
+    // Listen for changes in user preference and update state from callback
     const handleChange = (e: MediaQueryListEvent) => {
-      setPrefersReducedMotion(e.matches)
-      if (e.matches && video && !video.paused) {
+      const nextPrefersReduced = e.matches
+      setPrefersReducedMotion(nextPrefersReduced)
+      if (nextPrefersReduced && video && !video.paused) {
         video.pause()
       }
     }
