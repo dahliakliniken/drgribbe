@@ -77,8 +77,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "pnpm exec eslint --fix",
-      "git add"
+      "pnpm exec eslint --fix"
     ]
   },
   "pnpm": {
