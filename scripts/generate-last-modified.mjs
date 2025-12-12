@@ -1,6 +1,6 @@
 // scripts/generate-last-modified.mjs
 import { execSync } from 'node:child_process'
-import { readdirSync, statSync, writeFileSync } from 'node:fs'
+import { readdirSync, writeFileSync } from 'node:fs'
 import { join, relative, sep } from 'node:path'
 
 const APP_DIR = join(process.cwd(), 'src', 'app')
