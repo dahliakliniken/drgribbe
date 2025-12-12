@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "prebuild": "node scripts/generate-last-modified.mjs",
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "pnpm exec eslint .",
@@ -16,7 +16,7 @@
     "@next/third-parties": "16.0.7",
     "classnames": "2.5.1",
     "lucide-react": "0.545.0",
-    "next": "16.0.7",
+    "next": "16.0.10",
     "next-intl": "4.5.8",
     "react": "19.2.1",
     "react-dom": "19.2.1",
