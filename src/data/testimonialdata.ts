@@ -1,5 +1,53 @@
 export const testimonials = [
-   {
+      {
+    title: 'Sofie Claesson',
+    content:
+      'Rekommenderar STARKT! Jag har utfört en bröstförstoring här på Dahliakliniken, och kan inte med ord beskriva hur nöjd jag är. Från att jag tog mitt första steg in på kliniken, har jag möts av värme, engagemang, förståelse, omtanke och expertis.',
+    link: 'https://maps.app.goo.gl/gESJch9QAjQd1ymy8',
+    date: '2026-01-01',
+    rating: 5
+  }, 
+    {
+    title: 'Lammia Saad',
+    content:
+      'Magisk upplevelse från första sekund!  Kristina och Dr Gribbe bryr sig genuint om sina patienter och utför sitt arbete med hjärtat, vilket man märker från början till slut❤️',
+    link: 'https://maps.app.goo.gl/FXz61WxCRZanztxL7',
+    date: '2026-01-01',
+    rating: 5
+  }, 
+    {
+    title: 'Sofie A',
+    content:
+      'Är fantastiskt nöjd med allt. Var på konsultation hos två andra kirurger innan jag blev tipsad om Dahliakliniken. Resultatet (det allra viktigaste) blev makalöst bra! Dr Gribbe är i synnerhet bra på att skapa nästintill osynliga ärr. Hade jag vetat om det tidigare hade jag gjort operationen för längesen.',
+    link: 'https://maps.app.goo.gl/xt7ZU1vykizQYgTd7',
+    date: '2026-01-01',
+    rating: 5
+  }, 
+      {
+    title: 'Lilo Monfared',
+    content:
+      'Jag är otroligt nöjd med min upplevelse på Dahlia­kliniken! Från första stund blev jag bemött av fantastisk, varm och professionell personal som verkligen fick mig att känna mig trygg. Miljön är trevlig och harmonisk, och jag kände mig omhändertagen genom hela processen.',
+    link: 'https://maps.app.goo.gl/ngu5uRAgYYEvQCw69',
+    date: '2026-01-01',
+    rating: 5
+  }, 
+    {
+    title: 'Bafren M',
+    content:
+      'Det här har verkligen varit ett av de finaste besluten jag tagit, och jag kan varmt och innerligt rekommendera Örjan och hans fantastiska team. 🤍 —> Vill man följa deras arbete och se fler resultat kan man även följa dem på Instagram!! 🫶',
+    link: 'https://maps.app.goo.gl/Kpxvrph9bbXrbb9Z7',
+    date: '2025-12-01',
+    rating: 5
+  }, 
+    {
+    title: 'Alexandra F',
+    content:
+      'Dahliakliniken - ett hjärta av guld. Kärlek, stöd och genuin omsorg har genomsyrat varje ögonblick tillsammans med detta fantastiskt professionella team. Ett innerligt tack till Dr. Örjan, Kristina och hela Dahliaklinikens personal för att ni hållit min hand, både fysiskt och mentalt, genom hela denna resa.',
+    link: 'https://maps.app.goo.gl/jQ7CCUmCXwJn5G2KA',
+    date: '2026-01-01',
+    rating: 5
+  }, /* slut på nya jan 26*/
+  {
     title: 'Nora',
     content:
       'Jag opererade mig nyligen hos Dr. Gribbe och är så otroligt nöjd! Jag gjorde ett lyft, implantat och förminskning och resultatet är precis de bröst jag alltid drömt om. Förutom det fantastiska kirurgiska resultatet har jag fått tillbaka mitt självförtroende och en kärlek till mig själv som jag länge saknat.',
@@ -15,14 +63,14 @@ export const testimonials = [
     date: '2025-09-10',
     rating: 5
   },
-  {
+  /*{
     title: 'Alexia',
     content:
       'Jag opererade mig hos Örjan Gribbe för tio år sedan och är fortfarande otroligt nöjd med resultatet. Redan då blev jag väldigt väl omhändertagen, och hela processen kändes trygg och professionell från början till slut.',
     link: 'https://share.google/cvO3XSuvTeV1iArFR',
     date: '2025-06-13',
     rating: 5
-  },
+  },*/
   {
     title: 'Michaela',
     content:
@@ -31,22 +79,22 @@ export const testimonials = [
     date: '2025-08-13',
     rating: 5
   },
-  {
+  /*{
     title: 'Jenny',
     content:
       'Ett stort tack till Dr. Gribbe, Kristina och hela operations-teamet för deras otroliga arbete och engagemang. Jag kommer definitivt att rekommendera er vidare till alla jag känner! Stort tack! 💕',
     link: 'https://share.google/aXuMWcyJNGV9uVbne',
     date: '2025-04-13',
     rating: 5
-  },
-  {
+  },*/
+  /*{
     title: 'Alona',
     content:
       'Det här var min första operation och första gång under narkos, men tack vare Dr Gribbe och hans fantastiska team kände jag mig lugn och säker från början till slut. Jag är otroligt tacksam att jag hittade denna klinik och kan varmt rekommendera den till alla som söker en trygg och professionell upplevelse.',
     link: 'https://share.google/DM4dPlntU0kMdDgj6',
     date: '2025-05-10',
     rating: 5
-  },
+  },*/
   {
     title: 'Elena',
     content:
@@ -55,14 +103,14 @@ export const testimonials = [
     date: '2025-09-10',
     rating: 5
   },
-  {
+  /*{
     title: 'Johanna',
     content:
       'Kan rekommendera ALLA som funderar på en bröstoperation att gå till Örjan Gribbe 👌. Högsta betyg från mig! Jag är verkligen supernöjd med hela erfarenheten, Örjan och hans team och klinik!!!',
     link: 'https://share.google/vjAnqDQI8vto8rf3V',
     date: '2025-03-10',
     rating: 5
-  }
+  }*/
 /*  {
     title: 'Alexandra',
     content:
