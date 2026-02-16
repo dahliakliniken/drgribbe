@@ -2,7 +2,6 @@ import classNames from 'classnames'
 
 type SpaceContainerProps = {
   as?: 'section' | 'article' | 'div'
-  centered?: boolean
   noPadding?: boolean
   spaceVertically?: boolean
   spaceTop?: boolean

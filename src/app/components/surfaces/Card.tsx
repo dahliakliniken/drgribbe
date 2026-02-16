@@ -60,8 +60,8 @@ export const Card = ({
         bgColor,
         'relative h-full before:absolute before:top-0 before:left-0 before:h-full before:w-full',
         {
-          'before:bg-card-pattern-light before:opacity-40': isWhite,
-          'before:bg-card-pattern before:opacity-40': isBeige,
+          'before:bg-card-pattern-light before:opacity-0': isWhite,
+          'before:bg-card-pattern before:opacity-30': isBeige,
           'before:bg-card-pattern before:opacity-5': !isWhite && !isBeige
         }
       )}
