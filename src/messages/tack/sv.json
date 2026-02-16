@@ -1,0 +1,24 @@
+{
+  "title": "Tack för din bokning",
+  "intro": "Vi ser fram emot att välkomna dig till vår klinik i Stockholm.",
+  "confirmation": {
+    "title": "Bekräftelse skickad",
+    "text1": "Du får en bekräftelse via e-post inom kort. Om du inte ser den inom några minuter, kontrollera din skräppost.",
+    "text2": "Inför ditt besök är du varmt välkommen att kontakta oss om du har frågor eller funderingar."
+  },
+  "steps": {
+    "title": "Vad händer nu?",
+    "step1": {
+      "title": "Bekräftelse via e-post",
+      "description": "Du får en bekräftelse via e-post inom kort. Om du inte ser den, kontrollera din skräppost."
+    },
+    "step2": {
+      "title": "Praktisk information",
+      "description": "All information om tid, plats och eventuella förberedelser finns i din bekräftelse."
+    },
+    "step3": {
+      "title": "Behöver du ändra något?",
+      "description": "Vill du boka om eller har frågor är du varmt välkommen att kontakta oss."
+    }
+  }
+}
