@@ -1,3 +1,10 @@
+# [1.25.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.24.0...v1.25.0-beta.1) (2026-02-16)
+
+
+### Features
+
+* add thank you page ([eaf5c06](https://github.com/dahliakliniken/drgribbe/commit/eaf5c06dea694778cf8250bc508d20c9077a5ad3))
+
 # [1.24.0](https://github.com/dahliakliniken/drgribbe/compare/v1.23.0...v1.24.0) (2025-12-06)
 
 
