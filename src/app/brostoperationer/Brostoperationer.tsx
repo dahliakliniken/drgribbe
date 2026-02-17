@@ -26,6 +26,7 @@ import { useAccordionItems } from './accordionData'
 
 const Brostoperationer = () => {
   const t = useTranslations()
+  const tPage = useTranslations('brostoperationer.page')
   const messages = useMessages()
   const [surgeryItems, complications] = useAccordionItems()
   const beforeOperationKeys = Object.keys(messages.beforeOperation)
@@ -93,8 +94,8 @@ const Brostoperationer = () => {
         content={
           <Pillar>
             <SpaceContainer>
-              <H1 white>{t('brostoperationer.title')}</H1>
-              <P white>{t('brostoperationer.preamble')}</P>
+              <H1 white>{tPage('hero.title')}</H1>
+              <P white>{tPage('hero.preamble')}</P>
             </SpaceContainer>
           </Pillar>
         }
@@ -121,7 +122,7 @@ const Brostoperationer = () => {
           bgPosition="right"
           content={
             <Pillar>
-              <H2>{t('brostoperationer.heading1')}</H2>
+              <H2>{tPage('process.sectionTitle')}</H2>
               <Image
                 src={ConsultationImage}
                 alt={t('altText.brostoperationerConsultation')}
@@ -129,17 +130,17 @@ const Brostoperationer = () => {
               />
               <SpaceContainer noPadding spaceVertically>
                 <ExpandableTextBox
-                  title={t('brostoperationer.consultation.heading1')}
+                  title={tPage('process.consultation.title')}
                   headingSize="H3"
                   paragraphs={[
-                    t('brostoperationer.consultation.text1'),
-                    t('brostoperationer.consultation.text2'),
-                    t('brostoperationer.consultation.text3'),
-                    t('brostoperationer.consultation.text4'),
-                    t('brostoperationer.consultation.text5'),
-                    t('brostoperationer.consultation.text6'),
-                    t('brostoperationer.consultation.text7'),
-                    t('brostoperationer.consultation.text8')
+                    tPage('process.consultation.paragraph1'),
+                    tPage('process.consultation.paragraph2'),
+                    tPage('process.consultation.paragraph3'),
+                    tPage('process.consultation.paragraph4'),
+                    tPage('process.consultation.paragraph5'),
+                    tPage('process.consultation.paragraph6'),
+                    tPage('process.consultation.paragraph7'),
+                    tPage('process.consultation.paragraph8')
                   ]}
                 />
               </SpaceContainer>
@@ -176,16 +177,16 @@ const Brostoperationer = () => {
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
-              <H3>{t('brostoperationer.dayOfSurgery.heading1')}</H3>
-              <P>{t('brostoperationer.dayOfSurgery.text1')}</P>
+              <H3>{tPage('process.dayOfSurgery.title')}</H3>
+              <P>{tPage('process.dayOfSurgery.paragraph1')}</P>
               <P>
-                {t.rich('brostoperationer.dayOfSurgery.text2', {
+                {tPage.rich('process.dayOfSurgery.paragraph2', {
                   link: (chunks) => (
                     <AnchorLink href="#forberedelser">{chunks}</AnchorLink>
                   )
                 })}
               </P>
-              <P>{t('brostoperationer.dayOfSurgery.text3')}</P>
+              <P>{tPage('process.dayOfSurgery.paragraph3')}</P>
             </SpaceContainer>
           </Pillar>
         }
@@ -203,9 +204,9 @@ const Brostoperationer = () => {
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
-              <H3>{t('brostoperationer.surgery.heading1')}</H3>
-              <P>{t('brostoperationer.surgery.text1')}</P>
-              <P>{t('brostoperationer.surgery.text1-2')}</P>
+              <H3>{tPage('process.surgery.title')}</H3>
+              <P>{tPage('process.surgery.intro')}</P>
+              <P>{tPage('process.surgery.introContinuation')}</P>
               <Accordion size="h4" items={surgeryItems} />
             </SpaceContainer>
           </Pillar>
@@ -225,18 +226,18 @@ const Brostoperationer = () => {
             />
             <SpaceContainer noPadding spaceTop>
               <ExpandableTextBox
-                title={t('brostoperationer.postSurgery.heading1')}
+                title={tPage('process.postSurgery.title')}
                 headingSize="H3"
                 paragraphs={[
-                  t('brostoperationer.postSurgery.text1'),
-                  t('brostoperationer.postSurgery.text2'),
-                  t('brostoperationer.postSurgery.text3'),
-                  t('brostoperationer.postSurgery.text4'),
-                  t('brostoperationer.postSurgery.text5'),
-                  t('brostoperationer.postSurgery.text6'),
-                  t('brostoperationer.postSurgery.text7'),
-                  t('brostoperationer.postSurgery.text8'),
-                  t('brostoperationer.postSurgery.text9')
+                  tPage('process.postSurgery.paragraph1'),
+                  tPage('process.postSurgery.paragraph2'),
+                  tPage('process.postSurgery.paragraph3'),
+                  tPage('process.postSurgery.paragraph4'),
+                  tPage('process.postSurgery.paragraph5'),
+                  tPage('process.postSurgery.paragraph6'),
+                  tPage('process.postSurgery.paragraph7'),
+                  tPage('process.postSurgery.paragraph8'),
+                  tPage('process.postSurgery.paragraph9')
                 ]}
               />
             </SpaceContainer>
@@ -272,14 +273,14 @@ const Brostoperationer = () => {
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
-              <H3>{t('brostoperationer.firstReturnVisit.heading1')}</H3>
-              <P>{t('brostoperationer.firstReturnVisit.text1')}</P>
-              <P>{t('brostoperationer.firstReturnVisit.text2')}</P>
+              <H3>{tPage('process.firstReturnVisit.title')}</H3>
+              <P>{tPage('process.firstReturnVisit.paragraph1')}</P>
+              <P>{tPage('process.firstReturnVisit.paragraph2')}</P>
 
               <H3 className="mt-8">
-                {t('brostoperationer.secondReturnVisit.heading1')}
+                {tPage('process.secondReturnVisit.title')}
               </H3>
-              <P>{t('brostoperationer.secondReturnVisit.text1')}</P>
+              <P>{tPage('process.secondReturnVisit.paragraph1')}</P>
             </SpaceContainer>
           </Pillar>
         }
@@ -289,22 +290,22 @@ const Brostoperationer = () => {
 
       <SpaceContainer id="forberedelser">
         <Pillar noPadding>
-          <H2>{t('brostoperationer.beforeOperation')}</H2>
-          <P>{t('brostoperationer.thingsToConsiderBeforeSurgery')}</P>
+          <H2>{tPage('preparation.beforeOperationTitle')}</H2>
+          <P>{tPage('preparation.beforeOperationIntro')}</P>
           <Accordion items={beforeOperationItems} />
 
           <SpaceContainer noPadding spaceVertically>
-            <H2>{t('brostoperationer.afterOperation')}</H2>
+            <H2>{tPage('preparation.afterOperationTitle')}</H2>
             <Accordion items={afterOperationItems} />
           </SpaceContainer>
 
           <SpaceContainer noPadding spaceVertically>
-            <H2>{t('brostoperationer.aftercare')}</H2>
+            <H2>{tPage('preparation.aftercareTitle')}</H2>
             <Accordion items={aftercareItems} />
           </SpaceContainer>
 
           <SpaceContainer noPadding spaceVertically>
-            <H2>{t('brostoperationer.afterFirstReturnVisit')}</H2>
+            <H2>{tPage('preparation.afterFirstReturnVisitTitle')}</H2>
             <Accordion items={afterFirstReturnVisitItems} />
           </SpaceContainer>
 

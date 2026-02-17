@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import { P } from '@/components/typography/P'
 
 export const useAccordionItems = () => {
-  const t = useTranslations()
+  const t = useTranslations('brostoperationer.page.process.surgery.accordion')
 
   const complications = [
     {
@@ -53,48 +53,48 @@ export const useAccordionItems = () => {
   const surgeryItems = [
     {
       id: crypto.randomUUID(),
-      title: t('brostoperationer.surgery.preparation'),
+      title: t('preparation.title'),
       content: (
         <>
-          <P>{t('brostoperationer.surgery.text2')}</P>
-          <P>{t('brostoperationer.surgery.text2-2')}</P>
-          <P>{t('brostoperationer.surgery.text2-3')}</P>
-          <P>{t('brostoperationer.surgery.text2-4')}</P>
+          <P>{t('preparation.paragraph1')}</P>
+          <P>{t('preparation.paragraph2')}</P>
+          <P>{t('preparation.paragraph3')}</P>
+          <P>{t('preparation.paragraph4')}</P>
         </>
       )
     },
     {
       id: crypto.randomUUID(),
-      title: t('brostoperationer.surgery.anesthesia'),
+      title: t('anesthesia.title'),
       content: (
         <>
-          <P>{t('brostoperationer.surgery.text3')}</P>
-          <P>{t('brostoperationer.surgery.text4')}</P>
-          <P>{t('brostoperationer.surgery.text5')}</P>
-          <P>{t('brostoperationer.surgery.text6')}</P>
-          <P>{t('brostoperationer.surgery.text7')}</P>
-          <P>{t('brostoperationer.surgery.text7-2')}</P>
-          <P>{t('brostoperationer.surgery.text7-3')}</P>
+          <P>{t('anesthesia.paragraph1')}</P>
+          <P>{t('anesthesia.paragraph2')}</P>
+          <P>{t('anesthesia.paragraph3')}</P>
+          <P>{t('anesthesia.paragraph4')}</P>
+          <P>{t('anesthesia.paragraph5')}</P>
+          <P>{t('anesthesia.paragraph6')}</P>
+          <P>{t('anesthesia.paragraph7')}</P>
         </>
       )
     },
     {
       id: crypto.randomUUID(),
-      title: t('brostoperationer.surgery.duringOperation'),
+      title: t('duringOperation.title'),
       content: (
         <>
-          <P>{t('brostoperationer.surgery.text8')}</P>
-          <P>{t('brostoperationer.surgery.text9')}</P>
+          <P>{t('duringOperation.paragraph1')}</P>
+          <P>{t('duringOperation.paragraph2')}</P>
         </>
       )
     },
     {
       id: crypto.randomUUID(),
-      title: t('brostoperationer.surgery.care'),
+      title: t('care.title'),
       content: (
         <>
-          <P>{t('brostoperationer.surgery.text10')}</P>
-          <P>{t('brostoperationer.surgery.text11')}</P>
+          <P>{t('care.paragraph1')}</P>
+          <P>{t('care.paragraph2')}</P>
         </>
       )
     }

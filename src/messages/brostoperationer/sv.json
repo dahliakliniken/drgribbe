@@ -1,0 +1,90 @@
+{
+  "page": {
+    "hero": {
+      "title": "Bröstoperationer i Stockholm",
+      "preamble": "Vi erbjuder ett brett utbud av bröstoperationer i Stockholm, inklusive bröstförstoring, bröstlyft, bröstförminskning, kombinerade ingrepp med bröstimplantat m.m."
+    },
+    "process": {
+      "sectionTitle": "Så går operationen till",
+      "consultation": {
+        "title": "Konsultationen",
+        "paragraph1": "Konsultationen är mötet mellan dig som patient och din plastikkirurg. Det är mötet där ni ska förstå varandra och komma överens. Ni pratar om dina önskemål och dina förutsättningar. Ni går igenom din sjukdomshistoria, förberedelserna inför operationen och tiden efter.",
+        "paragraph2": "Vilka önskemål man som patient har på slutresultatet varierar mycket från kvinna till kvinna. Det är under konsultationen som detta måste gås igenom noggrant.",
+        "paragraph3": "Under konsultationen inför bröstförstoring går man igenom hur toppiga brösten ska bli, det vill säga hur mycket brösten ska puta ut från kroppen när man står i profil. För detta får du välja projektion, profilen på bröstimplantaten. Bröstimplantatens projektion kan varieras mellan låg profil, mellanprofil, hög profil och ultrahög profil. Vilken projektion man väljer är tycke och smak men ofta så vill man balansera svanken och rumpan för att se proportionerlig ut. Tar man för toppiga bröstimplantat kan man se framtung ut. Det vanligaste är att man väljer mellanprofil eller hög profil vid en första bröstförstoring.",
+        "paragraph4": "Vid konsultationen så går vi också igenom hur breda bröst du önskar. Bredare bröstimplantat ger mer bredd åt sidorna och smalare bröstimplantat ger mindre bredd åt sidorna. Du får hjälp att välja bröstimplantat och hur dina bröst ska bli efter operationen. Vissa patienter vill ha bredare bröst för att ge en timglasform och balansera midja och höfter medan andra vill ha smalare bröst för att känna sig sportigare och nättare.",
+        "paragraph5": "Projektionen och bredden på bröstimplantaten ger tillsammans en viss storlek och volym på brösten. Ju mer projektion och ju mer bredd desto större bröstimplantat.",
+        "paragraph6": "Vid en konsultation när man har bröst som hänger går vi noggrant igenom dina förutsättningar, vilket resultat som är möjligt och vilken operationsteknik som ska användas. Även här används ofta bröstimplantat för att återskapa fylligheten upptill i brösten.",
+        "paragraph7": "Syftet med konsultationen blir att hitta just din smak och hur du vill ha brösten. För att uppnå korrekt slutresultat väljer vi bröstimplantat och går igenom vilken typ av bröstoperation och operationsteknik som passar bäst.",
+        "paragraph8": "Konsultationen är på så vis ett lika viktigt moment som operationen. En väl genomförd konsultation lägger grunden till att du som patient blir nöjd med slutresultatet efter operationen."
+      },
+      "dayOfSurgery": {
+        "title": "Operationsdagen",
+        "paragraph1": "På operationsdagen kommer du till kliniken på utsatt tid. Vilken tid du ska infinna dig brukar vi bestämma cirka en vecka innan operationen. Vilken tid du får beror på flera faktorer. Dels vilket ingrepp du ska genomgå, dels var du bor och dels din sjukdomshistoria. Till exempel så opereras alltid en patient med diabetes först på dagen. Dessutom planeras dagen för att det ska bli så bra logistik som möjligt avseende patientflöde och lunch för personalen.",
+        "paragraph2": "Inför din ankomst så har du förberett dig noggrant enligt speciella instruktioner. Till exempel så kommer du fastande och har tvättat dig med en speciell tvål. <link>Läs om hur du förbereder dig här.</link>",
+        "paragraph3": "När du anlänt till kliniken tar vi emot dig och hjälper dig inför operation. I vilken turordning följande sker varierar. Du byter om till morgonrock och tofflor. Om du ska ha stödstrumpor tar du på dem nu om du inte redan tagit på dem hemma. Du träffar Dr Gribbe och ni har tid att gå igenom eventuella frågor eller funderingar. Ni går igenom operationen och doktorn ritar på dig och planerar. Narkosläkaren eller narkossjuksköterskan sätter en infart på dig, oftast i vänster handrygg och du får premedicinering mot bland annat smärta och illamående. Du har här möjlighet att framföra önskemål och ställa frågor kring narkosen. Du får sedan sitta i ett vilorum med sköna fåtöljer i väntan på din tur. Här kan du lägga upp benen och slappna av. Du kan läsa en tidning eller bok, lyssna på musik eller surfa på din telefon eller dator."
+      },
+      "surgery": {
+        "title": "Narkos och operation",
+        "intro": "Vi utför operationer under narkos. Många känner oro för narkosen. Därför går vi igenom viktiga delar av narkosprocessen här så att du kan läsa om det i lugn och ro för att känna dig trygg och säker.",
+        "introContinuation": "När det är din tur blir du hämtad av narkospersonalen. Du promenerar in till operation och vidare till operationssalen.",
+        "accordion": {
+          "preparation": {
+            "title": "Förberedelse och personal",
+            "paragraph1": "Inne på operationssalen möts du av operationssjuksköterskan och en undersköterska. Operationssjuksköterskan är här ofta redan sterilklädd med operationsrock och dubbla operationshandskar. All personal bär operationskläder, mössor och munskydd. Sammanlagt så är det mellan tre och fem personer på plats och hjälper till.",
+            "paragraph2": "All narkospersonal som är med under operationen är specialistutbildad och har flerårig erfarenhet av att arbeta med anestesi. Det är en kvalitetsmärkning och något som aldrig frångås när jag opererar.",
+            "paragraph3": "Inför narkosen är det viktigt att se över ditt hälsotillstånd i allmänhet och därför lämnar du innan operation in en ifylld hälsodeklaration. I den bör du särskilt tänka igenom och ange tidigare och nuvarande sjukdomar.",
+            "paragraph4": "Narkosläkaren kommer att prata med dig innan din operation. Du behöver meddela narkosläkaren om du har symptom på sjukdomar i luftvägarna, exempelvis feber, hosta eller andningsbesvär. Det kan öka risken för komplikationer i samband med narkos. Det är även viktigt att du berättar om du äter någon medicin."
+          },
+          "anesthesia": {
+            "title": "Narkosprocessen",
+            "paragraph1": "Väl inne på salen får du hjälp att komma upp på operationsbordet. På operationsbordet ligger du och vilar en stund och personalen ser till att du ligger skönt och bekvämt innan du sedan blir sövd.",
+            "paragraph2": "I samband med narkosens början andas du ren syrgas i en mask som hålls löst över din mun och näsa. Det är alltså inte narkosgas utan bara ren syrgas för att förbereda kroppen inför sövningen.",
+            "paragraph3": "Sövningen går till som så att två narkosläkemedel sprutas in via två stycken pumpar som kopplas till din infart via en slang. Det ena läkemedlet gör att du sover och det andra gör att du inte känner någonting under operationen. Det är just det, sömn och smärtfrihet som är narkos.",
+            "paragraph4": "Själva sövningen går snabbt, på någon minut, och brukar för de allra flesta upplevas som lugn och behaglig. När du väl sover får du antibiotikum, penicillin eller motsvarande (antibiotikaprofylax) intravenöst för att undvika risken för infektion.",
+            "paragraph5": "Samtidigt tvättar operationssjuksköterskan operationsområdet och huden utanför med sprit, klorhexidinsprit. Spriten lufttorkar och sedan kläs operationsområdet in, draperas med gröna operationslakan. Operationssjuksköterskan lägger fram operationsinstrumenten på olika bord som skjuts in över din kropp. Operationssjuksköterskan hjälper doktorn på med operationskläder och dubbla operationshandskar.",
+            "paragraph6": "När operationen snart är slut minskar man på mängden narkosmedel så att du vaknar upp när operationen är klar och alla förband är lagda. När du blir medveten igen efter operationen ligger du ute i en säng på uppvaket. Vanligtvis vaknar man lugnt och stilla men i vissa fall så kan man känna sig lite förvirrad. Du kan även få biverkningar i form av yrsel eller illamående. Det är normalt och försvinner efter ett par timmar. När du vaknar upp tar vi hand om dig och säkerställer att du har det bra och har smärtlindring. När du är tillräckligt vaken och pigg så får du hjälp att komma upp och stå och gå. Du får gå på toa och ta kortare promenader. Det går ofta snabbt att mobiliseras och du får efter 1-2 timmar komma till en fåtölj i vilrummet där du vistades innan operationen.",
+            "paragraph7": "Om du har frågor kring hur det är att sövas vid en operation, tveka inte att höra av dig så förklarar vi mer."
+          },
+          "duringOperation": {
+            "title": "Under operationen",
+            "paragraph1": "Operationen startar och varar mellan 30 minuter och 3 timmar beroende på vilket ingrepp som ska göras. När du sover lyssnar vi på musik och pratar med varandra. Doktorn opererar och operationssjuksköterskan instrumenterar, det vill säga ger rätt instrument till doktorn vid rätt tidpunkt. Ofta så läser hon av doktorns arbete och kan vara beredd med rätt instrument vid rätt tid. Ibland ber doktorn om ett specifikt instrument eller en specifik sutur, tråd att sy med.",
+            "paragraph2": "Under hela operationen så övervakar narkospersonalen operationen vid ditt huvud och håller koll på att du sover lagom djupt och att du inte har ont. Du är så pass lagom djupt sövd att du inte känner någon smärta och att du inte kan förnimma någonting under operationen."
+          },
+          "care": {
+            "title": "Specialiserad vård",
+            "paragraph1": "Vi ser det som viktigt att du är sövd på ett sånt sätt att du fortsätter andas spontant, det vill säga att du själv andas och att du inte ventileras av narkosapparaten. Lyckas man som narkospersonal med detta under operationen så mår lungorna bättre under operationen och du mår även mindre illa efteråt. Det är en konst att söva på detta sätt och kräver erfarenhet och uppmärksamhet.",
+            "paragraph2": "Undersköterskans roll under operationen är att assistera doktorn och operationssjuksköterskan som båda är sterilklädda. Hon tar då ur skåp och lådor fram extra instrument eller suturer som behövs under operationens gång. Undersköterskan packar även upp bröstimplantaten som är separat förpackade i flera lådor i varandra. Först en ytterkartong, sedan en osteril förpackning och innerst en steril förpackning. Det gör att undersköterskan kan öppna den näst sista förpackningen utan att röra den innersta. Operationssjuksköterskan kan sedan ta upp den innersta, sterila förpackningen utan att vidröra den osterila förpackningen. Operationssjuksköterskan kan sedan öppna locket på den innersta, sterila förpackningen och servera bröstimplantatet till doktorn. Det är då bara doktorn som vidrör bröstimplantaten och inför detta så byter doktorn till nya ytterhandskar."
+          }
+        }
+      },
+      "postSurgery": {
+        "title": "Efter operationen",
+        "paragraph1": "När operationen är klar tejpas ärren och förband läggs. Narkosläkaren stänger av läkemedelspumparna, tar ut larynxmasken och du vaknar. Drapering och diatermiplatta tas bort och personalen sätter på dig en bh för att hålla bröstimplantaten på plats och minska svullnaden.",
+        "paragraph2": "En säng från uppvaket rullas in längs med operationsbordet och personalen flyttar över dig till sängen. Patienten är då oftast så trött att hon inte märker eller minns något av detta.",
+        "paragraph3": "Sängen rullas ut på uppvaket och du kopplas igen upp till övervakningsutrustning som mäter puls, hjärtaktivitet, blodtryck, andning och saturation, syremättnad och du får syrgas in i näsan för att undvika illamående. Du vaknar successivt och har hela tiden en narkossjukköterska och annan vårdpersonal vid din sida.",
+        "paragraph4": "Allt eftersom du vaknar kommer du förstå var du är och att operationen är klar. Du kommer få hjälp med smärtlindring och läkemedel mot illamående och för blodtrycket. Efter ca 30 minuter kan du börja dricka lite och så småningom även äta någonting lätt.",
+        "paragraph5": "Man kommer hjälpa dig att sitta på sängkanten och sedan att stå upp på golvet bredvid sängen. Du får hjälp att med stöd först gå en kortare promenad och sedan gå till toaletten. Det är hela tiden viktigt att du följer personalens instruktioner och att du omedelbart berättar om du känner dig yr eller om du känner att du är på väg att svimma.",
+        "paragraph6": "Allt eftersom så kommer du kunna röra dig mer och mer obehindrat och du kan då komma tillbaka till vilrummet och sitta och vila i en fåtölj. Där kan du ta det lugnt, läsa, titta på telefonen eller prata med andra patienter.",
+        "paragraph7": "Du serveras mat och dryck antingen redan i sängen eller i vilrummet. Det finns mycket att välja mellan såsom fil, yogurt, musli, smörgåsar, frukt, kaffe, te och olika maträtter.",
+        "paragraph8": "Personalen kommer hjälpa och guida dig så att du mobiliseras på bästa sätt och efter 4-6 timmar är du redo att lämna kliniken.",
+        "paragraph9": "Doktorn kommer och pratar med dig innan du åker hem och du kan ställa frågor. Ett återbesök bokas till cirka 10-12 dagar efter operationen."
+      },
+      "firstReturnVisit": {
+        "title": "Första återbesöket",
+        "paragraph1": "Första återbesöket sker 10-12 dagar efter operationen. Det är Dr Gribbe som hjälper dig då och tar bort tejpen och ser att allt läker som det ska. Tillsammans tittar ni på ärren och på brösten, pratar om läkning, tejpning, träning, sol och bad. Doktorn ger individuella bh-instruktioner som gäller just för dig och din läkning. Det finns gott om tid att ställa frågor och ni planerar för framtida återbesök.",
+        "paragraph2": "Oftast så sker nästa besök efter ca 3-4 månader men i vissa fall så ses man tidigare"
+      },
+      "secondReturnVisit": {
+        "title": "Återbesök efter 3-4 månader",
+        "paragraph1": "Allt eftersom tiden, månaderna går töjs huden successivt och bröstimplantaten faller på plats. Processen är individuell och det kan skilja sig mycket från person till person. Ofta så sker de största förändringarna de första månaderna och Dr Gribbe brukar därför träffas sina patienter efter 3 månader. Ni träffas då och tittar på hur brösten kommit på plats och doktorn lämnar instruktioner om bh, tejpning och träning."
+      }
+    },
+    "preparation": {
+      "beforeOperationTitle": "Förberedelser inför din operation",
+      "beforeOperationIntro": "Det är en rad saker du ska tänka på inför din operation.",
+      "afterOperationTitle": "Efter din operation",
+      "aftercareTitle": "När du lämnat kliniken och tiden from till första återbesöket",
+      "afterFirstReturnVisitTitle": "Efter första återbesöket"
+    }
+  }
+}
