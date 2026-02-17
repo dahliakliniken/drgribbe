@@ -18,7 +18,8 @@ import forminskning2 from '@/public/images/_N3A7621.jpg'
 import { useAccordionData } from './accordionData'
 
 const Brostforminskning = () => {
-  const t = useTranslations('brostforminskning')
+  const tPage = useTranslations('brostforminskning.page')
+  const tCommon = useTranslations('common')
   const [faqItems] = useAccordionData()
 
   return (
@@ -28,8 +29,8 @@ const Brostforminskning = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <H1 white>{t('title')}</H1>
-            <P white>{t('background.text1')}</P>
+            <H1 white>{tPage('hero.title')}</H1>
+            <P white>{tPage('hero.paragraph1')}</P>
           </Pillar>
         }
       />
@@ -50,8 +51,8 @@ const Brostforminskning = () => {
             </SpaceContainer>
             <SpaceContainer noPadding spaceVertically>
               <H2>{'Hur går en bröstförminskning till?'}</H2>
-              <P>{t('background.text2')}</P>
-              <P>{t('background.text3')}</P>
+              <P>{tPage('overview.paragraph1')}</P>
+              <P>{tPage('overview.paragraph2')}</P>
             </SpaceContainer>
             <SpaceContainer noPadding>
               <Section>
@@ -59,7 +60,7 @@ const Brostforminskning = () => {
                 <Accordion size="h4" items={faqItems} />
                 <div className="m-auto my-6 flex justify-center">
                   <A href="/fragor-och-svar">
-                    {useTranslations()('common.linktoFaq')}
+                    {tCommon('linktoFaq')}
                   </A>
                 </div>
               </Section>
@@ -74,11 +75,11 @@ const Brostforminskning = () => {
         content={
           <>
             <H2 upperCase white className="text-center">
-              {useTranslations()('common.freeConsultation')}
+              {tCommon('freeConsultation')}
             </H2>
             <div className="m-auto flex max-w-xs justify-center">
               <A href="/boka" className="uppercase" buttonStyle>
-                {useTranslations()('common.bookNow')}
+                {tCommon('bookNow')}
               </A>
             </div>
           </>
@@ -87,12 +88,12 @@ const Brostforminskning = () => {
 
       <SpaceContainer>
         <Pillar>
-          <H2>{t('consultation.heading1')}</H2>
-          <P>{t('consultation.text1')}</P>
-          <P>{t('consultation.text2')}</P>
-          <P>{t('consultation.text3')}</P>
-          <P>{t('consultation.text4')}</P>
-          <P>{t('consultation.text5')}</P>
+          <H2>{tPage('consultation.sectionTitle')}</H2>
+          <P>{tPage('consultation.paragraph1')}</P>
+          <P>{tPage('consultation.paragraph2')}</P>
+          <P>{tPage('consultation.paragraph3')}</P>
+          <P>{tPage('consultation.paragraph4')}</P>
+          <P>{tPage('consultation.paragraph5')}</P>
         </Pillar>
       </SpaceContainer>
       <Card
@@ -100,9 +101,9 @@ const Brostforminskning = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <H2 white>{t('technique.heading1')}</H2>
-            <H3 white>{t('technique.preSurgery.heading1')}</H3>
-            <P white>{t('technique.preSurgery.text1')}</P>
+            <H2 white>{tPage('technique.sectionTitle')}</H2>
+            <H3 white>{tPage('technique.preSurgery.sectionTitle')}</H3>
+            <P white>{tPage('technique.preSurgery.paragraph1')}</P>
             <SpaceContainer noPadding>
               <Image
                 src={forminskning2}
@@ -113,16 +114,16 @@ const Brostforminskning = () => {
               />
             </SpaceContainer>
             <SpaceContainer noPadding spaceTop>
-              <H3 white>{t('technique.surgery.heading1')}</H3>
-              <P white>{t('technique.surgery.text1')}</P>
-              <P white>{t('technique.surgery.text2')}</P>
-              <P white>{t('technique.surgery.text3')}</P>
-              <P white>{t('technique.surgery.text4')}</P>
-              <P white>{t('technique.surgery.text5')}</P>
-              <P white>{t('technique.surgery.text6')}</P>
-              <P white>{t('technique.surgery.text7')}</P>
-              <P white>{t('technique.surgery.text8')}</P>
-              <P white>{t('technique.surgery.text9')}</P>
+              <H3 white>{tPage('technique.surgery.sectionTitle')}</H3>
+              <P white>{tPage('technique.surgery.paragraph1')}</P>
+              <P white>{tPage('technique.surgery.paragraph2')}</P>
+              <P white>{tPage('technique.surgery.paragraph3')}</P>
+              <P white>{tPage('technique.surgery.paragraph4')}</P>
+              <P white>{tPage('technique.surgery.paragraph5')}</P>
+              <P white>{tPage('technique.surgery.paragraph6')}</P>
+              <P white>{tPage('technique.surgery.paragraph7')}</P>
+              <P white>{tPage('technique.surgery.paragraph8')}</P>
+              <P white>{tPage('technique.surgery.paragraph9')}</P>
             </SpaceContainer>
           </Pillar>
         }
@@ -161,7 +162,7 @@ const Brostforminskning = () => {
               </P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
-                  {useTranslations()('common.bookNow')}
+                  {tCommon('bookNow')}
                 </A>
               </div>
             </Pillar>
