@@ -29,7 +29,8 @@ import inchair from '@/public/images/_N3A7179.jpg'
 import { useAccordionData } from './accordionData'
 
 const Brostlyft = () => {
-  const t = useTranslations('brostlyft')
+  const tPage = useTranslations('brostlyft.page')
+  const tCommon = useTranslations('common')
   const [faqAccordion] = useAccordionData()
 
   return (
@@ -39,14 +40,14 @@ const Brostlyft = () => {
         bgPosition="left"
         content={
           <Pillar>
-            <H1 white>{t('title')}</H1>
+            <H1 white>{tPage('hero.title')}</H1>
             <P white>
-              {t.rich('background.text1', {
+              {tPage.rich('hero.leadParagraph', {
                 strong: (chunks) => <strong>{chunks}</strong>
               })}
             </P>
             <P white>
-              {t.rich('background.text1-2', {
+              {tPage.rich('hero.leadParagraphContinuation', {
                 strong: (chunks) => <strong>{chunks}</strong>
               })}
             </P>
@@ -60,7 +61,7 @@ const Brostlyft = () => {
           <Pillar noPadding>
             <Image
               src={inchair}
-              alt={t('altText.inchair')}
+              alt={tPage('media.inchairAlt')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer spaceTop noPadding>
@@ -70,9 +71,9 @@ const Brostlyft = () => {
                     'Bröstlyft – lösningen när brösten förlorat volym, form eller symmetri'
                   }
                 </H2>
-                <P>{t('background.text2')}</P>
+                <P>{tPage('overview.paragraph1')}</P>
                 <P>
-                  {t.rich('background.text3', {
+                  {tPage.rich('overview.paragraph2', {
                     strong: (chunks) => <strong>{chunks}</strong>
                   })}
                 </P>
@@ -151,7 +152,7 @@ const Brostlyft = () => {
                 <Accordion size="h4" items={faqAccordion} />
                 <div className="m-auto my-6 flex justify-center">
                   <A href="/fragor-och-svar">
-                    {useTranslations()('common.linktoFaq')}
+                    {tCommon('linktoFaq')}
                   </A>
                 </div>
               </Section>
@@ -166,11 +167,11 @@ const Brostlyft = () => {
         content={
           <>
             <H2 upperCase white className="text-center">
-              {useTranslations()('common.freeConsultation')}
+              {tCommon('freeConsultation')}
             </H2>
             <div className="m-auto flex max-w-xs justify-center">
               <A href="/boka" className="uppercase" buttonStyle>
-                {useTranslations()('common.bookNow')}
+                {tCommon('bookNow')}
               </A>
             </div>
           </>
@@ -179,13 +180,13 @@ const Brostlyft = () => {
 
       <SpaceContainer spaceTop>
         <Pillar>
-          <H2>{t('techniques.heading1')}</H2>
-          <P>{t('techniques.text1')}</P>
-          <P>{t('techniques.text2')}</P>
-          <P>{t('techniques.text3')}</P>
-          <P>{t('techniques.text4')}</P>
-          <P>{t('techniques.text5')}</P>
-          <P>{t('techniques.text6')}</P>
+          <H2>{tPage('technique.sectionTitle')}</H2>
+          <P>{tPage('technique.paragraph1')}</P>
+          <P>{tPage('technique.paragraph2')}</P>
+          <P>{tPage('technique.paragraph3')}</P>
+          <P>{tPage('technique.paragraph4')}</P>
+          <P>{tPage('technique.paragraph5')}</P>
+          <P>{tPage('technique.paragraph6')}</P>
         </Pillar>
       </SpaceContainer>
       {/*       <SpaceContainer spaceVertically noPadding>
@@ -222,7 +223,7 @@ const Brostlyft = () => {
               </P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
-                  {useTranslations()('common.bookNow')}
+                  {tCommon('bookNow')}
                 </A>
               </div>
             </Pillar>
