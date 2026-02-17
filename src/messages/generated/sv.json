@@ -1,4 +1,25 @@
 {
+  "site-breadcrumbs": {
+    "breadcrumbNav": {
+      "homeLabel": "Hem",
+      "routes": {
+        "brostoperationer": "Bröstoperationer",
+        "brostlyft": "Bröstlyft",
+        "brostforstoring": "Bröstförstoring",
+        "brostforminskning": "Bröstförminskning",
+        "implantaten": "Implantaten",
+        "hudOchInjektioner": "Hud & injektioner",
+        "varPersonal": "Vår Personal",
+        "priser": "Priser",
+        "garanti": "Trygghetspaket",
+        "boka": "Boka",
+        "fragorOchSvar": "Frågor & svar",
+        "foreOchEfter": "Före & efterbilder",
+        "kontaktOchBesok": "Kontakt & besök",
+        "personuppgiftspolicy": "Personuppgiftspolicy"
+      }
+    }
+  },
   "metadata": {
     "title": "Kliniken för estetisk bröstförstoring och bröstlyft",
     "description": "Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft."
@@ -304,7 +325,6 @@
       "text3": "Operationen liknar mycket ett bröstlyft som beskrivs här på hemsidan med den skillnaden att man vid en bröstförminskning även tar bort mer eller mindre bröstvävnad och inte bara hud. Bröstvävnaden som tas bort består av både fett och bröstkörtel. Vissa bröst innehåller mer fett medan andra innehåller mer körtelvävnad. Generellt så kan man säga att det är mer bröstkörtel i brösten hos yngre kvinnor och hos kvinnor som inte fött barn och ammat, medan övervikt ger en ökad andel fett i brösten. Dessutom ökar andelen fett i brösten med ökad ålder och i samband med amning då delar av bröstvävnaden omvandlas till fett. Körtelvävnad är kompaktare och väger mer än fett.",
       "text4": "Samtidigt som brösten görs lättare och mindre genom att bröstvävnad tas bort tas även hud bort."
     },
-
     "consultation": {
       "heading1": "Konsultation bröstförminskning",
       "text1": "Vid konsultationen går vi igenom dina önskemål och förutsättningar. Vi pratar eventuella besvär du har av din byst och om det finns möjlighet att en operation skulle hjälpa just dig. Vi går noggrant igenom hur en bröstförminskning skulle gå till och hur ett slutresultat hos dig skulle kunna se ut.",
@@ -319,7 +339,6 @@
         "heading1": "Strax innan operationen",
         "text1": "Precis som vid alla andra operationer träffas patient och plastikkirurg på operationsdagen strax innan operationen för att diskutera igenom ingreppet och för att plastikkirurgen ska rita och planera ingreppet. Ritningen görs med omsorg och till sin hjälp har plastikkirurgen måttband och skjutmått. Bröstvårtornas höjd och avstånd från halsgropen (jugulum) bestäms. Längden på snitten under brösten i bröstvecken markeras. Underpolens längd beräknas och ritas ut."
       },
-
       "surgery": {
         "heading1": "Operationen",
         "text1": "Operationen sker i narkos och inleds med att plastikkirurgen förstärker ritningen och sedan lägger lokalbedövning (till exempel Xylocain med adrenalin) i incisionslinjerna.",
@@ -1312,5 +1331,29 @@
     "staffImage": "Bild på {name}",
     "video": "Dr. Örjan Gribbe välkomnar kunder till sin klinik",
     "polytechimplants": "Bild på en patient som håller i ett implantat från Polytech"
+  },
+  "tack": {
+    "title": "Tack för din bokning",
+    "intro": "Vi ser fram emot att välkomna dig till vår klinik i Stockholm.",
+    "confirmation": {
+      "title": "Bekräftelse skickad",
+      "text1": "Du får en bekräftelse via e-post inom kort. Om du inte ser den inom några minuter, kontrollera din skräppost.",
+      "text2": "Inför ditt besök är du varmt välkommen att kontakta oss om du har frågor eller funderingar."
+    },
+    "steps": {
+      "title": "Vad händer nu?",
+      "step1": {
+        "title": "Bekräftelse via e-post",
+        "description": "Du får en bekräftelse via e-post inom kort. Om du inte ser den, kontrollera din skräppost."
+      },
+      "step2": {
+        "title": "Praktisk information",
+        "description": "All information om tid, plats och eventuella förberedelser finns i din bekräftelse."
+      },
+      "step3": {
+        "title": "Behöver du ändra något?",
+        "description": "Vill du boka om eller har frågor är du varmt välkommen att kontakta oss."
+      }
+    }
   }
 }

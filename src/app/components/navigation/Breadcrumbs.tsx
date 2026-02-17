@@ -8,7 +8,7 @@ import { Fragment } from 'react'
 import { determineActiveLinkColor } from '@/utils/determineActiveLinkColor'
 
 export const Breadcrumbs = () => {
-  const t = useTranslations('breadcrumbs')
+  const t = useTranslations('site-breadcrumbs')
   const paths = usePathname()
   const pathNames = paths.split('/').filter((path) => path)
   const separator = <span>{' / '}</span>
@@ -22,10 +22,15 @@ export const Breadcrumbs = () => {
     return null
   }
 
+  const slugToCamelCase = (slug: string) =>
+    slug.replace(/-([a-z])/g, (_, char: string) => char.toUpperCase())
+
   const getBreadcrumbLabel = (link: string) => {
+    const routeKey = `breadcrumbNav.routes.${slugToCamelCase(link)}`
+
     // Check if translation exists
-    if (t.has(link)) {
-      return t(link)
+    if (t.has(routeKey)) {
+      return t(routeKey)
     }
 
     // If no translation, format the path segment
@@ -40,7 +45,7 @@ export const Breadcrumbs = () => {
       <nav className="py-2">
         <ul className="flex">
           <li className={listClasses}>
-            <Link href={'/'}>{t('home')}</Link>
+            <Link href={'/'}>{t('breadcrumbNav.homeLabel')}</Link>
           </li>
           {pathNames.length > 0 && separator}
           {pathNames.map((link, index) => {
@@ -48,18 +53,13 @@ export const Breadcrumbs = () => {
             const itemClasses =
               paths === href ? `${activeClass}` : `${listClasses}`
 
-            // Convert first character to lowercase for translation key
-            const translationKey = link.charAt(0).toLowerCase() + link.slice(1)
-
             return (
               <Fragment key={index}>
                 <li className={itemClasses}>
                   {paths === href ? (
-                    <span>{getBreadcrumbLabel(translationKey)}</span>
+                    <span>{getBreadcrumbLabel(link)}</span>
                   ) : (
-                    <Link href={href}>
-                      {getBreadcrumbLabel(translationKey)}
-                    </Link>
+                    <Link href={href}>{getBreadcrumbLabel(link)}</Link>
                   )}
                 </li>
                 {pathNames.length !== index + 1 && separator}

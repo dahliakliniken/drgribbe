@@ -15,6 +15,8 @@ import { JsonLd } from './components/surfaces/JsonLd'
 import { ORG_ID, SITE_URL } from './config/site'
 import { ephesis, josefinSans } from './fonts'
 
+export const runtime = 'nodejs'
+
 export const metadata: Metadata = {
   title:
     'Dahliakliniken – Expert på estetisk bröstförstoring och bröstlyft i Stockholm',
