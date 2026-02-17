@@ -4,7 +4,7 @@ import { AnchorLink } from '@/components/typography/AnchorLink'
 import { P } from '@/components/typography/P'
 
 export const useAccordionData = () => {
-  const t = useTranslations('brostforstoring')
+  const tAccordion = useTranslations('brostforstoring.page.technique.accordion')
   const ft = useTranslations('fragorOchSvar')
 
   const faqAccordion = [
@@ -48,20 +48,20 @@ export const useAccordionData = () => {
   const teknikAccordion = [
     {
       id: 'brostforstoringteknik',
-      title: t('technique.heading2'),
+      title: tAccordion('incision.title'),
       content: (
         <>
-          <P small>{t('technique.text2')}</P>
+          <P small>{tAccordion('incision.paragraph1')}</P>
         </>
       )
     },
     {
       id: 'implantficka',
-      title: t('technique.heading3'),
+      title: tAccordion('implantPocket.title'),
       content: (
         <>
           <P small>
-            {useTranslations('brostforstoring').rich('technique.text3', {
+            {tAccordion.rich('implantPocket.paragraph1', {
               link: (chunks) => (
                 <AnchorLink small href="#placering">
                   {chunks}
@@ -74,57 +74,57 @@ export const useAccordionData = () => {
     },
     {
       id: 'diatermi',
-      title: t('technique.heading4'),
+      title: tAccordion('diathermy.title'),
       content: (
         <>
-          <P small>{t('technique.text4')}</P>
+          <P small>{tAccordion('diathermy.paragraph1')}</P>
         </>
       )
     },
     {
       id: 'fickabakommuskel',
-      title: t('technique.heading5'),
+      title: tAccordion('submuscularPocket.title'),
       content: (
         <>
-          <P small>{t('technique.text5')}</P>
+          <P small>{tAccordion('submuscularPocket.paragraph1')}</P>
         </>
       )
     },
     {
       id: 'fickaframformuskel',
-      title: t('technique.heading6'),
+      title: tAccordion('subglandularPocket.title'),
       content: (
         <>
-          <P small>{t('technique.text6_1')}</P>
-          <P small>{t('technique.text6_2')}</P>
-          <P small>{t('technique.text6_3')}</P>
+          <P small>{tAccordion('subglandularPocket.paragraph1')}</P>
+          <P small>{tAccordion('subglandularPocket.paragraph2')}</P>
+          <P small>{tAccordion('subglandularPocket.paragraph3')}</P>
         </>
       )
     },
     {
       id: 'forainimplantat',
-      title: t('technique.heading7'),
+      title: tAccordion('implantInsertion.title'),
       content: (
         <>
-          <P small>{t('technique.text7')}</P>
+          <P small>{tAccordion('implantInsertion.paragraph1')}</P>
         </>
       )
     },
     {
       id: 'syihop',
-      title: t('technique.heading8'),
+      title: tAccordion('closure.title'),
       content: (
         <>
-          <P small>{t('technique.text8')}</P>
+          <P small>{tAccordion('closure.paragraph1')}</P>
         </>
       )
     },
     {
       id: 'forband',
-      title: t('technique.heading9'),
+      title: tAccordion('dressing.title'),
       content: (
         <>
-          <P small>{t('technique.text9')}</P>
+          <P small>{tAccordion('dressing.paragraph1')}</P>
         </>
       )
     }

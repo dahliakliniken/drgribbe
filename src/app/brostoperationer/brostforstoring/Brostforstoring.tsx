@@ -29,7 +29,8 @@ import ImplantsInHand from '@/public/images/_N3A7297.jpg'
 import { useAccordionData } from './accordionData'
 
 const Brostforstoring = () => {
-  const t = useTranslations('brostforstoring')
+  const tPage = useTranslations('brostforstoring.page')
+  const tCommon = useTranslations('common')
   const [teknikAccordion, faqAccordion] = useAccordionData()
 
   return (
@@ -39,13 +40,13 @@ const Brostforstoring = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <H1 white>{t('title')}</H1>
+            <H1 white>{tPage('hero.title')}</H1>
             <P white>
-              {t.rich('background', {
+              {tPage.rich('hero.intro', {
                 strong: (chunks) => <strong>{chunks}</strong>
               })}
             </P>
-            <P white>{t('background2')}</P>
+            <P white>{tPage('hero.introContinuation')}</P>
           </Pillar>
         }
       />
@@ -57,14 +58,14 @@ const Brostforstoring = () => {
           <Pillar noPadding>
             <SpaceContainer spaceTop noPadding>
               <Section>
-                <H2>{t('implanttitle')}</H2>
+                <H2>{tPage('implantOverview.title')}</H2>
                 <P>
-                  {t.rich('implantbackground.text1', {
+                  {tPage.rich('implantOverview.paragraph1', {
                     strong: (chunks) => <strong>{chunks}</strong>
                   })}
                 </P>
                 <P>
-                  {t.rich('implantbackground.text2', {
+                  {tPage.rich('implantOverview.paragraph2', {
                     strong: (chunks) => <strong>{chunks}</strong>
                   })}
                 </P>
@@ -139,7 +140,7 @@ const Brostforstoring = () => {
             />
             <Image
               src={ImplantsInHand}
-              alt={t('altText.ImplantsInHand')}
+              alt={tPage('media.implantsInHandAlt')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -147,7 +148,7 @@ const Brostforstoring = () => {
               <Accordion size="h4" items={faqAccordion} />
               <div className="m-auto my-6 flex justify-center">
                 <A href="/fragor-och-svar">
-                  {useTranslations()('common.linktoFaq')}
+                  {tCommon('linktoFaq')}
                 </A>
               </div>
             </SpaceContainer>
@@ -161,11 +162,11 @@ const Brostforstoring = () => {
         content={
           <>
             <H2 upperCase white className="text-center">
-              {useTranslations()('common.freeConsultation')}
+              {tCommon('freeConsultation')}
             </H2>
             <div className="m-auto flex max-w-xs justify-center">
               <A href="/boka" className="uppercase" buttonStyle>
-                {useTranslations()('common.bookNow')}
+                {tCommon('bookNow')}
               </A>
             </div>
           </>
@@ -183,8 +184,8 @@ const Brostforstoring = () => {
                 'På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?'
               }
             </P>
-            <H3>{t('technique.heading1')}</H3>
-            <P>{t('technique.text1')}</P>
+            <H3>{tPage('technique.sectionTitle')}</H3>
+            <P>{tPage('technique.intro')}</P>
             <Accordion size="h4" items={teknikAccordion} />
           </Section>
         </SpaceContainer>
@@ -192,9 +193,9 @@ const Brostforstoring = () => {
 
       <SpaceContainer>
         <Pillar>
-          <H3 id="placering">{t('placement.heading1')}</H3>
-          <P>{t('placement.text1')}</P>
-          <P>{t('placement.text2')}</P>
+          <H3 id="placering">{tPage('placement.sectionTitle')}</H3>
+          <P>{tPage('placement.paragraph1')}</P>
+          <P>{tPage('placement.paragraph2')}</P>
         </Pillar>
       </SpaceContainer>
 
@@ -203,33 +204,33 @@ const Brostforstoring = () => {
         bgPosition="left"
         content={
           <Pillar>
-            <H2 white>{t('withBodyFat.title')}</H2>
-            <P white>{t('withBodyFat.background.text1')}</P>
+            <H2 white>{tPage('withBodyFat.title')}</H2>
+            <P white>{tPage('withBodyFat.background.paragraph1')}</P>
 
-            <H3 white>{t('withBodyFat.technique.title')}</H3>
-            <P white>{t('withBodyFat.technique.text1')}</P>
+            <H3 white>{tPage('withBodyFat.technique.title')}</H3>
+            <P white>{tPage('withBodyFat.technique.paragraph1')}</P>
 
             <ol className="list-decimal space-y-6 pl-6 marker:text-lg marker:font-semibold marker:text-white">
               <li>
-                <P white>{t('withBodyFat.technique.list1')}</P>
+                <P white>{tPage('withBodyFat.technique.listItem1')}</P>
               </li>
               <li>
-                <P white>{t('withBodyFat.technique.list2')}</P>
+                <P white>{tPage('withBodyFat.technique.listItem2')}</P>
               </li>
               <li>
-                <P white>{t('withBodyFat.technique.list3')}</P>
+                <P white>{tPage('withBodyFat.technique.listItem3')}</P>
               </li>
             </ol>
             <SpaceContainer spaceTop noPadding>
-              <P white>{t('withBodyFat.technique.text2')}</P>
+              <P white>{tPage('withBodyFat.technique.paragraph2')}</P>
             </SpaceContainer>
           </Pillar>
         }
       />
       <SpaceContainer>
         <Pillar>
-          <H2>{t('withBodyFat.hybrid.title')}</H2>
-          <P>{t('withBodyFat.hybrid.text1')}</P>
+          <H2>{tPage('withBodyFat.hybrid.title')}</H2>
+          <P>{tPage('withBodyFat.hybrid.paragraph1')}</P>
         </Pillar>
       </SpaceContainer>
 
@@ -267,7 +268,7 @@ const Brostforstoring = () => {
               </P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
-                  {useTranslations()('common.bookNow')}
+                  {tCommon('bookNow')}
                 </A>
               </div>
             </Pillar>

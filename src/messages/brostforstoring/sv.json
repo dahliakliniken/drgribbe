@@ -1,0 +1,82 @@
+{
+  "page": {
+    "hero": {
+      "title": "Bröstförstoring i Stockholm",
+      "intro": "Vid en <strong>bröstförstoring</strong> lägger man in bröstimplantat för att öka eller återställa volymen i brösten – exempelvis efter graviditet, viktnedgång eller för att uppnå en önskad form och proportion.",
+      "introContinuation": "Det finns många varianter och märken på bröstimplantat och vid konsultationen får du hjälp att välja."
+    },
+    "implantOverview": {
+      "title": "Bröstförstoring med bröstimplantat",
+      "backgroundSectionTitle": "Bakgrund",
+      "paragraph1": "<strong>Bröstförstoring med bröstimplantat</strong> har under de senaste årtiondena blivit allt vanligare och mer och mer accepterat. Materialen som nu används är säkra och har mycket lång hållbarhet.",
+      "paragraph2": "Kvinnor väljer att <strong>förstora brösten</strong> av olika anledning. Vissa vill få hjälp att skapa en byst som de inte får av naturen och andra vill <strong>återskapa brösten efter graviditet och amning</strong>, viktnedgång eller efter att brösten krympt med ökad ålder."
+    },
+    "technique": {
+      "sectionTitle": "Teknik",
+      "intro": "Operationen bröstförstoring sker under full narkos. Inför operationen har du fått premedicinering och strax efter att du sövts och innan operationsstart så får du antibiotikum intravenöst.",
+      "accordion": {
+        "incision": {
+          "title": "Snitt",
+          "paragraph1": "Ingreppet inleds med att man lägger ett snitt genom huden med skalpell i bröstvecket under bröstet. Det finns andra sätt men Dr Gribbe använder och rekommenderar denna metod av flera olika anledningar, framförallt att man på så vis har bäst insyn och kontroll under ingreppet. Därefter skär man ned genom underhudsfettet ned till bröstmuskeln."
+        },
+        "implantPocket": {
+          "title": "Implantatficka",
+          "paragraph1": "Nästa steg är att skapa en lagom stor ficka för implantaten och man kan här välja att göra fickan under (submuskulärt) eller ovanpå muskeln (subglandulärt). Vilken placering för implantatet man väljer beror på patientens önskemål och förutsättningar. <link>Läs mer om val implantatplacering här.</link>"
+        },
+        "diathermy": {
+          "title": "Diatermi",
+          "paragraph1": "Under hela operationen, utom just när man skär genom huden, används så kallad diatermi. Diatermi är en elektrisk kniv som både kan skära genom vävnaden såsom fett och muskel och med vilken man kan bränna på små blodkärl som härmed blodstillas och koaguleras. I princip all modern kirurgi sker med hjälp av diatermi och det finns mer eller mindre avancerad utrustning. På kliniken använder vi den allra senaste tekniken med utsug för rökgaserna för personalens och patienternas hälsa."
+        },
+        "submuscularPocket": {
+          "title": "Ficka bakom muskeln (submuskulär implantatficka)",
+          "paragraph1": "Vid placering av bröstimplantat under muskeln fortsätter operationen ner genom de nedersta fibrerna på stora bröstmuskeln, musculus pectoralis major. Muskelns ursprung på bröstkorgen delas upp till cirka klockan 4 på höger sida och cirka kl 8 på vänster sida och ett utrymme skapas under muskeln ovanpå revbenen. Hur muskeln sitter ihop med bröstkorgen nertill varierar från person till person. Ibland behöver man inte dela muskeln alls och ibland bara lite. Hursomhelst så måste fickan skapas tillräckligt långt ner (mot magen) för att passa det bröstimplantat som valts och patientens förutsättningar. Den stora bröstmuskeln sitter ihop med den lilla bröstmuskeln, musculus pectoralis minor. Vid operationen så löses dessa muskler från varandra och implantatet hamnar då under stora men ovanpå lilla bröstmuskeln. Även främre sågmuskeln (boxarmuskeln), musculus serratus anterior ses vid operationen och fickan för bröstimplantatet skapas ovanpå denna. Hur musklerna ser ut och hur de förhåller sig till varandra varierar från individ till individ varför man som plastikkirurg måste vara noggrann och utföra operationen individuellt. Fickan under muskeln begränsas mot mitten av själva muskelkanten där den sitter fast mot, urspringer från bröstkorgen. Detta varierar också från individ till individ och bestämmer i slutändan hur tät klyftan blir. Det går att påverka klyftan något genom att muskeln här trimmas lite men det går inte att skära av muskeln eller flytta muskeln. När fickan sedan skapas uppåt och åt sidan måste man vara noggrann för att få rätt höjd och bredd på fickan för de bröstimplantat som valts samt för att undvika skador på nerver eller andra muskler."
+        },
+        "subglandularPocket": {
+          "title": "Ficka framför muskeln (subglandulär implantatficka)",
+          "paragraph1": "Efter att man gått genom underhudsfettet och nått stora bröstmuskeln fortsätter operationen nu ovanpå muskeln. Även här sker operationen skarpt med diatermi för att minimera blödning. Operationen kräver mer dissektion då underhudsfettet sitter fast mot muskelns framsida och måste lösas skarpt. Under hela förloppet när fickan skapas är det nu väldigt viktigt att hålla koll på var man är. Fickan ska få lagom storlek och dimensioner inåt mitten, uppåt och åt sidan för att passa det bröstimplantat som valts. Åt inget håll har man några egentliga riktlinjer i fickan då man inte når någon vävnadsstruktur som sätter stopp och begränsar fickan. Vid skapande av fickan under muskeln däremot ses strukturer som muskler och revben och mot mitten sätter stora bröstmuskelns ursprung, muskelkant stopp för dissektionen. Så är det alltså inte framför muskeln. Om man inte är noggrann så kan till exempel fickan blir för stor (eller för liten) till exempel mot mitten vilket ger en sned, för bred eller för smal klyfta.",
+          "paragraph2": "När fickan för bröstimplantatet skapas via snitt under bröstet har man god insyn och man kan också under gång känna med fingrarna så att fickan blir perfekt.",
+          "paragraph3": "Efter att implantatfickan skapats är det viktigt att man undersöker noggrant så att inga små blodkärl står öppna och blöder. Med diatermi koaguleras blodkärlen under gång och nu när fickorna för bröstimplantaten är skapade."
+        },
+        "implantInsertion": {
+          "title": "Föra in bröstimplantaten",
+          "paragraph1": "Det är nu dags att ta upp bröstimplantaten. Varje bröstimplantat kommer förpackat i en separat låda. Först en ytterkartong, sedan en osteril förpackning av plast och innerst en steril förpackning också av plast. Undersköterskan öppnar först ytterkartongen och tar ut den yttre plastförpackningen. Hon kan sedan öppna denna förpackning utan att röra den innersta och då “servera” den innersta sterila plastförpackningen till operationssjuksköterskan som tar upp den sterila innersta förpackningen utan att vidröra den osterila förpackningen. Operationssjuksköterskan kan sedan öppna locket på den innersta, sterila förpackningen och “serverar” bröstimplantaten till doktorn. Det är då bara doktorn som vidrör bröstimplantaten och inför detta så byter doktorn till nya ytterhandskar. Bröstimplantaten förs sedan in i vardera fickan genom att operationssjuksköterskan håller upp öppningen till fickorna med en brösthake samtidigt som doktorn för in bröstimplantaten ett efter ett. Det krävs här precision och en speciell teknik för att inte skada bröstimplantaten och för att få vardera bröstimplantat på plats i fickan. När bröstimplantaten läggs på plats kontrolleras symmetrin och att de ligger på rätt höjd på bröstkorgen."
+        },
+        "closure": {
+          "title": "Sy ihop såret",
+          "paragraph1": "Det är mycket viktigt hur såret sys ihop och här har Dr Gribbe utvecklat och förfinat sin teknik under många år.  Kort sagt så sys såret ihop i flera lager för att ge ett optimalt stöd, för att minimera risken att bakterier når implantaten och för att ge ett fint ärr. När man syr så sitter tråden fast på nålen från fabriken. Nålen är böjd som en halvcirkel eller lite mindre och kan ha olika storlek från några mm till ett par cm. Tråden kan vara finare eller grövre och kan vara sådan att den tas upp av kroppen, resorberbar eller permanent och tas bort på mottagningen en tid efter operationen. Vid bröstoperationerna använder vi bara trådar som tas upp av kroppen. Nålen sätts fast på en nålförare som är som en lång tång (länk instagraminlägg) som gör att den med lätthet kan föras genom vävnaden. När doktorn fört nålen genom vävnaden fångar han den med en pincett och sedan knyts tråden med flera knutar. Efter detta klipps tråden av operationssjuksköterskan och man kan fortsätta med nästa stygn. Under en bröstförstoring sätts först ett lager enstaka stygn på djupet med grov tråd, sedan ett ytligare lager enstaka stygn med en finare tråd och ytterst ett fortlöpande stygn med en fin tråd. Lagret på djupet stänger igen, nästa lager avlastar ärret och det ytliga adapterar sårkanterna på bästa sätt. Ärret kan på grund av stygnen kännas knöligt och se knöligt ut under ett par månader efter operationen."
+        },
+        "dressing": {
+          "title": "Förband",
+          "paragraph1": "På ärret läggs förband i form av tejp och kompresser. Därefter en skön, mjuk bh."
+        }
+      }
+    },
+    "placement": {
+      "sectionTitle": "Implantatplacering framför eller bakom bröstmuskeln",
+      "paragraph1": "Generellt så kan man säga att om man är tunn och smal och saknar underhudsfett eller egen bröstvävnad upptill i brösten så passar en placering under muskeln bäst. Muskeln blir då ett extra lager vävnad som gör att implantaten inte syns så direkt och tydligt utan man får i stället en harmonisk och gradvis övergång från bröstkorgen till bröstet. Om man är tunn i vävnaden och lägger implantaten framför muskeln så ser man implantatkanten och veckbildningar i själva implantatet, så kallad rippling mera. Har man däremot mer underhudsfett och/eller egen bröstvävnad upptill på bröstkorgen så täcks implantaten bättre och man kan då få ett resultat utan synlig implantatkant eller rippling. Även implantatens karaktär påverkar. Man kan med ökad fyllnadsgrad, ökad fasthet och mer elastiskt skal minska risken för rippling. Samtidigt så ger fastare implantat tydligare övre kant och mer uttalat dekolletage.",
+      "paragraph2": "De allra flesta kvinnor väljer implantat som är större än de egna brösten vilket på sätt och vis hänger ihop med ingreppets natur. Det vill säga man vill förstora brösten som är små och de önskade brösten och därmed bröstimplantaten är då oftast större än de egna brösten. De allra flesta kvinnor kan därför räknas som att de inte har tillräckligt vävnad upptill på bröstkorgen, varför bakom muskeln oftast passar bäst. Det finns även andra fördelar med bakom muskeln. Muskeln håller bröstimplantaten på plats, inte så bröstimplantaten växer fast i muskeln utan mer att de fungerar som ett stöd där muskeln hindrar bröstimplantaten från att röra sig för mycket."
+    },
+    "withBodyFat": {
+      "title": "Bröstförstoring med kroppseget fett",
+      "background": {
+        "title": "Bakgrund, historik",
+        "paragraph1": "Redan i slutet av 1800-talet försökte Dr Viktor Czerny sig på att transplantera fett till ett bröst för att återskapa volym efter operation av bröstcancer. Operationen misslyckades då man transplanterade en stor klump fett (ett lipom) vilket gjorde att stora delar av fettet inte fick blodcirkulation. 100 år senare på 1990-talet började Dr Sydney Coleman framgångsrikt utföra transplantation av fett till ansiktet och brösten."
+      },
+      "technique": {
+        "title": "Teknik",
+        "paragraph1": "En bröstförstoring med kroppseget fett, det vill säga en transplantation av eget fett till brösten sker i tre steg. Det finns flera olika system på marknaden men principen är ofta densamma. Det handlar om att få ut fett från en del av kroppen och sedan föra in fettet i brösten. Operationen sker på Dahliakliniken i Stockholm alltid i narkos. Inför operationen har du fått premedicinering och strax innan operationsstart får du antibiotikum intravenöst.",
+        "listItem1": "Första steget är fettsugningen vilket man även kallar att man “skördar” fett. Precis som vid en traditionell fettsugning används vanliga fettsugningskanyler utan till exempel laser, värme eller ultraljud. Det gäller att få ut fettet så noggrant och försiktigt som möjligt så att fettcellerna inte skadas. Man fettsuger från de delar av kroppen där patienten upplever att hon har ett överskott och vill bli smalare. Det kan till exempel vara från insidan av låren, magen, ryggen eller knäna. Operationen har därför två syften, dels en förstoring av brösten och dels att få bort oönskat fett från olika delar av kroppen.",
+        "listItem2": "Andra steget är behandling, rening av fettet. När man fått ut fettet i olika behållare förbereds det på olika sätt. Fettet tvättas med saltvattenlösning och centrifugeras. Syftet är att få fram så många hela fettceller som möjligt och samtidigt få bort trasiga fettceller och vätska som man inte vill ska föras in i bröstet.",
+        "listItem3": "Tredje steget är att det renade fettet förs in i brösten. Även detta måste ske med stor omsorg och precision. Man använder här sprutor med mycket tunna kanyler och steg för steg läggs tunna strängar av fett i de delar av bröstet som man önskar förstora. Det är viktigt att man lägger små mängder fett åt gången med tunna kanyler i många smala kanaler. Detta för att varje enskild fettcell ska komma i kontakt med den befintliga bröstvävnaden och från den så vis få näring och syre. Om man sprutar in fettet som en klump (såsom Dr Czerny gjorde 1895) kommer bara fettcellerna i utkanten av klumpen i kontakt med kroppens blodcirkulation och fettet i mitten av klimpen dör.",
+        "paragraph2": "Även om man gör allt rätt så kommer vissa av fettcellerna att gå under. Man brukar räkna med att mellan 30-70% av fettcellerna dör men genom att utföra vart och ett av stegen noggrant så ökar chanserna att så många fettceller som möjligt överlever. På grund av detta brukar man räkna med att det behövs mellan två till fyra operationer för att uppnå en volym på brösten som gör skillnad."
+      },
+      "hybrid": {
+        "title": "Hybrid bröstförstoring, bröstimplantat och fett",
+        "paragraph1": "Vid hybrid bröstförstoring används både bröstimplantat och transplantation med fett enligt ovan. Med endast transplantation av fett når man ofta inte önskat resultat, särskilt om man önskar en större volym på brösten. Vid en hybrid bröstförstoring lägg implantat av önskar volym in och transplantationen av fett blir ett komplement att för att till exempel öka volymen upptill i dekolletaget, i underpolen eller för att minska eller ta bort oönskade resultat såsom dubbelkontur eller rippling."
+      }
+    },
+    "media": {
+      "implantsInHandAlt": "Kvinna som ser glad ut och håller i två olika implantant för bröstförstoring"
+    }
+  }
+}
