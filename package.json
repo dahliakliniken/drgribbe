@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/generate-last-modified.mjs",
+    "predev": "node scripts/generate-messages.mjs",
+    "prebuild": "node scripts/generate-messages.mjs && node scripts/generate-last-modified.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
