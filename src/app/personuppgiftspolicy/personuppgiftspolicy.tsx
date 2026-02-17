@@ -12,7 +12,7 @@ import { BgColors } from '../types'
 import { usePolicyAccordionItems } from './accordionData'
 
 const PersonuppgiftsPolicy = () => {
-  const t = useTranslations()
+  const tPage = useTranslations('personuppgiftspolicy.page')
   const [policyItems, rightsItems] = usePolicyAccordionItems()
 
   return (
@@ -22,8 +22,8 @@ const PersonuppgiftsPolicy = () => {
         className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
           <Pillar>
-            <H1 white>{t('Personuppgiftspolicy.title')}</H1>
-            <P white>{t('Personuppgiftspolicy.preamble')}</P>
+            <H1 white>{tPage('hero.title')}</H1>
+            <P white>{tPage('hero.preamble')}</P>
           </Pillar>
         }
       />
@@ -34,7 +34,7 @@ const PersonuppgiftsPolicy = () => {
       </SpaceContainer>
       <SpaceContainer>
         <Pillar>
-          <H2>{t('Personuppgiftspolicy.yourRights')}</H2>
+          <H2>{tPage('rights.sectionTitle')}</H2>
           <Accordion outLine items={rightsItems} />
         </Pillar>
       </SpaceContainer>

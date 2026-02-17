@@ -4,20 +4,20 @@ import { A } from '@/components/typography/A'
 import { P } from '@/components/typography/P'
 
 export const useAccordionData = () => {
-  const ft = useTranslations('fragorOchSvar')
+  const ft = useTranslations('fragor-och-svar.page.faqAccordion')
 
   const faqAccordion = [
     {
       id: crypto.randomUUID(),
-      title: ft('accordion.question1.question'),
-      content: <P small>{ft('accordion.question1.answer')}</P>
+      title: ft('question1.question'),
+      content: <P small>{ft('question1.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('accordion.question2.question'),
+      title: ft('question2.question'),
       content: (
         <P small>
-          {ft.rich('accordion.question2.answer', {
+          {ft.rich('question2.answer', {
             link: (chunks) => (
               <A href="/brostoperationer#forberedelser">{chunks}</A>
             )
@@ -27,13 +27,13 @@ export const useAccordionData = () => {
     },
     {
       id: crypto.randomUUID(),
-      title: ft('accordion.question23.question'),
-      content: <P small>{ft('accordion.question23.answer')}</P>
+      title: ft('question23.question'),
+      content: <P small>{ft('question23.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('accordion.question30.question'),
-      content: <P small>{ft('accordion.question30.answer')}</P>
+      title: ft('question30.question'),
+      content: <P small>{ft('question30.answer')}</P>
     }
   ]
 
