@@ -1,0 +1,28 @@
+{
+  "page": {
+    "hero": {
+      "title": "Före & efterbilder"
+    },
+    "roundImplants": {
+      "sectionTitle": "Runda Implantat - Före och efter",
+      "preamble": "Implantat med rund form har samma bredd och höjd då det är implantatets diameter. Man kan variera denna diameter och därmed bredden för att passa olika breda bröstkorgar och för att passa olika kvinnors smak.",
+      "lowProfile": {
+        "heading": "Runda bröstimplantat låg profil",
+        "infoText": "Patient opererad med runda bröstimplantat låg profil, Mentor 250cc. Ålder 32 år, längd 166 cm och 55 kg."
+      },
+      "mediumProfile": {
+        "heading": "Runda bröstimplantat mellanprofil",
+        "infoText": "Patient opererad med runda bröstimplantat mellanprofil, Mentor 325cc. Ålder 26 år, längd 169 cm och 57 kg."
+      },
+      "highProfile": {
+        "heading": "Runda bröstimplantat hög profil",
+        "infoText": "Patient opererad med runda bröstimplantat hög profil, Mentor 400cc. Ålder 24 år, längd 165 cm och 58 kg."
+      }
+    },
+    "anatomicalImplants": {
+      "sectionTitle": "Anatomiska implantat - Före och efter",
+      "preamble": "Anatomiska, även kallade droppformade bröstimplantat kan varieras avseende bredd, höjd och projektion oberoende av varandra. Det betyder att man kan ha smala, höga bröstimplantat som framifrån sett ser ovala ut med mer volym uppåt nyckelbenet än vad de fyller ut på bredden. På samma sätt så kan man välja implantat som är låga och breda med mer volym på bredden och mindre volym uppåt på bröstkorgen.",
+      "infoText": "Patient opererad med anatomiska bröstimplantat, Mentor 375cc (CPG 322). Ålder 25 år, längd 167 cm och 53 kg."
+    }
+  }
+}

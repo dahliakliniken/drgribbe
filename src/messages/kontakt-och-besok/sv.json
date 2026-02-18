@@ -1,0 +1,26 @@
+{
+  "page": {
+    "hero": {
+      "title": "Kontakt & besök",
+      "preamble": "Nedan hittar du all information du behöver för att nå oss eller besöka vår klinik."
+    },
+    "contact": {
+      "heading": "Kontakta oss",
+      "phone": "Telefon: <phone>08- 520 278 78</phone>",
+      "email": "Email: <email>info@dahliakliniken.se</email>"
+    },
+    "location": {
+      "heading": "Kungsholmen",
+      "address": "Sankt Göransgatan 126, mittemot Sankt Görans sjukhus",
+      "addressDetails": "Vår mottagning ligger på plan1 i Wonna Tower."
+    },
+    "parking": {
+      "heading": "Parkering",
+      "details": "Om du kommer med bil så finns ett fåtal parkeringsplatser direkt utanför. I övrigt hänvisar vi till parkeringen i anslutning till huvudentrén på S:t Görans sjukhus och på sjukhusområdet samt omkringliggande gator."
+    },
+    "publicTransport": {
+      "heading": "Kollektivtrafik",
+      "details": "Med kollektivtrafik når du vår mottagning i Wonna Tower med tunnelbanans blåa linje, uppgång Stadshagen eller grön linje Fridhemsplan. Om du tar buss nr 56, åk till hållplats S:t Görans sjukhus."
+    }
+  }
+}
