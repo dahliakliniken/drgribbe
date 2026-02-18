@@ -3,22 +3,6 @@
     "title": "Kliniken för estetisk bröstförstoring och bröstlyft",
     "description": "Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft."
   },
-  "dropdown": {
-    "clinic": "Om Kliniken",
-    "breastSurgeries": "Bröstoperationer",
-    "implants": "Implantaten",
-    "skinInjections": "Hud & injektioner",
-    "ourStaff": "Vår Personal",
-    "price": "Priser",
-    "guarantee": "Trygghetspaket",
-    "faq": "Frågor & svar",
-    "overview": "Bröstoperationer",
-    "breastReduction": "Bröstförminskning",
-    "breastAugmentation": "Bröstförstoring",
-    "breastLift": "Bröstlyft",
-    "beforeAfter": "Före & efterbilder",
-    "findUs": "Kontakt & besök"
-  },
   "testimonials": {
     "title": "Vad våra patienter säger om sina bröstoperationer"
   },
@@ -127,25 +111,6 @@
     "socialMedia": "Sociala medier",
     "followOnInstagram": "Följ oss på Instagram",
     "followOnFacebook": "Följ oss på Facebook"
-  },
-  "common": {
-    "bookConsultation": "Boka konsultation",
-    "bookFreeConsultation": "Boka konsultation",
-    "freeConsultation": "Boka konsultation",
-    "closeMenu": "Stäng menyn",
-    "openMenu": "Öppna menyn",
-    "bookNow": "Boka tid",
-    "readMore": "Läs mer",
-    "readLess": "Läs mindre",
-    "menu": "Meny",
-    "bookTimeAndConsultation": "Boka tid / konsultation",
-    "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer"
-  },
-  "varPersonal": {
-    "title": "Vår Personal",
-    "text": "Text om vår personal.",
-    "readMore": "Läs mer om {name}",
-    "readLess": "Läs mindre om {name}"
   },
   "garanti": {
     "preamble1": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
@@ -370,7 +335,6 @@
     "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
     "motivaTable": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
     "forstaaterbesoket": "Bild på en patient på återbesök hos Dahliakliniken",
-    "staffImage": "Bild på {name}",
     "video": "Dr. Örjan Gribbe välkomnar kunder till sin klinik",
     "polytechimplants": "Bild på en patient som håller i ett implantat från Polytech"
   }

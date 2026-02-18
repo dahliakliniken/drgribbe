@@ -48,7 +48,7 @@ const FlipButton = ({ ariaLabel, onClick }: FlipButtonProps) => (
 
 export const FlippableCard = ({ member }: StaffCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false)
-  const t = useTranslations()
+  const t = useTranslations('var-personal.page')
 
   const hasDescription = Boolean(member.description)
 
@@ -93,7 +93,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
           {hasDescription && (
             <FlipButton
               onClick={() => setIsFlipped(!isFlipped)}
-              ariaLabel={t('varPersonal.readMore', { name: member.name })}
+              ariaLabel={t('readMore', { name: member.name })}
             />
           )}
         </div>
@@ -106,7 +106,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
             </div>
             <FlipButton
               onClick={() => setIsFlipped(!isFlipped)}
-              ariaLabel={t('varPersonal.readLess', { name: member.name })}
+              ariaLabel={t('readLess', { name: member.name })}
             />
           </div>
         )}
