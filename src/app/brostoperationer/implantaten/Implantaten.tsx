@@ -95,9 +95,7 @@ const Implantaten = () => {
         />
 
         <Pillar>
-          <P className="text-center">
-            {'Ett runt och ett anatomiskt implantat'}
-          </P>
+          <P className="text-center">{t('captions.roundAndAnatomicImplant')}</P>
           <Image
             src={ImplantatVariansImage}
             alt={t('altText.dayOfSurgery')}

@@ -9,7 +9,8 @@
       "overview": {
         "paragraph1": "Operationen bröstförminskning är ett mycket tacksamt ingrepp där de allra flesta kvinnor som genomgår operationen känner sig hjälpta och nöjda.",
         "paragraph2": "Operationen liknar mycket ett bröstlyft som beskrivs här på hemsidan med den skillnaden att man vid en bröstförminskning även tar bort mer eller mindre bröstvävnad och inte bara hud. Bröstvävnaden som tas bort består av både fett och bröstkörtel. Vissa bröst innehåller mer fett medan andra innehåller mer körtelvävnad. Generellt så kan man säga att det är mer bröstkörtel i brösten hos yngre kvinnor och hos kvinnor som inte fött barn och ammat, medan övervikt ger en ökad andel fett i brösten. Dessutom ökar andelen fett i brösten med ökad ålder och i samband med amning då delar av bröstvävnaden omvandlas till fett. Körtelvävnad är kompaktare och väger mer än fett.",
-        "paragraph3": "Samtidigt som brösten görs lättare och mindre genom att bröstvävnad tas bort tas även hud bort."
+        "paragraph3": "Samtidigt som brösten görs lättare och mindre genom att bröstvävnad tas bort tas även hud bort.",
+        "sectionTitle": "Hur går en bröstförminskning till?"
       },
       "consultation": {
         "sectionTitle": "Konsultation bröstförminskning",
@@ -37,6 +38,16 @@
           "paragraph8": "Glipor i den ytliga huden resulterar i sår. Glipor på djupet i fettväven resulterar i ett tomrum under huden som gör att man känner en grop eller fåra under ärret och kan i värsta fall göra att bröstet känns förankrat på djupet nedåt på kroppen till magen.",
           "paragraph9": "Om plastikkirurgen lagt in ett bröstimplantat vid operationen kan det resultera i att man här känner kanter eller knölighet från bröstimplantatet på en kortare eller längre sträcka."
         }
+      },
+      "media": {
+        "consultationAlt": "Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning"
+      },
+      "faq": {
+        "sectionTitle": "Vanliga frågor & svar om bröstförmiskning"
+      },
+      "cta": {
+        "title": "Vill du veta mer om våra behandlingar?",
+        "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
       }
     }
   },
@@ -119,6 +130,67 @@
       },
       "media": {
         "implantsInHandAlt": "Kvinna som ser glad ut och håller i två olika implantant för bröstförstoring"
+      },
+      "faq": {
+        "sectionTitle": "Vanliga frågor & svar om bröstförstoring"
+      },
+      "deepDive": {
+        "title": "Hur går en bröstförstoring till? – En teknisk djupdykning",
+        "paragraph1": "På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?"
+      },
+      "quickFacts": {
+        "title": "Snabbfakta om bröstförstoring",
+        "ctaText": "Boka konsultation",
+        "facts": {
+          "consultationBeforeOperation": {
+            "label": "Konsultation innan operation",
+            "value": "60 minuter, ibland flera besök."
+          },
+          "breastImplants": {
+            "label": "Bröstimplantat",
+            "value": "Form och storlek efter önskemål. Från som minst 150 cc (ml, gram) till som mest ca 600 cc (ml, gram)."
+          },
+          "operationDuration": {
+            "label": "Operationstid",
+            "value": "30 - 45 minuter"
+          },
+          "anesthesia": {
+            "label": "Narkos/lokalbedövning",
+            "value": "Narkos"
+          },
+          "price": {
+            "label": "Pris",
+            "value": "Från 45 tusen kr. Kapselgaranti 5 tusen kr."
+          },
+          "timeAtClinic": {
+            "label": "Tid på kliniken",
+            "value": "7 - 8 timmar"
+          },
+          "sickLeave": {
+            "label": "Sjukskrivning",
+            "value": "4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar."
+          },
+          "followUp": {
+            "label": "Återbesök",
+            "value": "Ca 10 dagar och 3-4 månader efter operationen."
+          },
+          "recovery": {
+            "label": "Återhämtning",
+            "value": "Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader."
+          },
+          "sportAndGym": {
+            "label": "Sport & Gym",
+            "value": "Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader."
+          },
+          "other": {
+            "label": "Övrigt",
+            "value": "Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt."
+          }
+        }
+      },
+      "cta": {
+        "title": "Vill du veta mer om våra behandlingar?",
+        "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
       }
     }
   },
@@ -132,7 +204,8 @@
       },
       "overview": {
         "paragraph1": "Känslan av att brösten hänger brukar kvinnor beskriva på flera olika sätt. Vissa stör sig mest på att den egna bröstvävnaden hänger ner mer eller mindre över bröstvecket. Ibland bara lite så att vecket döljs men ibland mer så att brösten ligger an mot huden under brösten. Vissa kvinnor upplever att brösten hänger eftersom bröstvårtorna sitter långt ner på brösten och pekar nedåt. Ibland kan dock brösten hänga över vecket medan de egna bröstvårtorna ändå sitter relativt högt upp. Många stör sig på och upplever brösten som hängiga då volymen upptill i brösten, i klyftan och i dekolletaget minskat eller helt försvunnit. Ofta är det en kombination av flera av ovanstående faktorer som gör att brösten upplevs som hängande och i samband med ett bröstlyft kan alla dessa delar adresseras och åtgärdas. Vid ett bröstlyft kan även vårtgårdar och ibland även bröstvårtor minskas om de upplevs som stora. Om bröstvårtorna är indragna kan detta åtgärdas.",
-        "paragraph2": "Operationen <strong>bröstlyft</strong> är mycket tacksam med fina resultat och nöjda patienter."
+        "paragraph2": "Operationen <strong>bröstlyft</strong> är mycket tacksam med fina resultat och nöjda patienter.",
+        "sectionTitle": "Bröstlyft – lösningen när brösten förlorat volym, form eller symmetri"
       },
       "technique": {
         "sectionTitle": "Teknik - Hur går ett bröstlyft till?",
@@ -145,6 +218,63 @@
       },
       "media": {
         "inchairAlt": "Glad kvinna ligger i undersökningsstol för bröstlyft på Dahliakliniken"
+      },
+      "faq": {
+        "sectionTitle": "Vanliga frågor & svar om bröstlyft"
+      },
+      "quickFacts": {
+        "title": "Snabbfakta om Bröstförstoring med bröstlyft",
+        "ctaText": "Boka konsultation",
+        "facts": {
+          "consultationBeforeOperation": {
+            "label": "Konsultation innan operation",
+            "value": "60 minuter, ibland flera besök."
+          },
+          "breastImplants": {
+            "label": "Bröstimplantat",
+            "value": "Form och storlek delvis efter önskemål. Mer begränsat än vid bröstförstoring då det inte går att lägga in lika stora bröstimplantat vid bröstlyft. Ofta inte behov av stor volym."
+          },
+          "operationDuration": {
+            "label": "Operationstid",
+            "value": "2,5 - 3 timmar"
+          },
+          "anesthesia": {
+            "label": "Narkos/lokalbedövning",
+            "value": "Narkos"
+          },
+          "price": {
+            "label": "Pris",
+            "value": "Från 75 tusen kr. Kapselgaranti 5 tusen kr."
+          },
+          "timeAtClinic": {
+            "label": "Tid på kliniken",
+            "value": "9 - 10 timmar"
+          },
+          "sickLeave": {
+            "label": "Sjukskrivning",
+            "value": "4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar."
+          },
+          "followUp": {
+            "label": "Återbesök",
+            "value": "Ca 10 dagar och 3-4 månader efter operationen."
+          },
+          "recovery": {
+            "label": "Återhämtning",
+            "value": "Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader."
+          },
+          "sportAndGym": {
+            "label": "Sport & Gym",
+            "value": "Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader."
+          },
+          "other": {
+            "label": "Övrigt",
+            "value": "Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 4-5 veckor. Sova på rygg eller sidan går bra direkt."
+          }
+        }
+      },
+      "cta": {
+        "title": "Vill du veta mer om våra behandlingar?",
+        "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
       }
     }
   },
@@ -419,6 +549,44 @@
           "title": "Solning",
           "text1": "Du får inte sola ärren på minst ett år efter operationen. Täck med dubbla lager tejp, kläder, baddräkt eller bikini. Om du solar på ärren kan de bli pigmenterade (mörka). Du kan sola kroppen i övrigt."
         }
+      },
+      "complications": {
+        "sectionTitle": "Komplikationer",
+        "accordion": {
+          "capsule": {
+            "title": "Kapsebildning, hård kapsel, kapselkontraktion.",
+            "content": {
+              "bold1": "Kapseln, en naturlig följd av en bröstoperation.",
+              "text1": "När bröstimplantat eller något annat främmande material läggs in i kroppen reagerar kroppen med att bilda en hinna, ett hölje av ärrvävnad runt bröstimplantaten. Denna ärrvävnad kallas för en kapsel och är kroppens naturliga sätt att ta hand om bröstimplantaten. Normalt så skapar kroppen en mjuk, tunn kapsel vilket gör att när man känner på brösten så känner man inte kapseln utan man känner bröstens och bröstimplantatens naturliga mjukhet. I sällsynta fall (under 1%) och oftast bara på ena sidan bildar kroppen ett tjockare och hårdare kapsel vilket gör att det drabbade bröstet känns fastare och hårdare. Man brukar prata om hård kapsel. Det är då inte heller ovanligt att den förtjockade och fastare kapseln drar ihop sig vilket gör att bröstimplantatet och bröstet upplevs mindre i volym och ofta även smalare. Detta kallas för kapselsammandragning eller kapselkontraktion. När kapseln drar ihop sig brukar den också putta upp bröstimplantatet på bröstkorgen vilket gör att bröstet får ett mer onaturligt och up-pushat utseende. En tjockare kapsel som drar ihop sig kan även skapa mer eller mindre uttalade smärtor. Dessa smärtor kan vara konstanta men det är vanligare att de kommer och går. Hur tydliga symtomen är varierar mycket från patient till patient. Ibland ger det mycket diskreta symtom och ibland, särskilt om den fått utvecklas under många år, så ger den tydligare symtom. ",
+              "bold2": "En hård kapsel är inte farlig.",
+              "text2": "Det är viktigt att förstå att hård kapsel och kapselsammadragning är inte farligt. Kapseln är naturlig och det varierar från person till person hur den blir. ",
+              "bold3": "Kapseloperation, bara om man har besvär och patienten bestämmer.",
+              "text3": "Om kapseln skapar problem med ett fastare bröst eller ibland även smärtor så kan man åtgärda det med en kapseloperation. Den går till som så att man i narkos tar ut bröstimplantatet, opererar kapseln och sedan lägger tillbaka bröstimplantatet. Problemet är då oftast åtgärdat och patientens problem försvinner. Huruvida man ska operera kapsel beror helt på patientens besvär. Det är patienten som bestämmer om besvären är sådana att hon önskar operation eller ej. Ibland är kapseln lite stram och patienten märker det inte. Det är då inte ett problem och man ska inte göra en operation. Man kan säga att det är som en skala från å ena sidan mjuk kapsel till väldigt hård och sammandragen kapsel. Sedan finns det många varianter däremellan från lite stramare och fastare kapsel till mer och mer tjock, hård och sammandragen kapsel. ",
+              "bold4": "En fastare kapsel har fördelar.",
+              "text4": "En tunn mjuk kapsel har fördelen att man tydligt känner bröstimplantatens konsistens och mjukhet. En hård kapsel kan skapa problem enligt ovan. Däremellan finns många varianter på mer eller mindre tjock och stram kapsel som inte ger patienten några som helst besvär. Fördelen med en lite tjockare och stramare kapsel utan besvär är att den ger ett bättre stöd för bröstimplantaten än en tunn och mjuk kapsel. Den stramare kapseln hindrar bröstimplantaten från att falla ner eller åt sidorna vilket är extra fördelaktigt om man valt lite större bröstimplantat."
+            }
+          },
+          "sensory": {
+            "title": "Känselstörningar",
+            "content": {
+              "bold1": "Nedsatt känsel i huden",
+              "text1": "Efter en bröstoperation kan man, precis som efter vilken annan operation som helst där man skär genom huden, få övergående känselstörningar. Efter en bröstoperation händer det då och då och att man kring ärret får en nedsatt känsel för beröring under ett tag efter operationen. Ofta kommer känseln tillbaka efter några månader. I ovanliga fall så tar det upp till två år innan känseln återkommer helt. I mycket ovanliga fall blir känselnedsättningen permanent och i ytterst ovanliga fall så kan detta även drabba bröstvårta, vårtgård.",
+              "bold2": "Ökad känsel i huden",
+              "text2": "En annan form av känselstörning är att vissa patienter ett tag efter operationen kan uppleva en ökad känsel, en överkänslighet (hyperestesi) i huden kring ärret och ibland upp en bit på själva bröstet. Känslan kan vara att beröring känns mer och ibland kan beröring av huden också kännas obehaglig. Vissa upplever en ytlig, brännande känsla. Denna obehagliga känsla är i princip alltid övergående och kommer ibland i samband med att känseln i huden är på väg att komma tillbaka efter att den först nedsatt. För att förebygga ökad känsel i huden, hyperestesi är det bra att beröra, stryka på huden med fingrarna. Man lär då huden och hjärnan att det faktiskt handlar om normal beröring."
+            }
+          },
+          "alcl": {
+            "title": "ALCL",
+            "content": {
+              "bold1": "Ovanligt lymfom",
+              "text1": "Det senaste årtiondet har en mycket ovanlig form av lymfom, Anaplastiskt storcelligt lymfom ALCL (Breast Implant Associated Anaplastic Large Cell Lymphoma, BIA-ALCL) uppmärksammats efter operation med texturerade bröstimplantat. Orsaken är oklar men man tror att det beror på genetiska faktorer hos den drabbade individen i kombination med inflammatoriska mekanismer som den texturerade ytan på bröstimplantaten ibland skapat. Initialt visste man inte så mycket om vilka bröstimplantat som kunde orsaka ALCL men det har visat sig att det endast är just texturerade, knottriga bröstimplantat och inte släta bröstimplantat. Viktigt att förstå är att ALCL inte är eller har något samband med bröstcancer och att inga bröstimplantat ökar risken för bröstcancer.",
+              "bold2": "Olika textureringar, olika risk",
+              "text2": "Det har visat sig att det är stor skillnad hur vanligt ALCL är mellan olika märken och därmed olika typer av texturering. Allergan till exempel hade en grov texturering på sina bröstimplantat där det visade sig att risken var 1 på ca 2500 patienter. Risken ansågs då så hög att denna texturering förbjöds. Mentors texturering Siltex har visats ha en risk på 1 på ca 87 000 vilket är en mycket låg risk varför dessa bröstimplantat är fullt tillåtna och de används både vid estetiska bröstförstoring och inom sjukvården vid rekonstruktioner efter bröstcancer.",
+              "bold3": "Behandling",
+              "text3": "Skulle det då handla om ALCL, remitteras patienten till sjukvården där man tar bort implantat och omkringliggande kapsel. Oftast så är patienten botad och risken för spridning i kroppen är låg. Rekommendationen är sedan att man hos patienten fortsättningsvis använder släta bröstimplantat."
+            }
+          }
+        }
       }
     }
   },
@@ -436,6 +604,14 @@
     "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer",
     "altText": {
       "dahliaLogo": "Logotypen för Dahlia"
+    },
+    "lastUpdatedLabel": "Senast uppdaterad:",
+    "testimonials": {
+      "readFullReviewAria": "Läs hela recensionen från {title} på Google"
+    },
+    "imageModal": {
+      "openFullViewAria": "Open full view of {imageAlt}",
+      "closeAria": "Close modal"
     }
   },
   "contact": {
@@ -1086,6 +1262,9 @@
         "motiva-table": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
         "polytechimplants": "Bild på en patient som håller i ett implantat från Polytech",
         "dayOfSurgery": "En kirurg i gröna operationskläder visar vägen för en patient klädd i vit morgonrock och grön operationsmössa i en sjukhuskorridor med ljus belysning."
+      },
+      "captions": {
+        "roundAndAnatomicImplant": "Ett runt och ett anatomiskt implantat"
       }
     }
   },
@@ -1114,10 +1293,6 @@
         "details": "Med kollektivtrafik når du vår mottagning i Wonna Tower med tunnelbanans blåa linje, uppgång Stadshagen eller grön linje Fridhemsplan. Om du tar buss nr 56, åk till hållplats S:t Görans sjukhus."
       }
     }
-  },
-  "metadata": {
-    "title": "Kliniken för estetisk bröstförstoring och bröstlyft",
-    "description": "Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft."
   },
   "personuppgiftspolicy": {
     "page": {

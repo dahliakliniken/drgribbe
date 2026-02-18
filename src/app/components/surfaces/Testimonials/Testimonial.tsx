@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import { memo, useMemo } from 'react'
 
 import { StarRating } from '@/app/components/surfaces/Testimonials/StarRating'
@@ -15,6 +16,7 @@ type TestimonialProps = {
 
 export const Testimonial = memo(
   ({ content, title, link, date, rating }: TestimonialProps) => {
+    const t = useTranslations('common')
     const relativeTime = useMemo(() => formatRelativeTime(date), [date])
 
     return (
@@ -41,9 +43,9 @@ export const Testimonial = memo(
           href={link}
           target="_blank"
           rel="noopener noreferrer nofollow ugc"
-          aria-label={`Läs hela recensionen från ${title} på Google`}
+          aria-label={t('testimonials.readFullReviewAria', { title })}
         >
-          {'Läs mer'}
+          {t('readMore')}
         </a>
       </article>
     )

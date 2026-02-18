@@ -8,7 +8,8 @@
     "overview": {
       "paragraph1": "Operationen bröstförminskning är ett mycket tacksamt ingrepp där de allra flesta kvinnor som genomgår operationen känner sig hjälpta och nöjda.",
       "paragraph2": "Operationen liknar mycket ett bröstlyft som beskrivs här på hemsidan med den skillnaden att man vid en bröstförminskning även tar bort mer eller mindre bröstvävnad och inte bara hud. Bröstvävnaden som tas bort består av både fett och bröstkörtel. Vissa bröst innehåller mer fett medan andra innehåller mer körtelvävnad. Generellt så kan man säga att det är mer bröstkörtel i brösten hos yngre kvinnor och hos kvinnor som inte fött barn och ammat, medan övervikt ger en ökad andel fett i brösten. Dessutom ökar andelen fett i brösten med ökad ålder och i samband med amning då delar av bröstvävnaden omvandlas till fett. Körtelvävnad är kompaktare och väger mer än fett.",
-      "paragraph3": "Samtidigt som brösten görs lättare och mindre genom att bröstvävnad tas bort tas även hud bort."
+      "paragraph3": "Samtidigt som brösten görs lättare och mindre genom att bröstvävnad tas bort tas även hud bort.",
+      "sectionTitle": "Hur går en bröstförminskning till?"
     },
     "consultation": {
       "sectionTitle": "Konsultation bröstförminskning",
@@ -36,6 +37,16 @@
         "paragraph8": "Glipor i den ytliga huden resulterar i sår. Glipor på djupet i fettväven resulterar i ett tomrum under huden som gör att man känner en grop eller fåra under ärret och kan i värsta fall göra att bröstet känns förankrat på djupet nedåt på kroppen till magen.",
         "paragraph9": "Om plastikkirurgen lagt in ett bröstimplantat vid operationen kan det resultera i att man här känner kanter eller knölighet från bröstimplantatet på en kortare eller längre sträcka."
       }
+    },
+    "media": {
+      "consultationAlt": "Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning"
+    },
+    "faq": {
+      "sectionTitle": "Vanliga frågor & svar om bröstförmiskning"
+    },
+    "cta": {
+      "title": "Vill du veta mer om våra behandlingar?",
+      "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
     }
   }
 }

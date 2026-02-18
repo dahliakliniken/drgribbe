@@ -77,6 +77,67 @@
     },
     "media": {
       "implantsInHandAlt": "Kvinna som ser glad ut och håller i två olika implantant för bröstförstoring"
+    },
+    "faq": {
+      "sectionTitle": "Vanliga frågor & svar om bröstförstoring"
+    },
+    "deepDive": {
+      "title": "Hur går en bröstförstoring till? – En teknisk djupdykning",
+      "paragraph1": "På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?"
+    },
+    "quickFacts": {
+      "title": "Snabbfakta om bröstförstoring",
+      "ctaText": "Boka konsultation",
+      "facts": {
+        "consultationBeforeOperation": {
+          "label": "Konsultation innan operation",
+          "value": "60 minuter, ibland flera besök."
+        },
+        "breastImplants": {
+          "label": "Bröstimplantat",
+          "value": "Form och storlek efter önskemål. Från som minst 150 cc (ml, gram) till som mest ca 600 cc (ml, gram)."
+        },
+        "operationDuration": {
+          "label": "Operationstid",
+          "value": "30 - 45 minuter"
+        },
+        "anesthesia": {
+          "label": "Narkos/lokalbedövning",
+          "value": "Narkos"
+        },
+        "price": {
+          "label": "Pris",
+          "value": "Från 45 tusen kr. Kapselgaranti 5 tusen kr."
+        },
+        "timeAtClinic": {
+          "label": "Tid på kliniken",
+          "value": "7 - 8 timmar"
+        },
+        "sickLeave": {
+          "label": "Sjukskrivning",
+          "value": "4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar."
+        },
+        "followUp": {
+          "label": "Återbesök",
+          "value": "Ca 10 dagar och 3-4 månader efter operationen."
+        },
+        "recovery": {
+          "label": "Återhämtning",
+          "value": "Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader."
+        },
+        "sportAndGym": {
+          "label": "Sport & Gym",
+          "value": "Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader."
+        },
+        "other": {
+          "label": "Övrigt",
+          "value": "Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt."
+        }
+      }
+    },
+    "cta": {
+      "title": "Vill du veta mer om våra behandlingar?",
+      "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
     }
   }
 }

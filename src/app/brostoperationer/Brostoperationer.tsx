@@ -308,7 +308,7 @@ const Brostoperationer = () => {
           </SpaceContainer>
 
           <SpaceContainer noPadding spaceVertically id="complications">
-            <H2>{'Komplikationer'}</H2>
+            <H2>{tPage('complications.sectionTitle')}</H2>
             <Accordion items={complications} />
           </SpaceContainer>
         </Pillar>

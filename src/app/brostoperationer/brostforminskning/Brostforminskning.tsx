@@ -43,20 +43,18 @@ const Brostforminskning = () => {
             <SpaceContainer noPadding>
               <Image
                 src={forminskning1}
-                alt={
-                  'Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning'
-                }
+                alt={tPage('media.consultationAlt')}
                 className="max-h-svh object-cover object-center"
               />
             </SpaceContainer>
             <SpaceContainer noPadding spaceVertically>
-              <H2>{'Hur går en bröstförminskning till?'}</H2>
+              <H2>{tPage('overview.sectionTitle')}</H2>
               <P>{tPage('overview.paragraph1')}</P>
               <P>{tPage('overview.paragraph2')}</P>
             </SpaceContainer>
             <SpaceContainer noPadding>
               <Section>
-                <H3>{'Vanliga frågor & svar om bröstförmiskning'}</H3>
+                <H3>{tPage('faq.sectionTitle')}</H3>
                 <Accordion size="h4" items={faqItems} />
                 <div className="m-auto my-6 flex justify-center">
                   <A href="/fragor-och-svar">
@@ -107,9 +105,7 @@ const Brostforminskning = () => {
             <SpaceContainer noPadding>
               <Image
                 src={forminskning2}
-                alt={
-                  'Dahliaklinikens Dr. Örja Gribbe konsulterar en förväntansfull ung kvinna om bröstförminskning'
-                }
+                alt={tPage('media.consultationAlt')}
                 className="max-h-svh object-cover object-center"
               />
             </SpaceContainer>
@@ -128,38 +124,14 @@ const Brostforminskning = () => {
           </Pillar>
         }
       />
-      {/*       <SpaceContainer spaceVertically noPadding>
-        <Card
-          bgColor={BgColors.Green}
-          bgPosition="right"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {useTranslations()('common.freeConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {useTranslations()('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
-      </SpaceContainer> */}
       <SpaceContainer noPadding>
         <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={
             <Pillar>
-              <H2 className="text-center">
-                {'Vill du veta mer om våra behandlingar?'}
-              </H2>
-              <P className="text-center">
-                {
-                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
-                }
-              </P>
+              <H2 className="text-center">{tPage('cta.title')}</H2>
+              <P className="text-center">{tPage('cta.description')}</P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
                   {tCommon('bookNow')}

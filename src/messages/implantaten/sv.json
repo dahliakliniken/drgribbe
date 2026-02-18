@@ -189,6 +189,9 @@
       "motiva-table": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
       "polytechimplants": "Bild på en patient som håller i ett implantat från Polytech",
       "dayOfSurgery": "En kirurg i gröna operationskläder visar vägen för en patient klädd i vit morgonrock och grön operationsmössa i en sjukhuskorridor med ljus belysning."
+    },
+    "captions": {
+      "roundAndAnatomicImplant": "Ett runt och ett anatomiskt implantat"
     }
   }
 }

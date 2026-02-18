@@ -1,5 +1,6 @@
 'use client'
 import Image, { StaticImageData } from 'next/image'
+import { useTranslations } from 'next-intl'
 import { useEffect, useRef, useState } from 'react'
 
 import { useFocusTrap } from '@/hooks/useFocusTrap'
@@ -12,6 +13,7 @@ type ImageModalProps = {
 }
 
 export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
+  const t = useTranslations('common')
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
   const modalRef = useRef<HTMLDivElement>(null)
@@ -73,7 +75,7 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
         ref={openButtonRef}
         onClick={openModal}
         className="focus:outline-hidden"
-        aria-label={`Open full view of ${imageAlt}`}
+        aria-label={t('imageModal.openFullViewAria', { imageAlt })}
       >
         <Image
           src={imageSrc}
@@ -93,7 +95,7 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
             <button
               ref={closeButtonRef}
               onClick={closeModal}
-              aria-label="Close modal"
+              aria-label={t('imageModal.closeAria')}
               className="absolute top-4 right-4 text-white"
             >
               <CloseIcon />

@@ -72,70 +72,65 @@ const Brostforstoring = () => {
               </Section>
             </SpaceContainer>
             <QuickFacts
-              title="Snabbfakta om bröstförstoring"
+              title={tPage('quickFacts.title')}
               facts={[
                 {
                   icon: CalendarCheck,
-                  label: 'Konsultation innan operation',
-                  value: '60 minuter, ibland flera besök.'
+                  label: tPage('quickFacts.facts.consultationBeforeOperation.label'),
+                  value: tPage('quickFacts.facts.consultationBeforeOperation.value')
                 },
                 {
                   icon: CircleDot,
-                  label: 'Bröstimplantat',
-                  value:
-                    'Form och storlek efter önskemål. Från som minst 150 cc (ml, gram) till som mest ca 600 cc (ml, gram).'
+                  label: tPage('quickFacts.facts.breastImplants.label'),
+                  value: tPage('quickFacts.facts.breastImplants.value')
                 },
                 {
                   icon: Clock,
-                  label: 'Operationstid',
-                  value: '30 - 45 minuter'
+                  label: tPage('quickFacts.facts.operationDuration.label'),
+                  value: tPage('quickFacts.facts.operationDuration.value')
                 },
                 {
                   icon: Hospital,
-                  label: 'Narkos/lokalbedövning',
-                  value: 'Narkos'
+                  label: tPage('quickFacts.facts.anesthesia.label'),
+                  value: tPage('quickFacts.facts.anesthesia.value')
                 },
                 {
                   icon: Banknote,
-                  label: 'Pris',
-                  value: 'Från 45 tusen kr. Kapselgaranti 5 tusen kr.'
+                  label: tPage('quickFacts.facts.price.label'),
+                  value: tPage('quickFacts.facts.price.value')
                 },
                 {
                   icon: Clock,
-                  label: 'Tid på kliniken',
-                  value: '7 - 8 timmar'
+                  label: tPage('quickFacts.facts.timeAtClinic.label'),
+                  value: tPage('quickFacts.facts.timeAtClinic.value')
                 },
                 {
                   icon: HousePlus,
-                  label: 'Sjukskrivning',
-                  value:
-                    '4 veckor vid fysiskt ansträngande arbete till exempel hemtjänst, undersköterska, lagerarbete, fabriksarbete, klädbutik. Vid kontorsjobb återgång i arbete efter 2-7 dagar.'
+                  label: tPage('quickFacts.facts.sickLeave.label'),
+                  value: tPage('quickFacts.facts.sickLeave.value')
                 },
                 {
                   icon: CalendarCheck,
-                  label: 'Återbesök',
-                  value: 'Ca 10 dagar och 3-4 månader efter operationen.'
+                  label: tPage('quickFacts.facts.followUp.label'),
+                  value: tPage('quickFacts.facts.followUp.value')
                 },
                 {
                   icon: Bandage,
-                  label: 'Återhämtning',
-                  value:
-                    'Läke-bh dygnet runt utom vid dusch till första återbesöket. Därefter mjuk, kupad sport-bh. Det går även bra med fin-bh med spets med bra stöd ibland. Bygel-bh först efter 3 månader.'
+                  label: tPage('quickFacts.facts.recovery.label'),
+                  value: tPage('quickFacts.facts.recovery.value')
                 },
                 {
                   icon: Activity,
-                  label: 'Sport & Gym',
-                  value:
-                    'Promenader från och med opdagens kväll (viktigt). Spinning och styrketräning ben, rumpa efter 5-6 veckor. Styrketräning mage, rygg efter 2 månader. Jogging, ridning, tennis och annat som gör att brösten studsar samt styrketräning överkropp efter 3 månader.'
+                  label: tPage('quickFacts.facts.sportAndGym.label'),
+                  value: tPage('quickFacts.facts.sportAndGym.value')
                 },
                 {
                   icon: SquareChartGantt,
-                  label: 'Övrigt',
-                  value:
-                    'Tejpning av ärren 6 månader. Skydda ärren från sol i minst ett år. Bad, bastu efter ca 2,5 veckor. Sova på rygg eller sidan går bra direkt.'
+                  label: tPage('quickFacts.facts.other.label'),
+                  value: tPage('quickFacts.facts.other.value')
                 }
               ]}
-              ctaText="Boka konsultation"
+              ctaText={tPage('quickFacts.ctaText')}
               ctaUrl="/boka"
             />
             <Image
@@ -144,7 +139,7 @@ const Brostforstoring = () => {
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
-              <H3>{'Vanliga frågor & svar om bröstförstoring'}</H3>
+              <H3>{tPage('faq.sectionTitle')}</H3>
               <Accordion size="h4" items={faqAccordion} />
               <div className="m-auto my-6 flex justify-center">
                 <A href="/fragor-och-svar">
@@ -176,14 +171,8 @@ const Brostforstoring = () => {
       <Pillar noPadding>
         <SpaceContainer spaceTop>
           <Section>
-            <H2>
-              {'Hur går en bröstförstoring till? – En teknisk djupdykning'}
-            </H2>
-            <P>
-              {
-                'På Dahliakliniken värdesätter vi trygghet, kunskap och transparens. Vi strävar alltid efter att ge dig som patient tydlig och saklig information om våra behandlingar och estetiska ingrepp. En vanlig fråga vi får är: Hur går en bröstförstoringsoperation till?'
-              }
-            </P>
+            <H2>{tPage('deepDive.title')}</H2>
+            <P>{tPage('deepDive.paragraph1')}</P>
             <H3>{tPage('technique.sectionTitle')}</H3>
             <P>{tPage('technique.intro')}</P>
             <Accordion size="h4" items={teknikAccordion} />
@@ -233,39 +222,14 @@ const Brostforstoring = () => {
           <P>{tPage('withBodyFat.hybrid.paragraph1')}</P>
         </Pillar>
       </SpaceContainer>
-
-      {/*       <SpaceContainer spaceVertically noPadding>
-        <Card
-          bgColor={BgColors.Green}
-          bgPosition="right"
-          content={
-            <>
-              <H2 upperCase white className="text-center">
-                {useTranslations()('common.freeConsultation')}
-              </H2>
-              <div className="m-auto flex max-w-xs justify-center">
-                <A href="/boka" className="uppercase" buttonStyle>
-                  {useTranslations()('common.bookNow')}
-                </A>
-              </div>
-            </>
-          }
-        />
-      </SpaceContainer> */}
       <SpaceContainer noPadding>
         <Card
           bgColor={BgColors.Beige}
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={
             <Pillar>
-              <H2 className="text-center">
-                {'Vill du veta mer om våra behandlingar?'}
-              </H2>
-              <P className="text-center">
-                {
-                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
-                }
-              </P>
+              <H2 className="text-center">{tPage('cta.title')}</H2>
+              <P className="text-center">{tPage('cta.description')}</P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
                   {tCommon('bookNow')}

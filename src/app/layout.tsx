@@ -87,8 +87,8 @@ export default async function RootLayout({
             <Breadcrumbs />
             {children}
           </main>
+          <LastUpdated />
         </NextIntlClientProvider>
-        <LastUpdated />
       </body>
     </html>
   )
