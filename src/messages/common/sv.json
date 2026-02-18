@@ -9,5 +9,8 @@
   "readLess": "Läs mindre",
   "menu": "Meny",
   "bookTimeAndConsultation": "Boka tid / konsultation",
-  "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer"
+  "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer",
+  "altText": {
+    "dahliaLogo": "Logotypen för Dahlia"
+  }
 }

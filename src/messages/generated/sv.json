@@ -433,7 +433,10 @@
     "readLess": "Läs mindre",
     "menu": "Meny",
     "bookTimeAndConsultation": "Boka tid / konsultation",
-    "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer"
+    "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer",
+    "altText": {
+      "dahliaLogo": "Logotypen för Dahlia"
+    }
   },
   "contact": {
     "contactUs": "Kontakta oss",
@@ -1112,6 +1115,10 @@
       }
     }
   },
+  "metadata": {
+    "title": "Kliniken för estetisk bröstförstoring och bröstlyft",
+    "description": "Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft."
+  },
   "personuppgiftspolicy": {
     "page": {
       "hero": {
@@ -1473,13 +1480,6 @@
         "personuppgiftspolicy": "Personuppgiftspolicy"
       }
     }
-  },
-  "metadata": {
-    "title": "Kliniken för estetisk bröstförstoring och bröstlyft",
-    "description": "Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft."
-  },
-  "altText": {
-    "dahliaLogo": "Logotypen för Dahlia"
   },
   "tack": {
     "title": "Tack för din bokning",
