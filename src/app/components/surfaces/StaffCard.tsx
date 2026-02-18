@@ -26,7 +26,7 @@ type StaffCardProps = {
 
 export const StaffCard = ({ member }: StaffCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false)
-  const t = useTranslations()
+  const t = useTranslations('var-personal.page')
 
   const hasDescription = Boolean(member.description)
 
@@ -64,8 +64,8 @@ export const StaffCard = ({ member }: StaffCardProps) => {
                 aria-expanded={isExpanded}
                 aria-label={
                   isExpanded
-                    ? t('varPersonal.readLess', { name: member.name })
-                    : t('varPersonal.readMore', { name: member.name })
+                    ? t('readLess', { name: member.name })
+                    : t('readMore', { name: member.name })
                 }
               >
                 <ChevronDown

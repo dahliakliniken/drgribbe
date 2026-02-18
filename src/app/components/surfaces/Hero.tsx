@@ -11,7 +11,8 @@ import HeroImage from '@/public/images/hero-image.jpg'
 import { A } from '../typography/A'
 
 export const Hero = () => {
-  const t = useTranslations()
+  const tPage = useTranslations('home-page.page')
+  const tCommon = useTranslations('common')
   const showAnimation = useDelayedAnimation(3000) // 3 seconds delay
 
   const scrollDown = () => {
@@ -34,7 +35,7 @@ export const Hero = () => {
             className="h-full w-full object-cover object-center"
             priority
             placeholder="blur"
-            alt={t('altText.heroImage')}
+            alt={tPage('altText.heroImage')}
           />
         </div>
 
@@ -53,7 +54,7 @@ export const Hero = () => {
         </div>
         <div className="absolute bottom-24">
           <A href="/boka" buttonStyle>
-            {t('common.bookConsultation')}
+            {tCommon('bookConsultation')}
           </A>
         </div>
       </section>

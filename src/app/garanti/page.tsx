@@ -1,18 +1,22 @@
 import { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
-export const metadata: Metadata = {
-  title: 'Garanti - Dahliakliniken',
-  description:
-    'För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende.',
-  openGraph: {
-    title: 'Garanti - Dahliakliniken',
-    description:
-      'För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende.'
-  },
-  twitter: {
-    title: 'Garanti - Dahliakliniken',
-    description:
-      'För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende.'
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('garanti.page.metadata')
+  const title = t('title')
+  const description = t('description')
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description
+    },
+    twitter: {
+      title,
+      description
+    }
   }
 }
 

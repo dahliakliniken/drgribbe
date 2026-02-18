@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import React from 'react'
 
 import { BgColors, BgPositions } from '@/app/types'
 
@@ -24,8 +23,10 @@ type TreatmentBoxProps = {
   }[]
 }
 
-export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
-  const t = useTranslations()
+export const TreatmentBox = ({
+  treatments,
+}: TreatmentBoxProps) => {
+  const t = useTranslations('treatment-box')
 
   return (
     <CardRow>

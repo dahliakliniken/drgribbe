@@ -13,7 +13,7 @@ import locationImage from '@/public/images/Wonna_Tower_IMG_7027.png'
 import { BgColors } from '../types'
 
 const KontaktOchBesok = () => {
-  const t = useTranslations()
+  const t = useTranslations('kontakt-och-besok.page')
   let emailIndex = 0
   return (
     <>
@@ -22,8 +22,8 @@ const KontaktOchBesok = () => {
         className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
           <Pillar>
-            <H1 white>{t('kontaktOchBesok.title')}</H1>
-            <P white>{t('kontaktOchBesok.preamble')}</P>
+            <H1 white>{t('hero.title')}</H1>
+            <P white>{t('hero.preamble')}</P>
           </Pillar>
         }
       />
@@ -40,12 +40,12 @@ const KontaktOchBesok = () => {
           </SpaceContainer>
           <div className="grid gap-4 gap-y-8 md:grid-cols-2">
             <div className="space-y-4">
-              <H2>{t('kontaktOchBesok.contact')}</H2>
+              <H2>{t('contact.heading')}</H2>
               <div className="flex items-center gap-4">
                 <Phone className="h-6 w-6 text-[#1B3B35]" />
                 <div>
                   <P>
-                    {t.rich('kontaktOchBesok.contactPhone', {
+                    {t.rich('contact.phone', {
                       phone: (chunks) => <span className="block">{chunks}</span>
                     })}
                   </P>
@@ -55,7 +55,7 @@ const KontaktOchBesok = () => {
                 <Mail className="h-6 w-6 text-[#1B3B35]" />
                 <div>
                   <P>
-                    {t.rich('kontaktOchBesok.contactEmail', {
+                    {t.rich('contact.email', {
                       email: (chunks) => {
                         const email = String(chunks).trim() // Ensure chunks is a string
                         return (
@@ -76,17 +76,17 @@ const KontaktOchBesok = () => {
             <div className="flex items-start gap-2">
               <MapPin className="mt-1 h-6 w-6 shrink-0" />
               <div>
-                <H2>{t('kontaktOchBesok.heading')}</H2>
-                <P>{t('kontaktOchBesok.address')}</P>
-                <P>{t('kontaktOchBesok.addressDetails')}</P>
+                <H2>{t('location.heading')}</H2>
+                <P>{t('location.address')}</P>
+                <P>{t('location.addressDetails')}</P>
               </div>
             </div>
 
             <div className="flex items-start gap-2">
               <Car className="mt-1 h-6 w-6 shrink-0" />
               <div>
-                <H2>{t('kontaktOchBesok.parking')}</H2>
-                <P>{t('kontaktOchBesok.parkingDetails')}</P>
+                <H2>{t('parking.heading')}</H2>
+                <P>{t('parking.details')}</P>
               </div>
             </div>
 
@@ -95,8 +95,8 @@ const KontaktOchBesok = () => {
                 <Train className="h-6 w-6" />
               </div>
               <div>
-                <H2>{t('kontaktOchBesok.publicTransport')}</H2>
-                <P>{t('kontaktOchBesok.publicTransportDetails')}</P>
+                <H2>{t('publicTransport.heading')}</H2>
+                <P>{t('publicTransport.details')}</P>
               </div>
             </div>
           </div>

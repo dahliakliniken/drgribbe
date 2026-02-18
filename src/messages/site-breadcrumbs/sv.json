@@ -1,0 +1,21 @@
+{
+  "breadcrumbNav": {
+    "homeLabel": "Hem",
+    "routes": {
+      "brostoperationer": "Bröstoperationer",
+      "brostlyft": "Bröstlyft",
+      "brostforstoring": "Bröstförstoring",
+      "brostforminskning": "Bröstförminskning",
+      "implantaten": "Implantaten",
+      "hudOchInjektioner": "Hud & injektioner",
+      "varPersonal": "Vår Personal",
+      "priser": "Priser",
+      "garanti": "Trygghetspaket",
+      "boka": "Boka",
+      "fragorOchSvar": "Frågor & svar",
+      "foreOchEfter": "Före & efterbilder",
+      "kontaktOchBesok": "Kontakt & besök",
+      "personuppgiftspolicy": "Personuppgiftspolicy"
+    }
+  }
+}

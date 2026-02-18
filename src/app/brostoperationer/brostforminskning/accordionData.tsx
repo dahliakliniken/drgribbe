@@ -3,23 +3,23 @@ import { useTranslations } from 'next-intl'
 import { P } from '@/components/typography/P'
 
 export const useAccordionData = () => {
-  const ft = useTranslations('fragorOchSvar')
+  const t = useTranslations('fragor-och-svar.page.faqAccordion')
 
   const faqAccordion = [
     {
       id: crypto.randomUUID(),
-      title: ft('accordion.question1.question'),
-      content: <P small>{ft('accordion.question1.answer')}</P>
+      title: t('question1.question'),
+      content: <P small>{t('question1.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('accordion.question21.question'),
-      content: <P small>{ft('accordion.question21.answer')}</P>
+      title: t('question21.question'),
+      content: <P small>{t('question21.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('accordion.question30.question'),
-      content: <P small>{ft('accordion.question30.answer')}</P>
+      title: t('question30.question'),
+      content: <P small>{t('question30.answer')}</P>
     }
   ]
 

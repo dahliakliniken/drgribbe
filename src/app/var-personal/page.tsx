@@ -1,18 +1,22 @@
 import { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 
-export const metadata: Metadata = {
-  title: 'Vår personal - Dahliakliniken',
-  description:
-    'Möt teamet bakom Dr Örjan Gribbes klinik i Stockholm. Vår erfarna personal är specialiserad på bröstoperationer och ger dig trygg och professionell vård genom hela din resa.',
-  openGraph: {
-    title: 'Vår personal - Dahliakliniken',
-    description:
-      'Möt teamet bakom Dr Örjan Gribbes klinik i Stockholm. Vår erfarna personal är specialiserad på bröstoperationer och ger dig trygg och professionell vård genom hela din resa.'
-  },
-  twitter: {
-    title: 'Vår personal - Dahliakliniken',
-    description:
-      'Möt teamet bakom Dr Örjan Gribbes klinik i Stockholm. Vår erfarna personal är specialiserad på bröstoperationer och ger dig trygg och professionell vård genom hela din resa.'
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('var-personal.page.metadata')
+  const title = t('title')
+  const description = t('description')
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description
+    },
+    twitter: {
+      title,
+      description
+    }
   }
 }
 

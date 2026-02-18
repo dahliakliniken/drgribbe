@@ -6,49 +6,49 @@ import { Ul } from '@/components/surfaces/Ul'
 import { P } from '@/components/typography/P'
 
 export const useAccordionItems = () => {
-  const t = useTranslations()
+  const t = useTranslations('priser.page')
   const pricesItems = [
     {
       id: crypto.randomUUID(),
-      title: t('priser.paymentRules.heading'),
+      title: t('paymentRules.heading'),
       content: (
         <>
-          <P small>{t('priser.paymentRules.text1')}</P>
-          <P small>{t('priser.paymentRules.text2')}</P>
-          <P small>{t('priser.paymentRules.text3')}</P>
+          <P small>{t('paymentRules.text1')}</P>
+          <P small>{t('paymentRules.text2')}</P>
+          <P small>{t('paymentRules.text3')}</P>
         </>
       )
     },
     {
       id: crypto.randomUUID(),
-      title: t('priser.cancellationRules.heading'),
+      title: t('cancellationRules.heading'),
       content: (
         <>
-          <P small>{t('priser.cancellationRules.text1')}</P>
-          <P small>{t('priser.cancellationRules.text8')}</P>
-          <P small>{t('priser.cancellationRules.text2')}</P>
+          <P small>{t('cancellationRules.text1')}</P>
+          <P small>{t('cancellationRules.text8')}</P>
+          <P small>{t('cancellationRules.text2')}</P>
           <P small className="mb-4 flex items-center gap-2 italic">
             <Phone className="h-5 w-5" />
-            {t('priser.cancellationRules.text3')}
+            {t('cancellationRules.text3')}
           </P>
-          <P small>{t('priser.cancellationRules.text4')}</P>
+          <P small>{t('cancellationRules.text4')}</P>
           <Ul>
-            <Li small>{t('priser.cancellationRules.text7')}</Li>
-            <Li small>{t('priser.cancellationRules.text5')}</Li>
-            <Li small>{t('priser.cancellationRules.text6')}</Li>
-            <Li small>{t('priser.cancellationRules.text9')}</Li>
+            <Li small>{t('cancellationRules.text7')}</Li>
+            <Li small>{t('cancellationRules.text5')}</Li>
+            <Li small>{t('cancellationRules.text6')}</Li>
+            <Li small>{t('cancellationRules.text9')}</Li>
           </Ul>
         </>
       )
     },
     {
       id: crypto.randomUUID(),
-      title: t('priser.financing.heading'),
+      title: t('financing.heading'),
       content: (
         <>
-          <P small>{t('priser.financing.text1')}</P>
+          <P small>{t('financing.text1')}</P>
           <P small className="italic">
-            {t('priser.financing.text2')}
+            {t('financing.text2')}
           </P>
         </>
       )

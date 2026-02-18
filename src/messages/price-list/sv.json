@@ -1,0 +1,120 @@
+{
+  "consultation": {
+    "title": "Konsultation",
+    "price": "Kostnadsfri"
+  },
+  "breastAugmentation": {
+    "title": "Bröstförstoring och Implantatbyte",
+    "procedure1": {
+      "name": "Implantat från Mentor eller Motiva Ergonomix 1 och Round",
+      "price": "46 000 kr"
+    },
+    "procedure2": {
+      "name": "Motiva Ergonomix 2 inklusive Joy",
+      "price": "61 000 kr"
+    },
+    "procedure3": {
+      "name": "Andra implantat såsom Polytech och B-lite tillgängliga på förfrågan",
+      "price": ""
+    }
+  },
+  "breastLift": {
+    "title": "Bröstlyft",
+    "price": "Från 56 000 kr"
+  },
+  "breastAugmentationLift": {
+    "title": "Bröstförstoring med bröstlyft",
+    "price": "Från 75 000 kr"
+  },
+  "breastReduction": {
+    "title": "Bröstförminskning",
+    "price": "Från 60 000 kr"
+  },
+  "breastReductionImplants": {
+    "title": "Bröstförminskning med implantat",
+    "price": "Från 80 000 kr"
+  },
+  "implantRemoval": {
+    "title": "Uttag implantat",
+    "price": "26 000 kr"
+  },
+  "capsuleClipping": {
+    "title": "Kapseloperation kapselklyvning",
+    "price": "26 000 kr"
+  },
+  "capsuleRemoval": {
+    "title": "Kapseloperation kapselektomi",
+    "price": "Från 50 000 kr"
+  },
+  "botox": {
+    "title": "Muskelavslappnande behandling",
+    "procedure1": {
+      "name": "Glabella/argrynka",
+      "price": "3 000 kr"
+    },
+    "procedure2": {
+      "name": "Panna",
+      "price": "3 000 kr"
+    },
+    "procedure3": {
+      "name": "Kråksparkarna",
+      "price": "3 000 kr"
+    },
+    "procedure4": {
+      "name": "Höja sidan av ögonbrynen",
+      "price": "2 500 kr"
+    },
+    "procedure5": {
+      "name": "Minska sura mungipor ",
+      "price": "2 500 kr"
+    },
+    "procedure6": {
+      "name": "Rynkor på näsryggen, Bunny Lines",
+      "price": "2 000 kr"
+    },
+    "procedure7": {
+      "name": "Rulla upp läppkanten, Lip Flip",
+      "price": "2 000 kr"
+    },
+    "procedure8": {
+      "name": "Rökrynkor",
+      "price": "2 500 kr"
+    },
+    "procedure9": {
+      "name": "Synligt tandkött när man skrattar, Gummy Smile",
+      "price": "2 000 kr"
+    },
+    "procedure10": {
+      "name": "Rynkor på hakan",
+      "price": "2 000 kr"
+    },
+    "procedure11": {
+      "name": "Rynkor på halsen, Platysma band",
+      "price": "från 4 000 kr"
+    },
+    "procedure12": {
+      "name": "Bruxism, tandgnissel",
+      "price": "5 500 kr"
+    },
+    "procedure13": {
+      "name": "Skalpens muskler, spänningshuvudvärk",
+      "price": "från 3 000 kr"
+    },
+    "procedure14": {
+      "name": "Svettbehandling",
+      "price": "På förfrågan"
+    },
+    "procedure15": {
+      "name": "Kombination av flera områden till reducerat pris.",
+      "price": ""
+    }
+  },
+  "other": {
+    "title": "Övrigt",
+    "procedure1": {
+      "name": "Kapselgaranti 5 år",
+      "price": "5 000 kr",
+      "link": "/garanti"
+    }
+  }
+}

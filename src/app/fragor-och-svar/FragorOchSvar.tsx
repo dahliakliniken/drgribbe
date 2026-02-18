@@ -13,7 +13,8 @@ import { BgColors } from '../types'
 import { useAccordionItems } from './accordionData'
 
 const FragorOchSvar = () => {
-  const t = useTranslations()
+  const t = useTranslations('fragor-och-svar.page')
+  const tCommon = useTranslations('common')
 
   const faqItems = useAccordionItems()
 
@@ -25,8 +26,8 @@ const FragorOchSvar = () => {
         content={
           <SpaceContainer>
             <Pillar>
-              <H1>{t('fragorOchSvar.title')}</H1>
-              <P>{t('fragorOchSvar.introduction')}</P>
+              <H1>{t('hero.title')}</H1>
+              <P>{t('hero.introduction')}</P>
             </Pillar>
           </SpaceContainer>
         }
@@ -41,17 +42,11 @@ const FragorOchSvar = () => {
         className="before:bg-[30%_30%] lg:before:[background-size:200%]"
         content={
           <Pillar>
-            <H2 className="text-center">
-              {'Vill du veta mer om våra behandlingar?'}
-            </H2>
-            <P className="text-center">
-              {
-                'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
-              }
-            </P>
+            <H2 className="text-center">{t('cta.title')}</H2>
+            <P className="text-center">{t('cta.description')}</P>
             <div className="m-auto flex max-w-xs justify-center">
               <A href="/boka" className="uppercase" buttonStyle inverted>
-                {t('common.bookNow')}
+                {tCommon('bookNow')}
               </A>
             </div>
           </Pillar>

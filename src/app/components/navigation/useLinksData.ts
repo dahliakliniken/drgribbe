@@ -2,79 +2,79 @@ import { useTranslations } from 'next-intl'
 import { useMemo } from 'react'
 
 export const useLinksData = () => {
-  const t = useTranslations()
+  const t = useTranslations('dropdown')
 
   const mainLinks = useMemo(
     () => [
       {
-        text: t('dropdown.clinic'),
+        text: t('clinic'),
         href: '/#om-kliniken',
         id: crypto.randomUUID()
       },
       {
-        text: t('dropdown.breastSurgeries'),
+        text: t('breastSurgeries'),
         href: '/brostoperationer',
         id: crypto.randomUUID(),
         subLinks: [
           {
-            text: t('dropdown.overview'),
+            text: t('overview'),
             href: '/brostoperationer',
             id: crypto.randomUUID()
           },
           {
-            text: t('dropdown.breastAugmentation'),
+            text: t('breastAugmentation'),
             href: '/brostoperationer/brostforstoring',
             id: crypto.randomUUID()
           },
           {
-            text: t('dropdown.breastLift'),
+            text: t('breastLift'),
             href: '/brostoperationer/brostlyft',
             id: crypto.randomUUID()
           },                    
           {
-            text: t('dropdown.breastReduction'),
+            text: t('breastReduction'),
             href: '/brostoperationer/brostforminskning',
             id: crypto.randomUUID()
           },
           {
-            text: t('dropdown.beforeAfter'),
+            text: t('beforeAfter'),
             href: '/brostoperationer/fore-och-efter',
             id: crypto.randomUUID()
           }
         ]
       },
       {
-        text: t('dropdown.implants'),
+        text: t('implants'),
         href: '/brostoperationer/implantaten',
         id: crypto.randomUUID()
       },
       {
-        text: t('dropdown.skinInjections'),
+        text: t('skinInjections'),
         href: '/hud-och-injektioner',
         id: crypto.randomUUID()
       },
       {
-        text: t('dropdown.ourStaff'),
+        text: t('ourStaff'),
         href: '/var-personal',
         id: crypto.randomUUID()
       },
       {
-        text: t('dropdown.price'),
+        text: t('price'),
         href: '/priser',
         id: crypto.randomUUID()
       },
       {
-        text: t('dropdown.guarantee'),
+        text: t('guarantee'),
         href: '/garanti',
         id: crypto.randomUUID()
       },
       {
-        text: t('dropdown.faq'),
+        text: t('faq'),
         href: '/fragor-och-svar',
         id: crypto.randomUUID()
       },
       {
-        text: t('dropdown.findUs'),
+        text: t('findUs'),
         href: '/kontakt-och-besok',
         id: crypto.randomUUID()
       }

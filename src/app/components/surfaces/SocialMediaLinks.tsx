@@ -5,7 +5,7 @@ import { FacebookIcon } from '../icons/FacebookIcon'
 import { InstagramIcon } from '../icons/InstagramIcon'
 
 export const SocialMediaLinks = ({ className }: { className?: string }) => {
-  const t = useTranslations()
+  const t = useTranslations('contact')
   return (
     <div className={`flex gap-2 ${className}`}>
       <Link
@@ -13,7 +13,7 @@ export const SocialMediaLinks = ({ className }: { className?: string }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-gold transition-colors duration-300"
-        aria-label={t('contact.followOnInstagram')}
+        aria-label={t('followOnInstagram')}
       >
         <InstagramIcon />
       </Link>
@@ -22,7 +22,7 @@ export const SocialMediaLinks = ({ className }: { className?: string }) => {
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-gold transition-colors duration-300"
-        aria-label={t('contact.followOnFacebook')}
+        aria-label={t('followOnFacebook')}
       >
         <FacebookIcon />
       </Link>

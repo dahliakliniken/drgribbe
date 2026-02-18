@@ -36,7 +36,7 @@ import medRound31 from '@/public/images/ba-fixed/runda-mellan-implantat-3-1-500p
 import medRound32 from '@/public/images/ba-fixed/runda-mellan-implantat-3-2-500px.png'
 
 const ForeOchEfter = () => {
-  const t = useTranslations('foreOchEfter')
+  const t = useTranslations('fore-och-efter.page')
   const tc = useTranslations('common')
 
   return (
@@ -47,7 +47,7 @@ const ForeOchEfter = () => {
         content={
           <Pillar>
             <SpaceContainer noPadding>
-              <H1 white>{t('title')}</H1>
+              <H1 white>{t('hero.title')}</H1>
             </SpaceContainer>
           </Pillar>
         }
@@ -60,10 +60,10 @@ const ForeOchEfter = () => {
         content={
           <div>
             <Pillar>
-              <H2>{t('round_title')}</H2>
-              <P>{t('round_preamble')}</P>
+              <H2>{t('roundImplants.sectionTitle')}</H2>
+              <P>{t('roundImplants.preamble')}</P>
               <SpaceContainer spaceTop noPadding>
-                <H3>{t('round_lowprofileheading')}</H3>
+                <H3>{t('roundImplants.lowProfile.heading')}</H3>
               </SpaceContainer>
               <div className="gap-y1 columns-3">
                 <div>
@@ -76,11 +76,11 @@ const ForeOchEfter = () => {
                   <BAImage beforeimage={lowRound31} afterimage={lowRound32} />
                 </div>
               </div>
-              <P className="mt-4">{t('round_lowprofileinfotext')}</P>
+              <P className="mt-4">{t('roundImplants.lowProfile.infoText')}</P>
             </Pillar>
             <Pillar>
               <SpaceContainer spaceTop noPadding>
-                <H3>{t('round_mediumprofileheading')}</H3>
+                <H3>{t('roundImplants.mediumProfile.heading')}</H3>
               </SpaceContainer>
               <div className="gap-y1 columns-3">
                 <div>
@@ -93,11 +93,11 @@ const ForeOchEfter = () => {
                   <BAImage beforeimage={medRound31} afterimage={medRound32} />
                 </div>
               </div>
-              <P className="mt-4">{t('round_mediumprofileinfotext')}</P>
+              <P className="mt-4">{t('roundImplants.mediumProfile.infoText')}</P>
             </Pillar>
             <Pillar>
               <SpaceContainer spaceTop noPadding>
-                <H3>{t('round_highprofileheading')}</H3>
+                <H3>{t('roundImplants.highProfile.heading')}</H3>
               </SpaceContainer>
               <div className="gap-y1 columns-3">
                 <div>
@@ -110,7 +110,7 @@ const ForeOchEfter = () => {
                   <BAImage beforeimage={highRound31} afterimage={highRound32} />
                 </div>
               </div>
-              <P className="mt-4">{t('round_highprofileinfotext')}</P>
+              <P className="mt-4">{t('roundImplants.highProfile.infoText')}</P>
             </Pillar>
           </div>
         }
@@ -121,8 +121,8 @@ const ForeOchEfter = () => {
         content={
           <div>
             <Pillar>
-              <H2>{t('anatomy_title')}</H2>
-              <P>{t('anatomy_preamble')}</P>
+              <H2>{t('anatomicalImplants.sectionTitle')}</H2>
+              <P>{t('anatomicalImplants.preamble')}</P>
               <div className="gap-y1 columns-3">
                 <div>
                   <BAImage beforeimage={anatomy_11} afterimage={anatomy_12} />
@@ -134,7 +134,7 @@ const ForeOchEfter = () => {
                   <BAImage beforeimage={anatomy_31} afterimage={anatomy_32} />
                 </div>
               </div>
-              <P className="mt-4">{t('anatomy_infotext')}</P>
+              <P className="mt-4">{t('anatomicalImplants.infoText')}</P>
             </Pillar>
           </div>
         }

@@ -1,0 +1,24 @@
+{
+  "bookConsultation": "Boka konsultation",
+  "bookFreeConsultation": "Boka konsultation",
+  "freeConsultation": "Boka konsultation",
+  "closeMenu": "Stäng menyn",
+  "openMenu": "Öppna menyn",
+  "bookNow": "Boka tid",
+  "readMore": "Läs mer",
+  "readLess": "Läs mindre",
+  "menu": "Meny",
+  "bookTimeAndConsultation": "Boka tid / konsultation",
+  "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer",
+  "altText": {
+    "dahliaLogo": "Logotypen för Dahlia"
+  },
+  "lastUpdatedLabel": "Senast uppdaterad:",
+  "testimonials": {
+    "readFullReviewAria": "Läs hela recensionen från {title} på Google"
+  },
+  "imageModal": {
+    "openFullViewAria": "Open full view of {imageAlt}",
+    "closeAria": "Close modal"
+  }
+}

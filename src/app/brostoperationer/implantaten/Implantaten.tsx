@@ -18,7 +18,7 @@ import ImplantatVariansImage from '@/public/images/teardrop-runda-implantat-1000
 import { useAccordionItems } from './accordionData'
 
 const Implantaten = () => {
-  const t = useTranslations()
+  const t = useTranslations('implantaten.page')
   const [
     accordion1Items,
     accordion2Items,
@@ -36,8 +36,8 @@ const Implantaten = () => {
         bgPosition="right"
         content={
           <Pillar>
-            <H1 white>{t('implantaten.title')}</H1>
-            <P white>{t('implantaten.text1')}</P>
+            <H1 white>{t('hero.title')}</H1>
+            <P white>{t('hero.paragraph1')}</P>
           </Pillar>
         }
       />
@@ -46,7 +46,7 @@ const Implantaten = () => {
         <Pillar>
           <Image
             src={ImplantatImage}
-            alt={t('altText.brostoperationerDayOfSurgery')}
+            alt={t('altText.dayOfSurgery')}
             className="max-h-svh object-cover object-center"
           />
         </Pillar>
@@ -56,7 +56,7 @@ const Implantaten = () => {
           bgPosition="left-top"
           content={
             <Pillar>
-              <P>{t('implantaten.text2')}</P>
+              <P>{t('intro.paragraph1')}</P>
               <Accordion items={accordion1Items} />
             </Pillar>
           }
@@ -68,7 +68,7 @@ const Implantaten = () => {
           content={
             <Pillar noPadding>
               <P>
-                {t.rich('implantaten.readMore', {
+                {t.rich('intro.readMore', {
                   link: (chunks) => (
                     <AnchorLink href="#runda-implantat">{chunks}</AnchorLink>
                   ),
@@ -79,15 +79,15 @@ const Implantaten = () => {
                   )
                 })}
               </P>
-              <P>{t('implantaten.text3')}</P>
+              <P>{t('intro.summary')}</P>
 
               <SpaceContainer noPadding spaceTop>
-                <H2>{t('implantaten.jelly')}</H2>
+                <H2>{t('sections.jellyTitle')}</H2>
                 <Accordion items={accordion2Items} />
               </SpaceContainer>
 
               <SpaceContainer noPadding spaceTop id="runda-implantat">
-                <H2>{t('implantaten.roundImplants')}</H2>
+                <H2>{t('sections.roundImplantsTitle')}</H2>
                 <Accordion items={accordion3Items} />
               </SpaceContainer>
             </Pillar>
@@ -95,12 +95,10 @@ const Implantaten = () => {
         />
 
         <Pillar>
-          <P className="text-center">
-            {'Ett runt och ett anatomiskt implantat'}
-          </P>
+          <P className="text-center">{t('captions.roundAndAnatomicImplant')}</P>
           <Image
             src={ImplantatVariansImage}
-            alt={t('altText.brostoperationerDayOfSurgery')}
+            alt={t('altText.dayOfSurgery')}
             className="max-h-svh object-cover object-center"
           />
         </Pillar>
@@ -111,27 +109,27 @@ const Implantaten = () => {
           content={
             <Pillar noPadding>
               <SpaceContainer noPadding id="anatomiska-implantat">
-                <H2>{t('implantaten.anatomic')}</H2>
+                <H2>{t('sections.anatomicTitle')}</H2>
                 <Accordion items={accordion4Items} />
               </SpaceContainer>
 
               <SpaceContainer noPadding spaceTop>
-                <H2>{t('implantaten.ourImplants')}</H2>
-                <H3>{t('implantaten.motiva.heading')}</H3>
-                <P>{t('implantaten.motiva.text1')}</P>
+                <H2>{t('sections.ourImplantsTitle')}</H2>
+                <H3>{t('brands.motiva.heading')}</H3>
+                <P>{t('brands.motiva.paragraph1')}</P>
                 <Accordion items={accordion5Items} />
               </SpaceContainer>
 
               <SpaceContainer noPadding spaceTop>
-                <H3>{t('implantaten.mentor.heading')}</H3>
-                <P>{t('implantaten.mentor.text1')}</P>
-                <P>{t('implantaten.mentor.text2')}</P>
+                <H3>{t('brands.mentor.heading')}</H3>
+                <P>{t('brands.mentor.paragraph1')}</P>
+                <P>{t('brands.mentor.paragraph2')}</P>
                 <Accordion items={accordion6Items} />
               </SpaceContainer>
 
               <SpaceContainer noPadding spaceTop>
-                <H3>{t('implantaten.polytech.heading')}</H3>
-                <P>{t('implantaten.polytech.text1')}</P>
+                <H3>{t('brands.polytech.heading')}</H3>
+                <P>{t('brands.polytech.paragraph1')}</P>
                 <Accordion items={accordion7Items} />
                 <Image
                   src={PolytechImage}
