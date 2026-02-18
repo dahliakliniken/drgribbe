@@ -16,7 +16,7 @@ import { useAccordionItems } from './accordionData'
 const HudOchInjektioner = () => {
   const t = useTranslations('hud-och-injektioner.page')
   const tMuscleRelaxation = useTranslations(
-    'treatmentBox.treatments.muscleRelaxation'
+    'treatment-box.treatments.muscleRelaxation'
   )
   const [treatmentAreasItems, otherAreasItems] = useAccordionItems()
 

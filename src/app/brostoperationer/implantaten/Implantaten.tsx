@@ -20,6 +20,7 @@ import { useAccordionItems } from './accordionData'
 const Implantaten = () => {
   const tPage = useTranslations('implantaten.page')
   const tAlt = useTranslations('altText')
+  const tBrostoperationerAlt = useTranslations('brostoperationer.page.altText')
   const [
     accordion1Items,
     accordion2Items,
@@ -47,7 +48,7 @@ const Implantaten = () => {
         <Pillar>
           <Image
             src={ImplantatImage}
-            alt={tAlt('brostoperationerDayOfSurgery')}
+            alt={tBrostoperationerAlt('dayOfSurgery')}
             className="max-h-svh object-cover object-center"
           />
         </Pillar>
@@ -101,7 +102,7 @@ const Implantaten = () => {
           </P>
           <Image
             src={ImplantatVariansImage}
-            alt={tAlt('brostoperationerDayOfSurgery')}
+            alt={tBrostoperationerAlt('dayOfSurgery')}
             className="max-h-svh object-cover object-center"
           />
         </Pillar>

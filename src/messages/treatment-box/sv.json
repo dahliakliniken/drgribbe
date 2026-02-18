@@ -1,0 +1,41 @@
+{
+  "title": "Våra behandlingar inom estetisk bröstkirurgi",
+  "treatments": {
+    "breastReduction": {
+      "title": "Bröstförminskning",
+      "altText": "Illustration av bröstförminskning",
+      "paragraph1": "Många kvinnor upplever smärta och obehag på grund av en stor och tung byst.",
+      "paragraph2": "Vid en <strong>bröstförminskningsoperation</strong> tas en del av den egna bröstvävnaden bort för att göra brösten mindre, nättare och mer proportionerliga till kroppen. Vi skräddarsyr alltid ingreppet efter dina behov.",
+      "linkText": "Läs mer om bröstförminskning"
+    },
+    "breastEnlargement": {
+      "title": "Bröstförstoring",
+      "altText": "Illustration av bröstimplantat vid bröstförstoring",
+      "paragraph1": "Vid en <strong>bröstförstoring</strong> placeras <strong>bröstimplantat</strong> för att öka eller återställa volymen i brösten.",
+      "paragraph2": "Vi använder <strong>implantat av högsta kvalitet</strong> från välkända tillverkare. Under konsultationen går vi tillsammans igenom form, storlek och placering.",
+      "linkText": "Läs mer om bröstförstoring"
+    },
+    "breastLift": {
+      "title": "Bröstlyft",
+      "altText": "Illustration av bröstlyft",
+      "paragraph1": "<strong>Bröstlyft</strong> är en vanlig <strong>bröstoperation</strong> som återställer en fastare form genom att ta bort överskottshud, strama åt bröstvävnaden och lyfta <strong>bröstvårtan</strong>.",
+      "paragraph2": "För dig som vill ha mer volym upptill kan <strong>bröstimplantat</strong> kombineras med bröstlyftet för ett fylligare dekolletage.",
+      "linkText": "Läs mer om bröstlyft"
+    },
+    "muscleRelaxation": {
+      "title": "Hud & injektioner",
+      "altText": "Dekorativ ikon som symboliserar hud- och injektionsbehandlingar",
+      "paragraph1": "<strong>Muskelavslappnande behandling</strong> är en vanlig metod inom <strong>estetiska injektioner</strong> för att reducera rynkor. Med en tunn nål injiceras läkemedlet som får ansiktsmusklerna att slappna av.",
+      "paragraph2": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
+      "paragraph3": "Effekten syns efter cirka en vecka och varar i 3–6 månader. Dr Gribbe erbjuder en personlig konsultation inför behandlingen.",
+      "linkText": "Läs mer om hud & injektioner"
+    },
+    "beforeAndAfter": {
+      "title": "Före & efterbilder",
+      "altText": "Dekorativ ikon som symboliserar före- och efterbilder",
+      "paragraph1": "Se före- och efterbilder på patienter opererade av Dr Gribbe.",
+      "paragraph2": "Lorem ispum dolor sit amet, consectetur adipiscing elit.",
+      "linkText": "Se före- och efterbilder"
+    }
+  }
+}

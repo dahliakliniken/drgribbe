@@ -21,12 +21,16 @@ import ConsultationImage from '@/public/images/_N3A7277.jpg'
 import aterbesokImage from '@/public/images/_N3A9941.jpg'
 
 import { BgColors } from '../types'
-// import belowheadingImage from '@/public/images/_N3A9899.jpg'
 import { useAccordionItems } from './accordionData'
 
 const Brostoperationer = () => {
-  const t = useTranslations()
   const tPage = useTranslations('brostoperationer.page')
+  const tAlt = useTranslations('brostoperationer.page.altText')
+  const tCommon = useTranslations('common')
+  const tBeforeOperation = useTranslations('beforeOperation')
+  const tAfterOperation = useTranslations('afterOperation')
+  const tAftercare = useTranslations('aftercare')
+  const tAfterFirstReturnVisit = useTranslations('afterFirstReturnVisit')
   const messages = useMessages()
   const [surgeryItems, complications] = useAccordionItems()
   const beforeOperationKeys = Object.keys(messages.beforeOperation)
@@ -37,12 +41,12 @@ const Brostoperationer = () => {
   const beforeOperationItems = beforeOperationKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3'] // Predefined keys for texts
     const contentArray = contentKeys
-      .filter((textKey) => t.has(`beforeOperation.${key}.${textKey}`)) // Filter out texts that don't exist
-      .map((textKey) => t(`beforeOperation.${key}.${textKey}`))
+      .filter((textKey) => tBeforeOperation.has(`${key}.${textKey}`)) // Filter out texts that don't exist
+      .map((textKey) => tBeforeOperation(`${key}.${textKey}`))
 
     return {
       id: key,
-      title: t(`beforeOperation.${key}.title`),
+      title: tBeforeOperation(`${key}.title`),
       content: contentArray.join('\n')
     }
   })
@@ -50,12 +54,12 @@ const Brostoperationer = () => {
   const afterOperationItems = afterOperationKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3']
     const content = contentKeys
-      .filter((textKey) => t.has(`afterOperation.${key}.${textKey}`))
-      .map((textKey) => t(`afterOperation.${key}.${textKey}`))
+      .filter((textKey) => tAfterOperation.has(`${key}.${textKey}`))
+      .map((textKey) => tAfterOperation(`${key}.${textKey}`))
 
     return {
       id: key,
-      title: t(`afterOperation.${key}.title`),
+      title: tAfterOperation(`${key}.title`),
       content
     }
   })
@@ -63,12 +67,12 @@ const Brostoperationer = () => {
   const aftercareItems = aftercareKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3', 'text4']
     const content = contentKeys
-      .filter((textKey) => t.has(`aftercare.${key}.${textKey}`))
-      .map((textKey) => t(`aftercare.${key}.${textKey}`))
+      .filter((textKey) => tAftercare.has(`${key}.${textKey}`))
+      .map((textKey) => tAftercare(`${key}.${textKey}`))
 
     return {
       id: key,
-      title: t(`aftercare.${key}.title`),
+      title: tAftercare(`${key}.title`),
       content
     }
   })
@@ -76,12 +80,12 @@ const Brostoperationer = () => {
   const afterFirstReturnVisitItems = afterFirstReturnVisitKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3', 'text4']
     const content = contentKeys
-      .filter((textKey) => t.has(`afterFirstReturnVisit.${key}.${textKey}`))
-      .map((textKey) => t(`afterFirstReturnVisit.${key}.${textKey}`))
+      .filter((textKey) => tAfterFirstReturnVisit.has(`${key}.${textKey}`))
+      .map((textKey) => tAfterFirstReturnVisit(`${key}.${textKey}`))
 
     return {
       id: key,
-      title: t(`afterFirstReturnVisit.${key}.title`),
+      title: tAfterFirstReturnVisit(`${key}.title`),
       content
     }
   })
@@ -100,15 +104,6 @@ const Brostoperationer = () => {
           </Pillar>
         }
       />
-      {/* <SpaceContainer>
-        <Pillar>
-          <Image
-            src={belowheadingImage}
-            alt={t('altText.brostoperationerConsultation')}
-            className="max-h-svh object-cover object-center"
-          />
-        </Pillar>
-      </SpaceContainer> */}
 
       <SpaceContainer spaceTop>
         <div className="m-auto xl:max-w-7xl">
@@ -125,7 +120,7 @@ const Brostoperationer = () => {
               <H2>{tPage('process.sectionTitle')}</H2>
               <Image
                 src={ConsultationImage}
-                alt={t('altText.brostoperationerConsultation')}
+                alt={tAlt('consultation')}
                 className="max-h-svh object-cover object-center"
               />
               <SpaceContainer noPadding spaceVertically>
@@ -153,11 +148,11 @@ const Brostoperationer = () => {
           content={
             <>
               <H2 upperCase white className="text-center">
-                {t('common.bookConsultation')}
+                {tCommon('bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle>
-                  {t('common.bookNow')}
+                  {tCommon('bookNow')}
                 </A>
               </div>
             </>
@@ -173,7 +168,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={DayOfSurgeryImage}
-              alt={t('altText.brostoperationerDayOfSurgery')}
+              alt={tAlt('dayOfSurgery')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -200,7 +195,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={SurgeryImage}
-              alt={t('altText.brostoperationerSurgery')}
+              alt={tAlt('surgery')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -221,7 +216,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={PostSurgeryImage}
-              alt={t('altText.brostoperationerPostSurgery')}
+              alt={tAlt('postSurgery')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -251,11 +246,11 @@ const Brostoperationer = () => {
         content={
           <>
             <H2 upperCase white className="text-center">
-              {t('common.freeConsultation')}
+              {tCommon('freeConsultation')}
             </H2>
             <div className="m-auto flex max-w-xs justify-center">
               <A href="/boka" className="uppercase" buttonStyle>
-                {t('common.bookNow')}
+                {tCommon('bookNow')}
               </A>
             </div>
           </>
@@ -269,7 +264,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={aterbesokImage}
-              alt={t('altText.forstaaterbesoket')}
+              alt={tAlt('firstReturnVisit')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -309,7 +304,7 @@ const Brostoperationer = () => {
             <Accordion items={afterFirstReturnVisitItems} />
           </SpaceContainer>
 
-          <SpaceContainer noPadding spaceVertically>
+          <SpaceContainer noPadding spaceVertically id="complications">
             <H2>{'Komplikationer'}</H2>
             <Accordion items={complications} />
           </SpaceContainer>
@@ -321,11 +316,11 @@ const Brostoperationer = () => {
         content={
           <>
             <H2 upperCase white className="text-center">
-              {t('common.bookConsultation')}
+              {tCommon('bookConsultation')}
             </H2>
             <div className="m-auto flex max-w-xs justify-center">
               <A href="/boka" className="uppercase" buttonStyle>
-                {t('common.bookNow')}
+                {tCommon('bookNow')}
               </A>
             </div>
           </>

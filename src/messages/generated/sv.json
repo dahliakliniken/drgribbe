@@ -235,6 +235,13 @@
         "afterOperationTitle": "Efter din operation",
         "aftercareTitle": "När du lämnat kliniken och tiden from till första återbesöket",
         "afterFirstReturnVisitTitle": "Efter första återbesöket"
+      },
+      "altText": {
+        "consultation": "Dr Gribbe och en patient i konsultationssamtal",
+        "dayOfSurgery": "En kirurg i gröna operationskläder visar vägen för en patient klädd i vit morgonrock och grön operationsmössa i en sjukhuskorridor med ljus belysning.",
+        "surgery": "En kirurg i gröna operationskläder och grön operationsmössa följer en patient i vit morgonrock och grön operationsmössa genom en sjukhuskorridor med ljust trägolv och ljus belysning.",
+        "postSurgery": "En ung kvinna med mörkt hår ligger i en sjukhussäng och ler mot en kirurg i gröna operationskläder som står bredvid och håller ett formulär. Bakgrunden visar en rosa och blå solnedgång genom ett fönster, och en annan patient är delvis synlig i förgrunden.",
+        "firstReturnVisit": "Bild på en patient på återbesök hos Dahliakliniken"
       }
     }
   },
@@ -250,6 +257,15 @@
     "menu": "Meny",
     "bookTimeAndConsultation": "Boka tid / konsultation",
     "linktoFaq": "Här har vi samlat fler frågor och svar om estetiska bröstoperationer"
+  },
+  "contact": {
+    "contactUs": "Kontakta oss",
+    "email": "Email: <email>info@dahliakliniken.se</email>",
+    "phone": "Telefon: 08-520 278 78",
+    "handleCookies": "Hantera cookies",
+    "socialMedia": "Sociala medier",
+    "followOnInstagram": "Följ oss på Instagram",
+    "followOnFacebook": "Följ oss på Facebook"
   },
   "dropdown": {
     "clinic": "Om Kliniken",
@@ -426,6 +442,167 @@
       "cta": {
         "title": "Vill du veta mer om våra behandlingar?",
         "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
+      }
+    }
+  },
+  "garanti": {
+    "page": {
+      "metadata": {
+        "title": "Garanti - Dahliakliniken",
+        "description": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende."
+      },
+      "hero": {
+        "title": "Trygghetspaket och kapselgaranti",
+        "intro": "För att du ska känna dig extra trygg så ingår ett trygghetspaket i operationspriset. Du har dessutom möjlighet att teckna en (5 års) kapselgaranti.",
+        "preamble1": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
+        "preamble2": "Dr Gribbe har under hela sin karriär varit noggrann med att patienterna ska känna sig välinformerade och sedda före och efter operationen. Det har resulterat i trygga och nöjda patienter där slutkontrollen blir en bekräftelse på det förväntade resultatet."
+      },
+      "securityPackage": {
+        "title": "Trygghetspaket under ett år",
+        "points": {
+          "point1": "Postoperativ blödning",
+          "point2": "Postoperativ infektion",
+          "point3": "Kostnadsfria återbesök",
+          "point4": "Asymmetri storleksskillnad",
+          "point5": "Asymmetri höjdskillnad",
+          "point6": "Onormal ärrbildning",
+          "point7": "Ruptur, Läckage",
+          "point8": "Rotation",
+          "point9": "Töjd ficka",
+          "point10": "Bottom-out (BO)",
+          "point11": "Onormal muskelpåverkan",
+          "point12": "Symmastia",
+          "point13": "Dygnetrunt jour tiden efter operation"
+        }
+      },
+      "capsuleGuarantee": {
+        "title": "Kapselgaranti under fem år",
+        "points": {
+          "point1": "Kapselkontraktion, hård kapsel"
+        },
+        "price": "5000 kr",
+        "readMoreLinkText": " Läs mer här"
+      },
+      "followUps": {
+        "title": "Återbesök, extrabesök och uppföljning",
+        "description": "Återbesök sker alltid ca 9-14 dagar efter operationen och 4-6 månader efter operationen för kontroll att allt ser bra ut. Därefter är du välkommen på gratis extrabesök om och när du vill. Uppföljning sker efter 2 år då ytterligare en kontroll att allt ser bra ut görs."
+      },
+      "philosophy": {
+        "heading": "Dahliaklinikens filosofi",
+        "intro": "Att sätta pris på en operation kräver ekonomiska beräkningar och eftertanke. Det är också en fråga om moral och affärsfilosofi. Grunden vid prissättning är att beloppet som patienten betalar ska täcka klinikens kostnader för ingreppet samt ge ett visst överskott för klinikens stabilitet. Kostnaderna kan delas in enligt följande:",
+        "points": {
+          "item1": "Löner till personal.",
+          "item2": "Lokalhyra. Dahliaklinikens lokaler håller högsta klass och operationsavdelningen är till och med ISO-certifierad.",
+          "item3": "Hyra, leasingkostnader och avskrivningar av apparater och utrustning till operation, sterilcentral och uppvak. Detta innefattar till exempel narkosapparater, läkemedelspumpar, videolaryngoskop, operationsbord, diatermiutrustning, rökutsug, värmeskåp (håller infusionsvätskor kroppsvarma), värmemadrass och värmefiltar för patientvärme under och efter operation, patientsängar med högsta komfort, operationsinstrument, diskdesinfektor och autoklav. Dahliakliniken har ny och modern utrustning av högsta kvalitet. Till exempel kommer de kirurgiska instrumenten från det svenska företaget Stille. Detta är troligen världens bästa kirurgiska instrument där varje instrument tillverkas för hand.",
+          "item4": "Förbrukningsmaterial såsom läkemedel till narkos, drapering, lokalbedövning, suturer. Dahliakliniken använder endast material från etablerade, välrenommerade företag. Till exempel kommer draperingen från svenska Mölnlycke och suturerna från Ethicon (Johnson & Johnson). När det kommer till läkemedel så har Dahliakliniken ett brett utbud och urval av mediciner för att inte bara kunna ge en adekvat narkos utan även en möjlighet att på allra bästa sätt förebygga och parera smärta och illamående efter operationen.",
+          "item5": "Bröstimplantat. Dahliakliniken använder alltid bröstimplantat av allra högsta kvalitet av kända märken såsom Mentor (Johnson & Johnson), Polytech och Motiva. Bröstimplantaten utgör en stor kostnad vid operationen."
+        },
+        "stabilityHeading": "En stabil klinik som håller i längden.",
+        "stabilityText": "Det är viktigt att det blir en viss summa över som en buffert för att kliniken ska kunna stå sig år efter år och kunna erbjuda uppföljning och hjälp av tidigare opererade patienter. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär. Till exempel betalar många patienter en kapselgaranti. Dessa pengar används sedan fortlöpande för att hjälpa den lilla andel av dessa patienter som drabbas av kapselsammandragning. Vi har på Dahliakliniken valt att trots vår höga servicenivå och kvalitet ha något lägre priser jämfört med många konkurrenter. Vi ser att många patienter sparar under flera år till sina operationer och vissa väljer att ta hela eller delar av operationen på avbetalning. Målsättningen är att ha så låga priser som möjligt utan att ge avkall på kvalitet, omvårdnad, trivsel och långsiktighet. Med nuvarande prisbild och kostnader beräknar vi att vi kommer ha en klinik som står sig under många år framöver.",
+        "staffPolicyHeading": "Personalpolicy.",
+        "staffPolicyText1": "Dahliaklinikens målsättning är att erbjuda en attraktiv arbetsmiljö där alla medarbetare trivs, känner sig sedda och lyssnade på. Det är viktigt att personalen har möjlighet till raster och en tillräckligt lång lunch. Med god planering av operationsschema är målsättningen att personalen inte behöver jobba över utan kan gå hem i tid. Detta kräver noggrann planering och god logistik, något som vi på Dahliakliniken har erfarenhet av sedan flera årtionden.",
+        "staffPolicyText2": "Personalen på Dahliakliniken är specialistutbildad och experter inom sina respektive områden. Det gäller plastikkirurg, narkosläkare, operationssjuksköterskor, narkossköterskor, undersköterskor och receptionist. All personal har ett genuint intresse för just det de gör vilket vi märker att patienterna uppskattar.",
+        "serviceLevelHeading": "Personligt och med en hög servicenivå.",
+        "serviceLevelText": "Vi på Dahliakliniken vill att du som patient får väldigt mycket information, hjälp och uppmärksamhet före, under och efter din operation. Troligen mer än vad du föreställt dig. Vår övertygelse är att välutbildade patienter ger patienter som är nöjda med slutresultatet efter operation. Vi finns tillgängliga både före och efter operationen så att du kan ställa frågor och det är alltid plastikkirurg Dr Örjan Gribbe som du träffar på konsultationer innan och på alla återbesöken efter operationen. Vid mötena, konsultationerna innan operation erbjuds du som patient gott om tid (60 minuter) och vi lägger stor vikt vid information och utprovning av bröstimplantat. Det finns även möjlighet till flera besök innan operationen för att du som patient ska känna dig helt säker. Dahliakliniken är en liten och personlig klinik där varje patient blir sedd och tas omhand individuellt."
+      },
+      "complications": {
+        "sectionTitle": "Komplikationer",
+        "accordion": {
+          "capsule": {
+            "title": "Kapsebildning, hård kapsel, kapselkontraktion.",
+            "content": {
+              "bold1": "Kapseln, en naturlig följd av en bröstoperation.",
+              "text1": "När bröstimplantat eller något annat främmande material läggs in i kroppen reagerar kroppen med att bilda en hinna, ett hölje av ärrvävnad runt bröstimplantaten. Denna ärrvävnad kallas för en kapsel och är kroppens naturliga sätt att ta hand om bröstimplantaten. Normalt så skapar kroppen en mjuk, tunn kapsel vilket gör att när man känner på brösten så känner man inte kapseln utan man känner bröstens och bröstimplantatens naturliga mjukhet. I sällsynta fall (under 1%) och oftast bara på ena sidan bildar kroppen ett tjockare och hårdare kapsel vilket gör att det drabbade bröstet känns fastare och hårdare. Man brukar prata om hård kapsel. Det är då inte heller ovanligt att den förtjockade och fastare kapseln drar ihop sig vilket gör att bröstimplantatet och bröstet upplevs mindre i volym och ofta även smalare. Detta kallas för kapselsammandragning eller kapselkontraktion. När kapseln drar ihop sig brukar den också putta upp bröstimplantatet på bröstkorgen vilket gör att bröstet får ett mer onaturligt och up-pushat utseende. En tjockare kapsel som drar ihop sig kan även skapa mer eller mindre uttalade smärtor. Dessa smärtor kan vara konstanta men det är vanligare att de kommer och går. Hur tydliga symtomen är varierar mycket från patient till patient. Ibland ger det mycket diskreta symtom och ibland, särskilt om den fått utvecklas under många år, så ger den tydligare symtom. ",
+              "bold2": "En hård kapsel är inte farlig.",
+              "text2": "Det är viktigt att förstå att hård kapsel och kapselsammadragning är inte farligt. Kapseln är naturlig och det varierar från person till person hur den blir. ",
+              "bold3": "Kapseloperation, bara om man har besvär och patienten bestämmer.",
+              "text3": "Om kapseln skapar problem med ett fastare bröst eller ibland även smärtor så kan man åtgärda det med en kapseloperation. Den går till som så att man i narkos tar ut bröstimplantatet, opererar kapseln och sedan lägger tillbaka bröstimplantatet. Problemet är då oftast åtgärdat och patientens problem försvinner. Huruvida man ska operera kapsel beror helt på patientens besvär. Det är patienten som bestämmer om besvären är sådana att hon önskar operation eller ej. Ibland är kapseln lite stram och patienten märker det inte. Det är då inte ett problem och man ska inte göra en operation. Man kan säga att det är som en skala från å ena sidan mjuk kapsel till väldigt hård och sammandragen kapsel. Sedan finns det många varianter däremellan från lite stramare och fastare kapsel till mer och mer tjock, hård och sammandragen kapsel. ",
+              "bold4": "En fastare kapsel har fördelar.",
+              "text4": "En tunn mjuk kapsel har fördelen att man tydligt känner bröstimplantatens konsistens och mjukhet. En hård kapsel kan skapa problem enligt ovan. Däremellan finns många varianter på mer eller mindre tjock och stram kapsel som inte ger patienten några som helst besvär. Fördelen med en lite tjockare och stramare kapsel utan besvär är att den ger ett bättre stöd för bröstimplantaten än en tunn och mjuk kapsel. Den stramare kapseln hindrar bröstimplantaten från att falla ner eller åt sidorna vilket är extra fördelaktigt om man valt lite större bröstimplantat."
+            }
+          },
+          "sensory": {
+            "title": "Känselstörningar",
+            "content": {
+              "bold1": "Nedsatt känsel i huden",
+              "text1": "Efter en bröstoperation kan man, precis som efter vilken annan operation som helst där man skär genom huden, få övergående känselstörningar. Efter en bröstoperation händer det då och då och att man kring ärret får en nedsatt känsel för beröring under ett tag efter operationen. Ofta kommer känseln tillbaka efter några månader. I ovanliga fall så tar det upp till två år innan känseln återkommer helt. I mycket ovanliga fall blir känselnedsättningen permanent och i ytterst ovanliga fall så kan detta även drabba bröstvårta, vårtgård.",
+              "bold2": "Ökad känsel i huden",
+              "text2": "En annan form av känselstörning är att vissa patienter ett tag efter operationen kan uppleva en ökad känsel, en överkänslighet (hyperestesi) i huden kring ärret och ibland upp en bit på själva bröstet. Känslan kan vara att beröring känns mer och ibland kan beröring av huden också kännas obehaglig. Vissa upplever en ytlig, brännande känsla. Denna obehagliga känsla är i princip alltid övergående och kommer ibland i samband med att känseln i huden är på väg att komma tillbaka efter att den först nedsatt. För att förebygga ökad känsel i huden, hyperestesi är det bra att beröra, stryka på huden med fingrarna. Man lär då huden och hjärnan att det faktiskt handlar om normal beröring."
+            }
+          },
+          "alcl": {
+            "title": "ALCL",
+            "content": {
+              "bold1": "Ovanligt lymfom",
+              "text1": "Det senaste årtiondet har en mycket ovanlig form av lymfom, Anaplastiskt storcelligt lymfom ALCL (Breast Implant Associated Anaplastic Large Cell Lymphoma, BIA-ALCL) uppmärksammats efter operation med texturerade bröstimplantat. Orsaken är oklar men man tror att det beror på genetiska faktorer hos den drabbade individen i kombination med inflammatoriska mekanismer som den texturerade ytan på bröstimplantaten ibland skapat. Initialt visste man inte så mycket om vilka bröstimplantat som kunde orsaka ALCL men det har visat sig att det endast är just texturerade, knottriga bröstimplantat och inte släta bröstimplantat. Viktigt att förstå är att ALCL inte är eller har något samband med bröstcancer och att inga bröstimplantat ökar risken för bröstcancer.",
+              "bold2": "Olika textureringar, olika risk",
+              "text2": "Det har visat sig att det är stor skillnad hur vanligt ALCL är mellan olika märken och därmed olika typer av texturering. Allergan till exempel hade en grov texturering på sina bröstimplantat där det visade sig att risken var 1 på ca 2500 patienter. Risken ansågs då så hög att denna texturering förbjöds. Mentors texturering Siltex har visats ha en risk på 1 på ca 87 000 vilket är en mycket låg risk varför dessa bröstimplantat är fullt tillåtna och de används både vid estetiska bröstförstoring och inom sjukvården vid rekonstruktioner efter bröstcancer.",
+              "bold3": "Behandling",
+              "text3": "Skulle det då handla om ALCL, remitteras patienten till sjukvården där man tar bort implantat och omkringliggande kapsel. Oftast så är patienten botad och risken för spridning i kroppen är låg. Rekommendationen är sedan att man hos patienten fortsättningsvis använder släta bröstimplantat."
+            }
+          }
+        }
+      },
+      "cta": {
+        "title": "Vill du veta mer om våra behandlingar?",
+        "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
+      }
+    }
+  },
+  "home-page": {
+    "page": {
+      "testimonials": {
+        "title": "Vad våra patienter säger om sina bröstoperationer"
+      },
+      "treatmentSection": {
+        "title": "Våra behandlingar inom estetisk bröstkirurgi"
+      },
+      "aboutBox": {
+        "title": "Bröstoperationer i Stockholm  <span><strong>Bröstförstoring</strong>, <strong>Bröstlyft</strong> & <strong>Bröstförminskning</strong> hos Dahliakliniken</span>",
+        "newClinicName": "<strong>Dr Örjan Gribbe</strong> lanserar nytt kliniknamn: <strong>Dahliakliniken</strong>.",
+        "welcomeMessage": "Välkommen till en klinik i <strong>centrala Stockholm</strong>, helt specialiserad på <strong>estetisk bröstkirurgi</strong>. Vår mottagning ligger på <strong>Kungsholmen</strong> och vi tar emot patienter från hela Sverige.",
+        "paragraph1": "All personal är <strong>specialistutbildad</strong> med flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Vi erbjuder ett brett utbud av <strong>bröstoperationer i Stockholm</strong> – inklusive <strong>bröstförstoring</strong>, <strong>bröstlyft</strong>, <strong>bröstförminskning</strong> och kombinerade ingrepp med implantat. Vi använder de senaste teknikerna och <strong>material av högsta kvalitet</strong> för att ge dig bästa möjliga resultat."
+      },
+      "profileCard": {
+        "title": "Specialist på bröstoperationer",
+        "linkpre": "Svensk Förening för Estetisk Plastikkirurgi.",
+        "imageAlt": "Dr. Örjan Gribbe",
+        "imageText": "Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.",
+        "paragraph1": "Sedan 2007 har han fokuserat på estetisk plastikkirurgi, framför allt estetiska bröstoperationer och har utfört över 8 000 operationer med bröstimplantat på klinikerna Victoriakliniken och Proforma Clinic. Dr Örjan Gribbe är medlem i (SFEP) ",
+        "paragraph2": "Hans nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.",
+        "paragraph3": "Med Dr Gribbe vid din sida kan du känna dig trygg genom hela processen. Oavsett om du drömmer om diskreta och eleganta bröst, en minskning för att skapa en nättare siluett, eller en förstoring för en fylligare form, kommer Dr Gribbe och hans erfarna team att hjälpa dig nå ditt önskade resultat."
+      },
+      "aboutClinic": {
+        "title": "Om <strong>Dahliakliniken</strong> – erfaren <strong>bröstkirurg i Stockholm</strong>",
+        "readMore": "Läs mer om vår hållbarhetsfilosofi",
+        "ourPhilosophy": "Dahliaklinikens <strong>hållbarhets- och prissättningsfilosofi</strong>",
+        "paragraph1": "<strong>Dahliakliniken</strong> är en nyetablerad plastikkirurgisk klinik i Stockholm, grundad av <strong>Dr Örjan Gribbe</strong>, en erfaren och specialiserad <strong>plastikkirurg</strong> med inriktning på både <strong>rekonstruktiv</strong> och <strong>estetisk kirurgi</strong>. Kliniken är <strong>Sveriges enda klinik</strong> som fokuserar uteslutande på <strong>estetiska bröstoperationer</strong> i alla former, inklusive <strong>bröstförstoring</strong>, <strong>bröstlyft</strong>, <strong>bröstförminskning</strong> och kombinerade ingrepp med bröstimplantat.",
+        "paragraph2": "Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, med hjälp av sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
+        "paragraph3": "All personal på Dahliakliniken är <strong>specialistutbildad</strong> och har mångårig erfarenhet inom sin respektive specialitet, vilket garanterar <strong>trygghet</strong> och <strong>säkerhet</strong> med minimal risk för komplikationer. Kliniken är belägen i nyrenoverade lokaler med <strong>operationssalar utrustade med toppmodern teknik</strong>. Vi använder endast de senaste och bästa materialen och kirurgiska instrumenten för att säkerställa <strong>optimerade resultat</strong> och hög precision i varje ingrepp.",
+        "paragraph4": "Vår mission är att <strong>höja kvinnors livskvalitet</strong> genom att förändra deras kroppsuppfattning på det sätt de drömt om, med hjälp av <strong>skicklig bröstkirurgi</strong>. Vi välkomnar både nya och tidigare patienter till en trygg och personlig vårdupplevelse.",
+        "paragraph5": "Vi är en <strong>stabil klinik med långsiktigt fokus</strong>. Med över 17 års erfarenhet av privat plastikkirurgisk vård vet vi vad det innebär att leverera <strong>hållbara och rättvisa priser</strong> utan att kompromissa på kvalitet eller säkerhet."
+      },
+      "operationDepartment": {
+        "title": "Trygg och modern <strong>operationsavdelning</strong> i centrala Stockholm",
+        "text1": "Vi värnar om din <strong>hälsa</strong> och ditt <strong>välbefinnande</strong>.",
+        "text2": "För oss är det viktigt med en vilsam och lugn miljö så att du som besökare får bästa möjliga upplevelse vid ditt besök. Detta har vi haft i åtanke vid utformningen av kliniken och val av <strong>operationsavdelning</strong>.",
+        "text3": "Dahliakliniken har en <strong>operationsavdelning</strong> som håller mycket hög standard. Den är avskild från mottagningen och ligger på ett eget våningsplan med tillträde enbart för patienter och personal.",
+        "text4": "Operationssalarna är utrustade för att hålla högsta nivå med avseende på samtliga väsentliga kvalitetsparametrar. Utrustningen som används är ny, modern och högteknologisk. Renlighet och sterilitet är oerhört väsentligt för att en <strong>operationsavdelning</strong> ska vara patientsäker. Salarna är därför utrustade med en särskild ventilation som tillför en hög grad av sterilitet och ren luft, vilket förebygger risken för infektioner. Operationssalarnas inredning följer Socialstyrelsens riktlinjer och gällande EU-regler. Därutöver är verksamheten och <strong>operationsavdelningen</strong> ISO-certifierad, vilket innebär att vi uppfyller internationella kvalitets- och miljökrav.",
+        "text5": "Vår <strong>operationsavdelning</strong> har en avancerad steril med förstklassig utrustning. Den har separata renrum avsedda för rengöring och sterilisering av instrument, dvs. icke-steriliserade och steriliserade verktyg, tvätt och övrigt separeras från varandra. Allt detta medför att <strong>operationsavdelningen</strong> håller en hög nivå avseende sterilitet och renlighet."
+      },
+      "altText": {
+        "heroImage": "Elegant och inbjudande väntrum på en klinik för plastikkirurgi, med en stilren inredning i grönt och guld. Hallen är dekorerad med sammetsfåtöljer, små sidobord med blommor, moderna ljuskronor och varma vägglampor, vilket skapar en lyxig och professionell atmosfär.",
+        "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
+        "consultationImage": "Bild på dr Örjan Gribbe som visar olika bröstimplantat för en patient."
+      },
+      "cta": {
+        "title": "Boka en konsultation med vår specialist idag",
+        "description": "Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter"
+      },
+      "schema": {
+        "description": "Dahliakliniken är en modern klinik i Stockholm som är specialiserad på estetiska bröstoperationer som bröstförstoring, bröstlyft och bröstförminskning.",
+        "founderName": "Dr Örjan Gribbe",
+        "areaServedName": "Stockholm"
       }
     }
   },
@@ -1119,149 +1296,10 @@
     "title": "Kliniken för estetisk bröstförstoring och bröstlyft",
     "description": "Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft."
   },
-  "testimonials": {
-    "title": "Vad våra patienter säger om sina bröstoperationer"
-  },
-  "treatmentBox": {
-    "title": "Våra behandlingar inom estetisk bröstkirurgi",
-    "treatments": {
-      "breastReduction": {
-        "title": "Bröstförminskning",
-        "altText": "Illustration av bröstförminskning",
-        "paragraph1": "Många kvinnor upplever smärta och obehag på grund av en stor och tung byst.",
-        "paragraph2": "Vid en <strong>bröstförminskningsoperation</strong> tas en del av den egna bröstvävnaden bort för att göra brösten mindre, nättare och mer proportionerliga till kroppen. Vi skräddarsyr alltid ingreppet efter dina behov.",
-        "linkText": "Läs mer om bröstförminskning"
-      },
-      "breastEnlargement": {
-        "title": "Bröstförstoring",
-        "altText": "Illustration av bröstimplantat vid bröstförstoring",
-        "paragraph1": "Vid en <strong>bröstförstoring</strong> placeras <strong>bröstimplantat</strong> för att öka eller återställa volymen i brösten.",
-        "paragraph2": "Vi använder <strong>implantat av högsta kvalitet</strong> från välkända tillverkare. Under konsultationen går vi tillsammans igenom form, storlek och placering.",
-        "linkText": "Läs mer om bröstförstoring"
-      },
-      "breastLift": {
-        "title": "Bröstlyft",
-        "altText": "Illustration av bröstlyft",
-        "paragraph1": "<strong>Bröstlyft</strong> är en vanlig <strong>bröstoperation</strong> som återställer en fastare form genom att ta bort överskottshud, strama åt bröstvävnaden och lyfta <strong>bröstvårtan</strong>.",
-        "paragraph2": "För dig som vill ha mer volym upptill kan <strong>bröstimplantat</strong> kombineras med bröstlyftet för ett fylligare dekolletage.",
-        "linkText": "Läs mer om bröstlyft"
-      },
-      "muscleRelaxation": {
-        "title": "Hud & injektioner",
-        "altText": "Dekorativ ikon som symboliserar hud- och injektionsbehandlingar",
-        "paragraph1": "<strong>Muskelavslappnande behandling</strong> är en vanlig metod inom <strong>estetiska injektioner</strong> för att reducera rynkor. Med en tunn nål injiceras läkemedlet som får ansiktsmusklerna att slappna av.",
-        "paragraph2": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
-        "paragraph3": "Effekten syns efter cirka en vecka och varar i 3–6 månader. Dr Gribbe erbjuder en personlig konsultation inför behandlingen.",
-        "linkText": "Läs mer om hud & injektioner"
-      },
-      "beforeAndAfter": {
-        "title": "Före & efterbilder",
-        "altText": "Dekorativ ikon som symboliserar före- och efterbilder",
-        "paragraph1": "Se före- och efterbilder på patienter opererade av Dr Gribbe.",
-        "paragraph2": "Lorem ispum dolor sit amet, consectetur adipiscing elit.",
-        "linkText": "Se före- och efterbilder"
-      }
-    }
-  },
-  "aboutBox": {
-    "title": "Bröstoperationer i Stockholm  <span><strong>Bröstförstoring</strong>, <strong>Bröstlyft</strong> & <strong>Bröstförminskning</strong> hos Dahliakliniken</span>",
-    "newClinicName": "<strong>Dr Örjan Gribbe</strong> lanserar nytt kliniknamn: <strong>Dahliakliniken</strong>.",
-    "welcomeMessage": "Välkommen till en klinik i <strong>centrala Stockholm</strong>, helt specialiserad på <strong>estetisk bröstkirurgi</strong>. Vår mottagning ligger på <strong>Kungsholmen</strong> och vi tar emot patienter från hela Sverige.",
-    "paragraph1": "All personal är <strong>specialistutbildad</strong> med flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Vi erbjuder ett brett utbud av <strong>bröstoperationer i Stockholm</strong> – inklusive <strong>bröstförstoring</strong>, <strong>bröstlyft</strong>, <strong>bröstförminskning</strong> och kombinerade ingrepp med implantat. Vi använder de senaste teknikerna och <strong>material av högsta kvalitet</strong> för att ge dig bästa möjliga resultat."
-  },
-  "operationDepartment": {
-    "title": "Trygg och modern <strong>operationsavdelning</strong> i centrala Stockholm",
-    "text1": "Vi värnar om din <strong>hälsa</strong> och ditt <strong>välbefinnande</strong>.",
-    "text2": "För oss är det viktigt med en vilsam och lugn miljö så att du som besökare får bästa möjliga upplevelse vid ditt besök. Detta har vi haft i åtanke vid utformningen av kliniken och val av <strong>operationsavdelning</strong>.",
-    "text3": "Dahliakliniken har en <strong>operationsavdelning</strong> som håller mycket hög standard. Den är avskild från mottagningen och ligger på ett eget våningsplan med tillträde enbart för patienter och personal.",
-    "text4": "Operationssalarna är utrustade för att hålla högsta nivå med avseende på samtliga väsentliga kvalitetsparametrar. Utrustningen som används är ny, modern och högteknologisk. Renlighet och sterilitet är oerhört väsentligt för att en <strong>operationsavdelning</strong> ska vara patientsäker. Salarna är därför utrustade med en särskild ventilation som tillför en hög grad av sterilitet och ren luft, vilket förebygger risken för infektioner. Operationssalarnas inredning följer Socialstyrelsens riktlinjer och gällande EU-regler. Därutöver är verksamheten och <strong>operationsavdelningen</strong> ISO-certifierad, vilket innebär att vi uppfyller internationella kvalitets- och miljökrav.",
-    "text5": "Vår <strong>operationsavdelning</strong> har en avancerad steril med förstklassig utrustning. Den har separata renrum avsedda för rengöring och sterilisering av instrument, dvs. icke-steriliserade och steriliserade verktyg, tvätt och övrigt separeras från varandra. Allt detta medför att <strong>operationsavdelningen</strong> håller en hög nivå avseende sterilitet och renlighet."
-  },
-  "profileCard": {
-    "title": "Specialist på bröstoperationer",
-    "linkpre": "Svensk Förening för Estetisk Plastikkirurgi.",
-    "imageAlt": "Dr. Örjan Gribbe",
-    "imageText": "Plastikkirurg Örjan Gribbe har mer än 20 års erfarenhet av bröstkirurgi, inklusive sitt arbete på Karolinska sjukhuset.",
-    "paragraph1": "Sedan 2007 har han fokuserat på estetisk plastikkirurgi, framför allt estetiska bröstoperationer och har utfört över 8 000 operationer med bröstimplantat på klinikerna Victoriakliniken och Proforma Clinic. Dr Örjan Gribbe är medlem i (SFEP) ",
-    "paragraph2": "Hans nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.",
-    "paragraph3": "Med Dr Gribbe vid din sida kan du känna dig trygg genom hela processen. Oavsett om du drömmer om diskreta och eleganta bröst, en minskning för att skapa en nättare siluett, eller en förstoring för en fylligare form, kommer Dr Gribbe och hans erfarna team att hjälpa dig nå ditt önskade resultat."
-  },
-  "aboutClinic": {
-    "title": "Om <strong>Dahliakliniken</strong> – erfaren <strong>bröstkirurg i Stockholm</strong>",
-    "readMore": "Läs mer om vår hållbarhetsfilosofi",
-    "ourPhilosophy": "Dahliaklinikens <strong>hållbarhets- och prissättningsfilosofi</strong>",
-    "paragraph1": "<strong>Dahliakliniken</strong> är en nyetablerad plastikkirurgisk klinik i Stockholm, grundad av <strong>Dr Örjan Gribbe</strong>, en erfaren och specialiserad <strong>plastikkirurg</strong> med inriktning på både <strong>rekonstruktiv</strong> och <strong>estetisk kirurgi</strong>. Kliniken är <strong>Sveriges enda klinik</strong> som fokuserar uteslutande på <strong>estetiska bröstoperationer</strong> i alla former, inklusive <strong>bröstförstoring</strong>, <strong>bröstlyft</strong>, <strong>bröstförminskning</strong> och kombinerade ingrepp med bröstimplantat.",
-    "paragraph2": "Dr Örjan Gribbe har under sina år som plastikkirurg burit på en dröm om en egen klinik nischad mot bröstoperationer, det han genom åren blivit känd för att utföra på ett synnerligen skickligt sätt. Visionen är att, med hjälp av sin fru, erbjuda estetisk plastikkirurgi av högsta kvalitet med utgångspunkt i hans gedigna erfarenhet inom bröstkirurgi. Kliniken präglas av skicklig, engagerad personal, hög omvårdnad och patientsäkerhet där alla patienter är v.i.p. En klinik med lite mer personligt bemötande där alla patienter blir sedda.",
-    "paragraph3": "All personal på Dahliakliniken är <strong>specialistutbildad</strong> och har mångårig erfarenhet inom sin respektive specialitet, vilket garanterar <strong>trygghet</strong> och <strong>säkerhet</strong> med minimal risk för komplikationer. Kliniken är belägen i nyrenoverade lokaler med <strong>operationssalar utrustade med toppmodern teknik</strong>. Vi använder endast de senaste och bästa materialen och kirurgiska instrumenten för att säkerställa <strong>optimerade resultat</strong> och hög precision i varje ingrepp.",
-    "paragraph4": "Vår mission är att <strong>höja kvinnors livskvalitet</strong> genom att förändra deras kroppsuppfattning på det sätt de drömt om, med hjälp av <strong>skicklig bröstkirurgi</strong>. Vi välkomnar både nya och tidigare patienter till en trygg och personlig vårdupplevelse.",
-    "paragraph5": "Vi är en <strong>stabil klinik med långsiktigt fokus</strong>. Med över 17 års erfarenhet av privat plastikkirurgisk vård vet vi vad det innebär att leverera <strong>hållbara och rättvisa priser</strong> utan att kompromissa på kvalitet eller säkerhet."
-  },
-  "ourphilosophy": {
-    "heading": "Dahliaklinikens filosofi",
-    "text1": "Att sätta pris på en operation kräver ekonomiska beräkningar och eftertanke. Det är också en fråga om moral och affärsfilosofi. Grunden vid prissättning är att beloppet som patienten betalar ska täcka klinikens kostnader för ingreppet samt ge ett visst överskott för klinikens stabilitet. Kostnaderna kan delas in enligt följande:",
-    "points": {
-      "item1": "Löner till personal.",
-      "item2": "Lokalhyra. Dahliaklinikens lokaler håller högsta klass och operationsavdelningen är till och med ISO-certifierad.",
-      "item3": "Hyra, leasingkostnader och avskrivningar av apparater och utrustning till operation, sterilcentral och uppvak. Detta innefattar till exempel narkosapparater, läkemedelspumpar, videolaryngoskop, operationsbord, diatermiutrustning, rökutsug, värmeskåp (håller infusionsvätskor kroppsvarma), värmemadrass och värmefiltar för patientvärme under och efter operation, patientsängar med högsta komfort, operationsinstrument, diskdesinfektor och autoklav. Dahliakliniken har ny och modern utrustning av högsta kvalitet. Till exempel kommer de kirurgiska instrumenten från det svenska företaget Stille. Detta är troligen världens bästa kirurgiska instrument där varje instrument tillverkas för hand.",
-      "item4": "Förbrukningsmaterial såsom läkemedel till narkos, drapering, lokalbedövning, suturer. Dahliakliniken använder endast material från etablerade, välrenommerade företag. Till exempel kommer draperingen från svenska Mölnlycke och suturerna från Ethicon (Johnson & Johnson). När det kommer till läkemedel så har Dahliakliniken ett brett utbud och urval av mediciner för att inte bara kunna ge en adekvat narkos utan även en möjlighet att på allra bästa sätt förebygga och parera smärta och illamående efter operationen.",
-      "item5": "Bröstimplantat. Dahliakliniken använder alltid bröstimplantat av allra högsta kvalitet av kända märken såsom Mentor (Johnson & Johnson), Polytech och Motiva. Bröstimplantaten utgör en stor kostnad vid operationen."
-    },
-    "text2Heading": "En stabil klinik som håller i längden.",
-    "text2": "Det är viktigt att det blir en viss summa över som en buffert för att kliniken ska kunna stå sig år efter år och kunna erbjuda uppföljning och hjälp av tidigare opererade patienter. Med 17 års erfarenhet av privat plastikkirurgisk vård vet vi på Dahliakliniken vad det innebär. Till exempel betalar många patienter en kapselgaranti. Dessa pengar används sedan fortlöpande för att hjälpa den lilla andel av dessa patienter som drabbas av kapselsammandragning. Vi har på Dahliakliniken valt att trots vår höga servicenivå och kvalitet ha något lägre priser jämfört med många konkurrenter. Vi ser att många patienter sparar under flera år till sina operationer och vissa väljer att ta hela eller delar av operationen på avbetalning. Målsättningen är att ha så låga priser som möjligt utan att ge avkall på kvalitet, omvårdnad, trivsel och långsiktighet. Med nuvarande prisbild och kostnader beräknar vi att vi kommer ha en klinik som står sig under många år framöver.",
-    "heading2": "Personalpolicy.",
-    "text3": "Dahliaklinikens målsättning är att erbjuda en attraktiv arbetsmiljö där alla medarbetare trivs, känner sig sedda och lyssnade på. Det är viktigt att personalen har möjlighet till raster och en tillräckligt lång lunch. Med god planering av operationsschema är målsättningen att personalen inte behöver jobba över utan kan gå hem i tid. Detta kräver noggrann planering och god logistik, något som vi på Dahliakliniken har erfarenhet av sedan flera årtionden.",
-    "text4": "Personalen på Dahliakliniken är specialistutbildad och experter inom sina respektive områden. Det gäller plastikkirurg, narkosläkare, operationssjuksköterskor, narkossköterskor, undersköterskor och receptionist. All personal har ett genuint intresse för just det de gör vilket vi märker att patienterna uppskattar.",
-    "heading3": "Personligt och med en hög servicenivå.",
-    "text5": "Vi på Dahliakliniken vill att du som patient får väldigt mycket information, hjälp och uppmärksamhet före, under och efter din operation. Troligen mer än vad du föreställt dig. Vår övertygelse är att välutbildade patienter ger patienter som är nöjda med slutresultatet efter operation. Vi finns tillgängliga både före och efter operationen så att du kan ställa frågor och det är alltid plastikkirurg Dr Örjan Gribbe som du träffar på konsultationer innan och på alla återbesöken efter operationen. Vid mötena, konsultationerna innan operation erbjuds du som patient gott om tid (60 minuter) och vi lägger stor vikt vid information och utprovning av bröstimplantat. Det finns även möjlighet till flera besök innan operationen för att du som patient ska känna dig helt säker. Dahliakliniken är en liten och personlig klinik där varje patient blir sedd och tas omhand individuellt."
-  },
   "video": {
     "fallback": "Din webbläsare stödjer inte uppspelning av video.",
     "play": "Spela video",
     "pause": "Pausa video"
-  },
-  "contact": {
-    "contactUs": "Kontakta oss",
-    "email": "Email: <email>info@dahliakliniken.se</email>",
-    "phone": "Telefon: 08-520 278 78",
-    "handleCookies": "Hantera cookies",
-    "socialMedia": "Sociala medier",
-    "followOnInstagram": "Följ oss på Instagram",
-    "followOnFacebook": "Följ oss på Facebook"
-  },
-  "garanti": {
-    "preamble1": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
-    "preamble2": "Dr Gribbe har under hela sin karriär varit noggrann med att patienterna ska känna sig välinformerade och sedda före och efter operationen. Det har resulterat i trygga och nöjda patienter där slutkontrollen blir en bekräftelse på det förväntade resultatet.",
-    "title": "Trygghetspaket och kapselgaranti",
-    "intro": "För att du ska känna dig extra trygg så ingår ett trygghetspaket i operationspriset. Du har dessutom möjlighet att teckna en (5 års) kapselgaranti.",
-    "securityPackage": {
-      "title": "Trygghetspaket under ett år",
-      "points": {
-        "point1": "Postoperativ blödning",
-        "point2": "Postoperativ infektion",
-        "point3": "Kostnadsfria återbesök",
-        "point4": "Asymmetri storleksskillnad",
-        "point5": "Asymmetri höjdskillnad",
-        "point6": "Onormal ärrbildning",
-        "point7": "Ruptur, Läckage",
-        "point8": "Rotation",
-        "point9": "Töjd ficka",
-        "point10": "Bottom-out (BO)",
-        "point11": "Onormal muskelpåverkan",
-        "point12": "Symmastia",
-        "point13": "Dygnetrunt jour tiden efter operation"
-      }
-    },
-    "capsuleGuarantee": {
-      "title": "Kapselgaranti under fem år",
-      "points": {
-        "point1": "Kapselkontraktion, hård kapsel"
-      },
-      "price": "5000 kr"
-    },
-    "followUps": {
-      "title": "Återbesök, extrabesök och uppföljning",
-      "description": "Återbesök sker alltid ca 9-14 dagar efter operationen och 4-6 månader efter operationen för kontroll att allt ser bra ut. Därefter är du välkommen på gratis extrabesök om och när du vill. Uppföljning sker efter 2 år då ytterligare en kontroll att allt ser bra ut görs."
-    }
   },
   "beforeOperation": {
     "fasting": {
@@ -1441,16 +1479,9 @@
     }
   },
   "altText": {
-    "heroImage": "Elegant och inbjudande väntrum på en klinik för plastikkirurgi, med en stilren inredning i grönt och guld. Hallen är dekorerad med sammetsfåtöljer, små sidobord med blommor, moderna ljuskronor och varma vägglampor, vilket skapar en lyxig och professionell atmosfär.",
-    "brostoperationerConsultation": "Dr Gribbe och en patient i konsultationssamtal",
-    "brostoperationerDayOfSurgery": "En kirurg i gröna operationskläder visar vägen för en patient klädd i vit morgonrock och grön operationsmössa i en sjukhuskorridor med ljus belysning.",
-    "brostoperationerSurgery": "En kirurg i gröna operationskläder och grön operationsmössa följer en patient i vit morgonrock och grön operationsmössa genom en sjukhuskorridor med ljust trägolv och ljus belysning.",
-    "brostoperationerPostSurgery": "En ung kvinna med mörkt hår ligger i en sjukhussäng och ler mot en kirurg i gröna operationskläder som står bredvid och håller ett formulär. Bakgrunden visar en rosa och blå solnedgång genom ett fönster, och en annan patient är delvis synlig i förgrunden.",
     "dahliaLogo": "Logotypen för Dahlia",
     "sfepLogo": "Logotypen för Svenska Föreningen för Estetisk Plastikkirurgi",
-    "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
     "motivaTable": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
-    "forstaaterbesoket": "Bild på en patient på återbesök hos Dahliakliniken",
     "video": "Dr. Örjan Gribbe välkomnar kunder till sin klinik",
     "polytechimplants": "Bild på en patient som håller i ett implantat från Polytech"
   },
@@ -1475,6 +1506,47 @@
       "step3": {
         "title": "Behöver du ändra något?",
         "description": "Vill du boka om eller har frågor är du varmt välkommen att kontakta oss."
+      }
+    }
+  },
+  "treatment-box": {
+    "title": "Våra behandlingar inom estetisk bröstkirurgi",
+    "treatments": {
+      "breastReduction": {
+        "title": "Bröstförminskning",
+        "altText": "Illustration av bröstförminskning",
+        "paragraph1": "Många kvinnor upplever smärta och obehag på grund av en stor och tung byst.",
+        "paragraph2": "Vid en <strong>bröstförminskningsoperation</strong> tas en del av den egna bröstvävnaden bort för att göra brösten mindre, nättare och mer proportionerliga till kroppen. Vi skräddarsyr alltid ingreppet efter dina behov.",
+        "linkText": "Läs mer om bröstförminskning"
+      },
+      "breastEnlargement": {
+        "title": "Bröstförstoring",
+        "altText": "Illustration av bröstimplantat vid bröstförstoring",
+        "paragraph1": "Vid en <strong>bröstförstoring</strong> placeras <strong>bröstimplantat</strong> för att öka eller återställa volymen i brösten.",
+        "paragraph2": "Vi använder <strong>implantat av högsta kvalitet</strong> från välkända tillverkare. Under konsultationen går vi tillsammans igenom form, storlek och placering.",
+        "linkText": "Läs mer om bröstförstoring"
+      },
+      "breastLift": {
+        "title": "Bröstlyft",
+        "altText": "Illustration av bröstlyft",
+        "paragraph1": "<strong>Bröstlyft</strong> är en vanlig <strong>bröstoperation</strong> som återställer en fastare form genom att ta bort överskottshud, strama åt bröstvävnaden och lyfta <strong>bröstvårtan</strong>.",
+        "paragraph2": "För dig som vill ha mer volym upptill kan <strong>bröstimplantat</strong> kombineras med bröstlyftet för ett fylligare dekolletage.",
+        "linkText": "Läs mer om bröstlyft"
+      },
+      "muscleRelaxation": {
+        "title": "Hud & injektioner",
+        "altText": "Dekorativ ikon som symboliserar hud- och injektionsbehandlingar",
+        "paragraph1": "<strong>Muskelavslappnande behandling</strong> är en vanlig metod inom <strong>estetiska injektioner</strong> för att reducera rynkor. Med en tunn nål injiceras läkemedlet som får ansiktsmusklerna att slappna av.",
+        "paragraph2": "Behandlingen tar några minuter och du kan lämna kliniken direkt.",
+        "paragraph3": "Effekten syns efter cirka en vecka och varar i 3–6 månader. Dr Gribbe erbjuder en personlig konsultation inför behandlingen.",
+        "linkText": "Läs mer om hud & injektioner"
+      },
+      "beforeAndAfter": {
+        "title": "Före & efterbilder",
+        "altText": "Dekorativ ikon som symboliserar före- och efterbilder",
+        "paragraph1": "Se före- och efterbilder på patienter opererade av Dr Gribbe.",
+        "paragraph2": "Lorem ispum dolor sit amet, consectetur adipiscing elit.",
+        "linkText": "Se före- och efterbilder"
       }
     }
   },

@@ -10,7 +10,7 @@ import { Logo } from '../navigation/Logo'
 import { SocialMediaLinks } from './SocialMediaLinks'
 
 export const HeaderWithFooter = () => {
-  const t = useTranslations()
+  const t = useTranslations('contact')
   const pathname = usePathname()
   const [isAtBottom, setIsAtBottom] = useState(false)
 
@@ -62,22 +62,22 @@ export const HeaderWithFooter = () => {
       {isAtBottom && (
         <div className="bg-beige mx-auto flex flex-col items-center justify-center pb-3 lg:pr-16">
           <div className="flex flex-col text-center text-sm">
-            <span>{t('contact.contactUs')}</span>
+            <span>{t('contactUs')}</span>
             <span>
-              {t.rich('contact.email', {
+              {t.rich('email', {
                 email: (chunks) => (
                   <a href="mailto:info@dahliakliniken.se">{chunks}</a>
                 )
               })}
             </span>
-            <span>{t('contact.phone')}</span>
+            <span>{t('phone')}</span>
             <Button
               className="justify-center text-sm underline"
               inverted
               textButton
               onClick={() => window.CookieScript?.instance?.show()}
             >
-              {t('contact.handleCookies')}
+              {t('handleCookies')}
             </Button>
             <SocialMediaLinks className="justify-center pt-2" />
           </div>

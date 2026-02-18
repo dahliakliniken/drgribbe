@@ -18,7 +18,8 @@ type Link = { text: string; href: string; id: string }
 type LinkProps = Array<Link & { subLinks?: Link[] }>
 
 export const DropdownMenu: React.FC = () => {
-  const t = useTranslations()
+  const tCommon = useTranslations('common')
+  const tContact = useTranslations('contact')
   const [isOpen, setIsOpen] = useState(false)
   const [activeLink, setActiveLink] = useState<string | null>(null)
   const menuRef = useRef<HTMLDivElement>(null)
@@ -135,7 +136,7 @@ export const DropdownMenu: React.FC = () => {
       <HamburgerButton
         onClick={toggleMenu}
         ref={buttonRef}
-        label={isOpen ? t('common.closeMenu') : t('common.openMenu')}
+        label={isOpen ? tCommon('closeMenu') : tCommon('openMenu')}
         aria-haspopup="true"
         aria-expanded={isOpen}
         isOpen={isOpen}
@@ -155,10 +156,10 @@ export const DropdownMenu: React.FC = () => {
         <div className="lg:bg-custom-dark lg:before:bg-card-pattern hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:[background-size:110%] lg:before:bg-[20%_20%] lg:before:opacity-5">
           <div className="p-gapSpace flex flex-col font-light text-white">
             <H2 white className="!mb-2 text-lg">
-              {t('contact.contactUs')}
+              {tContact('contactUs')}
             </H2>
             <span>
-              {t.rich('contact.email', {
+              {tContact.rich('email', {
                 email: (chunks) => (
                   <a
                     href="mailto:info@dahliakliniken.se"
@@ -169,9 +170,9 @@ export const DropdownMenu: React.FC = () => {
                 )
               })}
             </span>
-            <span>{t('contact.phone')}</span>
+            <span>{tContact('phone')}</span>
             <H2 white className="mt-2 !mb-2 text-lg">
-              {t('contact.socialMedia')}
+              {tContact('socialMedia')}
             </H2>
             <SocialMediaLinks />
           </div>
@@ -181,7 +182,7 @@ export const DropdownMenu: React.FC = () => {
           className="self-end lg:hidden"
           onClick={() => setIsOpen(false)}
           icon={<ChevronIcon />}
-          label={t('common.closeMenu')}
+          label={tCommon('closeMenu')}
         />
         <div className="lg:bg-custom-gradient-desktop lg:relative lg:flex-1">
           <ul className="mb-gapSpace lg:m-gapSpace lg:ml-gapSpaceL flex w-full flex-col gap-5 font-light">
@@ -195,7 +196,7 @@ export const DropdownMenu: React.FC = () => {
             className="lg:m-gapSpace lg:ml-gapSpaceL rounded-lg text-center"
             onClick={() => setIsOpen(false)}
           >
-            {t('common.bookTimeAndConsultation')}
+            {tCommon('bookTimeAndConsultation')}
           </A>
         </div>
       </div>
