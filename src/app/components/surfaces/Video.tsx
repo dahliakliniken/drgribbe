@@ -1,162 +1,104 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import Image from 'next/image'
+import { useEffect, useRef, useState } from 'react'
 
 type VideoProps = {
   src: string
-  alt: string
+  poster?: string
+  fallbackImageSrc?: string
+  fallbackImageAlt?: string
   height?: string
   width?: string
   className?: string
-  showControls?: boolean
-  playbackRate?: number
-  fadeTransition?: boolean
-  fadeDuration?: number
+  autoPlay?: boolean
+  loop?: boolean
+  muted?: boolean
+  preload?: 'none' | 'metadata' | 'auto'
+  fallbackImagePriority?: boolean
+}
+
+const usePrefersReducedMotion = () => {
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() =>
+    typeof window !== 'undefined'
+      ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      : false
+  )
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const handleChange = (event: MediaQueryListEvent) => {
+      setPrefersReducedMotion(event.matches)
+    }
+
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
+  }, [])
+
+  return prefersReducedMotion
 }
 
 export const Video = ({
   src,
-  alt,
-  height = 'auto',
-  width = '100%',
+  poster,
+  fallbackImageSrc,
+  fallbackImageAlt = '',
+  height,
+  width,
   className = '',
-  showControls = true,
-  playbackRate = 1.0,
-  fadeTransition = false,
-  fadeDuration = 1.0
+  autoPlay = true,
+  loop = true,
+  muted = true,
+  preload = 'metadata',
+  fallbackImagePriority = false
 }: VideoProps) => {
-  const t = useTranslations()
   const videoRef = useRef<HTMLVideoElement>(null)
-  const [isPaused, setIsPaused] = useState(true)
-  const [isFading, setIsFading] = useState(false)
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
+  const [hasVideoError, setHasVideoError] = useState(false)
+  const prefersReducedMotion = usePrefersReducedMotion()
 
-  // Check for reduced motion preference and setup video initial state
   useEffect(() => {
     const video = videoRef.current
-    if (!video) return
-
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const isReducedMotion = mediaQuery.matches
-
-    // Set playback rate
-    video.playbackRate = playbackRate
-
-    // If user prefers reduced motion, ensure video is paused
-    if (isReducedMotion && !video.paused) {
+    if (video && prefersReducedMotion) {
       video.pause()
     }
+  }, [prefersReducedMotion])
 
-    // Listen for changes in user preference and update state from callback
-    const handleChange = (e: MediaQueryListEvent) => {
-      const nextPrefersReduced = e.matches
-      setPrefersReducedMotion(nextPrefersReduced)
-      if (nextPrefersReduced && video && !video.paused) {
-        video.pause()
-      }
-    }
+  const showImageFallback =
+    hasVideoError || (prefersReducedMotion && !!fallbackImageSrc)
 
-    mediaQuery.addEventListener('change', handleChange)
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange)
-    }
-  }, [playbackRate])
-
-  // Handle fade transition effect
-  const handleTimeUpdate = useCallback(() => {
-    const video = videoRef.current
-    if (!video || video.duration === Infinity) return
-
-    const fadeStartTime = video.duration - fadeDuration
-    setIsFading(video.currentTime >= fadeStartTime)
-  }, [fadeDuration])
-
-  useEffect(() => {
-    const video = videoRef.current
-    if (!fadeTransition || !video) return
-
-    video.addEventListener('timeupdate', handleTimeUpdate)
-    return () => video.removeEventListener('timeupdate', handleTimeUpdate)
-  }, [fadeTransition, handleTimeUpdate])
-
-  // Play/pause toggle
-  const togglePlayPause = useCallback(() => {
-    const video = videoRef.current
-    if (!video) return
-
-    if (video.paused) {
-      video.play().catch((err) => console.error('Failed to play video:', err))
-    } else {
-      video.pause()
-    }
-  }, [])
-
-  // Sync paused state with actual video state
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
-
-    const handlePause = () => setIsPaused(true)
-    const handlePlay = () => setIsPaused(false)
-
-    video.addEventListener('pause', handlePause)
-    video.addEventListener('play', handlePlay)
-
-    return () => {
-      video.removeEventListener('pause', handlePause)
-      video.removeEventListener('play', handlePlay)
-    }
-  }, [])
-
-  // Memoize the fade style to prevent unnecessary recalculations
-  const fadeStyle = useMemo(() => {
-    if (!fadeTransition) return undefined
-
-    const fadeInDuration = 0.5
-    const fadeOutDuration = fadeDuration
-
-    return {
-      opacity: isFading ? 0 : 1,
-      transition: `opacity ${
-        isFading ? fadeOutDuration : fadeInDuration
-      }s ease-${isFading ? 'out' : 'in'}`
-    }
-  }, [fadeTransition, isFading, fadeDuration])
+  const shouldAutoPlay = autoPlay && !prefersReducedMotion
+  const containerStyle = {
+    ...(width ? { width } : {}),
+    ...(height ? { height } : {})
+  }
 
   return (
-    <div className={`relative ${className}`} style={{ width, height }}>
-      <video
-        ref={videoRef}
-        className="h-full w-full object-cover"
-        style={fadeStyle}
-        autoPlay={!prefersReducedMotion}
-        muted
-        loop
-        playsInline
-        aria-label={alt}
-        aria-hidden={!alt}
-        tabIndex={showControls ? 0 : -1}
-        controls={showControls}
-      >
-        <source src={src} type="video/mp4" />
-        {t('video.fallback')}
-      </video>
-
-      {showControls && (
-        <button
-          className="absolute inset-0 flex h-full w-full items-center justify-center bg-black/0 transition-colors hover:bg-black/20"
-          onClick={togglePlayPause}
-          aria-label={isPaused ? t('video.play') : t('video.pause')}
+    <div className={`relative ${className}`} style={containerStyle}>
+      {showImageFallback && fallbackImageSrc ? (
+        <Image
+          src={fallbackImageSrc}
+          alt={fallbackImageAlt}
+          fill
+          className="h-full w-full object-cover"
+          sizes="100vw"
+          priority={fallbackImagePriority}
+        />
+      ) : (
+        <video
+          ref={videoRef}
+          className="h-full w-full object-cover"
+          autoPlay={shouldAutoPlay}
+          muted={muted}
+          loop={loop}
+          playsInline
+          preload={preload}
+          poster={poster}
+          aria-hidden="true"
+          onError={() => setHasVideoError(true)}
         >
-          {isPaused ? (
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-black/50">
-              <div className="ml-1 h-0 w-0 border-t-8 border-b-8 border-l-12 border-transparent border-l-white"></div>
-            </div>
-          ) : (
-            <span className="sr-only">{t('video.pause')}</span>
-          )}
-        </button>
+          <source src={src} type="video/mp4" />
+          {'Your browser does not support the video tag.'}
+        </video>
       )}
     </div>
   )
