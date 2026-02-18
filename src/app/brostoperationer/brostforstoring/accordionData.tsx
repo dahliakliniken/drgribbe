@@ -5,43 +5,43 @@ import { P } from '@/components/typography/P'
 
 export const useAccordionData = () => {
   const tAccordion = useTranslations('brostforstoring.page.technique.accordion')
-  const ft = useTranslations('fragor-och-svar.page.faqAccordion')
+  const t = useTranslations('fragor-och-svar.page.faqAccordion')
 
   const faqAccordion = [
     {
       id: crypto.randomUUID(),
-      title: ft('question4.question'),
-      content: <P small>{ft('question4.answer')}</P>
+      title: t('question4.question'),
+      content: <P small>{t('question4.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('question11.question'),
-      content: <P small>{ft('question11.answer')}</P>
+      title: t('question11.question'),
+      content: <P small>{t('question11.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('question12.question'),
-      content: <P small>{ft('question12.answer')}</P>
+      title: t('question12.question'),
+      content: <P small>{t('question12.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('question1.question'),
-      content: <P small>{ft('question1.answer')}</P>
+      title: t('question1.question'),
+      content: <P small>{t('question1.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('question24.question'),
-      content: <P small>{ft('question24.answer')}</P>
+      title: t('question24.question'),
+      content: <P small>{t('question24.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('question21.question'),
-      content: <P small>{ft('question21.answer')}</P>
+      title: t('question21.question'),
+      content: <P small>{t('question21.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: ft('question30.question'),
-      content: <P small>{ft('question30.answer')}</P>
+      title: t('question30.question'),
+      content: <P small>{t('question30.answer')}</P>
     }
   ]
 

@@ -18,6 +18,7 @@ import { ephesis, josefinSans } from './fonts'
 export const runtime = 'nodejs'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title:
     'Dahliakliniken – Expert på estetisk bröstförstoring och bröstlyft i Stockholm',
   description:
