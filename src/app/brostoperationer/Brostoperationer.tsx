@@ -25,28 +25,29 @@ import { useAccordionItems } from './accordionData'
 
 const Brostoperationer = () => {
   const tPage = useTranslations('brostoperationer.page')
-  const tAlt = useTranslations('brostoperationer.page.altText')
   const tCommon = useTranslations('common')
-  const tBeforeOperation = useTranslations('beforeOperation')
-  const tAfterOperation = useTranslations('afterOperation')
-  const tAftercare = useTranslations('aftercare')
-  const tAfterFirstReturnVisit = useTranslations('afterFirstReturnVisit')
-  const messages = useMessages()
+  const messages = useMessages() as Record<string, any>
   const [surgeryItems, complications] = useAccordionItems()
-  const beforeOperationKeys = Object.keys(messages.beforeOperation)
-  const afterOperationKeys = Object.keys(messages.afterOperation)
-  const aftercareKeys = Object.keys(messages.aftercare)
-  const afterFirstReturnVisitKeys = Object.keys(messages.afterFirstReturnVisit)
+  const beforeOperationKeys = Object.keys(
+    messages.brostoperationer.page.beforeOperation
+  )
+  const afterOperationKeys = Object.keys(
+    messages.brostoperationer.page.afterOperation
+  )
+  const aftercareKeys = Object.keys(messages.brostoperationer.page.aftercare)
+  const afterFirstReturnVisitKeys = Object.keys(
+    messages.brostoperationer.page.afterFirstReturnVisit
+  )
 
   const beforeOperationItems = beforeOperationKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3'] // Predefined keys for texts
     const contentArray = contentKeys
-      .filter((textKey) => tBeforeOperation.has(`${key}.${textKey}`)) // Filter out texts that don't exist
-      .map((textKey) => tBeforeOperation(`${key}.${textKey}`))
+      .filter((textKey) => tPage.has(`beforeOperation.${key}.${textKey}`)) // Filter out texts that don't exist
+      .map((textKey) => tPage(`beforeOperation.${key}.${textKey}`))
 
     return {
       id: key,
-      title: tBeforeOperation(`${key}.title`),
+      title: tPage(`beforeOperation.${key}.title`),
       content: contentArray.join('\n')
     }
   })
@@ -54,12 +55,12 @@ const Brostoperationer = () => {
   const afterOperationItems = afterOperationKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3']
     const content = contentKeys
-      .filter((textKey) => tAfterOperation.has(`${key}.${textKey}`))
-      .map((textKey) => tAfterOperation(`${key}.${textKey}`))
+      .filter((textKey) => tPage.has(`afterOperation.${key}.${textKey}`))
+      .map((textKey) => tPage(`afterOperation.${key}.${textKey}`))
 
     return {
       id: key,
-      title: tAfterOperation(`${key}.title`),
+      title: tPage(`afterOperation.${key}.title`),
       content
     }
   })
@@ -67,12 +68,12 @@ const Brostoperationer = () => {
   const aftercareItems = aftercareKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3', 'text4']
     const content = contentKeys
-      .filter((textKey) => tAftercare.has(`${key}.${textKey}`))
-      .map((textKey) => tAftercare(`${key}.${textKey}`))
+      .filter((textKey) => tPage.has(`aftercare.${key}.${textKey}`))
+      .map((textKey) => tPage(`aftercare.${key}.${textKey}`))
 
     return {
       id: key,
-      title: tAftercare(`${key}.title`),
+      title: tPage(`aftercare.${key}.title`),
       content
     }
   })
@@ -80,12 +81,14 @@ const Brostoperationer = () => {
   const afterFirstReturnVisitItems = afterFirstReturnVisitKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3', 'text4']
     const content = contentKeys
-      .filter((textKey) => tAfterFirstReturnVisit.has(`${key}.${textKey}`))
-      .map((textKey) => tAfterFirstReturnVisit(`${key}.${textKey}`))
+      .filter((textKey) =>
+        tPage.has(`afterFirstReturnVisit.${key}.${textKey}`)
+      )
+      .map((textKey) => tPage(`afterFirstReturnVisit.${key}.${textKey}`))
 
     return {
       id: key,
-      title: tAfterFirstReturnVisit(`${key}.title`),
+      title: tPage(`afterFirstReturnVisit.${key}.title`),
       content
     }
   })
@@ -120,7 +123,7 @@ const Brostoperationer = () => {
               <H2>{tPage('process.sectionTitle')}</H2>
               <Image
                 src={ConsultationImage}
-                alt={tAlt('consultation')}
+                alt={tPage('altText.consultation')}
                 className="max-h-svh object-cover object-center"
               />
               <SpaceContainer noPadding spaceVertically>
@@ -168,7 +171,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={DayOfSurgeryImage}
-              alt={tAlt('dayOfSurgery')}
+              alt={tPage('altText.dayOfSurgery')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -195,7 +198,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={SurgeryImage}
-              alt={tAlt('surgery')}
+              alt={tPage('altText.surgery')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -216,7 +219,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={PostSurgeryImage}
-              alt={tAlt('postSurgery')}
+              alt={tPage('altText.postSurgery')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>
@@ -264,7 +267,7 @@ const Brostoperationer = () => {
           <Pillar>
             <Image
               src={aterbesokImage}
-              alt={tAlt('firstReturnVisit')}
+              alt={tPage('altText.firstReturnVisit')}
               className="max-h-svh object-cover object-center"
             />
             <SpaceContainer noPadding spaceTop>

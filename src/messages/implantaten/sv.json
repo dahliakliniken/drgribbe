@@ -184,6 +184,11 @@
           "paragraph2": "Dahliakliniken har tillgång till och använder samtliga bröstimplantat från Polytech. Kombinationen av innehållet B-lite® med ytan av polyuretan Microthane® ger bröstimplantat med låg vikt och stöd från vävnaden. Exempel på runda bröstimplantat med denna kombination är hög profil 460cc, 510cc, 565cc och 625cc samt extra hög profil (samma som ultrahög profil) 495cc, 555cc, 615cc, 685cc och 755cc."
         }
       }
+    },
+    "altText": {
+      "motiva-table": "I tabellen kan du se hur olika bredd i kolumnen till vänster ger olika projektion och volym",
+      "polytechimplants": "Bild på en patient som håller i ett implantat från Polytech",
+      "dayOfSurgery": "En kirurg i gröna operationskläder visar vägen för en patient klädd i vit morgonrock och grön operationsmössa i en sjukhuskorridor med ljus belysning."
     }
   }
 }
