@@ -1,3 +1,11 @@
+# [1.25.0-beta.3](https://github.com/dahliakliniken/drgribbe/compare/v1.25.0-beta.2...v1.25.0-beta.3) (2026-03-06)
+
+
+### Bug Fixes
+
+* change url for tack page ([b62a7fb](https://github.com/dahliakliniken/drgribbe/commit/b62a7fb95cc18f223779ce320eecd8156837b540))
+* update import path for Tack component in tack page ([b46e711](https://github.com/dahliakliniken/drgribbe/commit/b46e711be2db2c01a8bc6c7b1899d5ec5222314c))
+
 # [1.25.0-beta.2](https://github.com/dahliakliniken/drgribbe/compare/v1.25.0-beta.1...v1.25.0-beta.2) (2026-02-18)
 
 
