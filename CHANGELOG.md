@@ -1,3 +1,10 @@
+# [1.25.0-beta.4](https://github.com/dahliakliniken/drgribbe/compare/v1.25.0-beta.3...v1.25.0-beta.4) (2026-03-06)
+
+
+### Bug Fixes
+
+* correct formatting of cancellation rules in sv.json ([268d88a](https://github.com/dahliakliniken/drgribbe/commit/268d88a605fb64bd548f7b67c4bad6e67352ac83))
+
 # [1.25.0-beta.3](https://github.com/dahliakliniken/drgribbe/compare/v1.25.0-beta.2...v1.25.0-beta.3) (2026-03-06)
 
 
