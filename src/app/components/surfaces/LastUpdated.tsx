@@ -2,11 +2,13 @@
 
 import classNames from 'classnames'
 import { usePathname } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 
 import { P } from '@/app/components/typography/P'
 import { getLastModified } from '@/utils/getLastModified'
 
 export function LastUpdated() {
+  const t = useTranslations('common')
   const pathname = usePathname() || '/'
   const isHomePage = pathname === '/'
   const dateModified = getLastModified(pathname)
@@ -25,7 +27,7 @@ export function LastUpdated() {
       )}
     >
       <P className="text-sm">
-        <span>{'Senast uppdaterad:'}</span>{' '}
+        <span>{t('lastUpdatedLabel')}</span>{' '}
         <time
           dateTime={dateModified}
           itemProp="dateModified"

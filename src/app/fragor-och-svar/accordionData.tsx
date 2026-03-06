@@ -4,19 +4,19 @@ import { A } from '@/components/typography/A'
 import { P } from '@/components/typography/P'
 
 export const useAccordionItems = () => {
-  const t = useTranslations('fragorOchSvar')
+  const t = useTranslations('fragor-och-svar.page.faqAccordion')
   return [
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question1.question'),
-      content: <P small>{t('accordion.question1.answer')}</P>
+      title: t('question1.question'),
+      content: <P small>{t('question1.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question2.question'),
+      title: t('question2.question'),
       content: (
         <P small>
-          {t.rich('accordion.question2.answer', {
+          {t.rich('question2.answer', {
             link: (chunks) => (
               <A href="/brostoperationer#forberedelser">{chunks}</A>
             )
@@ -26,143 +26,143 @@ export const useAccordionItems = () => {
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question3.question'),
-      content: <P small>{t('accordion.question3.answer')}</P>
+      title: t('question3.question'),
+      content: <P small>{t('question3.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question4.question'),
-      content: <P small>{t('accordion.question4.answer')}</P>
+      title: t('question4.question'),
+      content: <P small>{t('question4.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question5.question'),
-      content: <P small>{t('accordion.question5.answer')}</P>
+      title: t('question5.question'),
+      content: <P small>{t('question5.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question6.question'),
-      content: <P small>{t('accordion.question6.answer')}</P>
+      title: t('question6.question'),
+      content: <P small>{t('question6.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question7.question'),
-      content: <P small>{t('accordion.question7.answer')}</P>
+      title: t('question7.question'),
+      content: <P small>{t('question7.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question8.question'),
-      content: <P small>{t('accordion.question8.answer')}</P>
+      title: t('question8.question'),
+      content: <P small>{t('question8.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question9.question'),
-      content: <P small>{t('accordion.question9.answer')}</P>
+      title: t('question9.question'),
+      content: <P small>{t('question9.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question10.question'),
-      content: <P small>{t('accordion.question10.answer')}</P>
+      title: t('question10.question'),
+      content: <P small>{t('question10.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question11.question'),
-      content: <P small>{t('accordion.question11.answer')}</P>
+      title: t('question11.question'),
+      content: <P small>{t('question11.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question12.question'),
-      content: <P small>{t('accordion.question12.answer')}</P>
+      title: t('question12.question'),
+      content: <P small>{t('question12.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question13.question'),
-      content: <P small>{t('accordion.question13.answer')}</P>
+      title: t('question13.question'),
+      content: <P small>{t('question13.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question14.question'),
-      content: <P small>{t('accordion.question14.answer')}</P>
+      title: t('question14.question'),
+      content: <P small>{t('question14.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question15.question'),
-      content: <P small>{t('accordion.question15.answer')}</P>
+      title: t('question15.question'),
+      content: <P small>{t('question15.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question16.question'),
-      content: <P small>{t('accordion.question16.answer')}</P>
+      title: t('question16.question'),
+      content: <P small>{t('question16.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question17.question'),
-      content: <P small>{t('accordion.question17.answer')}</P>
+      title: t('question17.question'),
+      content: <P small>{t('question17.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question18.question'),
-      content: <P small>{t('accordion.question18.answer')}</P>
+      title: t('question18.question'),
+      content: <P small>{t('question18.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question19.question'),
-      content: <P small>{t('accordion.question19.answer')}</P>
+      title: t('question19.question'),
+      content: <P small>{t('question19.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question20.question'),
-      content: <P small>{t('accordion.question20.answer')}</P>
+      title: t('question20.question'),
+      content: <P small>{t('question20.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question21.question'),
-      content: <P small>{t('accordion.question21.answer')}</P>
+      title: t('question21.question'),
+      content: <P small>{t('question21.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question22.question'),
-      content: <P small>{t('accordion.question22.answer')}</P>
+      title: t('question22.question'),
+      content: <P small>{t('question22.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question23.question'),
-      content: <P small>{t('accordion.question23.answer')}</P>
+      title: t('question23.question'),
+      content: <P small>{t('question23.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question24.question'),
-      content: <P small>{t('accordion.question24.answer')}</P>
+      title: t('question24.question'),
+      content: <P small>{t('question24.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question25.question'),
-      content: <P small>{t('accordion.question25.answer')}</P>
+      title: t('question25.question'),
+      content: <P small>{t('question25.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question26.question'),
-      content: <P small>{t('accordion.question26.answer')}</P>
+      title: t('question26.question'),
+      content: <P small>{t('question26.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question27.question'),
-      content: <P small>{t('accordion.question27.answer')}</P>
+      title: t('question27.question'),
+      content: <P small>{t('question27.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question28.question'),
-      content: <P small>{t('accordion.question28.answer')}</P>
+      title: t('question28.question'),
+      content: <P small>{t('question28.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question29.question'),
-      content: <P small>{t('accordion.question29.answer')}</P>
+      title: t('question29.question'),
+      content: <P small>{t('question29.answer')}</P>
     },
     {
       id: crypto.randomUUID(),
-      title: t('accordion.question30.question'),
-      content: <P small>{t('accordion.question30.answer')}</P>
+      title: t('question30.question'),
+      content: <P small>{t('question30.answer')}</P>
     }
   ]
 }

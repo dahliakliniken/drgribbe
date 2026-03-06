@@ -28,38 +28,6 @@ import { H3 } from './components/typography/H3'
 import { P } from './components/typography/P'
 import { BgColors } from './types'
 
-const schemaData = {
-  '@context': 'https://schema.org',
-  '@type': 'MedicalClinic',
-  '@id': CLINIC_ID,
-  name: BUSINESS_NAME,
-  image: BUSINESS_IMAGES.openGraph,
-  url: BUSINESS_CONTACT.url,
-  telephone: BUSINESS_CONTACT.telephone,
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: BUSINESS_ADDRESS.streetAddress,
-    addressLocality: BUSINESS_ADDRESS.addressLocality,
-    postalCode: BUSINESS_ADDRESS.postalCode,
-    addressCountry: BUSINESS_ADDRESS.addressCountry
-  },
-  description:
-    'Dahliakliniken är en modern klinik i Stockholm som är specialiserad på estetiska bröstoperationer som bröstförstoring, bröstlyft och bröstförminskning.',
-  medicalSpecialty: {
-    '@type': 'MedicalSpecialty',
-    name: 'PlasticSurgery'
-  },
-  founder: {
-    '@type': 'Person',
-    name: 'Dr Örjan Gribbe'
-  },
-  areaServed: {
-    '@type': 'Place',
-    name: 'Stockholm'
-  },
-  sameAs: [BUSINESS_SOCIAL.facebook, BUSINESS_SOCIAL.instagram]
-}
-
 export const metadata = {
   other: {
     'google-site-verification': 'scjbJTK54uTe66Okuk5_r-T36DpV5FkEsy8eWukJ28A'
@@ -67,7 +35,39 @@ export const metadata = {
 }
 
 export default async function Home() {
-  const t = await getTranslations()
+  const tPage = await getTranslations('home-page.page')
+  const tCommon = await getTranslations('common')
+
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalClinic',
+    '@id': CLINIC_ID,
+    name: BUSINESS_NAME,
+    image: BUSINESS_IMAGES.openGraph,
+    url: BUSINESS_CONTACT.url,
+    telephone: BUSINESS_CONTACT.telephone,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: BUSINESS_ADDRESS.streetAddress,
+      addressLocality: BUSINESS_ADDRESS.addressLocality,
+      postalCode: BUSINESS_ADDRESS.postalCode,
+      addressCountry: BUSINESS_ADDRESS.addressCountry
+    },
+    description: tPage('schema.description'),
+    medicalSpecialty: {
+      '@type': 'MedicalSpecialty',
+      name: 'PlasticSurgery'
+    },
+    founder: {
+      '@type': 'Person',
+      name: tPage('schema.founderName')
+    },
+    areaServed: {
+      '@type': 'Place',
+      name: tPage('schema.areaServedName')
+    },
+    sameAs: [BUSINESS_SOCIAL.facebook, BUSINESS_SOCIAL.instagram]
+  }
 
   return (
     <>
@@ -80,7 +80,7 @@ export default async function Home() {
           <SpaceContainer noPadding>
             <Pillar noPadding>
               <H1>
-                {t.rich('aboutBox.title', {
+                {tPage.rich('aboutBox.title', {
                   span: (chunks) => (
                     <span className="block text-lg">{chunks}</span>
                   ),
@@ -88,17 +88,17 @@ export default async function Home() {
                 })}
               </H1>
               <P className="fat">
-                {t.rich('aboutBox.newClinicName', {
+                {tPage.rich('aboutBox.newClinicName', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
               <P>
-                {t.rich('aboutBox.welcomeMessage', {
+                {tPage.rich('aboutBox.welcomeMessage', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
               <P>
-                {t.rich('aboutBox.paragraph1', {
+                {tPage.rich('aboutBox.paragraph1', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
@@ -109,14 +109,14 @@ export default async function Home() {
 
       <SpaceContainer as="section" ariaLabelledBy="testimonials-heading">
         <Pillar>
-          <H2 id="testimonials-heading">{t('testimonials.title')}</H2>
+          <H2 id="testimonials-heading">{tPage('testimonials.title')}</H2>
         </Pillar>
         <Testimonials />
       </SpaceContainer>
 
       <SpaceContainer as="section">
         <Pillar>
-          <H2>{t('treatmentBox.title')}</H2>
+          <H2>{tPage('treatmentSection.title')}</H2>
         </Pillar>
 
         <div className="m-auto xl:max-w-7xl">
@@ -131,11 +131,11 @@ export default async function Home() {
           content={
             <>
               <H2 upperCase className="text-center">
-                {t('common.bookConsultation')}
+                {tCommon('bookConsultation')}
               </H2>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
-                  {t('common.bookNow')}
+                  {tCommon('bookNow')}
                 </A>
               </div>
             </>
@@ -151,57 +151,57 @@ export default async function Home() {
           <Pillar>
             <Image
               src={Consultation}
-              alt="Bild på dr Örjan Gribbe som visar olika bröstimplantat för en patient."
+              alt={tPage('altText.consultationImage')}
             />
-            <span className="imagetext">{t('profileCard.imageText')}</span>
+            <span className="imagetext">{tPage('profileCard.imageText')}</span>
             <span className="imagetext-inline">
-              {t('profileCard.paragraph1')}
+              {tPage('profileCard.paragraph1')}
             </span>
             <span className="imagetext-inline">
-              <A href={'https://sfep.se/'}>{t('profileCard.linkpre')}</A>
+              <A href={'https://sfep.se/'}>{tPage('profileCard.linkpre')}</A>
             </span>
 
             <SpaceContainer noPadding spaceTop>
               <H2 id="om-kliniken" className="scroll-mt-4 lg:scroll-mt-24">
-                {t.rich('aboutClinic.title', {
+                {tPage.rich('aboutClinic.title', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </H2>
               <P>
-                {t.rich('aboutClinic.paragraph1', {
+                {tPage.rich('aboutClinic.paragraph1', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
-              <P>{t('aboutClinic.paragraph2')}</P>
+              <P>{tPage('aboutClinic.paragraph2')}</P>
               <SpaceContainer noPadding spaceVertically>
                 <Image
                   src={belowheadingImage}
-                  alt={t('altText.brostoperationerConsultation')}
+                  alt={tPage('altText.consultationImage')}
                   className="max-h-svh object-cover object-center"
                 />
               </SpaceContainer>
               <P>
-                {t.rich('aboutClinic.paragraph3', {
+                {tPage.rich('aboutClinic.paragraph3', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
               <P>
-                {t.rich('aboutClinic.paragraph4', {
+                {tPage.rich('aboutClinic.paragraph4', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
 
               <H3>
-                {t.rich('aboutClinic.ourPhilosophy', {
+                {tPage.rich('aboutClinic.ourPhilosophy', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </H3>
               <P>
-                {t.rich('aboutClinic.paragraph5', {
+                {tPage.rich('aboutClinic.paragraph5', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
-              <A href={'/garanti#phil'}>{t('aboutClinic.readMore')}</A>
+              <A href={'/garanti#phil'}>{tPage('aboutClinic.readMore')}</A>
             </SpaceContainer>
           </Pillar>
         }
@@ -213,33 +213,33 @@ export default async function Home() {
         content={
           <Pillar>
             <H2 white>
-              {t.rich('operationDepartment.title', {
+              {tPage.rich('operationDepartment.title', {
                 strong: (chunks) => <strong>{chunks}</strong>
               })}
             </H2>
             <div className="lg:columns-2">
               <P white>
-                {t.rich('operationDepartment.text1', {
+                {tPage.rich('operationDepartment.text1', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
               <P white>
-                {t.rich('operationDepartment.text2', {
+                {tPage.rich('operationDepartment.text2', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
               <P white>
-                {t.rich('operationDepartment.text3', {
+                {tPage.rich('operationDepartment.text3', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
               <P white>
-                {t.rich('operationDepartment.text4', {
+                {tPage.rich('operationDepartment.text4', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
               <P white>
-                {t.rich('operationDepartment.text5', {
+                {tPage.rich('operationDepartment.text5', {
                   strong: (chunks) => <strong>{chunks}</strong>
                 })}
               </P>
@@ -251,7 +251,7 @@ export default async function Home() {
       <Pillar>
         <Image
           src={WaitingRoom}
-          alt={t('altText.patientRoom')}
+          alt={tPage('altText.patientRoom')}
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
         />
       </Pillar>
@@ -263,16 +263,12 @@ export default async function Home() {
           content={
             <Pillar>
               <H2 className="text-center">
-                {'Boka en konsultation med vår specialist idag'}
+                {tPage('cta.title')}
               </H2>
-              <P className="text-center">
-                {
-                  'Boka en konsultation där vi tillsammans går igenom dina önskemål och möjligheter'
-                }
-              </P>
+              <P className="text-center">{tPage('cta.description')}</P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
-                  {t('common.bookNow')}
+                  {tCommon('bookNow')}
                 </A>
               </div>
             </Pillar>

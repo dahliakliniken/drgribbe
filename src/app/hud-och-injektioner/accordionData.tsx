@@ -4,104 +4,55 @@ import { H3 } from '@/components/typography/H3'
 import { P } from '@/components/typography/P'
 
 export const useAccordionItems = () => {
-  const t = useTranslations()
+  const tTreatmentAreas = useTranslations(
+    'hud-och-injektioner.page.treatmentAreas.accordion'
+  )
+  const tOtherAreas = useTranslations(
+    'hud-och-injektioner.page.otherAreas.accordion'
+  )
   const treatmentAreasItems = [
     {
       id: 'frownLines',
-      title: t('hudochinjektioner.treatmentAreas.accordion.frownLines.heading'),
+      title: tTreatmentAreas('frownLines.heading'),
       content: (
         <>
-          <P>
-            {t('hudochinjektioner.treatmentAreas.accordion.frownLines.text1')}
-          </P>
+          <P>{tTreatmentAreas('frownLines.text1')}</P>
 
-          <H3>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.frownLines.treatment.heading'
-            )}
-          </H3>
-          <P>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.frownLines.treatment.text1'
-            )}
-          </P>
+          <H3>{tTreatmentAreas('frownLines.treatment.heading')}</H3>
+          <P>{tTreatmentAreas('frownLines.treatment.text1')}</P>
 
-          <H3>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.frownLines.effect.heading'
-            )}
-          </H3>
-          <P>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.frownLines.effect.text1'
-            )}
-          </P>
+          <H3>{tTreatmentAreas('frownLines.effect.heading')}</H3>
+          <P>{tTreatmentAreas('frownLines.effect.text1')}</P>
         </>
       )
     },
     {
       id: 'forehead',
-      title: t('hudochinjektioner.treatmentAreas.accordion.forehead.heading'),
+      title: tTreatmentAreas('forehead.heading'),
       content: (
         <>
-          <P>
-            {t('hudochinjektioner.treatmentAreas.accordion.forehead.text1')}
-          </P>
+          <P>{tTreatmentAreas('forehead.text1')}</P>
 
-          <H3>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.forehead.treatment.heading'
-            )}
-          </H3>
-          <P>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.forehead.treatment.text1'
-            )}
-          </P>
+          <H3>{tTreatmentAreas('forehead.treatment.heading')}</H3>
+          <P>{tTreatmentAreas('forehead.treatment.text1')}</P>
 
-          <H3>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.forehead.effect.heading'
-            )}
-          </H3>
-          <P>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.forehead.effect.text1'
-            )}
-          </P>
+          <H3>{tTreatmentAreas('forehead.effect.heading')}</H3>
+          <P>{tTreatmentAreas('forehead.effect.text1')}</P>
         </>
       )
     },
     {
       id: 'crowFeet',
-      title: t('hudochinjektioner.treatmentAreas.accordion.crowFeet.heading'),
+      title: tTreatmentAreas('crowFeet.heading'),
       content: (
         <>
-          <P>
-            {t('hudochinjektioner.treatmentAreas.accordion.crowFeet.text1')}
-          </P>
+          <P>{tTreatmentAreas('crowFeet.text1')}</P>
 
-          <H3>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.crowFeet.treatment.heading'
-            )}
-          </H3>
-          <P>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.crowFeet.treatment.text1'
-            )}
-          </P>
+          <H3>{tTreatmentAreas('crowFeet.treatment.heading')}</H3>
+          <P>{tTreatmentAreas('crowFeet.treatment.text1')}</P>
 
-          <H3>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.crowFeet.effect.heading'
-            )}
-          </H3>
-          <P>
-            {t(
-              'hudochinjektioner.treatmentAreas.accordion.crowFeet.effect.text1'
-            )}
-          </P>
+          <H3>{tTreatmentAreas('crowFeet.effect.heading')}</H3>
+          <P>{tTreatmentAreas('crowFeet.effect.text1')}</P>
         </>
       )
     }
@@ -110,67 +61,53 @@ export const useAccordionItems = () => {
   const otherAreasItems = [
     {
       id: 'eyeBrow',
-      title: t('hudochinjektioner.otherAreas.accordion.eyeBrow.heading'),
-      content: (
-        <P>{t('hudochinjektioner.otherAreas.accordion.eyeBrow.text1')}</P>
-      )
+      title: tOtherAreas('eyeBrow.heading'),
+      content: <P>{tOtherAreas('eyeBrow.text1')}</P>
     },
     {
       id: 'mouthCorner',
-      title: t('hudochinjektioner.otherAreas.accordion.mouthCorner.heading'),
-      content: (
-        <P>{t('hudochinjektioner.otherAreas.accordion.mouthCorner.text1')}</P>
-      )
+      title: tOtherAreas('mouthCorner.heading'),
+      content: <P>{tOtherAreas('mouthCorner.text1')}</P>
     },
     {
       id: 'nose',
-      title: t('hudochinjektioner.otherAreas.accordion.nose.heading'),
-      content: <P>{t('hudochinjektioner.otherAreas.accordion.nose.text1')}</P>
+      title: tOtherAreas('nose.heading'),
+      content: <P>{tOtherAreas('nose.text1')}</P>
     },
     {
       id: 'lipFlip',
-      title: t('hudochinjektioner.otherAreas.accordion.lipFlip.heading'),
-      content: (
-        <P>{t('hudochinjektioner.otherAreas.accordion.lipFlip.text1')}</P>
-      )
+      title: tOtherAreas('lipFlip.heading'),
+      content: <P>{tOtherAreas('lipFlip.text1')}</P>
     },
     {
       id: 'gummySmile',
-      title: t('hudochinjektioner.otherAreas.accordion.gummySmile.heading'),
-      content: (
-        <P>{t('hudochinjektioner.otherAreas.accordion.gummySmile.text1')}</P>
-      )
+      title: tOtherAreas('gummySmile.heading'),
+      content: <P>{tOtherAreas('gummySmile.text1')}</P>
     },
     {
       id: 'chin',
-      title: t('hudochinjektioner.otherAreas.accordion.chin.heading'),
-      content: <P>{t('hudochinjektioner.otherAreas.accordion.chin.text1')}</P>
+      title: tOtherAreas('chin.heading'),
+      content: <P>{tOtherAreas('chin.text1')}</P>
     },
     {
       id: 'neck',
-      title: t('hudochinjektioner.otherAreas.accordion.neck.heading'),
-      content: <P>{t('hudochinjektioner.otherAreas.accordion.neck.text1')}</P>
+      title: tOtherAreas('neck.heading'),
+      content: <P>{tOtherAreas('neck.text1')}</P>
     },
     {
       id: 'bruxism',
-      title: t('hudochinjektioner.otherAreas.accordion.bruxism.heading'),
-      content: (
-        <P>{t('hudochinjektioner.otherAreas.accordion.bruxism.text1')}</P>
-      )
+      title: tOtherAreas('bruxism.heading'),
+      content: <P>{tOtherAreas('bruxism.text1')}</P>
     },
     {
       id: 'headache',
-      title: t('hudochinjektioner.otherAreas.accordion.headache.heading'),
-      content: (
-        <P>{t('hudochinjektioner.otherAreas.accordion.headache.text1')}</P>
-      )
+      title: tOtherAreas('headache.heading'),
+      content: <P>{tOtherAreas('headache.text1')}</P>
     },
     {
       id: 'sweating',
-      title: t('hudochinjektioner.otherAreas.accordion.sweating.heading'),
-      content: (
-        <P>{t('hudochinjektioner.otherAreas.accordion.sweating.text1')}</P>
-      )
+      title: tOtherAreas('sweating.heading'),
+      content: <P>{tOtherAreas('sweating.text1')}</P>
     }
   ]
 

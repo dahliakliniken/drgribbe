@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
 export const Logo = () => {
-  const t = useTranslations()
+  const t = useTranslations('common')
   return (
     <div className="bg-beige flex w-full justify-center">
       <Link href="/">

@@ -1,0 +1,29 @@
+{
+  "page": {
+    "title": "Priser",
+    "readMore": "Läs mer om våra garantier här",
+    "paymentRules": {
+      "heading": "Betalningsregler",
+      "text1": "Senast 16 dagar innan operation ska full betalning ske.",
+      "text2": "21 dagar (3 veckor) innan operation ska minst 25 % av operationskostnaden vara betald.",
+      "text3": "Om operationen bokas in med kort varsel så gäller andra villkor som bestäms vid konsultationen."
+    },
+    "cancellationRules": {
+      "heading": "Av- och ombokningsregler",
+      "text1": "Avbokning av nybesök/konsultationstid ska ske senast 24 timmar innan bokad tid. Om avbokning görs senare debiteras en avgift för uteblivet besök om 500 kronor.",
+      "text2": "Du har alltid möjlighet att av- eller omboka din operation men detta måste enligt ovan ske minst 21 dagar (3 veckor) innan avtalad operationstid för att vara kostnadsfri.",
+      "text8": "Nybesök/konsultationstider är kostnadsfria. Ytterligare konsultationer 'återbesök inför operation' är också kostnadsfria för det fall operation bokas och genomförs, annars debiteras dessa besök 500 kr per tillfälle.",
+      "text3": "Avbokning ska ske muntligen per telefon.",
+      "text4": "Vid avbokning av operationstid senare än 21 dagar debiterar vi enligt följande.",
+      "text5": "Vid av/ombokning som sker 16-7 dagar innan avtalad operationstid debiteras 50 procent av operationskostnaden.",
+      "text6": "Vid av/ombokning som sker 7-2 dagar innan avtalad operationstid debiteras 75 procent.",
+      "text7": "Vid av/ombokning som sker 21-16 dagar innan avtalad operationstid debiteras 25 procent av operationskostnaden.",
+      "text9": "Vid av/ombokning som sker 2-0 dagar innan avtalad operationstid debiteras fullt pris."
+    },
+    "financing": {
+      "heading": "Finansiering och delbetalning",
+      "text1": "Vi samarbetar med Medical Finance, som erbjuder patienter finansiering av privat vård. Det ger dig möjlighet till delbetalning av din operation och en räntefri avbetalning på upp till 24 månader.",
+      "text2": "Tala med reception så hjälper de dig."
+    }
+  }
+}
