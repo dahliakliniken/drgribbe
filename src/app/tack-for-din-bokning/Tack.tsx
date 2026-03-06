@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 
 import { H2 } from '@/app/components/typography/H2'
 import { P } from '@/app/components/typography/P'
-import { StepsSection } from '@/app/tack/StepsSection'
+import { StepsSection } from '@/app/tack-for-din-bokning/StepsSection'
 import { SpaceContainer } from '@/components/layout/SpaceContainer'
 import { H1 } from '@/components/typography/H1'
 
