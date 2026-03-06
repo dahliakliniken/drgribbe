@@ -1,3 +1,31 @@
+# [1.25.0](https://github.com/dahliakliniken/drgribbe/compare/v1.24.0...v1.25.0) (2026-03-06)
+
+
+### Bug Fixes
+
+* add missing translation for 'thank you for your booking' in sv.json ([f224399](https://github.com/dahliakliniken/drgribbe/commit/f224399bdf97b4b1b54e6007535ef1d6316605df))
+* change url for tack page ([b62a7fb](https://github.com/dahliakliniken/drgribbe/commit/b62a7fb95cc18f223779ce320eecd8156837b540))
+* correct formatting of cancellation rules in sv.json ([268d88a](https://github.com/dahliakliniken/drgribbe/commit/268d88a605fb64bd548f7b67c4bad6e67352ac83))
+* update import path for Tack component in tack page ([b46e711](https://github.com/dahliakliniken/drgribbe/commit/b46e711be2db2c01a8bc6c7b1899d5ec5222314c))
+
+
+### Features
+
+* add alt text for images and remove unnecessary sections in localization files ([a1099bc](https://github.com/dahliakliniken/drgribbe/commit/a1099bc6e4ab24372ecfd5a5b7227885e0260fb9))
+* add script to generate localized message files from JSON ([aa0d660](https://github.com/dahliakliniken/drgribbe/commit/aa0d660f7534c7fe64eeb816eba4dbb811c2c145))
+* add thank you page ([eaf5c06](https://github.com/dahliakliniken/drgribbe/commit/eaf5c06dea694778cf8250bc508d20c9077a5ad3))
+* add translation files for contact, guarantee, home page, and treatment box ([9d9eff4](https://github.com/dahliakliniken/drgribbe/commit/9d9eff4bc2849f5eea869b2cc79f2b0647503fd8))
+* add translation files for staff and navigation sections, add common phrases ([16bd185](https://github.com/dahliakliniken/drgribbe/commit/16bd185a9902d79b30f786f192c33394766c600c))
+* add translation files for: Hud & injektioner, Kontakt & besök, and Priser ([c3c76d6](https://github.com/dahliakliniken/drgribbe/commit/c3c76d673815183721a13ed212be7b59129c5b65))
+* add translations file for brostforstoring ([59649c8](https://github.com/dahliakliniken/drgribbe/commit/59649c80570c2ce028f5be169b68821acdb0a089))
+* add translations file for brostlyft ([1a69a12](https://github.com/dahliakliniken/drgribbe/commit/1a69a126d8bc105d63a0ba26cad3e95911b7e1d9))
+* add translations file for brostoperationer ([528acdd](https://github.com/dahliakliniken/drgribbe/commit/528acdde0d7184845096c11e1997a828f8f675bd))
+* add translations for site breadcrumbs ([3d19a47](https://github.com/dahliakliniken/drgribbe/commit/3d19a47993cf085a47e65d0ec0390413d3ddbfce))
+* move all remaining copy to translations files ([6bb57db](https://github.com/dahliakliniken/drgribbe/commit/6bb57db79d4b0fa7433c914d0fc4a337c6cf23f7))
+* standardize translation variable names across accordion data components ([6439ff1](https://github.com/dahliakliniken/drgribbe/commit/6439ff107f629a88c41deb759c1aab254d7757d5))
+* update logo component to use common translations ([75ce90c](https://github.com/dahliakliniken/drgribbe/commit/75ce90c36a60607ed9e10fc32452690605c1c8bb))
+* update prebuild script to include message generation ([3079bb1](https://github.com/dahliakliniken/drgribbe/commit/3079bb1a308fea8e8ff3bc79d4d4d3676ef5f22d))
+
 # [1.25.0-beta.3](https://github.com/dahliakliniken/drgribbe/compare/v1.25.0-beta.2...v1.25.0-beta.3) (2026-03-06)
 
 
