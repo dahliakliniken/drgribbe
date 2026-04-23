@@ -1,3 +1,10 @@
+# [1.26.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.25.0...v1.26.0-beta.1) (2026-04-23)
+
+
+### Features
+
+* add messages/generated/ to gitignore ([1c87b51](https://github.com/dahliakliniken/drgribbe/commit/1c87b51185b15c8de584308776fef85400071284))
+
 # [1.25.0-beta.4](https://github.com/dahliakliniken/drgribbe/compare/v1.25.0-beta.3...v1.25.0-beta.4) (2026-03-06)
 
 
