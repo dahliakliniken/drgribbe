@@ -1,5 +1,5 @@
 // src/lib/getLastModified.ts
-import lastModified from '@/lastModified.json' assert { type: 'json' }
+import lastModified from '@/lastModified.json' with { type: 'json' }
 
 const map = lastModified as Record<string, string>
 
