@@ -1,5 +1,45 @@
 export const testimonials = [
-      {
+  {
+    title: 'Ulrika Hellesand',
+    content:
+      'Fint bemötande hela vägen. Och supernöjd med resultatet. Kan varmt rekommendera.',
+    link: 'https://maps.app.goo.gl/vVYLn9oW3xbAyvB4A',
+    date: '2026-04-01',
+    rating: 5
+  },
+  {
+    title: 'E W',
+    content:
+      'Ett stort TACK till Örjan och hans fantastiska professionella team på Dahliakliniken! Jag blev så väl omhändertagen från första stund och kände mig helt trygg genom hela processen och resultatet blev fantastiskt bra. Alla på kliniken ingav ett väldigt stort förtroende. Kan varmt rekommendera denna klinik! ❤️',
+    link: 'https://maps.app.goo.gl/N7hf2sTL2jCsQxsEA',
+    date: '2026-04-01',
+    rating: 5
+  },
+  {
+    title: 'Nadia Karlsson',
+    content:
+      'Enbart positivt bemötande och ett omhändertagande som kändes tryggt från början till slut. Väldigt nöjd med kliniken.',
+    link: 'https://maps.app.goo.gl/EfJJKzNHs2DY56kX9',
+    date: '2026-04-01',
+    rating: 5
+  },
+  {
+    title: 'Alexandra F',
+    content:
+      'Att bli sedd, lyssnad på och tagen på allvar är ovärderligt vid estetiska operationer, särskilt i en värld där orealistiska ideal ofta får styra. Just den känslan infann sig redan vid första steget in på denna fantastiska nyöppnade klinik.',
+    link: 'https://maps.app.goo.gl/R1wa13cHfLZCn5pb8',
+    date: '2026-01-01',
+    rating: 5
+  },
+  {
+    title: 'Jenny G',
+    content:
+      'Så otroligt nöjd med mitt beslut att använda mig av Dahliakliniken för mitt ingrepp. Dr. Gribbe är så himla duktig på det han gör och Kristina och resten av personalen på uppvaket är fantastiska, otroligt omhändertagande och gjorde så att man kände sig trygg och bekväm. Så jävla nöjd med mitt resultat som blev precis allt jag hoppades att det skulle bli!',
+    link: 'https://maps.app.goo.gl/BGdjyfiDMenQg9Zv9',
+    date: '2026-04-01',
+    rating: 5
+  }, 
+  {
     title: 'Sofie Claesson',
     content:
       'Rekommenderar STARKT! Jag har utfört en bröstförstoring här på Dahliakliniken, och kan inte med ord beskriva hur nöjd jag är. Från att jag tog mitt första steg in på kliniken, har jag möts av värme, engagemang, förståelse, omtanke och expertis.',
