@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/dahliakliniken/drgribbe/compare/v1.26.0...v1.27.0) (2026-05-06)
+
+
+### Features
+
+* add more testimonials ([b7106e7](https://github.com/dahliakliniken/drgribbe/commit/b7106e73cd92cf4716abbb71c46b5127d1bd4ee7))
+
 # [1.27.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.26.0...v1.27.0-beta.1) (2026-05-06)
 
 
