@@ -1,3 +1,10 @@
+# [1.28.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.27.0...v1.28.0-beta.1) (2026-05-27)
+
+
+### Features
+
+* use visualViewport ([5b5b1b7](https://github.com/dahliakliniken/drgribbe/commit/5b5b1b7514e34cd098a12b575ec1a69a98463676))
+
 # [1.27.0](https://github.com/dahliakliniken/drgribbe/compare/v1.26.0...v1.27.0) (2026-05-06)
 
 
