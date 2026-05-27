@@ -12,55 +12,81 @@ import { SocialMediaLinks } from './SocialMediaLinks'
 export const HeaderWithFooter = () => {
   const t = useTranslations('contact')
   const pathname = usePathname()
+
   const [isAtBottom, setIsAtBottom] = useState(false)
+  const [bottomOffset, setBottomOffset] = useState(0)
 
-  // Check if the user has scrolled to the bottom of the page
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight
-      const pageHeight = document.documentElement.scrollHeight
-      const isScrollable = pageHeight > window.innerHeight
+    const updateBottomOffset = () => {
+      const visualViewport = window.visualViewport
 
-      // Expand only when scrollable and scrolled to bottom
-      setIsAtBottom(isScrollable && scrollPosition >= pageHeight)
+      if (!visualViewport) {
+        setBottomOffset(0)
+        return
+      }
+
+      const offset = window.innerHeight - visualViewport.height - visualViewport.offsetTop
+
+      setBottomOffset(Math.max(0, offset))
     }
 
-    window.addEventListener('scroll', handleScroll)
-    handleScroll() // initialize on mount
-    return () => window.removeEventListener('scroll', handleScroll)
+    updateBottomOffset()
+
+    window.visualViewport?.addEventListener('resize', updateBottomOffset)
+    window.visualViewport?.addEventListener('scroll', updateBottomOffset)
+
+    return () => {
+      window.visualViewport?.removeEventListener('resize', updateBottomOffset)
+      window.visualViewport?.removeEventListener('scroll', updateBottomOffset)
+    }
   }, [])
 
-  // Recalculate on route change to reset footer state on short pages.
-  // This derives `isAtBottom` from the scroll position without persisting
-  // it in state again, which satisfies the React lint rule.
   useEffect(() => {
-    const pageHeight = document.documentElement.scrollHeight
-    const isScrollable = pageHeight > window.innerHeight
-    const scrollPosition = window.scrollY + window.innerHeight
-    const nextIsAtBottom = isScrollable && scrollPosition >= pageHeight
+    const handleScroll = () => {
+      const scrollingElement =
+        document.scrollingElement ?? document.documentElement
 
-    // Keep state in sync only if it differs, but avoid using this
-    // derived value to drive further effects.
-    if (nextIsAtBottom !== isAtBottom) {
-      setIsAtBottom(nextIsAtBottom)
+      const scrollTop = scrollingElement.scrollTop
+      const pageHeight = scrollingElement.scrollHeight
+      const viewportHeight = window.visualViewport?.height ?? window.innerHeight
+
+      const threshold = 8
+      const isScrollable = pageHeight > viewportHeight + threshold
+      const hasReachedBottom =
+        scrollTop + viewportHeight >= pageHeight - threshold
+
+      setIsAtBottom(isScrollable && hasReachedBottom)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    handleScroll()
+
+    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('resize', handleScroll)
+    window.visualViewport?.addEventListener('resize', handleScroll)
+    window.visualViewport?.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
+      window.visualViewport?.removeEventListener('resize', handleScroll)
+      window.visualViewport?.removeEventListener('scroll', handleScroll)
+    }
   }, [pathname])
 
   return (
     <header
-      className={`fixed right-0 bottom-0 left-0 w-full transition-all lg:top-0 ${
+      style={{ bottom: bottomOffset }}
+      className={`fixed right-0 left-0 z-50 w-full bg-beige transition-all lg:top-0 ${
         isAtBottom ? 'h-52' : 'h-20'
-      } bg-beige z-50`}
+      }`}
     >
       <div className="p-gapSpace flex items-center md:p-4">
         <Logo />
         <DropdownMenu />
       </div>
 
-      {/* Expanding Footer with contact information */}
       {isAtBottom && (
-        <div className="bg-beige mx-auto flex flex-col items-center justify-center pb-3 lg:pr-16">
+        <div className="bg-beige mx-auto flex flex-col items-center justify-center pb-[calc(0.75rem+env(safe-area-inset-bottom))] lg:pr-16">
           <div className="flex flex-col text-center text-sm">
             <span>{t('contactUs')}</span>
             <span>
