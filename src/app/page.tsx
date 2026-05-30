@@ -19,6 +19,7 @@ import { SpaceContainer } from './components/layout/SpaceContainer'
 import { TreatmentBox } from './components/layout/TreatmentBox'
 import { Card } from './components/surfaces/Card'
 import { Hero } from './components/surfaces/Hero'
+import { InformationBanner } from './components/surfaces/InformationBanner'
 import { JsonLd } from './components/surfaces/JsonLd'
 import Testimonials from './components/surfaces/Testimonials/Testimonials'
 import { A } from './components/typography/A'
@@ -72,6 +73,12 @@ export default async function Home() {
   return (
     <>
       <JsonLd data={schemaData} />
+      <InformationBanner
+        title={tCommon('informationBanner.title')}
+        email={tCommon('informationBanner.email')}
+      >
+        {tCommon('informationBanner.body')}
+      </InformationBanner>
       <Hero />
       <Card
         bgColor={BgColors.White}

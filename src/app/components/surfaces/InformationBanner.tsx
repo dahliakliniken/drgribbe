@@ -19,7 +19,7 @@ export const InformationBanner = ({
     <aside
       aria-label="Viktig information"
       className={classNames(
-        'border-gold/40 bg-lightBeige text-green border-b px-gapSpace py-3 text-center text-sm leading-snug tracking-[0.04em] lg:text-base [&_p]:mb-0!',
+        'border-gold/40 bg-lightBeige text-green absolute top-0 right-0 left-0 z-40 border-b px-gapSpace py-3 text-center text-sm leading-snug tracking-[0.04em] lg:text-base [&_p]:mb-0!',
         className
       )}
     >
