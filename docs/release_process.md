@@ -23,14 +23,15 @@ main
 
 There is no separate staging branch or release branch. Preview deployments replace the old staging workflow.
 
-## Commit Messages
+## Pull request title format
 
-Use [Conventional Commits](https://www.conventionalcommits.org/) so Semantic Release can determine version bumps.
+This project uses squash merge. The final commit on `main` is based on the PR title, so PR titles must follow [Conventional Commits](https://www.conventionalcommits.org/). Invalid titles are blocked by CI before merge.
 
-If you squash-merge PRs, the **PR title** must follow Conventional Commits, for example:
+Examples:
 
 - `feat: add information banner`
 - `fix: correct mobile layout`
+- `docs: update deployment docs`
 - `chore: update dependencies`
 
-See [semantic_release.md](./semantic_release.md) for the full commit format.
+Local commits are also checked via Husky when you commit. See [semantic_release.md](./semantic_release.md) for the full format.

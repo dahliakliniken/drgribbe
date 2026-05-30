@@ -36,7 +36,7 @@ We follow **Conventional Commits**:
 
 ### Squash Merges
 
-If PRs are squash-merged, the **PR title** must follow Conventional Commits — that title becomes the commit on `main` that Semantic Release analyzes.
+If PRs are squash-merged, the **PR title** must follow Conventional Commits — that title becomes the commit on `main` that Semantic Release analyzes. A GitHub Actions check validates PR titles before merge; local commits are checked via Husky.
 
 Examples:
 

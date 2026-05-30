@@ -84,9 +84,18 @@ main
 - **Branching**: Create feature/fix branches from `main` and open PRs against `main`.
 - **Review**: Vercel preview deployments are used for testing before merge.
 - **Releases**: Merging to `main` triggers production deployment and Semantic Release.
-- **Commit format**: Use [Conventional Commits](https://conventionalcommits.org/). If squash-merging PRs, the PR title must follow this format (e.g. `feat: add information banner`).
-
 See [docs/release_process.md](./docs/release_process.md) and [docs/semantic_release.md](./docs/semantic_release.md) for details.
+
+## Pull request title format
+
+This project uses squash merge. The final commit on `main` is based on the PR title, so PR titles must follow [Conventional Commits](https://conventionalcommits.org/).
+
+Examples:
+
+- `feat: add information banner`
+- `fix: correct mobile layout`
+- `docs: update deployment docs`
+- `chore: update dependencies`
 
 ## Technologies Used
 
