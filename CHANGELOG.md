@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/dahliakliniken/drgribbe/compare/v1.29.1...v1.30.0) (2026-05-30)
+
+
+### Features
+
+* temp remove info banner ([bf0c683](https://github.com/dahliakliniken/drgribbe/commit/bf0c68358639e52ddc42feb1a2d6697f0e200942))
+
 ## [1.29.1](https://github.com/dahliakliniken/drgribbe/compare/v1.29.0...v1.29.1) (2026-05-30)
 
 
