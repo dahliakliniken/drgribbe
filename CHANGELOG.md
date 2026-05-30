@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/dahliakliniken/drgribbe/compare/v1.30.0...v1.31.0) (2026-05-30)
+
+
+### Features
+
+* simplify semantic release ([#291](https://github.com/dahliakliniken/drgribbe/issues/291)) ([6f19010](https://github.com/dahliakliniken/drgribbe/commit/6f190108bc0dd3278d06ef658e7e007f93d8a061))
+
 # [1.30.0](https://github.com/dahliakliniken/drgribbe/compare/v1.29.1...v1.30.0) (2026-05-30)
 
 
