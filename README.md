@@ -44,6 +44,7 @@ Here are the available scripts for this project:
 - `pnpm build`: Builds the project for production.
 - `pnpm start`: Starts the production server after a build.
 - `pnpm lint`: Runs ESLint for code linting
+- `pnpm typecheck`: Runs TypeScript without emitting files
 
 ## Project Structure
 
@@ -72,11 +73,20 @@ A high-level overview of the folder structure:
 
 ## Release Process
 
-This project uses [Semantic Release](https://semantic-release.gitbook.io/) for automated versioning and publishing:
+This project uses trunk-based development on `main` with [Semantic Release](https://semantic-release.gitbook.io/) for automated versioning:
 
-- **Production releases**: Merges to `main` branch trigger production releases
-- **Beta releases**: Merges to `develop` branch trigger pre-release versions
-- **Commit format**: Follow [Conventional Commits](https://conventionalcommits.org/) for proper versioning
+```
+main
+└── feat/xxx
+    └── PR → Vercel preview → merge to main → production deploy + semantic-release
+```
+
+- **Branching**: Create feature/fix branches from `main` and open PRs against `main`.
+- **Review**: Vercel preview deployments are used for testing before merge.
+- **Releases**: Merging to `main` triggers production deployment and Semantic Release.
+- **Commit format**: Use [Conventional Commits](https://conventionalcommits.org/). If squash-merging PRs, the PR title must follow this format (e.g. `feat: add information banner`).
+
+See [docs/release_process.md](./docs/release_process.md) and [docs/semantic_release.md](./docs/semantic_release.md) for details.
 
 ## Technologies Used
 

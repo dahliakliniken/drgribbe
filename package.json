@@ -10,6 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "pnpm exec eslint .",
+    "typecheck": "pnpm exec tsc --noEmit",
     "release": "semantic-release",
     "prepare": "husky"
   },
@@ -45,37 +46,6 @@
     "semantic-release": "25.0.3",
     "tailwindcss": "4.2.4",
     "typescript": "6.0.3"
-  },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/github",
-    "@semantic-release/npm",
-    "@semantic-release/git"
-  ],
-  "release": {
-    "branches": [
-      "main",
-      {
-        "name": "develop",
-        "prerelease": "beta",
-        "channel": "beta"
-      }
-    ],
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      {
-        "path": "@semantic-release/git",
-        "assets": [
-          "package.json",
-          "pnpm-lock.yaml",
-          "CHANGELOG.md"
-        ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ]
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
