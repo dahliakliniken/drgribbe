@@ -40,12 +40,15 @@ export const InformationBanner = ({
         </p>
 
         {email && (
-          <a
-            href={`mailto:${email}`}
-            className="font-josefin-san hover:text-gold decoration-gold/60 m-0 shrink-0 font-light underline underline-offset-2 transition-colors duration-300"
-          >
-            {email}
-          </a>
+          <p className="font-josefin-sans m-0 max-w-prose font-light lg:max-w-none lg:shrink">{'Mejla till '}
+            <a
+              href={`mailto:${email}`}
+              className="font-josefin-san hover:text-gold decoration-gold/60 m-0 shrink-0 font-light underline underline-offset-2 transition-colors duration-300"
+            >
+
+              {email}
+            </a>
+          </p>
         )}
       </div>
     </aside>
