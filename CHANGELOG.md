@@ -1,3 +1,10 @@
+## [1.29.1](https://github.com/dahliakliniken/drgribbe/compare/v1.29.0...v1.29.1) (2026-05-30)
+
+
+### Bug Fixes
+
+* update InformationBanner to include a descriptive text before the email link ([e04d33c](https://github.com/dahliakliniken/drgribbe/commit/e04d33cb612c04345d5f89130994e2b3f3528596))
+
 # [1.29.0](https://github.com/dahliakliniken/drgribbe/compare/v1.28.0...v1.29.0) (2026-05-30)
 
 
