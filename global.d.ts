@@ -1,3 +1,5 @@
+/// <reference types="next/image-types/global" />
+
 import sv from './messages/sv.json'
 
 type Messages = typeof sv
