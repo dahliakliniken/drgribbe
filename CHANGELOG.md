@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/dahliakliniken/drgribbe/compare/v1.28.0...v1.29.0) (2026-05-30)
+
+
+### Features
+
+* add InformationBanner component and integrate translations in layout ([4acd6b0](https://github.com/dahliakliniken/drgribbe/commit/4acd6b0ed57e68556c34959a526db221d4579c81))
+
 # [1.29.0-beta.1](https://github.com/dahliakliniken/drgribbe/compare/v1.28.0...v1.29.0-beta.1) (2026-05-30)
 
 
