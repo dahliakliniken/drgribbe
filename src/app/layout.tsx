@@ -4,8 +4,9 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import { Metadata } from 'next'
 import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
-import { getLocale, getMessages } from 'next-intl/server'
+import { getLocale, getMessages, getTranslations } from 'next-intl/server'
 
+import { InformationBanner } from '@/app/components/surfaces/InformationBanner'
 import { LastUpdated } from '@/app/components/surfaces/LastUpdated'
 import { BUSINESS_IMAGES, BUSINESS_NAME } from '@/data/businessData'
 
@@ -65,6 +66,7 @@ export default async function RootLayout({
 }) {
   const locale = await getLocale()
   const messages = await getMessages()
+  const tCommon = await getTranslations('common')
   const nonce = (await headers()).get('x-nonce') || undefined
 
   return (
@@ -85,6 +87,12 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <HeaderWithFooter />
           <main className="flex flex-col lg:mt-20">
+            <InformationBanner
+              title={tCommon('informationBanner.title')}
+              email={tCommon('informationBanner.email')}
+            >
+              {tCommon('informationBanner.body')}
+            </InformationBanner>
             <Breadcrumbs />
             {children}
           </main>

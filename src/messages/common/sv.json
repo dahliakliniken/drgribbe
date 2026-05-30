@@ -20,5 +20,10 @@
   "imageModal": {
     "openFullViewAria": "Open full view of {imageAlt}",
     "closeAria": "Close modal"
+  },
+  "informationBanner": {
+    "title": "Bröstoperation innan sommaren?",
+    "body": "Det finns några operationstillfällen kvar innan vi stänger för sommarledigt den 11 juli.",
+    "email": "info@dahliakliniken.se"
   }
 }
