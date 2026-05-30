@@ -18,6 +18,11 @@ export const HeaderWithFooter = () => {
 
   useEffect(() => {
     const updateBottomOffset = () => {
+      if (window.matchMedia('(min-width: 1024px)').matches) {
+        setBottomOffset(0)
+        return
+      }
+
       const visualViewport = window.visualViewport
 
       if (!visualViewport) {
@@ -25,17 +30,22 @@ export const HeaderWithFooter = () => {
         return
       }
 
-      const offset = window.innerHeight - visualViewport.height - visualViewport.offsetTop
+      const offset =
+        window.innerHeight - visualViewport.height - visualViewport.offsetTop
 
       setBottomOffset(Math.max(0, offset))
     }
 
     updateBottomOffset()
 
+    window.addEventListener('scroll', updateBottomOffset, { passive: true })
+    window.addEventListener('resize', updateBottomOffset)
     window.visualViewport?.addEventListener('resize', updateBottomOffset)
     window.visualViewport?.addEventListener('scroll', updateBottomOffset)
 
     return () => {
+      window.removeEventListener('scroll', updateBottomOffset)
+      window.removeEventListener('resize', updateBottomOffset)
       window.visualViewport?.removeEventListener('resize', updateBottomOffset)
       window.visualViewport?.removeEventListener('scroll', updateBottomOffset)
     }
@@ -76,7 +86,7 @@ export const HeaderWithFooter = () => {
   return (
     <header
       style={{ bottom: bottomOffset }}
-      className={`fixed right-0 left-0 z-50 w-full bg-beige transition-all lg:top-0 ${
+      className={`fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300 lg:top-0 ${
         isAtBottom ? 'h-52' : 'h-20'
       }`}
     >
