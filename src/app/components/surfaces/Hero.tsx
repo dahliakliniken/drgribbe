@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 
 import { useDelayedAnimation } from '@/hooks/useDelayedAnimation'
 import HeroImage from '@/public/images/hero-image.jpg'
+import { useFirefoxIOS } from '@/utils/browser'
 
 import { A } from '../typography/A'
 
@@ -14,6 +15,7 @@ export const Hero = () => {
   const tPage = useTranslations('home-page.page')
   const tCommon = useTranslations('common')
   const showAnimation = useDelayedAnimation(3000) // 3 seconds delay
+  const firefoxIOS = useFirefoxIOS()
 
   const scrollDown = () => {
     window.scrollTo({
@@ -52,7 +54,11 @@ export const Hero = () => {
         >
           <ChevronDown size={48} className="animate-bounce text-white" />
         </div>
-        <div className="absolute bottom-24">
+        <div
+          className={classNames('absolute bottom-24', {
+            'max-lg:bottom-[calc(6rem+72px)]': firefoxIOS
+          })}
+        >
           <A href="/boka" buttonStyle>
             {tCommon('bookConsultation')}
           </A>

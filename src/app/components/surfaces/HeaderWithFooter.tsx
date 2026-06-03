@@ -1,58 +1,26 @@
 'use client'
 
+import classNames from 'classnames'
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { type CSSProperties, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { isFirefoxIOS } from '@/utils/browser'
+import { useFirefoxIOS } from '@/utils/browser'
 
 import { Button } from '../inputs/Button'
 import { DropdownMenu } from '../navigation/DropdownMenu'
 import { Logo } from '../navigation/Logo'
 import { SocialMediaLinks } from './SocialMediaLinks'
 
-const FIREFOX_IOS_BOTTOM_BAR_HEIGHT = 72
-const BOTTOM_THRESHOLD_PX = 8
-const COLLAPSED_HEIGHT_PX = 80
-const EXPANDED_HEIGHT_PX = 208
-
 export const HeaderWithFooter = () => {
   const t = useTranslations('contact')
   const pathname = usePathname()
 
   const [isAtBottom, setIsAtBottom] = useState(false)
-  const [bottomOffset, setBottomOffset] = useState(0)
-  const [isDesktop, setIsDesktop] = useState(false)
+  const firefoxIOS = useFirefoxIOS()
 
   useEffect(() => {
-    const desktopQuery = window.matchMedia('(min-width: 1024px)')
-
-    const update = () => {
-      const desktop = desktopQuery.matches
-      setIsDesktop(desktop)
-
-      if (desktop) {
-        setBottomOffset(0)
-      } else {
-        const visualViewport = window.visualViewport
-        let offset = 0
-
-        if (visualViewport) {
-          offset = Math.max(
-            0,
-            window.innerHeight -
-              visualViewport.height -
-              visualViewport.offsetTop
-          )
-        }
-
-        if (isFirefoxIOS()) {
-          offset = Math.max(offset, FIREFOX_IOS_BOTTOM_BAR_HEIGHT)
-        }
-
-        setBottomOffset(offset)
-      }
-
+    const handleScroll = () => {
       const scrollingElement =
         document.scrollingElement ?? document.documentElement
 
@@ -61,43 +29,46 @@ export const HeaderWithFooter = () => {
       const viewportHeight =
         window.visualViewport?.height ?? window.innerHeight
 
-      const isScrollable = pageHeight > viewportHeight + BOTTOM_THRESHOLD_PX
+      const threshold = 8
+      const isScrollable = pageHeight > viewportHeight + threshold
       const hasReachedBottom =
-        scrollTop + viewportHeight >= pageHeight - BOTTOM_THRESHOLD_PX
+        scrollTop + viewportHeight >= pageHeight - threshold
 
       setIsAtBottom(isScrollable && hasReachedBottom)
     }
 
-    update()
+    handleScroll()
 
-    desktopQuery.addEventListener('change', update)
-    window.addEventListener('scroll', update, { passive: true })
-    window.addEventListener('resize', update)
-    window.visualViewport?.addEventListener('resize', update)
-    window.visualViewport?.addEventListener('scroll', update)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('resize', handleScroll)
+    window.visualViewport?.addEventListener('resize', handleScroll)
+    window.visualViewport?.addEventListener('scroll', handleScroll)
 
     return () => {
-      desktopQuery.removeEventListener('change', update)
-      window.removeEventListener('scroll', update)
-      window.removeEventListener('resize', update)
-      window.visualViewport?.removeEventListener('resize', update)
-      window.visualViewport?.removeEventListener('scroll', update)
+      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('resize', handleScroll)
+      window.visualViewport?.removeEventListener('resize', handleScroll)
+      window.visualViewport?.removeEventListener('scroll', handleScroll)
     }
   }, [pathname])
 
-  const headerHeightPx = isAtBottom ? EXPANDED_HEIGHT_PX : COLLAPSED_HEIGHT_PX
+  const headerHeightClass = isAtBottom ? 'h-52' : 'h-20'
 
-  const headerStyle: CSSProperties = isDesktop
-    ? { top: 0, height: headerHeightPx }
-    : { bottom: bottomOffset, height: headerHeightPx }
-
-  const mobileSpacerHeightPx = headerHeightPx + bottomOffset
+  const mobileSpacerClass = firefoxIOS
+    ? isAtBottom
+      ? 'h-[calc(13rem+72px)]'
+      : 'h-[calc(5rem+72px)]'
+    : headerHeightClass
 
   return (
     <>
       <header
-        style={headerStyle}
-        className="fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300"
+        className={classNames(
+          'fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300',
+          'lg:top-0 lg:bottom-auto',
+          firefoxIOS ? 'max-lg:bottom-[72px]' : 'max-lg:bottom-0',
+          headerHeightClass
+        )}
       >
         <div className="p-gapSpace flex items-center md:p-4">
           <Logo />
@@ -131,8 +102,10 @@ export const HeaderWithFooter = () => {
       </header>
       <div
         aria-hidden
-        className="pointer-events-none shrink-0 lg:hidden"
-        style={{ height: mobileSpacerHeightPx }}
+        className={classNames(
+          'pointer-events-none shrink-0 transition-[height] duration-300 lg:hidden',
+          mobileSpacerClass
+        )}
       />
     </>
   )
