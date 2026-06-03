@@ -84,7 +84,7 @@ export default async function RootLayout({
         />
         <NextIntlClientProvider messages={messages}>
           <HeaderWithFooter />
-          <main className="relative flex flex-col lg:mt-20">
+          <main className="relative flex flex-col pb-[calc(5rem+env(safe-area-inset-bottom))] lg:pb-0 lg:pt-20">
             <Breadcrumbs />
             {children}
           </main>
