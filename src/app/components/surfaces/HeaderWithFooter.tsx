@@ -80,39 +80,51 @@ export const HeaderWithFooter = () => {
       }
 
   return (
-    <header
-      style={headerStyle}
-      className="fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300"
-    >
-      <div className="p-gapSpace flex items-center md:p-4">
-        <Logo />
-        <DropdownMenu />
-      </div>
-
-      {isAtBottom && (
-        <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3 lg:pr-16">
-          <div className="flex flex-col text-center text-sm">
-            <span>{t('contactUs')}</span>
-            <span>
-              {t.rich('email', {
-                email: (chunks) => (
-                  <a href="mailto:info@dahliakliniken.se">{chunks}</a>
-                )
-              })}
-            </span>
-            <span>{t('phone')}</span>
-            <Button
-              className="justify-center text-sm underline"
-              inverted
-              textButton
-              onClick={() => window.CookieScript?.instance?.show()}
-            >
-              {t('handleCookies')}
-            </Button>
-            <SocialMediaLinks className="justify-center pt-2" />
-          </div>
-        </div>
+    <>
+      {!isDesktop && bottomOffset > 0 && (
+        <div
+          aria-hidden="true"
+          style={{ height: bottomOffset }}
+          className="pointer-events-none fixed right-0 bottom-0 left-0 z-40 bg-beige"
+        />
       )}
-    </header>
+
+      <header
+        style={headerStyle}
+        className="fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300"
+      >
+        <div className="flex h-full flex-col bg-beige">
+          <div className="p-gapSpace flex items-center md:p-4">
+            <Logo />
+            <DropdownMenu />
+          </div>
+
+          {isAtBottom && (
+            <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3 lg:pr-16">
+              <div className="flex flex-col text-center text-sm">
+                <span>{t('contactUs')}</span>
+                <span>
+                  {t.rich('email', {
+                    email: (chunks) => (
+                      <a href="mailto:info@dahliakliniken.se">{chunks}</a>
+                    )
+                  })}
+                </span>
+                <span>{t('phone')}</span>
+                <Button
+                  className="justify-center text-sm underline"
+                  inverted
+                  textButton
+                  onClick={() => window.CookieScript?.instance?.show()}
+                >
+                  {t('handleCookies')}
+                </Button>
+                <SocialMediaLinks className="justify-center pt-2" />
+              </div>
+            </div>
+          )}
+        </div>
+      </header>
+    </>
   )
 }
