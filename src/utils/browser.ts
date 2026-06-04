@@ -4,18 +4,12 @@ export const BOTTOM_SCROLL_THRESHOLD_PX = 8
 export const HEADER_COLLAPSED_HEIGHT_PX = 80
 export const HEADER_EXPANDED_HEIGHT_PX = 208
 
-const FIREFOX_IOS_BOTTOM_BAR_HEIGHT_PX = 72
-const GENERIC_FLOATING_BAR_FALLBACK_PX = 72
-const MIN_EXPECTED_FLOATING_BAR_OFFSET_PX = 24
+const FIREFOX_IOS_BOTTOM_OFFSET_PX = 72
 
 export const isFirefoxIOS = () =>
   typeof navigator !== 'undefined' && /FxiOS/i.test(navigator.userAgent)
 
-export const isMobileDevice = () =>
-  typeof window !== 'undefined' &&
-  window.matchMedia('(max-width: 1023px)').matches
-
-export const getMobileBottomInset = (): number => {
+export const getMobileBottomOffset = (): number => {
   if (typeof window === 'undefined') {
     return 0
   }
@@ -27,7 +21,7 @@ export const getMobileBottomInset = (): number => {
   }
 
   if (isFirefoxIOS()) {
-    return FIREFOX_IOS_BOTTOM_BAR_HEIGHT_PX
+    return FIREFOX_IOS_BOTTOM_OFFSET_PX
   }
 
   const visualViewport = window.visualViewport
@@ -36,20 +30,8 @@ export const getMobileBottomInset = (): number => {
     return 0
   }
 
-  const visualViewportOffset = Math.max(
-    0,
+  const offset =
     window.innerHeight - visualViewport.height - visualViewport.offsetTop
-  )
 
-  const viewportHeightDifference = window.innerHeight - visualViewport.height
-
-  const needsGenericFallback =
-    viewportHeightDifference > GENERIC_FLOATING_BAR_FALLBACK_PX &&
-    visualViewportOffset < MIN_EXPECTED_FLOATING_BAR_OFFSET_PX
-
-  if (needsGenericFallback) {
-    return GENERIC_FLOATING_BAR_FALLBACK_PX
-  }
-
-  return visualViewportOffset
+  return Math.max(0, offset)
 }
