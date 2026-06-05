@@ -4,14 +4,17 @@ import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 import { type CSSProperties, useEffect, useState } from 'react'
 
-import { isFirefoxIOS } from '@/utils/browser'
-
 import { Button } from '../inputs/Button'
 import { DropdownMenu } from '../navigation/DropdownMenu'
 import { Logo } from '../navigation/Logo'
 import { SocialMediaLinks } from './SocialMediaLinks'
 
 const FIREFOX_IOS_BOTTOM_EXTENSION_PX = 72
+const COLLAPSED_HEIGHT_PX = 80
+const EXPANDED_HEIGHT_PX = 208
+
+const isFirefoxIOS = () =>
+  typeof navigator !== 'undefined' && /FxiOS/i.test(navigator.userAgent)
 
 export const HeaderWithFooter = () => {
   const t = useTranslations('contact')
@@ -19,7 +22,7 @@ export const HeaderWithFooter = () => {
 
   const [isAtBottom, setIsAtBottom] = useState(false)
   const [bottomOffset, setBottomOffset] = useState(0)
-  const [bottomExtension, setBottomExtension] = useState(0)
+  const [firefoxExtension, setFirefoxExtension] = useState(0)
 
   useEffect(() => {
     const updateBottomOffset = () => {
@@ -27,15 +30,19 @@ export const HeaderWithFooter = () => {
 
       if (isDesktop) {
         setBottomOffset(0)
-        setBottomExtension(0)
+        setFirefoxExtension(0)
         return
       }
+
+      const shouldUseFirefoxFix = isFirefoxIOS()
+      setFirefoxExtension(
+        shouldUseFirefoxFix ? FIREFOX_IOS_BOTTOM_EXTENSION_PX : 0
+      )
 
       const visualViewport = window.visualViewport
 
       if (!visualViewport) {
         setBottomOffset(0)
-        setBottomExtension(isFirefoxIOS() ? FIREFOX_IOS_BOTTOM_EXTENSION_PX : 0)
         return
       }
 
@@ -43,10 +50,6 @@ export const HeaderWithFooter = () => {
         window.innerHeight - visualViewport.height - visualViewport.offsetTop
 
       setBottomOffset(Math.max(0, offset))
-
-      // Firefox iOS: keep the menu where it already works,
-      // but draw beige background below it, behind the floating address bar.
-      setBottomExtension(isFirefoxIOS() ? FIREFOX_IOS_BOTTOM_EXTENSION_PX : 0)
     }
 
     updateBottomOffset()
@@ -83,7 +86,7 @@ export const HeaderWithFooter = () => {
 
     handleScroll()
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     window.addEventListener('resize', handleScroll)
     window.visualViewport?.addEventListener('resize', handleScroll)
     window.visualViewport?.addEventListener('scroll', handleScroll)
@@ -96,15 +99,17 @@ export const HeaderWithFooter = () => {
     }
   }, [pathname])
 
+  const contentHeight = isAtBottom ? EXPANDED_HEIGHT_PX : COLLAPSED_HEIGHT_PX
+
   const headerStyle: CSSProperties = {
-    bottom: bottomOffset
+    bottom: bottomOffset - firefoxExtension,
+    height: contentHeight + firefoxExtension
   }
 
   return (
     <header
       style={headerStyle}
-      className={`fixed right-0 left-0 z-50 w-full overflow-visible bg-beige transition-[height] duration-300 lg:top-0 ${isAtBottom ? 'h-52' : 'h-20'
-        }`}
+      className=" bg-red-500 fixed right-0 left-0 z-50 w-full transition-[height] duration-300 lg:top-0 lg:h-20"
     >
       <div className="p-gapSpace flex items-center bg-beige md:p-4">
         <Logo />
@@ -134,17 +139,6 @@ export const HeaderWithFooter = () => {
             <SocialMediaLinks className="justify-center pt-2" />
           </div>
         </div>
-      )}
-
-      {bottomExtension > 0 && (
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute right-0 left-0 bg-beige lg:hidden"
-          style={{
-            bottom: -bottomExtension,
-            height: bottomExtension
-          }}
-        />
       )}
     </header>
   )
