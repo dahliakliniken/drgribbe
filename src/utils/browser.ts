@@ -9,6 +9,8 @@ const FIREFOX_IOS_BOTTOM_INSET_PX = 72
 export const isFirefoxIOS = () =>
   typeof navigator !== 'undefined' && /FxiOS/i.test(navigator.userAgent)
 
+export const shouldExtendBehindFloatingBrowserUI = () => isFirefoxIOS()
+
 export const getMobileBottomInset = (): number => {
   if (typeof window === 'undefined') {
     return 0

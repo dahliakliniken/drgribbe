@@ -9,7 +9,8 @@ import {
   DESKTOP_QUERY,
   getMobileBottomInset,
   HEADER_COLLAPSED_HEIGHT_PX,
-  HEADER_EXPANDED_HEIGHT_PX
+  HEADER_EXPANDED_HEIGHT_PX,
+  shouldExtendBehindFloatingBrowserUI
 } from '@/utils/browser'
 
 import { Button } from '../inputs/Button'
@@ -24,6 +25,8 @@ export const HeaderWithFooter = () => {
   const [isAtBottom, setIsAtBottom] = useState(false)
   const [bottomInset, setBottomInset] = useState(0)
   const [isDesktop, setIsDesktop] = useState(false)
+  const [shouldExtendBehindBrowserUI, setShouldExtendBehindBrowserUI] =
+    useState(false)
 
   useEffect(() => {
     const updateLayout = () => {
@@ -31,14 +34,7 @@ export const HeaderWithFooter = () => {
       const inset = getMobileBottomInset()
       setIsDesktop(desktop)
       setBottomInset(inset)
-
-      console.log({
-        bottomInset: inset,
-        userAgent: navigator.userAgent,
-        visualViewportHeight: window.visualViewport?.height,
-        innerHeight: window.innerHeight,
-        offsetTop: window.visualViewport?.offsetTop
-      })
+      setShouldExtendBehindBrowserUI(shouldExtendBehindFloatingBrowserUI())
 
       const scrollingElement =
         document.scrollingElement ?? document.documentElement
@@ -78,13 +74,15 @@ export const HeaderWithFooter = () => {
     ? HEADER_EXPANDED_HEIGHT_PX
     : HEADER_COLLAPSED_HEIGHT_PX
 
+  const mobileBottom = shouldExtendBehindBrowserUI ? -bottomInset : 0
+
   const headerStyle: CSSProperties = isDesktop
     ? {
         top: 0,
         height: contentHeight
       }
     : {
-        bottom: 0,
+        bottom: mobileBottom,
         height: contentHeight + bottomInset
       }
 
