@@ -9,6 +9,7 @@ import { getLocale, getMessages } from 'next-intl/server'
 import { LastUpdated } from '@/app/components/surfaces/LastUpdated'
 import { BUSINESS_IMAGES, BUSINESS_NAME } from '@/data/businessData'
 
+import { BrowserClassName } from './components/layout/BrowserClassName'
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
 import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
 import { JsonLd } from './components/surfaces/JsonLd'
@@ -73,6 +74,7 @@ export default async function RootLayout({
       className={`${josefinSans.variable} ${ephesis.variable} lg:bg-beige`}
     >
       <head>
+        <BrowserClassName />
         <JsonLd
           data={{ '@context': 'https://schema.org', '@graph': [org, webSite] }}
         />

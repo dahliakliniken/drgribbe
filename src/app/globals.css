@@ -17,6 +17,7 @@
 }
 
 @layer base {
+
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;
@@ -38,30 +39,39 @@
 @utility bg-small-left-top {
   background-position: 100% 50%;
 }
+
 @utility bg-large-left-top {
   background-position: 560% 100%;
 }
+
 @utility bg-small-right-top {
   background-position: 0% 50%;
 }
+
 @utility bg-small-center {
   background-position: 50% 50%;
 }
+
 @utility bg-small-left {
   background-position: 100% 50%;
 }
+
 @utility bg-large-left {
   background-position: 560% 50%;
 }
+
 @utility bg-small-right {
   background-position: 0% 50%;
 }
+
 @utility bg-large-right {
   background-position: -450% 50%;
 }
+
 @utility bg-small-bottom-right {
   background-position: 0 100%;
 }
+
 @utility bg-small-bottom-left {
   background-position: 100% 100%;
 }
@@ -84,15 +94,14 @@ a:focus-visible {
 }
 
 .herogradient {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.4780287114845938) 0%,
-    rgba(0, 0, 0, 0) 68%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.4780287114845938) 0%,
+      rgba(0, 0, 0, 0) 68%,
+      rgba(255, 255, 255, 0) 100%);
 }
+
 .fat,
-.fat > * {
+.fat>* {
   font-weight: 400;
 }
 
@@ -112,9 +121,11 @@ a:focus-visible {
   line-height: 1rem;
   text-align: center;
 }
+
 .testimonial::after {
   margin-top: 20px;
 }
+
 .testimonialtitle {
   margin-bottom: 1rem;
   display: block;
@@ -132,37 +143,47 @@ a:focus-visible {
   font-style: italic;
   display: inline;
 }
-.imagetext-inline > a {
+
+.imagetext-inline>a {
   font-size: inherit;
 }
 
 @keyframes page-bounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   25% {
     transform: translateY(-15px);
   }
+
   50% {
     transform: translateY(0);
   }
+
   75% {
     transform: translateY(-5px);
   }
 }
+
 .animate-page-bounce {
   animation: page-bounce 0.8s ease-in-out;
 }
+
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
+
 .animate-bounce {
   animation: bounce 1.5s infinite;
 }
@@ -192,4 +213,23 @@ a:focus-visible {
 
 .back {
   transform: rotateY(180deg);
+}
+
+@supports (-webkit-touch-callout: none) {
+  html.firefox-ios body::after {
+    content: '';
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 72px;
+    background: var(--color-beige);
+    pointer-events: none;
+    z-index: 40;
+  }
+}
+
+html.firefox-ios,
+html.firefox-ios body {
+  background: var(--color-beige);
 }
