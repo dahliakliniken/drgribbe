@@ -2,12 +2,16 @@
 
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { useEffect, useState } from 'react'
+import { type CSSProperties, useEffect, useState } from 'react'
+
+import { isFirefoxIOS } from '@/utils/browser'
 
 import { Button } from '../inputs/Button'
 import { DropdownMenu } from '../navigation/DropdownMenu'
 import { Logo } from '../navigation/Logo'
 import { SocialMediaLinks } from './SocialMediaLinks'
+
+const FIREFOX_IOS_BOTTOM_EXTENSION_PX = 72
 
 export const HeaderWithFooter = () => {
   const t = useTranslations('contact')
@@ -15,11 +19,15 @@ export const HeaderWithFooter = () => {
 
   const [isAtBottom, setIsAtBottom] = useState(false)
   const [bottomOffset, setBottomOffset] = useState(0)
+  const [bottomExtension, setBottomExtension] = useState(0)
 
   useEffect(() => {
     const updateBottomOffset = () => {
-      if (window.matchMedia('(min-width: 1024px)').matches) {
+      const isDesktop = window.matchMedia('(min-width: 1024px)').matches
+
+      if (isDesktop) {
         setBottomOffset(0)
+        setBottomExtension(0)
         return
       }
 
@@ -27,6 +35,7 @@ export const HeaderWithFooter = () => {
 
       if (!visualViewport) {
         setBottomOffset(0)
+        setBottomExtension(isFirefoxIOS() ? FIREFOX_IOS_BOTTOM_EXTENSION_PX : 0)
         return
       }
 
@@ -34,6 +43,10 @@ export const HeaderWithFooter = () => {
         window.innerHeight - visualViewport.height - visualViewport.offsetTop
 
       setBottomOffset(Math.max(0, offset))
+
+      // Firefox iOS: keep the menu where it already works,
+      // but draw beige background below it, behind the floating address bar.
+      setBottomExtension(isFirefoxIOS() ? FIREFOX_IOS_BOTTOM_EXTENSION_PX : 0)
     }
 
     updateBottomOffset()
@@ -83,20 +96,23 @@ export const HeaderWithFooter = () => {
     }
   }, [pathname])
 
+  const headerStyle: CSSProperties = {
+    bottom: bottomOffset
+  }
+
   return (
     <header
-      style={{ bottom: bottomOffset }}
-      className={`fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300 lg:top-0 ${
-        isAtBottom ? 'h-52' : 'h-20'
-      }`}
+      style={headerStyle}
+      className={`fixed right-0 left-0 z-50 w-full overflow-visible bg-beige transition-[height] duration-300 lg:top-0 ${isAtBottom ? 'h-52' : 'h-20'
+        }`}
     >
-      <div className="p-gapSpace flex items-center md:p-4">
+      <div className="p-gapSpace flex items-center bg-beige md:p-4">
         <Logo />
         <DropdownMenu />
       </div>
 
       {isAtBottom && (
-        <div className="bg-beige mx-auto flex flex-col items-center justify-center pb-[calc(0.75rem+env(safe-area-inset-bottom))] lg:pr-16">
+        <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-[calc(0.75rem+env(safe-area-inset-bottom))] lg:pr-16">
           <div className="flex flex-col text-center text-sm">
             <span>{t('contactUs')}</span>
             <span>
@@ -118,6 +134,17 @@ export const HeaderWithFooter = () => {
             <SocialMediaLinks className="justify-center pt-2" />
           </div>
         </div>
+      )}
+
+      {bottomExtension > 0 && (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute right-0 left-0 bg-beige lg:hidden"
+          style={{
+            bottom: -bottomExtension,
+            height: bottomExtension
+          }}
+        />
       )}
     </header>
   )
