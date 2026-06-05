@@ -4,12 +4,12 @@ export const BOTTOM_SCROLL_THRESHOLD_PX = 8
 export const HEADER_COLLAPSED_HEIGHT_PX = 80
 export const HEADER_EXPANDED_HEIGHT_PX = 208
 
-const FIREFOX_IOS_BOTTOM_OFFSET_PX = 72
+const FIREFOX_IOS_BOTTOM_INSET_PX = 72
 
 export const isFirefoxIOS = () =>
   typeof navigator !== 'undefined' && /FxiOS/i.test(navigator.userAgent)
 
-export const getMobileBottomOffset = (): number => {
+export const getMobileBottomInset = (): number => {
   if (typeof window === 'undefined') {
     return 0
   }
@@ -21,7 +21,7 @@ export const getMobileBottomOffset = (): number => {
   }
 
   if (isFirefoxIOS()) {
-    return FIREFOX_IOS_BOTTOM_OFFSET_PX
+    return FIREFOX_IOS_BOTTOM_INSET_PX
   }
 
   const visualViewport = window.visualViewport

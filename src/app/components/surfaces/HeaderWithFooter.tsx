@@ -2,12 +2,12 @@
 
 import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
-import { CSSProperties, useEffect, useState } from 'react'
+import { type CSSProperties, useEffect, useState } from 'react'
 
 import {
   BOTTOM_SCROLL_THRESHOLD_PX,
   DESKTOP_QUERY,
-  getMobileBottomOffset,
+  getMobileBottomInset,
   HEADER_COLLAPSED_HEIGHT_PX,
   HEADER_EXPANDED_HEIGHT_PX
 } from '@/utils/browser'
@@ -22,14 +22,23 @@ export const HeaderWithFooter = () => {
   const pathname = usePathname()
 
   const [isAtBottom, setIsAtBottom] = useState(false)
-  const [bottomOffset, setBottomOffset] = useState(0)
+  const [bottomInset, setBottomInset] = useState(0)
   const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {
     const updateLayout = () => {
       const desktop = window.matchMedia(DESKTOP_QUERY).matches
+      const inset = getMobileBottomInset()
       setIsDesktop(desktop)
-      setBottomOffset(getMobileBottomOffset())
+      setBottomInset(inset)
+
+      console.log({
+        bottomInset: inset,
+        userAgent: navigator.userAgent,
+        visualViewportHeight: window.visualViewport?.height,
+        innerHeight: window.innerHeight,
+        offsetTop: window.visualViewport?.offsetTop
+      })
 
       const scrollingElement =
         document.scrollingElement ?? document.documentElement
@@ -75,56 +84,51 @@ export const HeaderWithFooter = () => {
         height: contentHeight
       }
     : {
-        bottom: bottomOffset,
-        height: contentHeight
+        bottom: 0,
+        height: contentHeight + bottomInset
       }
 
   return (
-    <>
-      {!isDesktop && bottomOffset > 0 && (
-        <div
-          aria-hidden="true"
-          style={{ height: bottomOffset }}
-          className="pointer-events-none fixed right-0 bottom-0 left-0 z-40 bg-beige"
-        />
-      )}
-
-      <header
-        style={headerStyle}
-        className="fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300"
+    <header
+      style={headerStyle}
+      className="fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300"
+    >
+      <div
+        style={{
+          paddingBottom: isDesktop ? 0 : bottomInset
+        }}
+        className="box-border flex h-full flex-col bg-beige"
       >
-        <div className="flex h-full flex-col bg-beige">
-          <div className="p-gapSpace flex items-center md:p-4">
-            <Logo />
-            <DropdownMenu />
-          </div>
-
-          {isAtBottom && (
-            <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3 lg:pr-16">
-              <div className="flex flex-col text-center text-sm">
-                <span>{t('contactUs')}</span>
-                <span>
-                  {t.rich('email', {
-                    email: (chunks) => (
-                      <a href="mailto:info@dahliakliniken.se">{chunks}</a>
-                    )
-                  })}
-                </span>
-                <span>{t('phone')}</span>
-                <Button
-                  className="justify-center text-sm underline"
-                  inverted
-                  textButton
-                  onClick={() => window.CookieScript?.instance?.show()}
-                >
-                  {t('handleCookies')}
-                </Button>
-                <SocialMediaLinks className="justify-center pt-2" />
-              </div>
-            </div>
-          )}
+        <div className="p-gapSpace flex items-center md:p-4">
+          <Logo />
+          <DropdownMenu />
         </div>
-      </header>
-    </>
+
+        {isAtBottom && (
+          <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-3 lg:pr-16">
+            <div className="flex flex-col text-center text-sm">
+              <span>{t('contactUs')}</span>
+              <span>
+                {t.rich('email', {
+                  email: (chunks) => (
+                    <a href="mailto:info@dahliakliniken.se">{chunks}</a>
+                  )
+                })}
+              </span>
+              <span>{t('phone')}</span>
+              <Button
+                className="justify-center text-sm underline"
+                inverted
+                textButton
+                onClick={() => window.CookieScript?.instance?.show()}
+              >
+                {t('handleCookies')}
+              </Button>
+              <SocialMediaLinks className="justify-center pt-2" />
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
   )
 }
