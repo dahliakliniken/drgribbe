@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/dahliakliniken/drgribbe/compare/v1.31.0...v1.32.0) (2026-06-25)
+
+
+### Features
+
+* update InformationBanner with summer message and icon ([#295](https://github.com/dahliakliniken/drgribbe/issues/295)) ([28bf61b](https://github.com/dahliakliniken/drgribbe/commit/28bf61bfdc76eba7f32d8b4594affe8dc11f926b))
+
 # [1.31.0](https://github.com/dahliakliniken/drgribbe/compare/v1.30.0...v1.31.0) (2026-05-30)
 
 
