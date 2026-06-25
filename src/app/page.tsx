@@ -1,3 +1,4 @@
+import { Sun } from 'lucide-react'
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 
@@ -74,8 +75,8 @@ export default async function Home() {
     <>
       <JsonLd data={schemaData} />
       <InformationBanner
+        icon={Sun}
         title={tCommon('informationBanner.title')}
-        email={tCommon('informationBanner.email')}
       >
         {tCommon('informationBanner.body')}
       </InformationBanner>

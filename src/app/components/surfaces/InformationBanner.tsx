@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { Info } from 'lucide-react'
+import { Info, type LucideIcon } from 'lucide-react'
 import type { ReactNode } from 'react'
 
 export type InformationBannerProps = {
@@ -7,13 +7,15 @@ export type InformationBannerProps = {
   children: ReactNode
   email?: string
   className?: string
+  icon?: LucideIcon
 }
 
 export const InformationBanner = ({
   title,
   children,
   email,
-  className
+  className,
+  icon: Icon = Info,
 }: InformationBannerProps) => {
   return (
     <aside
@@ -24,8 +26,8 @@ export const InformationBanner = ({
       )}
     >
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-2 lg:flex-row lg:flex-wrap lg:items-center lg:justify-center lg:gap-x-3 lg:gap-y-1">
-        <div className="inline-flex items-center justify-center gap-2">
-          <Info
+        <div className="inline-flex items-baseline justify-center gap-2">
+          <Icon
             className="text-gold size-4 shrink-0"
             strokeWidth={1.5}
             aria-hidden="true"
