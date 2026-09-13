@@ -11,7 +11,7 @@ import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { BUSINESS_NAME, BUSINESS_SOCIAL } from '@/data/businessData'
 import belowheadingImage from '@/public/images/_N3A9899.jpg'
 import Consultation from '@/public/images/N3A0033_.jpg'
-import WaitingRoom from '@/public/images/N3A7746_edited.png'
+import WaitingRoom from '@/public/images/N3A7746_edited.jpg'
 
 import { Pillar } from './components/layout/Pillar'
 import { SpaceContainer } from './components/layout/SpaceContainer'
@@ -249,6 +249,7 @@ export default async function Home() {
           src={WaitingRoom}
           alt={tPage('altText.patientRoom')}
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
+          sizes="100vw"
         />
       </Pillar>
 
