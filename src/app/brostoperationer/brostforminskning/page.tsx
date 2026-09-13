@@ -35,7 +35,7 @@ export default async function Page() {
         image: {
           '@type': 'ImageObject',
           '@id': `${canonical}#primaryimage`,
-          url: `${canonicalUrl()}/images/_n3a7302.jpg`
+          url: `${canonicalUrl()}/images/n3a7302.jpg`
         },
         mainEntityOfPage: { '@id': canonical },
         potentialAction: {

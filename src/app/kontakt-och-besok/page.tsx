@@ -23,7 +23,7 @@ const clinicJsonLd = {
   '@id': CLINIC_ID,
   name: BUSINESS_NAME,
   url: canonicalUrl(),
-  image: `${canonicalUrl()}/images/wonna_tower_img_7027.png`,
+  image: `${canonicalUrl()}/images/wonna-tower-img-7027.png`,
   telephone: BUSINESS_CONTACT.telephone,
   email: BUSINESS_CONTACT.email,
   address: {
