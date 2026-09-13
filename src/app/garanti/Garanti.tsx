@@ -34,6 +34,7 @@ const Garanti = () => {
             <P white>{t('hero.intro')}</P>
             <P white>{t('hero.preamble1')}</P>
             <P white>{t('hero.preamble2')}</P>
+            <P white>{t('hero.preamble3')}</P>
           </Pillar>
         }
       />
@@ -42,6 +43,16 @@ const Garanti = () => {
         <Pillar>
           <Section>
             <H2>{t('securityPackage.title')}</H2>
+            <P>{t('securityPackage.description')}</P>
+            <P>{t('securityPackage.costs')}</P>
+            <P>
+              {t.rich('securityPackage.contact', {
+                email: (chunks) => {
+                  const email = String(chunks).trim()
+                  return <A href={`mailto:${email}`}>{email}</A>
+                }
+              })}
+            </P>
             <Ul>
               {securityPackagePoints.map((point, index) => (
                 <Li key={index}>{point}</Li>
@@ -52,8 +63,7 @@ const Garanti = () => {
           <Section>
             <H2>{t('capsuleGuarantee.title')}</H2>
             <P>{t('capsuleGuarantee.description')}</P>
-            <P>{t('capsuleGuarantee.price')}</P>
-            <Ul>
+            <Ul className="mb-4">
               <Li>{t('capsuleGuarantee.points.point1')}</Li>
             </Ul>
             <A href={'/brostoperationer#complications'}>{t('capsuleGuarantee.readMoreLinkText')}</A>

@@ -5,13 +5,17 @@
       "description": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende."
     },
     "hero": {
-      "title": "Trygghetspaket och kapselgaranti",
-      "intro": "För att du ska känna dig extra trygg så ingår ett trygghetspaket i operationspriset. Du har dessutom möjlighet att teckna en (5 års) kapselgaranti.",
-      "preamble1": "För oss är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
-      "preamble2": "Dr Gribbe har under hela sin karriär varit noggrann med att patienterna ska känna sig välinformerade och sedda före och efter operationen. Det har resulterat i trygga och nöjda patienter där slutkontrollen blir en bekräftelse på det förväntade resultatet."
+      "title": "Trygghetspaket under ett år",
+      "intro": "För att du ska känna dig extra trygg så ingår ett trygghetspaket i det ordinarie operationspriset. Du har dessutom möjlighet att teckna en (5 års) kapselgaranti.",
+      "preamble1": "För oss på Dahliakliniken är det viktigt att du som patient känner dig helt trygg innan, under och efter din operation. Man kan skriva avtal, teckna garantier och försäkringar men i slutändan handlar det om kommunikation och förtroende. Förtroende mellan patient och plastikkirurg.",
+      "preamble2": "Under alla år som plastikkirurg har Dr Gribbe varit noggrann med att patienter ska känna sig trygga, välinformerade och sedda före och efter operationen. Både direkt efter operationen under den initiala läkningstiden och sedan när slutresultatet utvecklar sig.",
+      "preamble3": "Bröstoperationer såsom bröstförstoring, bröstlyft, byte av bröstimplantat och bröstförminskning är standardiserade operationer med delvis förutsägbara resultat. Slutresultatet beror på faktorer såsom patientens förutsättningar, plastikkirurgens skicklighet och noggrannhet samt läkningsförloppet."
     },
     "securityPackage": {
-      "title": "Trygghetspaket under ett år",
+      "title": "Det här ingår i trygghetspaketet",
+      "description": "För att du som patient ska känna dig extra trygg inför din operation har vi på Dahliakliniken ett trygghetspaket med en lista på de komplikationer som kan uppstå och som kan behöva behandlas efter en bröstoperation. Alla dessa komplikationer är hos oss mycket ovanliga. ",
+      "costs": "I trygghetspaketet ingår att komplikationer åtgärdas kostnadsfritt. I kostnaden ingår då, precis som vid bröstoperationen, allt som behövs såsom narkos, bröstimplantat, operationsmaterial och återbesök.",
+      "contact": "För det fall du inte är nöjd med resultatet och vill tillämpa trygghetspaketet, mejlar du till <email>gribbe@dahliakliniken.se</email>.",
       "points": {
         "point1": "Postoperativ blödning",
         "point2": "Postoperativ infektion",
@@ -19,7 +23,7 @@
         "point4": "Asymmetri storleksskillnad",
         "point5": "Asymmetri höjdskillnad",
         "point6": "Onormal ärrbildning",
-        "point7": "Ruptur, Läckage",
+        "point7": "Ruptur, läckage",
         "point8": "Rotation",
         "point9": "Töjd ficka",
         "point10": "Bottom-out (BO)",
@@ -30,11 +34,10 @@
     },
     "capsuleGuarantee": {
       "title": "Kapselgaranti under fem år",
-      "description": "Kapselgarantin täcker två stycken kapseloperationer, operation av stram, hård kapsel i fem år efter bröstoperationen.",
+      "description": "Dahliaklinikens kapselgaranti kostar 5.000 kr och täcker två stycken kapseloperationer, operation av stram, hård kapsel i fem år efter bröstoperationen.",
       "points": {
         "point1": "Kapselkontraktion, hård kapsel"
       },
-      "price": "5000 kr",
       "readMoreLinkText": " Läs mer här"
     },
     "followUps": {
