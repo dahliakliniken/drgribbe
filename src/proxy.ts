@@ -3,6 +3,13 @@ import { NextRequest, NextResponse } from 'next/server'
 import { isPreviewDeployment } from '@/app/config/site'
 
 export function proxy(request: NextRequest) {
+  const pathname = request.nextUrl.pathname
+  if (pathname.startsWith('/images/') && pathname !== pathname.toLowerCase()) {
+    const url = request.nextUrl.clone()
+    url.pathname = pathname.toLowerCase()
+    return NextResponse.redirect(url, 308)
+  }
+
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64')
   const isDev = process.env.NODE_ENV !== 'production'
 

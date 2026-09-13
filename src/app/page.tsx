@@ -9,9 +9,9 @@ import {
 import { canonicalUrl, CLINIC_ID, ORG_ID } from '@/app/config/site'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { BUSINESS_NAME, BUSINESS_SOCIAL } from '@/data/businessData'
-import belowheadingImage from '@/public/images/_N3A9899.jpg'
-import Consultation from '@/public/images/N3A0033_.jpg'
-import WaitingRoom from '@/public/images/N3A7746_edited.jpg'
+import belowheadingImage from '@/public/images/_n3a9899.jpg'
+import Consultation from '@/public/images/n3a0033_.jpg'
+import WaitingRoom from '@/public/images/n3a7746_edited.jpg'
 
 import { Pillar } from './components/layout/Pillar'
 import { SpaceContainer } from './components/layout/SpaceContainer'

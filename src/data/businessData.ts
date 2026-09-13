@@ -23,6 +23,6 @@ export const BUSINESS_SOCIAL = {
 }
 
 export const BUSINESS_IMAGES = {
-  logo: `${BUSINESS_SITE_URL}/images/Logo.png`,
+  logo: `${BUSINESS_SITE_URL}/images/logo.png`,
   openGraph: `${BUSINESS_SITE_URL}/opengraph-image.jpg`
 }
