@@ -42,7 +42,7 @@ const HudOchInjektioner = () => {
           <SpaceContainer noPadding spaceTop>
             <Image
               src={Botoxface}
-              alt={''}
+              alt={t('altText.treatmentAreasImage')}
               className="max-h-[calc(100dvh-80px)] object-cover object-center"
             />
           </SpaceContainer>

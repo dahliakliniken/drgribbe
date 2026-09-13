@@ -39,6 +39,11 @@ const ForeOchEfter = () => {
   const t = useTranslations('fore-och-efter.page')
   const tc = useTranslations('common')
 
+  const pairAlts = (type: string, n: number) => ({
+    beforeAlt: t('alt.before', { type, n }),
+    afterAlt: t('alt.after', { type, n })
+  })
+
   return (
     <>
       <Card
@@ -67,13 +72,25 @@ const ForeOchEfter = () => {
               </SpaceContainer>
               <div className="gap-y1 columns-3">
                 <div>
-                  <BAImage beforeimage={lowRound11} afterimage={lowRound12} />
+                  <BAImage
+                    beforeimage={lowRound11}
+                    afterimage={lowRound12}
+                    {...pairAlts(t('roundImplants.lowProfile.heading'), 1)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={lowRound21} afterimage={lowRound22} />
+                  <BAImage
+                    beforeimage={lowRound21}
+                    afterimage={lowRound22}
+                    {...pairAlts(t('roundImplants.lowProfile.heading'), 2)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={lowRound31} afterimage={lowRound32} />
+                  <BAImage
+                    beforeimage={lowRound31}
+                    afterimage={lowRound32}
+                    {...pairAlts(t('roundImplants.lowProfile.heading'), 3)}
+                  />
                 </div>
               </div>
               <P className="mt-4">{t('roundImplants.lowProfile.infoText')}</P>
@@ -84,13 +101,25 @@ const ForeOchEfter = () => {
               </SpaceContainer>
               <div className="gap-y1 columns-3">
                 <div>
-                  <BAImage beforeimage={medRound11} afterimage={medRound12} />
+                  <BAImage
+                    beforeimage={medRound11}
+                    afterimage={medRound12}
+                    {...pairAlts(t('roundImplants.mediumProfile.heading'), 1)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={medRound21} afterimage={medRound22} />
+                  <BAImage
+                    beforeimage={medRound21}
+                    afterimage={medRound22}
+                    {...pairAlts(t('roundImplants.mediumProfile.heading'), 2)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={medRound31} afterimage={medRound32} />
+                  <BAImage
+                    beforeimage={medRound31}
+                    afterimage={medRound32}
+                    {...pairAlts(t('roundImplants.mediumProfile.heading'), 3)}
+                  />
                 </div>
               </div>
               <P className="mt-4">{t('roundImplants.mediumProfile.infoText')}</P>
@@ -101,13 +130,25 @@ const ForeOchEfter = () => {
               </SpaceContainer>
               <div className="gap-y1 columns-3">
                 <div>
-                  <BAImage beforeimage={highRound11} afterimage={highRound12} />
+                  <BAImage
+                    beforeimage={highRound11}
+                    afterimage={highRound12}
+                    {...pairAlts(t('roundImplants.highProfile.heading'), 1)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={highRound21} afterimage={highRound22} />
+                  <BAImage
+                    beforeimage={highRound21}
+                    afterimage={highRound22}
+                    {...pairAlts(t('roundImplants.highProfile.heading'), 2)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={highRound31} afterimage={highRound32} />
+                  <BAImage
+                    beforeimage={highRound31}
+                    afterimage={highRound32}
+                    {...pairAlts(t('roundImplants.highProfile.heading'), 3)}
+                  />
                 </div>
               </div>
               <P className="mt-4">{t('roundImplants.highProfile.infoText')}</P>
@@ -125,13 +166,25 @@ const ForeOchEfter = () => {
               <P>{t('anatomicalImplants.preamble')}</P>
               <div className="gap-y1 columns-3">
                 <div>
-                  <BAImage beforeimage={anatomy_11} afterimage={anatomy_12} />
+                  <BAImage
+                    beforeimage={anatomy_11}
+                    afterimage={anatomy_12}
+                    {...pairAlts(t('anatomicalImplants.type'), 1)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={anatomy_21} afterimage={anatomy_22} />
+                  <BAImage
+                    beforeimage={anatomy_21}
+                    afterimage={anatomy_22}
+                    {...pairAlts(t('anatomicalImplants.type'), 2)}
+                  />
                 </div>
                 <div>
-                  <BAImage beforeimage={anatomy_31} afterimage={anatomy_32} />
+                  <BAImage
+                    beforeimage={anatomy_31}
+                    afterimage={anatomy_32}
+                    {...pairAlts(t('anatomicalImplants.type'), 3)}
+                  />
                 </div>
               </div>
               <P className="mt-4">{t('anatomicalImplants.infoText')}</P>
