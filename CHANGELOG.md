@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/dahliakliniken/drgribbe/compare/v1.36.0...v1.37.0) (2026-09-13)
+
+
+### Features
+
+* update Garanti with new copy ([#301](https://github.com/dahliakliniken/drgribbe/issues/301)) ([2ca5efb](https://github.com/dahliakliniken/drgribbe/commit/2ca5efb0dafd4febb1dbbfbf2b9c5fe2288c2bcc))
+
 # [1.36.0](https://github.com/dahliakliniken/drgribbe/compare/v1.35.0...v1.36.0) (2026-08-23)
 
 
