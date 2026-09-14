@@ -1,26 +1,22 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from 'next/image'
 
 type BAImageProps = {
-    beforeimage: StaticImageData
-    afterimage: StaticImageData
+  beforeimage: StaticImageData
+  afterimage: StaticImageData
+  beforeAlt: string
+  afterAlt: string
 }
 
 export const BAImage = ({
-    beforeimage,
-    afterimage
+  beforeimage,
+  afterimage,
+  beforeAlt,
+  afterAlt
 }: BAImageProps) => {
-    return (
-        <div>
-            <Image
-                src={beforeimage}
-                alt={''}
-                className="mb-4"
-            />
-            <Image
-                src={afterimage}
-                alt={''}
-                className="mb-4"
-            />
-        </div>   
-    )
+  return (
+    <div>
+      <Image src={beforeimage} alt={beforeAlt} className="mb-4" />
+      <Image src={afterimage} alt={afterAlt} className="mb-4" />
+    </div>
+  )
 }

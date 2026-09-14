@@ -9,9 +9,9 @@ import {
 import { canonicalUrl, CLINIC_ID, ORG_ID } from '@/app/config/site'
 import { allTreatmentsData } from '@/data/allTreatmentsData'
 import { BUSINESS_NAME, BUSINESS_SOCIAL } from '@/data/businessData'
-import belowheadingImage from '@/public/images/_N3A9899.jpg'
-import Consultation from '@/public/images/N3A0033_.jpg'
-import WaitingRoom from '@/public/images/N3A7746_edited.png'
+import Consultation from '@/public/images/n3a0033.jpg'
+import WaitingRoom from '@/public/images/n3a7746-edited.jpg'
+import belowheadingImage from '@/public/images/n3a9899.jpg'
 
 import { Pillar } from './components/layout/Pillar'
 import { SpaceContainer } from './components/layout/SpaceContainer'
@@ -75,14 +75,8 @@ export default async function Home() {
         content={
           <SpaceContainer noPadding>
             <Pillar noPadding>
-              <H1>
-                {tPage.rich('aboutBox.title', {
-                  span: (chunks) => (
-                    <span className="block text-lg">{chunks}</span>
-                  ),
-                  strong: (chunks) => <strong>{chunks}</strong>
-                })}
-              </H1>
+              <H1>{tPage('aboutBox.title')}</H1>
+              <P className="mb-4">{tPage('aboutBox.subtitle')}</P>
               <P className="fat">
                 {tPage.rich('aboutBox.newClinicName', {
                   strong: (chunks) => <strong>{chunks}</strong>
@@ -249,6 +243,7 @@ export default async function Home() {
           src={WaitingRoom}
           alt={tPage('altText.patientRoom')}
           className="max-h-[calc(100dvh-80px)] object-cover object-center"
+          sizes="100vw"
         />
       </Pillar>
 

@@ -14,7 +14,7 @@ import Brostforminskning from './Brostforminskning'
 export const metadata = createPageMetadata({
   title: 'Bröstförminskning i Stockholm - Dahliakliniken',
   description:
-    'Om den egna bysten är stor och tung kan brösten minskas genom en bröstförminskning. Operationen är mycket lik operationen bröstlyft med skillnaden att mer eller mindre egen bröstvävnad tas bort.',
+    'Bröstförminskning i Stockholm när bysten är stor och tung. Operationen liknar bröstlyft, men mer egen vävnad tas bort.',
   path: '/brostoperationer/brostforminskning'
 })
 
@@ -35,7 +35,7 @@ export default async function Page() {
         image: {
           '@type': 'ImageObject',
           '@id': `${canonical}#primaryimage`,
-          url: `${canonicalUrl()}/images/_N3A7302.jpg`
+          url: `${canonicalUrl()}/images/n3a7302.jpg`
         },
         mainEntityOfPage: { '@id': canonical },
         potentialAction: {

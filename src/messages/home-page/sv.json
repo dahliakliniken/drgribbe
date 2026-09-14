@@ -7,7 +7,8 @@
       "title": "Våra behandlingar inom estetisk bröstkirurgi"
     },
     "aboutBox": {
-      "title": "Bröstoperationer i Stockholm  <span><strong>Bröstförstoring</strong>, <strong>Bröstlyft</strong> & <strong>Bröstförminskning</strong> hos Dahliakliniken</span>",
+      "title": "Bröstoperationer i Stockholm",
+      "subtitle": "Bröstförstoring, bröstlyft och bröstförminskning hos Dahliakliniken",
       "newClinicName": "<strong>Dr Örjan Gribbe</strong> lanserar nytt kliniknamn: <strong>Dahliakliniken</strong>.",
       "welcomeMessage": "Välkommen till en klinik i <strong>centrala Stockholm</strong>, helt specialiserad på <strong>estetisk bröstkirurgi</strong>. Vår mottagning ligger på <strong>Kungsholmen</strong> och vi tar emot patienter från hela Sverige.",
       "paragraph1": "All personal är <strong>specialistutbildad</strong> med flerårig erfarenhet. Det ger trygghet och säkerhet med minimal risk för komplikationer. Vi erbjuder ett brett utbud av <strong>bröstoperationer i Stockholm</strong> – inklusive <strong>bröstförstoring</strong>, <strong>bröstlyft</strong>, <strong>bröstförminskning</strong> och kombinerade ingrepp med implantat. Vi använder de senaste teknikerna och <strong>material av högsta kvalitet</strong> för att ge dig bästa möjliga resultat."
@@ -40,8 +41,8 @@
       "text5": "Vår <strong>operationsavdelning</strong> har en avancerad steril med förstklassig utrustning. Den har separata renrum avsedda för rengöring och sterilisering av instrument, dvs. icke-steriliserade och steriliserade verktyg, tvätt och övrigt separeras från varandra. Allt detta medför att <strong>operationsavdelningen</strong> håller en hög nivå avseende sterilitet och renlighet."
     },
     "altText": {
-      "heroImage": "Elegant och inbjudande väntrum på en klinik för plastikkirurgi, med en stilren inredning i grönt och guld. Hallen är dekorerad med sammetsfåtöljer, små sidobord med blommor, moderna ljuskronor och varma vägglampor, vilket skapar en lyxig och professionell atmosfär.",
-      "patientRoom": "Närbild på ett bord i ett patientrum med en vattenkanna, ett glas vatten och en liten blomma i en brun glasvas. I bakgrunden syns sängkläder med blommigt mönster.",
+      "heroImage": "Väntrum på Dahliakliniken med sammetsfåtöljer och belysning i grönt och guld.",
+      "patientRoom": "Bord i patientrum med vattenkanna, glas och en blomma i vas.",
       "consultationImage": "Bild på dr Örjan Gribbe som visar olika bröstimplantat för en patient."
     },
     "cta": {

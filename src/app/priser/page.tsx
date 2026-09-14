@@ -4,7 +4,7 @@ import { createPageMetadata } from '@/app/config/metadata'
 import Priser from './Priser'
 
 export const metadata = createPageMetadata({
-  title: 'Prislista - Dahliakliniken',
+  title: 'Priser för bröstoperationer - Dahliakliniken',
   description:
     'I alla priser ingår allt såsom narkos, implantat, övernattning och återbesök.',
   path: '/priser'

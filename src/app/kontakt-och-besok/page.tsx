@@ -13,7 +13,7 @@ import KontaktOchBesok from './KontaktOchBesok'
 export const metadata = createPageMetadata({
   title: 'Kontakt & besök - Dahliakliniken',
   description:
-    'Boka en konsultation online eller på plats hos Dr Örjan Gribbe. Kontakta oss via telefon, e-post eller SMS. Här hittar du även adress och vägbeskrivning till vår klinik i Stockholm.',
+    'Kontakta Dahliakliniken i Stockholm. Boka konsultation online eller på plats hos Dr Örjan Gribbe. Telefon, e-post och vägbeskrivning.',
   path: '/kontakt-och-besok'
 })
 
@@ -23,7 +23,7 @@ const clinicJsonLd = {
   '@id': CLINIC_ID,
   name: BUSINESS_NAME,
   url: canonicalUrl(),
-  image: `${canonicalUrl()}/images/Wonna_Tower_IMG_7027.png`,
+  image: `${canonicalUrl()}/images/wonna-tower-img-7027.jpg`,
   telephone: BUSINESS_CONTACT.telephone,
   email: BUSINESS_CONTACT.email,
   address: {

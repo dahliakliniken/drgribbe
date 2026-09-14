@@ -4,9 +4,9 @@ import { createPageMetadata } from '@/app/config/metadata'
 import Boka from './Boka'
 
 export const metadata = createPageMetadata({
-  title: 'Boka - Dahliakliniken',
+  title: 'Boka konsultation i Stockholm - Dahliakliniken',
   description:
-    'Boka din konsultation hos Dr Gribbe för bröstförstoring, bröstlyft eller bröstförminskning. Expertis, personlig rådgivning och skräddarsydda lösningar väntar dig.',
+    'Boka konsultation hos Dr Gribbe för bröstförstoring, bröstlyft eller bröstförminskning på Dahliakliniken i Stockholm.',
   path: '/boka'
 })
 

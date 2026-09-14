@@ -8,7 +8,7 @@ import { Card } from '@/components/surfaces/Card'
 import { H1 } from '@/components/typography/H1'
 import { H2 } from '@/components/typography/H2'
 import { P } from '@/components/typography/P'
-import Botoxface from '@/public/images/hudochinjektioner_opt.png'
+import Botoxface from '@/public/images/hudochinjektioner-opt.png'
 
 import { BgColors } from '../types'
 import { useAccordionItems } from './accordionData'
@@ -42,7 +42,7 @@ const HudOchInjektioner = () => {
           <SpaceContainer noPadding spaceTop>
             <Image
               src={Botoxface}
-              alt={''}
+              alt={t('altText.treatmentAreasImage')}
               className="max-h-[calc(100dvh-80px)] object-cover object-center"
             />
           </SpaceContainer>

@@ -14,7 +14,7 @@ import Brostforstoring from './Brostforstoring'
 export const metadata = createPageMetadata({
   title: 'Bröstförstoring i Stockholm - Dahliakliniken',
   description:
-    'Brösten är för de flesta kvinnor mycket viktiga. De representerar kvinnlighet, skönhet och symboliserar fruktbarhet. Här kan du läsa om hur processen för bröstförstoring går till.',
+    'Bröstförstoring i Stockholm hos Dr Örjan Gribbe. Läs om konsultation, operation och återhämtning på Dahliakliniken.',
   path: '/brostoperationer/brostforstoring'
 })
 
@@ -35,7 +35,7 @@ export default async function Page() {
         image: {
           '@type': 'ImageObject',
           '@id': `${canonical}#primaryimage`,
-          url: `${canonicalUrl()}/images/_N3A7297.jpg`
+          url: `${canonicalUrl()}/images/n3a7297.jpg`
         },
         mainEntityOfPage: { '@id': canonical },
         potentialAction: {

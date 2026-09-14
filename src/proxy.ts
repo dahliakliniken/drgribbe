@@ -2,7 +2,35 @@ import { NextRequest, NextResponse } from 'next/server'
 
 import { isPreviewDeployment } from '@/app/config/site'
 
+function normalizeImagePathname(pathname: string) {
+  const lowered = pathname.toLowerCase()
+  const lastSlash = lowered.lastIndexOf('/')
+  const dir = lowered.slice(0, lastSlash + 1)
+  const file = lowered.slice(lastSlash + 1)
+  const dot = file.lastIndexOf('.')
+  if (dot === -1) {
+    return dir + file.replaceAll('_', '-').replace(/^-+/, '').replace(/-+$/, '')
+  }
+
+  const stem = file
+    .slice(0, dot)
+    .replaceAll('_', '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '')
+  return dir + stem + file.slice(dot)
+}
+
 export function proxy(request: NextRequest) {
+  const pathname = request.nextUrl.pathname
+  if (pathname.startsWith('/images/')) {
+    const normalized = normalizeImagePathname(pathname)
+    if (pathname !== normalized) {
+      const url = request.nextUrl.clone()
+      url.pathname = normalized
+      return NextResponse.redirect(url, 308)
+    }
+  }
+
   const nonce = Buffer.from(crypto.randomUUID()).toString('base64')
   const isDev = process.env.NODE_ENV !== 'production'
 
