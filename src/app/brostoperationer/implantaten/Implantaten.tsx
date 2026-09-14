@@ -12,7 +12,7 @@ import { H2 } from '@/components/typography/H2'
 import { H3 } from '@/components/typography/H3'
 import { P } from '@/components/typography/P'
 import ImplantatImage from '@/public/images/n3a0080.jpg'
-import PolytechImage from '@/public/images/n3a7270-cut.png'
+import PolytechImage from '@/public/images/n3a7270-cut.jpg'
 import ImplantatVariansImage from '@/public/images/teardrop-runda-implantat-1000px.jpg'
 
 import { useAccordionItems } from './accordionData'
