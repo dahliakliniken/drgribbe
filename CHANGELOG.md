@@ -1,3 +1,10 @@
+# [1.38.0](https://github.com/dahliakliniken/drgribbe/compare/v1.37.0...v1.38.0) (2026-09-14)
+
+
+### Features
+
+* screaming frog fixes ([#302](https://github.com/dahliakliniken/drgribbe/issues/302)) ([d1be063](https://github.com/dahliakliniken/drgribbe/commit/d1be063017d46f37908cfbbf951b1c7c7e328c29))
+
 # [1.37.0](https://github.com/dahliakliniken/drgribbe/compare/v1.36.0...v1.37.0) (2026-09-13)
 
 
