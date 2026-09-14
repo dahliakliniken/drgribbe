@@ -33,8 +33,7 @@ export const Hero = () => {
           <Image
             src={HeroImage}
             alt={tPage('altText.heroImage')}
-            className="object-cover object-center"
-            fill
+            className="absolute inset-0 h-full w-full object-cover object-center"
             priority
             fetchPriority="high"
             sizes="100vw"

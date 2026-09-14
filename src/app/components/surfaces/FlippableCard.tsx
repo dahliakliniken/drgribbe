@@ -39,7 +39,7 @@ const FlipButton = ({ ariaLabel, onClick }: FlipButtonProps) => (
       className={classNames(
         'h-6 w-6',
         'transition-transform duration-300 ease-in-out',
-        'group-hover:rotate-[-180deg]'
+        'group-hover:-rotate-180'
       )}
       aria-hidden="true"
     />
@@ -53,7 +53,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
   const hasDescription = Boolean(member.description)
 
   return (
-    <div className="card h-60 w-[320px] lg:w-[400px]">
+    <div className="card h-60 w-[320px] lg:w-100">
       <div
         className={classNames(
           'content absolute h-full w-full shadow-lg transition-transform duration-700',
@@ -74,10 +74,10 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
           {member.image && (
             <div className="absolute top-[-25px] right-[-25px] aspect-square w-1/2 overflow-hidden rounded-full">
               <Image
-                src={member.image || '/placeholder.svg'}
+                src={member.image}
                 alt={t('altText.staffImage', { name: member.name })}
-                className={`h-full w-full object-cover`}
-                fill
+                className="h-full w-full object-cover"
+                sizes="(min-width: 1024px) 200px, 160px"
               />
             </div>
           )}
