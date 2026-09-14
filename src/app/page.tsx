@@ -75,14 +75,8 @@ export default async function Home() {
         content={
           <SpaceContainer noPadding>
             <Pillar noPadding>
-              <H1>
-                {tPage.rich('aboutBox.title', {
-                  span: (chunks) => (
-                    <span className="block text-lg">{chunks}</span>
-                  ),
-                  strong: (chunks) => <strong>{chunks}</strong>
-                })}
-              </H1>
+              <H1>{tPage('aboutBox.title')}</H1>
+              <P className="mb-4">{tPage('aboutBox.subtitle')}</P>
               <P className="fat">
                 {tPage.rich('aboutBox.newClinicName', {
                   strong: (chunks) => <strong>{chunks}</strong>
