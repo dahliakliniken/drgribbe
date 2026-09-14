@@ -12,7 +12,7 @@ import { getLastModified } from '@/utils/getLastModified'
 import Implantaten from './Implantaten'
 
 export const metadata = createPageMetadata({
-  title: 'Implantaten - Dahliakliniken',
+  title: 'Bröstimplantat i Stockholm - Dahliakliniken',
   description:
     'Bröstimplantat finns i olika material, fyllning, form och ytstruktur. Läs om varianterna hos Dahliakliniken i Stockholm.',
   path: '/brostoperationer/implantaten'
