@@ -88,9 +88,9 @@
     },
     "altText": {
       "consultation": "Dr Gribbe och en patient i konsultationssamtal",
-      "dayOfSurgery": "En kirurg i gröna operationskläder visar vägen för en patient klädd i vit morgonrock och grön operationsmössa i en sjukhuskorridor med ljus belysning.",
-      "surgery": "En kirurg i gröna operationskläder och grön operationsmössa följer en patient i vit morgonrock och grön operationsmössa genom en sjukhuskorridor med ljust trägolv och ljus belysning.",
-      "postSurgery": "En ung kvinna med mörkt hår ligger i en sjukhussäng och ler mot en kirurg i gröna operationskläder som står bredvid och håller ett formulär. Bakgrunden visar en rosa och blå solnedgång genom ett fönster, och en annan patient är delvis synlig i förgrunden.",
+      "dayOfSurgery": "Kirurg visar vägen för en patient i morgonrock i en sjukhuskorridor.",
+      "surgery": "Kirurg följer en patient i morgonrock genom en sjukhuskorridor.",
+      "postSurgery": "Patient i sjukhussäng ler mot en kirurg som står bredvid med ett formulär.",
       "firstReturnVisit": "Bild på en patient på återbesök hos Dahliakliniken"
     },
     "beforeOperation": {
