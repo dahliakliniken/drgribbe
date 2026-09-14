@@ -14,7 +14,7 @@ import Brostoperationer from './Brostoperationer'
 export const metadata = createPageMetadata({
   title: 'Bröstoperationer i Stockholm - Dahliakliniken',
   description:
-    'Kliniken för estetisk bröstförstoring och bröstlyft. Vi är med dig på resan mot dina drömbröst. Från början till slut. Från första mötet, konsultationen till slutkontrollen.',
+    'Estetisk bröstförstoring, bröstlyft och bröstförminskning hos Dr Örjan Gribbe i Stockholm. Vi följer dig från konsultation till slutkontroll.',
   path: '/brostoperationer'
 })
 

@@ -13,7 +13,7 @@ import KontaktOchBesok from './KontaktOchBesok'
 export const metadata = createPageMetadata({
   title: 'Kontakt & besök - Dahliakliniken',
   description:
-    'Boka en konsultation online eller på plats hos Dr Örjan Gribbe. Kontakta oss via telefon, e-post eller SMS. Här hittar du även adress och vägbeskrivning till vår klinik i Stockholm.',
+    'Kontakta Dahliakliniken i Stockholm. Boka konsultation online eller på plats hos Dr Örjan Gribbe. Telefon, e-post och vägbeskrivning.',
   path: '/kontakt-och-besok'
 })
 

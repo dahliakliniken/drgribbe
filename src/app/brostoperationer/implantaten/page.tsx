@@ -14,7 +14,7 @@ import Implantaten from './Implantaten'
 export const metadata = createPageMetadata({
   title: 'Implantaten - Dahliakliniken',
   description:
-    'Det finns många olika varianter av bröstimplantat och vid tillverkningen kan man variera materialet i implantatet, hur mycket man fyller implantatet, formen på implantatet och skalets ytstruktur.',
+    'Bröstimplantat finns i olika material, fyllning, form och ytstruktur. Läs om varianterna hos Dahliakliniken i Stockholm.',
   path: '/brostoperationer/implantaten'
 })
 
@@ -31,7 +31,7 @@ export default async function Page() {
         url: canonical,
         name: 'Implantaten - Dahliakliniken',
         description:
-          'Det finns många olika varianter av bröstimplantat och vid tillverkningen kan man variera materialet i implantatet, hur mycket man fyller implantatet, formen på implantatet och skalets ytstruktur.',
+          'Bröstimplantat finns i olika material, fyllning, form och ytstruktur. Läs om varianterna hos Dahliakliniken i Stockholm.',
         image: {
           '@type': 'ImageObject',
           '@id': `${canonical}#primaryimage`,

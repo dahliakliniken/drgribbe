@@ -64,7 +64,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
           className={classNames(
             'front before:bg-card-pattern relative overflow-hidden px-6 py-8',
             'before:pointer-events-none before:absolute before:inset-0',
-            'before:[background-size:200%] before:bg-[120%_60%] before:bg-no-repeat',
+            'before:bg-size-[200%] before:bg-position-[120%_60%] before:bg-no-repeat',
             'before:opacity-5'
           )}
         >
@@ -72,7 +72,7 @@ export const FlippableCard = ({ member }: StaffCardProps) => {
             {member.name}
           </H2>
           {member.image && (
-            <div className="absolute top-[-25px] right-[-25px] aspect-square w-1/2 overflow-hidden rounded-full">
+            <div className="absolute -top-6.25 -right-6.25 aspect-square w-1/2 overflow-hidden rounded-full">
               <Image
                 src={member.image}
                 alt={t('altText.staffImage', { name: member.name })}

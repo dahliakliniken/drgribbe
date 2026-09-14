@@ -6,7 +6,7 @@ import ForeOchEfter from './ForeOchEfter'
 export const metadata = createPageMetadata({
   title: 'Före och efter - Dahliakliniken',
   description:
-    'Utforska imponerande före och efter-resultat av Dr Gribbes bröstoperationer. Se verkliga patienters förvandlingar och upptäck möjligheterna för din egen förändring.',
+    'Före och efter-bilder av Dr Gribbes bröstoperationer. Se patienters resultat och möjligheterna för din egen förändring.',
   path: '/brostoperationer/fore-och-efter'
 })
 

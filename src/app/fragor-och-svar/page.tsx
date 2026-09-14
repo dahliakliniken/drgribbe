@@ -13,7 +13,7 @@ const FAQ_PATH = '/fragor-och-svar'
 export const metadata = createPageMetadata({
   title: 'Frågor och svar - Dahliakliniken',
   description:
-    'Har du frågor om bröstförstoring, bröstlyft eller bröstförminskning? Här hittar du svar från Dr Örjan Gribbe om ingrepp, återhämtning och resultat. För personlig rådgivning – boka en konsultation.',
+    'Frågor och svar om bröstförstoring, bröstlyft och bröstförminskning hos Dr Örjan Gribbe. Läs om ingrepp, återhämtning och resultat.',
   path: FAQ_PATH
 })
 

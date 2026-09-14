@@ -14,7 +14,7 @@ import HudOchInjektioner from './HudOchInjektioner'
 export const metadata = createPageMetadata({
   title: 'Hud & injektioner - Dahliakliniken',
   description:
-    'Det finns olika behandlingar med muskelavslappnande medel som kan ge fint och bra resultat. Muskelavslappnande kan användas mot behandling av rynkor och för medicinsk användning t.ex. mot spänningshuvudvärk och svettningar.',
+    'Muskelavslappnande behandling mot rynkor, spänningshuvudvärk och svettningar på Dahliakliniken i Stockholm.',
   path: '/hud-och-injektioner'
 })
 
@@ -31,7 +31,7 @@ export default async function Page() {
         url: canonical,
         name: 'Hud & injektioner - Dahliakliniken',
         description:
-          'Det finns olika behandlingar med muskelavslappnande medel som kan ge fint och bra resultat. Muskelavslappnande kan användas mot behandling av rynkor och för medicinsk användning t.ex. mot spänningshuvudvärk och svettningar.',
+          'Muskelavslappnande behandling mot rynkor, spänningshuvudvärk och svettningar på Dahliakliniken i Stockholm.',
         image: {
           '@type': 'ImageObject',
           '@id': `${canonical}#primaryimage`,
