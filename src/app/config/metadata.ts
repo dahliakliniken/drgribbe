@@ -4,7 +4,7 @@ import { canonicalUrl } from '@/app/config/site'
 import { BUSINESS_NAME } from '@/data/businessData'
 
 export const DEFAULT_TITLE =
-  'Dahliakliniken – Expert på estetisk bröstförstoring och bröstlyft i Stockholm'
+  'Bröstoperationer i Stockholm - Dahliakliniken'
 
 export const DEFAULT_DESCRIPTION =
   'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.'
