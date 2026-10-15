@@ -1,3 +1,10 @@
+# [1.39.0](https://github.com/dahliakliniken/drgribbe/compare/v1.38.0...v1.39.0) (2026-10-15)
+
+
+### Features
+
+* add new testimonials and update existing entries ([#303](https://github.com/dahliakliniken/drgribbe/issues/303)) ([ba89f4c](https://github.com/dahliakliniken/drgribbe/commit/ba89f4cbd60ebe378c6fb389cd1fc6207451b993))
+
 # [1.38.0](https://github.com/dahliakliniken/drgribbe/compare/v1.37.0...v1.38.0) (2026-09-14)
 
 
