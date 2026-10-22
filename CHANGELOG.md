@@ -1,3 +1,10 @@
+## [1.41.1](https://github.com/dahliakliniken/drgribbe/compare/v1.41.0...v1.41.1) (2026-10-22)
+
+
+### Bug Fixes
+
+* correct formatting error in payment rules text ([edb9bb3](https://github.com/dahliakliniken/drgribbe/commit/edb9bb3863e3edfe6608477cd1371f0a2312b4e5))
+
 # [1.41.0](https://github.com/dahliakliniken/drgribbe/compare/v1.40.0...v1.41.0) (2026-10-22)
 
 
