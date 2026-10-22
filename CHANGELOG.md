@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/dahliakliniken/drgribbe/compare/v1.40.0...v1.41.0) (2026-10-22)
+
+
+### Features
+
+* add @vercel/analytics dependency and integrate Analytics component in layout ([a975796](https://github.com/dahliakliniken/drgribbe/commit/a97579697f999e2e4857430883e74a1921babffd))
+
 # [1.40.0](https://github.com/dahliakliniken/drgribbe/compare/v1.39.0...v1.40.0) (2026-10-22)
 
 
