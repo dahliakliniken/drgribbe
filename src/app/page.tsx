@@ -77,11 +77,6 @@ export default async function Home() {
             <Pillar noPadding>
               <H1>{tPage('aboutBox.title')}</H1>
               <P className="mb-4">{tPage('aboutBox.subtitle')}</P>
-              <P className="fat">
-                {tPage.rich('aboutBox.newClinicName', {
-                  strong: (chunks) => <strong>{chunks}</strong>
-                })}
-              </P>
               <P>
                 {tPage.rich('aboutBox.welcomeMessage', {
                   strong: (chunks) => <strong>{chunks}</strong>
