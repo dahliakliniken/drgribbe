@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/dahliakliniken/drgribbe/compare/v1.39.0...v1.40.0) (2026-10-22)
+
+
+### Features
+
+* update content and structure in home and pricing sections ([#304](https://github.com/dahliakliniken/drgribbe/issues/304)) ([960d63e](https://github.com/dahliakliniken/drgribbe/commit/960d63e7b7e9ca2b4b348afe0bb54dee928a0174))
+
 # [1.39.0](https://github.com/dahliakliniken/drgribbe/compare/v1.38.0...v1.39.0) (2026-10-15)
 
 
