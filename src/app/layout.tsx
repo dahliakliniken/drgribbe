@@ -1,6 +1,7 @@
 import './globals.css'
 
 import { GoogleTagManager } from '@next/third-parties/google'
+import { Analytics } from "@vercel/analytics/next"
 import { Metadata } from 'next'
 import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
@@ -72,6 +73,7 @@ export default async function RootLayout({
             {children}
           </main>
           <LastUpdated />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
