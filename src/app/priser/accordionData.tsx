@@ -1,4 +1,3 @@
-import { Phone } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 import { Li } from '@/components/surfaces/Li'
@@ -12,11 +11,12 @@ export const useAccordionItems = () => {
       id: crypto.randomUUID(),
       title: t('paymentRules.heading'),
       content: (
-        <>
-          <P small>{t('paymentRules.text1')}</P>
-          <P small>{t('paymentRules.text2')}</P>
-          <P small>{t('paymentRules.text3')}</P>
-        </>
+        <Ul>
+          <Li small>{t('paymentRules.text1')}</Li>
+          <Li small>{t('paymentRules.text2')}</Li>
+          <Li small>{t('paymentRules.text3')}</Li>
+          <Li small>{t('paymentRules.text4')}</Li>
+        </Ul>
       )
     },
     {
@@ -25,18 +25,14 @@ export const useAccordionItems = () => {
       content: (
         <>
           <P small>{t('cancellationRules.text1')}</P>
-          <P small>{t('cancellationRules.text8')}</P>
           <P small>{t('cancellationRules.text2')}</P>
-          <P small className="mb-4 flex items-center gap-2 italic">
-            <Phone className="h-5 w-5" />
-            {t('cancellationRules.text3')}
-          </P>
-          <P small>{t('cancellationRules.text4')}</P>
           <Ul>
-            <Li small>{t('cancellationRules.text7')}</Li>
+            <Li small>{t('cancellationRules.text3')}</Li>
+            <Li small>{t('cancellationRules.text4')}</Li>
             <Li small>{t('cancellationRules.text5')}</Li>
             <Li small>{t('cancellationRules.text6')}</Li>
-            <Li small>{t('cancellationRules.text9')}</Li>
+            <Li small>{t('cancellationRules.text7')}</Li>
+            <Li small>{t('cancellationRules.text8')}</Li>
           </Ul>
         </>
       )

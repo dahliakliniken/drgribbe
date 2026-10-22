@@ -4,21 +4,21 @@
     "readMore": "Läs mer om våra garantier här",
     "paymentRules": {
       "heading": "Betalningsregler",
-      "text1": "Senast 16 dagar innan operation ska full betalning ske.",
-      "text2": "21 dagar (3 veckor) innan operation ska minst 25 % av operationskostnaden vara betald.",
-      "text3": "Om operationen bokas in med kort varsel så gäller andra villkor som bestäms vid konsultationen."
+      "text1": "Nybesök/konsultationstider är kostnadsfria. Ytterligare konsultationer “återbesök inför operation” är också kostnadsfria för det fall operation bokas och genomförs utan om- eller avbokning. Annars debiteras dessa besök 8 00 kr per konsultation/återbesökstillfälle.",
+      "text2": "Betalningsalternativ: Betalning till faktura (plusgiro) som vi skickar till dig på mejlen. Kontant betalning går bra. Utlandsbetalning går bra, säg till om aktuellt. Avbetalning finns via Medical Finance som vi samarbetar med. Du kan själv ringa dem och ansöka.",
+      "text3": "Operationen ska vara betald 30 dagar (4 veckor) i förväg.",
+      "text4": "Om operationen bokas in med kort varsel (mindre än 4 veckor) så gäller andra villkor.  Du har alltid 7 dagars lagstadgad betänketid. Därefter träder våra av-och ombokningsregler in i enlighet med vad som gäller för de antal dagar som är kvar till operation, se nedan."
     },
     "cancellationRules": {
       "heading": "Av- och ombokningsregler",
-      "text1": "Avbokning av nybesök/konsultationstid ska ske senast 24 timmar innan bokad tid. Om avbokning görs senare debiteras en avgift för uteblivet besök om 500 kronor.",
-      "text2": "Du har alltid möjlighet att av- eller omboka din operation men detta måste enligt ovan ske minst 21 dagar (3 veckor) innan avtalad operationstid för att vara kostnadsfri.",
-      "text8": "Nybesök/konsultationstider är kostnadsfria. Ytterligare konsultationer 'återbesök inför operation' är också kostnadsfria för det fall operation bokas och genomförs, annars debiteras dessa besök 500 kr per tillfälle.",
-      "text3": "Avbokning ska ske muntligen per telefon.",
-      "text4": "Vid avbokning av operationstid senare än 21 dagar debiterar vi enligt följande.",
-      "text5": "Vid av/ombokning som sker 16-7 dagar innan avtalad operationstid debiteras 50 procent av operationskostnaden.",
-      "text6": "Vid av/ombokning som sker 7-2 dagar innan avtalad operationstid debiteras 75 procent.",
-      "text7": "Vid av/ombokning som sker 21-16 dagar innan avtalad operationstid debiteras 25 procent av operationskostnaden.",
-      "text9": "Vid av/ombokning som sker 2-0 dagar innan avtalad operationstid debiteras fullt pris."
+      "text1": "Du har alltid möjlighet att av- eller omboka din operation men detta måste enligt ovan ske minst en månad (4 veckor) innan avtalad operationstid för att vara kostnadsfri.",
+      "text2": "Vid avbokning av operationstid senare än en månad innan operationsdagen debiterar vi enligt följande:",
+      "text3": "Vid av- eller ombokning 17-30/31 dagar innan avtalad operationstid debiteras 25% av kostnaden för operation.",
+      "text4": "Vid av- eller ombokning 16-7 dagar innan avtalad operationstid debiteras 50% av kostnaden för operation.",
+      "text5": "Vid av- eller ombokning 7-2 dagar innan avtalad operationstid debiteras 75%.",
+      "text6": "Vid av- eller ombokning 2-0 dagar innan avtalad operationstid debiteras fullt pris.",
+      "text7": "Nybesök/konsultationstider är kostnadsfria. Ytterligare konsultationer \"återbesök inför operation\" är också kostnadsfria för det fall operation bokas och genomförs, annars debiteras dessa besök 800 kr per tillfälle.",
+      "text8": "Det pris du fått vid nybesöket/konsultationstillfället gäller vid bokning av operation inom tre månader från nybesöket och därefter till nästa prishöjning. Vid ombokning av operation framåt i tiden på patientens intitiativ kan eventuellt priset behöva justeras."
     },
     "financing": {
       "heading": "Finansiering och delbetalning",
