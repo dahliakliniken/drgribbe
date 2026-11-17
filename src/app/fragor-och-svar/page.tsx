@@ -17,8 +17,6 @@ export const metadata = createPageMetadata({
   path: FAQ_PATH
 })
 
-const toPlainText = (value: string) => value.replace(/<\/?[^>]+>/g, '')
-
 export default async function Page() {
   const t = await getTranslations('fragor-och-svar.page.faqAccordion')
 
@@ -31,7 +29,7 @@ export default async function Page() {
       name: t(`${key}.question`),
       acceptedAnswer: {
         '@type': 'Answer',
-        text: toPlainText(String(t.raw(`${key}.answer`)))
+        text: t.markup(`${key}.answer`, { link: (chunks) => chunks })
       }
     }))
   }

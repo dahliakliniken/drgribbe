@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+permissions:
+  pull-requests: read
+
 jobs:
   validate-pr-title:
     runs-on: ubuntu-latest
