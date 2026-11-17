@@ -1,3 +1,10 @@
+# [1.42.0](https://github.com/dahliakliniken/drgribbe/compare/v1.41.1...v1.42.0) (2026-11-17)
+
+
+### Features
+
+* optimize image assets and update references in HudOchInjektione… ([#305](https://github.com/dahliakliniken/drgribbe/issues/305)) ([7d360d4](https://github.com/dahliakliniken/drgribbe/commit/7d360d4f2aae0f27e0032e17e4ccd2a62a937e4f))
+
 ## [1.41.1](https://github.com/dahliakliniken/drgribbe/compare/v1.41.0...v1.41.1) (2026-10-22)
 
 
