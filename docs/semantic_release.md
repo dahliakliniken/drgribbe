@@ -53,4 +53,9 @@ Semantic Release runs automatically when commits are pushed to `main` (typically
 3. Updates `package.json`, `CHANGELOG.md`, and the GitHub release.
 4. Commits release artifacts back to `main` with `[skip ci]` to avoid a release loop.
 
+The workflow uses the `GH_TOKEN` repository secret for release operations. Its
+token needs write access to contents, issues, and pull requests, and must be
+allowed to push release commits to `main`. The workflow's `GITHUB_TOKEN` only
+has read access to repository contents for checkout.
+
 See [release_process.md](./release_process.md) for the full branching and deployment flow.
