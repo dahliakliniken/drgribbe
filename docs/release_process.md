@@ -7,7 +7,7 @@
 ```
 main
 └── feat/xxx
-    └── PR → Vercel preview → merge to main → production deploy + semantic-release
+    └── PR → Vercel preview → merge to main → production deploy
 ```
 
 - **Feature branches:** `feat/your-feature-name`
@@ -19,9 +19,10 @@ main
 1. Open a PR against `main`. Vercel creates a preview deployment for review and testing.
 2. After approval, merge the PR into `main`.
 3. Vercel deploys to **production** automatically.
-4. **Semantic Release** runs on the merge, bumps the version when warranted, updates `CHANGELOG.md`, and creates a GitHub release.
 
 There is no separate staging branch or release branch. Preview deployments replace the old staging workflow.
+
+Package versions, changelog updates, and GitHub releases are not automated.
 
 ## Pull request title format
 
@@ -34,4 +35,4 @@ Examples:
 - `docs: update deployment docs`
 - `chore: update dependencies`
 
-Local commits are also checked via Husky when you commit. See [semantic_release.md](./semantic_release.md) for the full format.
+Local commits are also checked via Husky when you commit.

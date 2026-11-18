@@ -4,3 +4,14 @@ packages:
 autoInstallPeers: true
 enablePrePostScripts: true
 
+overrides:
+  '@types/react': 19.2.7
+  '@types/react-dom': 19.2.3
+
+minimumReleaseAgeExclude:
+  - electron-to-chromium@1.5.488
+  - intl-messageformat@12.2.0
+  - node-releases@2.0.65
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
