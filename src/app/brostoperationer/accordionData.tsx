@@ -4,7 +4,9 @@ import { P } from '@/components/typography/P'
 
 export const useAccordionItems = () => {
   const t = useTranslations('brostoperationer.page.process.surgery.accordion')
-  const tComplications = useTranslations('brostoperationer.page.complications.accordion')
+  const tComplications = useTranslations(
+    'brostoperationer.page.complications.accordion'
+  )
 
   const complications = [
     {

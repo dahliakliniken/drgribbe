@@ -30,7 +30,7 @@ export const useLinksData = () => {
             text: t('breastLift'),
             href: '/brostoperationer/brostlyft',
             id: crypto.randomUUID()
-          },                    
+          },
           {
             text: t('breastReduction'),
             href: '/brostoperationer/brostforminskning',

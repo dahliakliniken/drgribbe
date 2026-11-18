@@ -1,9 +1,8 @@
 'use client'
-import Image, { StaticImageData } from 'next/image'
-import { useTranslations } from 'next-intl'
-import { useEffect, useRef, useState } from 'react'
 
-import { useFocusTrap } from '@/hooks/useFocusTrap'
+import { useTranslations } from 'next-intl'
+import Image, { StaticImageData } from 'next/image'
+import { useRef } from 'react'
 
 import { CloseIcon } from '../icons/CloseIcon'
 
@@ -14,66 +13,13 @@ type ImageModalProps = {
 
 export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
   const t = useTranslations('common')
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [isVisible, setIsVisible] = useState(false)
-  const modalRef = useRef<HTMLDivElement>(null)
-  const openButtonRef = useRef<HTMLButtonElement>(null)
-  const closeButtonRef = useRef<HTMLButtonElement>(null)
-
-  useFocusTrap(isModalOpen, modalRef)
-
-  const openModal = () => {
-    document.body.style.overflow = 'hidden' // Prevent background scrolling
-    setIsVisible(true)
-    setTimeout(() => {
-      setIsModalOpen(true)
-    }, 10) // Small delay to ensure the transition starts
-  }
-
-  const closeModal = () => {
-    setIsModalOpen(false)
-    setTimeout(() => {
-      setIsVisible(false)
-      document.body.style.overflow = '' // Restore background scrolling
-      openButtonRef.current?.focus()
-    }, 300) // Duration of the transition
-  }
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        closeModal()
-      }
-    }
-
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        modalRef.current &&
-        !modalRef.current.contains(event.target as Node)
-      ) {
-        closeModal()
-      }
-    }
-
-    if (isModalOpen) {
-      document.addEventListener('keydown', handleKeyDown)
-      document.addEventListener('mousedown', handleClickOutside)
-
-      // Set focus to the close button when the modal opens
-      closeButtonRef.current?.focus()
-
-      return () => {
-        document.removeEventListener('keydown', handleKeyDown)
-        document.removeEventListener('mousedown', handleClickOutside)
-      }
-    }
-  }, [isModalOpen])
+  const dialogRef = useRef<HTMLDialogElement>(null)
 
   return (
     <div className="relative inline-block focus-within:ring-2 focus-within:ring-green-500">
       <button
-        ref={openButtonRef}
-        onClick={openModal}
+        type="button"
+        onClick={() => dialogRef.current?.showModal()}
         className="focus:outline-hidden"
         aria-label={t('imageModal.openFullViewAria', { imageAlt })}
       >
@@ -84,31 +30,31 @@ export const ImageModal = ({ imageSrc, imageAlt }: ImageModalProps) => {
         />
       </button>
 
-      {/* Modal */}
-      {isVisible && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          className={`bg-opacity-75 fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-300 ${isModalOpen ? 'opacity-100' : 'opacity-0'}`}
+      <dialog
+        ref={dialogRef}
+        aria-label={t('imageModal.fullViewAria', { imageAlt })}
+        className="fixed inset-0 m-0 h-dvh max-h-none w-full max-w-none items-center justify-center bg-transparent backdrop:bg-black/75 open:flex"
+        onPointerDown={(event) => {
+          if (event.target === event.currentTarget) {
+            event.currentTarget.close()
+          }
+        }}
+      >
+        <button
+          type="button"
+          onClick={() => dialogRef.current?.close()}
+          aria-label={t('imageModal.closeAria')}
+          className="absolute top-4 right-4 text-white"
         >
-          <div ref={modalRef} className={`max-h-screen w-auto overflow-hidden`}>
-            <button
-              ref={closeButtonRef}
-              onClick={closeModal}
-              aria-label={t('imageModal.closeAria')}
-              className="absolute top-4 right-4 text-white"
-            >
-              <CloseIcon />
-            </button>
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              className="max-h-[90vh]"
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </div>
-      )}
+          <CloseIcon />
+        </button>
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          loading="lazy"
+          className="max-h-[90vh] object-contain"
+        />
+      </dialog>
     </div>
   )
 }

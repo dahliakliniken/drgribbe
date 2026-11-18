@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "printWidth": 80,
+  "sortPackageJson": false,
+  "sortTailwindcss": {
+    "stylesheet": "./src/app/globals.css"
+  },
+  "ignorePatterns": [
+    "node_modules",
+    ".next",
+    ".husky",
+    "coverage",
+    "stories",
+    "storybook-static",
+    "*.log",
+    "playwright-report",
+    ".nyc_output",
+    "test-results",
+    "junit.xml",
+    "docs",
+    "/src/lastModified.json",
+    "/CHANGELOG.md",
+    "/SEO.md",
+    "/.github/workflows/codeql.yml"
+  ],
+  "sortImports": {
+    "groups": [
+      "builtin",
+      "external",
+      ["internal", "subpath", "unknown"],
+      ["parent", "sibling", "index", "style"]
+    ]
+  }
+}

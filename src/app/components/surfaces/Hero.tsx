@@ -2,8 +2,8 @@
 
 import classNames from 'classnames'
 import { ChevronDown } from 'lucide-react'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 import { useDelayedAnimation } from '@/hooks/useDelayedAnimation'
 import HeroImage from '@/public/images/hero-image-1920.jpg'
@@ -18,14 +18,16 @@ export const Hero = () => {
   const scrollDown = () => {
     window.scrollTo({
       top: window.innerHeight - 80,
-      behavior: 'smooth'
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'instant'
+        : 'smooth'
     })
   }
 
   return (
     <div
       className={classNames('transition-all duration-500', {
-        'animate-page-bounce': showAnimation
+        'motion-safe:animate-page-bounce': showAnimation
       })}
     >
       <section className="relative flex h-[calc(100dvh-80px)] flex-col items-center justify-center">
@@ -41,9 +43,10 @@ export const Hero = () => {
         </div>
 
         <div className="herogradient absolute inset-0"></div>
-        <div
+        <button
+          type="button"
           className={classNames(
-            'absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer transition-opacity duration-500',
+            'absolute bottom-4 left-1/2 -translate-x-1/2 transition-opacity duration-500 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white',
             {
               'opacity-100': showAnimation,
               'opacity-0': !showAnimation
@@ -51,8 +54,13 @@ export const Hero = () => {
           )}
           onClick={scrollDown}
         >
-          <ChevronDown size={48} className="animate-bounce text-white" />
-        </div>
+          <span className="sr-only">{tPage('scrollDown')}</span>
+          <ChevronDown
+            aria-hidden="true"
+            size={48}
+            className="text-white motion-safe:animate-bounce"
+          />
+        </button>
         <div className="absolute bottom-24">
           <A href="/boka" buttonStyle>
             {tCommon('bookConsultation')}

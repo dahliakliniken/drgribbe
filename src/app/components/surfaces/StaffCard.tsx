@@ -1,8 +1,8 @@
 'use client'
 import classNames from 'classnames'
 import { ChevronDown } from 'lucide-react'
-import Image, { StaticImageData } from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 
 import { BgColors } from '@/app/types'

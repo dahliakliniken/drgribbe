@@ -18,8 +18,9 @@
     "readFullReviewAria": "Läs hela recensionen från {title} på Google"
   },
   "imageModal": {
-    "openFullViewAria": "Open full view of {imageAlt}",
-    "closeAria": "Close modal"
+    "fullViewAria": "Förstorad bild: {imageAlt}",
+    "openFullViewAria": "Visa {imageAlt} i större format",
+    "closeAria": "Stäng bildvisningen"
   },
   "informationBanner": {
     "title": "Glad sommar!",

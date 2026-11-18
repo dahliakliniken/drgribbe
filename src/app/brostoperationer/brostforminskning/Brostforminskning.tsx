@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 import { BgColors } from '@/app/types'
 import { Pillar } from '@/components/layout/Pillar'
@@ -57,9 +57,7 @@ const Brostforminskning = () => {
                 <H3>{tPage('faq.sectionTitle')}</H3>
                 <Accordion size="h4" items={faqItems} />
                 <div className="m-auto my-6 flex justify-center">
-                  <A href="/fragor-och-svar">
-                    {tCommon('linktoFaq')}
-                  </A>
+                  <A href="/fragor-och-svar">{tCommon('linktoFaq')}</A>
                 </div>
               </Section>
             </SpaceContainer>

@@ -40,32 +40,32 @@ export function StepsSection() {
       bgColor={BgColors.Beige}
       className="before:bg-[-100%_20%]"
       content={
-          <div className="relative mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
-            <div className="mx-auto max-w-3xl text-center">
-              <H2 id="what-happens-next-title">{t('title')}</H2>
-            </div>
-
-            <div className="mt-10 grid gap-8 md:grid-cols-3 md:gap-0">
-              {steps.map((step, idx) => (
-                <article
-                  key={step.title}
-                  className={`px-4 text-center md:px-10 ${idx > 0 ? 'md:border-gold md:border-l' : ''}`}
-                >
-                  <div className="mb-6 flex justify-center">
-                    <div className="text-gold inline-flex size-16 items-center justify-center">
-                      <step.icon
-                        aria-hidden="true"
-                        className="size-11"
-                        strokeWidth={1.4}
-                      />
-                    </div>
-                  </div>
-                  <H3 className="font-medium">{step.title}</H3>
-                  <P>{step.description}</P>
-                </article>
-              ))}
-            </div>
+        <div className="relative mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-10">
+          <div className="mx-auto max-w-3xl text-center">
+            <H2 id="what-happens-next-title">{t('title')}</H2>
           </div>
+
+          <div className="mt-10 grid gap-8 md:grid-cols-3 md:gap-0">
+            {steps.map((step, idx) => (
+              <article
+                key={step.title}
+                className={`px-4 text-center md:px-10 ${idx > 0 ? 'md:border-l md:border-gold' : ''}`}
+              >
+                <div className="mb-6 flex justify-center">
+                  <div className="inline-flex size-16 items-center justify-center text-gold">
+                    <step.icon
+                      aria-hidden="true"
+                      className="size-11"
+                      strokeWidth={1.4}
+                    />
+                  </div>
+                </div>
+                <H3 className="font-medium">{step.title}</H3>
+                <P>{step.description}</P>
+              </article>
+            ))}
+          </div>
+        </div>
       }
     />
   )

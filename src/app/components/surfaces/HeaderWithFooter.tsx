@@ -1,7 +1,7 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import { Button } from '../inputs/Button'
@@ -86,16 +86,17 @@ export const HeaderWithFooter = () => {
   return (
     <header
       style={{ bottom: bottomOffset }}
-      className={`fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300 lg:top-0 ${isAtBottom ? 'h-52' : 'h-20'
-        }`}
+      className={`fixed right-0 left-0 z-50 w-full bg-beige transition-[height] duration-300 lg:top-0 ${
+        isAtBottom ? 'h-52' : 'h-20'
+      }`}
     >
-      <div className="p-gapSpace flex items-center md:p-4">
+      <div className="flex items-center p-gapSpace md:p-4">
         <Logo />
         <DropdownMenu />
       </div>
 
       {isAtBottom && (
-        <div className="bg-beige mx-auto flex flex-col items-center justify-center pb-[calc(0.75rem+env(safe-area-inset-bottom))] lg:pr-16">
+        <div className="mx-auto flex flex-col items-center justify-center bg-beige pb-[calc(0.75rem+env(safe-area-inset-bottom))] lg:pr-16">
           <div className="flex flex-col text-center text-sm">
             <span>{t('contactUs')}</span>
             <span>

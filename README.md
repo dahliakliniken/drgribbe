@@ -43,7 +43,10 @@ Here are the available scripts for this project:
 - `pnpm dev`: Starts the development server at `localhost:3000`.
 - `pnpm build`: Builds the project for production.
 - `pnpm start`: Starts the production server after a build.
-- `pnpm lint`: Runs ESLint for code linting
+- `pnpm lint`: Checks code with Oxlint.
+- `pnpm lint:fix`: Applies Oxlint fixes.
+- `pnpm format`: Formats files with Oxfmt.
+- `pnpm format:check`: Checks formatting with Oxfmt.
 - `pnpm typecheck`: Runs TypeScript without emitting files
 
 ## Project Structure
@@ -65,8 +68,8 @@ A high-level overview of the folder structure:
 │   ├── utils/            # Utility functions and helpers
 │   └── types/            # TypeScript types and interfaces
 ├── docs/                 # Directory containing documentation files
-├── .eslintrc.js          # ESLint configuration
-├── .prettierrc           # Prettier configuration
+├── .oxlintrc.json        # Oxlint configuration
+├── .oxfmtrc.json         # Oxfmt configuration
 ├── next.config.js        # Next.js configuration
 └── tsconfig.json         # TypeScript configuration
 ```
@@ -104,5 +107,5 @@ Examples:
 - [pnpm](https://pnpm.io/) - Fast, disk space-efficient package manager.
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript for improved developer experience.
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
-- [ESLint](https://eslint.org/) - Linting tool for JavaScript/TypeScript.
-- [Prettier](https://prettier.io/) - Code formatting tool.
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter) - Linting tool for JavaScript/TypeScript.
+- [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) - Code formatting tool.

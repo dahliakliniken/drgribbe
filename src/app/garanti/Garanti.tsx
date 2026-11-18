@@ -16,9 +16,9 @@ import { BgColors } from '../types'
 const Garanti = () => {
   const t = useTranslations('garanti.page')
   const tCommon = useTranslations('common')
-  const securityPackagePoints = Object.keys(t.raw('securityPackage.points')).map(
-    (key) => t(`securityPackage.points.${key}`)
-  )
+  const securityPackagePoints = Object.keys(
+    t.raw('securityPackage.points')
+  ).map((key) => t(`securityPackage.points.${key}`))
   const philosophyPoints = Object.keys(t.raw('philosophy.points')).map((key) =>
     t(`philosophy.points.${key}`)
   )
@@ -66,7 +66,9 @@ const Garanti = () => {
             <Ul className="mb-4">
               <Li>{t('capsuleGuarantee.points.point1')}</Li>
             </Ul>
-            <A href={'/brostoperationer#complications'}>{t('capsuleGuarantee.readMoreLinkText')}</A>
+            <A href={'/brostoperationer#complications'}>
+              {t('capsuleGuarantee.readMoreLinkText')}
+            </A>
           </Section>
 
           <Section>
@@ -112,9 +114,7 @@ const Garanti = () => {
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={
             <Pillar>
-              <H2 className="text-center">
-                {t('cta.title')}
-              </H2>
+              <H2 className="text-center">{t('cta.title')}</H2>
               <P className="text-center">{t('cta.description')}</P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>

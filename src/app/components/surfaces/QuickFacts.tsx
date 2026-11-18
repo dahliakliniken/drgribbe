@@ -78,14 +78,12 @@ export const QuickFacts = ({
           return (
             <div key={fact.label} className="mb-3 flex items-start gap-2">
               <Icon
-                className="text-green mt-0.5 h-5 w-5 flex-shrink-0"
+                className="mt-0.5 h-5 w-5 flex-shrink-0 text-green"
                 aria-hidden="true"
               />
               <div className="flex flex-wrap items-baseline">
                 <dt className="mr-2">{`${fact.label}:`}</dt>
-                <dd className="font-light">
-                  {fact.value}
-                </dd>
+                <dd className="font-light">{fact.value}</dd>
               </div>
             </div>
           )

@@ -1,13 +1,16 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useTranslations } from 'next-intl'
 import { Fragment } from 'react'
 
 import { determineActiveLinkColor } from '@/utils/determineActiveLinkColor'
 
-import { breadcrumbRouteKey, formatBreadcrumbFallback } from './breadcrumbLabels'
+import {
+  breadcrumbRouteKey,
+  formatBreadcrumbFallback
+} from './breadcrumbLabels'
 
 export const Breadcrumbs = () => {
   const t = useTranslations('site-breadcrumbs')
@@ -35,7 +38,7 @@ export const Breadcrumbs = () => {
   }
 
   return (
-    <div className="px-gapSpace lg:bg-beige w-full font-light">
+    <div className="w-full px-gapSpace font-light lg:bg-beige">
       <nav className="py-2">
         <ul className="flex">
           <li className={listClasses}>

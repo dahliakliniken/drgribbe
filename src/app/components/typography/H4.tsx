@@ -6,7 +6,7 @@ type H4Props = {
 
 export const H4 = ({ children, white, className }: H4Props) => {
   return (
-    <h4 className={`${white && 'text-white'} text-lg mb-4 ${className}`}>
+    <h4 className={`${white && 'text-white'} mb-4 text-lg ${className}`}>
       {children}
     </h4>
   )

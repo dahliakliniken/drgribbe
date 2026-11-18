@@ -19,7 +19,10 @@ function deepMerge(target, source) {
       continue
     }
 
-    if (targetValue !== undefined && isPlainObject(targetValue) !== isPlainObject(sourceValue)) {
+    if (
+      targetValue !== undefined &&
+      isPlainObject(targetValue) !== isPlainObject(sourceValue)
+    ) {
       throw new Error(
         `Type conflict while merging key "${key}". Existing and incoming values have different shapes.`
       )
@@ -66,7 +69,9 @@ function setAtNamespace(root, namespaceParts, value) {
 
     if (isLeaf) {
       const existing = cursor[part]
-      cursor[part] = isPlainObject(existing) ? deepMerge(existing, value) : value
+      cursor[part] = isPlainObject(existing)
+        ? deepMerge(existing, value)
+        : value
       continue
     }
 
@@ -93,7 +98,9 @@ function getLocaleFromFile(filePath) {
 }
 
 function main() {
-  const jsonFiles = walkJsonFiles(MESSAGES_DIR).sort((a, b) => a.localeCompare(b))
+  const jsonFiles = walkJsonFiles(MESSAGES_DIR).sort((a, b) =>
+    a.localeCompare(b)
+  )
   const localeBuckets = {}
 
   for (const filePath of jsonFiles) {
@@ -102,7 +109,9 @@ function main() {
     const parsed = JSON.parse(readFileSync(filePath, 'utf8'))
 
     if (!isPlainObject(parsed)) {
-      throw new Error(`Message file must contain an object at top level: ${filePath}`)
+      throw new Error(
+        `Message file must contain an object at top level: ${filePath}`
+      )
     }
 
     const current = localeBuckets[locale] || {}

@@ -1,7 +1,7 @@
 'use client'
 
 import classNames from 'classnames'
-import { useRef, useState } from 'react'
+import { useId, useState } from 'react'
 
 import { ChevronIcon } from '../icons/ChevronIcon'
 
@@ -23,26 +23,11 @@ export const Accordion = ({
   size = 'h3'
 }: AccordionProps) => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null)
-  const accordionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({})
+  const accordionId = useId()
   const HeadingTag = size
 
   const handleAccordionToggle = (id: string) => {
     setOpenAccordion((prev) => (prev === id ? null : id))
-  }
-
-  const handleFocus = (id: string) => {
-    setOpenAccordion(id)
-  }
-
-  const handleBlur = (id: string) => {
-    setTimeout(() => {
-      if (
-        accordionRefs.current[id] &&
-        !accordionRefs.current[id]?.contains(document.activeElement)
-      ) {
-        setOpenAccordion(null)
-      }
-    }, 0)
   }
 
   const borderColor = coral
@@ -63,9 +48,10 @@ export const Accordion = ({
         <div key={id} className={`${borderColor} mb-2 rounded-lg border`}>
           <HeadingTag className="text-lg font-light">
             <button
-              id={`accordion-${id}`}
+              type="button"
+              id={`${accordionId}-trigger-${id}`}
               aria-expanded={openAccordion === id}
-              aria-controls={`panel-${id}`}
+              aria-controls={`${accordionId}-panel-${id}`}
               onClick={() => handleAccordionToggle(id)}
               className={classNames(
                 'flex w-full items-center justify-between px-4 py-3 text-left transition-colors duration-300',
@@ -89,27 +75,24 @@ export const Accordion = ({
               </span>
             </button>
           </HeadingTag>
-          <div
-            id={`panel-${id}`}
-            role="region"
-            aria-labelledby={`accordion-${id}`}
-            className={`transition-max-height bg-lightBeige overflow-hidden rounded-b-lg duration-300 ease-in-out ${
+          <section
+            id={`${accordionId}-panel-${id}`}
+            aria-labelledby={`${accordionId}-trigger-${id}`}
+            inert={openAccordion !== id}
+            className={`transition-max-height overflow-hidden rounded-b-lg bg-lightBeige duration-300 ease-in-out ${
               openAccordion === id ? 'max-h-[200vh]' : 'max-h-0'
             }`}
-            ref={(el) => {
-              accordionRefs.current[id] = el
-            }}
-            onFocus={() => handleFocus(id)}
-            onBlur={() => handleBlur(id)}
           >
             <div className="p-4">
-              {typeof content === 'string' ? (
-                content.split('\n').map((line, index) => <p key={index}>{line}</p>)
-              ) : (
-                content // If it's already a React element, render it directly
-              )}
+              {
+                typeof content === 'string'
+                  ? content
+                      .split('\n')
+                      .map((line, index) => <p key={index}>{line}</p>)
+                  : content // If it's already a React element, render it directly
+              }
             </div>
-          </div>
+          </section>
         </div>
       ))}
     </div>

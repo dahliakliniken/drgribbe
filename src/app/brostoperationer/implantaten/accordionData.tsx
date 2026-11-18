@@ -71,7 +71,9 @@ export const useAccordionItems = () => {
     {
       id: 'nanoTexturedSurface',
       title: t('accordions.fundamentals.nanoTexturedSurface.title'),
-      content: <P>{t('accordions.fundamentals.nanoTexturedSurface.paragraph1')}</P>
+      content: (
+        <P>{t('accordions.fundamentals.nanoTexturedSurface.paragraph1')}</P>
+      )
     },
     {
       id: 'polyuretan',
@@ -191,7 +193,10 @@ export const useAccordionItems = () => {
       content: (
         <>
           <P>{t('accordions.motiva.formAndProfiles.paragraph1')}</P>
-          <ImageModal imageSrc={MotivaTableImage} imageAlt={t('altText.motiva-table')} />
+          <ImageModal
+            imageSrc={MotivaTableImage}
+            imageAlt={t('altText.motiva-table')}
+          />
         </>
       )
     },

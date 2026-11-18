@@ -18,7 +18,7 @@ export const CardRow = ({ children }: CardRowProps) => {
 
   return (
     <div
-      className={`px-gapSpace flex space-x-4 overflow-x-auto xl:grid ${gridColsClass} xl:items-stretch`}
+      className={`flex space-x-4 overflow-x-auto px-gapSpace xl:grid ${gridColsClass} xl:items-stretch`}
     >
       {Children.map(children, (child, index) => (
         <article
