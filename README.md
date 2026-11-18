@@ -73,18 +73,19 @@ A high-level overview of the folder structure:
 
 ## Release Process
 
-This project uses trunk-based development on `main` with [Semantic Release](https://semantic-release.gitbook.io/) for automated versioning:
+This project uses trunk-based development on `main` with Vercel for deployment:
 
 ```
 main
 └── feat/xxx
-    └── PR → Vercel preview → merge to main → production deploy + semantic-release
+    └── PR → Vercel preview → merge to main → production deploy
 ```
 
 - **Branching**: Create feature/fix branches from `main` and open PRs against `main`.
 - **Review**: Vercel preview deployments are used for testing before merge.
-- **Releases**: Merging to `main` triggers production deployment and Semantic Release.
-See [docs/release_process.md](./docs/release_process.md) and [docs/semantic_release.md](./docs/semantic_release.md) for details.
+- **Deployment**: Merging to `main` triggers production deployment.
+
+See [docs/release_process.md](./docs/release_process.md) for details.
 
 ## Pull request title format
 
@@ -105,4 +106,3 @@ Examples:
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework.
 - [ESLint](https://eslint.org/) - Linting tool for JavaScript/TypeScript.
 - [Prettier](https://prettier.io/) - Code formatting tool.
-- [Semantic Release](https://semantic-release.gitbook.io/) - Automated versioning and package publishing.
