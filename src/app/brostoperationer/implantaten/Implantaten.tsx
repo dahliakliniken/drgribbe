@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 import { BgColors } from '@/app/types'
 import { Pillar } from '@/components/layout/Pillar'

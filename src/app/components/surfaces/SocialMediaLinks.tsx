@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 import { FacebookIcon } from '../icons/FacebookIcon'
 import { InstagramIcon } from '../icons/InstagramIcon'
@@ -12,7 +12,7 @@ export const SocialMediaLinks = ({ className }: { className?: string }) => {
         href="https://www.instagram.com/dahliakliniken"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-gold transition-colors duration-300"
+        className="transition-colors duration-300 hover:text-gold"
         aria-label={t('followOnInstagram')}
       >
         <InstagramIcon />
@@ -21,7 +21,7 @@ export const SocialMediaLinks = ({ className }: { className?: string }) => {
         href="https://www.facebook.com/profile.php?id=61561494238444"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-gold transition-colors duration-300"
+        className="transition-colors duration-300 hover:text-gold"
         aria-label={t('followOnFacebook')}
       >
         <FacebookIcon />

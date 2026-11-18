@@ -1,6 +1,6 @@
 import { Car, Mail, MapPin, Phone, Train } from 'lucide-react'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 import { Pillar } from '@/components/layout/Pillar'
 import { SpaceContainer } from '@/components/layout/SpaceContainer'
@@ -14,7 +14,6 @@ import { BgColors } from '../types'
 
 const KontaktOchBesok = () => {
   const t = useTranslations('kontakt-och-besok.page')
-  let emailIndex = 0
   return (
     <>
       <Card
@@ -62,11 +61,7 @@ const KontaktOchBesok = () => {
                         email: (chunks) => {
                           const email = String(chunks).trim() // Ensure chunks is a string
                           return (
-                            <a
-                              className="block"
-                              href={`mailto:${email}`}
-                              key={emailIndex++}
-                            >
+                            <a className="block" href={`mailto:${email}`}>
                               {email}
                             </a>
                           )
@@ -107,6 +102,7 @@ const KontaktOchBesok = () => {
 
           <div className="mt-12">
             <iframe
+              title={t('location.mapTitle')}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.7876457461824!2d18.0279!3d59.3334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d74e8f35c51%3A0x7c0c07ce8d4e6c4f!2sSankt%20G%C3%B6ransgatan%20126%2C%20Stockholm!5e0!3m2!1sen!2sse!4v1623456789012!5m2!1sen!2sse"
               width="100%"
               height="450"

@@ -1,8 +1,8 @@
 'use client'
 import classNames from 'classnames'
 import { IterationCcw } from 'lucide-react'
-import Image, { StaticImageData } from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 
 import { H2 } from '../typography/H2'

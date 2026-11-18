@@ -9,8 +9,8 @@ import {
   HousePlus,
   SquareChartGantt
 } from 'lucide-react'
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 import { BgColors } from '@/app/types'
 import { Pillar } from '@/components/layout/Pillar'
@@ -76,8 +76,12 @@ const Brostforstoring = () => {
               facts={[
                 {
                   icon: CalendarCheck,
-                  label: tPage('quickFacts.facts.consultationBeforeOperation.label'),
-                  value: tPage('quickFacts.facts.consultationBeforeOperation.value')
+                  label: tPage(
+                    'quickFacts.facts.consultationBeforeOperation.label'
+                  ),
+                  value: tPage(
+                    'quickFacts.facts.consultationBeforeOperation.value'
+                  )
                 },
                 {
                   icon: CircleDot,
@@ -142,9 +146,7 @@ const Brostforstoring = () => {
               <H3>{tPage('faq.sectionTitle')}</H3>
               <Accordion size="h4" items={faqAccordion} />
               <div className="m-auto my-6 flex justify-center">
-                <A href="/fragor-och-svar">
-                  {tCommon('linktoFaq')}
-                </A>
+                <A href="/fragor-och-svar">{tCommon('linktoFaq')}</A>
               </div>
             </SpaceContainer>
           </Pillar>

@@ -3,8 +3,7 @@ import type { Metadata } from 'next'
 import { canonicalUrl } from '@/app/config/site'
 import { BUSINESS_NAME } from '@/data/businessData'
 
-export const DEFAULT_TITLE =
-  'Bröstoperationer i Stockholm - Dahliakliniken'
+export const DEFAULT_TITLE = 'Bröstoperationer i Stockholm - Dahliakliniken'
 
 export const DEFAULT_DESCRIPTION =
   'Dr Örjan Gribbes nya klinik i Stockholm är specialiserad på estetiska bröstoperationer, såsom bröstförstoringar, bröstförminskningar och bröstlyft.'

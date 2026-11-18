@@ -2,7 +2,10 @@ import { getTranslations } from 'next-intl/server'
 
 import { canonicalUrl } from '@/app/config/site'
 
-import { breadcrumbRouteKey, formatBreadcrumbFallback } from './breadcrumbLabels'
+import {
+  breadcrumbRouteKey,
+  formatBreadcrumbFallback
+} from './breadcrumbLabels'
 
 export async function createBreadcrumbList(pathname: string) {
   if (!pathname || pathname === '/') {

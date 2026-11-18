@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { useMessages, useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 import { Pillar } from '@/components/layout/Pillar'
 import { SpaceContainer } from '@/components/layout/SpaceContainer'
@@ -81,9 +81,7 @@ const Brostoperationer = () => {
   const afterFirstReturnVisitItems = afterFirstReturnVisitKeys.map((key) => {
     const contentKeys = ['text1', 'text2', 'text3', 'text4']
     const content = contentKeys
-      .filter((textKey) =>
-        tPage.has(`afterFirstReturnVisit.${key}.${textKey}`)
-      )
+      .filter((textKey) => tPage.has(`afterFirstReturnVisit.${key}.${textKey}`))
       .map((textKey) => tPage(`afterFirstReturnVisit.${key}.${textKey}`))
 
     return {

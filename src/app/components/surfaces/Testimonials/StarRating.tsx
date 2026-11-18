@@ -4,7 +4,7 @@ export const StarRating = ({ rating }: { rating: number }) => {
   return (
     <div
       aria-hidden="true"
-      className="text-gold mt-2 mb-4 flex justify-center gap-1"
+      className="mt-2 mb-4 flex justify-center gap-1 text-gold"
     >
       {Array.from({ length: 5 }).map((_, i) => (
         <Star

@@ -1,11 +1,10 @@
 import './globals.css'
-
 import { GoogleTagManager } from '@next/third-parties/google'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/next'
 import { Metadata } from 'next'
-import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
+import { headers } from 'next/headers'
 
 import { LastUpdated } from '@/app/components/surfaces/LastUpdated'
 import { BUSINESS_IMAGES, BUSINESS_NAME } from '@/data/businessData'

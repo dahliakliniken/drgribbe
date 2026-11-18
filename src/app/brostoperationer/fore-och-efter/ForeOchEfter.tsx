@@ -122,7 +122,9 @@ const ForeOchEfter = () => {
                   />
                 </div>
               </div>
-              <P className="mt-4">{t('roundImplants.mediumProfile.infoText')}</P>
+              <P className="mt-4">
+                {t('roundImplants.mediumProfile.infoText')}
+              </P>
             </Pillar>
             <Pillar>
               <SpaceContainer spaceTop noPadding>

@@ -1,8 +1,8 @@
 'use client'
 
 import classNames from 'classnames'
-import { usePathname } from 'next/navigation'
 import { useTranslations } from 'next-intl'
+import { usePathname } from 'next/navigation'
 
 import { A } from '@/app/components/typography/A'
 import { P } from '@/app/components/typography/P'
@@ -17,8 +17,8 @@ export function LastUpdated() {
 
   const formatted = dateModified
     ? new Intl.DateTimeFormat('sv-SE', {
-      dateStyle: 'long'
-    }).format(new Date(dateModified))
+        dateStyle: 'long'
+      }).format(new Date(dateModified))
     : null
 
   return (

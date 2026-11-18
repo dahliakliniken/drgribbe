@@ -1,6 +1,6 @@
 import cn from 'classnames'
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 
 import { useFocusTrap } from '@/hooks/useFocusTrap'
@@ -112,7 +112,7 @@ export const DropdownMenu: React.FC = () => {
                 <li key={subLinkId} className="relative font-light">
                   <Link
                     href={href}
-                    className={'hover:text-gold transition-colors duration-300'}
+                    className={'transition-colors duration-300 hover:text-gold'}
                     tabIndex={activeLink === id ? 0 : -1}
                     onClick={() => setIsOpen(false)}
                   >
@@ -152,8 +152,8 @@ export const DropdownMenu: React.FC = () => {
         )}
         aria-hidden={!isOpen}
       >
-        <div className="lg:bg-custom-dark lg:before:bg-card-pattern hidden before:pointer-events-none lg:flex lg:w-2/3 lg:before:absolute lg:before:h-full lg:before:w-full lg:before:[background-size:110%] lg:before:bg-[20%_20%] lg:before:opacity-5">
-          <div className="p-gapSpace flex flex-col font-light text-white">
+        <div className="hidden before:pointer-events-none lg:flex lg:w-2/3 lg:bg-custom-dark lg:before:absolute lg:before:h-full lg:before:w-full lg:before:bg-card-pattern lg:before:[background-size:110%] lg:before:bg-[20%_20%] lg:before:opacity-5">
+          <div className="flex flex-col p-gapSpace font-light text-white">
             <p className="mb-2 text-lg font-light text-white">
               {tContact('contactUs')}
             </p>
@@ -183,8 +183,8 @@ export const DropdownMenu: React.FC = () => {
           icon={<ChevronIcon />}
           label={tCommon('closeMenu')}
         />
-        <div className="lg:bg-custom-gradient-desktop lg:relative lg:flex-1">
-          <ul className="mb-gapSpace lg:m-gapSpace lg:ml-gapSpaceL flex w-full flex-col gap-5 font-light">
+        <div className="lg:relative lg:flex-1 lg:bg-custom-gradient-desktop">
+          <ul className="mb-gapSpace flex w-full flex-col gap-5 font-light lg:m-gapSpace lg:ml-gapSpaceL">
             {renderLinks(mainLinks)}
           </ul>
           <A
@@ -192,7 +192,7 @@ export const DropdownMenu: React.FC = () => {
             small
             href="/boka"
             buttonStyle
-            className="lg:m-gapSpace lg:ml-gapSpaceL rounded-lg text-center"
+            className="rounded-lg text-center lg:m-gapSpace lg:ml-gapSpaceL"
             onClick={() => setIsOpen(false)}
           >
             {tCommon('bookTimeAndConsultation')}

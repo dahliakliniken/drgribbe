@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
 
 import { BgColors, BgPositions } from '@/app/types'
 
@@ -23,9 +23,7 @@ type TreatmentBoxProps = {
   }[]
 }
 
-export const TreatmentBox = ({
-  treatments,
-}: TreatmentBoxProps) => {
+export const TreatmentBox = ({ treatments }: TreatmentBoxProps) => {
   const t = useTranslations('treatment-box')
 
   return (

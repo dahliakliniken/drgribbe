@@ -24,10 +24,10 @@ export const Testimonial = memo(
         className={`testimonial w-80 flex-shrink-0 before:${ephesis.className} flex flex-col p-2 text-center`}
       >
         <div>
-          <cite className="text-gold font-josefin-sans block text-2xl font-normal">
+          <cite className="block font-josefin-sans text-2xl font-normal text-gold">
             {title}
           </cite>
-          <time dateTime={date} className="text-gold text-base">
+          <time dateTime={date} className="text-base text-gold">
             {relativeTime}
           </time>
         </div>
@@ -39,7 +39,7 @@ export const Testimonial = memo(
         </blockquote>
 
         <a
-          className="text-gold font-josefin-sans mt-auto pt-2 text-lg leading-tight font-light tracking-[0.06em] underline underline-offset-3 transition-colors duration-300 hover:underline"
+          className="mt-auto pt-2 font-josefin-sans text-lg leading-tight font-light tracking-[0.06em] text-gold underline underline-offset-3 transition-colors duration-300 hover:underline"
           href={link}
           target="_blank"
           rel="noopener noreferrer nofollow ugc"

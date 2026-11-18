@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
+import Image from 'next/image'
 
 import {
   createPageMetadata,
@@ -248,9 +248,7 @@ export default async function Home() {
           className="before:bg-[30%_30%] lg:before:[background-size:200%]"
           content={
             <Pillar>
-              <H2 className="text-center">
-                {tPage('cta.title')}
-              </H2>
+              <H2 className="text-center">{tPage('cta.title')}</H2>
               <P className="text-center">{tPage('cta.description')}</P>
               <div className="m-auto flex max-w-xs justify-center">
                 <A href="/boka" className="uppercase" buttonStyle inverted>
