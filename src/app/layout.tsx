@@ -56,6 +56,7 @@ export default async function RootLayout({
       className={`${josefinSans.variable} ${ephesis.variable} lg:bg-beige`}
     >
       <head>
+        <link rel="describedby" href="https://www.dahliakliniken.se/llms.txt" />
         <JsonLd
           id="jsonld-organization"
           data={{ '@context': 'https://schema.org', '@graph': [org, webSite] }}

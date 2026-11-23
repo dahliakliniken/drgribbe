@@ -38,6 +38,10 @@ App Router icon files in `src/app/` are `favicon.ico`, `icon.png`, and `apple-ic
 
 [`getLastModified()`](src/utils/getLastModified.ts) reads the same JSON for the “last updated” footer. Unknown paths return `undefined` (no homepage-date fallback).
 
+## llms.txt
+
+[`public/llms.txt`](public/llms.txt) serves a curated Swedish guide to key clinic pages at `/llms.txt`. It uses absolute production canonical URLs and is maintained by hand. Review it when a linked page is renamed or removed.
+
 ## Robots / preview protection
 
 [`src/app/robots.ts`](src/app/robots.ts):
