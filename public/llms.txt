@@ -1,0 +1,27 @@
+# Dahliakliniken
+
+> Dahliakliniken är en klinik på Kungsholmen i Stockholm som är specialiserad på estetisk bröstkirurgi.
+
+## Bröstoperationer
+
+- [Bröstoperationer](https://www.dahliakliniken.se/brostoperationer): Översikt över bröstförstoring, bröstlyft och bröstförminskning.
+- [Bröstförstoring](https://www.dahliakliniken.se/brostoperationer/brostforstoring): Metoder för förstoring med implantat eller kroppseget fett.
+- [Bröstlyft](https://www.dahliakliniken.se/brostoperationer/brostlyft): Hur ett bröstlyft går till och hur det kan kombineras med bröstförstoring.
+- [Bröstförminskning](https://www.dahliakliniken.se/brostoperationer/brostforminskning): Information om konsultationen och hur operationen går till.
+- [Bröstimplantat](https://www.dahliakliniken.se/brostoperationer/implantaten): Implantattyper och skillnader i form, profil och yta.
+- [Före- och efterbilder](https://www.dahliakliniken.se/brostoperationer/fore-och-efter): Bildexempel efter bröstförstoring med olika implantat.
+
+## Övriga behandlingar
+
+- [Hud och injektioner](https://www.dahliakliniken.se/hud-och-injektioner): Översikt över klinikens hud- och injektionsbehandlingar.
+
+## Patientinformation
+
+- [Frågor och svar](https://www.dahliakliniken.se/fragor-och-svar): Vanliga frågor om bröstoperationer och återhämtning.
+- [Priser](https://www.dahliakliniken.se/priser): Prislista och betalningsvillkor.
+- [Garanti](https://www.dahliakliniken.se/garanti): Klinikens trygghetspaket och villkor för kapselgaranti.
+
+## Om kliniken och kontakt
+
+- [Vår personal](https://www.dahliakliniken.se/var-personal): Presentation av klinikens personal.
+- [Kontakt och besök](https://www.dahliakliniken.se/kontakt-och-besok): Kontaktuppgifter, besöksadress och vägbeskrivning.
