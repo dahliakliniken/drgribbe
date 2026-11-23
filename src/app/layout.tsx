@@ -6,12 +6,13 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getLocale, getMessages } from 'next-intl/server'
 import { headers } from 'next/headers'
 
-import { LastUpdated } from '@/app/components/surfaces/LastUpdated'
 import { BUSINESS_IMAGES, BUSINESS_NAME } from '@/data/businessData'
 
 import { Breadcrumbs } from './components/navigation/Breadcrumbs'
-import { HeaderWithFooter } from './components/surfaces/HeaderWithFooter'
+import { Footer } from './components/surfaces/footer'
+import { HeaderWithFooter } from './components/surfaces/header'
 import { JsonLd } from './components/surfaces/JsonLd'
+import { LastUpdated } from './components/surfaces/LastUpdated'
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from './config/metadata'
 import { ORG_ID, SITE_URL } from './config/site'
 import { ephesis, josefinSans } from './fonts'
@@ -70,8 +71,9 @@ export default async function RootLayout({
           <main className="relative flex flex-col lg:mt-20">
             <Breadcrumbs />
             {children}
+            <LastUpdated />
           </main>
-          <LastUpdated />
+          <Footer />
           <Analytics />
         </NextIntlClientProvider>
       </body>

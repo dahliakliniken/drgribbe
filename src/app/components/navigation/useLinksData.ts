@@ -37,15 +37,15 @@ export const useLinksData = () => {
             id: crypto.randomUUID()
           },
           {
-            text: t('beforeAfter'),
-            href: '/brostoperationer/fore-och-efter',
+            text: t('implants'),
+            href: '/brostoperationer/implantaten',
             id: crypto.randomUUID()
           }
         ]
       },
       {
-        text: t('implants'),
-        href: '/brostoperationer/implantaten',
+        text: t('beforeAfter'),
+        href: '/brostoperationer/fore-och-efter',
         id: crypto.randomUUID()
       },
       {
