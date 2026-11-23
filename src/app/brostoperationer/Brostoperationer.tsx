@@ -26,7 +26,7 @@ import { useAccordionItems } from './accordionData'
 const Brostoperationer = () => {
   const tPage = useTranslations('brostoperationer.page')
   const tCommon = useTranslations('common')
-  const messages = useMessages() as Record<string, any>
+  const messages = useMessages()
   const [surgeryItems, complications] = useAccordionItems()
   const beforeOperationKeys = Object.keys(
     messages.brostoperationer.page.beforeOperation

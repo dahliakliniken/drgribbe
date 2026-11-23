@@ -38,7 +38,7 @@ export const Button = ({
           'hover:border-gold hover:text-gold border-black text-black': inverted,
           'border-white text-white hover:border-beige hover:text-beige':
             !inverted,
-          'border-none px-0 py-0 text-lg hover:underline': textButton
+          'border-none px-0 py-0 text-base hover:underline': textButton
         }
       )}
     >
